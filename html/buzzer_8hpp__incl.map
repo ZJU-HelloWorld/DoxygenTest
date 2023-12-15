@@ -1,9 +1,0 @@
-<map id="HW&#45;Components/devices/buzzer/inc/buzzer.hpp" name="HW&#45;Components/devices/buzzer/inc/buzzer.hpp">
-<area shape="rect" id="Node000001" title=": @history : Version Date Author Note V0.9.0 2023&#45;11&#45;28 Caikunzhen 1." alt="" coords="44,5,212,45"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,123,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,48,85,84,81,80,110,44"/>
-<area shape="rect" id="Node000003" href="$system_8hpp.html" title=" " alt="" coords="147,93,237,119"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,44,175,80,171,84,142,48"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="162,167,222,192"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="195,119,195,152,189,152,189,119"/>
-</map>

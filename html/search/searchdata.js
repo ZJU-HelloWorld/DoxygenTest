@@ -3,14 +3,12 @@ var indexSectionsWithContent =
   0: "_abcdefghiklmnopqrstuvwxyz~机",
   1: "_abcdgilmoprstuw",
   2: "h",
-  3: "abcdilmprst",
-  4: "_abcdeghiklmnoprstvwxy~",
-  5: "abcdefghiklmnopqrstuvwxyz",
-  6: "cdfimprst",
-  7: "abcdfghilmprstuw",
-  8: "cfks",
-  9: "_befhmpu",
-  10: "cr"
+  3: "_abcdeghiklmnoprstvwxy~",
+  4: "abcdefghiklmnopqrstuvwxyz",
+  5: "cdfimprst",
+  6: "abcdfghilmprstuw",
+  7: "cfks",
+  8: "cr"
 };
 
 var indexSectionNames =
@@ -18,14 +16,12 @@ var indexSectionNames =
   0: "all",
   1: "classes",
   2: "namespaces",
-  3: "files",
-  4: "functions",
-  5: "variables",
-  6: "typedefs",
-  7: "enums",
-  8: "enumvalues",
-  9: "defines",
-  10: "pages"
+  3: "functions",
+  4: "variables",
+  5: "typedefs",
+  6: "enums",
+  7: "enumvalues",
+  8: "pages"
 };
 
 var indexSectionLabels =
@@ -33,13 +29,11 @@ var indexSectionLabels =
   0: "全部",
   1: "类",
   2: "命名空间",
-  3: "文件",
-  4: "函数",
-  5: "变量",
-  6: "类型定义",
-  7: "枚举",
-  8: "枚举值",
-  9: "宏定义",
-  10: "页"
+  3: "函数",
+  4: "变量",
+  5: "类型定义",
+  6: "枚举",
+  7: "枚举值",
+  8: "页"
 };
 

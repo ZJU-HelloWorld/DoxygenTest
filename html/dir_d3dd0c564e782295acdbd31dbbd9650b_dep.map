@@ -1,11 +1,6 @@
 <map id="HW&#45;Components/algorithms/ik_solver" name="HW&#45;Components/algorithms/ik_solver">
-<area shape="rect" id="node2" href="dir_535ad3f8b6207be4ddcf812024f9709d.html" title="inc" alt="" coords="38,136,77,161"/>
-<area shape="rect" id="node4" href="dir_41354485d893139e386cb38ed5404f14.html" title="tools" alt="" coords="32,209,83,235"/>
-<area shape="poly" id="edge1" href="dir_000009_000036.html" alt="" coords="60,162,60,194,55,194,55,162"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000009_000036.html" title="2" alt="" coords="62,183,70,198"/>
+<area shape="rect" id="node2" href="dir_535ad3f8b6207be4ddcf812024f9709d.html" title="inc" alt="" coords="102,63,141,88"/>
 <area shape="rect" id="node3" href="dir_8a581888f3e7b2c7e05ee7fb31df2e6f.html" title="src" alt="" coords="37,63,77,88"/>
-<area shape="poly" id="edge2" href="dir_000026_000009.html" alt="" coords="60,88,60,121,55,121,55,88"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000026_000009.html" title="1" alt="" coords="62,110,70,125"/>
-<area shape="rect" id="clust2" href="dir_d3dd0c564e782295acdbd31dbbd9650b.html" alt="" coords="27,52,184,172"/>
-<area shape="rect" id="clust1" href="dir_914e213ab34dfe4d3be56ed6727e39d6.html" title="algorithms" alt="" coords="16,16,195,183"/>
+<area shape="rect" id="clust2" href="dir_d3dd0c564e782295acdbd31dbbd9650b.html" alt="" coords="27,52,248,99"/>
+<area shape="rect" id="clust1" href="dir_914e213ab34dfe4d3be56ed6727e39d6.html" title="algorithms" alt="" coords="16,16,259,109"/>
 </map>

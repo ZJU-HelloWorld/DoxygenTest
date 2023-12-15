@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('classhello__world_1_1algorithms_1_1con
 <p>一个多节点 PID 控制器类，继承自 <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html">Controller</a> 类，目前实现类型有串联或并联  
  <a href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#details">更多...</a></p>
 
-<p><code>#include &lt;<a class="el" href="pid_8hpp_source.html">pid.hpp</a>&gt;</code></p>
+<p><code>#include &lt;pid.hpp&gt;</code></p>
 <div class="dynheader">
 类 hello_world::algorithms::controller::pid::MultiNodesPid 继承关系图:</div>
 <div class="dyncontent">
@@ -223,8 +223,6 @@ Private 属性</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>一个多节点 PID 控制器类，继承自 <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html">Controller</a> 类，目前实现类型有串联或并联 </p>
-
-<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00338">338</a> 行定义.</p>
 </div><h2 class="groupheader">成员类型定义说明</h2>
 <a id="aa1dffa33b44dd44a17cc074900d7e058" name="aa1dffa33b44dd44a17cc074900d7e058"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa1dffa33b44dd44a17cc074900d7e058">&#9670;&#160;</a></span>Params</h2>
@@ -239,8 +237,6 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>定义 Params 类型为 <code><a class="el" href="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params.html" title="定义了基础 PID 的参数">BasicPidParams</a></code> </p>
-
-<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00341">341</a> 行定义.</p>
 
 </div>
 </div>
@@ -257,8 +253,6 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>定义 Type 类型为 <code>MultiNodesPidType</code> </p>
-
-<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00342">342</a> 行定义.</p>
 
 </div>
 </div>
@@ -307,8 +301,6 @@ Private 属性</h2></td></tr>
 <p>如果 count 为 0，则将其设置为 1。 然后，根据 count 的值创建相应数量的 PID 控制器，并将它们添加到 pid_list_ 中。 反馈值维数为 PID 控制器节点的数量。 如果 type 为 kParallel，则将参考值维数与反馈值维数相同。 前馈值维数和输出值维数始终为 1。 </p><dl class="section note"><dt>注解</dt><dd>如果需要修改 PID 参数，推荐使用 <code>paramsAt</code> 函数 </dd>
 <dd>
 相较于初始化时确定参数更加安全、灵活，不必预先声明参数数组 </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="pid_8cpp_source.html">pid.cpp</a> 第 <a class="el" href="pid_8cpp_source.html#l00179">179</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -366,8 +358,6 @@ Private 属性</h2></td></tr>
   </dd>
 </dl>
 <p>如果 count 为 0，则将其设置为 1。 如果 params_arr 为 nullptr，则使用默认参数创建 PID 控制器。 然后，根据 count 的值创建相应数量的 PID 控制器，并将它们添加到 pid_list_ 中。 反馈值维数为 PID 控制器节点的数量。 如果 type 为 kParallel，则将参考值维数与反馈值维数相同。 前馈值维数和输出值维数始终为 1。 </p><dl class="section note"><dt>注解</dt><dd>如果需要修改 PID 参数，推荐使用 <code>paramsAt</code> 函数 </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="pid_8cpp_source.html">pid.cpp</a> 第 <a class="el" href="pid_8cpp_source.html#l00194">194</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -446,8 +436,6 @@ Private 属性</h2></td></tr>
 <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a180ce707d30cae5f45ec5820d1b2c50c" title="计算并行 PID 控制器的输出">parallel_calc(const float *ref_ls, const float *fdb_ls, const float *ffd_ls, float *out_ls)</a> </dd></dl>
 
 <p>实现了 <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html#a3a59379f79586c7d89f92b3b5f08bb57">hello_world::algorithms::controller::Controller</a>.</p>
-
-<p class="definition">在文件 <a class="el" href="pid_8cpp_source.html">pid.cpp</a> 第 <a class="el" href="pid_8cpp_source.html#l00226">226</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -527,8 +515,6 @@ Private 属性</h2></td></tr>
 - 当 <code>ffd_ls</code> 为 <code>nullptr</code> 时，使用 <code>0</code> 作为前馈值 </dd>
 <dd>
 - 当 <code>out_ls</code> 为 <code>nullptr</code> 时，输出传递失败 </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="pid_8cpp_source.html">pid.cpp</a> 第 <a class="el" href="pid_8cpp_source.html#l00250">250</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -567,8 +553,6 @@ Private 属性</h2></td></tr>
 
 <p>获取 PID 控制器的输出 </p>
 <dl class="section return"><dt>返回</dt><dd>PID 控制器的输出 </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00411">411</a> 行定义.</p>
 <div class="dynheader">
 这是这个函数的调用关系图:</div>
 <div class="dyncontent">
@@ -648,8 +632,6 @@ Private 属性</h2></td></tr>
 - 当 <code>ffd_ls</code> 为 <code>nullptr</code> 时，使用 0 作为前馈值 </dd>
 <dd>
 - 当 <code>out_ls</code> 为 <code>nullptr</code> 时，输出传递失败 </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="pid_8cpp_source.html">pid.cpp</a> 第 <a class="el" href="pid_8cpp_source.html#l00296">296</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -687,8 +669,6 @@ Private 属性</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>指定索引处 PID 控制器的参数。如果索引超出 PID 控制器列表的范围，返回最后一个 PID 控制器的参数。 </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="pid_8cpp_source.html">pid.cpp</a> 第 <a class="el" href="pid_8cpp_source.html#l00238">238</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -724,8 +704,6 @@ Private 属性</h2></td></tr>
 <dl class="section return"><dt>返回</dt><dd>始终返回 kStateOk </dd></dl>
 
 <p>实现了 <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html#a1dfc2817c2e54de404466124a6ca4d19">hello_world::algorithms::controller::Controller</a>.</p>
-
-<p class="definition">在文件 <a class="el" href="pid_8cpp_source.html">pid.cpp</a> 第 <a class="el" href="pid_8cpp_source.html#l00214">214</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -759,8 +737,6 @@ Private 属性</h2></td></tr>
 
 <p>获取 PID 控制器的数量 </p>
 <dl class="section return"><dt>返回</dt><dd>PID 控制器的数量 </dd></dl>
-
-<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00405">405</a> 行定义.</p>
 <div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -792,8 +768,6 @@ Private 属性</h2></td></tr>
 
 <p>PID 输出 </p>
 
-<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00424">424</a> 行定义.</p>
-
 </div>
 </div>
 <a id="a6ba0574fd4cea5a7babe59f5fb9c1d08" name="a6ba0574fd4cea5a7babe59f5fb9c1d08"></a>
@@ -817,8 +791,6 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>输出限制 </p>
-
-<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00422">422</a> 行定义.</p>
 
 </div>
 </div>
@@ -844,8 +816,6 @@ Private 属性</h2></td></tr>
 
 <p>PID 控制器列表 </p>
 
-<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00421">421</a> 行定义.</p>
-
 </div>
 </div>
 <a id="a6e4f96a6abf9a261b9d5961b4352c78e" name="a6e4f96a6abf9a261b9d5961b4352c78e"></a>
@@ -869,8 +839,6 @@ Private 属性</h2></td></tr>
 </div><div class="memdoc">
 
 <p>PID 类型 </p>
-
-<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00423">423</a> 行定义.</p>
 
 </div>
 </div>

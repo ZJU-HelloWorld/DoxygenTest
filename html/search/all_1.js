@@ -30,7 +30,6 @@ var searchData=
   ['anglenormrad_27',['AngleNormRad',['../namespacehello__world.html#a2b175ee3711275a8279ab6553620bca7',1,'hello_world']]],
   ['anglerange_28',['AngleRange',['../namespacehello__world_1_1devices_1_1motor.html#a0163710b33b99ac98bcbcb1f43d78248',1,'hello_world::devices::motor']]],
   ['arocss0type_29',['Arocss0Type',['../namespacehello__world_1_1algorithms_1_1controller_1_1pid.html#a67467db7aaca33bbced40cf20bdfaafd',1,'hello_world::algorithms::controller::pid']]],
-  ['assert_2ehpp_30',['assert.hpp',['../assert_8hpp.html',1,'']]],
-  ['attack_5fbuff_31',['attack_buff',['../structhello__world_1_1devices_1_1referee_1_1_____r_e_f_e_r_e_e___p_a_c_k_e_d.html#aacc97d64f9dca098cbea2546469675f9',1,'hello_world::devices::referee::__REFEREE_PACKED']]],
-  ['auto_5freset_32',['auto_reset',['../structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params.html#a315027b98690d9d1000cd13afb9ab5fa',1,'hello_world::algorithms::controller::pid::BasicPidParams']]]
+  ['attack_5fbuff_30',['attack_buff',['../structhello__world_1_1devices_1_1referee_1_1_____r_e_f_e_r_e_e___p_a_c_k_e_d.html#aacc97d64f9dca098cbea2546469675f9',1,'hello_world::devices::referee::__REFEREE_PACKED']]],
+  ['auto_5freset_31',['auto_reset',['../structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params.html#a315027b98690d9d1000cd13afb9ab5fa',1,'hello_world::algorithms::controller::pid::BasicPidParams']]]
 ];

@@ -19,6 +19,5 @@ var searchData=
   ['frameheader_16',['FrameHeader',['../namespacehello__world_1_1devices_1_1referee.html#a6486c1d8e85c356ee100d896c56a289e',1,'hello_world::devices::referee']]],
   ['framepartindex_17',['FramePartIndex',['../namespacehello__world_1_1devices_1_1referee.html#ad51f56f304455748245e8ee460b38620',1,'hello_world::devices::referee']]],
   ['framepartlength_18',['FramePartLength',['../namespacehello__world_1_1devices_1_1referee.html#a1500d7652616d69044bd1eaca3998b5a',1,'hello_world::devices::referee']]],
-  ['free_19',['FREE',['../system_8hpp.html#a9a8e700d56e7d858108b755ad3edb52e',1,'system.hpp']]],
-  ['front_5frestoration_5fis_5foccupied_20',['front_restoration_is_occupied',['../structhello__world_1_1devices_1_1referee_1_1_____r_e_f_e_r_e_e___p_a_c_k_e_d.html#a6eb7e240ca1977f5366b0c06a7566821',1,'hello_world::devices::referee::__REFEREE_PACKED']]]
+  ['front_5frestoration_5fis_5foccupied_19',['front_restoration_is_occupied',['../structhello__world_1_1devices_1_1referee_1_1_____r_e_f_e_r_e_e___p_a_c_k_e_d.html#a6eb7e240ca1977f5366b0c06a7566821',1,'hello_world::devices::referee::__REFEREE_PACKED']]]
 ];
