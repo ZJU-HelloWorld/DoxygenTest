@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_base_8hpp_source" xml:lang="zh">
+<title>base.hpp</title>
+<indexterm><primary>HW-Components/tools/inc/base.hpp</primary></indexterm>
+浏览该文件的文档.<programlisting linenumbering="unnumbered"><anchor xml:id="_base_8hpp_source_1l00001"/>00001 
+<anchor xml:id="_base_8hpp_source_1l00015"/>00015 <emphasis role="comment">/*&#32;Define&#32;to&#32;prevent&#32;recursive&#32;inclusion&#32;-------------------------------------*/</emphasis>
+<anchor xml:id="_base_8hpp_source_1l00016"/>00016 <emphasis role="preprocessor">#ifndef&#32;HW_COMPONENTS_TOOLS_BASE_HPP_</emphasis>
+<anchor xml:id="_base_8hpp_source_1l00017"/>00017 <emphasis role="preprocessor">#define&#32;HW_COMPONENTS_TOOLS_BASE_HPP_</emphasis>
+<anchor xml:id="_base_8hpp_source_1l00018"/>00018 
+<anchor xml:id="_base_8hpp_source_1l00019"/>00019 <emphasis role="comment">/*&#32;Includes&#32;------------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_base_8hpp_source_1l00020"/>00020 <emphasis role="preprocessor">#include&#32;&lt;cmath&gt;</emphasis>
+<anchor xml:id="_base_8hpp_source_1l00021"/>00021 <emphasis role="preprocessor">#include&#32;&lt;cstdint&gt;</emphasis>
+<anchor xml:id="_base_8hpp_source_1l00022"/>00022 
+<anchor xml:id="_base_8hpp_source_1l00023"/>00023 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_assert_8hpp">assert.hpp</link>&quot;</emphasis>
+<anchor xml:id="_base_8hpp_source_1l00024"/>00024 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacehello__world">hello_world</link>
+<anchor xml:id="_base_8hpp_source_1l00025"/>00025 {
+<anchor xml:id="_base_8hpp_source_1l00026"/>00026 <emphasis role="comment">/*&#32;Exported&#32;macro&#32;------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_base_8hpp_source_1l00027"/>00027 <emphasis role="preprocessor">#ifndef&#32;PI</emphasis>
+<anchor xml:id="_base_8hpp_source_1l00028"/><link linkend="_base_8hpp_1a598a3330b3c21701223ee0ca14316eca">00028</link> <emphasis role="preprocessor">#define&#32;PI&#32;3.14159265358979f</emphasis>
+<anchor xml:id="_base_8hpp_source_1l00029"/>00029 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_base_8hpp_source_1l00030"/>00030 <emphasis role="comment">/*&#32;Exported&#32;constants&#32;--------------------------------------------------------*/</emphasis>
+<anchor xml:id="_base_8hpp_source_1l00031"/>00031 
+<anchor xml:id="_base_8hpp_source_1l00032"/><link linkend="_namespacehello__world_1a8582e15cc16c32ad80a0d6873cf3f830">00032</link> <emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_namespacehello__world_1a8582e15cc16c32ad80a0d6873cf3f830">kGravAcc</link>&#32;=&#32;9.7936f;&#32;&#32;
+<anchor xml:id="_base_8hpp_source_1l00033"/><link linkend="_namespacehello__world_1a219e78545f9e9d3987fae46cf7fcdd75">00033</link> <emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_namespacehello__world_1a219e78545f9e9d3987fae46cf7fcdd75">kRad2DegCoff</link>&#32;=&#32;180&#32;/&#32;<link linkend="_base_8hpp_1a598a3330b3c21701223ee0ca14316eca">PI</link>;
+<anchor xml:id="_base_8hpp_source_1l00034"/><link linkend="_namespacehello__world_1aff7ca8b5f1a544cfb645d20c17b2ebcf">00034</link> <emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_namespacehello__world_1aff7ca8b5f1a544cfb645d20c17b2ebcf">kDeg2RadCoff</link>&#32;=&#32;<link linkend="_base_8hpp_1a598a3330b3c21701223ee0ca14316eca">PI</link>&#32;/&#32;180;
+<anchor xml:id="_base_8hpp_source_1l00035"/>00035 <emphasis role="comment">/*&#32;Exported&#32;types&#32;------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_base_8hpp_source_1l00036"/>00036 <emphasis role="comment">/*&#32;Exported&#32;variables&#32;--------------------------------------------------------*/</emphasis>
+<anchor xml:id="_base_8hpp_source_1l00037"/>00037 <emphasis role="comment">/*&#32;Exported&#32;function&#32;prototypes&#32;----------------------------------------------*/</emphasis>
+<anchor xml:id="_base_8hpp_source_1l00038"/>00038 
+<anchor xml:id="_base_8hpp_source_1l00045"/>00045 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+<anchor xml:id="_base_8hpp_source_1l00046"/><link linkend="_namespacehello__world_1a0a24a2113234e7e7a7328e70bedb91c1">00046</link> <emphasis role="keyword">inline</emphasis>&#32;uint8_t&#32;<link linkend="_namespacehello__world_1a0a24a2113234e7e7a7328e70bedb91c1">GetSign</link>(T&#32;x)
+<anchor xml:id="_base_8hpp_source_1l00047"/>00047 {
+<anchor xml:id="_base_8hpp_source_1l00048"/>00048 &#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(x&#32;&gt;&#32;0)&#32;{
+<anchor xml:id="_base_8hpp_source_1l00049"/>00049 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;1;
+<anchor xml:id="_base_8hpp_source_1l00050"/>00050 &#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(x&#32;&lt;&#32;0)&#32;{
+<anchor xml:id="_base_8hpp_source_1l00051"/>00051 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;-1;
+<anchor xml:id="_base_8hpp_source_1l00052"/>00052 &#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+<anchor xml:id="_base_8hpp_source_1l00053"/>00053 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;0;
+<anchor xml:id="_base_8hpp_source_1l00054"/>00054 &#32;&#32;}
+<anchor xml:id="_base_8hpp_source_1l00055"/>00055 }
+<anchor xml:id="_base_8hpp_source_1l00056"/>00056 
+<anchor xml:id="_base_8hpp_source_1l00064"/>00064 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+<anchor xml:id="_base_8hpp_source_1l00065"/><link linkend="_namespacehello__world_1aa015d79000267b9839acf531c7dbc7a6">00065</link> <emphasis role="keyword">inline</emphasis>&#32;T&#32;<link linkend="_namespacehello__world_1aa015d79000267b9839acf531c7dbc7a6">Max</link>(T&#32;x1,&#32;T&#32;x2)
+<anchor xml:id="_base_8hpp_source_1l00066"/>00066 {
+<anchor xml:id="_base_8hpp_source_1l00067"/>00067 &#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;x1&#32;&gt;&#32;x2&#32;?&#32;x1&#32;:&#32;x2;
+<anchor xml:id="_base_8hpp_source_1l00068"/>00068 }
+<anchor xml:id="_base_8hpp_source_1l00069"/>00069 
+<anchor xml:id="_base_8hpp_source_1l00077"/>00077 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+<anchor xml:id="_base_8hpp_source_1l00078"/><link linkend="_namespacehello__world_1a94594f3432536927055026f3f48af251">00078</link> <emphasis role="keyword">inline</emphasis>&#32;T&#32;<link linkend="_namespacehello__world_1a94594f3432536927055026f3f48af251">Min</link>(T&#32;x1,&#32;T&#32;x2)
+<anchor xml:id="_base_8hpp_source_1l00079"/>00079 {
+<anchor xml:id="_base_8hpp_source_1l00080"/>00080 &#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;x1&#32;&lt;&#32;x2&#32;?&#32;x1&#32;:&#32;x2;
+<anchor xml:id="_base_8hpp_source_1l00081"/>00081 }
+<anchor xml:id="_base_8hpp_source_1l00082"/>00082 
+<anchor xml:id="_base_8hpp_source_1l00091"/>00091 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T1,&#32;<emphasis role="keyword">typename</emphasis>&#32;T2,&#32;<emphasis role="keyword">typename</emphasis>&#32;T3&gt;
+<anchor xml:id="_base_8hpp_source_1l00092"/><link linkend="_namespacehello__world_1a34cb06299a34f746d556d23dc16904aa">00092</link> <emphasis role="keyword">inline</emphasis>&#32;T1&#32;<link linkend="_namespacehello__world_1a34cb06299a34f746d556d23dc16904aa">Bound</link>(T1&#32;x,&#32;T2&#32;lim1,&#32;T3&#32;lim2)
+<anchor xml:id="_base_8hpp_source_1l00093"/>00093 {
+<anchor xml:id="_base_8hpp_source_1l00094"/>00094 &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;max_lim,&#32;min_lim;
+<anchor xml:id="_base_8hpp_source_1l00095"/>00095 &#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(lim1&#32;&gt;=&#32;lim2)&#32;{
+<anchor xml:id="_base_8hpp_source_1l00096"/>00096 &#32;&#32;&#32;&#32;max_lim&#32;=&#32;lim1;
+<anchor xml:id="_base_8hpp_source_1l00097"/>00097 &#32;&#32;&#32;&#32;min_lim&#32;=&#32;lim2;
+<anchor xml:id="_base_8hpp_source_1l00098"/>00098 &#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+<anchor xml:id="_base_8hpp_source_1l00099"/>00099 &#32;&#32;&#32;&#32;max_lim&#32;=&#32;lim2;
+<anchor xml:id="_base_8hpp_source_1l00100"/>00100 &#32;&#32;&#32;&#32;min_lim&#32;=&#32;lim1;
+<anchor xml:id="_base_8hpp_source_1l00101"/>00101 &#32;&#32;}
+<anchor xml:id="_base_8hpp_source_1l00102"/>00102 
+<anchor xml:id="_base_8hpp_source_1l00103"/>00103 &#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(x&#32;&gt;&#32;max_lim)&#32;{
+<anchor xml:id="_base_8hpp_source_1l00104"/>00104 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;max_lim;
+<anchor xml:id="_base_8hpp_source_1l00105"/>00105 &#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(x&#32;&lt;&#32;min_lim)&#32;{
+<anchor xml:id="_base_8hpp_source_1l00106"/>00106 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;min_lim;
+<anchor xml:id="_base_8hpp_source_1l00107"/>00107 &#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+<anchor xml:id="_base_8hpp_source_1l00108"/>00108 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;x;
+<anchor xml:id="_base_8hpp_source_1l00109"/>00109 &#32;&#32;}
+<anchor xml:id="_base_8hpp_source_1l00110"/>00110 }
+<anchor xml:id="_base_8hpp_source_1l00111"/>00111 
+<anchor xml:id="_base_8hpp_source_1l00119"/>00119 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+<anchor xml:id="_base_8hpp_source_1l00120"/><link linkend="_namespacehello__world_1aadc1f0af4d10150fcd1a306c7dc6515c">00120</link> <emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_namespacehello__world_1aadc1f0af4d10150fcd1a306c7dc6515c">IsInRange</link>(T&#32;x,&#32;T&#32;bound1,&#32;T&#32;bound2)
+<anchor xml:id="_base_8hpp_source_1l00121"/>00121 {
+<anchor xml:id="_base_8hpp_source_1l00122"/>00122 &#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(bound1&#32;&lt;=&#32;bound2)&#32;{
+<anchor xml:id="_base_8hpp_source_1l00123"/>00123 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;x&#32;&gt;=&#32;bound1&#32;&amp;&amp;&#32;x&#32;&lt;=&#32;bound2;
+<anchor xml:id="_base_8hpp_source_1l00124"/>00124 &#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+<anchor xml:id="_base_8hpp_source_1l00125"/>00125 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;x&#32;&lt;=&#32;bound1&#32;&amp;&amp;&#32;x&#32;&gt;=&#32;bound2;
+<anchor xml:id="_base_8hpp_source_1l00126"/>00126 &#32;&#32;}
+<anchor xml:id="_base_8hpp_source_1l00127"/>00127 }
+<anchor xml:id="_base_8hpp_source_1l00128"/>00128 
+<anchor xml:id="_base_8hpp_source_1l00137"/><link linkend="_namespacehello__world_1a71f5ddbc81f1fa181ecefaf0b1f51fa8">00137</link> <emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_namespacehello__world_1a71f5ddbc81f1fa181ecefaf0b1f51fa8">NormPeriodData</link>(<emphasis role="keywordtype">float</emphasis>&#32;period_lb,&#32;<emphasis role="keywordtype">float</emphasis>&#32;period_ub,&#32;<emphasis role="keywordtype">float</emphasis>&#32;data)
+<anchor xml:id="_base_8hpp_source_1l00138"/>00138 {
+<anchor xml:id="_base_8hpp_source_1l00139"/>00139 &#32;&#32;<link linkend="_assert_8hpp_1a5969df827ceb603bed14c4106586484a">HW_ASSERT</link>(period_ub&#32;&gt;&#32;period_lb,&#32;<emphasis role="stringliteral">&quot;lower&#32;bound&#32;is&#32;larger&#32;than&#32;upper&#32;bound&quot;</emphasis>);
+<anchor xml:id="_base_8hpp_source_1l00140"/>00140 
+<anchor xml:id="_base_8hpp_source_1l00141"/>00141 &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;period&#32;=&#32;period_ub&#32;-&#32;period_lb;
+<anchor xml:id="_base_8hpp_source_1l00142"/>00142 &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;tmp&#32;=&#32;fmodf(data&#32;-&#32;period_lb,&#32;period);&#32;&#32;<emphasis role="comment">//&#32;(-period,&#32;period)</emphasis>
+<anchor xml:id="_base_8hpp_source_1l00143"/>00143 
+<anchor xml:id="_base_8hpp_source_1l00144"/>00144 &#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(tmp&#32;&lt;&#32;0)&#32;{
+<anchor xml:id="_base_8hpp_source_1l00145"/>00145 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;tmp&#32;+&#32;period&#32;+&#32;period_lb;
+<anchor xml:id="_base_8hpp_source_1l00146"/>00146 &#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+<anchor xml:id="_base_8hpp_source_1l00147"/>00147 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;tmp&#32;+&#32;period_lb;
+<anchor xml:id="_base_8hpp_source_1l00148"/>00148 &#32;&#32;}
+<anchor xml:id="_base_8hpp_source_1l00149"/>00149 }
+<anchor xml:id="_base_8hpp_source_1l00150"/>00150 
+<anchor xml:id="_base_8hpp_source_1l00160"/><link linkend="_namespacehello__world_1aa2fc22e21a1835072f26dea54497255c">00160</link> <emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_namespacehello__world_1aa2fc22e21a1835072f26dea54497255c">PeriodData2SameRegion</link>(<emphasis role="keywordtype">float</emphasis>&#32;period_lb,&#32;<emphasis role="keywordtype">float</emphasis>&#32;period_ub,
+<anchor xml:id="_base_8hpp_source_1l00161"/>00161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;ref_data,&#32;<emphasis role="keywordtype">float</emphasis>&#32;data)
+<anchor xml:id="_base_8hpp_source_1l00162"/>00162 {
+<anchor xml:id="_base_8hpp_source_1l00163"/>00163 &#32;&#32;<link linkend="_assert_8hpp_1a5969df827ceb603bed14c4106586484a">HW_ASSERT</link>(period_ub&#32;&gt;&#32;period_lb,&#32;<emphasis role="stringliteral">&quot;lower&#32;bound&#32;is&#32;larger&#32;than&#32;upper&#32;bound&quot;</emphasis>);
+<anchor xml:id="_base_8hpp_source_1l00164"/>00164 
+<anchor xml:id="_base_8hpp_source_1l00165"/>00165 &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;period&#32;=&#32;period_ub&#32;-&#32;period_lb;
+<anchor xml:id="_base_8hpp_source_1l00166"/>00166 
+<anchor xml:id="_base_8hpp_source_1l00167"/>00167 &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;delta_k&#32;=&#32;floorf((ref_data&#32;-&#32;period_lb)&#32;/&#32;period)&#32;-
+<anchor xml:id="_base_8hpp_source_1l00168"/>00168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;floorf((data&#32;-&#32;period_lb)&#32;/&#32;period);
+<anchor xml:id="_base_8hpp_source_1l00169"/>00169 &#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;data&#32;+&#32;delta_k&#32;*&#32;period;
+<anchor xml:id="_base_8hpp_source_1l00170"/>00170 }
+<anchor xml:id="_base_8hpp_source_1l00171"/>00171 
+<anchor xml:id="_base_8hpp_source_1l00180"/><link linkend="_namespacehello__world_1a8d23c04b152e4fb0c195a75e185f75ed">00180</link> <emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_namespacehello__world_1a8d23c04b152e4fb0c195a75e185f75ed">PeriodData2NearestDist</link>(<emphasis role="keywordtype">float</emphasis>&#32;period,&#32;<emphasis role="keywordtype">float</emphasis>&#32;ref_data,&#32;<emphasis role="keywordtype">float</emphasis>&#32;data)
+<anchor xml:id="_base_8hpp_source_1l00181"/>00181 {
+<anchor xml:id="_base_8hpp_source_1l00182"/>00182 &#32;&#32;<link linkend="_assert_8hpp_1a5969df827ceb603bed14c4106586484a">HW_ASSERT</link>(period&#32;&gt;&#32;0,&#32;<emphasis role="stringliteral">&quot;period&#32;&lt;=&#32;0&quot;</emphasis>);
+<anchor xml:id="_base_8hpp_source_1l00183"/>00183 
+<anchor xml:id="_base_8hpp_source_1l00184"/>00184 &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;delta_k&#32;=&#32;roundf((ref_data&#32;-&#32;data)&#32;/&#32;period);
+<anchor xml:id="_base_8hpp_source_1l00185"/>00185 &#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;data&#32;+&#32;delta_k&#32;*&#32;period;
+<anchor xml:id="_base_8hpp_source_1l00186"/>00186 }
+<anchor xml:id="_base_8hpp_source_1l00187"/>00187 
+<anchor xml:id="_base_8hpp_source_1l00194"/><link linkend="_namespacehello__world_1a2b175ee3711275a8279ab6553620bca7">00194</link> <emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_namespacehello__world_1a2b175ee3711275a8279ab6553620bca7">AngleNormRad</link>(<emphasis role="keywordtype">float</emphasis>&#32;angle)
+<anchor xml:id="_base_8hpp_source_1l00195"/>00195 {
+<anchor xml:id="_base_8hpp_source_1l00196"/>00196 &#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_namespacehello__world_1a71f5ddbc81f1fa181ecefaf0b1f51fa8">NormPeriodData</link>(-<link linkend="_base_8hpp_1a598a3330b3c21701223ee0ca14316eca">PI</link>,&#32;<link linkend="_base_8hpp_1a598a3330b3c21701223ee0ca14316eca">PI</link>,&#32;angle);
+<anchor xml:id="_base_8hpp_source_1l00197"/>00197 }
+<anchor xml:id="_base_8hpp_source_1l00198"/>00198 
+<anchor xml:id="_base_8hpp_source_1l00205"/><link linkend="_namespacehello__world_1aa44c70128980881ac6260af9f928309a">00205</link> <emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_namespacehello__world_1aa44c70128980881ac6260af9f928309a">AngleNormDeg</link>(<emphasis role="keywordtype">float</emphasis>&#32;angle)
+<anchor xml:id="_base_8hpp_source_1l00206"/>00206 {
+<anchor xml:id="_base_8hpp_source_1l00207"/>00207 &#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_namespacehello__world_1a71f5ddbc81f1fa181ecefaf0b1f51fa8">NormPeriodData</link>(-180,&#32;180,&#32;angle);
+<anchor xml:id="_base_8hpp_source_1l00208"/>00208 }
+<anchor xml:id="_base_8hpp_source_1l00209"/>00209 
+<anchor xml:id="_base_8hpp_source_1l00222"/><link linkend="_namespacehello__world_1ab46e2d75fde6b8f67bd6d21c61508e47">00222</link> <emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_namespacehello__world_1ab46e2d75fde6b8f67bd6d21c61508e47">PeriodDataSub</link>(<emphasis role="keywordtype">float</emphasis>&#32;minuend,&#32;<emphasis role="keywordtype">float</emphasis>&#32;subtrahend,&#32;<emphasis role="keywordtype">float</emphasis>&#32;period)
+<anchor xml:id="_base_8hpp_source_1l00223"/>00223 {
+<anchor xml:id="_base_8hpp_source_1l00224"/>00224 &#32;&#32;<link linkend="_assert_8hpp_1a5969df827ceb603bed14c4106586484a">HW_ASSERT</link>(period&#32;&gt;&#32;0,&#32;<emphasis role="stringliteral">&quot;val&#32;must&#32;be&#32;larger&#32;than&#32;0&quot;</emphasis>);
+<anchor xml:id="_base_8hpp_source_1l00225"/>00225 &#32;&#32;period&#32;=&#32;period&#32;&lt;&#32;0&#32;?&#32;-period&#32;:&#32;period;
+<anchor xml:id="_base_8hpp_source_1l00226"/>00226 
+<anchor xml:id="_base_8hpp_source_1l00227"/>00227 &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;diff&#32;=&#32;minuend&#32;-&#32;subtrahend;
+<anchor xml:id="_base_8hpp_source_1l00228"/>00228 &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;times&#32;=&#32;roundf(diff&#32;/&#32;period);
+<anchor xml:id="_base_8hpp_source_1l00229"/>00229 &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;res&#32;=&#32;diff&#32;-&#32;times&#32;*&#32;period;
+<anchor xml:id="_base_8hpp_source_1l00230"/>00230 
+<anchor xml:id="_base_8hpp_source_1l00231"/>00231 &#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_base_8hpp_source_1l00232"/>00232 };
+<anchor xml:id="_base_8hpp_source_1l00233"/><link linkend="_namespacehello__world_1a7640febc082ad62910c63a8feac1c002">00233</link> <emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_namespacehello__world_1a7640febc082ad62910c63a8feac1c002">HandleAngleCross0Rad</link>(<emphasis role="keywordtype">float</emphasis>&#32;ref,&#32;<emphasis role="keywordtype">float</emphasis>&#32;fdb)
+<anchor xml:id="_base_8hpp_source_1l00234"/>00234 {
+<anchor xml:id="_base_8hpp_source_1l00235"/>00235 &#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;ref&#32;+&#32;<link linkend="_namespacehello__world_1ab46e2d75fde6b8f67bd6d21c61508e47">PeriodDataSub</link>(ref,&#32;fdb,&#32;<link linkend="_base_8hpp_1a598a3330b3c21701223ee0ca14316eca">PI</link>&#32;*&#32;2);
+<anchor xml:id="_base_8hpp_source_1l00236"/>00236 };
+<anchor xml:id="_base_8hpp_source_1l00237"/><link linkend="_namespacehello__world_1a7c9ce795c80c4bc674e5470984f99105">00237</link> <emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_namespacehello__world_1a7c9ce795c80c4bc674e5470984f99105">HandleAngleCross0Deg</link>(<emphasis role="keywordtype">float</emphasis>&#32;ref,&#32;<emphasis role="keywordtype">float</emphasis>&#32;fdb)
+<anchor xml:id="_base_8hpp_source_1l00238"/>00238 {
+<anchor xml:id="_base_8hpp_source_1l00239"/>00239 &#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;ref&#32;+&#32;<link linkend="_namespacehello__world_1ab46e2d75fde6b8f67bd6d21c61508e47">PeriodDataSub</link>(ref,&#32;fdb,&#32;360.0f);
+<anchor xml:id="_base_8hpp_source_1l00240"/>00240 };
+<anchor xml:id="_base_8hpp_source_1l00241"/>00241 
+<anchor xml:id="_base_8hpp_source_1l00248"/><link linkend="_namespacehello__world_1a8592f8f4b1bf9644d335a61a9d39c543">00248</link> <emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_namespacehello__world_1a8592f8f4b1bf9644d335a61a9d39c543">Rad2Deg</link>(<emphasis role="keywordtype">float</emphasis>&#32;angle)&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;angle&#32;*&#32;<link linkend="_namespacehello__world_1a219e78545f9e9d3987fae46cf7fcdd75">kRad2DegCoff</link>;&#32;}
+<anchor xml:id="_base_8hpp_source_1l00249"/>00249 
+<anchor xml:id="_base_8hpp_source_1l00256"/><link linkend="_namespacehello__world_1afe0a0d8e82fa09f451155c7b2145121c">00256</link> <emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_namespacehello__world_1afe0a0d8e82fa09f451155c7b2145121c">Deg2Rad</link>(<emphasis role="keywordtype">float</emphasis>&#32;angle)&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;angle&#32;*&#32;<link linkend="_namespacehello__world_1aff7ca8b5f1a544cfb645d20c17b2ebcf">kDeg2RadCoff</link>;&#32;}
+<anchor xml:id="_base_8hpp_source_1l00257"/>00257 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;hello_world</emphasis>
+<anchor xml:id="_base_8hpp_source_1l00258"/>00258 
+<anchor xml:id="_base_8hpp_source_1l00259"/>00259 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;HW_COMPONENTS_TOOLS_BASE_HPP_&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+</programlisting></section>

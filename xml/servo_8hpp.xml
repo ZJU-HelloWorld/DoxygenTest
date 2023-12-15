@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="servo_8hpp" kind="file" language="C++">
+    <compoundname>servo.hpp</compoundname>
+    <includes local="yes">stm32f4xx_hal.h</includes>
+    <includes refid="system_8hpp" local="yes">system.hpp</includes>
+    <includedby refid="servo_8cpp" local="yes">HW-Components/devices/servo/src/servo.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>HW-Components/devices/servo/inc/servo.hpp</label>
+        <link refid="servo_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>system.hpp</label>
+        <link refid="system_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cstdlib</label>
+      </node>
+      <node id="2">
+        <label>stm32f4xx_hal.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>HW-Components/devices/servo/inc/servo.hpp</label>
+        <link refid="servo_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>HW-Components/devices/servo/src/servo.cpp</label>
+        <link refid="servo_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structhello__world_1_1devices_1_1servo_1_1_servo_info" prot="public">hello_world::devices::servo::ServoInfo</innerclass>
+    <innerclass refid="classhello__world_1_1devices_1_1servo_1_1_servo" prot="public">hello_world::devices::servo::Servo</innerclass>
+    <innernamespace refid="namespacehello__world">hello_world</innernamespace>
+    <innernamespace refid="namespacehello__world_1_1devices">hello_world::devices</innernamespace>
+    <innernamespace refid="namespacehello__world_1_1devices_1_1servo">hello_world::devices::servo</innernamespace>
+    <briefdescription>
+<para>: @history : Version Date Author Note V0.9.0 2023-11-27 Caikunzhen 1. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>未测试版本</para>
+<para><simplesect kind="attention"><para>:</para>
+</simplesect>
+Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HW_COMPONENTS_DEVICES_SERVO_SERVO_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HW_COMPONENTS_DEVICES_SERVO_SERVO_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stm32f4xx_hal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="system_8hpp" kindref="compound">system.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacehello__world" kindref="compound">hello_world</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">devices</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27" refid="namespacehello__world_1_1devices_1_1servo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">servo</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>macro<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>constants<sp/>--------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>types<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="structhello__world_1_1devices_1_1servo_1_1_servo_info" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structhello__world_1_1devices_1_1servo_1_1_servo_info" kindref="compound">ServoInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="33" refid="structhello__world_1_1devices_1_1servo_1_1_servo_info_1a8909ce384f2bfc568b0d8de853441dfe" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structhello__world_1_1devices_1_1servo_1_1_servo_info_1a8909ce384f2bfc568b0d8de853441dfe" kindref="member">operating_freq</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34" refid="structhello__world_1_1devices_1_1servo_1_1_servo_info_1a54283a2b415c5c18adceaf3ba4ebb40c" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="structhello__world_1_1devices_1_1servo_1_1_servo_info_1a54283a2b415c5c18adceaf3ba4ebb40c" kindref="member">min_pulse_duration</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="35" refid="structhello__world_1_1devices_1_1servo_1_1_servo_info_1a8a375675055ea690bd3b54674d25a23f" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="structhello__world_1_1devices_1_1servo_1_1_servo_info_1a8a375675055ea690bd3b54674d25a23f" kindref="member">max_pulse_duration</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="36" refid="structhello__world_1_1devices_1_1servo_1_1_servo_info_1af9e22985d9ba75c434ad168ef8db8b73" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structhello__world_1_1devices_1_1servo_1_1_servo_info_1af9e22985d9ba75c434ad168ef8db8b73" kindref="member">angle_range</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classhello__world_1_1devices_1_1servo_1_1_servo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classhello__world_1_1devices_1_1servo_1_1_servo" kindref="compound">Servo</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classhello__world_1_1_mem_mang" kindref="compound">MemMang</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><ref refid="classhello__world_1_1devices_1_1servo_1_1_servo" kindref="compound">Servo</ref>(TIM_HandleTypeDef<sp/>*htim,<sp/>uint32_t<sp/>channel,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structhello__world_1_1devices_1_1servo_1_1_servo_info" kindref="compound">ServoInfo</ref><sp/>&amp;servo_info,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>init_angle);</highlight></codeline>
+<codeline lineno="44" refid="classhello__world_1_1devices_1_1servo_1_1_servo_1a254eee3c95b8d142babe952441790e99" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classhello__world_1_1devices_1_1servo_1_1_servo_1a254eee3c95b8d142babe952441790e99" kindref="member">~Servo</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classhello__world_1_1devices_1_1servo_1_1_servo_1a8c9c025ba0597d51a6e8933bce379f0e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classhello__world_1_1devices_1_1servo_1_1_servo_1a8c9c025ba0597d51a6e8933bce379f0e" kindref="member">enable</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/>HAL_TIM_PWM_Start(<ref refid="classhello__world_1_1devices_1_1servo_1_1_servo_1ab09397483f5eb4ac6f879dbaa00407f2" kindref="member">kHtim_</ref>,<sp/><ref refid="classhello__world_1_1devices_1_1servo_1_1_servo_1af7138e8cec740393fc793674d9ac23f2" kindref="member">kChannel_</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classhello__world_1_1devices_1_1servo_1_1_servo_1ab2e32fc0b9d42094ba9bda1371c4ff84" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classhello__world_1_1devices_1_1servo_1_1_servo_1ab2e32fc0b9d42094ba9bda1371c4ff84" kindref="member">disable</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/>HAL_TIM_PWM_Stop(<ref refid="classhello__world_1_1devices_1_1servo_1_1_servo_1ab09397483f5eb4ac6f879dbaa00407f2" kindref="member">kHtim_</ref>,<sp/><ref refid="classhello__world_1_1devices_1_1servo_1_1_servo_1af7138e8cec740393fc793674d9ac23f2" kindref="member">kChannel_</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classhello__world_1_1devices_1_1servo_1_1_servo_1a22fff12088bc63dc21cace008a5e1b35" kindref="member">setAngle</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="classhello__world_1_1devices_1_1servo_1_1_servo_1ab09397483f5eb4ac6f879dbaa00407f2" refkind="member"><highlight class="normal"><sp/><sp/>TIM_HandleTypeDef<sp/>*</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classhello__world_1_1devices_1_1servo_1_1_servo_1ab09397483f5eb4ac6f879dbaa00407f2" kindref="member">kHtim_</ref>;</highlight></codeline>
+<codeline lineno="63" refid="classhello__world_1_1devices_1_1servo_1_1_servo_1af7138e8cec740393fc793674d9ac23f2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="classhello__world_1_1devices_1_1servo_1_1_servo_1af7138e8cec740393fc793674d9ac23f2" kindref="member">kChannel_</ref>;</highlight></codeline>
+<codeline lineno="64" refid="classhello__world_1_1devices_1_1servo_1_1_servo_1a970450231a2ce7b2057d8be915ffde22" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structhello__world_1_1devices_1_1servo_1_1_servo_info" kindref="compound">ServoInfo</ref><sp/><ref refid="classhello__world_1_1devices_1_1servo_1_1_servo_1a970450231a2ce7b2057d8be915ffde22" kindref="member">kServoInfo_</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="classhello__world_1_1devices_1_1servo_1_1_servo_1af678b6d9c70e3be611755ac1ae233aa5" kindref="member">angle2Cmp</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>variables<sp/>--------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>function<sp/>prototypes<sp/>----------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>servo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>devices</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>hello_world</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HW_COMPONENTS_DEVICES_SERVO_SERVO_HPP_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="HW-Components/devices/servo/inc/servo.hpp"/>
+  </compounddef>
+</doxygen>

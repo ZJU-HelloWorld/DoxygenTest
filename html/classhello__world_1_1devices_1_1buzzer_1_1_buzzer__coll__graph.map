@@ -1,0 +1,7 @@
+<map id="hello_world::devices::buzzer::Buzzer" name="hello_world::devices::buzzer::Buzzer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="101,108,238,148"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1_mem_mang.html" title=" " alt="" coords="5,13,160,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,48,155,106,151,109,100,51"/>
+<area shape="rect" id="Node000003" href="$structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info.html" title=" " alt="" coords="184,5,331,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,58,188,109,184,106,229,55"/>
+</map>

@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classhello__world_1_1devices_1_1laser_1_1_laser" xml:lang="zh">
+<title>hello_world::devices::laser::Laser类 参考</title>
+<indexterm><primary>hello_world::devices::laser::Laser</primary></indexterm>
+<para>
+<computeroutput>#include &lt;laser.hpp&gt;</computeroutput>
+</para>
+类 hello_world::devices::laser::Laser 继承关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1laser_1_1_laser__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+hello_world::devices::laser::Laser 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1laser_1_1_laser__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1laser_1_1_laser_1ade6858f65e516d3f2d99e140e27eeb21">Laser</link> (TIM_HandleTypeDef *htim, uint32_t channel, float init_lumin_pct)</para>
+
+<para>红点激光器初始化 </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classhello__world_1_1devices_1_1laser_1_1_laser_1a9f4ea681704258dc175f60b0edd17fc6">~Laser</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1devices_1_1laser_1_1_laser_1a82e3b6972b84d5aa02ad66d74451f83d">enable</link> () const</para>
+
+<para>启用红点激光器 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1devices_1_1laser_1_1_laser_1a19a88ca1a3d6dd1f48f7d26e2d9cecf9">disable</link> () const</para>
+
+<para>关闭红点激光器 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1devices_1_1laser_1_1_laser_1ae18c0d286f4c46619adf603ef47ecdb5">setLuminPct</link> (float lumin_pct) const</para>
+
+<para>设置红点激光器百分比亮度 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public 成员函数 继承自 <link linkend="_classhello__world_1_1_mem_mang">hello_world::MemMang</link>        <itemizedlist>
+            <listitem><para>void * <link linkend="_classhello__world_1_1_mem_mang_1abcf6e7289814e8da342ba4f47d8af411">operator new</link> (size_t size)</para>
+</listitem>
+            <listitem><para>void * <link linkend="_classhello__world_1_1_mem_mang_1ad10b6eff1541322708e5bde32c590c82">operator new[]</link> (size_t size)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1_mem_mang_1abf1fe21066f52d693e2eec63a5833e8e">operator delete</link> (void *ptr)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1_mem_mang_1a54e1a6a8e01b0996cc2854a8bc1ce7bd">operator delete[]</link> (void *ptr)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para>TIM_HandleTypeDef *const <link linkend="_classhello__world_1_1devices_1_1laser_1_1_laser_1a855fe4a608cd7a3be9648ed1023cb96c">kHtim_</link></para>
+</listitem>
+            <listitem><para>const uint32_t <link linkend="_classhello__world_1_1devices_1_1laser_1_1_laser_1aad5f30954299751858b4b78238061e3d">kChannel_</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 成员函数    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_classhello__world_1_1devices_1_1laser_1_1_laser_1a71727ea81371581d369751653e0fc5ca">luminPct2Cmp</link> (float lumin_pct) const</para>
+
+<para>百分比亮度转定时器PWM比较值 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+<para>
+在文件 <link linkend="_laser_8hpp_source">laser.hpp</link> 第 <link linkend="_laser_8hpp_source_1l00034">34</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_classhello__world_1_1devices_1_1laser_1_1_laser_1ade6858f65e516d3f2d99e140e27eeb21"/><section>
+    <title>Laser()</title>
+<indexterm><primary>Laser</primary><secondary>hello_world::devices::laser::Laser</secondary></indexterm>
+<indexterm><primary>hello_world::devices::laser::Laser</primary><secondary>Laser</secondary></indexterm>
+<para><computeroutput>hello_world::devices::laser::Laser::Laser (TIM_HandleTypeDef * htim, uint32_t channel, float init_lumin_pct)</computeroutput></para><para>
+
+<para>红点激光器初始化 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>htim</entry><entry>
+<para>定时器句柄指针 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>channel</entry><entry>
+<para>定时器PWM对应输出通道 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>init_lumin_pct</entry><entry>
+<para>初始化百分比亮度（0 ~ 100） </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>百分比亮度会被自动限制在合理范围内， 初始化后红点激光器默认处于开启状态 </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="_laser_8cpp_source">laser.cpp</link> 第 <link linkend="_laser_8cpp_source_1l00044">44</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1laser_1_1_laser_ade6858f65e516d3f2d99e140e27eeb21_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1laser_1_1_laser_1a9f4ea681704258dc175f60b0edd17fc6"/><section>
+    <title>~Laser()</title>
+<indexterm><primary>~Laser</primary><secondary>hello_world::devices::laser::Laser</secondary></indexterm>
+<indexterm><primary>hello_world::devices::laser::Laser</primary><secondary>~Laser</secondary></indexterm>
+<para><computeroutput>virtual hello_world::devices::laser::Laser::~Laser ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_laser_8hpp_source">laser.hpp</link> 第 <link linkend="_laser_8hpp_source_1l00038">38</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classhello__world_1_1devices_1_1laser_1_1_laser_1a19a88ca1a3d6dd1f48f7d26e2d9cecf9"/><section>
+    <title>disable()</title>
+<indexterm><primary>disable</primary><secondary>hello_world::devices::laser::Laser</secondary></indexterm>
+<indexterm><primary>hello_world::devices::laser::Laser</primary><secondary>disable</secondary></indexterm>
+<para><computeroutput>void hello_world::devices::laser::Laser::disable ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>关闭红点激光器 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>None </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="_laser_8hpp_source">laser.hpp</link> 第 <link linkend="_laser_8hpp_source_1l00052">52</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1laser_1_1_laser_1a82e3b6972b84d5aa02ad66d74451f83d"/><section>
+    <title>enable()</title>
+<indexterm><primary>enable</primary><secondary>hello_world::devices::laser::Laser</secondary></indexterm>
+<indexterm><primary>hello_world::devices::laser::Laser</primary><secondary>enable</secondary></indexterm>
+<para><computeroutput>void hello_world::devices::laser::Laser::enable ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>启用红点激光器 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>None </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="_laser_8hpp_source">laser.hpp</link> 第 <link linkend="_laser_8hpp_source_1l00045">45</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1laser_1_1_laser_1a71727ea81371581d369751653e0fc5ca"/><section>
+    <title>luminPct2Cmp()</title>
+<indexterm><primary>luminPct2Cmp</primary><secondary>hello_world::devices::laser::Laser</secondary></indexterm>
+<indexterm><primary>hello_world::devices::laser::Laser</primary><secondary>luminPct2Cmp</secondary></indexterm>
+<para><computeroutput>uint32_t hello_world::devices::laser::Laser::luminPct2Cmp (float lumin_pct) const<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>百分比亮度转定时器PWM比较值 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>lumin_pct</entry><entry>
+<para>百分比亮度（0 ~ 100） </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>定时器PWM比较值</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>百分比亮度会被自动限制在合理范围内 </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="_laser_8cpp_source">laser.cpp</link> 第 <link linkend="_laser_8cpp_source_1l00074">74</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1laser_1_1_laser_a71727ea81371581d369751653e0fc5ca_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1laser_1_1_laser_a71727ea81371581d369751653e0fc5ca_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1laser_1_1_laser_1ae18c0d286f4c46619adf603ef47ecdb5"/><section>
+    <title>setLuminPct()</title>
+<indexterm><primary>setLuminPct</primary><secondary>hello_world::devices::laser::Laser</secondary></indexterm>
+<indexterm><primary>hello_world::devices::laser::Laser</primary><secondary>setLuminPct</secondary></indexterm>
+<para><computeroutput>void hello_world::devices::laser::Laser::setLuminPct (float lumin_pct) const</computeroutput></para><para>
+
+<para>设置红点激光器百分比亮度 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>lumin_pct</entry><entry>
+<para>百分比亮度（0 ~ 100） </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>百分比亮度会被自动限制在合理范围内 </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="_laser_8cpp_source">laser.cpp</link> 第 <link linkend="_laser_8cpp_source_1l00063">63</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1laser_1_1_laser_ae18c0d286f4c46619adf603ef47ecdb5_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classhello__world_1_1devices_1_1laser_1_1_laser_1aad5f30954299751858b4b78238061e3d"/><section>
+    <title>kChannel_</title>
+<indexterm><primary>kChannel_</primary><secondary>hello_world::devices::laser::Laser</secondary></indexterm>
+<indexterm><primary>hello_world::devices::laser::Laser</primary><secondary>kChannel_</secondary></indexterm>
+<para><computeroutput>const uint32_t hello_world::devices::laser::Laser::kChannel_</computeroutput></para><para>
+在文件 <link linkend="_laser_8hpp_source">laser.hpp</link> 第 <link linkend="_laser_8hpp_source_1l00057">57</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1laser_1_1_laser_1a855fe4a608cd7a3be9648ed1023cb96c"/><section>
+    <title>kHtim_</title>
+<indexterm><primary>kHtim_</primary><secondary>hello_world::devices::laser::Laser</secondary></indexterm>
+<indexterm><primary>hello_world::devices::laser::Laser</primary><secondary>kHtim_</secondary></indexterm>
+<para><computeroutput>TIM_HandleTypeDef* const hello_world::devices::laser::Laser::kHtim_</computeroutput></para><para>
+在文件 <link linkend="_laser_8hpp_source">laser.hpp</link> 第 <link linkend="_laser_8hpp_source_1l00056">56</link> 行定义.</para>
+</section>
+</section>
+</section>

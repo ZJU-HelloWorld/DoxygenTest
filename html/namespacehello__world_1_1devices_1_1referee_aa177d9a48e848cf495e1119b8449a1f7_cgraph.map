@@ -1,0 +1,5 @@
+<map id="hello_world::devices::referee::VerifyCrc16CheckSum" name="hello_world::devices::referee::VerifyCrc16CheckSum">
+<area shape="rect" id="Node000001" title="Verifies the CRC16 checksum of a message." alt="" coords="5,5,213,45"/>
+<area shape="rect" id="Node000002" href="$namespacehello__world_1_1devices_1_1referee.html#a30f1e50d6e85c306486883a0668b7f50" title="Calculate and return the CRC16 checksum of a message." alt="" coords="261,5,457,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,23,247,23,247,28,214,28"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="hello_world::devices::motor::DM_J4310::raw2curr" name="hello_world::devices::motor::DM_J4310::raw2curr">
+<area shape="rect" id="Node000001" title="将原始报文内容转换为转子电流" alt="" coords="236,5,425,45"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#a84ecfac4c74e3f0f7b85fba6c69f2aa1" title="将电调发回的 CAN 报文进行解包" alt="" coords="5,5,188,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,28,188,28,188,23,221,23"/>
+</map>

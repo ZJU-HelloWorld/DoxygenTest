@@ -1,0 +1,338 @@
+\doxysection{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::Inte\+Separation类 参考}
+\hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation}{}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation}\index{hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}}
+
+
+积分分离优化类  
+
+
+
+
+{\ttfamily \#include $<$pid\+\_\+opt.\+hpp$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_aef48252097d7a6124d95f70655049da1}{Inte\+Separation}} (bool is\+\_\+enabled=false, float lower=-\/0.\+01, float upper=0.\+01)
+\begin{DoxyCompactList}\small\item\em 构造函数，初始化积分分离优化参数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_ad8ba81bb697a83d3441030e54c3f9efb}{set\+Enabled}} (bool is\+\_\+enabled)
+\begin{DoxyCompactList}\small\item\em 设置是否启用积分分离优化 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a691be4f9d4c9afca98b56c790a931178}{set\+Lower}} (float lower)
+\begin{DoxyCompactList}\small\item\em 触发积分分离的误差值下限 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_adc622a3fbd9c6ffc02ba194be3f44728}{set\+Upper}} (float upper)
+\begin{DoxyCompactList}\small\item\em 触发积分分离的误差值上限 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_af42d69d2d570f2bb4049e4488675d9c2}{set\+Params}} (bool is\+\_\+enabled, float lower, float upper)
+\begin{DoxyCompactList}\small\item\em 设置积分分离优化参数 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a97563f41187932bac8b7bd882c26686e}{is\+Legal}} ()
+\begin{DoxyCompactList}\small\item\em 检查积分分离优化参数是否合法 判定条件为：lower \texorpdfstring{$<$}{<}= upper \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a2f95e2c479492053a3b852200bb4d8ac}{is\+Enabled}} ()
+\begin{DoxyCompactList}\small\item\em 检查是否启用了积分分离优化 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a882d032c53d0a62764140564737524ff}{calc}} (float err)
+\begin{DoxyCompactList}\small\item\em 计算积分分离优化后的输出值 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_ad968a914a79f6fa4c8220d5770b00d52}{handle\+Illegal\+Params}} ()
+\begin{DoxyCompactList}\small\item\em 处理非法参数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_ae3c971f227d276220e6e78432157401f}{is\+\_\+enabled\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 是否启用积分分离优化 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a184372730ac1a2b4105cfc98a271feb4}{lower\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 触发积分分离的误差值下限 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_ade70be3123b226c5b3c571f839e54610}{upper\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 触发积分分离的误差值上限 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+积分分离优化类 
+
+积分环节的作用主要为消除静差，提高控制精度。 但在短时间系统输出产生较大偏差时，可能会造成积分过度积累，使控制量过大，引起系统超调甚至振荡。 此时需要引入积分分离，当被控量与给定值偏差较大时，取消积分作用；接近时引入积分控制。 积分项表示为：\$u\+\_\+i(k)=\textbackslash{}beta \textbackslash{}sum\+\_\+\{j=t\+\_\+0\}\texorpdfstring{$^\wedge$}{\string^}k\{K\+\_\+i e\+\_\+i(j)\}\$。 其中 \$\textbackslash{}beta\$ 为积分分离系数，可由该类计算得到。
+\begin{DoxyItemize}
+\item 具体计算公式见{\ttfamily \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a882d032c53d0a62764140564737524ff}{calc(float err)}}。
+\item 参数合法性检查见{\ttfamily \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a97563f41187932bac8b7bd882c26686e}{is\+Legal()}}。
+\item 启用判定见{\ttfamily \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a2f95e2c479492053a3b852200bb4d8ac}{is\+Enabled()}}。 
+\end{DoxyItemize}
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00286}{286}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_aef48252097d7a6124d95f70655049da1}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_aef48252097d7a6124d95f70655049da1} 
+\index{hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}!InteSeparation@{InteSeparation}}
+\index{InteSeparation@{InteSeparation}!hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}}
+\doxysubsubsection{\texorpdfstring{InteSeparation()}{InteSeparation()}}
+{\footnotesize\ttfamily hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Inte\+Separation\+::\+Inte\+Separation (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+enabled = {\ttfamily false},  }\item[{float}]{lower = {\ttfamily -\/0.01},  }\item[{float}]{upper = {\ttfamily 0.01} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+构造函数，初始化积分分离优化参数 
+
+
+\begin{DoxyParams}{参数}
+{\em is\+\_\+enabled} & 是否启用积分分离优化，默认为false \\
+\hline
+{\em lower} & 触发积分分离的误差值值为-\/0.01 \\
+\hline
+{\em upper} & 触发积分分离的误差值为0.01 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00295}{295}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a882d032c53d0a62764140564737524ff}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a882d032c53d0a62764140564737524ff} 
+\index{hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}!calc@{calc}}
+\index{calc@{calc}!hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}}
+\doxysubsubsection{\texorpdfstring{calc()}{calc()}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Inte\+Separation\+::calc (\begin{DoxyParamCaption}\item[{float}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+计算积分分离优化后的输出值 
+
+具体的计算公式\+:  \[
+\beta=\begin{cases}
+0&,&isEnabled() \wedge e_i(k) \notin \left [\epsilon_l ,\epsilon_u \right]  \\
+1&,&others
+\end{cases}
+\]， 其中 $\epsilon_l$ 为参数中的下限值， $\epsilon_u$为参数中的上限值。 
+\begin{DoxyParams}{参数}
+{\em err} & 本次采样的误差值 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+本次采样的积分分离优化后的输出值 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em 0} & 当 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a2f95e2c479492053a3b852200bb4d8ac}{is\+Enabled()} 且 e\+\_\+i(k) 不在区间 \mbox{[}lower\+\_\+,upper\+\_\+\mbox{]} \\
+\hline
+{\em 1} & 其他情况 \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00383}{383}} 行定义.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a882d032c53d0a62764140564737524ff_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_ad968a914a79f6fa4c8220d5770b00d52}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_ad968a914a79f6fa4c8220d5770b00d52} 
+\index{hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}!handleIllegalParams@{handleIllegalParams}}
+\index{handleIllegalParams@{handleIllegalParams}!hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}}
+\doxysubsubsection{\texorpdfstring{handleIllegalParams()}{handleIllegalParams()}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Inte\+Separation\+::handle\+Illegal\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+处理非法参数 
+
+\begin{DoxyReturn}{返回}
+如果存在非法参数返回true，否则返回false 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00403}{403}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a2f95e2c479492053a3b852200bb4d8ac}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a2f95e2c479492053a3b852200bb4d8ac} 
+\index{hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}!isEnabled@{isEnabled}}
+\index{isEnabled@{isEnabled}!hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}}
+\doxysubsubsection{\texorpdfstring{isEnabled()}{isEnabled()}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Inte\+Separation\+::is\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+检查是否启用了积分分离优化 
+
+\begin{DoxyReturn}{返回}
+如果启用了积分分离优化并且参数合法，则返回true，否则返回false 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00366}{366}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a97563f41187932bac8b7bd882c26686e}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a97563f41187932bac8b7bd882c26686e} 
+\index{hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}!isLegal@{isLegal}}
+\index{isLegal@{isLegal}!hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}}
+\doxysubsubsection{\texorpdfstring{isLegal()}{isLegal()}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Inte\+Separation\+::is\+Legal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+检查积分分离优化参数是否合法 判定条件为：lower \texorpdfstring{$<$}{<}= upper 
+
+\begin{DoxyReturn}{返回}
+参数合法返回true，否则返回false 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00360}{360}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_ad8ba81bb697a83d3441030e54c3f9efb}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_ad8ba81bb697a83d3441030e54c3f9efb} 
+\index{hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}!setEnabled@{setEnabled}}
+\index{setEnabled@{setEnabled}!hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}}
+\doxysubsubsection{\texorpdfstring{setEnabled()}{setEnabled()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Inte\+Separation\+::set\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置是否启用积分分离优化 
+
+
+\begin{DoxyParams}{参数}
+{\em is\+\_\+enabled} & 是否启用积分分离优化 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+设置状态，成功返回k\+State\+Ok 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00306}{306}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a691be4f9d4c9afca98b56c790a931178}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a691be4f9d4c9afca98b56c790a931178} 
+\index{hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}!setLower@{setLower}}
+\index{setLower@{setLower}!hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}}
+\doxysubsubsection{\texorpdfstring{setLower()}{setLower()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Inte\+Separation\+::set\+Lower (\begin{DoxyParamCaption}\item[{float}]{lower }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+触发积分分离的误差值下限 
+
+
+\begin{DoxyParams}{参数}
+{\em lower} & 触发积分分离的误差值下限 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+设置状态，如果参数合法返回k\+State\+Ok，否则在处理非法参数后返回k\+State\+Error 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em k\+State\+OK} & 设置成功且参数合法 \\
+\hline
+{\em k\+State\+Error} & 设置成功但参数非法 \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00319}{319}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_af42d69d2d570f2bb4049e4488675d9c2}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_af42d69d2d570f2bb4049e4488675d9c2} 
+\index{hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}!setParams@{setParams}}
+\index{setParams@{setParams}!hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}}
+\doxysubsubsection{\texorpdfstring{setParams()}{setParams()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Inte\+Separation\+::set\+Params (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+enabled,  }\item[{float}]{lower,  }\item[{float}]{upper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置积分分离优化参数 
+
+
+\begin{DoxyParams}{参数}
+{\em is\+\_\+enabled} & 是否启用积分分离优化 \\
+\hline
+{\em lower} & 触发积分分离的误差值下限 \\
+\hline
+{\em upper} & 触发积分分离的误差值上限 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+设置状态，如果参数合法返回k\+State\+Ok，否则在处理非法参数后返回k\+State\+Error 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em k\+State\+OK} & 设置成功且参数合法 \\
+\hline
+{\em k\+State\+Error} & 设置成功但参数非法 \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00347}{347}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_adc622a3fbd9c6ffc02ba194be3f44728}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_adc622a3fbd9c6ffc02ba194be3f44728} 
+\index{hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}!setUpper@{setUpper}}
+\index{setUpper@{setUpper}!hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}}
+\doxysubsubsection{\texorpdfstring{setUpper()}{setUpper()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Inte\+Separation\+::set\+Upper (\begin{DoxyParamCaption}\item[{float}]{upper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+触发积分分离的误差值上限 
+
+
+\begin{DoxyParams}{参数}
+{\em upper} & 触发积分分离的误差值上限 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+设置状态，如果参数合法返回k\+State\+Ok，否则在处理非法参数后返回k\+State\+Error 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em k\+State\+OK} & 设置成功且参数合法 \\
+\hline
+{\em k\+State\+Error} & 设置成功但参数非法 \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00332}{332}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_ae3c971f227d276220e6e78432157401f}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_ae3c971f227d276220e6e78432157401f} 
+\index{hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}!is\_enabled\_@{is\_enabled\_}}
+\index{is\_enabled\_@{is\_enabled\_}!hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}}
+\doxysubsubsection{\texorpdfstring{is\_enabled\_}{is\_enabled\_}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Inte\+Separation\+::is\+\_\+enabled\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+是否启用积分分离优化 
+
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00395}{395}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a184372730ac1a2b4105cfc98a271feb4}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_a184372730ac1a2b4105cfc98a271feb4} 
+\index{hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}!lower\_@{lower\_}}
+\index{lower\_@{lower\_}!hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}}
+\doxysubsubsection{\texorpdfstring{lower\_}{lower\_}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Inte\+Separation\+::lower\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+触发积分分离的误差值下限 
+
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00396}{396}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_ade70be3123b226c5b3c571f839e54610}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_ade70be3123b226c5b3c571f839e54610} 
+\index{hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}!upper\_@{upper\_}}
+\index{upper\_@{upper\_}!hello\_world::algorithms::controller::pid::InteSeparation@{hello\_world::algorithms::controller::pid::InteSeparation}}
+\doxysubsubsection{\texorpdfstring{upper\_}{upper\_}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Inte\+Separation\+::upper\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+触发积分分离的误差值上限 
+
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00397}{397}} 行定义.
+

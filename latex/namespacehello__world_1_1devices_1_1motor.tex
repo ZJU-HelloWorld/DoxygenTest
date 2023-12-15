@@ -1,0 +1,674 @@
+\doxysection{hello\+\_\+world\+::devices\+::motor 命名空间参考}
+\hypertarget{namespacehello__world_1_1devices_1_1motor}{}\label{namespacehello__world_1_1devices_1_1motor}\index{hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_a1}{A1}}
+\item 
+class \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_d_m___j4310}{DM\+\_\+\+J4310}}
+\item 
+class \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020}{GM6020}}
+\item 
+class \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_m2006}{M2006}}
+\item 
+class \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_m3508}{M3508}}
+\item 
+class \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_m8910}{M8910}}
+\item 
+class \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_m_f9025v2}{MF9025v2}}
+\item 
+class \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor}{Motor}}
+\item 
+struct \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_base_info}{Motor\+Base\+Info}}
+\item 
+struct \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_info}{Motor\+Info}}
+\item 
+struct \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params}{Optional\+Params}}
+\begin{DoxyCompactList}\small\item\em 电机初始化可选参数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8}{Motor\+Type}} \{ \newline
+\mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8a07e240d42d2ba719073e07afb4203d04}{k\+Motor\+Type\+GM6020}}
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8a8c5f2196eac5420dc4627ef0514f558e}{k\+Motor\+Type\+M2006}}
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8a55160f7f5f669aa27a24c3cad2deaf1d}{k\+Motor\+Type\+M3508}}
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8ae6e021cdc218f10377913d33f426fb11}{k\+Motor\+Type\+M8910}}
+, \newline
+\mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8affc5737d4b2d3625a210240cd4315718}{k\+Motor\+Type\+A1}}
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8abd589290db96bf5712052ec3f3f3ee02}{k\+Motor\+Type\+DM\+\_\+\+J4310}}
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8a5a037ca22e20940dab8499c86f40fb49}{k\+Motor\+Type\+MF9025v2}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380c}{State}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380ca426fa281817a2eb81e04586488b8ca5a}{k\+State\+Ok}}
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380ca092964bcb48cb77568362247b1158499}{k\+State\+Input\+Value\+Overflow}}
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380cab9d834629e7bfe89857c5255d7afceb2}{k\+State\+Input\+Type\+Error}}
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380ca3619ca83b453126a092443ae1a86b241}{k\+State\+Id\+Dismatch}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7}{Input\+Type}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7a3af8d233b879c0e5323904dd850fbfe3}{k\+Input\+Type\+Raw}}
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7a40b16f84fe9bb51523ee837d347a7683}{k\+Input\+Type\+Torq}}
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7acbc926bf0e52b6d442d48680c808ba34}{k\+Input\+Type\+Curr}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a23bd0e79c78258c715635edf82874176}{Raw\+Mapping\+Type}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a23bd0e79c78258c715635edf82874176a868a7d6373e35d33e44c5bdedb446386}{k\+Raw\+Mapping\+Type\+Torq}}
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a23bd0e79c78258c715635edf82874176acd89116c1ee1b0662fd89ebdfd1e2ea0}{k\+Raw\+Mapping\+Type\+Curr}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a44985d99992e9464953d243bf3b561fd}{Dir}} \+: int8\+\_\+t \{ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a44985d99992e9464953d243bf3b561fda8ef76451782f120b178cb02bdcbe9917}{k\+Dir\+Fwd}} = 1
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a44985d99992e9464953d243bf3b561fdac8903b06755144e29386752630029652}{k\+Dir\+Rev}} = -\/1
+ \}
+\item 
+enum \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248}{Angle\+Range}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248a2f525a5ee04cacdb2fcbcdb636cf8e5a}{k\+Angle\+Range\+Neg\+Pi\+To\+Pos\+Pi}}
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248a7856b44581aabfcff60aedc2b603b471}{k\+Angle\+Range0\+To2\+Pi}}
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248a0e264d4f119a2e5d4c62691f3f35e317}{k\+Angle\+Range\+Neg\+Inf\+To\+Pos\+Inf}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor}{Motor}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae3492ca32e729aaaecd5def06d638f86}{Create\+Motor}} (\mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8}{Motor\+Type}} motor\+\_\+type, uint8\+\_\+t id, const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params}{Optional\+Params}} \&optinal\+\_\+params)
+\begin{DoxyCompactList}\small\item\em 根据所需的电机类型创建电机并初始化 \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_aa4ac89a85a2b03e90b1606d4c9962f7c}{\+\_\+\+Uint2\+Float}} (uint16\+\_\+t x\+\_\+int, float x\+\_\+max, float x\+\_\+min, uint8\+\_\+t bits)
+\begin{DoxyCompactList}\small\item\em 根据给定的范围和位数，将 uint 转换为 float \end{DoxyCompactList}\item 
+static uint16\+\_\+t \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a5102e8812e14a2caaf3a2fc96b18efa3}{\+\_\+\+Float2\+Uint}} (float x\+\_\+float, float x\+\_\+max, float x\+\_\+min, uint8\+\_\+t bits)
+\begin{DoxyCompactList}\small\item\em 根据给定的范围和位数，将 float 转换为 uint \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_abe2e70f5aab1c0e73122df8bad6de6a0}{k\+Invalid\+Value}} = 0
+\item 
+static const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_base_info}{Motor\+Base\+Info}} \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a267307d5493b054be2d47ffa1c9797de}{k\+A1\+Motor\+Base\+Info}}
+\item 
+static const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_base_info}{Motor\+Base\+Info}} \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a45f0b841847534b5cb7455ec6f03850e}{k\+DM\+\_\+\+J4310\+Motor\+Base\+Info}}
+\item 
+static const float \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ade1ddf6c56f452b2c6afb8a1a77c3d43}{k\+Max\+Angle}} = \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}}
+\item 
+static const uint8\+\_\+t \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a248f1a5b8885f8c77c3c57b290ea74a0}{k\+Angle\+Bits}} = 16
+\item 
+static const float \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae6d1c5130feaed18b1ea24e56558f1d2}{k\+Max\+Vel}} = 30.\+0f
+\item 
+static const uint8\+\_\+t \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a129d97ad5fb7c3e353a25baaab78ae15}{k\+Vel\+Bits}} = 12
+\item 
+static const float \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a45760c831ff44879601b0fa89298bd45}{k\+Max\+Torq}} = 7.\+0f
+\item 
+static const uint8\+\_\+t \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a10b013b169e858951f649bba557455c2}{k\+Torq\+Bits}} = 12
+\item 
+const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_base_info}{Motor\+Base\+Info}} \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a05fb66ade757503261251a0e07460d14}{k\+GM6020\+Motor\+Base\+Info}}
+\item 
+static const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_base_info}{Motor\+Base\+Info}} \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ab2588402294683d1108ee2748aefd3ec}{k\+M2006\+Motor\+Base\+Info}}
+\item 
+static const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_base_info}{Motor\+Base\+Info}} \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_abbee9fa151a937a62cacb780216cb02f}{k\+M3508\+Motor\+Base\+Info}}
+\item 
+static const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_base_info}{Motor\+Base\+Info}} \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a6a7687de11947f3d9c29a070fdea85b8}{k\+M8910\+Motor\+Base\+Info}}
+\item 
+static const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_base_info}{Motor\+Base\+Info}} \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_aa26ac6d14d2f7f43427bdd64c845b1bd}{k\+MF9025v2\+Motor\+Base\+Info}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{枚举类型说明}
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248}\label{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!AngleRange@{AngleRange}}
+\index{AngleRange@{AngleRange}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{AngleRange}{AngleRange}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248}{hello\+\_\+world\+::devices\+::motor\+::\+Angle\+Range}} \+: uint8\+\_\+t}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kAngleRangeNegPiToPosPi@{kAngleRangeNegPiToPosPi}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kAngleRangeNegPiToPosPi@{kAngleRangeNegPiToPosPi}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248a2f525a5ee04cacdb2fcbcdb636cf8e5a}\label{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248a2f525a5ee04cacdb2fcbcdb636cf8e5a} 
+k\+Angle\+Range\+Neg\+Pi\+To\+Pos\+Pi&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kAngleRange0To2Pi@{kAngleRange0To2Pi}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kAngleRange0To2Pi@{kAngleRange0To2Pi}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248a7856b44581aabfcff60aedc2b603b471}\label{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248a7856b44581aabfcff60aedc2b603b471} 
+k\+Angle\+Range0\+To2\+Pi&
+\begin{DoxyItemize}
+\item \mbox{[}-\/π, π) 
+\end{DoxyItemize}\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kAngleRangeNegInfToPosInf@{kAngleRangeNegInfToPosInf}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kAngleRangeNegInfToPosInf@{kAngleRangeNegInfToPosInf}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248a0e264d4f119a2e5d4c62691f3f35e317}\label{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248a0e264d4f119a2e5d4c62691f3f35e317} 
+k\+Angle\+Range\+Neg\+Inf\+To\+Pos\+Inf&
+\begin{DoxyItemize}
+\item \mbox{[}0, 2π) 
+\end{DoxyItemize}\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{motor__base_8hpp_source}{motor\+\_\+base.\+hpp}} 第 \mbox{\hyperlink{motor__base_8hpp_source_l00056}{56}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_a44985d99992e9464953d243bf3b561fd}\label{namespacehello__world_1_1devices_1_1motor_a44985d99992e9464953d243bf3b561fd} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!Dir@{Dir}}
+\index{Dir@{Dir}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{Dir}{Dir}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a44985d99992e9464953d243bf3b561fd}{hello\+\_\+world\+::devices\+::motor\+::\+Dir}} \+: int8\+\_\+t}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kDirFwd@{kDirFwd}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kDirFwd@{kDirFwd}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_a44985d99992e9464953d243bf3b561fda8ef76451782f120b178cb02bdcbe9917}\label{namespacehello__world_1_1devices_1_1motor_a44985d99992e9464953d243bf3b561fda8ef76451782f120b178cb02bdcbe9917} 
+k\+Dir\+Fwd&
+\begin{DoxyItemize}
+\item 电机转动正方向与规定正方向的关系 
+\end{DoxyItemize}\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kDirRev@{kDirRev}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kDirRev@{kDirRev}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_a44985d99992e9464953d243bf3b561fdac8903b06755144e29386752630029652}\label{namespacehello__world_1_1devices_1_1motor_a44985d99992e9464953d243bf3b561fdac8903b06755144e29386752630029652} 
+k\+Dir\+Rev&
+\begin{DoxyItemize}
+\item 同向 
+\end{DoxyItemize}\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{motor__base_8hpp_source}{motor\+\_\+base.\+hpp}} 第 \mbox{\hyperlink{motor__base_8hpp_source_l00051}{51}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7}\label{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!InputType@{InputType}}
+\index{InputType@{InputType}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{InputType}{InputType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7}{hello\+\_\+world\+::devices\+::motor\+::\+Input\+Type}} \+: uint8\+\_\+t}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kInputTypeRaw@{kInputTypeRaw}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kInputTypeRaw@{kInputTypeRaw}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7a3af8d233b879c0e5323904dd850fbfe3}\label{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7a3af8d233b879c0e5323904dd850fbfe3} 
+k\+Input\+Type\+Raw&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kInputTypeTorq@{kInputTypeTorq}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kInputTypeTorq@{kInputTypeTorq}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7a40b16f84fe9bb51523ee837d347a7683}\label{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7a40b16f84fe9bb51523ee837d347a7683} 
+k\+Input\+Type\+Torq&
+\begin{DoxyItemize}
+\item 报文原始输入 
+\end{DoxyItemize}\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kInputTypeCurr@{kInputTypeCurr}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kInputTypeCurr@{kInputTypeCurr}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7acbc926bf0e52b6d442d48680c808ba34}\label{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7acbc926bf0e52b6d442d48680c808ba34} 
+k\+Input\+Type\+Curr&
+\begin{DoxyItemize}
+\item 输出端力矩输入 
+\end{DoxyItemize}\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{motor__base_8hpp_source}{motor\+\_\+base.\+hpp}} 第 \mbox{\hyperlink{motor__base_8hpp_source_l00040}{40}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8}\label{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!MotorType@{MotorType}}
+\index{MotorType@{MotorType}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{MotorType}{MotorType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8}{hello\+\_\+world\+::devices\+::motor\+::\+Motor\+Type}}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kMotorTypeGM6020@{kMotorTypeGM6020}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kMotorTypeGM6020@{kMotorTypeGM6020}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8a07e240d42d2ba719073e07afb4203d04}\label{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8a07e240d42d2ba719073e07afb4203d04} 
+k\+Motor\+Type\+GM6020&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kMotorTypeM2006@{kMotorTypeM2006}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kMotorTypeM2006@{kMotorTypeM2006}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8a8c5f2196eac5420dc4627ef0514f558e}\label{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8a8c5f2196eac5420dc4627ef0514f558e} 
+k\+Motor\+Type\+M2006&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kMotorTypeM3508@{kMotorTypeM3508}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kMotorTypeM3508@{kMotorTypeM3508}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8a55160f7f5f669aa27a24c3cad2deaf1d}\label{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8a55160f7f5f669aa27a24c3cad2deaf1d} 
+k\+Motor\+Type\+M3508&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kMotorTypeM8910@{kMotorTypeM8910}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kMotorTypeM8910@{kMotorTypeM8910}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8ae6e021cdc218f10377913d33f426fb11}\label{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8ae6e021cdc218f10377913d33f426fb11} 
+k\+Motor\+Type\+M8910&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kMotorTypeA1@{kMotorTypeA1}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kMotorTypeA1@{kMotorTypeA1}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8affc5737d4b2d3625a210240cd4315718}\label{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8affc5737d4b2d3625a210240cd4315718} 
+k\+Motor\+Type\+A1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kMotorTypeDM\_J4310@{kMotorTypeDM\_J4310}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kMotorTypeDM\_J4310@{kMotorTypeDM\_J4310}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8abd589290db96bf5712052ec3f3f3ee02}\label{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8abd589290db96bf5712052ec3f3f3ee02} 
+k\+Motor\+Type\+DM\+\_\+\+J4310&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kMotorTypeMF9025v2@{kMotorTypeMF9025v2}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kMotorTypeMF9025v2@{kMotorTypeMF9025v2}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8a5a037ca22e20940dab8499c86f40fb49}\label{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8a5a037ca22e20940dab8499c86f40fb49} 
+k\+Motor\+Type\+MF9025v2&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{motor_8hpp_source}{motor.\+hpp}} 第 \mbox{\hyperlink{motor_8hpp_source_l00037}{37}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_a23bd0e79c78258c715635edf82874176}\label{namespacehello__world_1_1devices_1_1motor_a23bd0e79c78258c715635edf82874176} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!RawMappingType@{RawMappingType}}
+\index{RawMappingType@{RawMappingType}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{RawMappingType}{RawMappingType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a23bd0e79c78258c715635edf82874176}{hello\+\_\+world\+::devices\+::motor\+::\+Raw\+Mapping\+Type}} \+: uint8\+\_\+t}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kRawMappingTypeTorq@{kRawMappingTypeTorq}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kRawMappingTypeTorq@{kRawMappingTypeTorq}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_a23bd0e79c78258c715635edf82874176a868a7d6373e35d33e44c5bdedb446386}\label{namespacehello__world_1_1devices_1_1motor_a23bd0e79c78258c715635edf82874176a868a7d6373e35d33e44c5bdedb446386} 
+k\+Raw\+Mapping\+Type\+Torq&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kRawMappingTypeCurr@{kRawMappingTypeCurr}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kRawMappingTypeCurr@{kRawMappingTypeCurr}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_a23bd0e79c78258c715635edf82874176acd89116c1ee1b0662fd89ebdfd1e2ea0}\label{namespacehello__world_1_1devices_1_1motor_a23bd0e79c78258c715635edf82874176acd89116c1ee1b0662fd89ebdfd1e2ea0} 
+k\+Raw\+Mapping\+Type\+Curr&
+\begin{DoxyItemize}
+\item 原始报文对应力矩 
+\end{DoxyItemize}\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{motor__base_8hpp_source}{motor\+\_\+base.\+hpp}} 第 \mbox{\hyperlink{motor__base_8hpp_source_l00046}{46}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380c}\label{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380c} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!State@{State}}
+\index{State@{State}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{State}{State}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380c}{hello\+\_\+world\+::devices\+::motor\+::\+State}} \+: uint8\+\_\+t}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kStateOk@{kStateOk}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kStateOk@{kStateOk}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380ca426fa281817a2eb81e04586488b8ca5a}\label{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380ca426fa281817a2eb81e04586488b8ca5a} 
+k\+State\+Ok&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kStateInputValueOverflow@{kStateInputValueOverflow}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kStateInputValueOverflow@{kStateInputValueOverflow}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380ca092964bcb48cb77568362247b1158499}\label{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380ca092964bcb48cb77568362247b1158499} 
+k\+State\+Input\+Value\+Overflow&
+\begin{DoxyItemize}
+\item 正常 
+\end{DoxyItemize}\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kStateInputTypeError@{kStateInputTypeError}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kStateInputTypeError@{kStateInputTypeError}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380cab9d834629e7bfe89857c5255d7afceb2}\label{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380cab9d834629e7bfe89857c5255d7afceb2} 
+k\+State\+Input\+Type\+Error&
+\begin{DoxyItemize}
+\item 输入溢出 
+\end{DoxyItemize}\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kStateIdDismatch@{kStateIdDismatch}!hello\_world::devices::motor@{hello\_world::devices::motor}}\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kStateIdDismatch@{kStateIdDismatch}}}\Hypertarget{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380ca3619ca83b453126a092443ae1a86b241}\label{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380ca3619ca83b453126a092443ae1a86b241} 
+k\+State\+Id\+Dismatch&
+\begin{DoxyItemize}
+\item 输入类型错误 
+\end{DoxyItemize}\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{motor__base_8hpp_source}{motor\+\_\+base.\+hpp}} 第 \mbox{\hyperlink{motor__base_8hpp_source_l00033}{33}} 行定义.
+
+
+
+\doxysubsection{函数说明}
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_a5102e8812e14a2caaf3a2fc96b18efa3}\label{namespacehello__world_1_1devices_1_1motor_a5102e8812e14a2caaf3a2fc96b18efa3} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!\_Float2Uint@{\_Float2Uint}}
+\index{\_Float2Uint@{\_Float2Uint}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{\_Float2Uint()}{\_Float2Uint()}}
+{\footnotesize\ttfamily static uint16\+\_\+t hello\+\_\+world\+::devices\+::motor\+::\+\_\+\+Float2\+Uint (\begin{DoxyParamCaption}\item[{float}]{x\+\_\+float,  }\item[{float}]{x\+\_\+max,  }\item[{float}]{x\+\_\+min,  }\item[{uint8\+\_\+t}]{bits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+根据给定的范围和位数，将 float 转换为 uint 
+
+
+\begin{DoxyParams}{参数}
+{\em x\+\_\+float} & 待转换的 float \\
+\hline
+{\em x\+\_\+max} & 给定范围的最大值 \\
+\hline
+{\em x\+\_\+min} & 给定范围的最小值 \\
+\hline
+{\em bits} & 整形的位数 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 转换后的} & uint 变量 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+该函数仅供 \doxylink{classhello__world_1_1devices_1_1motor_1_1_d_m___j4310}{DM\+\_\+\+J4310} 电机数据处理用 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source}{motor\+\_\+\+DM\+\_\+\+J4310.\+cpp}} 第 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source_l00082}{82}} 行定义.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehello__world_1_1devices_1_1motor_a5102e8812e14a2caaf3a2fc96b18efa3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_aa4ac89a85a2b03e90b1606d4c9962f7c}\label{namespacehello__world_1_1devices_1_1motor_aa4ac89a85a2b03e90b1606d4c9962f7c} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!\_Uint2Float@{\_Uint2Float}}
+\index{\_Uint2Float@{\_Uint2Float}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{\_Uint2Float()}{\_Uint2Float()}}
+{\footnotesize\ttfamily static float hello\+\_\+world\+::devices\+::motor\+::\+\_\+\+Uint2\+Float (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x\+\_\+int,  }\item[{float}]{x\+\_\+max,  }\item[{float}]{x\+\_\+min,  }\item[{uint8\+\_\+t}]{bits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+根据给定的范围和位数，将 uint 转换为 float 
+
+
+\begin{DoxyParams}{参数}
+{\em x\+\_\+uint} & 待转换的 uint \\
+\hline
+{\em x\+\_\+max} & 给定范围的最大值 \\
+\hline
+{\em x\+\_\+min} & 给定范围的最小值 \\
+\hline
+{\em bits} & 整形的位数 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 转换后的} & float 变量 \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+该函数仅供 \doxylink{classhello__world_1_1devices_1_1motor_1_1_d_m___j4310}{DM\+\_\+\+J4310} 电机数据处理用 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source}{motor\+\_\+\+DM\+\_\+\+J4310.\+cpp}} 第 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source_l00065}{65}} 行定义.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehello__world_1_1devices_1_1motor_aa4ac89a85a2b03e90b1606d4c9962f7c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_ae3492ca32e729aaaecd5def06d638f86}\label{namespacehello__world_1_1devices_1_1motor_ae3492ca32e729aaaecd5def06d638f86} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!CreateMotor@{CreateMotor}}
+\index{CreateMotor@{CreateMotor}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{CreateMotor()}{CreateMotor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor}{Motor}} \texorpdfstring{$\ast$}{*} hello\+\_\+world\+::devices\+::motor\+::\+Create\+Motor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8}{Motor\+Type}}}]{motor\+\_\+type,  }\item[{uint8\+\_\+t}]{id,  }\item[{const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params}{Optional\+Params}} \&}]{optinal\+\_\+params }\end{DoxyParamCaption})}
+
+
+
+根据所需的电机类型创建电机并初始化 
+
+
+\begin{DoxyParams}{参数}
+{\em motor\+\_\+type} & 电机类型 \begin{DoxyItemize}
+\item k\+Motor\+Type\+GM6020，k\+Motor\+Type\+M2006，k\+Motor\+Type\+M3508， k\+Motor\+Type\+M8910，k\+Motor\+Type\+A1，k\+Motor\+Type\+DM\+\_\+\+J4310，k\+Motor\+Type\+MF9025v2, \end{DoxyItemize}
+\\
+\hline
+{\em id} & 电机 ID \\
+\hline
+{\em optinal\+\_\+params} & 电机可选配置参数 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 创建的电机类指针} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+返回的电机类是经过内存申请得到的，不使用时需要自行释放内存 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{motor_8cpp_source}{motor.\+cpp}} 第 \mbox{\hyperlink{motor_8cpp_source_l00043}{43}} 行定义.
+
+
+
+\doxysubsection{变量说明}
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_a267307d5493b054be2d47ffa1c9797de}\label{namespacehello__world_1_1devices_1_1motor_a267307d5493b054be2d47ffa1c9797de} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kA1MotorBaseInfo@{kA1MotorBaseInfo}}
+\index{kA1MotorBaseInfo@{kA1MotorBaseInfo}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{kA1MotorBaseInfo}{kA1MotorBaseInfo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_base_info}{Motor\+Base\+Info}} hello\+\_\+world\+::devices\+::motor\+::k\+A1\+Motor\+Base\+Info\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries 初始值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ .raw\_input\_lim\ =\ 0x7FFF,}
+\DoxyCodeLine{\ \ \ \ .torq\_input\_lim\ =\ 33.5f,}
+\DoxyCodeLine{\ \ \ \ .curr\_input\_lim\ =\ 40.0f,}
+\DoxyCodeLine{\ \ \ \ .torq\_const\ =\ 0.8732f\ /\ 9,}
+\DoxyCodeLine{\ \ \ \ .redu\_rat\ =\ 9.0f,}
+\DoxyCodeLine{\ \ \ \ .angle\_rat\ =\ 2\ *\ \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}}\ /\ 16384,}
+\DoxyCodeLine{\ \ \ \ .vel\_rat\ =\ 1.0f\ /\ 128,}
+\DoxyCodeLine{\ \ \ \ .curr\_rat\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_abe2e70f5aab1c0e73122df8bad6de6a0}{kInvalidValue}},}
+\DoxyCodeLine{\ \ \ \ .torq\_rat\ =\ 1.0f\ /\ 256,}
+\DoxyCodeLine{\ \ \ \ .cross\_0\_value\ =\ 16384u,}
+\DoxyCodeLine{\ \ \ \ .raw\_mapping\_type\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a23bd0e79c78258c715635edf82874176a868a7d6373e35d33e44c5bdedb446386}{kRawMappingTypeTorq}},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+在文件 \mbox{\hyperlink{motor___a1_8cpp_source}{motor\+\_\+\+A1.\+cpp}} 第 \mbox{\hyperlink{motor___a1_8cpp_source_l00031}{31}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_a248f1a5b8885f8c77c3c57b290ea74a0}\label{namespacehello__world_1_1devices_1_1motor_a248f1a5b8885f8c77c3c57b290ea74a0} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kAngleBits@{kAngleBits}}
+\index{kAngleBits@{kAngleBits}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{kAngleBits}{kAngleBits}}
+{\footnotesize\ttfamily const uint8\+\_\+t hello\+\_\+world\+::devices\+::motor\+::k\+Angle\+Bits = 16\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source}{motor\+\_\+\+DM\+\_\+\+J4310.\+cpp}} 第 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source_l00048}{48}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_a45f0b841847534b5cb7455ec6f03850e}\label{namespacehello__world_1_1devices_1_1motor_a45f0b841847534b5cb7455ec6f03850e} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kDM\_J4310MotorBaseInfo@{kDM\_J4310MotorBaseInfo}}
+\index{kDM\_J4310MotorBaseInfo@{kDM\_J4310MotorBaseInfo}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{kDM\_J4310MotorBaseInfo}{kDM\_J4310MotorBaseInfo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_base_info}{Motor\+Base\+Info}} hello\+\_\+world\+::devices\+::motor\+::k\+DM\+\_\+\+J4310\+Motor\+Base\+Info\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries 初始值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ .raw\_input\_lim\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_abe2e70f5aab1c0e73122df8bad6de6a0}{kInvalidValue}},}
+\DoxyCodeLine{\ \ \ \ .torq\_input\_lim\ =\ 7.0f,}
+\DoxyCodeLine{\ \ \ \ .curr\_input\_lim\ =\ 7.5f,}
+\DoxyCodeLine{\ \ \ \ .torq\_const\ =\ 0.97f,}
+\DoxyCodeLine{\ \ \ \ .redu\_rat\ =\ 1.0f,\ \ }
+\DoxyCodeLine{\ \ \ \ .angle\_rat\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_abe2e70f5aab1c0e73122df8bad6de6a0}{kInvalidValue}},}
+\DoxyCodeLine{\ \ \ \ .vel\_rat\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_abe2e70f5aab1c0e73122df8bad6de6a0}{kInvalidValue}},}
+\DoxyCodeLine{\ \ \ \ .curr\_rat\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_abe2e70f5aab1c0e73122df8bad6de6a0}{kInvalidValue}},}
+\DoxyCodeLine{\ \ \ \ .torq\_rat\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_abe2e70f5aab1c0e73122df8bad6de6a0}{kInvalidValue}},}
+\DoxyCodeLine{\ \ \ \ .cross\_0\_value\ =\ \textcolor{keyword}{static\_cast<}uint16\_t\textcolor{keyword}{>}(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_abe2e70f5aab1c0e73122df8bad6de6a0}{kInvalidValue}}),}
+\DoxyCodeLine{\ \ \ \ .raw\_mapping\_type\ =\ kRawMappingTypeTorq,}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+在文件 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source}{motor\+\_\+\+DM\+\_\+\+J4310.\+cpp}} 第 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source_l00033}{33}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_a05fb66ade757503261251a0e07460d14}\label{namespacehello__world_1_1devices_1_1motor_a05fb66ade757503261251a0e07460d14} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kGM6020MotorBaseInfo@{kGM6020MotorBaseInfo}}
+\index{kGM6020MotorBaseInfo@{kGM6020MotorBaseInfo}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{kGM6020MotorBaseInfo}{kGM6020MotorBaseInfo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_base_info}{Motor\+Base\+Info}} hello\+\_\+world\+::devices\+::motor\+::k\+GM6020\+Motor\+Base\+Info}
+
+{\bfseries 初始值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ .raw\_input\_lim\ =\ 30000,}
+\DoxyCodeLine{\ \ \ \ .torq\_input\_lim\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_abe2e70f5aab1c0e73122df8bad6de6a0}{kInvalidValue}},\ \ }
+\DoxyCodeLine{\ \ \ \ .curr\_input\_lim\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_abe2e70f5aab1c0e73122df8bad6de6a0}{kInvalidValue}},\ \ }
+\DoxyCodeLine{\ \ \ \ .torq\_const\ =\ 0.741f,}
+\DoxyCodeLine{\ \ \ \ .redu\_rat\ =\ 1.0f,}
+\DoxyCodeLine{\ \ \ \ .angle\_rat\ =\ 2\ *\ \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}}\ /\ 8191,}
+\DoxyCodeLine{\ \ \ \ .vel\_rat\ =\ 2\ *\ \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}}\ /\ 60,}
+\DoxyCodeLine{\ \ \ \ .curr\_rat\ =\ 0.078f\ /\ 700,\ \ }
+\DoxyCodeLine{\ \ \ \ .torq\_rat\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_abe2e70f5aab1c0e73122df8bad6de6a0}{kInvalidValue}},}
+\DoxyCodeLine{\ \ \ \ .cross\_0\_value\ =\ 8191U,}
+\DoxyCodeLine{\ \ \ \ .raw\_mapping\_type\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a23bd0e79c78258c715635edf82874176acd89116c1ee1b0662fd89ebdfd1e2ea0}{kRawMappingTypeCurr}},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+在文件 \mbox{\hyperlink{motor___g_m6020_8cpp_source}{motor\+\_\+\+GM6020.\+cpp}} 第 \mbox{\hyperlink{motor___g_m6020_8cpp_source_l00031}{31}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_abe2e70f5aab1c0e73122df8bad6de6a0}\label{namespacehello__world_1_1devices_1_1motor_abe2e70f5aab1c0e73122df8bad6de6a0} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kInvalidValue@{kInvalidValue}}
+\index{kInvalidValue@{kInvalidValue}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{kInvalidValue}{kInvalidValue}}
+{\footnotesize\ttfamily const float hello\+\_\+world\+::devices\+::motor\+::k\+Invalid\+Value = 0}
+
+
+
+在文件 \mbox{\hyperlink{motor__base_8hpp_source}{motor\+\_\+base.\+hpp}} 第 \mbox{\hyperlink{motor__base_8hpp_source_l00063}{63}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_ab2588402294683d1108ee2748aefd3ec}\label{namespacehello__world_1_1devices_1_1motor_ab2588402294683d1108ee2748aefd3ec} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kM2006MotorBaseInfo@{kM2006MotorBaseInfo}}
+\index{kM2006MotorBaseInfo@{kM2006MotorBaseInfo}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{kM2006MotorBaseInfo}{kM2006MotorBaseInfo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_base_info}{Motor\+Base\+Info}} hello\+\_\+world\+::devices\+::motor\+::k\+M2006\+Motor\+Base\+Info\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries 初始值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ .raw\_input\_lim\ =\ 10000,}
+\DoxyCodeLine{\ \ \ \ .torq\_input\_lim\ =\ 1.8f,}
+\DoxyCodeLine{\ \ \ \ .curr\_input\_lim\ =\ 10.0f,}
+\DoxyCodeLine{\ \ \ \ .torq\_const\ =\ 0.005f,}
+\DoxyCodeLine{\ \ \ \ .redu\_rat\ =\ 36.0f,}
+\DoxyCodeLine{\ \ \ \ .angle\_rat\ =\ 2\ *\ \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}}\ /\ 8191,}
+\DoxyCodeLine{\ \ \ \ .vel\_rat\ =\ 2\ *\ \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}}\ /\ 60,}
+\DoxyCodeLine{\ \ \ \ .curr\_rat\ =\ 10.0f\ /\ 10000,}
+\DoxyCodeLine{\ \ \ \ .torq\_rat\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_abe2e70f5aab1c0e73122df8bad6de6a0}{kInvalidValue}},}
+\DoxyCodeLine{\ \ \ \ .cross\_0\_value\ =\ 8191U,}
+\DoxyCodeLine{\ \ \ \ .raw\_mapping\_type\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a23bd0e79c78258c715635edf82874176acd89116c1ee1b0662fd89ebdfd1e2ea0}{kRawMappingTypeCurr}},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+在文件 \mbox{\hyperlink{motor___m2006_8cpp_source}{motor\+\_\+\+M2006.\+cpp}} 第 \mbox{\hyperlink{motor___m2006_8cpp_source_l00031}{31}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_abbee9fa151a937a62cacb780216cb02f}\label{namespacehello__world_1_1devices_1_1motor_abbee9fa151a937a62cacb780216cb02f} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kM3508MotorBaseInfo@{kM3508MotorBaseInfo}}
+\index{kM3508MotorBaseInfo@{kM3508MotorBaseInfo}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{kM3508MotorBaseInfo}{kM3508MotorBaseInfo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_base_info}{Motor\+Base\+Info}} hello\+\_\+world\+::devices\+::motor\+::k\+M3508\+Motor\+Base\+Info\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries 初始值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ .raw\_input\_lim\ =\ 16384,}
+\DoxyCodeLine{\ \ \ \ .torq\_input\_lim\ =\ 6.0f,}
+\DoxyCodeLine{\ \ \ \ .curr\_input\_lim\ =\ 20.0f,}
+\DoxyCodeLine{\ \ \ \ .torq\_const\ =\ 0.0156f,}
+\DoxyCodeLine{\ \ \ \ .redu\_rat\ =\ 3591.0f\ /\ 187,}
+\DoxyCodeLine{\ \ \ \ .angle\_rat\ =\ 2\ *\ \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}}\ /\ 8191,}
+\DoxyCodeLine{\ \ \ \ .vel\_rat\ =\ 2\ *\ \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}}\ /\ 60,}
+\DoxyCodeLine{\ \ \ \ .curr\_rat\ =\ 20.0f\ /\ 16384,}
+\DoxyCodeLine{\ \ \ \ .torq\_rat\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_abe2e70f5aab1c0e73122df8bad6de6a0}{kInvalidValue}},}
+\DoxyCodeLine{\ \ \ \ .cross\_0\_value\ =\ 8191U,}
+\DoxyCodeLine{\ \ \ \ .raw\_mapping\_type\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a23bd0e79c78258c715635edf82874176acd89116c1ee1b0662fd89ebdfd1e2ea0}{kRawMappingTypeCurr}},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+在文件 \mbox{\hyperlink{motor___m3508_8cpp_source}{motor\+\_\+\+M3508.\+cpp}} 第 \mbox{\hyperlink{motor___m3508_8cpp_source_l00031}{31}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_a6a7687de11947f3d9c29a070fdea85b8}\label{namespacehello__world_1_1devices_1_1motor_a6a7687de11947f3d9c29a070fdea85b8} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kM8910MotorBaseInfo@{kM8910MotorBaseInfo}}
+\index{kM8910MotorBaseInfo@{kM8910MotorBaseInfo}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{kM8910MotorBaseInfo}{kM8910MotorBaseInfo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_base_info}{Motor\+Base\+Info}} hello\+\_\+world\+::devices\+::motor\+::k\+M8910\+Motor\+Base\+Info\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries 初始值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ .raw\_input\_lim\ =\ 0x7FFF,}
+\DoxyCodeLine{\ \ \ \ .torq\_input\_lim\ =\ 5.0f,}
+\DoxyCodeLine{\ \ \ \ .curr\_input\_lim\ =\ 75.0f,}
+\DoxyCodeLine{\ \ \ \ .torq\_const\ =\ 0.07f,}
+\DoxyCodeLine{\ \ \ \ .redu\_rat\ =\ 1.0f,}
+\DoxyCodeLine{\ \ \ \ .angle\_rat\ =\ 2\ *\ \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}}\ /\ 0xFFFF,}
+\DoxyCodeLine{\ \ \ \ .vel\_rat\ =\ 400.0f\ /\ 0x8000,}
+\DoxyCodeLine{\ \ \ \ .curr\_rat\ =\ 100.0f\ /\ 32768,}
+\DoxyCodeLine{\ \ \ \ .torq\_rat\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_abe2e70f5aab1c0e73122df8bad6de6a0}{kInvalidValue}},}
+\DoxyCodeLine{\ \ \ \ .cross\_0\_value\ =\ 0xFFFFU,}
+\DoxyCodeLine{\ \ \ \ .raw\_mapping\_type\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a23bd0e79c78258c715635edf82874176acd89116c1ee1b0662fd89ebdfd1e2ea0}{kRawMappingTypeCurr}},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+在文件 \mbox{\hyperlink{motor___m8910_8cpp_source}{motor\+\_\+\+M8910.\+cpp}} 第 \mbox{\hyperlink{motor___m8910_8cpp_source_l00031}{31}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_ade1ddf6c56f452b2c6afb8a1a77c3d43}\label{namespacehello__world_1_1devices_1_1motor_ade1ddf6c56f452b2c6afb8a1a77c3d43} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kMaxAngle@{kMaxAngle}}
+\index{kMaxAngle@{kMaxAngle}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{kMaxAngle}{kMaxAngle}}
+{\footnotesize\ttfamily const float hello\+\_\+world\+::devices\+::motor\+::k\+Max\+Angle = \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source}{motor\+\_\+\+DM\+\_\+\+J4310.\+cpp}} 第 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source_l00047}{47}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_a45760c831ff44879601b0fa89298bd45}\label{namespacehello__world_1_1devices_1_1motor_a45760c831ff44879601b0fa89298bd45} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kMaxTorq@{kMaxTorq}}
+\index{kMaxTorq@{kMaxTorq}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{kMaxTorq}{kMaxTorq}}
+{\footnotesize\ttfamily const float hello\+\_\+world\+::devices\+::motor\+::k\+Max\+Torq = 7.\+0f\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source}{motor\+\_\+\+DM\+\_\+\+J4310.\+cpp}} 第 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source_l00051}{51}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_ae6d1c5130feaed18b1ea24e56558f1d2}\label{namespacehello__world_1_1devices_1_1motor_ae6d1c5130feaed18b1ea24e56558f1d2} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kMaxVel@{kMaxVel}}
+\index{kMaxVel@{kMaxVel}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{kMaxVel}{kMaxVel}}
+{\footnotesize\ttfamily const float hello\+\_\+world\+::devices\+::motor\+::k\+Max\+Vel = 30.\+0f\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source}{motor\+\_\+\+DM\+\_\+\+J4310.\+cpp}} 第 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source_l00049}{49}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_aa26ac6d14d2f7f43427bdd64c845b1bd}\label{namespacehello__world_1_1devices_1_1motor_aa26ac6d14d2f7f43427bdd64c845b1bd} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kMF9025v2MotorBaseInfo@{kMF9025v2MotorBaseInfo}}
+\index{kMF9025v2MotorBaseInfo@{kMF9025v2MotorBaseInfo}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{kMF9025v2MotorBaseInfo}{kMF9025v2MotorBaseInfo}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_base_info}{Motor\+Base\+Info}} hello\+\_\+world\+::devices\+::motor\+::k\+MF9025v2\+Motor\+Base\+Info\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries 初始值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ .raw\_input\_lim\ =\ 2000,}
+\DoxyCodeLine{\ \ \ \ .torq\_input\_lim\ =\ 11.0f,}
+\DoxyCodeLine{\ \ \ \ .curr\_input\_lim\ =\ 33.0f,}
+\DoxyCodeLine{\ \ \ \ .torq\_const\ =\ 0.32f,}
+\DoxyCodeLine{\ \ \ \ .redu\_rat\ =\ 1.0f,}
+\DoxyCodeLine{\ \ \ \ .angle\_rat\ =\ 2\ *\ \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}}\ /\ 0xFFFF,}
+\DoxyCodeLine{\ \ \ \ .vel\_rat\ =\ \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}}\ /\ 180,}
+\DoxyCodeLine{\ \ \ \ .curr\_rat\ =\ 32.0f\ /\ 2000,}
+\DoxyCodeLine{\ \ \ \ .torq\_rat\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_abe2e70f5aab1c0e73122df8bad6de6a0}{kInvalidValue}},}
+\DoxyCodeLine{\ \ \ \ .cross\_0\_value\ =\ 0xFFFFU,}
+\DoxyCodeLine{\ \ \ \ .raw\_mapping\_type\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a23bd0e79c78258c715635edf82874176acd89116c1ee1b0662fd89ebdfd1e2ea0}{kRawMappingTypeCurr}},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+在文件 \mbox{\hyperlink{motor___m_f9025v2_8cpp_source}{motor\+\_\+\+MF9025v2.\+cpp}} 第 \mbox{\hyperlink{motor___m_f9025v2_8cpp_source_l00031}{31}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_a10b013b169e858951f649bba557455c2}\label{namespacehello__world_1_1devices_1_1motor_a10b013b169e858951f649bba557455c2} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kTorqBits@{kTorqBits}}
+\index{kTorqBits@{kTorqBits}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{kTorqBits}{kTorqBits}}
+{\footnotesize\ttfamily const uint8\+\_\+t hello\+\_\+world\+::devices\+::motor\+::k\+Torq\+Bits = 12\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source}{motor\+\_\+\+DM\+\_\+\+J4310.\+cpp}} 第 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source_l00052}{52}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1devices_1_1motor_a129d97ad5fb7c3e353a25baaab78ae15}\label{namespacehello__world_1_1devices_1_1motor_a129d97ad5fb7c3e353a25baaab78ae15} 
+\index{hello\_world::devices::motor@{hello\_world::devices::motor}!kVelBits@{kVelBits}}
+\index{kVelBits@{kVelBits}!hello\_world::devices::motor@{hello\_world::devices::motor}}
+\doxysubsubsection{\texorpdfstring{kVelBits}{kVelBits}}
+{\footnotesize\ttfamily const uint8\+\_\+t hello\+\_\+world\+::devices\+::motor\+::k\+Vel\+Bits = 12\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source}{motor\+\_\+\+DM\+\_\+\+J4310.\+cpp}} 第 \mbox{\hyperlink{motor___d_m___j4310_8cpp_source_l00050}{50}} 行定义.
+

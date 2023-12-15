@@ -1,0 +1,19 @@
+<map id="hello_world::devices::referee::Referee::decodeFrame" name="hello_world::devices::referee::Referee::decodeFrame">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,127,213,167"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1referee_1_1_referee.html#a823f73d223421b7d025005e99ff08291" title=" " alt="" coords="261,127,464,167"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,145,246,145,246,150,214,150"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1referee_1_1_referee.html#af9388d8910762162a0d23d0ba44df19a" title=" " alt="" coords="523,5,709,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="400,124,511,69,523,64,525,69,513,74,402,129"/>
+<area shape="rect" id="Node000005" href="$classhello__world_1_1devices_1_1referee_1_1_referee.html#a7531c733933a65549c9d019e87ee9d0b" title=" " alt="" coords="533,84,699,139"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="464,130,517,123,518,128,465,136"/>
+<area shape="rect" id="Node000006" href="$namespacehello__world_1_1devices_1_1referee.html#aa177d9a48e848cf495e1119b8449a1f7" title="Verifies the CRC16 checksum of a message." alt="" coords="512,163,720,203"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="465,159,498,164,497,169,464,164"/>
+<area shape="rect" id="Node000008" href="$namespacehello__world_1_1devices_1_1referee.html#a5ac9b8968addb626ab283eaf7b80bd6c" title="Verifies the CRC8 checksum of a message." alt="" coords="515,227,717,267"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="406,165,513,213,532,220,530,225,511,218,404,170"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1devices_1_1referee_1_1_rx_package_info.html#acb3daf6092bba76a10fa7cc2d580a429" title=" " alt="" coords="784,5,948,60"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="710,30,769,30,769,35,710,35"/>
+<area shape="rect" id="Node000007" href="$namespacehello__world_1_1devices_1_1referee.html#a30f1e50d6e85c306486883a0668b7f50" title="Calculate and return the CRC16 checksum of a message." alt="" coords="768,163,964,203"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="720,181,753,181,753,186,720,186"/>
+<area shape="rect" id="Node000009" href="$namespacehello__world_1_1devices_1_1referee.html#a42050a73d989fc581253585524abbf57" title="Calculate and return the CRC8 checksum of a message." alt="" coords="771,227,961,267"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="717,245,756,245,756,250,717,250"/>
+</map>

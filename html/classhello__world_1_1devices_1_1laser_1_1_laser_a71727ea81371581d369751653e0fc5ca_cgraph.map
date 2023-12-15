@@ -1,0 +1,5 @@
+<map id="hello_world::devices::laser::Laser::luminPct2Cmp" name="hello_world::devices::laser::Laser::luminPct2Cmp">
+<area shape="rect" id="Node000001" title="百分比亮度转定时器PWM比较值" alt="" coords="5,5,196,45"/>
+<area shape="rect" id="Node000002" href="$namespacehello__world.html#a34cb06299a34f746d556d23dc16904aa" title="将输入值限制在一个范围内" alt="" coords="244,13,375,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,23,229,23,229,28,197,28"/>
+</map>

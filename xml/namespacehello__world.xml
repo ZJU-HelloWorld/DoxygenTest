@@ -1,0 +1,918 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="namespacehello__world" kind="namespace" language="C++">
+    <compoundname>hello_world</compoundname>
+    <innerclass refid="classhello__world_1_1_mem_mang" prot="public">hello_world::MemMang</innerclass>
+    <innerclass refid="classhello__world_1_1_wheel" prot="public">hello_world::Wheel</innerclass>
+    <innerclass refid="structhello__world_1_1_wheel_params" prot="public">hello_world::WheelParams</innerclass>
+    <innerclass refid="classhello__world_1_1_wheel_pos" prot="public">hello_world::WheelPos</innerclass>
+    <innernamespace refid="namespacehello__world_1_1algorithms">hello_world::algorithms</innernamespace>
+    <innernamespace refid="namespacehello__world_1_1devices">hello_world::devices</innernamespace>
+    <innernamespace refid="namespacehello__world_1_1dsp">hello_world::dsp</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacehello__world_1a59b36a6fc3476beb679947a6db5407cd" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>WheelType</name>
+        <qualifiedname>hello_world::WheelType</qualifiedname>
+        <enumvalue id="namespacehello__world_1a59b36a6fc3476beb679947a6db5407cda4cd1ce9be6b5546c52ffd46d1a35d6f0" prot="public">
+          <name>FixedStandardWheel</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehello__world_1a59b36a6fc3476beb679947a6db5407cdad7b89f5275c1339d4dc453714243b204" prot="public">
+          <name>SteeredStandardWheel</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehello__world_1a59b36a6fc3476beb679947a6db5407cdaae017b824d45d1915f2f0991a132243d" prot="public">
+          <name>CastorWheel</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehello__world_1a59b36a6fc3476beb679947a6db5407cda60a5924ec81e29b039c0e17fc94fbec2" prot="public">
+          <name>SwedishWheel</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehello__world_1a59b36a6fc3476beb679947a6db5407cdae4e9d6a3b1b75a5402efd2402294de6c" prot="public">
+          <name>SphericalWheel</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp" line="32" column="1" bodyfile="HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp" bodystart="32" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacehello__world_1a8582e15cc16c32ad80a0d6873cf3f830" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float hello_world::kGravAcc</definition>
+        <argsstring></argsstring>
+        <name>kGravAcc</name>
+        <qualifiedname>hello_world::kGravAcc</qualifiedname>
+        <initializer>= 9.7936f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="32" column="20" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="32" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1imu_1_1_b_m_i088_1a7bc81c0ed908d469d3c0bde126a80311" compoundref="_b_m_i088_8cpp" startline="305" endline="343">hello_world::devices::imu::BMI088::accSelfTest</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehello__world_1a219e78545f9e9d3987fae46cf7fcdd75" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float hello_world::kRad2DegCoff</definition>
+        <argsstring></argsstring>
+        <name>kRad2DegCoff</name>
+        <qualifiedname>hello_world::kRad2DegCoff</qualifiedname>
+        <initializer>= 180 / <ref refid="base_8hpp_1a598a3330b3c21701223ee0ca14316eca" kindref="member">PI</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>重力加速度（杭州） </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="33" column="20" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="namespacehello__world_1a8592f8f4b1bf9644d335a61a9d39c543" compoundref="base_8hpp" startline="248" endline="248">Rad2Deg</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehello__world_1aff7ca8b5f1a544cfb645d20c17b2ebcf" prot="public" static="yes" mutable="no">
+        <type>const float</type>
+        <definition>const float hello_world::kDeg2RadCoff</definition>
+        <argsstring></argsstring>
+        <name>kDeg2RadCoff</name>
+        <qualifiedname>hello_world::kDeg2RadCoff</qualifiedname>
+        <initializer>= <ref refid="base_8hpp_1a598a3330b3c21701223ee0ca14316eca" kindref="member">PI</ref> / 180</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="34" column="20" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="34" bodyend="-1"/>
+        <referencedby refid="namespacehello__world_1afe0a0d8e82fa09f451155c7b2145121c" compoundref="base_8hpp" startline="256" endline="256">Deg2Rad</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacehello__world_1a0a24a2113234e7e7a7328e70bedb91c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>uint8_t</type>
+        <definition>uint8_t hello_world::GetSign</definition>
+        <argsstring>(T x)</argsstring>
+        <name>GetSign</name>
+        <qualifiedname>hello_world::GetSign</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>获取变量的符号 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>输入变量 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>输入变量的符号</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>只有支持大小比较的变量才可使用该函数 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="46" column="16" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="46" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehello__world_1aa015d79000267b9839acf531c7dbc7a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T hello_world::Max</definition>
+        <argsstring>(T x1, T x2)</argsstring>
+        <name>Max</name>
+        <qualifiedname>hello_world::Max</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>x2</declname>
+        </param>
+        <briefdescription>
+<para>获取两个变量间的最大值 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>比较变量1 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>比较变量1 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>二者间的最大值</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>只有支持大小比较的变量才可使用该函数 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="65" column="10" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehello__world_1a94594f3432536927055026f3f48af251" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T hello_world::Min</definition>
+        <argsstring>(T x1, T x2)</argsstring>
+        <name>Min</name>
+        <qualifiedname>hello_world::Min</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>x2</declname>
+        </param>
+        <briefdescription>
+<para>获取两个变量间的最小值 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>比较变量1 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>比较变量1 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>二者间的最小值</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>只有支持大小比较的变量才可使用该函数 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="78" column="10" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="78" bodyend="81"/>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_a1_1a1c439b72ce074a0e04d38b06749f499c" compoundref="motor___a1_8cpp" startline="54" endline="124">hello_world::devices::motor::A1::A1</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a0a61fcd9a79f7bbb0addccaf677f2c5f" compoundref="motor___d_m___j4310_8cpp" startline="97" endline="162">hello_world::devices::motor::DM_J4310::DM_J4310</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_g_m6020_1ad61341de888f13343d20bd7e0b06f3c1" compoundref="motor___g_m6020_8cpp" startline="54" endline="103">hello_world::devices::motor::GM6020::GM6020</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m2006_1a52ce5e7bbbb2fffe82f86291b8876221" compoundref="motor___m2006_8cpp" startline="54" endline="124">hello_world::devices::motor::M2006::M2006</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m3508_1a2fbed6fbaa90b42893978a1805ea78e6" compoundref="motor___m3508_8cpp" startline="54" endline="124">hello_world::devices::motor::M3508::M3508</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m8910_1accd858d8bd3db4aa48532ec8c1f8bd44" compoundref="motor___m8910_8cpp" startline="54" endline="124">hello_world::devices::motor::M8910::M8910</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m_f9025v2_1a87787e5484356144bc7bce7b229398de" compoundref="motor___m_f9025v2_8cpp" startline="54" endline="124">hello_world::devices::motor::MF9025v2::MF9025v2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacehello__world_1a34cb06299a34f746d556d23dc16904aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T1</type>
+          </param>
+          <param>
+            <type>typename T2</type>
+          </param>
+          <param>
+            <type>typename T3</type>
+          </param>
+        </templateparamlist>
+        <type>T1</type>
+        <definition>T1 hello_world::Bound</definition>
+        <argsstring>(T1 x, T2 lim1, T3 lim2)</argsstring>
+        <name>Bound</name>
+        <qualifiedname>hello_world::Bound</qualifiedname>
+        <param>
+          <type>T1</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>T2</type>
+          <declname>lim1</declname>
+        </param>
+        <param>
+          <type>T3</type>
+          <declname>lim2</declname>
+        </param>
+        <briefdescription>
+<para>将输入值限制在一个范围内 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>待范围限制变量 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lim1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>范围边界1 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lim2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>范围边界2 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>范围限制后的值</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>无需考虑两个范围边界的相对大小关系，变量需要支持大小比较 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="92" column="11" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="92" bodyend="110"/>
+        <referencedby refid="classhello__world_1_1devices_1_1servo_1_1_servo_1af678b6d9c70e3be611755ac1ae233aa5" compoundref="servo_8cpp" startline="88" endline="98">hello_world::devices::servo::Servo::angle2Cmp</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_a1_1a2033dda3651a1a97182e23fb8ccceae3" compoundref="motor___a1_8cpp" startline="135" endline="156">hello_world::devices::motor::A1::encode</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ac97392867193cf052740d0cfc3db7ebc" compoundref="motor___d_m___j4310_8cpp" startline="213" endline="238">hello_world::devices::motor::DM_J4310::encode</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_g_m6020_1a5ad5ba687605e93d6723b3e6fa317435" compoundref="motor___g_m6020_8cpp" startline="151" endline="171">hello_world::devices::motor::GM6020::encode</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m2006_1aa75d742e86d207339818b124b11af230" compoundref="motor___m2006_8cpp" startline="135" endline="155">hello_world::devices::motor::M2006::encode</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m3508_1a6c8af995a05110932f1be95056c65e91" compoundref="motor___m3508_8cpp" startline="135" endline="155">hello_world::devices::motor::M3508::encode</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m8910_1a985dd218b3ef8aa045f21dc0cff4a462" compoundref="motor___m8910_8cpp" startline="135" endline="155">hello_world::devices::motor::M8910::encode</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m_f9025v2_1a809e9f046cde5db0883ab22fa61fa79e" compoundref="motor___m_f9025v2_8cpp" startline="135" endline="155">hello_world::devices::motor::MF9025v2::encode</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a71727ea81371581d369751653e0fc5ca" compoundref="laser_8cpp" startline="74" endline="79">hello_world::devices::laser::Laser::luminPct2Cmp</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1ab4a10c92796395a9b6c229f0bfec9cdb" compoundref="buzzer_8cpp" startline="106" endline="157">hello_world::devices::buzzer::Buzzer::play</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_motor_1ad101045a9eef9a699001fc94631e8395" compoundref="motor__base_8cpp" startline="40" endline="74">hello_world::devices::motor::Motor::setInput</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ae15373ce02962c1a287d7e813413869b" compoundref="motor___d_m___j4310_8cpp" startline="164" endline="202">hello_world::devices::motor::DM_J4310::setInput</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_g_m6020_1aa3824723dba2a9cd0d833fc02a7f49ff" compoundref="motor___g_m6020_8cpp" startline="112" endline="130">hello_world::devices::motor::GM6020::setInput</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacehello__world_1aadc1f0af4d10150fcd1a306c7dc6515c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool hello_world::IsInRange</definition>
+        <argsstring>(T x, T bound1, T bound2)</argsstring>
+        <name>IsInRange</name>
+        <qualifiedname>hello_world::IsInRange</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>bound1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>bound2</declname>
+        </param>
+        <briefdescription>
+<para>判断变量是否位于给定的范围内 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bound1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>范围边界1（含） </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bound2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>范围边界2（含） </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>变量是否位于给定的范围内</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>无需考虑两个范围边界的相对大小关系，变量需要支持大小比较 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="120" column="13" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="120" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacehello__world_1a71f5ddbc81f1fa181ecefaf0b1f51fa8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float hello_world::NormPeriodData</definition>
+        <argsstring>(float period_lb, float period_ub, float data)</argsstring>
+        <name>NormPeriodData</name>
+        <qualifiedname>hello_world::NormPeriodData</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>period_lb</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>period_ub</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>将周期性数据归一化到指定周期区间 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>period_lb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>周期区间下界（含） </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>period_ub</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>周期区间上界 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>待归一化数据 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>归一化后的数据</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>period_lb 必须小于 period_ub </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="137" column="14" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="137" bodyend="149"/>
+        <references refid="assert_8hpp_1a5969df827ceb603bed14c4106586484a" compoundref="assert_8hpp" startline="36">HW_ASSERT</references>
+        <referencedby refid="namespacehello__world_1aa44c70128980881ac6260af9f928309a" compoundref="base_8hpp" startline="205" endline="208">AngleNormDeg</referencedby>
+        <referencedby refid="namespacehello__world_1a2b175ee3711275a8279ab6553620bca7" compoundref="base_8hpp" startline="194" endline="197">AngleNormRad</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a21092858a98af5688b398d57cd203592" compoundref="motor__base_8cpp" startline="222" endline="233">hello_world::devices::motor::Motor::normAngle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacehello__world_1aa2fc22e21a1835072f26dea54497255c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float hello_world::PeriodData2SameRegion</definition>
+        <argsstring>(float period_lb, float period_ub, float ref_data, float data)</argsstring>
+        <name>PeriodData2SameRegion</name>
+        <qualifiedname>hello_world::PeriodData2SameRegion</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>period_lb</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>period_ub</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ref_data</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>将待处理数据平移到参考数据的所在周期中 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>period_lb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>周期区间下界（含） </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>period_ub</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>周期区间上界 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ref_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>参考数据（无需再周期区间之内） </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>待处理数据 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>平移后的数据</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>period_lb 必须小于 period_ub </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="160" column="14" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="160" bodyend="170"/>
+        <references refid="assert_8hpp_1a5969df827ceb603bed14c4106586484a" compoundref="assert_8hpp" startline="36">HW_ASSERT</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacehello__world_1a8d23c04b152e4fb0c195a75e185f75ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float hello_world::PeriodData2NearestDist</definition>
+        <argsstring>(float period, float ref_data, float data)</argsstring>
+        <name>PeriodData2NearestDist</name>
+        <qualifiedname>hello_world::PeriodData2NearestDist</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>period</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ref_data</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+<para>将待处理数据平移到距离参考数据最近的值 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>period</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>周期 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ref_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>参考数据 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>待处理数据 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>平移后的数据</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="180" column="14" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="180" bodyend="186"/>
+        <references refid="assert_8hpp_1a5969df827ceb603bed14c4106586484a" compoundref="assert_8hpp" startline="36">HW_ASSERT</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacehello__world_1a2b175ee3711275a8279ab6553620bca7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float hello_world::AngleNormRad</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>AngleNormRad</name>
+        <qualifiedname>hello_world::AngleNormRad</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>将角度归一化到[-π, π) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>待归一化角度，单位：rad </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>归一化后的角度，单位：rad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="194" column="14" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="194" bodyend="197"/>
+        <references refid="namespacehello__world_1a71f5ddbc81f1fa181ecefaf0b1f51fa8" compoundref="base_8hpp" startline="137" endline="149">NormPeriodData</references>
+        <references refid="base_8hpp_1a598a3330b3c21701223ee0ca14316eca" compoundref="base_8hpp" startline="28">PI</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacehello__world_1aa44c70128980881ac6260af9f928309a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float hello_world::AngleNormDeg</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>AngleNormDeg</name>
+        <qualifiedname>hello_world::AngleNormDeg</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>将角度归一化到[-180°, 180°) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>待归一化角度，单位：deg </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>归一化后的角度，单位：deg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="205" column="14" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="205" bodyend="208"/>
+        <references refid="namespacehello__world_1a71f5ddbc81f1fa181ecefaf0b1f51fa8" compoundref="base_8hpp" startline="137" endline="149">NormPeriodData</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacehello__world_1ab46e2d75fde6b8f67bd6d21c61508e47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float hello_world::PeriodDataSub</definition>
+        <argsstring>(float minuend, float subtrahend, float period)</argsstring>
+        <name>PeriodDataSub</name>
+        <qualifiedname>hello_world::PeriodDataSub</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>minuend</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>subtrahend</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>period</declname>
+        </param>
+        <briefdescription>
+<para>处理角度越过0值的情况，以半周期为基准 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ref</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>指向目标角度的指针 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fdb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>实际反馈的角度值 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>period</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>角度值的周期，通常是180度</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+处理角度越过0值的情况，确保目标角度和实际反馈的角度值在同一半周期内。 如果目标角度 - 实际反馈的角度 &gt;= half_period，则减去2 * half_period，确保在同一半周期内。 如果目标角度 - 实际反馈的角度 &lt; -half_period，则加上2 * half_period，确保在同一半周期内。 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="222" column="14" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="222" bodyend="232"/>
+        <references refid="assert_8hpp_1a5969df827ceb603bed14c4106586484a" compoundref="assert_8hpp" startline="36">HW_ASSERT</references>
+        <referencedby refid="namespacehello__world_1a7c9ce795c80c4bc674e5470984f99105" compoundref="base_8hpp" startline="237" endline="240">HandleAngleCross0Deg</referencedby>
+        <referencedby refid="namespacehello__world_1a7640febc082ad62910c63a8feac1c002" compoundref="base_8hpp" startline="233" endline="236">HandleAngleCross0Rad</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacehello__world_1a7640febc082ad62910c63a8feac1c002" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float hello_world::HandleAngleCross0Rad</definition>
+        <argsstring>(float ref, float fdb)</argsstring>
+        <name>HandleAngleCross0Rad</name>
+        <qualifiedname>hello_world::HandleAngleCross0Rad</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>ref</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fdb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="233" column="14" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="233" bodyend="236"/>
+        <references refid="namespacehello__world_1ab46e2d75fde6b8f67bd6d21c61508e47" compoundref="base_8hpp" startline="222" endline="232">PeriodDataSub</references>
+        <references refid="base_8hpp_1a598a3330b3c21701223ee0ca14316eca" compoundref="base_8hpp" startline="28">PI</references>
+        <referencedby refid="namespacehello__world_1_1algorithms_1_1controller_1_1pid_1a54cdae6f66cea881673bd9e6b366324c" compoundref="pid_8cpp" startline="336" endline="345">hello_world::algorithms::controller::pid::HandleAcross0</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacehello__world_1a7c9ce795c80c4bc674e5470984f99105" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float hello_world::HandleAngleCross0Deg</definition>
+        <argsstring>(float ref, float fdb)</argsstring>
+        <name>HandleAngleCross0Deg</name>
+        <qualifiedname>hello_world::HandleAngleCross0Deg</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>ref</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fdb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="237" column="14" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="237" bodyend="240"/>
+        <references refid="namespacehello__world_1ab46e2d75fde6b8f67bd6d21c61508e47" compoundref="base_8hpp" startline="222" endline="232">PeriodDataSub</references>
+        <referencedby refid="namespacehello__world_1_1algorithms_1_1controller_1_1pid_1a54cdae6f66cea881673bd9e6b366324c" compoundref="pid_8cpp" startline="336" endline="345">hello_world::algorithms::controller::pid::HandleAcross0</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacehello__world_1a8592f8f4b1bf9644d335a61a9d39c543" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float hello_world::Rad2Deg</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>Rad2Deg</name>
+        <qualifiedname>hello_world::Rad2Deg</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>将弧度制角度转换为角度制 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>待转换角度，单位：rad </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>输入角度的角度制表示</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="248" column="14" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="248" bodyend="248"/>
+        <references refid="namespacehello__world_1a219e78545f9e9d3987fae46cf7fcdd75" compoundref="base_8hpp" startline="33">kRad2DegCoff</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacehello__world_1afe0a0d8e82fa09f451155c7b2145121c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float hello_world::Deg2Rad</definition>
+        <argsstring>(float angle)</argsstring>
+        <name>Deg2Rad</name>
+        <qualifiedname>hello_world::Deg2Rad</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+<para>将角度制角度转换为弧度制 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>待转换角度，单位：deg </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>输入角度的弧度制表示</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/tools/inc/base.hpp" line="256" column="14" bodyfile="HW-Components/tools/inc/base.hpp" bodystart="256" bodyend="256"/>
+        <references refid="namespacehello__world_1aff7ca8b5f1a544cfb645d20c17b2ebcf" compoundref="base_8hpp" startline="34">kDeg2RadCoff</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HW-Components/algorithms/controller/inc/controller_base.hpp" line="24" column="1"/>
+  </compounddef>
+</doxygen>

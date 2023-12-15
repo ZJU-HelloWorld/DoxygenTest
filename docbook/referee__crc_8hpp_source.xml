@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_referee__crc_8hpp_source" xml:lang="zh">
+<title>referee_crc.hpp</title>
+<indexterm><primary>HW-Components/devices/referee/prv/referee_crc.hpp</primary></indexterm>
+浏览该文件的文档.<programlisting linenumbering="unnumbered"><anchor xml:id="_referee__crc_8hpp_source_1l00001"/>00001 
+<anchor xml:id="_referee__crc_8hpp_source_1l00002"/>00002 
+<anchor xml:id="_referee__crc_8hpp_source_1l00017"/>00017 <emphasis role="comment">/*&#32;Define&#32;to&#32;prevent&#32;recursive&#32;inclusion&#32;-------------------------------------*/</emphasis>
+<anchor xml:id="_referee__crc_8hpp_source_1l00018"/>00018 <emphasis role="preprocessor">#ifndef&#32;HW_COMPONENTS_CPP_DEVICES_REFEREE_CRC_H_</emphasis>
+<anchor xml:id="_referee__crc_8hpp_source_1l00019"/>00019 <emphasis role="preprocessor">#define&#32;HW_COMPONENTS_CPP_DEVICES_REFEREE_CRC_H_</emphasis>
+<anchor xml:id="_referee__crc_8hpp_source_1l00020"/>00020 
+<anchor xml:id="_referee__crc_8hpp_source_1l00021"/>00021 <emphasis role="comment">/*&#32;Includes&#32;------------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_referee__crc_8hpp_source_1l00022"/>00022 <emphasis role="preprocessor">#include&#32;&lt;cstdbool&gt;</emphasis>
+<anchor xml:id="_referee__crc_8hpp_source_1l00023"/>00023 <emphasis role="preprocessor">#include&#32;&lt;cstdint&gt;</emphasis>
+<anchor xml:id="_referee__crc_8hpp_source_1l00024"/>00024 
+<anchor xml:id="_referee__crc_8hpp_source_1l00025"/>00025 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacehello__world">hello_world</link>
+<anchor xml:id="_referee__crc_8hpp_source_1l00026"/>00026 {
+<anchor xml:id="_referee__crc_8hpp_source_1l00027"/>00027 <emphasis role="keyword">namespace&#32;</emphasis>devices
+<anchor xml:id="_referee__crc_8hpp_source_1l00028"/>00028 {
+<anchor xml:id="_referee__crc_8hpp_source_1l00029"/>00029 
+<anchor xml:id="_referee__crc_8hpp_source_1l00030"/>00030 <emphasis role="keyword">namespace&#32;</emphasis>referee
+<anchor xml:id="_referee__crc_8hpp_source_1l00031"/>00031 {
+<anchor xml:id="_referee__crc_8hpp_source_1l00032"/>00032 
+<anchor xml:id="_referee__crc_8hpp_source_1l00033"/>00033 <emphasis role="comment">/*&#32;Exported&#32;macro&#32;------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_referee__crc_8hpp_source_1l00034"/>00034 <emphasis role="comment">/*&#32;Exported&#32;types&#32;------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_referee__crc_8hpp_source_1l00035"/>00035 
+<anchor xml:id="_referee__crc_8hpp_source_1l00046"/>00046 <emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a5ac9b8968addb626ab283eaf7b80bd6c">VerifyCrc8CheckSum</link>(uint8_t&#32;*p_message,&#32;uint32_t&#32;length);
+<anchor xml:id="_referee__crc_8hpp_source_1l00047"/>00047 
+<anchor xml:id="_referee__crc_8hpp_source_1l00057"/>00057 <emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a1010051b064aba848f58d85e35720c8e">SetEndCrc8CheckSum</link>(uint8_t&#32;*p_message,&#32;uint32_t&#32;length);
+<anchor xml:id="_referee__crc_8hpp_source_1l00058"/>00058 
+<anchor xml:id="_referee__crc_8hpp_source_1l00069"/>00069 <emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_namespacehello__world_1_1devices_1_1referee_1aa177d9a48e848cf495e1119b8449a1f7">VerifyCrc16CheckSum</link>(uint8_t&#32;*p_message,&#32;uint32_t&#32;length);
+<anchor xml:id="_referee__crc_8hpp_source_1l00070"/>00070 
+<anchor xml:id="_referee__crc_8hpp_source_1l00080"/>00080 <emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a73a313c37bf9c08d99668eb8e20b0126">SetEndCrc16CheckSum</link>(uint8_t&#32;*p_message,&#32;uint32_t&#32;length);
+<anchor xml:id="_referee__crc_8hpp_source_1l00081"/>00081 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;referee</emphasis>
+<anchor xml:id="_referee__crc_8hpp_source_1l00082"/>00082 
+<anchor xml:id="_referee__crc_8hpp_source_1l00083"/>00083 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;devices</emphasis>
+<anchor xml:id="_referee__crc_8hpp_source_1l00084"/>00084 
+<anchor xml:id="_referee__crc_8hpp_source_1l00085"/>00085 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;hello_world</emphasis>
+<anchor xml:id="_referee__crc_8hpp_source_1l00086"/>00086 
+<anchor xml:id="_referee__crc_8hpp_source_1l00087"/>00087 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;HW_COMPONENTS_CPP_DEVICES_REFEREE_CRC_H_&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+</programlisting></section>

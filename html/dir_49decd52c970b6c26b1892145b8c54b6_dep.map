@@ -1,0 +1,29 @@
+<map id="HW&#45;Components/devices" name="HW&#45;Components/devices">
+<area shape="rect" id="node1" href="dir_41354485d893139e386cb38ed5404f14.html" title="tools" alt="" coords="237,136,288,161"/>
+<area shape="rect" id="node2" href="dir_efb0ec8d37d4e3ee43207fb26754ffbf.html" title="dsp" alt="" coords="520,136,563,161"/>
+<area shape="rect" id="node4" href="dir_5eb125e48023cbf65e0f94ef2b5a6143.html" title="buzzer" alt="" coords="468,63,529,88"/>
+<area shape="poly" id="edge1" href="dir_000001_000036.html" alt="" coords="479,91,457,101,375,126,303,143,302,138,374,121,455,96,477,86"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000001_000036.html" title="3" alt="" coords="304,140,312,155"/>
+<area shape="poly" id="edge2" href="dir_000001_000004.html" alt="" coords="508,87,529,122,524,125,503,90"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000001_000004.html" title="1" alt="" coords="528,108,536,123"/>
+<area shape="rect" id="node5" href="dir_0d36f70e890197f66be298058bd32981.html" title="imu" alt="" coords="192,63,235,88"/>
+<area shape="poly" id="edge3" href="dir_000007_000036.html" alt="" coords="224,87,248,122,244,125,219,90"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000007_000036.html" title="3" alt="" coords="247,108,255,123"/>
+<area shape="rect" id="node6" href="dir_ff73d26a6cf1671bb96d43a8fce53ce5.html" title="laser" alt="" coords="117,63,168,88"/>
+<area shape="poly" id="edge4" href="dir_000018_000036.html" alt="" coords="164,86,232,126,229,131,162,91"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000018_000036.html" title="3" alt="" coords="227,112,235,126"/>
+<area shape="rect" id="node7" href="dir_0b2a1104b376de6ed9ae0678ded7e530.html" title="motor" alt="" coords="38,63,93,88"/>
+<area shape="poly" id="edge5" href="dir_000019_000036.html" alt="" coords="86,86,106,96,168,119,224,135,223,140,166,124,104,101,84,91"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000019_000036.html" title="10" alt="" coords="214,121,229,136"/>
+<area shape="rect" id="node8" href="dir_9af9d0b351d08575a4dd73329768ab86.html" title="referee" alt="" coords="553,63,615,88"/>
+<area shape="poly" id="edge6" href="dir_000022_000004.html" alt="" coords="579,90,558,125,554,122,575,87"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000022_000004.html" title="1" alt="" coords="561,117,569,132"/>
+<area shape="rect" id="node9" href="dir_1353eb1815ab0f68dcb05da1f0dd2617.html" title="remote_control" alt="" coords="259,63,367,88"/>
+<area shape="poly" id="edge7" href="dir_000023_000036.html" alt="" coords="307,90,282,125,278,122,303,87"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000023_000036.html" title="2" alt="" coords="285,118,293,133"/>
+<area shape="rect" id="node10" href="dir_d18940ad4f50f2b9dcdd3c2a03bfb76d.html" title="servo" alt="" coords="391,63,443,88"/>
+<area shape="poly" id="edge8" href="dir_000024_000036.html" alt="" coords="400,91,381,101,303,135,301,130,379,96,397,86"/>
+<area shape="rect" id="edge8-headlabel" href="dir_000024_000036.html" title="3" alt="" coords="304,132,312,147"/>
+<area shape="rect" id="clust2" href="dir_49decd52c970b6c26b1892145b8c54b6.html" alt="" coords="27,52,716,99"/>
+<area shape="rect" id="clust1" href="dir_bf2c932e12fd3661bca25c493e91b85c.html" title="HW&#45;Components" alt="" coords="16,16,727,172"/>
+</map>

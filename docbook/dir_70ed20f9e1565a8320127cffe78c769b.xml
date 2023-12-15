@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_70ed20f9e1565a8320127cffe78c769b" xml:lang="zh">
+<title>HW-Components/devices/motor/src 目录参考</title>
+<indexterm><primary>HW-Components/devices/motor/src 目录参考</primary></indexterm>
+src 的目录依赖关系图<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_70ed20f9e1565a8320127cffe78c769b_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>文件    </title>
+        <itemizedlist>
+            <listitem><para>文件 <link linkend="_motor_8cpp">motor.cpp</link></para>
+
+<para>: @history : Version Date Author Note V0.9.0 yyyy-mm-dd &lt;author&gt; 1. </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_motor___a1_8cpp">motor_A1.cpp</link></para>
+
+<para>: @history : Version Date Author Note V0.9.0 2023-11-25 Caikunzhen 1. </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_motor__base_8cpp">motor_base.cpp</link></para>
+
+<para>: @history : Version Date Author Note V0.9.0 2023-11-25 Caikunzhen 1. </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_motor___d_m___j4310_8cpp">motor_DM_J4310.cpp</link></para>
+
+<para>: @history : Version Date Author Note V0.9.0 2023-11-25 Caikunzhen 1. </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_motor___g_m6020_8cpp">motor_GM6020.cpp</link></para>
+</listitem>
+            <listitem><para>文件 <link linkend="_motor___m2006_8cpp">motor_M2006.cpp</link></para>
+
+<para>: @history : Version Date Author Note V0.9.0 2023-11-25 Caikunzhen 1. </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_motor___m3508_8cpp">motor_M3508.cpp</link></para>
+
+<para>: @history : Version Date Author Note V0.9.0 2023-11-25 Caikunzhen 1. </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_motor___m8910_8cpp">motor_M8910.cpp</link></para>
+
+<para>: @history : Version Date Author Note V0.9.0 2023-11-25 Caikunzhen 1. </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_motor___m_f9025v2_8cpp">motor_MF9025v2.cpp</link></para>
+
+<para>: @history : Version Date Author Note V0.9.0 2023-11-25 Caikunzhen 1. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

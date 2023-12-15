@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="dir_e8bd1a84f8538ffc5de3dbd278499ab3" kind="dir">
+    <compoundname>HW-Components/devices/laser/inc</compoundname>
+    <innerfile refid="laser_8hpp">laser.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HW-Components/devices/laser/inc/"/>
+  </compounddef>
+</doxygen>

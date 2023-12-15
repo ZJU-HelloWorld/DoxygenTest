@@ -1,0 +1,162 @@
+\doxysection{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::Out\+Limit类 参考}
+\hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit}{}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit}\index{hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}}
+
+
+{\ttfamily \#include $<$pid\+\_\+opt.\+hpp$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_ad2b3c4ee279f22bfda11019999139142}{Out\+Limit}} (float lower=-\/0.\+1f, float upper=0.\+1f)
+\item 
+\mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a1407f4408006dc5cd1a22b20bef31e49}{set\+Lower}} (float lower)
+\item 
+\mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a0a2155cd0a909a9f847b7d59c8a2f98a}{set\+Upper}} (float upper)
+\item 
+\mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_abe6c996621f6258c50ecc9447e33c4d4}{set\+Params}} (float lower, float upper)
+\item 
+bool \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a18ce069e47c786aee47bed954a354c43}{is\+Legal}} ()
+\item 
+float \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a958ca6f80deb49af0d3c4d4bed32db42}{calc}} (float out)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_abfed2dd8851ab68aeda95769feda99a3}{handle\+Illegal\+Params}} ()
+\begin{DoxyCompactList}\small\item\em 处理非法参数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a3430a294b2f92a382a28d97774d06fa7}{lower\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 输出下限 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a235d72d9af7f487975cc6595e40cce52}{upper\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 输出上限 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l01211}{1211}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_ad2b3c4ee279f22bfda11019999139142}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_ad2b3c4ee279f22bfda11019999139142} 
+\index{hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}!OutLimit@{OutLimit}}
+\index{OutLimit@{OutLimit}!hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}}
+\doxysubsubsection{\texorpdfstring{OutLimit()}{OutLimit()}}
+{\footnotesize\ttfamily hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Out\+Limit\+::\+Out\+Limit (\begin{DoxyParamCaption}\item[{float}]{lower = {\ttfamily -\/0.1f},  }\item[{float}]{upper = {\ttfamily 0.1f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l01214}{1214}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a958ca6f80deb49af0d3c4d4bed32db42}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a958ca6f80deb49af0d3c4d4bed32db42} 
+\index{hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}!calc@{calc}}
+\index{calc@{calc}!hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}}
+\doxysubsubsection{\texorpdfstring{calc()}{calc()}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Out\+Limit\+::calc (\begin{DoxyParamCaption}\item[{float}]{out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l01243}{1243}} 行定义.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a958ca6f80deb49af0d3c4d4bed32db42_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_abfed2dd8851ab68aeda95769feda99a3}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_abfed2dd8851ab68aeda95769feda99a3} 
+\index{hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}!handleIllegalParams@{handleIllegalParams}}
+\index{handleIllegalParams@{handleIllegalParams}!hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}}
+\doxysubsubsection{\texorpdfstring{handleIllegalParams()}{handleIllegalParams()}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Out\+Limit\+::handle\+Illegal\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+处理非法参数 
+
+\begin{DoxyReturn}{返回}
+如果存在非法参数返回true，否则返回false 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l01264}{1264}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a18ce069e47c786aee47bed954a354c43}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a18ce069e47c786aee47bed954a354c43} 
+\index{hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}!isLegal@{isLegal}}
+\index{isLegal@{isLegal}!hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}}
+\doxysubsubsection{\texorpdfstring{isLegal()}{isLegal()}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Out\+Limit\+::is\+Legal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l01241}{1241}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a1407f4408006dc5cd1a22b20bef31e49}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a1407f4408006dc5cd1a22b20bef31e49} 
+\index{hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}!setLower@{setLower}}
+\index{setLower@{setLower}!hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}}
+\doxysubsubsection{\texorpdfstring{setLower()}{setLower()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Out\+Limit\+::set\+Lower (\begin{DoxyParamCaption}\item[{float}]{lower }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l01224}{1224}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_abe6c996621f6258c50ecc9447e33c4d4}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_abe6c996621f6258c50ecc9447e33c4d4} 
+\index{hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}!setParams@{setParams}}
+\index{setParams@{setParams}!hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}}
+\doxysubsubsection{\texorpdfstring{setParams()}{setParams()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Out\+Limit\+::set\+Params (\begin{DoxyParamCaption}\item[{float}]{lower,  }\item[{float}]{upper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l01234}{1234}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a0a2155cd0a909a9f847b7d59c8a2f98a}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a0a2155cd0a909a9f847b7d59c8a2f98a} 
+\index{hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}!setUpper@{setUpper}}
+\index{setUpper@{setUpper}!hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}}
+\doxysubsubsection{\texorpdfstring{setUpper()}{setUpper()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Out\+Limit\+::set\+Upper (\begin{DoxyParamCaption}\item[{float}]{upper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l01229}{1229}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a3430a294b2f92a382a28d97774d06fa7}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a3430a294b2f92a382a28d97774d06fa7} 
+\index{hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}!lower\_@{lower\_}}
+\index{lower\_@{lower\_}!hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}}
+\doxysubsubsection{\texorpdfstring{lower\_}{lower\_}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Out\+Limit\+::lower\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+输出下限 
+
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l01258}{1258}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a235d72d9af7f487975cc6595e40cce52}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_a235d72d9af7f487975cc6595e40cce52} 
+\index{hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}!upper\_@{upper\_}}
+\index{upper\_@{upper\_}!hello\_world::algorithms::controller::pid::OutLimit@{hello\_world::algorithms::controller::pid::OutLimit}}
+\doxysubsubsection{\texorpdfstring{upper\_}{upper\_}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Out\+Limit\+::upper\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+输出上限 
+
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l01259}{1259}} 行定义.
+

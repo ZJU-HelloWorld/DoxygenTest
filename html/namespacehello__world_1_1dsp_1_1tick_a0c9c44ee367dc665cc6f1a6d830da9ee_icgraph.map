@@ -1,0 +1,22 @@
+<map id="hello_world::dsp::tick::GetTickUs" name="hello_world::dsp::tick::GetTickUs">
+<area shape="rect" id="Node000001" title=" " alt="" coords="904,195,1048,235"/>
+<area shape="rect" id="Node000002" href="$namespacehello__world_1_1dsp_1_1tick.html#a97910b07255da1979f8ceafd8c6d2ea5" title=" " alt="" coords="712,195,856,235"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="889,218,856,218,856,213,889,213"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid.html#a2b8667e517f1999ec3fecffe9e6bd33d" title="PID 控制器的计算函数" alt="" coords="464,51,664,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="754,186,713,145,663,107,637,94,639,90,665,102,717,141,758,182"/>
+<area shape="rect" id="Node000007" href="$classhello__world_1_1devices_1_1referee_1_1_rx_package.html#a69171902885fbe16d886685130c0b9fb" title=" " alt="" coords="492,116,636,171"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="706,193,636,169,637,164,707,188"/>
+<area shape="rect" id="Node000008" href="$namespacehello__world_1_1dsp_1_1tick.html#a3bb6f5ee2096e411df77150fbac949a5" title=" " alt="" coords="492,195,636,235"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="697,218,637,218,637,213,697,213"/>
+<area shape="rect" id="Node000009" href="$classhello__world_1_1devices_1_1referee_1_1_rx_package_info.html#a4d47f980c5f11bbe7bc5bf5d3cd448a4" title=" " alt="" coords="482,260,646,315"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="707,243,647,263,645,258,706,238"/>
+<area shape="rect" id="Node000010" href="$classhello__world_1_1devices_1_1buzzer_1_1_buzzer.html#ab4a10c92796395a9b6c229f0bfec9cdb" title="播放乐曲" alt="" coords="489,339,639,379"/>
+<area shape="poly" id="edge10_Node000002_Node000010" title=" " alt="" coords="759,248,717,290,665,330,641,342,638,337,663,325,714,286,755,244"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#accc1fd43233ab6d228f7111eab364c51" title="计算级联 PID 控制器的输出" alt="" coords="235,5,416,60"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="449,55,416,50,417,45,450,50"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a180ce707d30cae5f45ec5820d1b2c50c" title="计算并行 PID 控制器的输出" alt="" coords="235,84,416,139"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="450,93,417,99,416,93,449,88"/>
+<area shape="rect" id="Node000005" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#ae10478e0d731be3f6e6d0c479964d448" title="计算 PID 控制器的输出" alt="" coords="5,45,187,100"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="220,54,187,59,187,54,220,48"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="220,96,187,91,187,85,220,91"/>
+</map>

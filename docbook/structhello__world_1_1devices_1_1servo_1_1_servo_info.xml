@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structhello__world_1_1devices_1_1servo_1_1_servo_info" xml:lang="zh">
+<title>hello_world::devices::servo::ServoInfo结构体 参考</title>
+<indexterm><primary>hello_world::devices::servo::ServoInfo</primary></indexterm>
+<para>
+<computeroutput>#include &lt;servo.hpp&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_structhello__world_1_1devices_1_1servo_1_1_servo_info_1a8909ce384f2bfc568b0d8de853441dfe">operating_freq</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_structhello__world_1_1devices_1_1servo_1_1_servo_info_1a54283a2b415c5c18adceaf3ba4ebb40c">min_pulse_duration</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_structhello__world_1_1devices_1_1servo_1_1_servo_info_1a8a375675055ea690bd3b54674d25a23f">max_pulse_duration</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_structhello__world_1_1devices_1_1servo_1_1_servo_info_1af9e22985d9ba75c434ad168ef8db8b73">angle_range</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+<para>
+在文件 <link linkend="_servo_8hpp_source">servo.hpp</link> 第 <link linkend="_servo_8hpp_source_1l00032">32</link> 行定义.</para>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_structhello__world_1_1devices_1_1servo_1_1_servo_info_1af9e22985d9ba75c434ad168ef8db8b73"/><section>
+    <title>angle_range</title>
+<indexterm><primary>angle_range</primary><secondary>hello_world::devices::servo::ServoInfo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::servo::ServoInfo</primary><secondary>angle_range</secondary></indexterm>
+<para><computeroutput>float hello_world::devices::servo::ServoInfo::angle_range</computeroutput></para>
+<para><itemizedlist>
+<listitem>
+<para>最大脉冲时长，单位：us </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="_servo_8hpp_source">servo.hpp</link> 第 <link linkend="_servo_8hpp_source_1l00036">36</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1devices_1_1servo_1_1_servo_info_1a8a375675055ea690bd3b54674d25a23f"/><section>
+    <title>max_pulse_duration</title>
+<indexterm><primary>max_pulse_duration</primary><secondary>hello_world::devices::servo::ServoInfo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::servo::ServoInfo</primary><secondary>max_pulse_duration</secondary></indexterm>
+<para><computeroutput>uint16_t hello_world::devices::servo::ServoInfo::max_pulse_duration</computeroutput></para>
+<para><itemizedlist>
+<listitem>
+<para>最小脉冲时长，单位：us </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="_servo_8hpp_source">servo.hpp</link> 第 <link linkend="_servo_8hpp_source_1l00035">35</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1devices_1_1servo_1_1_servo_info_1a54283a2b415c5c18adceaf3ba4ebb40c"/><section>
+    <title>min_pulse_duration</title>
+<indexterm><primary>min_pulse_duration</primary><secondary>hello_world::devices::servo::ServoInfo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::servo::ServoInfo</primary><secondary>min_pulse_duration</secondary></indexterm>
+<para><computeroutput>uint16_t hello_world::devices::servo::ServoInfo::min_pulse_duration</computeroutput></para>
+<para><itemizedlist>
+<listitem>
+<para>PWM频率，单位：Hz，一般 50 Hz ~ 300 Hz </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="_servo_8hpp_source">servo.hpp</link> 第 <link linkend="_servo_8hpp_source_1l00034">34</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1devices_1_1servo_1_1_servo_info_1a8909ce384f2bfc568b0d8de853441dfe"/><section>
+    <title>operating_freq</title>
+<indexterm><primary>operating_freq</primary><secondary>hello_world::devices::servo::ServoInfo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::servo::ServoInfo</primary><secondary>operating_freq</secondary></indexterm>
+<para><computeroutput>float hello_world::devices::servo::ServoInfo::operating_freq</computeroutput></para><para>
+在文件 <link linkend="_servo_8hpp_source">servo.hpp</link> 第 <link linkend="_servo_8hpp_source_1l00033">33</link> 行定义.</para>
+</section>
+</section>
+</section>

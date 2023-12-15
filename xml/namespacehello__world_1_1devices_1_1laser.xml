@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="namespacehello__world_1_1devices_1_1laser" kind="namespace" language="C++">
+    <compoundname>hello_world::devices::laser</compoundname>
+    <innerclass refid="classhello__world_1_1devices_1_1laser_1_1_laser" prot="public">hello_world::devices::laser::Laser</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HW-Components/devices/laser/inc/laser.hpp" line="28" column="1"/>
+  </compounddef>
+</doxygen>

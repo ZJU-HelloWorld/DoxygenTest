@@ -1,0 +1,608 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classhello__world_1_1devices_1_1motor_1_1_g_m6020" xml:lang="zh">
+<title>hello_world::devices::motor::GM6020类 参考</title>
+<indexterm><primary>hello_world::devices::motor::GM6020</primary></indexterm>
+<para>
+<computeroutput>#include &lt;motor_GM6020.hpp&gt;</computeroutput>
+</para>
+类 hello_world::devices::motor::GM6020 继承关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1motor_1_1_g_m6020__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+hello_world::devices::motor::GM6020 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1motor_1_1_g_m6020__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1ad61341de888f13343d20bd7e0b06f3c1">GM6020</link> (uint8_t <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1ab3e2187f017e86c6d4a83caa55fe9419">id</link>, const <link linkend="_structhello__world_1_1devices_1_1motor_1_1_optional_params">OptionalParams</link> &amp;optinal_params=<link linkend="_structhello__world_1_1devices_1_1motor_1_1_optional_params">OptionalParams</link>())</para>
+
+<para><link linkend="_classhello__world_1_1devices_1_1motor_1_1_g_m6020">GM6020</link> 初始化 </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1a2d7d38f9e2e2bbb9c69710d4af34428a">~GM6020</link> ()</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380c">State</link> <link linkend="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1aa3824723dba2a9cd0d833fc02a7f49ff">setInput</link> (float input)</para>
+
+<para>设定发给电调的期望报文原始值 </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380c">State</link> <link linkend="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1a1235b577a72c9fa53a2732e04982cab0">set_input_type</link> (<link linkend="_namespacehello__world_1_1devices_1_1motor_1a4777995093ebbd290b833795e49749b7">InputType</link> input_type)</para>
+
+<para>设置点击的输入类型 </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380c">State</link> <link linkend="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1a5ad5ba687605e93d6723b3e6fa317435">encode</link> (uint8_t tx_data[8], uint32_t tx_msg_std_id) const override</para>
+
+<para>将要发给电调的期望输值编码为对应的 CAN 报文 </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380c">State</link> <link linkend="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1a732687f3fc5d5d302135f950ac260e3f">decode</link> (const uint8_t rx_data[8], uint32_t rx_msg_std_id) override</para>
+
+<para>将电调发回的 CAN 报文进行解包 </para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1a5b54f1cf1e8bf2df6bf3b6b010ba175a">temp</link> (void) const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public 成员函数 继承自 <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor">hello_world::devices::motor::Motor</link>        <itemizedlist>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a353af5a842fbf673c92758952bb2958b">Motor</link> ()</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1acf169589667b294dc292b414b28f17a8">~Motor</link> ()</para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1aab42768aa52c635bba1d205b466c0981">getInput</link> (void) const</para>
+
+<para>获取发给电调的期望值 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a8c96d433ffdc4000153e08175b97d445">setAngleValue</link> (float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1acad1e1f1792ab8cb6265b1d5195737f6">angle</link>)</para>
+
+<para>将当前电机输出端所处位置设置为指定的角度 </para>
+</listitem>
+            <listitem><para>virtual float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1af74a8c4ad7c0067a2d71afd711639366">raw2torq</link> (float raw) const</para>
+
+<para>将原始报文内容转换为输出端力矩 </para>
+</listitem>
+            <listitem><para>virtual float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a319adc3f1b7d43fa12015b52a153ea17">torq2raw</link> (float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a987073404f2d04c10434f830884b9612">torq</link>) const</para>
+
+<para>将输出端力矩转换为原始报文内容 </para>
+</listitem>
+            <listitem><para>virtual float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a1e4467d9f449b9c6c7d6886fffa89667">raw2curr</link> (float raw) const</para>
+
+<para>将原始报文内容转换为转子电流 </para>
+</listitem>
+            <listitem><para>virtual float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1aebf04ce4e3628c60907a29771f383027">curr2raw</link> (float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a7fbec1460a1db6c45b4c57fd0497e5e0">curr</link>) const</para>
+
+<para>将转子电流转换为原始报文内容 </para>
+</listitem>
+            <listitem><para>virtual float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a44292bfea784425e2c2c81dc4d634371">torq2curr</link> (float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a987073404f2d04c10434f830884b9612">torq</link>) const</para>
+
+<para>将输出端力矩转换为转子电流 </para>
+</listitem>
+            <listitem><para>virtual float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a6e11db30817cf05232ee3d52ed48030b">curr2torq</link> (float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a7fbec1460a1db6c45b4c57fd0497e5e0">curr</link>) const</para>
+
+<para>将转子电流转换为输出端力矩 </para>
+</listitem>
+            <listitem><para>const <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_info">MotorInfo</link> &amp; <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1af88eebbf4bb3e8515bc5728ce3313f41">motor_info</link> (void) const</para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1devices_1_1motor_1a44985d99992e9464953d243bf3b561fd">Dir</link> <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1ae7669c1a2fc06a016b31bfa6b885dd6b">dir</link> (void) const</para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1ab3e2187f017e86c6d4a83caa55fe9419">id</link> (void) const</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1ab77091f1c532f4b84153448aa27d6a6c">rx_id</link> (void) const</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1acbb8c91a5928cf03d3778b668edf6ff5">tx_id</link> (void) const</para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1devices_1_1motor_1a0163710b33b99ac98bcbcb1f43d78248">AngleRange</link> <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1abd1d7d54199dac13f71d67e3711752b5">angle_range</link> (void) const</para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1devices_1_1motor_1a4777995093ebbd290b833795e49749b7">InputType</link> <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a9ca0e58a5138076f3c0bc5eb2ccb34e0">get_input_type</link> (void) const</para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1acad1e1f1792ab8cb6265b1d5195737f6">angle</link> (void) const</para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a4aff69d544478285b83ab15914d437ce">vel</link> (void) const</para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a987073404f2d04c10434f830884b9612">torq</link> (void) const</para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a7fbec1460a1db6c45b4c57fd0497e5e0">curr</link> (void) const</para>
+</listitem>
+        </itemizedlist>
+Public 成员函数 继承自 <link linkend="_classhello__world_1_1_mem_mang">hello_world::MemMang</link>        <itemizedlist>
+            <listitem><para>void * <link linkend="_classhello__world_1_1_mem_mang_1abcf6e7289814e8da342ba4f47d8af411">operator new</link> (size_t size)</para>
+</listitem>
+            <listitem><para>void * <link linkend="_classhello__world_1_1_mem_mang_1ad10b6eff1541322708e5bde32c590c82">operator new[]</link> (size_t size)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1_mem_mang_1abf1fe21066f52d693e2eec63a5833e8e">operator delete</link> (void *ptr)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1_mem_mang_1a54e1a6a8e01b0996cc2854a8bc1ce7bd">operator delete[]</link> (void *ptr)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Private 属性    </title>
+        <itemizedlist>
+            <listitem><para>uint8_t <link linkend="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1acc42958e0eedf1f10da56e43d5df7946">temp_</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>静态 Private 属性    </title>
+        <itemizedlist>
+            <listitem><para>static constexpr uint32_t <link linkend="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1a284d777c18006c5e5ba05576f796cb6e">kTx1_4_</link> = 0x1FF</para>
+</listitem>
+            <listitem><para>static constexpr uint32_t <link linkend="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1a8746a4b46ed319f80d6d4196e6fcedcb">kTx5_7_</link> = 0x2FF</para>
+</listitem>
+            <listitem><para>static constexpr uint32_t <link linkend="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1a99d3844cbaf71a0ba1a2694eae5f7411">kRx0_</link> = 0x204</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>额外继承的成员函数    </title>
+Protected 成员函数 继承自 <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor">hello_world::devices::motor::Motor</link>        <itemizedlist>
+            <listitem><para>float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a21092858a98af5688b398d57cd203592">normAngle</link> (float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1acad1e1f1792ab8cb6265b1d5195737f6">angle</link>)</para>
+
+<para>将角度转换到指定范围 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected 属性 继承自 <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor">hello_world::devices::motor::Motor</link>        <itemizedlist>
+            <listitem><para>float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1ab7a9c137dd445327e658202640e3dbc6">angle_</link> = 0</para>
+
+<para>电机状态 </para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a609eb51ef7ddb343ecc4eeafc4ad83e3">vel_</link> = 0</para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a40c42d94607450fb55a676bdaa0b505c">torq_</link> = 0</para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a6b7de1c9857ad74e17bda1b03b524b21">curr_</link> = 0</para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1ab037cc377320f41d8bdbdd599448dad8">round_</link> = 0</para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1ade57cbc7fc217543ca6c8650ad0eb03d">last_raw_angle_</link> = 0</para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1adac9b8b8484e8529d9cd10665b3a0f88">actual_angle_</link> = 0</para>
+
+<para>电机输出端实际输出角度（未扣除角度偏差），单位：rad </para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a4e24f06845ffe971bca1914b11d353f1">raw_input_</link> = 0</para>
+
+<para>电机输入 </para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1abf32abb5202efb3785033c8d7917a991">torq_input_</link> = 0</para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a7339defaa4857872509f36377d3ccf41">curr_input_</link> = 0</para>
+</listitem>
+            <listitem><para><link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_info">MotorInfo</link> <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a59781c0f3a6d7bb179d93c61d837836d">motor_info_</link></para>
+</listitem>
+        </itemizedlist>
+静态 Protected 属性 继承自 <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor">hello_world::devices::motor::Motor</link>        <itemizedlist>
+            <listitem><para>static constexpr float <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1ac4d15805fa2765480961cbb22a874832">kCross0ValueThres</link> = 0.3f</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>详细描述</title>
+<para>
+在文件 <link linkend="_motor___g_m6020_8hpp_source">motor_GM6020.hpp</link> 第 <link linkend="_motor___g_m6020_8hpp_source_1l00032">32</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1ad61341de888f13343d20bd7e0b06f3c1"/><section>
+    <title>GM6020()</title>
+<indexterm><primary>GM6020</primary><secondary>hello_world::devices::motor::GM6020</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::GM6020</primary><secondary>GM6020</secondary></indexterm>
+<para><computeroutput>hello_world::devices::motor::GM6020::GM6020 (uint8_t id, const <link linkend="_structhello__world_1_1devices_1_1motor_1_1_optional_params">OptionalParams</link> &amp; optinal_params = <computeroutput><link linkend="_structhello__world_1_1devices_1_1motor_1_1_optional_params">OptionalParams</link>()</computeroutput>
+)<computeroutput>[explicit]</computeroutput></computeroutput></para><para>
+
+<para><link linkend="_classhello__world_1_1devices_1_1motor_1_1_g_m6020">GM6020</link> 初始化 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>id</entry><entry>
+<para>电机 ID，1到7 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>optinal_params</entry><entry>
+<para>电机可选配置参数 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>None </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="_motor___g_m6020_8cpp_source">motor_GM6020.cpp</link> 第 <link linkend="_motor___g_m6020_8cpp_source_1l00054">54</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1motor_1_1_g_m6020_ad61341de888f13343d20bd7e0b06f3c1_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1a2d7d38f9e2e2bbb9c69710d4af34428a"/><section>
+    <title>~GM6020()</title>
+<indexterm><primary>~GM6020</primary><secondary>hello_world::devices::motor::GM6020</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::GM6020</primary><secondary>~GM6020</secondary></indexterm>
+<para><computeroutput>virtual hello_world::devices::motor::GM6020::~GM6020 ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_motor___g_m6020_8hpp_source">motor_GM6020.hpp</link> 第 <link linkend="_motor___g_m6020_8hpp_source_1l00037">37</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1a732687f3fc5d5d302135f950ac260e3f"/><section>
+    <title>decode()</title>
+<indexterm><primary>decode</primary><secondary>hello_world::devices::motor::GM6020</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::GM6020</primary><secondary>decode</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380c">State</link> hello_world::devices::motor::GM6020::decode (const uint8_t rx_data[8], uint32_t rx_msg_std_id)<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>将电调发回的 CAN 报文进行解包 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>rx_data</entry><entry>
+<para>电调发回的 CAN 报文 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>rx_msg_std_id</entry><entry>
+<para>电调发回的报文的ID </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>当</entry><entry>
+<para>ID 匹配时返回 kStateOk，否则返回 kStateIdDismatch </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>只有当 rx_msg_std_id 与实际的电机会发回报文的 ID 对应时才会对报文 进行解包，该 ID 可以通过 rx_id 方法获取 </para>
+</note>
+</para>
+<para>
+实现了 <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1af62b61171a698a06954cc8ccec37f79e">hello_world::devices::motor::Motor</link>.</para>
+<para>
+在文件 <link linkend="_motor___g_m6020_8cpp_source">motor_GM6020.cpp</link> 第 <link linkend="_motor___g_m6020_8cpp_source_1l00181">181</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1motor_1_1_g_m6020_a732687f3fc5d5d302135f950ac260e3f_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1a5ad5ba687605e93d6723b3e6fa317435"/><section>
+    <title>encode()</title>
+<indexterm><primary>encode</primary><secondary>hello_world::devices::motor::GM6020</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::GM6020</primary><secondary>encode</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380c">State</link> hello_world::devices::motor::GM6020::encode (uint8_t tx_data[8], uint32_t tx_msg_std_id) const<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>将要发给电调的期望输值编码为对应的 CAN 报文 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>tx_data</entry><entry>
+<para>将要发出的 CAN 报文 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>tx_msg_std_id</entry><entry>
+<para>发给电调的报文的ID </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>当</entry><entry>
+<para>ID 匹配时返回 kStateOk，否则返回 kStateIdDismatch </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>1. 只有当 tx_msg_std_id 与实际的发给电机报文的 ID 对应时才会生成 报文，该 ID 可以通过 tx_id 方法获取<orderedlist>
+<listitem>
+<para>只会在报文需要的位置上进行修改，区域位置的内容会保持不变 </para>
+</listitem></orderedlist>
+</para>
+</note>
+</para>
+<para>
+实现了 <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1a50477b96ba8268bcac04ab6637578cc5">hello_world::devices::motor::Motor</link>.</para>
+<para>
+在文件 <link linkend="_motor___g_m6020_8cpp_source">motor_GM6020.cpp</link> 第 <link linkend="_motor___g_m6020_8cpp_source_1l00151">151</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1motor_1_1_g_m6020_a5ad5ba687605e93d6723b3e6fa317435_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1a1235b577a72c9fa53a2732e04982cab0"/><section>
+    <title>set_input_type()</title>
+<indexterm><primary>set_input_type</primary><secondary>hello_world::devices::motor::GM6020</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::GM6020</primary><secondary>set_input_type</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380c">State</link> hello_world::devices::motor::GM6020::set_input_type (<link linkend="_namespacehello__world_1_1devices_1_1motor_1a4777995093ebbd290b833795e49749b7">InputType</link> input_type)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>设置点击的输入类型 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>input_type</entry><entry>
+<para>期望输入类型 <itemizedlist>
+<listitem>
+<para>kInputTypeRaw: 原始报文输入 </para>
+</listitem>
+<listitem>
+<para>kInputTypeTorq: 输出端力矩输入 </para>
+</listitem>
+<listitem>
+<para>kInputTypeCurr: 转子端电流输入 </para>
+</listitem>
+</itemizedlist>
+</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>None </para>
+</note>
+</para>
+<para>
+重载 <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1abd7c00f35db22fb65264baf08c3981b6">hello_world::devices::motor::Motor</link> .</para>
+<para>
+在文件 <link linkend="_motor___g_m6020_8cpp_source">motor_GM6020.cpp</link> 第 <link linkend="_motor___g_m6020_8cpp_source_1l00132">132</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1aa3824723dba2a9cd0d833fc02a7f49ff"/><section>
+    <title>setInput()</title>
+<indexterm><primary>setInput</primary><secondary>hello_world::devices::motor::GM6020</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::GM6020</primary><secondary>setInput</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380c">State</link> hello_world::devices::motor::GM6020::setInput (float input)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>设定发给电调的期望报文原始值 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>input</entry><entry>
+<para>发给电调的期望报文原始值 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>运行状态</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>设定的期望值会自动被限制到允许的范围内，当前实际的设定值可以通 过 getInput 方法查看 </para>
+</note>
+</para>
+<para>
+重载 <link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor_1ad101045a9eef9a699001fc94631e8395">hello_world::devices::motor::Motor</link> .</para>
+<para>
+在文件 <link linkend="_motor___g_m6020_8cpp_source">motor_GM6020.cpp</link> 第 <link linkend="_motor___g_m6020_8cpp_source_1l00112">112</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1motor_1_1_g_m6020_aa3824723dba2a9cd0d833fc02a7f49ff_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1a5b54f1cf1e8bf2df6bf3b6b010ba175a"/><section>
+    <title>temp()</title>
+<indexterm><primary>temp</primary><secondary>hello_world::devices::motor::GM6020</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::GM6020</primary><secondary>temp</secondary></indexterm>
+<para><computeroutput>uint8_t hello_world::devices::motor::GM6020::temp (void ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_motor___g_m6020_8hpp_source">motor_GM6020.hpp</link> 第 <link linkend="_motor___g_m6020_8hpp_source_1l00049">49</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1a99d3844cbaf71a0ba1a2694eae5f7411"/><section>
+    <title>kRx0_</title>
+<indexterm><primary>kRx0_</primary><secondary>hello_world::devices::motor::GM6020</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::GM6020</primary><secondary>kRx0_</secondary></indexterm>
+<para><computeroutput>constexpr uint32_t hello_world::devices::motor::GM6020::kRx0_ = 0x204<computeroutput>[static]</computeroutput>, <computeroutput>[constexpr]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_motor___g_m6020_8hpp_source">motor_GM6020.hpp</link> 第 <link linkend="_motor___g_m6020_8hpp_source_1l00056">56</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1a284d777c18006c5e5ba05576f796cb6e"/><section>
+    <title>kTx1_4_</title>
+<indexterm><primary>kTx1_4_</primary><secondary>hello_world::devices::motor::GM6020</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::GM6020</primary><secondary>kTx1_4_</secondary></indexterm>
+<para><computeroutput>constexpr uint32_t hello_world::devices::motor::GM6020::kTx1_4_ = 0x1FF<computeroutput>[static]</computeroutput>, <computeroutput>[constexpr]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para>
+<para><itemizedlist>
+<listitem>
+<para>电机温度 </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="_motor___g_m6020_8hpp_source">motor_GM6020.hpp</link> 第 <link linkend="_motor___g_m6020_8hpp_source_1l00054">54</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1a8746a4b46ed319f80d6d4196e6fcedcb"/><section>
+    <title>kTx5_7_</title>
+<indexterm><primary>kTx5_7_</primary><secondary>hello_world::devices::motor::GM6020</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::GM6020</primary><secondary>kTx5_7_</secondary></indexterm>
+<para><computeroutput>constexpr uint32_t hello_world::devices::motor::GM6020::kTx5_7_ = 0x2FF<computeroutput>[static]</computeroutput>, <computeroutput>[constexpr]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_motor___g_m6020_8hpp_source">motor_GM6020.hpp</link> 第 <link linkend="_motor___g_m6020_8hpp_source_1l00055">55</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1motor_1_1_g_m6020_1acc42958e0eedf1f10da56e43d5df7946"/><section>
+    <title>temp_</title>
+<indexterm><primary>temp_</primary><secondary>hello_world::devices::motor::GM6020</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::GM6020</primary><secondary>temp_</secondary></indexterm>
+<para><computeroutput>uint8_t hello_world::devices::motor::GM6020::temp_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_motor___g_m6020_8hpp_source">motor_GM6020.hpp</link> 第 <link linkend="_motor___g_m6020_8hpp_source_1l00052">52</link> 行定义.</para>
+</section>
+</section>
+</section>

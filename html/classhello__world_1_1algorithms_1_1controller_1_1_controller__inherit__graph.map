@@ -1,0 +1,9 @@
+<map id="hello_world::algorithms::controller::Controller" name="hello_world::algorithms::controller::Controller">
+<area shape="rect" id="Node000001" title=" " alt="" coords="208,37,363,77"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid.html" title="基础 PID 控制器类，继承自Controller类" alt="" coords="427,5,595,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="377,42,426,35,426,40,378,47"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html" title="一个多节点 PID 控制器类，继承自 Controller 类，目前实现类型有串联或并联" alt="" coords="411,69,611,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="378,68,411,72,410,78,377,73"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1_mem_mang.html" title=" " alt="" coords="5,45,160,70"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,55,207,55,207,60,174,60"/>
+</map>

@@ -1,0 +1,720 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310" kind="class" language="C++" prot="public">
+    <compoundname>hello_world::devices::motor::DM_J4310</compoundname>
+    <basecompoundref refid="classhello__world_1_1devices_1_1motor_1_1_motor" prot="public" virt="non-virtual">hello_world::devices::motor::Motor</basecompoundref>
+    <includes refid="motor___d_m___j4310_8hpp" local="no">motor_DM_J4310.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a1a0dcefdd32af16ed228806b9f157342" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t hello_world::devices::motor::DM_J4310::temp_</definition>
+        <argsstring></argsstring>
+        <name>temp_</name>
+        <qualifiedname>hello_world::devices::motor::DM_J4310::temp_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" line="58" column="11" bodyfile="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" bodystart="58" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a84ecfac4c74e3f0f7b85fba6c69f2aa1" compoundref="motor___d_m___j4310_8cpp" startline="248" endline="297">decode</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1aaf1b5c19a9ec55adebe5963804c54a86" compoundref="motor___d_m___j4310_8hpp" startline="55" endline="55">temp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a4957456005fc4d832744e97a71bce0a2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hello_world::devices::motor::DM_J4310::is_start_</definition>
+        <argsstring></argsstring>
+        <name>is_start_</name>
+        <qualifiedname>hello_world::devices::motor::DM_J4310::is_start_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>电机温度 </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" line="59" column="8" bodyfile="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" bodystart="59" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a84ecfac4c74e3f0f7b85fba6c69f2aa1" compoundref="motor___d_m___j4310_8cpp" startline="248" endline="297">decode</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a0a61fcd9a79f7bbb0addccaf677f2c5f" compoundref="motor___d_m___j4310_8cpp" startline="97" endline="162">DM_J4310</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ac97392867193cf052740d0cfc3db7ebc" compoundref="motor___d_m___j4310_8cpp" startline="213" endline="238">encode</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ac1e26d94d20642c30d5b854f66e12913" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t hello_world::devices::motor::DM_J4310::kTx0_</definition>
+        <argsstring></argsstring>
+        <name>kTx0_</name>
+        <qualifiedname>hello_world::devices::motor::DM_J4310::kTx0_</qualifiedname>
+        <initializer>= 0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>电机使能 </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" line="61" column="29" bodyfile="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" bodystart="61" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a0a61fcd9a79f7bbb0addccaf677f2c5f" compoundref="motor___d_m___j4310_8cpp" startline="97" endline="162">DM_J4310</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ad1871713b873d04e90c8a7494190fee8" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr uint32_t</type>
+        <definition>constexpr uint32_t hello_world::devices::motor::DM_J4310::kRx0_</definition>
+        <argsstring></argsstring>
+        <name>kRx0_</name>
+        <qualifiedname>hello_world::devices::motor::DM_J4310::kRx0_</qualifiedname>
+        <initializer>= 0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" line="62" column="29" bodyfile="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" bodystart="62" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a0a61fcd9a79f7bbb0addccaf677f2c5f" compoundref="motor___d_m___j4310_8cpp" startline="97" endline="162">DM_J4310</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a0a61fcd9a79f7bbb0addccaf677f2c5f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hello_world::devices::motor::DM_J4310::DM_J4310</definition>
+        <argsstring>(uint8_t id, const OptionalParams &amp;optinal_params=OptionalParams())</argsstring>
+        <name>DM_J4310</name>
+        <qualifiedname>hello_world::devices::motor::DM_J4310::DM_J4310</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structhello__world_1_1devices_1_1motor_1_1_optional_params" kindref="compound">OptionalParams</ref> &amp;</type>
+          <declname>optinal_params</declname>
+          <defval><ref refid="structhello__world_1_1devices_1_1motor_1_1_optional_params" kindref="compound">OptionalParams</ref>()</defval>
+        </param>
+        <briefdescription>
+<para><ref refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310" kindref="compound">DM_J4310</ref> 初始化 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>电机 ID，1到10 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>optinal_params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>电机可选配置参数 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" line="35" column="12" bodyfile="HW-Components/devices/motor/src/motor_DM_J4310.cpp" bodystart="97" bodyend="162"/>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_info_1a7d770e09d97238decfb61382deac39eb" compoundref="motor__base_8hpp" startline="89">hello_world::devices::motor::MotorInfo::angle_offset</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a36043885b6010524f0011531b6415e0a" compoundref="motor__base_8hpp" startline="107">hello_world::devices::motor::OptionalParams::angle_offset</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_info_1a9e6c4b4561b5da0bb08b88c80953eece" compoundref="motor__base_8hpp" startline="85">hello_world::devices::motor::MotorInfo::angle_range</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a1917a38f2bec6dbe8b7982ba4857142a" compoundref="motor__base_8hpp" startline="102">hello_world::devices::motor::OptionalParams::angle_range</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a6e11db30817cf05232ee3d52ed48030b" compoundref="motor__base_8cpp" startline="191" endline="194">hello_world::devices::motor::Motor::curr2torq</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a2ffd7b526a967afe22b3bdb838daea0b" compoundref="motor__base_8hpp" startline="70">hello_world::devices::motor::MotorBaseInfo::curr_input_lim</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_info_1a16bfca55d6a9c16d3bed3794f59eae55" compoundref="motor__base_8hpp" startline="83">hello_world::devices::motor::MotorInfo::dir</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_optional_params_1abb17f065132ebdcc2a00916fb36e2873" compoundref="motor__base_8hpp" startline="103">hello_world::devices::motor::OptionalParams::dir</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_optional_params_1ab0a4704479885c3da95f9e0bee91026d" compoundref="motor__base_8hpp" startline="109">hello_world::devices::motor::OptionalParams::ex_redu_rat</references>
+        <references refid="assert_8hpp_1a5969df827ceb603bed14c4106586484a" compoundref="assert_8hpp" startline="36">HW_ASSERT</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_info_1ad5c740f3c72547a3d4b6a9ac07eb52fe" compoundref="motor__base_8hpp" startline="84">hello_world::devices::motor::MotorInfo::id</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1ab3e2187f017e86c6d4a83caa55fe9419" compoundref="motor__base_8hpp" startline="176" endline="176">hello_world::devices::motor::Motor::id</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_info_1af8fc7f4030e24c85518c7239bcac9a86" compoundref="motor__base_8hpp" startline="86">hello_world::devices::motor::MotorInfo::input_type</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a40afccbd81c17e22779f7df471f2ec0b" compoundref="motor__base_8hpp" startline="101">hello_world::devices::motor::OptionalParams::input_type</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a4957456005fc4d832744e97a71bce0a2" compoundref="motor___d_m___j4310_8hpp" startline="59">is_start_</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a0163710b33b99ac98bcbcb1f43d78248a7856b44581aabfcff60aedc2b603b471" compoundref="motor__base_8hpp" startline="58">hello_world::devices::motor::kAngleRange0To2Pi</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a0163710b33b99ac98bcbcb1f43d78248a0e264d4f119a2e5d4c62691f3f35e317" compoundref="motor__base_8hpp" startline="59">hello_world::devices::motor::kAngleRangeNegInfToPosInf</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a0163710b33b99ac98bcbcb1f43d78248a2f525a5ee04cacdb2fcbcdb636cf8e5a" compoundref="motor__base_8hpp" startline="57">hello_world::devices::motor::kAngleRangeNegPiToPosPi</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a44985d99992e9464953d243bf3b561fda8ef76451782f120b178cb02bdcbe9917" compoundref="motor__base_8hpp" startline="52">hello_world::devices::motor::kDirFwd</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a44985d99992e9464953d243bf3b561fdac8903b06755144e29386752630029652" compoundref="motor__base_8hpp" startline="53">hello_world::devices::motor::kDirRev</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a45f0b841847534b5cb7455ec6f03850e" compoundref="motor___d_m___j4310_8cpp" startline="33" endline="45">hello_world::devices::motor::kDM_J4310MotorBaseInfo</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a4777995093ebbd290b833795e49749b7acbc926bf0e52b6d442d48680c808ba34" compoundref="motor__base_8hpp" startline="43">hello_world::devices::motor::kInputTypeCurr</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a4777995093ebbd290b833795e49749b7a3af8d233b879c0e5323904dd850fbfe3" compoundref="motor__base_8hpp" startline="41">hello_world::devices::motor::kInputTypeRaw</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a4777995093ebbd290b833795e49749b7a40b16f84fe9bb51523ee837d347a7683" compoundref="motor__base_8hpp" startline="42">hello_world::devices::motor::kInputTypeTorq</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1abe2e70f5aab1c0e73122df8bad6de6a0" compoundref="motor__base_8hpp" startline="63">hello_world::devices::motor::kInvalidValue</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a45760c831ff44879601b0fa89298bd45" compoundref="motor___d_m___j4310_8cpp" startline="51">hello_world::devices::motor::kMaxTorq</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ad1871713b873d04e90c8a7494190fee8" compoundref="motor___d_m___j4310_8hpp" startline="62">kRx0_</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ac1e26d94d20642c30d5b854f66e12913" compoundref="motor___d_m___j4310_8hpp" startline="61">kTx0_</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a89486565dd10e3184bf9f54408743f8a" compoundref="motor__base_8hpp" startline="115">hello_world::devices::motor::OptionalParams::max_curr_input_lim</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a2230b1a9af266b248a2642e032d1a4a7" compoundref="motor__base_8hpp" startline="113">hello_world::devices::motor::OptionalParams::max_torq_input_lim</references>
+        <references refid="namespacehello__world_1a94594f3432536927055026f3f48af251" compoundref="base_8hpp" startline="78" endline="81">hello_world::Min</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a59781c0f3a6d7bb179d93c61d837836d" compoundref="motor__base_8hpp" startline="212">hello_world::devices::motor::Motor::motor_info_</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a2b549445c9205d4d98b6afaab8a8a429" compoundref="motor__base_8hpp" startline="68">hello_world::devices::motor::MotorBaseInfo::raw_input_lim</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a01dc4c2e170bc8fd5a7a0a9f53492fa8" compoundref="motor__base_8hpp" startline="73">hello_world::devices::motor::MotorBaseInfo::redu_rat</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a7324141855f9f70be7be484df0f511e6" compoundref="motor__base_8hpp" startline="105">hello_world::devices::motor::OptionalParams::remove_build_in_reducer</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_info_1a3e96084a1a764a8bc1be4d4e34ef97b5" compoundref="motor__base_8hpp" startline="87">hello_world::devices::motor::MotorInfo::rx_id</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a44292bfea784425e2c2c81dc4d634371" compoundref="motor__base_8cpp" startline="180" endline="183">hello_world::devices::motor::Motor::torq2curr</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a362055600c7cf9836de0659f3ea0b20a" compoundref="motor__base_8hpp" startline="69">hello_world::devices::motor::MotorBaseInfo::torq_input_lim</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_info_1a85fb9e3e5d5e207f69ad906f092b3ddc" compoundref="motor__base_8hpp" startline="88">hello_world::devices::motor::MotorInfo::tx_id</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a16b10610e2263062a21fa0d71974ec44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual hello_world::devices::motor::DM_J4310::~DM_J4310</definition>
+        <argsstring>()</argsstring>
+        <name>~DM_J4310</name>
+        <qualifiedname>hello_world::devices::motor::DM_J4310::~DM_J4310</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" line="37" column="11" bodyfile="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ae15373ce02962c1a287d7e813413869b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380c" kindref="member">State</ref></type>
+        <definition>State hello_world::devices::motor::DM_J4310::setInput</definition>
+        <argsstring>(float input)</argsstring>
+        <name>setInput</name>
+        <qualifiedname>hello_world::devices::motor::DM_J4310::setInput</qualifiedname>
+        <reimplements refid="classhello__world_1_1devices_1_1motor_1_1_motor_1ad101045a9eef9a699001fc94631e8395">setInput</reimplements>
+        <param>
+          <type>float</type>
+          <declname>input</declname>
+        </param>
+        <briefdescription>
+<para>设定发给电调的期望值 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>发给电调的期望值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>运行状态</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>1. 期望值的物理意义与电机当前的输入类型有关，可使用 get_input_type 方法查看<orderedlist>
+<listitem><para>设定的期望值会自动被限制到允许的范围内，当前实际的设定值可以通 过 getInput 方法查看 </para>
+</listitem></orderedlist>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" line="39" column="17" bodyfile="HW-Components/devices/motor/src/motor_DM_J4310.cpp" bodystart="164" bodyend="202"/>
+        <references refid="namespacehello__world_1a34cb06299a34f746d556d23dc16904aa" compoundref="base_8hpp" startline="92" endline="110">hello_world::Bound</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a358bd9981d81d72077e27f42d775e431" compoundref="motor___d_m___j4310_8cpp" startline="349" endline="353">curr2raw</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a6e11db30817cf05232ee3d52ed48030b" compoundref="motor__base_8cpp" startline="191" endline="194">hello_world::devices::motor::Motor::curr2torq</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a7339defaa4857872509f36377d3ccf41" compoundref="motor__base_8hpp" startline="210">hello_world::devices::motor::Motor::curr_input_</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a2ffd7b526a967afe22b3bdb838daea0b" compoundref="motor__base_8hpp" startline="70">hello_world::devices::motor::MotorBaseInfo::curr_input_lim</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_info_1af8fc7f4030e24c85518c7239bcac9a86" compoundref="motor__base_8hpp" startline="86">hello_world::devices::motor::MotorInfo::input_type</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a4777995093ebbd290b833795e49749b7acbc926bf0e52b6d442d48680c808ba34" compoundref="motor__base_8hpp" startline="43">hello_world::devices::motor::kInputTypeCurr</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a4777995093ebbd290b833795e49749b7a3af8d233b879c0e5323904dd850fbfe3" compoundref="motor__base_8hpp" startline="41">hello_world::devices::motor::kInputTypeRaw</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a4777995093ebbd290b833795e49749b7a40b16f84fe9bb51523ee837d347a7683" compoundref="motor__base_8hpp" startline="42">hello_world::devices::motor::kInputTypeTorq</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380cab9d834629e7bfe89857c5255d7afceb2" compoundref="motor__base_8hpp" startline="36">hello_world::devices::motor::kStateInputTypeError</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380ca092964bcb48cb77568362247b1158499" compoundref="motor__base_8hpp" startline="35">hello_world::devices::motor::kStateInputValueOverflow</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380ca426fa281817a2eb81e04586488b8ca5a" compoundref="motor__base_8hpp" startline="34">hello_world::devices::motor::kStateOk</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a59781c0f3a6d7bb179d93c61d837836d" compoundref="motor__base_8hpp" startline="212">hello_world::devices::motor::Motor::motor_info_</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1aa2784ed2ea68d2c48641004fdbd5ea52" compoundref="motor___d_m___j4310_8cpp" startline="307" endline="311">raw2torq</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a4e24f06845ffe971bca1914b11d353f1" compoundref="motor__base_8hpp" startline="208">hello_world::devices::motor::Motor::raw_input_</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a44292bfea784425e2c2c81dc4d634371" compoundref="motor__base_8cpp" startline="180" endline="183">hello_world::devices::motor::Motor::torq2curr</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ace039722135c1bf08b429a4ad41ccc81" compoundref="motor___d_m___j4310_8cpp" startline="321" endline="325">torq2raw</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1abf32abb5202efb3785033c8d7917a991" compoundref="motor__base_8hpp" startline="209">hello_world::devices::motor::Motor::torq_input_</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a362055600c7cf9836de0659f3ea0b20a" compoundref="motor__base_8hpp" startline="69">hello_world::devices::motor::MotorBaseInfo::torq_input_lim</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ac97392867193cf052740d0cfc3db7ebc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380c" kindref="member">State</ref></type>
+        <definition>State hello_world::devices::motor::DM_J4310::encode</definition>
+        <argsstring>(uint8_t tx_data[8], uint32_t tx_msg_std_id) const override</argsstring>
+        <name>encode</name>
+        <qualifiedname>hello_world::devices::motor::DM_J4310::encode</qualifiedname>
+        <reimplements refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a50477b96ba8268bcac04ab6637578cc5">encode</reimplements>
+        <param>
+          <type>uint8_t</type>
+          <declname>tx_data</declname>
+          <array>[8]</array>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>tx_msg_std_id</declname>
+        </param>
+        <briefdescription>
+<para>将要发给电调的期望输值编码为对应的 CAN 报文 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tx_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>将要发出的 CAN 报文 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tx_msg_std_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>发给电调的报文的ID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>当</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID 匹配时返回 kStateOk，否则返回 kStateIdDismatch </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>1. 只有当 tx_msg_std_id 与实际的发给电机报文的 ID 对应时才会生成 报文，该 ID 可以通过 tx_id 方法获取<orderedlist>
+<listitem><para>只会在报文需要的位置上进行修改，区域位置的内容会保持不变 </para>
+</listitem></orderedlist>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" line="41" column="17" bodyfile="HW-Components/devices/motor/src/motor_DM_J4310.cpp" bodystart="213" bodyend="238"/>
+        <references refid="namespacehello__world_1a34cb06299a34f746d556d23dc16904aa" compoundref="base_8hpp" startline="92" endline="110">hello_world::Bound</references>
+        <references refid="assert_8hpp_1a5969df827ceb603bed14c4106586484a" compoundref="assert_8hpp" startline="36">HW_ASSERT</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a4957456005fc4d832744e97a71bce0a2" compoundref="motor___d_m___j4310_8hpp" startline="59">is_start_</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380ca3619ca83b453126a092443ae1a86b241" compoundref="motor__base_8hpp" startline="37">hello_world::devices::motor::kStateIdDismatch</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380ca426fa281817a2eb81e04586488b8ca5a" compoundref="motor__base_8hpp" startline="34">hello_world::devices::motor::kStateOk</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a10b013b169e858951f649bba557455c2" compoundref="motor___d_m___j4310_8cpp" startline="52">hello_world::devices::motor::kTorqBits</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a59781c0f3a6d7bb179d93c61d837836d" compoundref="motor__base_8hpp" startline="212">hello_world::devices::motor::Motor::motor_info_</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a4e24f06845ffe971bca1914b11d353f1" compoundref="motor__base_8hpp" startline="208">hello_world::devices::motor::Motor::raw_input_</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_info_1a85fb9e3e5d5e207f69ad906f092b3ddc" compoundref="motor__base_8hpp" startline="88">hello_world::devices::motor::MotorInfo::tx_id</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a84ecfac4c74e3f0f7b85fba6c69f2aa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380c" kindref="member">State</ref></type>
+        <definition>State hello_world::devices::motor::DM_J4310::decode</definition>
+        <argsstring>(const uint8_t rx_data[8], uint32_t rx_msg_std_id) override</argsstring>
+        <name>decode</name>
+        <qualifiedname>hello_world::devices::motor::DM_J4310::decode</qualifiedname>
+        <reimplements refid="classhello__world_1_1devices_1_1motor_1_1_motor_1af62b61171a698a06954cc8ccec37f79e">decode</reimplements>
+        <param>
+          <type>const uint8_t</type>
+          <declname>rx_data</declname>
+          <array>[8]</array>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>rx_msg_std_id</declname>
+        </param>
+        <briefdescription>
+<para>将电调发回的 CAN 报文进行解包 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rx_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>电调发回的 CAN 报文 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rx_msg_std_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>电调发回的报文的ID </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>当</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID 匹配时返回 kStateOk，否则返回 kStateIdDismatch </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>只有当 rx_msg_std_id 与实际的电机会发回报文的 ID 对应时才会对报文 进行解包，该 ID 可以通过 rx_id 方法获取 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" line="44" column="17" bodyfile="HW-Components/devices/motor/src/motor_DM_J4310.cpp" bodystart="248" bodyend="297"/>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1aa4ac89a85a2b03e90b1606d4c9962f7c" compoundref="motor___d_m___j4310_8cpp" startline="65" endline="71">hello_world::devices::motor::_Uint2Float</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1adac9b8b8484e8529d9cd10665b3a0f88" compoundref="motor__base_8hpp" startline="205">hello_world::devices::motor::Motor::actual_angle_</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1acad1e1f1792ab8cb6265b1d5195737f6" compoundref="motor__base_8hpp" startline="188" endline="188">hello_world::devices::motor::Motor::angle</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1ab7a9c137dd445327e658202640e3dbc6" compoundref="motor__base_8hpp" startline="198">hello_world::devices::motor::Motor::angle_</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_info_1a7d770e09d97238decfb61382deac39eb" compoundref="motor__base_8hpp" startline="89">hello_world::devices::motor::MotorInfo::angle_offset</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_info_1a9e6c4b4561b5da0bb08b88c80953eece" compoundref="motor__base_8hpp" startline="85">hello_world::devices::motor::MotorInfo::angle_range</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a6b7de1c9857ad74e17bda1b03b524b21" compoundref="motor__base_8hpp" startline="201">hello_world::devices::motor::Motor::curr_</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_info_1a16bfca55d6a9c16d3bed3794f59eae55" compoundref="motor__base_8hpp" startline="83">hello_world::devices::motor::MotorInfo::dir</references>
+        <references refid="assert_8hpp_1a5969df827ceb603bed14c4106586484a" compoundref="assert_8hpp" startline="36">HW_ASSERT</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a4957456005fc4d832744e97a71bce0a2" compoundref="motor___d_m___j4310_8hpp" startline="59">is_start_</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a248f1a5b8885f8c77c3c57b290ea74a0" compoundref="motor___d_m___j4310_8cpp" startline="48">hello_world::devices::motor::kAngleBits</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a0163710b33b99ac98bcbcb1f43d78248a0e264d4f119a2e5d4c62691f3f35e317" compoundref="motor__base_8hpp" startline="59">hello_world::devices::motor::kAngleRangeNegInfToPosInf</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1ac4d15805fa2765480961cbb22a874832" compoundref="motor__base_8hpp" startline="214">hello_world::devices::motor::Motor::kCross0ValueThres</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1ade1ddf6c56f452b2c6afb8a1a77c3d43" compoundref="motor___d_m___j4310_8cpp" startline="47">hello_world::devices::motor::kMaxAngle</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1ae6d1c5130feaed18b1ea24e56558f1d2" compoundref="motor___d_m___j4310_8cpp" startline="49">hello_world::devices::motor::kMaxVel</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380ca3619ca83b453126a092443ae1a86b241" compoundref="motor__base_8hpp" startline="37">hello_world::devices::motor::kStateIdDismatch</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380ca426fa281817a2eb81e04586488b8ca5a" compoundref="motor__base_8hpp" startline="34">hello_world::devices::motor::kStateOk</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a129d97ad5fb7c3e353a25baaab78ae15" compoundref="motor___d_m___j4310_8cpp" startline="50">hello_world::devices::motor::kVelBits</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1ade57cbc7fc217543ca6c8650ad0eb03d" compoundref="motor__base_8hpp" startline="203">hello_world::devices::motor::Motor::last_raw_angle_</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a59781c0f3a6d7bb179d93c61d837836d" compoundref="motor__base_8hpp" startline="212">hello_world::devices::motor::Motor::motor_info_</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a21092858a98af5688b398d57cd203592" compoundref="motor__base_8cpp" startline="222" endline="233">hello_world::devices::motor::Motor::normAngle</references>
+        <references refid="base_8hpp_1a598a3330b3c21701223ee0ca14316eca" compoundref="base_8hpp" startline="28">PI</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1acb60cb1b9843925d02c8a07c4b39aff4" compoundref="motor___d_m___j4310_8cpp" startline="335" endline="339">raw2curr</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1aa2784ed2ea68d2c48641004fdbd5ea52" compoundref="motor___d_m___j4310_8cpp" startline="307" endline="311">raw2torq</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a01dc4c2e170bc8fd5a7a0a9f53492fa8" compoundref="motor__base_8hpp" startline="73">hello_world::devices::motor::MotorBaseInfo::redu_rat</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1ab037cc377320f41d8bdbdd599448dad8" compoundref="motor__base_8hpp" startline="202">hello_world::devices::motor::Motor::round_</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_info_1a3e96084a1a764a8bc1be4d4e34ef97b5" compoundref="motor__base_8hpp" startline="87">hello_world::devices::motor::MotorInfo::rx_id</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a1a0dcefdd32af16ed228806b9f157342" compoundref="motor___d_m___j4310_8hpp" startline="58">temp_</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a40c42d94607450fb55a676bdaa0b505c" compoundref="motor__base_8hpp" startline="200">hello_world::devices::motor::Motor::torq_</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a609eb51ef7ddb343ecc4eeafc4ad83e3" compoundref="motor__base_8hpp" startline="199">hello_world::devices::motor::Motor::vel_</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1aa2784ed2ea68d2c48641004fdbd5ea52" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float hello_world::devices::motor::DM_J4310::raw2torq</definition>
+        <argsstring>(float raw) const override</argsstring>
+        <name>raw2torq</name>
+        <qualifiedname>hello_world::devices::motor::DM_J4310::raw2torq</qualifiedname>
+        <reimplements refid="classhello__world_1_1devices_1_1motor_1_1_motor_1af74a8c4ad7c0067a2d71afd711639366">raw2torq</reimplements>
+        <param>
+          <type>float</type>
+          <declname>raw</declname>
+        </param>
+        <briefdescription>
+<para>将原始报文内容转换为输出端力矩 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>raw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>原始报文数值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>原始报文对应的输出端力矩值，单位：N·m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>报文的对应的物理意义需要与设定的相符，设定对应情可以通过 motor_info 方法获取电机信息结构体，查看其中的 raw_mapping_type 变量 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" line="47" column="17" bodyfile="HW-Components/devices/motor/src/motor_DM_J4310.cpp" bodystart="307" bodyend="311"/>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1aa4ac89a85a2b03e90b1606d4c9962f7c" compoundref="motor___d_m___j4310_8cpp" startline="65" endline="71">hello_world::devices::motor::_Uint2Float</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a45760c831ff44879601b0fa89298bd45" compoundref="motor___d_m___j4310_8cpp" startline="51">hello_world::devices::motor::kMaxTorq</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a10b013b169e858951f649bba557455c2" compoundref="motor___d_m___j4310_8cpp" startline="52">hello_world::devices::motor::kTorqBits</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a59781c0f3a6d7bb179d93c61d837836d" compoundref="motor__base_8hpp" startline="212">hello_world::devices::motor::Motor::motor_info_</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a01dc4c2e170bc8fd5a7a0a9f53492fa8" compoundref="motor__base_8hpp" startline="73">hello_world::devices::motor::MotorBaseInfo::redu_rat</references>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a84ecfac4c74e3f0f7b85fba6c69f2aa1" compoundref="motor___d_m___j4310_8cpp" startline="248" endline="297">decode</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ae15373ce02962c1a287d7e813413869b" compoundref="motor___d_m___j4310_8cpp" startline="164" endline="202">setInput</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ace039722135c1bf08b429a4ad41ccc81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float hello_world::devices::motor::DM_J4310::torq2raw</definition>
+        <argsstring>(float torq) const override</argsstring>
+        <name>torq2raw</name>
+        <qualifiedname>hello_world::devices::motor::DM_J4310::torq2raw</qualifiedname>
+        <reimplements refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a319adc3f1b7d43fa12015b52a153ea17">torq2raw</reimplements>
+        <param>
+          <type>float</type>
+          <declname>torq</declname>
+        </param>
+        <briefdescription>
+<para>将输出端力矩转换为原始报文内容 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>torq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>输出端力矩值，单位：N·m </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>输出端力矩值对应的原始报文</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>报文的对应的物理意义需要与设定的相符，设定对应情可以通过 motor_info 方法获取电机信息结构体，查看其中的 raw_mapping_type 变量 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" line="49" column="17" bodyfile="HW-Components/devices/motor/src/motor_DM_J4310.cpp" bodystart="321" bodyend="325"/>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a5102e8812e14a2caaf3a2fc96b18efa3" compoundref="motor___d_m___j4310_8cpp" startline="82" endline="88">hello_world::devices::motor::_Float2Uint</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a45760c831ff44879601b0fa89298bd45" compoundref="motor___d_m___j4310_8cpp" startline="51">hello_world::devices::motor::kMaxTorq</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a10b013b169e858951f649bba557455c2" compoundref="motor___d_m___j4310_8cpp" startline="52">hello_world::devices::motor::kTorqBits</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a59781c0f3a6d7bb179d93c61d837836d" compoundref="motor__base_8hpp" startline="212">hello_world::devices::motor::Motor::motor_info_</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a01dc4c2e170bc8fd5a7a0a9f53492fa8" compoundref="motor__base_8hpp" startline="73">hello_world::devices::motor::MotorBaseInfo::redu_rat</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a987073404f2d04c10434f830884b9612" compoundref="motor__base_8hpp" startline="192" endline="192">hello_world::devices::motor::Motor::torq</references>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ae15373ce02962c1a287d7e813413869b" compoundref="motor___d_m___j4310_8cpp" startline="164" endline="202">setInput</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1acb60cb1b9843925d02c8a07c4b39aff4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float hello_world::devices::motor::DM_J4310::raw2curr</definition>
+        <argsstring>(float raw) const override</argsstring>
+        <name>raw2curr</name>
+        <qualifiedname>hello_world::devices::motor::DM_J4310::raw2curr</qualifiedname>
+        <reimplements refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a1e4467d9f449b9c6c7d6886fffa89667">raw2curr</reimplements>
+        <param>
+          <type>float</type>
+          <declname>raw</declname>
+        </param>
+        <briefdescription>
+<para>将原始报文内容转换为转子电流 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>raw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>原始报文数值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>原始报文对应的转子电流值，单位：A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>报文的对应的物理意义需要与设定的相符，设定对应情可以通过 motor_info 方法获取电机信息结构体，查看其中的 raw_mapping_type 变量 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" line="51" column="17" bodyfile="HW-Components/devices/motor/src/motor_DM_J4310.cpp" bodystart="335" bodyend="339"/>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1aa4ac89a85a2b03e90b1606d4c9962f7c" compoundref="motor___d_m___j4310_8cpp" startline="65" endline="71">hello_world::devices::motor::_Uint2Float</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a45760c831ff44879601b0fa89298bd45" compoundref="motor___d_m___j4310_8cpp" startline="51">hello_world::devices::motor::kMaxTorq</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a10b013b169e858951f649bba557455c2" compoundref="motor___d_m___j4310_8cpp" startline="52">hello_world::devices::motor::kTorqBits</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a59781c0f3a6d7bb179d93c61d837836d" compoundref="motor__base_8hpp" startline="212">hello_world::devices::motor::Motor::motor_info_</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1aab060e462db1531a4f83938f55eb451e" compoundref="motor__base_8hpp" startline="72">hello_world::devices::motor::MotorBaseInfo::torq_const</references>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a84ecfac4c74e3f0f7b85fba6c69f2aa1" compoundref="motor___d_m___j4310_8cpp" startline="248" endline="297">decode</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a358bd9981d81d72077e27f42d775e431" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float hello_world::devices::motor::DM_J4310::curr2raw</definition>
+        <argsstring>(float curr) const override</argsstring>
+        <name>curr2raw</name>
+        <qualifiedname>hello_world::devices::motor::DM_J4310::curr2raw</qualifiedname>
+        <reimplements refid="classhello__world_1_1devices_1_1motor_1_1_motor_1aebf04ce4e3628c60907a29771f383027">curr2raw</reimplements>
+        <param>
+          <type>float</type>
+          <declname>curr</declname>
+        </param>
+        <briefdescription>
+<para>将转子电流转换为原始报文内容 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>curr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>转子电流值，单位：A </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>转子电流值对应的原始报文</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>报文的对应的物理意义需要与设定的相符，设定对应情可以通过 motor_info 方法获取电机信息结构体，查看其中的 raw_mapping_type 变量 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" line="53" column="17" bodyfile="HW-Components/devices/motor/src/motor_DM_J4310.cpp" bodystart="349" bodyend="353"/>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a5102e8812e14a2caaf3a2fc96b18efa3" compoundref="motor___d_m___j4310_8cpp" startline="82" endline="88">hello_world::devices::motor::_Float2Uint</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a7fbec1460a1db6c45b4c57fd0497e5e0" compoundref="motor__base_8hpp" startline="194" endline="194">hello_world::devices::motor::Motor::curr</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a45760c831ff44879601b0fa89298bd45" compoundref="motor___d_m___j4310_8cpp" startline="51">hello_world::devices::motor::kMaxTorq</references>
+        <references refid="namespacehello__world_1_1devices_1_1motor_1a10b013b169e858951f649bba557455c2" compoundref="motor___d_m___j4310_8cpp" startline="52">hello_world::devices::motor::kTorqBits</references>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a59781c0f3a6d7bb179d93c61d837836d" compoundref="motor__base_8hpp" startline="212">hello_world::devices::motor::Motor::motor_info_</references>
+        <references refid="structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1aab060e462db1531a4f83938f55eb451e" compoundref="motor__base_8hpp" startline="72">hello_world::devices::motor::MotorBaseInfo::torq_const</references>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ae15373ce02962c1a287d7e813413869b" compoundref="motor___d_m___j4310_8cpp" startline="164" endline="202">setInput</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1aaf1b5c19a9ec55adebe5963804c54a86" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t hello_world::devices::motor::DM_J4310::temp</definition>
+        <argsstring>(void) const</argsstring>
+        <name>temp</name>
+        <qualifiedname>hello_world::devices::motor::DM_J4310::temp</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" line="55" column="11" bodyfile="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" bodystart="55" bodyend="55"/>
+        <references refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a1a0dcefdd32af16ed228806b9f157342" compoundref="motor___d_m___j4310_8hpp" startline="58">temp_</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>hello_world::MemMang</label>
+        <link refid="classhello__world_1_1_mem_mang"/>
+      </node>
+      <node id="1">
+        <label>hello_world::devices::motor::DM_J4310</label>
+        <link refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>hello_world::devices::motor::Motor</label>
+        <link refid="classhello__world_1_1devices_1_1motor_1_1_motor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>hello_world::MemMang</label>
+        <link refid="classhello__world_1_1_mem_mang"/>
+      </node>
+      <node id="1">
+        <label>hello_world::devices::motor::DM_J4310</label>
+        <link refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>hello_world::devices::motor::Motor</label>
+        <link refid="classhello__world_1_1devices_1_1motor_1_1_motor"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>motor_info_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>hello_world::devices::motor::MotorBaseInfo</label>
+        <link refid="structhello__world_1_1devices_1_1motor_1_1_motor_base_info"/>
+      </node>
+      <node id="4">
+        <label>hello_world::devices::motor::MotorInfo</label>
+        <link refid="structhello__world_1_1devices_1_1motor_1_1_motor_info"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" line="32" column="1" bodyfile="HW-Components/devices/motor/inc/motor_DM_J4310.hpp" bodystart="33" bodyend="63"/>
+    <listofallmembers>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1adac9b8b8484e8529d9cd10665b3a0f88" prot="protected" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>actual_angle_</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1acad1e1f1792ab8cb6265b1d5195737f6" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>angle</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1ab7a9c137dd445327e658202640e3dbc6" prot="protected" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>angle_</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1abd1d7d54199dac13f71d67e3711752b5" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>angle_range</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a7fbec1460a1db6c45b4c57fd0497e5e0" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>curr</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a358bd9981d81d72077e27f42d775e431" prot="public" virt="virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>curr2raw</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a6e11db30817cf05232ee3d52ed48030b" prot="public" virt="virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>curr2torq</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a6b7de1c9857ad74e17bda1b03b524b21" prot="protected" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>curr_</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a7339defaa4857872509f36377d3ccf41" prot="protected" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>curr_input_</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a84ecfac4c74e3f0f7b85fba6c69f2aa1" prot="public" virt="virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>decode</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1ae7669c1a2fc06a016b31bfa6b885dd6b" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>dir</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a0a61fcd9a79f7bbb0addccaf677f2c5f" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>DM_J4310</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ac97392867193cf052740d0cfc3db7ebc" prot="public" virt="virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>encode</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a9ca0e58a5138076f3c0bc5eb2ccb34e0" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>get_input_type</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1aab42768aa52c635bba1d205b466c0981" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>getInput</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1ab3e2187f017e86c6d4a83caa55fe9419" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>id</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a4957456005fc4d832744e97a71bce0a2" prot="private" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>is_start_</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1ac4d15805fa2765480961cbb22a874832" prot="protected" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>kCross0ValueThres</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ad1871713b873d04e90c8a7494190fee8" prot="private" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>kRx0_</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ac1e26d94d20642c30d5b854f66e12913" prot="private" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>kTx0_</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1ade57cbc7fc217543ca6c8650ad0eb03d" prot="protected" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>last_raw_angle_</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a353af5a842fbf673c92758952bb2958b" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>Motor</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1af88eebbf4bb3e8515bc5728ce3313f41" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>motor_info</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a59781c0f3a6d7bb179d93c61d837836d" prot="protected" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>motor_info_</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a21092858a98af5688b398d57cd203592" prot="protected" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>normAngle</name></member>
+      <member refid="classhello__world_1_1_mem_mang_1abf1fe21066f52d693e2eec63a5833e8e" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>operator delete</name></member>
+      <member refid="classhello__world_1_1_mem_mang_1a54e1a6a8e01b0996cc2854a8bc1ce7bd" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>operator delete[]</name></member>
+      <member refid="classhello__world_1_1_mem_mang_1abcf6e7289814e8da342ba4f47d8af411" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>operator new</name></member>
+      <member refid="classhello__world_1_1_mem_mang_1ad10b6eff1541322708e5bde32c590c82" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>operator new[]</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1acb60cb1b9843925d02c8a07c4b39aff4" prot="public" virt="virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>raw2curr</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1aa2784ed2ea68d2c48641004fdbd5ea52" prot="public" virt="virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>raw2torq</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a4e24f06845ffe971bca1914b11d353f1" prot="protected" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>raw_input_</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1ab037cc377320f41d8bdbdd599448dad8" prot="protected" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>round_</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1ab77091f1c532f4b84153448aa27d6a6c" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>rx_id</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1abd7c00f35db22fb65264baf08c3981b6" prot="public" virt="virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>set_input_type</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a8c96d433ffdc4000153e08175b97d445" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>setAngleValue</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ae15373ce02962c1a287d7e813413869b" prot="public" virt="virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>setInput</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1aaf1b5c19a9ec55adebe5963804c54a86" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>temp</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a1a0dcefdd32af16ed228806b9f157342" prot="private" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>temp_</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a987073404f2d04c10434f830884b9612" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>torq</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a44292bfea784425e2c2c81dc4d634371" prot="public" virt="virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>torq2curr</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1ace039722135c1bf08b429a4ad41ccc81" prot="public" virt="virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>torq2raw</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a40c42d94607450fb55a676bdaa0b505c" prot="protected" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>torq_</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1abf32abb5202efb3785033c8d7917a991" prot="protected" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>torq_input_</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1acbb8c91a5928cf03d3778b668edf6ff5" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>tx_id</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a4aff69d544478285b83ab15914d437ce" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>vel</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1a609eb51ef7ddb343ecc4eeafc4ad83e3" prot="protected" virt="non-virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>vel_</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a16b10610e2263062a21fa0d71974ec44" prot="public" virt="virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>~DM_J4310</name></member>
+      <member refid="classhello__world_1_1devices_1_1motor_1_1_motor_1acf169589667b294dc292b414b28f17a8" prot="public" virt="virtual"><scope>hello_world::devices::motor::DM_J4310</scope><name>~Motor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

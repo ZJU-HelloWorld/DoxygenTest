@@ -1,0 +1,269 @@
+\doxysection{hello\+\_\+world\+::devices\+::laser\+::Laser类 参考}
+\hypertarget{classhello__world_1_1devices_1_1laser_1_1_laser}{}\label{classhello__world_1_1devices_1_1laser_1_1_laser}\index{hello\_world::devices::laser::Laser@{hello\_world::devices::laser::Laser}}
+
+
+{\ttfamily \#include $<$laser.\+hpp$>$}
+
+
+
+类 hello\+\_\+world\+::devices\+::laser\+::Laser 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classhello__world_1_1devices_1_1laser_1_1_laser__inherit__graph}
+\end{center}
+\end{figure}
+
+
+hello\+\_\+world\+::devices\+::laser\+::Laser 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classhello__world_1_1devices_1_1laser_1_1_laser__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1laser_1_1_laser_ade6858f65e516d3f2d99e140e27eeb21}{Laser}} (TIM\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}htim, uint32\+\_\+t channel, float init\+\_\+lumin\+\_\+pct)
+\begin{DoxyCompactList}\small\item\em 红点激光器初始化 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classhello__world_1_1devices_1_1laser_1_1_laser_a9f4ea681704258dc175f60b0edd17fc6}{\texorpdfstring{$\sim$}{\string~}\+Laser}} ()
+\item 
+void \mbox{\hyperlink{classhello__world_1_1devices_1_1laser_1_1_laser_a82e3b6972b84d5aa02ad66d74451f83d}{enable}} () const
+\begin{DoxyCompactList}\small\item\em 启用红点激光器 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhello__world_1_1devices_1_1laser_1_1_laser_a19a88ca1a3d6dd1f48f7d26e2d9cecf9}{disable}} () const
+\begin{DoxyCompactList}\small\item\em 关闭红点激光器 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhello__world_1_1devices_1_1laser_1_1_laser_ae18c0d286f4c46619adf603ef47ecdb5}{set\+Lumin\+Pct}} (float lumin\+\_\+pct) const
+\begin{DoxyCompactList}\small\item\em 设置红点激光器百分比亮度 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classhello__world_1_1_mem_mang}{hello\+\_\+world\+::\+Mem\+Mang}}}
+\begin{DoxyCompactItemize}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classhello__world_1_1_mem_mang_abcf6e7289814e8da342ba4f47d8af411}{operator new}} (size\+\_\+t size)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classhello__world_1_1_mem_mang_ad10b6eff1541322708e5bde32c590c82}{operator new\mbox{[}$\,$\mbox{]}}} (size\+\_\+t size)
+\item 
+void \mbox{\hyperlink{classhello__world_1_1_mem_mang_abf1fe21066f52d693e2eec63a5833e8e}{operator delete}} (void \texorpdfstring{$\ast$}{*}ptr)
+\item 
+void \mbox{\hyperlink{classhello__world_1_1_mem_mang_a54e1a6a8e01b0996cc2854a8bc1ce7bd}{operator delete\mbox{[}$\,$\mbox{]}}} (void \texorpdfstring{$\ast$}{*}ptr)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+TIM\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}const \mbox{\hyperlink{classhello__world_1_1devices_1_1laser_1_1_laser_a855fe4a608cd7a3be9648ed1023cb96c}{k\+Htim\+\_\+}}
+\item 
+const uint32\+\_\+t \mbox{\hyperlink{classhello__world_1_1devices_1_1laser_1_1_laser_aad5f30954299751858b4b78238061e3d}{k\+Channel\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classhello__world_1_1devices_1_1laser_1_1_laser_a71727ea81371581d369751653e0fc5ca}{lumin\+Pct2\+Cmp}} (float lumin\+\_\+pct) const
+\begin{DoxyCompactList}\small\item\em 百分比亮度转定时器\+PWM比较值 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{laser_8hpp_source}{laser.\+hpp}} 第 \mbox{\hyperlink{laser_8hpp_source_l00034}{34}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classhello__world_1_1devices_1_1laser_1_1_laser_ade6858f65e516d3f2d99e140e27eeb21}\label{classhello__world_1_1devices_1_1laser_1_1_laser_ade6858f65e516d3f2d99e140e27eeb21} 
+\index{hello\_world::devices::laser::Laser@{hello\_world::devices::laser::Laser}!Laser@{Laser}}
+\index{Laser@{Laser}!hello\_world::devices::laser::Laser@{hello\_world::devices::laser::Laser}}
+\doxysubsubsection{\texorpdfstring{Laser()}{Laser()}}
+{\footnotesize\ttfamily hello\+\_\+world\+::devices\+::laser\+::\+Laser\+::\+Laser (\begin{DoxyParamCaption}\item[{TIM\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}}]{htim,  }\item[{uint32\+\_\+t}]{channel,  }\item[{float}]{init\+\_\+lumin\+\_\+pct }\end{DoxyParamCaption})}
+
+
+
+红点激光器初始化 
+
+
+\begin{DoxyParams}{参数}
+{\em htim} & 定时器句柄指针 \\
+\hline
+{\em channel} & 定时器\+PWM对应输出通道 \\
+\hline
+{\em init\+\_\+lumin\+\_\+pct} & 初始化百分比亮度（0 \texorpdfstring{$\sim$}{\string~} 100） \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+百分比亮度会被自动限制在合理范围内， 初始化后红点激光器默认处于开启状态 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{laser_8cpp_source}{laser.\+cpp}} 第 \mbox{\hyperlink{laser_8cpp_source_l00044}{44}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1laser_1_1_laser_ade6858f65e516d3f2d99e140e27eeb21_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1devices_1_1laser_1_1_laser_a9f4ea681704258dc175f60b0edd17fc6}\label{classhello__world_1_1devices_1_1laser_1_1_laser_a9f4ea681704258dc175f60b0edd17fc6} 
+\index{hello\_world::devices::laser::Laser@{hello\_world::devices::laser::Laser}!````~Laser@{\texorpdfstring{$\sim$}{\string~}Laser}}
+\index{````~Laser@{\texorpdfstring{$\sim$}{\string~}Laser}!hello\_world::devices::laser::Laser@{hello\_world::devices::laser::Laser}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Laser()}{\string~Laser()}}
+{\footnotesize\ttfamily virtual hello\+\_\+world\+::devices\+::laser\+::\+Laser\+::\texorpdfstring{$\sim$}{\string~}\+Laser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+在文件 \mbox{\hyperlink{laser_8hpp_source}{laser.\+hpp}} 第 \mbox{\hyperlink{laser_8hpp_source_l00038}{38}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classhello__world_1_1devices_1_1laser_1_1_laser_a19a88ca1a3d6dd1f48f7d26e2d9cecf9}\label{classhello__world_1_1devices_1_1laser_1_1_laser_a19a88ca1a3d6dd1f48f7d26e2d9cecf9} 
+\index{hello\_world::devices::laser::Laser@{hello\_world::devices::laser::Laser}!disable@{disable}}
+\index{disable@{disable}!hello\_world::devices::laser::Laser@{hello\_world::devices::laser::Laser}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily void hello\+\_\+world\+::devices\+::laser\+::\+Laser\+::disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+关闭红点激光器 
+
+
+\begin{DoxyRetVals}{返回值}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+None 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{laser_8hpp_source}{laser.\+hpp}} 第 \mbox{\hyperlink{laser_8hpp_source_l00052}{52}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1laser_1_1_laser_a82e3b6972b84d5aa02ad66d74451f83d}\label{classhello__world_1_1devices_1_1laser_1_1_laser_a82e3b6972b84d5aa02ad66d74451f83d} 
+\index{hello\_world::devices::laser::Laser@{hello\_world::devices::laser::Laser}!enable@{enable}}
+\index{enable@{enable}!hello\_world::devices::laser::Laser@{hello\_world::devices::laser::Laser}}
+\doxysubsubsection{\texorpdfstring{enable()}{enable()}}
+{\footnotesize\ttfamily void hello\+\_\+world\+::devices\+::laser\+::\+Laser\+::enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+启用红点激光器 
+
+
+\begin{DoxyRetVals}{返回值}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+None 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{laser_8hpp_source}{laser.\+hpp}} 第 \mbox{\hyperlink{laser_8hpp_source_l00045}{45}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1laser_1_1_laser_a71727ea81371581d369751653e0fc5ca}\label{classhello__world_1_1devices_1_1laser_1_1_laser_a71727ea81371581d369751653e0fc5ca} 
+\index{hello\_world::devices::laser::Laser@{hello\_world::devices::laser::Laser}!luminPct2Cmp@{luminPct2Cmp}}
+\index{luminPct2Cmp@{luminPct2Cmp}!hello\_world::devices::laser::Laser@{hello\_world::devices::laser::Laser}}
+\doxysubsubsection{\texorpdfstring{luminPct2Cmp()}{luminPct2Cmp()}}
+{\footnotesize\ttfamily uint32\+\_\+t hello\+\_\+world\+::devices\+::laser\+::\+Laser\+::lumin\+Pct2\+Cmp (\begin{DoxyParamCaption}\item[{float}]{lumin\+\_\+pct }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+百分比亮度转定时器\+PWM比较值 
+
+
+\begin{DoxyParams}{参数}
+{\em lumin\+\_\+pct} & 百分比亮度（0 \texorpdfstring{$\sim$}{\string~} 100） \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 定时器\+PWM比较值} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+百分比亮度会被自动限制在合理范围内 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{laser_8cpp_source}{laser.\+cpp}} 第 \mbox{\hyperlink{laser_8cpp_source_l00074}{74}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1laser_1_1_laser_a71727ea81371581d369751653e0fc5ca_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1laser_1_1_laser_a71727ea81371581d369751653e0fc5ca_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1devices_1_1laser_1_1_laser_ae18c0d286f4c46619adf603ef47ecdb5}\label{classhello__world_1_1devices_1_1laser_1_1_laser_ae18c0d286f4c46619adf603ef47ecdb5} 
+\index{hello\_world::devices::laser::Laser@{hello\_world::devices::laser::Laser}!setLuminPct@{setLuminPct}}
+\index{setLuminPct@{setLuminPct}!hello\_world::devices::laser::Laser@{hello\_world::devices::laser::Laser}}
+\doxysubsubsection{\texorpdfstring{setLuminPct()}{setLuminPct()}}
+{\footnotesize\ttfamily void hello\+\_\+world\+::devices\+::laser\+::\+Laser\+::set\+Lumin\+Pct (\begin{DoxyParamCaption}\item[{float}]{lumin\+\_\+pct }\end{DoxyParamCaption}) const}
+
+
+
+设置红点激光器百分比亮度 
+
+
+\begin{DoxyParams}{参数}
+{\em lumin\+\_\+pct} & 百分比亮度（0 \texorpdfstring{$\sim$}{\string~} 100） \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+百分比亮度会被自动限制在合理范围内 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{laser_8cpp_source}{laser.\+cpp}} 第 \mbox{\hyperlink{laser_8cpp_source_l00063}{63}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1laser_1_1_laser_ae18c0d286f4c46619adf603ef47ecdb5_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classhello__world_1_1devices_1_1laser_1_1_laser_aad5f30954299751858b4b78238061e3d}\label{classhello__world_1_1devices_1_1laser_1_1_laser_aad5f30954299751858b4b78238061e3d} 
+\index{hello\_world::devices::laser::Laser@{hello\_world::devices::laser::Laser}!kChannel\_@{kChannel\_}}
+\index{kChannel\_@{kChannel\_}!hello\_world::devices::laser::Laser@{hello\_world::devices::laser::Laser}}
+\doxysubsubsection{\texorpdfstring{kChannel\_}{kChannel\_}}
+{\footnotesize\ttfamily const uint32\+\_\+t hello\+\_\+world\+::devices\+::laser\+::\+Laser\+::k\+Channel\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{laser_8hpp_source}{laser.\+hpp}} 第 \mbox{\hyperlink{laser_8hpp_source_l00057}{57}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1laser_1_1_laser_a855fe4a608cd7a3be9648ed1023cb96c}\label{classhello__world_1_1devices_1_1laser_1_1_laser_a855fe4a608cd7a3be9648ed1023cb96c} 
+\index{hello\_world::devices::laser::Laser@{hello\_world::devices::laser::Laser}!kHtim\_@{kHtim\_}}
+\index{kHtim\_@{kHtim\_}!hello\_world::devices::laser::Laser@{hello\_world::devices::laser::Laser}}
+\doxysubsubsection{\texorpdfstring{kHtim\_}{kHtim\_}}
+{\footnotesize\ttfamily TIM\+\_\+\+Handle\+Type\+Def\texorpdfstring{$\ast$}{*} const hello\+\_\+world\+::devices\+::laser\+::\+Laser\+::k\+Htim\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{laser_8hpp_source}{laser.\+hpp}} 第 \mbox{\hyperlink{laser_8hpp_source_l00056}{56}} 行定义.
+

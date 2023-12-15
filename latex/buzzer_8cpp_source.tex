@@ -1,0 +1,140 @@
+\doxysection{buzzer.\+cpp}
+\hypertarget{buzzer_8cpp_source}{}\label{buzzer_8cpp_source}\index{HW-\/Components/devices/buzzer/src/buzzer.cpp@{HW-\/Components/devices/buzzer/src/buzzer.cpp}}
+\mbox{\hyperlink{buzzer_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00016}00016\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00017}00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{buzzer_8hpp}{buzzer.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00019}00019\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00021}00021\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{assert_8hpp}{assert.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00022}00022\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{base_8hpp}{base.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00023}00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{tick_8hpp}{tick.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00025}00025\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacehello__world}{hello\_world}}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00026}00026\ \{}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00027}00027\ \textcolor{keyword}{namespace\ }devices}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00028}00028\ \{}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00029}00029\ \textcolor{keyword}{namespace\ }buzzer}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00030}00030\ \{}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00031}00031\ \textcolor{comment}{/*\ Private\ macro\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00032}00032\ \textcolor{comment}{/*\ Private\ constants\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00034}\mbox{\hyperlink{namespacehello__world_1_1devices_1_1buzzer_a3c9fc26c3cdc343d34458d093dd3cc5f}{00034}}\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1buzzer_a3c9fc26c3cdc343d34458d093dd3cc5f}{kTimerFreq}}\ =\ 1e6f;}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00035}\mbox{\hyperlink{namespacehello__world_1_1devices_1_1buzzer_a482cb003f98ad42ba36d039c6c2a1317}{00035}}\ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1buzzer_a482cb003f98ad42ba36d039c6c2a1317}{kMaxDuty}}\ =\ 0.5f;\ \ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00036}00036\ \textcolor{comment}{/*\ Private\ types\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00037}00037\ \textcolor{comment}{/*\ Private\ variables\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00038}00038\ \textcolor{comment}{/*\ External\ variables\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00039}00039\ \textcolor{comment}{/*\ Private\ function\ prototypes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00051}\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a9901a266077ad9867ddad94ecab40d2d}{00051}}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a9901a266077ad9867ddad94ecab40d2d}{Buzzer::Buzzer}}(TIM\_HandleTypeDef\ *htim,\ uint32\_t\ channel,}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1buzzer_a2e5d78b68fcdefd56e87870dfb59b4d9}{PlayConfig}}\ play\_config,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info}{TuneListInfo}}\ *kTuneListInfoPtr)}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00053}00053\ \ \ \ \ :\ kHtim\_(htim),\ kChannel\_(channel),\ play\_config\_(play\_config)}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00054}00054\ \{}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00055}00055\ \ \ \textcolor{comment}{/*\ 变量检查\ */}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00056}00056\ \textcolor{preprocessor}{\#pragma\ region}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00057}00057\ \ \ \mbox{\hyperlink{assert_8hpp_a5969df827ceb603bed14c4106586484a}{HW\_ASSERT}}(IS\_TIM\_INSTANCE(\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a3b838c1b98dc600c53705e9fe04d99a4}{kHtim\_}}-\/>Instance),\ \textcolor{stringliteral}{"{}Error\ TIM\ handle"{}});}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00058}00058\ \ \ \mbox{\hyperlink{assert_8hpp_a5969df827ceb603bed14c4106586484a}{HW\_ASSERT}}(IS\_TIM\_CHANNELS(\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a15bb4ff8e5ba9bc2d340063ba0058bb7}{kChannel\_}}),\ \textcolor{stringliteral}{"{}Error\ TIM\ channel:\ \%d"{}},\ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a15bb4ff8e5ba9bc2d340063ba0058bb7}{kChannel\_}});}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00059}00059\ \ \ \mbox{\hyperlink{assert_8hpp_a5969df827ceb603bed14c4106586484a}{HW\_ASSERT}}(play\_config\ ==\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1buzzer_a2e5d78b68fcdefd56e87870dfb59b4d9a4e59bb85f2a47ce95c7c5868775d9348}{kPlayConfigLoopPlayback}}\ ||}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ play\_config\ ==\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1buzzer_a2e5d78b68fcdefd56e87870dfb59b4d9a7c37348a5faa1a2dc387e5376e22f992}{kPlayConfigSinglePlayback}},}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Error\ play\ config:\ \%d"{}},\ tune\_list\_info.play\_config);}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00062}00062\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00064}00064\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a67595f4b9558ce6320b85f9c580f7b95}{setNewTune}}(kTuneListInfoPtr);}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00065}00065\ \}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00067}\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a4186105c4e8cedc66d9363698c2e0e9b}{00067}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a4186105c4e8cedc66d9363698c2e0e9b}{Buzzer::set\_play\_config}}(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1buzzer_a2e5d78b68fcdefd56e87870dfb59b4d9}{PlayConfig}}\ play\_config)}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00068}00068\ \{}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00069}00069\ \textcolor{comment}{/*\ 变量检查\ */}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00070}00070\ \textcolor{preprocessor}{\#pragma\ region}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00071}00071\ \ \ \mbox{\hyperlink{assert_8hpp_a5969df827ceb603bed14c4106586484a}{HW\_ASSERT}}(play\_config\ ==\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1buzzer_a2e5d78b68fcdefd56e87870dfb59b4d9a4e59bb85f2a47ce95c7c5868775d9348}{kPlayConfigLoopPlayback}}\ ||}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ play\_config\ ==\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1buzzer_a2e5d78b68fcdefd56e87870dfb59b4d9a7c37348a5faa1a2dc387e5376e22f992}{kPlayConfigSinglePlayback}},}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Error\ play\ config:\ \%d"{}},\ tune\_list\_info.play\_config);}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00074}00074\ \textcolor{preprocessor}{\#pragma\ endregion}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00076}00076\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a552e1698456e2a148072f21ed59abaaa}{play\_config\_}}\ =\ play\_config;}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00077}00077\ \}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00087}\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a67595f4b9558ce6320b85f9c580f7b95}{00087}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a67595f4b9558ce6320b85f9c580f7b95}{Buzzer::setNewTune}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info}{TuneListInfo}}\ *kTuneListInfoPtr)}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00088}00088\ \{}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00089}00089\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a3b93cc23f3be6bb791b9a0ca9dacad39}{tune\_idx\_}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00090}00090\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ab4775b8ae94a043ac58824f4ebb4be37}{tune\_start\_tick\_}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00091}00091\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a8947005e9e7acd2250aec39402bdb9e9}{tune\_switch\_}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00092}00092\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ade3f992137ca255598cda0947b55f778}{is\_playing\_}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00093}00093\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ad0d5171f1e0990b68bfbc4392d73d7b3}{last\_is\_playing\_}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00094}00094\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_abcbd00189b50b82539d9b86d97694ad6}{kTuneListInfoPtr\_}}\ =\ kTuneListInfoPtr;}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00096}00096\ \ \ \_\_HAL\_TIM\_SET\_AUTORELOAD(\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a3b838c1b98dc600c53705e9fe04d99a4}{kHtim\_}},\ 0);}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00097}00097\ \ \ \_\_HAL\_TIM\_SET\_COMPARE(\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a3b838c1b98dc600c53705e9fe04d99a4}{kHtim\_}},\ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a15bb4ff8e5ba9bc2d340063ba0058bb7}{kChannel\_}},\ 0);}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00098}00098\ \ \ HAL\_TIM\_PWM\_Start(\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a3b838c1b98dc600c53705e9fe04d99a4}{kHtim\_}},\ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a15bb4ff8e5ba9bc2d340063ba0058bb7}{kChannel\_}});}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00099}00099\ \}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00100}00100\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00106}\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ab4a10c92796395a9b6c229f0bfec9cdb}{00106}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ab4a10c92796395a9b6c229f0bfec9cdb}{Buzzer::play}}()}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00107}00107\ \{}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00108}00108\ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ade3f992137ca255598cda0947b55f778}{is\_playing\_}})\ \{}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00109}00109\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00110}00110\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00111}00111\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00112}00112\ \ \ uint32\_t\ tick\ =\ \mbox{\hyperlink{namespacehello__world_1_1dsp_1_1tick_a97910b07255da1979f8ceafd8c6d2ea5}{dsp::tick::GetTickMs}}();}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00113}00113\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00114}00114\ \ \ \textcolor{comment}{/*\ 播放结束处理\ */}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00115}00115\ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_abcbd00189b50b82539d9b86d97694ad6}{kTuneListInfoPtr\_}}-\/>\mbox{\hyperlink{structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info_a0aefddbb58c23c7d906baf5bce59a4bf}{list}}[\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a3b93cc23f3be6bb791b9a0ca9dacad39}{tune\_idx\_}}]\ ==\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1buzzer_a0db5beb79cee27259eaefb4a2a04126da6944bb0666e55eb573bc605afeff6695}{kTuneEnd}})\ \{}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00116}00116\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a552e1698456e2a148072f21ed59abaaa}{play\_config\_}}\ ==\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1buzzer_a2e5d78b68fcdefd56e87870dfb59b4d9a4e59bb85f2a47ce95c7c5868775d9348}{kPlayConfigLoopPlayback}})\ \{}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00117}00117\ \ \ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a8947005e9e7acd2250aec39402bdb9e9}{tune\_switch\_}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00118}00118\ \ \ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a3b93cc23f3be6bb791b9a0ca9dacad39}{tune\_idx\_}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00119}00119\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00120}00120\ \ \ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ade3f992137ca255598cda0947b55f778}{is\_playing\_}}\ =\ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ad0d5171f1e0990b68bfbc4392d73d7b3}{last\_is\_playing\_}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00121}00121\ \ \ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a8947005e9e7acd2250aec39402bdb9e9}{tune\_switch\_}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00122}00122\ \ \ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a3b93cc23f3be6bb791b9a0ca9dacad39}{tune\_idx\_}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00123}00123\ \ \ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ab2c457527b41d290e2e68101c508b73a}{mute}}();}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00124}00124\ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00125}00125\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00126}00126\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00128}00128\ \ \ \textcolor{comment}{/*\ 切换音符\ */}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00129}00129\ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a8947005e9e7acd2250aec39402bdb9e9}{tune\_switch\_}})\ \{}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00130}00130\ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a8947005e9e7acd2250aec39402bdb9e9}{tune\_switch\_}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00131}00131\ \ \ \ \ uint32\_t\ auto\_reload\ =\ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a4098153da83266e584a961b94e2213c4}{tune2AutoReload}}(\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_abcbd00189b50b82539d9b86d97694ad6}{kTuneListInfoPtr\_}}-\/>\mbox{\hyperlink{structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info_a0aefddbb58c23c7d906baf5bce59a4bf}{list}}[\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a3b93cc23f3be6bb791b9a0ca9dacad39}{tune\_idx\_}}]);}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00132}00132\ \ \ \ \ \textcolor{keywordtype}{float}\ intensity\_scale\ =}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00133}00133\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacehello__world_a34cb06299a34f746d556d23dc16904aa}{hello\_world::Bound}}(\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_abcbd00189b50b82539d9b86d97694ad6}{kTuneListInfoPtr\_}}-\/>\mbox{\hyperlink{structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info_a4cb3c97639dfe61c0729c40b80380fa1}{intensity\_scale}},\ 0,\ 1);}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00134}00134\ \ \ \ \ \textcolor{keywordtype}{float}\ duty\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1buzzer_a482cb003f98ad42ba36d039c6c2a1317}{kMaxDuty}}\ *\ intensity\_scale;}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00135}00135\ \ \ \ \ \_\_HAL\_TIM\_SET\_AUTORELOAD(\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a3b838c1b98dc600c53705e9fe04d99a4}{kHtim\_}},\ auto\_reload);}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00136}00136\ \ \ \ \ \_\_HAL\_TIM\_SET\_COMPARE(\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a3b838c1b98dc600c53705e9fe04d99a4}{kHtim\_}},\ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a15bb4ff8e5ba9bc2d340063ba0058bb7}{kChannel\_}},\ auto\_reload\ *\ duty);}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00137}00137\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00138}00138\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00139}00139\ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ad0d5171f1e0990b68bfbc4392d73d7b3}{last\_is\_playing\_}}\ \&\&\ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ade3f992137ca255598cda0947b55f778}{is\_playing\_}})\ \{\ \ \textcolor{comment}{//\ 刚开始播放}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00140}00140\ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ab4775b8ae94a043ac58824f4ebb4be37}{tune\_start\_tick\_}}\ =\ tick;}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00141}00141\ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (tick\ -\/\ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ab4775b8ae94a043ac58824f4ebb4be37}{tune\_start\_tick\_}}\ >=\ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_abcbd00189b50b82539d9b86d97694ad6}{kTuneListInfoPtr\_}}-\/>\mbox{\hyperlink{structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info_abfacb236c2a5ef6dc1499c96af943738}{tune\_duration}})\ \{}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00142}00142\ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ab4775b8ae94a043ac58824f4ebb4be37}{tune\_start\_tick\_}}\ =\ tick;}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00143}00143\ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a3b93cc23f3be6bb791b9a0ca9dacad39}{tune\_idx\_}}++;}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00144}00144\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00145}00145\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a3b93cc23f3be6bb791b9a0ca9dacad39}{tune\_idx\_}}\ >=\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1buzzer_a0beaff31c15a2e1e53c17cba47b8111b}{kTuneListMaxLen}})\ \{\ \ \textcolor{comment}{//\ 音符溢出处理}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00146}00146\ \ \ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ade3f992137ca255598cda0947b55f778}{is\_playing\_}}\ =\ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ad0d5171f1e0990b68bfbc4392d73d7b3}{last\_is\_playing\_}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00147}00147\ \ \ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a8947005e9e7acd2250aec39402bdb9e9}{tune\_switch\_}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00148}00148\ \ \ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a3b93cc23f3be6bb791b9a0ca9dacad39}{tune\_idx\_}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00149}00149\ \ \ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ab2c457527b41d290e2e68101c508b73a}{mute}}();}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00150}00150\ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00151}00151\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00152}00152\ \ \ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a8947005e9e7acd2250aec39402bdb9e9}{tune\_switch\_}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00153}00153\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00154}00154\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00155}00155\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00156}00156\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ad0d5171f1e0990b68bfbc4392d73d7b3}{last\_is\_playing\_}}\ =\ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ade3f992137ca255598cda0947b55f778}{is\_playing\_}};}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00157}00157\ \}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00158}00158\ }
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00165}\mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a4098153da83266e584a961b94e2213c4}{00165}}\ uint32\_t\ \mbox{\hyperlink{classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a4098153da83266e584a961b94e2213c4}{Buzzer::tune2AutoReload}}(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1buzzer_a0db5beb79cee27259eaefb4a2a04126d}{Tune}}\ tune)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00166}00166\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00167}00167\ \ \ \textcolor{keywordflow}{if}\ (tune\ <\ kTuneC3\ ||\ tune\ >=\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1buzzer_a0db5beb79cee27259eaefb4a2a04126daf58609de52719ad2c93932ad4e3272c5}{kTuneRst}})\ \{}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00168}00168\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00169}00169\ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00170}00170\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}uint32\_t\textcolor{keyword}{>}(}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00171}00171\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 440\ *\ 2\string^((n-\/69)/12)\ Hz}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00172}00172\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1buzzer_a3c9fc26c3cdc343d34458d093dd3cc5f}{kTimerFreq}}\ /\ 440.0f\ *\ powf(1.05946f,\ (tune)-\/69)\ -\/\ 1);}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00173}00173\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00174}00174\ \}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00175}00175\ \}\ \ \textcolor{comment}{//\ namespace\ buzzer}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00176}00176\ \}\ \ \textcolor{comment}{//\ namespace\ devices}}
+\DoxyCodeLine{\Hypertarget{buzzer_8cpp_source_l00177}00177\ \}\ \ \textcolor{comment}{//\ namespace\ hello\_world}}
+
+\end{DoxyCode}

@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate" kind="class" language="C++" prot="public">
+    <compoundname>hello_world::algorithms::controller::pid::InteChangingRate</compoundname>
+    <includes refid="pid__opt_8hpp" local="no">pid_opt.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1af08dc32dff2d2863a888d5b5091c451f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::InteChangingRate::is_enabled_</definition>
+        <argsstring></argsstring>
+        <name>is_enabled_</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteChangingRate::is_enabled_</qualifiedname>
+        <briefdescription>
+<para>使能状态 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="561" column="8" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="561" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a125fe291ddd003e4191e5f76d491e171" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::algorithms::controller::pid::InteChangingRate::lower_</definition>
+        <argsstring></argsstring>
+        <name>lower_</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteChangingRate::lower_</qualifiedname>
+        <briefdescription>
+<para>下限 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="562" column="9" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="562" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a4982c86d248cd862eebce69a9fae10d6" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::algorithms::controller::pid::InteChangingRate::upper_</definition>
+        <argsstring></argsstring>
+        <name>upper_</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteChangingRate::upper_</qualifiedname>
+        <briefdescription>
+<para>上限 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="563" column="9" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="563" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a506b7c98c045905a49095a8cf6288ea9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hello_world::algorithms::controller::pid::InteChangingRate::InteChangingRate</definition>
+        <argsstring>(bool is_enabled=false, float lower=0.01, float upper=0.02)</argsstring>
+        <name>InteChangingRate</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteChangingRate::InteChangingRate</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>is_enabled</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>lower</declname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>upper</declname>
+          <defval>0.02</defval>
+        </param>
+        <briefdescription>
+<para>构造函数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>构造函数用于初始化控制器参数对象，并设置默认的使能状态、下限和上限</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>是否使能，默认为false </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>下限，默认为0.01 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>上限，默认为0.02 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="443" column="3" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="443" bodyend="447"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a3a6861604d04c04d6473a2a3c8cc4318" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>State hello_world::algorithms::controller::pid::InteChangingRate::setEnabled</definition>
+        <argsstring>(bool is_enabled)</argsstring>
+        <name>setEnabled</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteChangingRate::setEnabled</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>is_enabled</declname>
+        </param>
+        <briefdescription>
+<para>设置使能状态 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>设置控制器参数的使能状态</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>是否使能 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>设置结果状态 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="457" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="457" bodyend="461"/>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" compoundref="controller__base_8hpp" startline="33">hello_world::algorithms::controller::kStateOk</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a467a3cdb86fbd990bff08e5af8868aae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>State hello_world::algorithms::controller::pid::InteChangingRate::setLower</definition>
+        <argsstring>(float lower)</argsstring>
+        <name>setLower</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteChangingRate::setLower</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>lower</declname>
+        </param>
+        <briefdescription>
+<para>设置下限 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>设置控制器参数的下限</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>下限值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>设置结果状态 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="471" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="471" bodyend="475"/>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9" compoundref="controller__base_8hpp" startline="34">hello_world::algorithms::controller::kStateError</references>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" compoundref="controller__base_8hpp" startline="33">hello_world::algorithms::controller::kStateOk</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a007ec567f2c141935945525b65fa62b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>State hello_world::algorithms::controller::pid::InteChangingRate::setUpper</definition>
+        <argsstring>(float upper)</argsstring>
+        <name>setUpper</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteChangingRate::setUpper</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>upper</declname>
+        </param>
+        <briefdescription>
+<para>设置上限 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>设置控制器参数的上限</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>upper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>上限值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>设置结果状态 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="485" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="485" bodyend="489"/>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9" compoundref="controller__base_8hpp" startline="34">hello_world::algorithms::controller::kStateError</references>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" compoundref="controller__base_8hpp" startline="33">hello_world::algorithms::controller::kStateOk</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a75716b9a88f3540ced6e43a784fd581b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>State hello_world::algorithms::controller::pid::InteChangingRate::setParams</definition>
+        <argsstring>(bool is_enabled, float lower, float upper)</argsstring>
+        <name>setParams</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteChangingRate::setParams</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>is_enabled</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>lower</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>upper</declname>
+        </param>
+        <briefdescription>
+<para>设置参数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>设置控制器参数的使能状态、下限和上限</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>是否使能 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>下限值 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>上限值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>设置结果状态 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="501" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="501" bodyend="507"/>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9" compoundref="controller__base_8hpp" startline="34">hello_world::algorithms::controller::kStateError</references>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" compoundref="controller__base_8hpp" startline="33">hello_world::algorithms::controller::kStateOk</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a8d502f3c77c8e4e1b31d1e6b5a4932c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::InteChangingRate::isLegal</definition>
+        <argsstring>()</argsstring>
+        <name>isLegal</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteChangingRate::isLegal</qualifiedname>
+        <briefdescription>
+<para>判断参数是否合法 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>判断控制器参数是否合法，即下限是否小于上限</para>
+<para><simplesect kind="return"><para>参数合法性 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="516" column="15" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="516" bodyend="516"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a8e66e6ed87adc8a05e6f3df448a8fb00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::InteChangingRate::isEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>isEnabled</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteChangingRate::isEnabled</qualifiedname>
+        <briefdescription>
+<para>判断参数是否使能 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>判断控制器参数是否使能，需要同时满足使能状态和参数合法性</para>
+<para><simplesect kind="return"><para>参数使能性 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="525" column="15" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="525" bodyend="525"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a22842000f2832dba50540f0f6954244f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float hello_world::algorithms::controller::pid::InteChangingRate::calc</definition>
+        <argsstring>(float err)</argsstring>
+        <name>calc</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteChangingRate::calc</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>err</declname>
+        </param>
+        <briefdescription>
+<para>计算比例系数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>根据给定的误差值计算比例系数 如果使能状态为真，且误差值超过上限，则比例系数为0； 如果使能状态为真，且误差值在上下限之间，则根据误差值的大小计算比例系数</para>
+<para>计算公式为：  <formula id="14">\[
+f[e(k)]=\begin{cases}
+0&amp;,&amp; isEnabled() \wedge |e(k)| \in [\epsilon_u,+\inf)\\
+\frac{\epsilon_u- |e(k)| }{\epsilon_u-\epsilon_l}&amp;,&amp;isEnabled() \wedge |e(k)| \in [\epsilon_l,\epsilon_u)\\
+1&amp;,&amp; others
+\end{cases}
+\]</formula>, 其中 <formula id="11">$\epsilon_l$</formula> 为参数中的下限值， <formula id="12">$\epsilon_u$</formula>为参数中的上限值。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>err</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>误差值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>比例系数 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="546" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="546" bodyend="558"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a81d4b7384be1017acf61b8ae24125e7a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::InteChangingRate::handleIllegalParams</definition>
+        <argsstring>()</argsstring>
+        <name>handleIllegalParams</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteChangingRate::handleIllegalParams</qualifiedname>
+        <briefdescription>
+<para>处理非法参数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>处理控制器参数的非法情况，包括下限小于0和下限大于上限 如果下限小于0，则将下限设置为0，并返回true表示参数非法； 如果下限大于上限，则将上限设置为下限加上一个较小的值，并返回true表示参数非法</para>
+<para><simplesect kind="return"><para>是否存在非法参数 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="574" column="15" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="574" bodyend="587"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>控制器参数类 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>用于计算变速积分比例系数。</para>
+<para>基于积分分离优化的思想，根据系统偏差大小改变积分的速度，偏差越大，积分越慢，反之则越快，形成连续的变化过程。 在积分项计算公式中引入变速积分比例系数 <formula id="7">$f[e_i(k)]$</formula>。 此时积分项表示为 <formula id="8">$ u_i(k)=\sum_{j=0}^{k-1}K_i e_i(j) T(j)+ f[e_i(k)]K_i e_i(k) T(k) $</formula> 控制器参数类用于计算变速积分比例系数，根据给定的上下限和使能状态，计算比例系数。</para>
+<para><itemizedlist>
+<listitem><para>具体计算公式见<computeroutput><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a22842000f2832dba50540f0f6954244f" kindref="member">calc(float err)</ref></computeroutput>。</para>
+</listitem><listitem><para>参数合法性检查见<computeroutput><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a8d502f3c77c8e4e1b31d1e6b5a4932c8" kindref="member">isLegal()</ref></computeroutput>。</para>
+</listitem><listitem><para>启用判定见<computeroutput><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a8e66e6ed87adc8a05e6f3df448a8fb00" kindref="member">isEnabled()</ref></computeroutput>。 </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="431" column="1" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="432" bodyend="588"/>
+    <listofallmembers>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a22842000f2832dba50540f0f6954244f" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteChangingRate</scope><name>calc</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a81d4b7384be1017acf61b8ae24125e7a" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteChangingRate</scope><name>handleIllegalParams</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a506b7c98c045905a49095a8cf6288ea9" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteChangingRate</scope><name>InteChangingRate</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1af08dc32dff2d2863a888d5b5091c451f" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteChangingRate</scope><name>is_enabled_</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a8e66e6ed87adc8a05e6f3df448a8fb00" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteChangingRate</scope><name>isEnabled</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a8d502f3c77c8e4e1b31d1e6b5a4932c8" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteChangingRate</scope><name>isLegal</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a125fe291ddd003e4191e5f76d491e171" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteChangingRate</scope><name>lower_</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a3a6861604d04c04d6473a2a3c8cc4318" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteChangingRate</scope><name>setEnabled</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a467a3cdb86fbd990bff08e5af8868aae" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteChangingRate</scope><name>setLower</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a75716b9a88f3540ced6e43a784fd581b" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteChangingRate</scope><name>setParams</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a007ec567f2c141935945525b65fa62b2" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteChangingRate</scope><name>setUpper</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a4982c86d248cd862eebce69a9fae10d6" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteChangingRate</scope><name>upper_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

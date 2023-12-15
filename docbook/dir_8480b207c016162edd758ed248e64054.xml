@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_8480b207c016162edd758ed248e64054" xml:lang="zh">
+<title>HW-Components/devices/referee/src 目录参考</title>
+<indexterm><primary>HW-Components/devices/referee/src 目录参考</primary></indexterm>
+src 的目录依赖关系图<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_8480b207c016162edd758ed248e64054_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>文件    </title>
+        <itemizedlist>
+            <listitem><para>文件 <link linkend="_referee_8cpp">referee.cpp</link></para>
+</listitem>
+            <listitem><para>文件 <link linkend="_referee__crc_8cpp">referee_crc.cpp</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

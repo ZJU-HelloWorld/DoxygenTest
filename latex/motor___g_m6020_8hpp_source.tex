@@ -1,0 +1,58 @@
+\doxysection{motor\+\_\+\+GM6020.\+hpp}
+\hypertarget{motor___g_m6020_8hpp_source}{}\label{motor___g_m6020_8hpp_source}\index{HW-\/Components/devices/motor/inc/motor\_GM6020.hpp@{HW-\/Components/devices/motor/inc/motor\_GM6020.hpp}}
+\mbox{\hyperlink{motor___g_m6020_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00015}00015\ \textcolor{comment}{/*\ Define\ to\ prevent\ recursive\ inclusion\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00016}00016\ \textcolor{preprocessor}{\#ifndef\ HW\_COMPONENTS\_DEVICES\_MOTOR\_MOTOR\_GM6020\_HPP\_}}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00017}00017\ \textcolor{preprocessor}{\#define\ HW\_COMPONENTS\_DEVICES\_MOTOR\_MOTOR\_GM6020\_HPP\_}}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00019}00019\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00020}00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{motor__base_8hpp}{motor\_base.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00022}00022\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacehello__world}{hello\_world}}}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00023}00023\ \{}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00024}00024\ \textcolor{keyword}{namespace\ }devices}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00025}00025\ \{}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00026}00026\ \textcolor{keyword}{namespace\ }motor}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00027}00027\ \{}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00028}00028\ \textcolor{comment}{/*\ Exported\ macro\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00029}00029\ \textcolor{comment}{/*\ Exported\ constants\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00030}00030\ \textcolor{comment}{/*\ Exported\ types\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00032}\mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020}{00032}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020}{GM6020}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor}{Motor}}}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00033}00033\ \{}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00034}00034\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00035}00035\ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020}{GM6020}}(}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00036}00036\ \ \ \ \ \ \ uint8\_t\ \textcolor{keywordtype}{id},\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params}{OptionalParams}}\ \&optinal\_params\ =\ \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params}{OptionalParams}}());}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00037}\mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020_a2d7d38f9e2e2bbb9c69710d4af34428a}{00037}}\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020_a2d7d38f9e2e2bbb9c69710d4af34428a}{\string~GM6020}}()\{\};}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00039}00039\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380c}{State}}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020_aa3824723dba2a9cd0d833fc02a7f49ff}{setInput}}(\textcolor{keywordtype}{float}\ input);}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00041}00041\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380c}{State}}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020_a1235b577a72c9fa53a2732e04982cab0}{set\_input\_type}}(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7}{InputType}}\ input\_type);}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00043}00043\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380c}{State}}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020_a5ad5ba687605e93d6723b3e6fa317435}{encode}}(}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00044}00044\ \ \ \ \ \ \ uint8\_t\ tx\_data[8],\ uint32\_t\ tx\_msg\_std\_id)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00046}00046\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380c}{State}}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020_a732687f3fc5d5d302135f950ac260e3f}{decode}}(}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00047}00047\ \ \ \ \ \ \ \textcolor{keyword}{const}\ uint8\_t\ rx\_data[8],\ uint32\_t\ rx\_msg\_std\_id)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00049}\mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020_a5b54f1cf1e8bf2df6bf3b6b010ba175a}{00049}}\ \ \ uint8\_t\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020_a5b54f1cf1e8bf2df6bf3b6b010ba175a}{temp}}(\textcolor{keywordtype}{void})\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020_acc42958e0eedf1f10da56e43d5df7946}{temp\_}};\ \}}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00051}00051\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00052}\mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020_acc42958e0eedf1f10da56e43d5df7946}{00052}}\ \ \ uint8\_t\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020_acc42958e0eedf1f10da56e43d5df7946}{temp\_}};\ \ }
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00054}\mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020_a284d777c18006c5e5ba05576f796cb6e}{00054}}\ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ uint32\_t\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020_a284d777c18006c5e5ba05576f796cb6e}{kTx1\_4\_}}\ =\ 0x1FF;}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00055}\mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020_a8746a4b46ed319f80d6d4196e6fcedcb}{00055}}\ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ uint32\_t\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020_a8746a4b46ed319f80d6d4196e6fcedcb}{kTx5\_7\_}}\ =\ 0x2FF;}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00056}\mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020_a99d3844cbaf71a0ba1a2694eae5f7411}{00056}}\ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{constexpr}\ uint32\_t\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020_a99d3844cbaf71a0ba1a2694eae5f7411}{kRx0\_}}\ =\ 0x204;}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00057}00057\ \};}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00059}00059\ \textcolor{comment}{/*\ Exported\ variables\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00060}00060\ \textcolor{comment}{/*\ Exported\ function\ prototypes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00061}00061\ \}\ \ \textcolor{comment}{//\ namespace\ motor}}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00062}00062\ \}\ \ \textcolor{comment}{//\ namespace\ devices}}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00063}00063\ \}\ \ \textcolor{comment}{//\ namespace\ hello\_world}}
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{motor___g_m6020_8hpp_source_l00065}00065\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ HW\_COMPONENTS\_DEVICES\_MOTOR\_MOTOR\_M3508\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

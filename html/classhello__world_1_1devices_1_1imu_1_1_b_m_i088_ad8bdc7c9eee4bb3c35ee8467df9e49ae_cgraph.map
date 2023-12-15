@@ -1,0 +1,7 @@
+<map id="hello_world::devices::imu::BMI088::accMultiRead" name="hello_world::devices::imu::BMI088::accMultiRead">
+<area shape="rect" id="Node000001" title="加速度计多寄存器数据读取" alt="" coords="5,37,196,77"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#abe2be687095fa7b54d31a3a69693b306" title=" " alt="" coords="244,5,401,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,41,229,36,230,41,197,46"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#ad1ea4fa147f8bb2da18049c229404f65" title=" " alt="" coords="245,69,400,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,68,231,73,230,79,196,74"/>
+</map>

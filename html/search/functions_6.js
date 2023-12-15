@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['get_5finput_5ftype_0',['get_input_type',['../classhello__world_1_1devices_1_1motor_1_1_motor.html#a9ca0e58a5138076f3c0bc5eb2ccb34e0',1,'hello_world::devices::motor::Motor']]],
+  ['get_5fplay_5fconfig_1',['get_play_config',['../classhello__world_1_1devices_1_1buzzer_1_1_buzzer.html#a4b9145b78c0492ffd54c37bae36cc8e0',1,'hello_world::devices::buzzer::Buzzer']]],
+  ['getaccdata_2',['getAccData',['../classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#ad236f84f69a0ef4e8befa96479bf5618',1,'hello_world::devices::imu::BMI088']]],
+  ['getcrc16checksum_3',['GetCrc16CheckSum',['../namespacehello__world_1_1devices_1_1referee.html#a30f1e50d6e85c306486883a0668b7f50',1,'hello_world::devices::referee']]],
+  ['getcrc8checksum_4',['GetCrc8CheckSum',['../namespacehello__world_1_1devices_1_1referee.html#a42050a73d989fc581253585524abbf57',1,'hello_world::devices::referee']]],
+  ['getdata_5',['getData',['../classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#aa4b8ef9d615c0ead67e6b88c34bd84d1',1,'hello_world::devices::imu::BMI088']]],
+  ['getgyrodata_6',['getGyroData',['../classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a00755ad04aebc2df220b39f1a83bf811',1,'hello_world::devices::imu::BMI088']]],
+  ['getinput_7',['getInput',['../classhello__world_1_1devices_1_1motor_1_1_motor.html#aab42768aa52c635bba1d205b466c0981',1,'hello_world::devices::motor::Motor']]],
+  ['getsign_8',['GetSign',['../namespacehello__world.html#a0a24a2113234e7e7a7328e70bedb91c1',1,'hello_world']]],
+  ['gettemp_9',['getTemp',['../classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a0672cec3591e037942c7bc03b31dd24a',1,'hello_world::devices::imu::BMI088']]],
+  ['gettickms_10',['GetTickMs',['../namespacehello__world_1_1dsp_1_1tick.html#a97910b07255da1979f8ceafd8c6d2ea5',1,'hello_world::dsp::tick']]],
+  ['getticks_11',['GetTickS',['../namespacehello__world_1_1dsp_1_1tick.html#a3bb6f5ee2096e411df77150fbac949a5',1,'hello_world::dsp::tick']]],
+  ['gettickus_12',['GetTickUs',['../namespacehello__world_1_1dsp_1_1tick.html#a0c9c44ee367dc665cc6f1a6d830da9ee',1,'hello_world::dsp::tick']]],
+  ['gm6020_13',['GM6020',['../classhello__world_1_1devices_1_1motor_1_1_g_m6020.html#ad61341de888f13343d20bd7e0b06f3c1',1,'hello_world::devices::motor::GM6020']]],
+  ['gyrocsh_14',['gyroCsH',['../classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a54cd103bad13c06059088197dabd6acc',1,'hello_world::devices::imu::BMI088']]],
+  ['gyrocsl_15',['gyroCsL',['../classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#ac7e428dbf85a72f9b9689a78e7e73f02',1,'hello_world::devices::imu::BMI088']]],
+  ['gyroinit_16',['gyroInit',['../classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a88754aa2ebac6fcdfde4c5ce4de33dd6',1,'hello_world::devices::imu::BMI088']]],
+  ['gyromultiread_17',['gyroMultiRead',['../classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a443cf9b8f3e44acea8ac21258b4d7363',1,'hello_world::devices::imu::BMI088']]],
+  ['gyroread_18',['gyroRead',['../classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a16b8a6609a3b902bc05c4e2857801cd2',1,'hello_world::devices::imu::BMI088']]],
+  ['gyroselftest_19',['gyroSelfTest',['../classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#ac8c0c2e64b56c3feb6888446b4830be3',1,'hello_world::devices::imu::BMI088']]],
+  ['gyrowrite_20',['gyroWrite',['../classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#adf2ebc011e80e2ad115716307c773c6f',1,'hello_world::devices::imu::BMI088']]]
+];

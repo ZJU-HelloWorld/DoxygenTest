@@ -1,0 +1,659 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping" xml:lang="zh">
+<title>hello_world::algorithms::controller::pid::SetpointRamping类 参考</title>
+<indexterm><primary>hello_world::algorithms::controller::pid::SetpointRamping</primary></indexterm>
+<para>
+
+<para>设定点斜坡优化类 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;pid_opt.hpp&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1abfad7fc77ed8ddc3f7b358112b3ef28d">SetpointRamping</link> (bool is_enabled=false, float lower=-0.01, float upper=0.01, float weight=0.5)</para>
+
+<para>构造函数，初始化设定点斜坡优化参数 </para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a871b1700f3f33338caf9eb893fbe1c5b">setEnabled</link> (bool is_enabled)</para>
+
+<para>设置是否启用设定点斜坡优化 </para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a8b0695ce28a8513c8496f7fb4879777c">setLower</link> (float lower)</para>
+
+<para>设置输出下限 </para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a583e8721e40c329c56b831c9d9dbfd96">setUpper</link> (float upper)</para>
+
+<para>设置输出上限 </para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a800c9eb2af9d26b49be7ec0450d0bb8a">setWeight</link> (float weight)</para>
+
+<para>设置权重 </para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a460329f8b9e9879ff4a3b33e23c65a64">setParams</link> (bool is_enabled, float lower, float upper, float weight)</para>
+
+<para>设置设定点斜坡优化参数 </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1aa422d35b86458e8eefbfff91aabc0663">isLegal</link> ()</para>
+
+<para>检查设定点斜坡优化参数是否合法 </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1ae73d9e96b10b0e9782752b7895ca9884">isEnabled</link> ()</para>
+
+<para>检查是否启用了设定点斜坡优化 </para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a7833313869bfc6845232378f32019e29">calc</link> (float ref, float last_ref)</para>
+
+<para>计算设定点斜坡优化后的输出值 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 成员函数    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1aa61bfaf1f7fbf60ae83fb6912fd89ef4">handleIllegalParams</link> ()</para>
+
+<para>处理非法参数 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 属性    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a1fc6c333f41f638e72eb66b25cb4f3ab">is_enabled_</link></para>
+
+<para>是否启用设定点斜坡优化 </para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a5b9cffa6bd25366c81bc5e6ed0a47a62">lower_</link></para>
+
+<para>触发设定点斜坡优化的参考值下限 </para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a045c57ece17e2b7d8d0085fbaf99bd06">upper_</link></para>
+
+<para>触发设定点斜坡优化的参考值上限 </para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1ae6ea21fd7b12500a62ffb60cfa4b4942">weight_</link></para>
+
+<para>计算设定点斜坡优化的权重值 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>设定点斜坡优化类 </para>
+
+
+
+<para>当给定值出现较大的阶跃变化，很容易引起超调。 使用线性斜坡函数或一阶滤波为给定值安排过渡过程，使其从其旧值逐渐变化到新值。 这样可以避免阶跃变化产生的不连续性，进而使对象运行平稳，适用于高精度伺服系统的位置跟踪。</para>
+
+<para><itemizedlist>
+<listitem>
+<para>具体计算公式见<computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a7833313869bfc6845232378f32019e29">calc(float ref, float last_ref)</link></computeroutput>。</para>
+</listitem><listitem>
+<para>参数合法性检查见<computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1aa422d35b86458e8eefbfff91aabc0663">isLegal()</link></computeroutput>。</para>
+</listitem><listitem>
+<para>启用判定见<computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1ae73d9e96b10b0e9782752b7895ca9884">isEnabled()</link></computeroutput>。 </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01045">1045</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1abfad7fc77ed8ddc3f7b358112b3ef28d"/><section>
+    <title>SetpointRamping()</title>
+<indexterm><primary>SetpointRamping</primary><secondary>hello_world::algorithms::controller::pid::SetpointRamping</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::SetpointRamping</primary><secondary>SetpointRamping</secondary></indexterm>
+<para><computeroutput>hello_world::algorithms::controller::pid::SetpointRamping::SetpointRamping (bool is_enabled = <computeroutput>false</computeroutput>
+, float lower = <computeroutput>-0.01</computeroutput>
+, float upper = <computeroutput>0.01</computeroutput>
+, float weight = <computeroutput>0.5</computeroutput>
+)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>构造函数，初始化设定点斜坡优化参数 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>is_enabled</entry><entry>
+<para>是否启用设定点斜坡优化，默认为false </para>
+</entry>
+                            </row>
+                            <row>
+<entry>lower</entry><entry>
+<para>输出下限，默认值为-0.01 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>upper</entry><entry>
+<para>输出上限，默认值为0.01 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>weight</entry><entry>
+<para>权重，默认值为0.5 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01055">1055</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a7833313869bfc6845232378f32019e29"/><section>
+    <title>calc()</title>
+<indexterm><primary>calc</primary><secondary>hello_world::algorithms::controller::pid::SetpointRamping</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::SetpointRamping</primary><secondary>calc</secondary></indexterm>
+<para><computeroutput>float hello_world::algorithms::controller::pid::SetpointRamping::calc (float ref, float last_ref)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>计算设定点斜坡优化后的输出值 </para>
+</para>
+
+<para>具体的计算公式为：          <mediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_18.png"/>
+            </imageobject>
+        </mediaobject>
+， 其中 <inlinemediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_11.png"/>
+            </imageobject>
+</inlinemediaobject>
+ 为参数中的下限值， <inlinemediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_12.png"/>
+            </imageobject>
+</inlinemediaobject>
+为参数中的上限值， <inlinemediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_16.png"/>
+            </imageobject>
+</inlinemediaobject>
+为参数中的权重值 
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>ref</entry><entry>
+<para>本次采样的参考值 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>last_ref</entry><entry>
+<para>上次采样的参考值 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>本次采样的设定点斜坡优化后的输出值 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01162">1162</link> 行定义.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_a7833313869bfc6845232378f32019e29_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1aa61bfaf1f7fbf60ae83fb6912fd89ef4"/><section>
+    <title>handleIllegalParams()</title>
+<indexterm><primary>handleIllegalParams</primary><secondary>hello_world::algorithms::controller::pid::SetpointRamping</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::SetpointRamping</primary><secondary>handleIllegalParams</secondary></indexterm>
+<para><computeroutput>bool hello_world::algorithms::controller::pid::SetpointRamping::handleIllegalParams ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>处理非法参数 </para>
+</para>
+
+<para>如果下限大于上限，交换两者的值。 如果权重小于0，设置权重为0。 如果权重大于1，设置权重为1。</para>
+
+<para><formalpara><title>返回</title>
+
+<para>如果存在非法参数返回true，否则返回false </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>true</entry><entry>
+<para>存在非法参数 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>false</entry><entry>
+<para>不存在非法参数 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01191">1191</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1ae73d9e96b10b0e9782752b7895ca9884"/><section>
+    <title>isEnabled()</title>
+<indexterm><primary>isEnabled</primary><secondary>hello_world::algorithms::controller::pid::SetpointRamping</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::SetpointRamping</primary><secondary>isEnabled</secondary></indexterm>
+<para><computeroutput>bool hello_world::algorithms::controller::pid::SetpointRamping::isEnabled ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>检查是否启用了设定点斜坡优化 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>如果启用了设定点斜坡优化并且参数合法，则返回true，否则返回false </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01144">1144</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1aa422d35b86458e8eefbfff91aabc0663"/><section>
+    <title>isLegal()</title>
+<indexterm><primary>isLegal</primary><secondary>hello_world::algorithms::controller::pid::SetpointRamping</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::SetpointRamping</primary><secondary>isLegal</secondary></indexterm>
+<para><computeroutput>bool hello_world::algorithms::controller::pid::SetpointRamping::isLegal ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>检查设定点斜坡优化参数是否合法 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>参数合法返回true，否则返回false </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01135">1135</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a871b1700f3f33338caf9eb893fbe1c5b"/><section>
+    <title>setEnabled()</title>
+<indexterm><primary>setEnabled</primary><secondary>hello_world::algorithms::controller::pid::SetpointRamping</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::SetpointRamping</primary><secondary>setEnabled</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> hello_world::algorithms::controller::pid::SetpointRamping::setEnabled (bool is_enabled)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>设置是否启用设定点斜坡优化 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>is_enabled</entry><entry>
+<para>是否启用设定点斜坡优化 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>设置状态，成功返回kStateOk </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01066">1066</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a8b0695ce28a8513c8496f7fb4879777c"/><section>
+    <title>setLower()</title>
+<indexterm><primary>setLower</primary><secondary>hello_world::algorithms::controller::pid::SetpointRamping</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::SetpointRamping</primary><secondary>setLower</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> hello_world::algorithms::controller::pid::SetpointRamping::setLower (float lower)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>设置输出下限 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>lower</entry><entry>
+<para>输出下限 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>设置状态，如果参数合法返回kStateOk，否则在处理非法参数后返回kStateError </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>kStateOK</entry><entry>
+<para>设置成功且参数合法 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>kStateError</entry><entry>
+<para>设置成功但参数非法 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01079">1079</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a460329f8b9e9879ff4a3b33e23c65a64"/><section>
+    <title>setParams()</title>
+<indexterm><primary>setParams</primary><secondary>hello_world::algorithms::controller::pid::SetpointRamping</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::SetpointRamping</primary><secondary>setParams</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> hello_world::algorithms::controller::pid::SetpointRamping::setParams (bool is_enabled, float lower, float upper, float weight)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>设置设定点斜坡优化参数 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>is_enabled</entry><entry>
+<para>是否启用设定点斜坡优化 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>lower</entry><entry>
+<para>输出下限 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>upper</entry><entry>
+<para>输出上限 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>weight</entry><entry>
+<para>权重 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>设置状态，如果参数合法返回kStateOk，否则在处理非法参数后返回kStateError </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>kStateOK</entry><entry>
+<para>设置成功且参数合法 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>kStateError</entry><entry>
+<para>设置成功但参数非法 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01121">1121</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a583e8721e40c329c56b831c9d9dbfd96"/><section>
+    <title>setUpper()</title>
+<indexterm><primary>setUpper</primary><secondary>hello_world::algorithms::controller::pid::SetpointRamping</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::SetpointRamping</primary><secondary>setUpper</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> hello_world::algorithms::controller::pid::SetpointRamping::setUpper (float upper)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>设置输出上限 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>upper</entry><entry>
+<para>输出上限 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>设置状态，如果参数合法返回kStateOk，否则在处理非法参数后返回kStateError </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>kStateOK</entry><entry>
+<para>设置成功且参数合法 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>kStateError</entry><entry>
+<para>设置成功但参数非法 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01092">1092</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a800c9eb2af9d26b49be7ec0450d0bb8a"/><section>
+    <title>setWeight()</title>
+<indexterm><primary>setWeight</primary><secondary>hello_world::algorithms::controller::pid::SetpointRamping</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::SetpointRamping</primary><secondary>setWeight</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> hello_world::algorithms::controller::pid::SetpointRamping::setWeight (float weight)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>设置权重 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>weight</entry><entry>
+<para>权重 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>设置状态，如果参数合法返回kStateOk，否则在处理非法参数后返回kStateError </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>kStateOK</entry><entry>
+<para>设置成功且参数合法 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>kStateError</entry><entry>
+<para>设置成功但参数非法 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01105">1105</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a1fc6c333f41f638e72eb66b25cb4f3ab"/><section>
+    <title>is_enabled_</title>
+<indexterm><primary>is_enabled_</primary><secondary>hello_world::algorithms::controller::pid::SetpointRamping</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::SetpointRamping</primary><secondary>is_enabled_</secondary></indexterm>
+<para><computeroutput>bool hello_world::algorithms::controller::pid::SetpointRamping::is_enabled_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>是否启用设定点斜坡优化 </para>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01175">1175</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a5b9cffa6bd25366c81bc5e6ed0a47a62"/><section>
+    <title>lower_</title>
+<indexterm><primary>lower_</primary><secondary>hello_world::algorithms::controller::pid::SetpointRamping</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::SetpointRamping</primary><secondary>lower_</secondary></indexterm>
+<para><computeroutput>float hello_world::algorithms::controller::pid::SetpointRamping::lower_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>触发设定点斜坡优化的参考值下限 </para>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01176">1176</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a045c57ece17e2b7d8d0085fbaf99bd06"/><section>
+    <title>upper_</title>
+<indexterm><primary>upper_</primary><secondary>hello_world::algorithms::controller::pid::SetpointRamping</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::SetpointRamping</primary><secondary>upper_</secondary></indexterm>
+<para><computeroutput>float hello_world::algorithms::controller::pid::SetpointRamping::upper_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>触发设定点斜坡优化的参考值上限 </para>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01177">1177</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1ae6ea21fd7b12500a62ffb60cfa4b4942"/><section>
+    <title>weight_</title>
+<indexterm><primary>weight_</primary><secondary>hello_world::algorithms::controller::pid::SetpointRamping</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::SetpointRamping</primary><secondary>weight_</secondary></indexterm>
+<para><computeroutput>float hello_world::algorithms::controller::pid::SetpointRamping::weight_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>计算设定点斜坡优化的权重值 </para>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01178">1178</link> 行定义.</para>
+</section>
+</section>
+</section>

@@ -1,0 +1,1628 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: hello_world::devices::motor::Motor类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classhello__world_1_1devices_1_1motor_1_1_motor.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#pro-static-attribs">静态 Protected 属性</a> &#124;
+<a href="classhello__world_1_1devices_1_1motor_1_1_motor-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">hello_world::devices::motor::Motor类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a>&gt;</code></p>
+<div class="dynheader">
+类 hello_world::devices::motor::Motor 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor__inherit__graph.svg" width="536" height="435"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+hello_world::devices::motor::Motor 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor__coll__graph.svg" width="336" height="243"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a353af5a842fbf673c92758952bb2958b" id="r_a353af5a842fbf673c92758952bb2958b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a353af5a842fbf673c92758952bb2958b">Motor</a> ()</td></tr>
+<tr class="separator:a353af5a842fbf673c92758952bb2958b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf169589667b294dc292b414b28f17a8" id="r_acf169589667b294dc292b414b28f17a8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#acf169589667b294dc292b414b28f17a8">~Motor</a> ()</td></tr>
+<tr class="separator:acf169589667b294dc292b414b28f17a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad101045a9eef9a699001fc94631e8395" id="r_ad101045a9eef9a699001fc94631e8395"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacehello__world_1_1devices_1_1motor.html#ae5d33e6b7fa4db1777f88ab1faf4380c">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#ad101045a9eef9a699001fc94631e8395">setInput</a> (float input)</td></tr>
+<tr class="memdesc:ad101045a9eef9a699001fc94631e8395"><td class="mdescLeft">&#160;</td><td class="mdescRight">设定发给电调的期望值  <br /></td></tr>
+<tr class="separator:ad101045a9eef9a699001fc94631e8395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab42768aa52c635bba1d205b466c0981" id="r_aab42768aa52c635bba1d205b466c0981"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#aab42768aa52c635bba1d205b466c0981">getInput</a> (void) const</td></tr>
+<tr class="memdesc:aab42768aa52c635bba1d205b466c0981"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取发给电调的期望值  <br /></td></tr>
+<tr class="separator:aab42768aa52c635bba1d205b466c0981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c96d433ffdc4000153e08175b97d445" id="r_a8c96d433ffdc4000153e08175b97d445"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a8c96d433ffdc4000153e08175b97d445">setAngleValue</a> (float <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#acad1e1f1792ab8cb6265b1d5195737f6">angle</a>)</td></tr>
+<tr class="memdesc:a8c96d433ffdc4000153e08175b97d445"><td class="mdescLeft">&#160;</td><td class="mdescRight">将当前电机输出端所处位置设置为指定的角度  <br /></td></tr>
+<tr class="separator:a8c96d433ffdc4000153e08175b97d445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50477b96ba8268bcac04ab6637578cc5" id="r_a50477b96ba8268bcac04ab6637578cc5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacehello__world_1_1devices_1_1motor.html#ae5d33e6b7fa4db1777f88ab1faf4380c">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a50477b96ba8268bcac04ab6637578cc5">encode</a> (uint8_t tx_data[8], uint32_t tx_msg_std_id) const =0</td></tr>
+<tr class="memdesc:a50477b96ba8268bcac04ab6637578cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">将要发给电调的期望输值编码为对应的 CAN 报文  <br /></td></tr>
+<tr class="separator:a50477b96ba8268bcac04ab6637578cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af62b61171a698a06954cc8ccec37f79e" id="r_af62b61171a698a06954cc8ccec37f79e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacehello__world_1_1devices_1_1motor.html#ae5d33e6b7fa4db1777f88ab1faf4380c">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#af62b61171a698a06954cc8ccec37f79e">decode</a> (const uint8_t rx_data[8], uint32_t rx_msg_std_id)=0</td></tr>
+<tr class="memdesc:af62b61171a698a06954cc8ccec37f79e"><td class="mdescLeft">&#160;</td><td class="mdescRight">将电调发回的 CAN 报文进行解包  <br /></td></tr>
+<tr class="separator:af62b61171a698a06954cc8ccec37f79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af74a8c4ad7c0067a2d71afd711639366" id="r_af74a8c4ad7c0067a2d71afd711639366"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#af74a8c4ad7c0067a2d71afd711639366">raw2torq</a> (float raw) const</td></tr>
+<tr class="memdesc:af74a8c4ad7c0067a2d71afd711639366"><td class="mdescLeft">&#160;</td><td class="mdescRight">将原始报文内容转换为输出端力矩  <br /></td></tr>
+<tr class="separator:af74a8c4ad7c0067a2d71afd711639366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319adc3f1b7d43fa12015b52a153ea17" id="r_a319adc3f1b7d43fa12015b52a153ea17"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a319adc3f1b7d43fa12015b52a153ea17">torq2raw</a> (float <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a987073404f2d04c10434f830884b9612">torq</a>) const</td></tr>
+<tr class="memdesc:a319adc3f1b7d43fa12015b52a153ea17"><td class="mdescLeft">&#160;</td><td class="mdescRight">将输出端力矩转换为原始报文内容  <br /></td></tr>
+<tr class="separator:a319adc3f1b7d43fa12015b52a153ea17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e4467d9f449b9c6c7d6886fffa89667" id="r_a1e4467d9f449b9c6c7d6886fffa89667"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a1e4467d9f449b9c6c7d6886fffa89667">raw2curr</a> (float raw) const</td></tr>
+<tr class="memdesc:a1e4467d9f449b9c6c7d6886fffa89667"><td class="mdescLeft">&#160;</td><td class="mdescRight">将原始报文内容转换为转子电流  <br /></td></tr>
+<tr class="separator:a1e4467d9f449b9c6c7d6886fffa89667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebf04ce4e3628c60907a29771f383027" id="r_aebf04ce4e3628c60907a29771f383027"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#aebf04ce4e3628c60907a29771f383027">curr2raw</a> (float <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a7fbec1460a1db6c45b4c57fd0497e5e0">curr</a>) const</td></tr>
+<tr class="memdesc:aebf04ce4e3628c60907a29771f383027"><td class="mdescLeft">&#160;</td><td class="mdescRight">将转子电流转换为原始报文内容  <br /></td></tr>
+<tr class="separator:aebf04ce4e3628c60907a29771f383027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44292bfea784425e2c2c81dc4d634371" id="r_a44292bfea784425e2c2c81dc4d634371"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a44292bfea784425e2c2c81dc4d634371">torq2curr</a> (float <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a987073404f2d04c10434f830884b9612">torq</a>) const</td></tr>
+<tr class="memdesc:a44292bfea784425e2c2c81dc4d634371"><td class="mdescLeft">&#160;</td><td class="mdescRight">将输出端力矩转换为转子电流  <br /></td></tr>
+<tr class="separator:a44292bfea784425e2c2c81dc4d634371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e11db30817cf05232ee3d52ed48030b" id="r_a6e11db30817cf05232ee3d52ed48030b"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a6e11db30817cf05232ee3d52ed48030b">curr2torq</a> (float <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a7fbec1460a1db6c45b4c57fd0497e5e0">curr</a>) const</td></tr>
+<tr class="memdesc:a6e11db30817cf05232ee3d52ed48030b"><td class="mdescLeft">&#160;</td><td class="mdescRight">将转子电流转换为输出端力矩  <br /></td></tr>
+<tr class="separator:a6e11db30817cf05232ee3d52ed48030b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af88eebbf4bb3e8515bc5728ce3313f41" id="r_af88eebbf4bb3e8515bc5728ce3313f41"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structhello__world_1_1devices_1_1motor_1_1_motor_info.html">MotorInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#af88eebbf4bb3e8515bc5728ce3313f41">motor_info</a> (void) const</td></tr>
+<tr class="separator:af88eebbf4bb3e8515bc5728ce3313f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7669c1a2fc06a016b31bfa6b885dd6b" id="r_ae7669c1a2fc06a016b31bfa6b885dd6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehello__world_1_1devices_1_1motor.html#a44985d99992e9464953d243bf3b561fd">Dir</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#ae7669c1a2fc06a016b31bfa6b885dd6b">dir</a> (void) const</td></tr>
+<tr class="separator:ae7669c1a2fc06a016b31bfa6b885dd6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e2187f017e86c6d4a83caa55fe9419" id="r_ab3e2187f017e86c6d4a83caa55fe9419"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#ab3e2187f017e86c6d4a83caa55fe9419">id</a> (void) const</td></tr>
+<tr class="separator:ab3e2187f017e86c6d4a83caa55fe9419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab77091f1c532f4b84153448aa27d6a6c" id="r_ab77091f1c532f4b84153448aa27d6a6c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#ab77091f1c532f4b84153448aa27d6a6c">rx_id</a> (void) const</td></tr>
+<tr class="separator:ab77091f1c532f4b84153448aa27d6a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb8c91a5928cf03d3778b668edf6ff5" id="r_acbb8c91a5928cf03d3778b668edf6ff5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#acbb8c91a5928cf03d3778b668edf6ff5">tx_id</a> (void) const</td></tr>
+<tr class="separator:acbb8c91a5928cf03d3778b668edf6ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1d7d54199dac13f71d67e3711752b5" id="r_abd1d7d54199dac13f71d67e3711752b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehello__world_1_1devices_1_1motor.html#a0163710b33b99ac98bcbcb1f43d78248">AngleRange</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#abd1d7d54199dac13f71d67e3711752b5">angle_range</a> (void) const</td></tr>
+<tr class="separator:abd1d7d54199dac13f71d67e3711752b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd7c00f35db22fb65264baf08c3981b6" id="r_abd7c00f35db22fb65264baf08c3981b6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacehello__world_1_1devices_1_1motor.html#ae5d33e6b7fa4db1777f88ab1faf4380c">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#abd7c00f35db22fb65264baf08c3981b6">set_input_type</a> (<a class="el" href="namespacehello__world_1_1devices_1_1motor.html#a4777995093ebbd290b833795e49749b7">InputType</a> input_type)</td></tr>
+<tr class="memdesc:abd7c00f35db22fb65264baf08c3981b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置点击的输入类型  <br /></td></tr>
+<tr class="separator:abd7c00f35db22fb65264baf08c3981b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca0e58a5138076f3c0bc5eb2ccb34e0" id="r_a9ca0e58a5138076f3c0bc5eb2ccb34e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehello__world_1_1devices_1_1motor.html#a4777995093ebbd290b833795e49749b7">InputType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a9ca0e58a5138076f3c0bc5eb2ccb34e0">get_input_type</a> (void) const</td></tr>
+<tr class="separator:a9ca0e58a5138076f3c0bc5eb2ccb34e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad1e1f1792ab8cb6265b1d5195737f6" id="r_acad1e1f1792ab8cb6265b1d5195737f6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#acad1e1f1792ab8cb6265b1d5195737f6">angle</a> (void) const</td></tr>
+<tr class="separator:acad1e1f1792ab8cb6265b1d5195737f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aff69d544478285b83ab15914d437ce" id="r_a4aff69d544478285b83ab15914d437ce"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a4aff69d544478285b83ab15914d437ce">vel</a> (void) const</td></tr>
+<tr class="separator:a4aff69d544478285b83ab15914d437ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a987073404f2d04c10434f830884b9612" id="r_a987073404f2d04c10434f830884b9612"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a987073404f2d04c10434f830884b9612">torq</a> (void) const</td></tr>
+<tr class="separator:a987073404f2d04c10434f830884b9612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fbec1460a1db6c45b4c57fd0497e5e0" id="r_a7fbec1460a1db6c45b4c57fd0497e5e0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a7fbec1460a1db6c45b4c57fd0497e5e0">curr</a> (void) const</td></tr>
+<tr class="separator:a7fbec1460a1db6c45b4c57fd0497e5e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classhello__world_1_1_mem_mang"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhello__world_1_1_mem_mang')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classhello__world_1_1_mem_mang.html">hello_world::MemMang</a></td></tr>
+<tr class="memitem:abcf6e7289814e8da342ba4f47d8af411 inherit pub_methods_classhello__world_1_1_mem_mang" id="r_abcf6e7289814e8da342ba4f47d8af411"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1_mem_mang.html#abcf6e7289814e8da342ba4f47d8af411">operator new</a> (size_t size)</td></tr>
+<tr class="separator:abcf6e7289814e8da342ba4f47d8af411 inherit pub_methods_classhello__world_1_1_mem_mang"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10b6eff1541322708e5bde32c590c82 inherit pub_methods_classhello__world_1_1_mem_mang" id="r_ad10b6eff1541322708e5bde32c590c82"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1_mem_mang.html#ad10b6eff1541322708e5bde32c590c82">operator new[]</a> (size_t size)</td></tr>
+<tr class="separator:ad10b6eff1541322708e5bde32c590c82 inherit pub_methods_classhello__world_1_1_mem_mang"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1fe21066f52d693e2eec63a5833e8e inherit pub_methods_classhello__world_1_1_mem_mang" id="r_abf1fe21066f52d693e2eec63a5833e8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1_mem_mang.html#abf1fe21066f52d693e2eec63a5833e8e">operator delete</a> (void *ptr)</td></tr>
+<tr class="separator:abf1fe21066f52d693e2eec63a5833e8e inherit pub_methods_classhello__world_1_1_mem_mang"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e1a6a8e01b0996cc2854a8bc1ce7bd inherit pub_methods_classhello__world_1_1_mem_mang" id="r_a54e1a6a8e01b0996cc2854a8bc1ce7bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1_mem_mang.html#a54e1a6a8e01b0996cc2854a8bc1ce7bd">operator delete[]</a> (void *ptr)</td></tr>
+<tr class="separator:a54e1a6a8e01b0996cc2854a8bc1ce7bd inherit pub_methods_classhello__world_1_1_mem_mang"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a21092858a98af5688b398d57cd203592" id="r_a21092858a98af5688b398d57cd203592"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a21092858a98af5688b398d57cd203592">normAngle</a> (float <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#acad1e1f1792ab8cb6265b1d5195737f6">angle</a>)</td></tr>
+<tr class="memdesc:a21092858a98af5688b398d57cd203592"><td class="mdescLeft">&#160;</td><td class="mdescRight">将角度转换到指定范围  <br /></td></tr>
+<tr class="separator:a21092858a98af5688b398d57cd203592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ab7a9c137dd445327e658202640e3dbc6" id="r_ab7a9c137dd445327e658202640e3dbc6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#ab7a9c137dd445327e658202640e3dbc6">angle_</a> = 0</td></tr>
+<tr class="memdesc:ab7a9c137dd445327e658202640e3dbc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">电机状态  <br /></td></tr>
+<tr class="separator:ab7a9c137dd445327e658202640e3dbc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a609eb51ef7ddb343ecc4eeafc4ad83e3" id="r_a609eb51ef7ddb343ecc4eeafc4ad83e3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a609eb51ef7ddb343ecc4eeafc4ad83e3">vel_</a> = 0</td></tr>
+<tr class="separator:a609eb51ef7ddb343ecc4eeafc4ad83e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40c42d94607450fb55a676bdaa0b505c" id="r_a40c42d94607450fb55a676bdaa0b505c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a40c42d94607450fb55a676bdaa0b505c">torq_</a> = 0</td></tr>
+<tr class="separator:a40c42d94607450fb55a676bdaa0b505c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b7de1c9857ad74e17bda1b03b524b21" id="r_a6b7de1c9857ad74e17bda1b03b524b21"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a6b7de1c9857ad74e17bda1b03b524b21">curr_</a> = 0</td></tr>
+<tr class="separator:a6b7de1c9857ad74e17bda1b03b524b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab037cc377320f41d8bdbdd599448dad8" id="r_ab037cc377320f41d8bdbdd599448dad8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#ab037cc377320f41d8bdbdd599448dad8">round_</a> = 0</td></tr>
+<tr class="separator:ab037cc377320f41d8bdbdd599448dad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade57cbc7fc217543ca6c8650ad0eb03d" id="r_ade57cbc7fc217543ca6c8650ad0eb03d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#ade57cbc7fc217543ca6c8650ad0eb03d">last_raw_angle_</a> = 0</td></tr>
+<tr class="separator:ade57cbc7fc217543ca6c8650ad0eb03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac9b8b8484e8529d9cd10665b3a0f88" id="r_adac9b8b8484e8529d9cd10665b3a0f88"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#adac9b8b8484e8529d9cd10665b3a0f88">actual_angle_</a> = 0</td></tr>
+<tr class="memdesc:adac9b8b8484e8529d9cd10665b3a0f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">电机输出端实际输出角度（未扣除角度偏差），单位：rad  <br /></td></tr>
+<tr class="separator:adac9b8b8484e8529d9cd10665b3a0f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e24f06845ffe971bca1914b11d353f1" id="r_a4e24f06845ffe971bca1914b11d353f1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a4e24f06845ffe971bca1914b11d353f1">raw_input_</a> = 0</td></tr>
+<tr class="memdesc:a4e24f06845ffe971bca1914b11d353f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">电机输入  <br /></td></tr>
+<tr class="separator:a4e24f06845ffe971bca1914b11d353f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf32abb5202efb3785033c8d7917a991" id="r_abf32abb5202efb3785033c8d7917a991"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#abf32abb5202efb3785033c8d7917a991">torq_input_</a> = 0</td></tr>
+<tr class="separator:abf32abb5202efb3785033c8d7917a991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7339defaa4857872509f36377d3ccf41" id="r_a7339defaa4857872509f36377d3ccf41"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a7339defaa4857872509f36377d3ccf41">curr_input_</a> = 0</td></tr>
+<tr class="separator:a7339defaa4857872509f36377d3ccf41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59781c0f3a6d7bb179d93c61d837836d" id="r_a59781c0f3a6d7bb179d93c61d837836d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structhello__world_1_1devices_1_1motor_1_1_motor_info.html">MotorInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#a59781c0f3a6d7bb179d93c61d837836d">motor_info_</a></td></tr>
+<tr class="separator:a59781c0f3a6d7bb179d93c61d837836d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+静态 Protected 属性</h2></td></tr>
+<tr class="memitem:ac4d15805fa2765480961cbb22a874832" id="r_ac4d15805fa2765480961cbb22a874832"><td class="memItemLeft" align="right" valign="top">static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html#ac4d15805fa2765480961cbb22a874832">kCross0ValueThres</a> = 0.3f</td></tr>
+<tr class="separator:ac4d15805fa2765480961cbb22a874832"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock">
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00118">118</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a353af5a842fbf673c92758952bb2958b" name="a353af5a842fbf673c92758952bb2958b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a353af5a842fbf673c92758952bb2958b">&#9670;&#160;</a></span>Motor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hello_world::devices::motor::Motor::Motor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00121">121</a> 行定义.</p>
+
+</div>
+</div>
+<a id="acf169589667b294dc292b414b28f17a8" name="acf169589667b294dc292b414b28f17a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf169589667b294dc292b414b28f17a8">&#9670;&#160;</a></span>~Motor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual hello_world::devices::motor::Motor::~Motor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00122">122</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="acad1e1f1792ab8cb6265b1d5195737f6" name="acad1e1f1792ab8cb6265b1d5195737f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad1e1f1792ab8cb6265b1d5195737f6">&#9670;&#160;</a></span>angle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::angle </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00188">188</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_acad1e1f1792ab8cb6265b1d5195737f6_icgraph.svg" width="628" height="435"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="abd1d7d54199dac13f71d67e3711752b5" name="abd1d7d54199dac13f71d67e3711752b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd1d7d54199dac13f71d67e3711752b5">&#9670;&#160;</a></span>angle_range()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehello__world_1_1devices_1_1motor.html#a0163710b33b99ac98bcbcb1f43d78248">AngleRange</a> hello_world::devices::motor::Motor::angle_range </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00182">182</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7fbec1460a1db6c45b4c57fd0497e5e0" name="a7fbec1460a1db6c45b4c57fd0497e5e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fbec1460a1db6c45b4c57fd0497e5e0">&#9670;&#160;</a></span>curr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::curr </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00194">194</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_a7fbec1460a1db6c45b4c57fd0497e5e0_icgraph.svg" width="635" height="499"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aebf04ce4e3628c60907a29771f383027" name="aebf04ce4e3628c60907a29771f383027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebf04ce4e3628c60907a29771f383027">&#9670;&#160;</a></span>curr2raw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::curr2raw </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>curr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将转子电流转换为原始报文内容 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curr</td><td>转子电流值，单位：A </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">转子电流值对应的原始报文</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>报文的对应的物理意义需要与设定的相符，设定对应情可以通过 motor_info 方法获取电机信息结构体，查看其中的 raw_mapping_type 变量 </dd></dl>
+
+<p>被 <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#a358bd9981d81d72077e27f42d775e431">hello_world::devices::motor::DM_J4310</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8cpp_source.html">motor_base.cpp</a> 第 <a class="el" href="motor__base_8cpp_source.html#l00163">163</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_aebf04ce4e3628c60907a29771f383027_cgraph.svg" width="358" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_aebf04ce4e3628c60907a29771f383027_icgraph.svg" width="418" height="371"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6e11db30817cf05232ee3d52ed48030b" name="a6e11db30817cf05232ee3d52ed48030b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e11db30817cf05232ee3d52ed48030b">&#9670;&#160;</a></span>curr2torq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::curr2torq </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>curr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将转子电流转换为输出端力矩 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curr</td><td>转子电流值，单位：A </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">转子电流值对应的输出端力矩，单位：N·m</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>None </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8cpp_source.html">motor_base.cpp</a> 第 <a class="el" href="motor__base_8cpp_source.html#l00191">191</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_a6e11db30817cf05232ee3d52ed48030b_cgraph.svg" width="359" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_a6e11db30817cf05232ee3d52ed48030b_icgraph.svg" width="423" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af62b61171a698a06954cc8ccec37f79e" name="af62b61171a698a06954cc8ccec37f79e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af62b61171a698a06954cc8ccec37f79e">&#9670;&#160;</a></span>decode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacehello__world_1_1devices_1_1motor.html#ae5d33e6b7fa4db1777f88ab1faf4380c">State</a> hello_world::devices::motor::Motor::decode </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>rx_data</em>[8], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>rx_msg_std_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将电调发回的 CAN 报文进行解包 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rx_data</td><td>电调发回的 CAN 报文 </td></tr>
+    <tr><td class="paramname">rx_msg_std_id</td><td>电调发回的报文的ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">当</td><td>ID 匹配时返回 kStateOk，否则返回 kStateIdDismatch </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>只有当 rx_msg_std_id 与实际的电机会发回报文的 ID 对应时才会对报文 进行解包，该 ID 可以通过 rx_id 方法获取 </dd></dl>
+
+<p>在 <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_a1.html#a1dc9df605f9df5fff3b2bc8ed4a63ff8">hello_world::devices::motor::A1</a>, <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#a84ecfac4c74e3f0f7b85fba6c69f2aa1">hello_world::devices::motor::DM_J4310</a>, <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_g_m6020.html#a732687f3fc5d5d302135f950ac260e3f">hello_world::devices::motor::GM6020</a>, <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_m2006.html#a4f74b1c55fc5c0f9e7c28d329ff0c9cd">hello_world::devices::motor::M2006</a>, <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_m3508.html#aec43855db5fbc6a2fb7b3b550b601f8e">hello_world::devices::motor::M3508</a>, <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_m8910.html#ae5b934cb41237293299dce618befba6d">hello_world::devices::motor::M8910</a> , 以及 <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_m_f9025v2.html#ab446cad174a3d963931102233a88c7e8">hello_world::devices::motor::MF9025v2</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="ae7669c1a2fc06a016b31bfa6b885dd6b" name="ae7669c1a2fc06a016b31bfa6b885dd6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7669c1a2fc06a016b31bfa6b885dd6b">&#9670;&#160;</a></span>dir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehello__world_1_1devices_1_1motor.html#a44985d99992e9464953d243bf3b561fd">Dir</a> hello_world::devices::motor::Motor::dir </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00174">174</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a50477b96ba8268bcac04ab6637578cc5" name="a50477b96ba8268bcac04ab6637578cc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50477b96ba8268bcac04ab6637578cc5">&#9670;&#160;</a></span>encode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="namespacehello__world_1_1devices_1_1motor.html#ae5d33e6b7fa4db1777f88ab1faf4380c">State</a> hello_world::devices::motor::Motor::encode </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>tx_data</em>[8], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>tx_msg_std_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将要发给电调的期望输值编码为对应的 CAN 报文 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tx_data</td><td>将要发出的 CAN 报文 </td></tr>
+    <tr><td class="paramname">tx_msg_std_id</td><td>发给电调的报文的ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">当</td><td>ID 匹配时返回 kStateOk，否则返回 kStateIdDismatch </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>1. 只有当 tx_msg_std_id 与实际的发给电机报文的 ID 对应时才会生成 报文，该 ID 可以通过 tx_id 方法获取<ol type="1">
+<li>只会在报文需要的位置上进行修改，区域位置的内容会保持不变 </li>
+</ol>
+</dd></dl>
+
+<p>在 <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_a1.html#a2033dda3651a1a97182e23fb8ccceae3">hello_world::devices::motor::A1</a>, <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#ac97392867193cf052740d0cfc3db7ebc">hello_world::devices::motor::DM_J4310</a>, <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_g_m6020.html#a5ad5ba687605e93d6723b3e6fa317435">hello_world::devices::motor::GM6020</a>, <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_m2006.html#aa75d742e86d207339818b124b11af230">hello_world::devices::motor::M2006</a>, <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_m3508.html#a6c8af995a05110932f1be95056c65e91">hello_world::devices::motor::M3508</a>, <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_m8910.html#a985dd218b3ef8aa045f21dc0cff4a462">hello_world::devices::motor::M8910</a> , 以及 <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_m_f9025v2.html#a809e9f046cde5db0883ab22fa61fa79e">hello_world::devices::motor::MF9025v2</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a9ca0e58a5138076f3c0bc5eb2ccb34e0" name="a9ca0e58a5138076f3c0bc5eb2ccb34e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ca0e58a5138076f3c0bc5eb2ccb34e0">&#9670;&#160;</a></span>get_input_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehello__world_1_1devices_1_1motor.html#a4777995093ebbd290b833795e49749b7">InputType</a> hello_world::devices::motor::Motor::get_input_type </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00186">186</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aab42768aa52c635bba1d205b466c0981" name="aab42768aa52c635bba1d205b466c0981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab42768aa52c635bba1d205b466c0981">&#9670;&#160;</a></span>getInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::getInput </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取发给电调的期望值 </p>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">发给电调的期望值</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>期望值的物理意义与电机当前的输入类型有关，可使用 get_input_type 方法查看 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8cpp_source.html">motor_base.cpp</a> 第 <a class="el" href="motor__base_8cpp_source.html#l00082">82</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab3e2187f017e86c6d4a83caa55fe9419" name="ab3e2187f017e86c6d4a83caa55fe9419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3e2187f017e86c6d4a83caa55fe9419">&#9670;&#160;</a></span>id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t hello_world::devices::motor::Motor::id </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00176">176</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_ab3e2187f017e86c6d4a83caa55fe9419_icgraph.svg" width="398" height="435"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af88eebbf4bb3e8515bc5728ce3313f41" name="af88eebbf4bb3e8515bc5728ce3313f41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af88eebbf4bb3e8515bc5728ce3313f41">&#9670;&#160;</a></span>motor_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="structhello__world_1_1devices_1_1motor_1_1_motor_info.html">MotorInfo</a> &amp; hello_world::devices::motor::Motor::motor_info </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00172">172</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a21092858a98af5688b398d57cd203592" name="a21092858a98af5688b398d57cd203592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21092858a98af5688b398d57cd203592">&#9670;&#160;</a></span>normAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::normAngle </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将角度转换到指定范围 </p>
+<ul>
+<li>过零阈值</li>
+</ul>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>待转换的角度，单位：rad </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">归一化后的角度，单位：rad</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>None </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8cpp_source.html">motor_base.cpp</a> 第 <a class="el" href="motor__base_8cpp_source.html#l00222">222</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_a21092858a98af5688b398d57cd203592_cgraph.svg" width="423" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_a21092858a98af5688b398d57cd203592_icgraph.svg" width="416" height="435"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a1e4467d9f449b9c6c7d6886fffa89667" name="a1e4467d9f449b9c6c7d6886fffa89667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e4467d9f449b9c6c7d6886fffa89667">&#9670;&#160;</a></span>raw2curr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::raw2curr </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>raw</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将原始报文内容转换为转子电流 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">raw</td><td>原始报文数值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">原始报文对应的转子电流值，单位：A</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>报文的对应的物理意义需要与设定的相符，设定对应情可以通过 motor_info 方法获取电机信息结构体，查看其中的 raw_mapping_type 变量 </dd></dl>
+
+<p>被 <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#acb60cb1b9843925d02c8a07c4b39aff4">hello_world::devices::motor::DM_J4310</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8cpp_source.html">motor_base.cpp</a> 第 <a class="el" href="motor__base_8cpp_source.html#l00144">144</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_a1e4467d9f449b9c6c7d6886fffa89667_icgraph.svg" width="418" height="755"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af74a8c4ad7c0067a2d71afd711639366" name="af74a8c4ad7c0067a2d71afd711639366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af74a8c4ad7c0067a2d71afd711639366">&#9670;&#160;</a></span>raw2torq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::raw2torq </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>raw</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将原始报文内容转换为输出端力矩 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">raw</td><td>原始报文数值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">原始报文对应的输出端力矩值，单位：N·m</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>报文的对应的物理意义需要与设定的相符，设定对应情可以通过 motor_info 方法获取电机信息结构体，查看其中的 raw_mapping_type 变量 </dd></dl>
+
+<p>被 <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#aa2784ed2ea68d2c48641004fdbd5ea52">hello_world::devices::motor::DM_J4310</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8cpp_source.html">motor_base.cpp</a> 第 <a class="el" href="motor__base_8cpp_source.html#l00104">104</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_af74a8c4ad7c0067a2d71afd711639366_icgraph.svg" width="418" height="755"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ab77091f1c532f4b84153448aa27d6a6c" name="ab77091f1c532f4b84153448aa27d6a6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab77091f1c532f4b84153448aa27d6a6c">&#9670;&#160;</a></span>rx_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t hello_world::devices::motor::Motor::rx_id </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00178">178</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abd7c00f35db22fb65264baf08c3981b6" name="abd7c00f35db22fb65264baf08c3981b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd7c00f35db22fb65264baf08c3981b6">&#9670;&#160;</a></span>set_input_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehello__world_1_1devices_1_1motor.html#ae5d33e6b7fa4db1777f88ab1faf4380c">State</a> hello_world::devices::motor::Motor::set_input_type </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacehello__world_1_1devices_1_1motor.html#a4777995093ebbd290b833795e49749b7">InputType</a>&#160;</td>
+          <td class="paramname"><em>input_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置点击的输入类型 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_type</td><td>期望输入类型 <ul>
+<li>kInputTypeRaw: 原始报文输入 </li>
+<li>kInputTypeTorq: 输出端力矩输入 </li>
+<li>kInputTypeCurr: 转子端电流输入 </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>None </dd></dl>
+
+<p>被 <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_g_m6020.html#a1235b577a72c9fa53a2732e04982cab0">hello_world::devices::motor::GM6020</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8cpp_source.html">motor_base.cpp</a> 第 <a class="el" href="motor__base_8cpp_source.html#l00205">205</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8c96d433ffdc4000153e08175b97d445" name="a8c96d433ffdc4000153e08175b97d445"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c96d433ffdc4000153e08175b97d445">&#9670;&#160;</a></span>setAngleValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void hello_world::devices::motor::Motor::setAngleValue </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>angle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将当前电机输出端所处位置设置为指定的角度 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angle</td><td>指定角度，单位：rad </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>None </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00134">134</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_a8c96d433ffdc4000153e08175b97d445_cgraph.svg" width="398" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ad101045a9eef9a699001fc94631e8395" name="ad101045a9eef9a699001fc94631e8395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad101045a9eef9a699001fc94631e8395">&#9670;&#160;</a></span>setInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehello__world_1_1devices_1_1motor.html#ae5d33e6b7fa4db1777f88ab1faf4380c">State</a> hello_world::devices::motor::Motor::setInput </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设定发给电调的期望值 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>发给电调的期望值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">运行状态</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>1. 期望值的物理意义与电机当前的输入类型有关，可使用 get_input_type 方法查看<ol type="1">
+<li>设定的期望值会自动被限制到允许的范围内，当前实际的设定值可以通 过 getInput 方法查看 </li>
+</ol>
+</dd></dl>
+
+<p>被 <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#ae15373ce02962c1a287d7e813413869b">hello_world::devices::motor::DM_J4310</a> , 以及 <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_g_m6020.html#aa3824723dba2a9cd0d833fc02a7f49ff">hello_world::devices::motor::GM6020</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8cpp_source.html">motor_base.cpp</a> 第 <a class="el" href="motor__base_8cpp_source.html#l00040">40</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_ad101045a9eef9a699001fc94631e8395_cgraph.svg" width="566" height="422"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a987073404f2d04c10434f830884b9612" name="a987073404f2d04c10434f830884b9612"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a987073404f2d04c10434f830884b9612">&#9670;&#160;</a></span>torq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::torq </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00192">192</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_a987073404f2d04c10434f830884b9612_icgraph.svg" width="635" height="499"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a44292bfea784425e2c2c81dc4d634371" name="a44292bfea784425e2c2c81dc4d634371"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44292bfea784425e2c2c81dc4d634371">&#9670;&#160;</a></span>torq2curr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::torq2curr </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>torq</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将输出端力矩转换为转子电流 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">torq</td><td>输出端力矩值，单位：N·m </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">输出端力矩值对应的转子电流，单位：A</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>None </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8cpp_source.html">motor_base.cpp</a> 第 <a class="el" href="motor__base_8cpp_source.html#l00180">180</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_a44292bfea784425e2c2c81dc4d634371_cgraph.svg" width="359" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_a44292bfea784425e2c2c81dc4d634371_icgraph.svg" width="423" height="179"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a319adc3f1b7d43fa12015b52a153ea17" name="a319adc3f1b7d43fa12015b52a153ea17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a319adc3f1b7d43fa12015b52a153ea17">&#9670;&#160;</a></span>torq2raw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::torq2raw </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>torq</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将输出端力矩转换为原始报文内容 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">torq</td><td>输出端力矩值，单位：N·m </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">输出端力矩值对应的原始报文</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>报文的对应的物理意义需要与设定的相符，设定对应情可以通过 motor_info 方法获取电机信息结构体，查看其中的 raw_mapping_type 变量 </dd></dl>
+
+<p>被 <a class="el" href="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#ace039722135c1bf08b429a4ad41ccc81">hello_world::devices::motor::DM_J4310</a> 重载.</p>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8cpp_source.html">motor_base.cpp</a> 第 <a class="el" href="motor__base_8cpp_source.html#l00124">124</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_a319adc3f1b7d43fa12015b52a153ea17_cgraph.svg" width="358" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1devices_1_1motor_1_1_motor_a319adc3f1b7d43fa12015b52a153ea17_icgraph.svg" width="418" height="371"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="acbb8c91a5928cf03d3778b668edf6ff5" name="acbb8c91a5928cf03d3778b668edf6ff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbb8c91a5928cf03d3778b668edf6ff5">&#9670;&#160;</a></span>tx_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t hello_world::devices::motor::Motor::tx_id </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00180">180</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4aff69d544478285b83ab15914d437ce" name="a4aff69d544478285b83ab15914d437ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aff69d544478285b83ab15914d437ce">&#9670;&#160;</a></span>vel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::vel </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00190">190</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="adac9b8b8484e8529d9cd10665b3a0f88" name="adac9b8b8484e8529d9cd10665b3a0f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adac9b8b8484e8529d9cd10665b3a0f88">&#9670;&#160;</a></span>actual_angle_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::actual_angle_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>电机输出端实际输出角度（未扣除角度偏差），单位：rad </p>
+<ul>
+<li>电机上次角度原始值 </li>
+</ul>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00205">205</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab7a9c137dd445327e658202640e3dbc6" name="ab7a9c137dd445327e658202640e3dbc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a9c137dd445327e658202640e3dbc6">&#9670;&#160;</a></span>angle_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::angle_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>电机状态 </p>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00198">198</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6b7de1c9857ad74e17bda1b03b524b21" name="a6b7de1c9857ad74e17bda1b03b524b21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b7de1c9857ad74e17bda1b03b524b21">&#9670;&#160;</a></span>curr_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::curr_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<ul>
+<li>电机输出端实际力矩，单位：N·m </li>
+</ul>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00201">201</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a7339defaa4857872509f36377d3ccf41" name="a7339defaa4857872509f36377d3ccf41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7339defaa4857872509f36377d3ccf41">&#9670;&#160;</a></span>curr_input_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::curr_input_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<ul>
+<li>电机输出端期望力矩 </li>
+</ul>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00210">210</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ac4d15805fa2765480961cbb22a874832" name="ac4d15805fa2765480961cbb22a874832"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4d15805fa2765480961cbb22a874832">&#9670;&#160;</a></span>kCross0ValueThres</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr float hello_world::devices::motor::Motor::kCross0ValueThres = 0.3f</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<ul>
+<li>电机状态 </li>
+</ul>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00214">214</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ade57cbc7fc217543ca6c8650ad0eb03d" name="ade57cbc7fc217543ca6c8650ad0eb03d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade57cbc7fc217543ca6c8650ad0eb03d">&#9670;&#160;</a></span>last_raw_angle_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::last_raw_angle_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<ul>
+<li>电机转子端累计圈数 </li>
+</ul>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00203">203</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a59781c0f3a6d7bb179d93c61d837836d" name="a59781c0f3a6d7bb179d93c61d837836d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59781c0f3a6d7bb179d93c61d837836d">&#9670;&#160;</a></span>motor_info_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structhello__world_1_1devices_1_1motor_1_1_motor_info.html">MotorInfo</a> hello_world::devices::motor::Motor::motor_info_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<ul>
+<li>电机转子期望电流 </li>
+</ul>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00212">212</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a4e24f06845ffe971bca1914b11d353f1" name="a4e24f06845ffe971bca1914b11d353f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e24f06845ffe971bca1914b11d353f1">&#9670;&#160;</a></span>raw_input_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::raw_input_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>电机输入 </p>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00208">208</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab037cc377320f41d8bdbdd599448dad8" name="ab037cc377320f41d8bdbdd599448dad8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab037cc377320f41d8bdbdd599448dad8">&#9670;&#160;</a></span>round_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::round_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<ul>
+<li>电机转子实际电流，单位：A </li>
+</ul>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00202">202</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a40c42d94607450fb55a676bdaa0b505c" name="a40c42d94607450fb55a676bdaa0b505c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40c42d94607450fb55a676bdaa0b505c">&#9670;&#160;</a></span>torq_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::torq_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<ul>
+<li>电机输出单角速度，单位：rad/s </li>
+</ul>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00200">200</a> 行定义.</p>
+
+</div>
+</div>
+<a id="abf32abb5202efb3785033c8d7917a991" name="abf32abb5202efb3785033c8d7917a991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf32abb5202efb3785033c8d7917a991">&#9670;&#160;</a></span>torq_input_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::torq_input_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<ul>
+<li>报文原始输入 </li>
+</ul>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00209">209</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a609eb51ef7ddb343ecc4eeafc4ad83e3" name="a609eb51ef7ddb343ecc4eeafc4ad83e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a609eb51ef7ddb343ecc4eeafc4ad83e3">&#9670;&#160;</a></span>vel_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::devices::motor::Motor::vel_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<ul>
+<li>电机输出端角度，单位：rad </li>
+</ul>
+
+<p class="definition">在文件 <a class="el" href="motor__base_8hpp_source.html">motor_base.hpp</a> 第 <a class="el" href="motor__base_8hpp_source.html#l00199">199</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacehello__world.html">hello_world</a></li><li class="navelem"><a class="el" href="namespacehello__world_1_1devices.html">devices</a></li><li class="navelem"><a class="el" href="namespacehello__world_1_1devices_1_1motor.html">motor</a></li><li class="navelem"><a class="el" href="classhello__world_1_1devices_1_1motor_1_1_motor.html">Motor</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,350 @@
+\doxysection{hello\+\_\+world\+::devices\+::motor\+::A1类 参考}
+\hypertarget{classhello__world_1_1devices_1_1motor_1_1_a1}{}\label{classhello__world_1_1devices_1_1motor_1_1_a1}\index{hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}}
+
+
+{\ttfamily \#include $<$motor\+\_\+\+A1.\+hpp$>$}
+
+
+
+类 hello\+\_\+world\+::devices\+::motor\+::A1 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classhello__world_1_1devices_1_1motor_1_1_a1__inherit__graph}
+\end{center}
+\end{figure}
+
+
+hello\+\_\+world\+::devices\+::motor\+::A1 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{classhello__world_1_1devices_1_1motor_1_1_a1__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_a1_a1c439b72ce074a0e04d38b06749f499c}{A1}} (uint8\+\_\+t \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_ab3e2187f017e86c6d4a83caa55fe9419}{id}}, const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params}{Optional\+Params}} \&optinal\+\_\+params=\mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params}{Optional\+Params}}())
+\begin{DoxyCompactList}\small\item\em \doxylink{classhello__world_1_1devices_1_1motor_1_1_a1}{A1} 初始化 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_a1_a6354e7c721bb68bccfd3f2074271c691}{\texorpdfstring{$\sim$}{\string~}\+A1}} ()
+\item 
+virtual \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380c}{State}} \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_a1_a2033dda3651a1a97182e23fb8ccceae3}{encode}} (uint8\+\_\+t tx\+\_\+data\mbox{[}8\mbox{]}, uint32\+\_\+t tx\+\_\+msg\+\_\+std\+\_\+id) const override
+\begin{DoxyCompactList}\small\item\em 将要发给电调的期望输值编码为对应的 CAN 报文 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380c}{State}} \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_a1_a1dc9df605f9df5fff3b2bc8ed4a63ff8}{decode}} (const uint8\+\_\+t rx\+\_\+data\mbox{[}8\mbox{]}, uint32\+\_\+t rx\+\_\+msg\+\_\+std\+\_\+id) override
+\begin{DoxyCompactList}\small\item\em 将电调发回的 CAN 报文进行解包 \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_a1_a29abb54bd838c74882800af7ae8b049c}{temp}} (void) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor}{hello\+\_\+world\+::devices\+::motor\+::\+Motor}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a353af5a842fbf673c92758952bb2958b}{Motor}} ()
+\item 
+virtual \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_acf169589667b294dc292b414b28f17a8}{\texorpdfstring{$\sim$}{\string~}\+Motor}} ()
+\item 
+virtual \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380c}{State}} \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_ad101045a9eef9a699001fc94631e8395}{set\+Input}} (float input)
+\begin{DoxyCompactList}\small\item\em 设定发给电调的期望值 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_aab42768aa52c635bba1d205b466c0981}{get\+Input}} (void) const
+\begin{DoxyCompactList}\small\item\em 获取发给电调的期望值 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a8c96d433ffdc4000153e08175b97d445}{set\+Angle\+Value}} (float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_acad1e1f1792ab8cb6265b1d5195737f6}{angle}})
+\begin{DoxyCompactList}\small\item\em 将当前电机输出端所处位置设置为指定的角度 \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_af74a8c4ad7c0067a2d71afd711639366}{raw2torq}} (float raw) const
+\begin{DoxyCompactList}\small\item\em 将原始报文内容转换为输出端力矩 \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a319adc3f1b7d43fa12015b52a153ea17}{torq2raw}} (float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a987073404f2d04c10434f830884b9612}{torq}}) const
+\begin{DoxyCompactList}\small\item\em 将输出端力矩转换为原始报文内容 \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a1e4467d9f449b9c6c7d6886fffa89667}{raw2curr}} (float raw) const
+\begin{DoxyCompactList}\small\item\em 将原始报文内容转换为转子电流 \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_aebf04ce4e3628c60907a29771f383027}{curr2raw}} (float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a7fbec1460a1db6c45b4c57fd0497e5e0}{curr}}) const
+\begin{DoxyCompactList}\small\item\em 将转子电流转换为原始报文内容 \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a44292bfea784425e2c2c81dc4d634371}{torq2curr}} (float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a987073404f2d04c10434f830884b9612}{torq}}) const
+\begin{DoxyCompactList}\small\item\em 将输出端力矩转换为转子电流 \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a6e11db30817cf05232ee3d52ed48030b}{curr2torq}} (float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a7fbec1460a1db6c45b4c57fd0497e5e0}{curr}}) const
+\begin{DoxyCompactList}\small\item\em 将转子电流转换为输出端力矩 \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_info}{Motor\+Info}} \& \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_af88eebbf4bb3e8515bc5728ce3313f41}{motor\+\_\+info}} (void) const
+\item 
+\mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a44985d99992e9464953d243bf3b561fd}{Dir}} \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_ae7669c1a2fc06a016b31bfa6b885dd6b}{dir}} (void) const
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_ab3e2187f017e86c6d4a83caa55fe9419}{id}} (void) const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_ab77091f1c532f4b84153448aa27d6a6c}{rx\+\_\+id}} (void) const
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_acbb8c91a5928cf03d3778b668edf6ff5}{tx\+\_\+id}} (void) const
+\item 
+\mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248}{Angle\+Range}} \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_abd1d7d54199dac13f71d67e3711752b5}{angle\+\_\+range}} (void) const
+\item 
+virtual \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380c}{State}} \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_abd7c00f35db22fb65264baf08c3981b6}{set\+\_\+input\+\_\+type}} (\mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7}{Input\+Type}} input\+\_\+type)
+\begin{DoxyCompactList}\small\item\em 设置点击的输入类型 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7}{Input\+Type}} \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a9ca0e58a5138076f3c0bc5eb2ccb34e0}{get\+\_\+input\+\_\+type}} (void) const
+\item 
+float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_acad1e1f1792ab8cb6265b1d5195737f6}{angle}} (void) const
+\item 
+float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a4aff69d544478285b83ab15914d437ce}{vel}} (void) const
+\item 
+float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a987073404f2d04c10434f830884b9612}{torq}} (void) const
+\item 
+float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a7fbec1460a1db6c45b4c57fd0497e5e0}{curr}} (void) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classhello__world_1_1_mem_mang}{hello\+\_\+world\+::\+Mem\+Mang}}}
+\begin{DoxyCompactItemize}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classhello__world_1_1_mem_mang_abcf6e7289814e8da342ba4f47d8af411}{operator new}} (size\+\_\+t size)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classhello__world_1_1_mem_mang_ad10b6eff1541322708e5bde32c590c82}{operator new\mbox{[}$\,$\mbox{]}}} (size\+\_\+t size)
+\item 
+void \mbox{\hyperlink{classhello__world_1_1_mem_mang_abf1fe21066f52d693e2eec63a5833e8e}{operator delete}} (void \texorpdfstring{$\ast$}{*}ptr)
+\item 
+void \mbox{\hyperlink{classhello__world_1_1_mem_mang_a54e1a6a8e01b0996cc2854a8bc1ce7bd}{operator delete\mbox{[}$\,$\mbox{]}}} (void \texorpdfstring{$\ast$}{*}ptr)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_a1_afad471979520f9924a7cbe1fc316ee0f}{temp\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr uint32\+\_\+t \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_a1_af4c56eb1e0be14082267658ead55ff6e}{k\+Tx1\+\_\+3\+\_\+}} = 0x400
+\item 
+static constexpr uint32\+\_\+t \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_a1_a9d296f5f06469e196e4fd5fa8ba9605d}{k\+Tx4\+\_\+6\+\_\+}} = 0x3\+FF
+\item 
+static constexpr uint32\+\_\+t \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_a1_aeae7b715d776503b5ca862abf98ba425}{k\+Rx0\+\_\+}} = 0x400
+\end{DoxyCompactItemize}
+\doxysubsubsection*{额外继承的成员函数}
+\doxysubsection*{Protected 成员函数 继承自 \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor}{hello\+\_\+world\+::devices\+::motor\+::\+Motor}}}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a21092858a98af5688b398d57cd203592}{norm\+Angle}} (float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_acad1e1f1792ab8cb6265b1d5195737f6}{angle}})
+\begin{DoxyCompactList}\small\item\em 将角度转换到指定范围 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected 属性 继承自 \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor}{hello\+\_\+world\+::devices\+::motor\+::\+Motor}}}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_ab7a9c137dd445327e658202640e3dbc6}{angle\+\_\+}} = 0
+\begin{DoxyCompactList}\small\item\em 电机状态 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a609eb51ef7ddb343ecc4eeafc4ad83e3}{vel\+\_\+}} = 0
+\item 
+float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a40c42d94607450fb55a676bdaa0b505c}{torq\+\_\+}} = 0
+\item 
+float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a6b7de1c9857ad74e17bda1b03b524b21}{curr\+\_\+}} = 0
+\item 
+float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_ab037cc377320f41d8bdbdd599448dad8}{round\+\_\+}} = 0
+\item 
+float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_ade57cbc7fc217543ca6c8650ad0eb03d}{last\+\_\+raw\+\_\+angle\+\_\+}} = 0
+\item 
+float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_adac9b8b8484e8529d9cd10665b3a0f88}{actual\+\_\+angle\+\_\+}} = 0
+\begin{DoxyCompactList}\small\item\em 电机输出端实际输出角度（未扣除角度偏差），单位：rad \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a4e24f06845ffe971bca1914b11d353f1}{raw\+\_\+input\+\_\+}} = 0
+\begin{DoxyCompactList}\small\item\em 电机输入 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_abf32abb5202efb3785033c8d7917a991}{torq\+\_\+input\+\_\+}} = 0
+\item 
+float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a7339defaa4857872509f36377d3ccf41}{curr\+\_\+input\+\_\+}} = 0
+\item 
+\mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_motor_info}{Motor\+Info}} \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a59781c0f3a6d7bb179d93c61d837836d}{motor\+\_\+info\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{静态 Protected 属性 继承自 \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor}{hello\+\_\+world\+::devices\+::motor\+::\+Motor}}}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr float \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_ac4d15805fa2765480961cbb22a874832}{k\+Cross0\+Value\+Thres}} = 0.\+3f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{motor___a1_8hpp_source}{motor\+\_\+\+A1.\+hpp}} 第 \mbox{\hyperlink{motor___a1_8hpp_source_l00032}{32}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classhello__world_1_1devices_1_1motor_1_1_a1_a1c439b72ce074a0e04d38b06749f499c}\label{classhello__world_1_1devices_1_1motor_1_1_a1_a1c439b72ce074a0e04d38b06749f499c} 
+\index{hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}!A1@{A1}}
+\index{A1@{A1}!hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}}
+\doxysubsubsection{\texorpdfstring{A1()}{A1()}}
+{\footnotesize\ttfamily hello\+\_\+world\+::devices\+::motor\+::\+A1\+::\+A1 (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{id,  }\item[{const \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params}{Optional\+Params}} \&}]{optinal\+\_\+params = {\ttfamily \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params}{Optional\+Params}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxylink{classhello__world_1_1devices_1_1motor_1_1_a1}{A1} 初始化 
+
+
+\begin{DoxyParams}{参数}
+{\em id} & 电机 ID，1到6 \\
+\hline
+{\em optinal\+\_\+params} & 电机可选配置参数 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+None 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{motor___a1_8cpp_source}{motor\+\_\+\+A1.\+cpp}} 第 \mbox{\hyperlink{motor___a1_8cpp_source_l00054}{54}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1motor_1_1_a1_a1c439b72ce074a0e04d38b06749f499c_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1devices_1_1motor_1_1_a1_a6354e7c721bb68bccfd3f2074271c691}\label{classhello__world_1_1devices_1_1motor_1_1_a1_a6354e7c721bb68bccfd3f2074271c691} 
+\index{hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}!````~A1@{\texorpdfstring{$\sim$}{\string~}A1}}
+\index{````~A1@{\texorpdfstring{$\sim$}{\string~}A1}!hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}A1()}{\string~A1()}}
+{\footnotesize\ttfamily virtual hello\+\_\+world\+::devices\+::motor\+::\+A1\+::\texorpdfstring{$\sim$}{\string~}\+A1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+在文件 \mbox{\hyperlink{motor___a1_8hpp_source}{motor\+\_\+\+A1.\+hpp}} 第 \mbox{\hyperlink{motor___a1_8hpp_source_l00037}{37}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classhello__world_1_1devices_1_1motor_1_1_a1_a1dc9df605f9df5fff3b2bc8ed4a63ff8}\label{classhello__world_1_1devices_1_1motor_1_1_a1_a1dc9df605f9df5fff3b2bc8ed4a63ff8} 
+\index{hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}!decode@{decode}}
+\index{decode@{decode}!hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380c}{State}} hello\+\_\+world\+::devices\+::motor\+::\+A1\+::decode (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{rx\+\_\+data\mbox{[}8\mbox{]},  }\item[{uint32\+\_\+t}]{rx\+\_\+msg\+\_\+std\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+将电调发回的 CAN 报文进行解包 
+
+
+\begin{DoxyParams}{参数}
+{\em rx\+\_\+data} & 电调发回的 CAN 报文 \\
+\hline
+{\em rx\+\_\+msg\+\_\+std\+\_\+id} & 电调发回的报文的\+ID \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 当} & ID 匹配时返回 k\+State\+Ok，否则返回 k\+State\+Id\+Dismatch \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+只有当 rx\+\_\+msg\+\_\+std\+\_\+id 与实际的电机会发回报文的 ID 对应时才会对报文 进行解包，该 ID 可以通过 rx\+\_\+id 方法获取 
+\end{DoxyNote}
+
+
+实现了 \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_af62b61171a698a06954cc8ccec37f79e}{hello\+\_\+world\+::devices\+::motor\+::\+Motor}}.
+
+
+
+在文件 \mbox{\hyperlink{motor___a1_8cpp_source}{motor\+\_\+\+A1.\+cpp}} 第 \mbox{\hyperlink{motor___a1_8cpp_source_l00166}{166}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1motor_1_1_a1_a1dc9df605f9df5fff3b2bc8ed4a63ff8_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1devices_1_1motor_1_1_a1_a2033dda3651a1a97182e23fb8ccceae3}\label{classhello__world_1_1devices_1_1motor_1_1_a1_a2033dda3651a1a97182e23fb8ccceae3} 
+\index{hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}!encode@{encode}}
+\index{encode@{encode}!hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae5d33e6b7fa4db1777f88ab1faf4380c}{State}} hello\+\_\+world\+::devices\+::motor\+::\+A1\+::encode (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{tx\+\_\+data\mbox{[}8\mbox{]},  }\item[{uint32\+\_\+t}]{tx\+\_\+msg\+\_\+std\+\_\+id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+将要发给电调的期望输值编码为对应的 CAN 报文 
+
+
+\begin{DoxyParams}{参数}
+{\em tx\+\_\+data} & 将要发出的 CAN 报文 \\
+\hline
+{\em tx\+\_\+msg\+\_\+std\+\_\+id} & 发给电调的报文的\+ID \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 当} & ID 匹配时返回 k\+State\+Ok，否则返回 k\+State\+Id\+Dismatch \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+1. 只有当 tx\+\_\+msg\+\_\+std\+\_\+id 与实际的发给电机报文的 ID 对应时才会生成 报文，该 ID 可以通过 tx\+\_\+id 方法获取
+\begin{DoxyEnumerate}
+\item 只会在报文需要的位置上进行修改，区域位置的内容会保持不变 
+\end{DoxyEnumerate}
+\end{DoxyNote}
+
+
+实现了 \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor_a50477b96ba8268bcac04ab6637578cc5}{hello\+\_\+world\+::devices\+::motor\+::\+Motor}}.
+
+
+
+在文件 \mbox{\hyperlink{motor___a1_8cpp_source}{motor\+\_\+\+A1.\+cpp}} 第 \mbox{\hyperlink{motor___a1_8cpp_source_l00135}{135}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{classhello__world_1_1devices_1_1motor_1_1_a1_a2033dda3651a1a97182e23fb8ccceae3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1devices_1_1motor_1_1_a1_a29abb54bd838c74882800af7ae8b049c}\label{classhello__world_1_1devices_1_1motor_1_1_a1_a29abb54bd838c74882800af7ae8b049c} 
+\index{hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}!temp@{temp}}
+\index{temp@{temp}!hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}}
+\doxysubsubsection{\texorpdfstring{temp()}{temp()}}
+{\footnotesize\ttfamily uint8\+\_\+t hello\+\_\+world\+::devices\+::motor\+::\+A1\+::temp (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{motor___a1_8hpp_source}{motor\+\_\+\+A1.\+hpp}} 第 \mbox{\hyperlink{motor___a1_8hpp_source_l00045}{45}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classhello__world_1_1devices_1_1motor_1_1_a1_aeae7b715d776503b5ca862abf98ba425}\label{classhello__world_1_1devices_1_1motor_1_1_a1_aeae7b715d776503b5ca862abf98ba425} 
+\index{hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}!kRx0\_@{kRx0\_}}
+\index{kRx0\_@{kRx0\_}!hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}}
+\doxysubsubsection{\texorpdfstring{kRx0\_}{kRx0\_}}
+{\footnotesize\ttfamily constexpr uint32\+\_\+t hello\+\_\+world\+::devices\+::motor\+::\+A1\+::k\+Rx0\+\_\+ = 0x400\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{motor___a1_8hpp_source}{motor\+\_\+\+A1.\+hpp}} 第 \mbox{\hyperlink{motor___a1_8hpp_source_l00052}{52}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1motor_1_1_a1_af4c56eb1e0be14082267658ead55ff6e}\label{classhello__world_1_1devices_1_1motor_1_1_a1_af4c56eb1e0be14082267658ead55ff6e} 
+\index{hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}!kTx1\_3\_@{kTx1\_3\_}}
+\index{kTx1\_3\_@{kTx1\_3\_}!hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}}
+\doxysubsubsection{\texorpdfstring{kTx1\_3\_}{kTx1\_3\_}}
+{\footnotesize\ttfamily constexpr uint32\+\_\+t hello\+\_\+world\+::devices\+::motor\+::\+A1\+::k\+Tx1\+\_\+3\+\_\+ = 0x400\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+
+\begin{DoxyItemize}
+\item 电机温度 
+\end{DoxyItemize}
+
+在文件 \mbox{\hyperlink{motor___a1_8hpp_source}{motor\+\_\+\+A1.\+hpp}} 第 \mbox{\hyperlink{motor___a1_8hpp_source_l00050}{50}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1motor_1_1_a1_a9d296f5f06469e196e4fd5fa8ba9605d}\label{classhello__world_1_1devices_1_1motor_1_1_a1_a9d296f5f06469e196e4fd5fa8ba9605d} 
+\index{hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}!kTx4\_6\_@{kTx4\_6\_}}
+\index{kTx4\_6\_@{kTx4\_6\_}!hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}}
+\doxysubsubsection{\texorpdfstring{kTx4\_6\_}{kTx4\_6\_}}
+{\footnotesize\ttfamily constexpr uint32\+\_\+t hello\+\_\+world\+::devices\+::motor\+::\+A1\+::k\+Tx4\+\_\+6\+\_\+ = 0x3\+FF\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{motor___a1_8hpp_source}{motor\+\_\+\+A1.\+hpp}} 第 \mbox{\hyperlink{motor___a1_8hpp_source_l00051}{51}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1motor_1_1_a1_afad471979520f9924a7cbe1fc316ee0f}\label{classhello__world_1_1devices_1_1motor_1_1_a1_afad471979520f9924a7cbe1fc316ee0f} 
+\index{hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}!temp\_@{temp\_}}
+\index{temp\_@{temp\_}!hello\_world::devices::motor::A1@{hello\_world::devices::motor::A1}}
+\doxysubsubsection{\texorpdfstring{temp\_}{temp\_}}
+{\footnotesize\ttfamily uint8\+\_\+t hello\+\_\+world\+::devices\+::motor\+::\+A1\+::temp\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{motor___a1_8hpp_source}{motor\+\_\+\+A1.\+hpp}} 第 \mbox{\hyperlink{motor___a1_8hpp_source_l00048}{48}} 行定义.
+

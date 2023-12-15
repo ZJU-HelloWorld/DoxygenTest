@@ -1,0 +1,29 @@
+<map id="hello_world::algorithms::controller::pid::BasicPid" name="hello_world::algorithms::controller::pid::BasicPid">
+<area shape="rect" id="Node000001" title="基础 PID 控制器类，继承自Controller类" alt="" coords="701,279,869,319"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1algorithms_1_1controller_1_1_controller.html" title=" " alt="" coords="415,91,569,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="539,138,754,277,751,281,536,142"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1_mem_mang.html" title=" " alt="" coords="37,5,192,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="207,23,283,35,362,53,409,69,452,88,450,93,407,74,361,58,282,40,206,29"/>
+<area shape="rect" id="Node000004" href="$structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params.html" title="定义了基础 PID 的参数" alt="" coords="385,279,599,319"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="613,297,701,297,701,302,613,302"/>
+<area shape="rect" id="Node000005" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit.html" title=" " alt="" coords="32,55,197,95"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="212,93,288,118,327,136,363,157,399,186,432,219,479,277,475,281,428,222,395,190,360,162,324,141,286,123,211,98"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal.html" title="梯形积分优化类" alt="" coords="13,119,216,159"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="201,161,225,169,295,188,325,197,363,213,418,244,465,277,462,281,416,249,360,218,323,202,293,193,223,174,199,167"/>
+<area shape="rect" id="Node000007" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup.html" title="积分抗饱和优化类" alt="" coords="13,183,217,223"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="225,225,362,258,425,276,424,281,361,263,224,230"/>
+<area shape="rect" id="Node000008" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate.html" title="控制器参数类" alt="" coords="5,247,224,287"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="239,275,385,288,385,293,239,280"/>
+<area shape="rect" id="Node000009" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation.html" title="积分分离优化类" alt="" coords="15,311,214,351"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="229,319,385,306,385,311,229,324"/>
+<area shape="rect" id="Node000010" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter.html" title="用于实现差分滤波器功能" alt="" coords="33,375,196,415"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="210,373,361,337,385,329,421,317,423,322,386,334,362,342,211,379"/>
+<area shape="rect" id="Node000011" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous.html" title="微分先行优化类" alt="" coords="23,439,206,479"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="219,446,256,437,293,424,328,407,359,384,368,371,371,358,374,344,383,329,400,318,403,322,387,333,378,346,376,359,373,374,363,388,331,411,295,429,258,442,221,451"/>
+<area shape="rect" id="Node000012" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band.html" title="死区优化类" alt="" coords="27,503,203,543"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="217,519,256,513,294,501,329,484,359,459,370,444,374,428,371,397,368,364,372,347,383,330,397,318,400,322,387,333,377,349,373,364,376,396,379,429,375,446,363,462,332,488,296,506,257,518,218,525"/>
+<area shape="rect" id="Node000013" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html" title="设定点斜坡优化类" alt="" coords="7,567,222,607"/>
+<area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="236,588,270,582,303,572,333,557,359,535,375,510,380,486,378,461,372,436,366,410,363,384,367,357,383,330,396,318,400,322,387,333,372,359,368,384,371,409,377,434,383,460,386,486,380,512,363,538,336,561,305,577,271,587,237,593"/>
+<area shape="rect" id="Node000014" href="$structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_datas.html" title="基础 PID 的数据结构体" alt="" coords="391,343,593,383"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="600,337,700,315,701,320,601,342"/>
+</map>

@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacehello__world_1_1dsp_1_1tick" xml:lang="zh">
+<title>hello_world::dsp::tick 命名空间参考</title>
+<indexterm><primary>hello_world::dsp::tick</primary></indexterm>
+<simplesect>
+    <title>函数    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_namespacehello__world_1_1dsp_1_1tick_1a0c9c44ee367dc665cc6f1a6d830da9ee">GetTickUs</link> ()</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_namespacehello__world_1_1dsp_1_1tick_1a97910b07255da1979f8ceafd8c6d2ea5">GetTickMs</link> ()</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_namespacehello__world_1_1dsp_1_1tick_1a3bb6f5ee2096e411df77150fbac949a5">GetTickS</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>变量    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_namespacehello__world_1_1dsp_1_1tick_1a22bb956e1d5ebc7cef5e5e11d54580de">start_tick_us</link> = <link linkend="_namespacehello__world_1_1dsp_1_1tick_1a0c9c44ee367dc665cc6f1a6d830da9ee">GetTickUs</link>()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>函数说明</title>
+<anchor xml:id="_namespacehello__world_1_1dsp_1_1tick_1a97910b07255da1979f8ceafd8c6d2ea5"/><section>
+    <title>GetTickMs()</title>
+<indexterm><primary>GetTickMs</primary><secondary>hello_world::dsp::tick</secondary></indexterm>
+<indexterm><primary>hello_world::dsp::tick</primary><secondary>GetTickMs</secondary></indexterm>
+<para><computeroutput>uint32_t hello_world::dsp::tick::GetTickMs ( )</computeroutput></para><para>
+在文件 <link linkend="_tick_8cpp_source">tick.cpp</link> 第 <link linkend="_tick_8cpp_source_1l00081">81</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacehello__world_1_1dsp_1_1tick_a97910b07255da1979f8ceafd8c6d2ea5_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacehello__world_1_1dsp_1_1tick_a97910b07255da1979f8ceafd8c6d2ea5_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1dsp_1_1tick_1a3bb6f5ee2096e411df77150fbac949a5"/><section>
+    <title>GetTickS()</title>
+<indexterm><primary>GetTickS</primary><secondary>hello_world::dsp::tick</secondary></indexterm>
+<indexterm><primary>hello_world::dsp::tick</primary><secondary>GetTickS</secondary></indexterm>
+<para><computeroutput>uint32_t hello_world::dsp::tick::GetTickS ( )</computeroutput></para><para>
+在文件 <link linkend="_tick_8cpp_source">tick.cpp</link> 第 <link linkend="_tick_8cpp_source_1l00086">86</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacehello__world_1_1dsp_1_1tick_a3bb6f5ee2096e411df77150fbac949a5_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1dsp_1_1tick_1a0c9c44ee367dc665cc6f1a6d830da9ee"/><section>
+    <title>GetTickUs()</title>
+<indexterm><primary>GetTickUs</primary><secondary>hello_world::dsp::tick</secondary></indexterm>
+<indexterm><primary>hello_world::dsp::tick</primary><secondary>GetTickUs</secondary></indexterm>
+<para><computeroutput>uint32_t hello_world::dsp::tick::GetTickUs ( )</computeroutput></para><para>
+在文件 <link linkend="_tick_8cpp_source">tick.cpp</link> 第 <link linkend="_tick_8cpp_source_1l00076">76</link> 行定义.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacehello__world_1_1dsp_1_1tick_a0c9c44ee367dc665cc6f1a6d830da9ee_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>变量说明</title>
+<anchor xml:id="_namespacehello__world_1_1dsp_1_1tick_1a22bb956e1d5ebc7cef5e5e11d54580de"/><section>
+    <title>start_tick_us</title>
+<indexterm><primary>start_tick_us</primary><secondary>hello_world::dsp::tick</secondary></indexterm>
+<indexterm><primary>hello_world::dsp::tick</primary><secondary>start_tick_us</secondary></indexterm>
+<para><computeroutput>uint32_t hello_world::dsp::tick::start_tick_us = <link linkend="_namespacehello__world_1_1dsp_1_1tick_1a0c9c44ee367dc665cc6f1a6d830da9ee">GetTickUs</link>()</computeroutput></para><para>
+在文件 <link linkend="_tick_8cpp_source">tick.cpp</link> 第 <link linkend="_tick_8cpp_source_1l00074">74</link> 行定义.</para>
+</section>
+</section>
+</section>

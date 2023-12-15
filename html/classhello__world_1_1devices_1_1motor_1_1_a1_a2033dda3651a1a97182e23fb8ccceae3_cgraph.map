@@ -1,0 +1,5 @@
+<map id="hello_world::devices::motor::A1::encode" name="hello_world::devices::motor::A1::encode">
+<area shape="rect" id="Node000001" title="将要发给电调的期望输值编码为对应的 CAN 报文" alt="" coords="5,5,143,45"/>
+<area shape="rect" id="Node000002" href="$namespacehello__world.html#a34cb06299a34f746d556d23dc16904aa" title="将输入值限制在一个范围内" alt="" coords="191,13,321,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,23,176,23,176,28,143,28"/>
+</map>

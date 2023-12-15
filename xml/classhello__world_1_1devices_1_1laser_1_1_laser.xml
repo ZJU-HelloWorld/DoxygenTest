@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="classhello__world_1_1devices_1_1laser_1_1_laser" kind="class" language="C++" prot="public">
+    <compoundname>hello_world::devices::laser::Laser</compoundname>
+    <basecompoundref refid="classhello__world_1_1_mem_mang" prot="public" virt="non-virtual">hello_world::MemMang</basecompoundref>
+    <includes refid="laser_8hpp" local="no">laser.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classhello__world_1_1devices_1_1laser_1_1_laser_1a855fe4a608cd7a3be9648ed1023cb96c" prot="public" static="no" mutable="no">
+        <type>TIM_HandleTypeDef *const</type>
+        <definition>TIM_HandleTypeDef* const hello_world::devices::laser::Laser::kHtim_</definition>
+        <argsstring></argsstring>
+        <name>kHtim_</name>
+        <qualifiedname>hello_world::devices::laser::Laser::kHtim_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/laser/inc/laser.hpp" line="56" column="27" bodyfile="HW-Components/devices/laser/inc/laser.hpp" bodystart="56" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a19a88ca1a3d6dd1f48f7d26e2d9cecf9" compoundref="laser_8hpp" startline="52" endline="52">disable</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a82e3b6972b84d5aa02ad66d74451f83d" compoundref="laser_8hpp" startline="45" endline="45">enable</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1laser_1_1_laser_1ade6858f65e516d3f2d99e140e27eeb21" compoundref="laser_8cpp" startline="44" endline="55">Laser</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a71727ea81371581d369751653e0fc5ca" compoundref="laser_8cpp" startline="74" endline="79">luminPct2Cmp</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1laser_1_1_laser_1ae18c0d286f4c46619adf603ef47ecdb5" compoundref="laser_8cpp" startline="63" endline="66">setLuminPct</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhello__world_1_1devices_1_1laser_1_1_laser_1aad5f30954299751858b4b78238061e3d" prot="public" static="no" mutable="no">
+        <type>const uint32_t</type>
+        <definition>const uint32_t hello_world::devices::laser::Laser::kChannel_</definition>
+        <argsstring></argsstring>
+        <name>kChannel_</name>
+        <qualifiedname>hello_world::devices::laser::Laser::kChannel_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/laser/inc/laser.hpp" line="57" column="18" bodyfile="HW-Components/devices/laser/inc/laser.hpp" bodystart="57" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a19a88ca1a3d6dd1f48f7d26e2d9cecf9" compoundref="laser_8hpp" startline="52" endline="52">disable</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a82e3b6972b84d5aa02ad66d74451f83d" compoundref="laser_8hpp" startline="45" endline="45">enable</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1laser_1_1_laser_1ade6858f65e516d3f2d99e140e27eeb21" compoundref="laser_8cpp" startline="44" endline="55">Laser</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1laser_1_1_laser_1ae18c0d286f4c46619adf603ef47ecdb5" compoundref="laser_8cpp" startline="63" endline="66">setLuminPct</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1laser_1_1_laser_1ade6858f65e516d3f2d99e140e27eeb21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hello_world::devices::laser::Laser::Laser</definition>
+        <argsstring>(TIM_HandleTypeDef *htim, uint32_t channel, float init_lumin_pct)</argsstring>
+        <name>Laser</name>
+        <qualifiedname>hello_world::devices::laser::Laser::Laser</qualifiedname>
+        <param>
+          <type>TIM_HandleTypeDef *</type>
+          <declname>htim</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>init_lumin_pct</declname>
+        </param>
+        <briefdescription>
+<para>红点激光器初始化 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>htim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>定时器句柄指针 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>定时器PWM对应输出通道 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>init_lumin_pct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>初始化百分比亮度（0 ~ 100） </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>百分比亮度会被自动限制在合理范围内， 初始化后红点激光器默认处于开启状态 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/laser/inc/laser.hpp" line="37" column="3" bodyfile="HW-Components/devices/laser/src/laser.cpp" bodystart="44" bodyend="55"/>
+        <references refid="assert_8hpp_1a5969df827ceb603bed14c4106586484a" compoundref="assert_8hpp" startline="36">HW_ASSERT</references>
+        <references refid="classhello__world_1_1devices_1_1laser_1_1_laser_1aad5f30954299751858b4b78238061e3d" compoundref="laser_8hpp" startline="57">kChannel_</references>
+        <references refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a855fe4a608cd7a3be9648ed1023cb96c" compoundref="laser_8hpp" startline="56">kHtim_</references>
+        <references refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a71727ea81371581d369751653e0fc5ca" compoundref="laser_8cpp" startline="74" endline="79">luminPct2Cmp</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1laser_1_1_laser_1a9f4ea681704258dc175f60b0edd17fc6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual hello_world::devices::laser::Laser::~Laser</definition>
+        <argsstring>()</argsstring>
+        <name>~Laser</name>
+        <qualifiedname>hello_world::devices::laser::Laser::~Laser</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/laser/inc/laser.hpp" line="38" column="11" bodyfile="HW-Components/devices/laser/inc/laser.hpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1laser_1_1_laser_1a82e3b6972b84d5aa02ad66d74451f83d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void hello_world::devices::laser::Laser::enable</definition>
+        <argsstring>() const</argsstring>
+        <name>enable</name>
+        <qualifiedname>hello_world::devices::laser::Laser::enable</qualifiedname>
+        <briefdescription>
+<para>启用红点激光器 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/laser/inc/laser.hpp" line="45" column="8" bodyfile="HW-Components/devices/laser/inc/laser.hpp" bodystart="45" bodyend="45"/>
+        <references refid="classhello__world_1_1devices_1_1laser_1_1_laser_1aad5f30954299751858b4b78238061e3d" compoundref="laser_8hpp" startline="57">kChannel_</references>
+        <references refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a855fe4a608cd7a3be9648ed1023cb96c" compoundref="laser_8hpp" startline="56">kHtim_</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1laser_1_1_laser_1a19a88ca1a3d6dd1f48f7d26e2d9cecf9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void hello_world::devices::laser::Laser::disable</definition>
+        <argsstring>() const</argsstring>
+        <name>disable</name>
+        <qualifiedname>hello_world::devices::laser::Laser::disable</qualifiedname>
+        <briefdescription>
+<para>关闭红点激光器 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>None </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/laser/inc/laser.hpp" line="52" column="8" bodyfile="HW-Components/devices/laser/inc/laser.hpp" bodystart="52" bodyend="52"/>
+        <references refid="classhello__world_1_1devices_1_1laser_1_1_laser_1aad5f30954299751858b4b78238061e3d" compoundref="laser_8hpp" startline="57">kChannel_</references>
+        <references refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a855fe4a608cd7a3be9648ed1023cb96c" compoundref="laser_8hpp" startline="56">kHtim_</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1laser_1_1_laser_1ae18c0d286f4c46619adf603ef47ecdb5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hello_world::devices::laser::Laser::setLuminPct</definition>
+        <argsstring>(float lumin_pct) const</argsstring>
+        <name>setLuminPct</name>
+        <qualifiedname>hello_world::devices::laser::Laser::setLuminPct</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>lumin_pct</declname>
+        </param>
+        <briefdescription>
+<para>设置红点激光器百分比亮度 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lumin_pct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>百分比亮度（0 ~ 100） </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>None</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>百分比亮度会被自动限制在合理范围内 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/laser/inc/laser.hpp" line="54" column="8" bodyfile="HW-Components/devices/laser/src/laser.cpp" bodystart="63" bodyend="66"/>
+        <references refid="classhello__world_1_1devices_1_1laser_1_1_laser_1aad5f30954299751858b4b78238061e3d" compoundref="laser_8hpp" startline="57">kChannel_</references>
+        <references refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a855fe4a608cd7a3be9648ed1023cb96c" compoundref="laser_8hpp" startline="56">kHtim_</references>
+        <references refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a71727ea81371581d369751653e0fc5ca" compoundref="laser_8cpp" startline="74" endline="79">luminPct2Cmp</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1laser_1_1_laser_1a71727ea81371581d369751653e0fc5ca" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t hello_world::devices::laser::Laser::luminPct2Cmp</definition>
+        <argsstring>(float lumin_pct) const</argsstring>
+        <name>luminPct2Cmp</name>
+        <qualifiedname>hello_world::devices::laser::Laser::luminPct2Cmp</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>lumin_pct</declname>
+        </param>
+        <briefdescription>
+<para>百分比亮度转定时器PWM比较值 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lumin_pct</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>百分比亮度（0 ~ 100） </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>定时器PWM比较值</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>百分比亮度会被自动限制在合理范围内 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/laser/inc/laser.hpp" line="60" column="12" bodyfile="HW-Components/devices/laser/src/laser.cpp" bodystart="74" bodyend="79"/>
+        <references refid="namespacehello__world_1a34cb06299a34f746d556d23dc16904aa" compoundref="base_8hpp" startline="92" endline="110">hello_world::Bound</references>
+        <references refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a855fe4a608cd7a3be9648ed1023cb96c" compoundref="laser_8hpp" startline="56">kHtim_</references>
+        <referencedby refid="classhello__world_1_1devices_1_1laser_1_1_laser_1ade6858f65e516d3f2d99e140e27eeb21" compoundref="laser_8cpp" startline="44" endline="55">Laser</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1laser_1_1_laser_1ae18c0d286f4c46619adf603ef47ecdb5" compoundref="laser_8cpp" startline="63" endline="66">setLuminPct</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>hello_world::MemMang</label>
+        <link refid="classhello__world_1_1_mem_mang"/>
+      </node>
+      <node id="1">
+        <label>hello_world::devices::laser::Laser</label>
+        <link refid="classhello__world_1_1devices_1_1laser_1_1_laser"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>hello_world::MemMang</label>
+        <link refid="classhello__world_1_1_mem_mang"/>
+      </node>
+      <node id="1">
+        <label>hello_world::devices::laser::Laser</label>
+        <link refid="classhello__world_1_1devices_1_1laser_1_1_laser"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="HW-Components/devices/laser/inc/laser.hpp" line="34" column="1" bodyfile="HW-Components/devices/laser/inc/laser.hpp" bodystart="35" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a19a88ca1a3d6dd1f48f7d26e2d9cecf9" prot="public" virt="non-virtual"><scope>hello_world::devices::laser::Laser</scope><name>disable</name></member>
+      <member refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a82e3b6972b84d5aa02ad66d74451f83d" prot="public" virt="non-virtual"><scope>hello_world::devices::laser::Laser</scope><name>enable</name></member>
+      <member refid="classhello__world_1_1devices_1_1laser_1_1_laser_1aad5f30954299751858b4b78238061e3d" prot="public" virt="non-virtual"><scope>hello_world::devices::laser::Laser</scope><name>kChannel_</name></member>
+      <member refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a855fe4a608cd7a3be9648ed1023cb96c" prot="public" virt="non-virtual"><scope>hello_world::devices::laser::Laser</scope><name>kHtim_</name></member>
+      <member refid="classhello__world_1_1devices_1_1laser_1_1_laser_1ade6858f65e516d3f2d99e140e27eeb21" prot="public" virt="non-virtual"><scope>hello_world::devices::laser::Laser</scope><name>Laser</name></member>
+      <member refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a71727ea81371581d369751653e0fc5ca" prot="private" virt="non-virtual"><scope>hello_world::devices::laser::Laser</scope><name>luminPct2Cmp</name></member>
+      <member refid="classhello__world_1_1_mem_mang_1abf1fe21066f52d693e2eec63a5833e8e" prot="public" virt="non-virtual"><scope>hello_world::devices::laser::Laser</scope><name>operator delete</name></member>
+      <member refid="classhello__world_1_1_mem_mang_1a54e1a6a8e01b0996cc2854a8bc1ce7bd" prot="public" virt="non-virtual"><scope>hello_world::devices::laser::Laser</scope><name>operator delete[]</name></member>
+      <member refid="classhello__world_1_1_mem_mang_1abcf6e7289814e8da342ba4f47d8af411" prot="public" virt="non-virtual"><scope>hello_world::devices::laser::Laser</scope><name>operator new</name></member>
+      <member refid="classhello__world_1_1_mem_mang_1ad10b6eff1541322708e5bde32c590c82" prot="public" virt="non-virtual"><scope>hello_world::devices::laser::Laser</scope><name>operator new[]</name></member>
+      <member refid="classhello__world_1_1devices_1_1laser_1_1_laser_1ae18c0d286f4c46619adf603ef47ecdb5" prot="public" virt="non-virtual"><scope>hello_world::devices::laser::Laser</scope><name>setLuminPct</name></member>
+      <member refid="classhello__world_1_1devices_1_1laser_1_1_laser_1a9f4ea681704258dc175f60b0edd17fc6" prot="public" virt="virtual"><scope>hello_world::devices::laser::Laser</scope><name>~Laser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

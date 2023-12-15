@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_motor_8hpp" xml:lang="zh">
+<title>HW-Components/devices/motor/inc/motor.hpp 文件参考</title>
+<indexterm><primary>HW-Components/devices/motor/inc/motor.hpp</primary></indexterm>
+<para>
+
+<para>: @history : Version Date Author Note V0.9.0 2023-11-25 Caikunzhen 1. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;motor_A1.hpp&quot;<?linebreak?>#include &quot;motor_DM_J4310.hpp&quot;<?linebreak?>#include &quot;motor_GM6020.hpp&quot;<?linebreak?>#include &quot;motor_M2006.hpp&quot;<?linebreak?>#include &quot;motor_M3508.hpp&quot;<?linebreak?>#include &quot;motor_M8910.hpp&quot;<?linebreak?>#include &quot;motor_MF9025v2.hpp&quot;<?linebreak?>#include &quot;motor_base.hpp&quot;<?linebreak?></programlisting>motor.hpp 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="motor_8hpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+此图展示该文件直接或间接的被哪些文件引用了:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="motor_8hpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>命名空间    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacehello__world">hello_world</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacehello__world_1_1devices">hello_world::devices</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacehello__world_1_1devices_1_1motor">hello_world::devices::motor</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>枚举    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespacehello__world_1_1devices_1_1motor_1a0764cc873981eb673e5cefe2b89d84c8">hello_world::devices::motor::MotorType</link> { <?linebreak?><link linkend="_namespacehello__world_1_1devices_1_1motor_1a0764cc873981eb673e5cefe2b89d84c8a07e240d42d2ba719073e07afb4203d04">hello_world::devices::motor::kMotorTypeGM6020</link>
+, <link linkend="_namespacehello__world_1_1devices_1_1motor_1a0764cc873981eb673e5cefe2b89d84c8a8c5f2196eac5420dc4627ef0514f558e">hello_world::devices::motor::kMotorTypeM2006</link>
+, <link linkend="_namespacehello__world_1_1devices_1_1motor_1a0764cc873981eb673e5cefe2b89d84c8a55160f7f5f669aa27a24c3cad2deaf1d">hello_world::devices::motor::kMotorTypeM3508</link>
+, <link linkend="_namespacehello__world_1_1devices_1_1motor_1a0764cc873981eb673e5cefe2b89d84c8ae6e021cdc218f10377913d33f426fb11">hello_world::devices::motor::kMotorTypeM8910</link>
+, <?linebreak?><link linkend="_namespacehello__world_1_1devices_1_1motor_1a0764cc873981eb673e5cefe2b89d84c8affc5737d4b2d3625a210240cd4315718">hello_world::devices::motor::kMotorTypeA1</link>
+, <link linkend="_namespacehello__world_1_1devices_1_1motor_1a0764cc873981eb673e5cefe2b89d84c8abd589290db96bf5712052ec3f3f3ee02">hello_world::devices::motor::kMotorTypeDM_J4310</link>
+, <link linkend="_namespacehello__world_1_1devices_1_1motor_1a0764cc873981eb673e5cefe2b89d84c8a5a037ca22e20940dab8499c86f40fb49">hello_world::devices::motor::kMotorTypeMF9025v2</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor">Motor</link> * <link linkend="_namespacehello__world_1_1devices_1_1motor_1ae3492ca32e729aaaecd5def06d638f86">hello_world::devices::motor::CreateMotor</link> (<link linkend="_namespacehello__world_1_1devices_1_1motor_1a0764cc873981eb673e5cefe2b89d84c8">MotorType</link> motor_type, uint8_t id, const <link linkend="_structhello__world_1_1devices_1_1motor_1_1_optional_params">OptionalParams</link> &amp;optinal_params)</para>
+
+<para>根据所需的电机类型创建电机并初始化 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>: @history : Version Date Author Note V0.9.0 2023-11-25 Caikunzhen 1. </para>
+
+<para>未测试版本</para>
+
+<para><caution><title>注意</title>
+
+<para>:</para>
+</caution>
+Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved. </para>
+<para>
+在文件 <link linkend="_motor_8hpp_source">motor.hpp</link> 中定义.</para>
+</section>
+</section>

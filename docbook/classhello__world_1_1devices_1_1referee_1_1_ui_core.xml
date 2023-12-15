@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classhello__world_1_1devices_1_1referee_1_1_ui_core" xml:lang="zh">
+<title>hello_world::devices::referee::UiCore类 参考</title>
+<indexterm><primary>hello_world::devices::referee::UiCore</primary></indexterm>
+<para>
+<computeroutput>#include &lt;referee_ui.hpp&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classhello__world_1_1devices_1_1referee_1_1_ui_core_1ac85ff2ea892ae60bf19eea55c63068f4">addFrame</link> (<link linkend="_classhello__world_1_1devices_1_1referee_1_1_ui_frame">UiFrame</link> &amp;frame)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 属性    </title>
+        <itemizedlist>
+            <listitem><para>std::queue&lt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_ui_frame">UiFrame</link> &amp; &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_ui_core_1aed6790200318e9cbca4314c0de009306">frame_queue_</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+<para>
+在文件 <link linkend="_referee__ui_8hpp_source">referee_ui.hpp</link> 第 <link linkend="_referee__ui_8hpp_source_1l00122">122</link> 行定义.</para>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_ui_core_1ac85ff2ea892ae60bf19eea55c63068f4"/><section>
+    <title>addFrame()</title>
+<indexterm><primary>addFrame</primary><secondary>hello_world::devices::referee::UiCore</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::UiCore</primary><secondary>addFrame</secondary></indexterm>
+<para><computeroutput>void hello_world::devices::referee::UiCore::addFrame (<link linkend="_classhello__world_1_1devices_1_1referee_1_1_ui_frame">UiFrame</link> &amp; frame)</computeroutput></para></section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_ui_core_1aed6790200318e9cbca4314c0de009306"/><section>
+    <title>frame_queue_</title>
+<indexterm><primary>frame_queue_</primary><secondary>hello_world::devices::referee::UiCore</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::UiCore</primary><secondary>frame_queue_</secondary></indexterm>
+<para><computeroutput>std::queue&lt;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_ui_frame">UiFrame</link> &amp;&gt; hello_world::devices::referee::UiCore::frame_queue_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_referee__ui_8hpp_source">referee_ui.hpp</link> 第 <link linkend="_referee__ui_8hpp_source_1l00125">125</link> 行定义.</para>
+</section>
+</section>
+</section>

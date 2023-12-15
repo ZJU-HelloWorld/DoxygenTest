@@ -1,0 +1,117 @@
+\doxysection{HW-\/\+Components/devices/referee/inc/referee\+\_\+custom\+\_\+define.hpp 文件参考}
+\hypertarget{referee__custom__define_8hpp}{}\label{referee__custom__define_8hpp}\index{HW-\/Components/devices/referee/inc/referee\_custom\_define.hpp@{HW-\/Components/devices/referee/inc/referee\_custom\_define.hpp}}
+{\ttfamily \#include "{}referee\+\_\+protocol.\+hpp"{}}\newline
+{\ttfamily \#include "{}referee\+\_\+rx\+\_\+template.\+hpp"{}}\newline
+referee\+\_\+custom\+\_\+define.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{referee__custom__define_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{referee__custom__define_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structhello__world_1_1devices_1_1referee_1_1_____r_e_f_e_r_e_e___p_a_c_k_e_d}{hello\+\_\+world\+::devices\+::referee\+::\+\_\+\+\_\+\+REFEREE\+\_\+\+PACKED}}
+\item 
+class \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_inter_radar_warning}{hello\+\_\+world\+::devices\+::referee\+::\+Rx\+Package\+Inter\+Radar\+Warning}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacehello__world}{hello\+\_\+world}}
+\item 
+namespace \mbox{\hyperlink{namespacehello__world_1_1devices}{hello\+\_\+world\+::devices}}
+\item 
+namespace \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee}{hello\+\_\+world\+::devices\+::referee}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{类型定义}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint8\+\_\+t \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aaac17facc4c6e380f8ff19e207c7184f}{hello\+\_\+world\+::devices\+::referee\+::\+Crc8\+\_\+t}}
+\item 
+typedef uint16\+\_\+t \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a0ab6f8327a52d35b92c0023f99235fed}{hello\+\_\+world\+::devices\+::referee\+::\+Crc16\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structhello__world_1_1devices_1_1referee_1_1_____r_e_f_e_r_e_e___p_a_c_k_e_d}{hello\+\_\+world\+::devices\+::referee\+::\+\_\+\+\_\+\+REFEREE\+\_\+\+PACKED}} \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a131c69924a714d5af120ebf62b864fbf}{hello\+\_\+world\+::devices\+::referee\+::\+Inter\+Radar\+Warning}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a1500d7652616d69044bd1eaca3998b5a}{hello\+\_\+world\+::devices\+::referee\+::\+Frame\+Part\+Length}} \{ \newline
+\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a1500d7652616d69044bd1eaca3998b5aab4aee07ae0e90d346fb0399a41dca063}{hello\+\_\+world\+::devices\+::referee\+::k\+Frame\+Part\+Length\+Header}} = sizeof(Frame\+Header)
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a1500d7652616d69044bd1eaca3998b5aa665e1deb8bd6ce1a7ed019227c239d22}{hello\+\_\+world\+::devices\+::referee\+::k\+Frame\+Part\+Length\+Cmd\+Id}} = sizeof(Frame\+Cmd\+Id)
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a1500d7652616d69044bd1eaca3998b5aa37f66980633217e1695fb4393bea808b}{hello\+\_\+world\+::devices\+::referee\+::k\+Frame\+Part\+Length\+Inter\+Frame\+Header}} = sizeof(Inter\+Frame\+Header)
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a1500d7652616d69044bd1eaca3998b5aae204c682cab7f9e0161a04ac9703df12}{hello\+\_\+world\+::devices\+::referee\+::k\+Frame\+Part\+Length\+Tail}} = sizeof(Crc16\+\_\+t)
+, \newline
+\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a1500d7652616d69044bd1eaca3998b5aafd0710f7fd1d24567b5bf2340920bac3}{hello\+\_\+world\+::devices\+::referee\+::k\+Frame\+Part\+Length\+Except\+Data}} = k\+Frame\+Part\+Length\+Header + k\+Frame\+Part\+Length\+Cmd\+Id + k\+Frame\+Part\+Length\+Tail
+ \}
+\item 
+enum \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_ad51f56f304455748245e8ee460b38620}{hello\+\_\+world\+::devices\+::referee\+::\+Frame\+Part\+Index}} \{ \newline
+\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_ad51f56f304455748245e8ee460b38620ab3a6cb2d0b9743cd25041bdb2c1b2160}{hello\+\_\+world\+::devices\+::referee\+::k\+Frame\+Part\+Index\+Header}} = 0
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_ad51f56f304455748245e8ee460b38620a0ae6f180abe4fde4ec07afec865597bd}{hello\+\_\+world\+::devices\+::referee\+::k\+Frame\+Part\+Index\+Header\+Sof}} = 0
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_ad51f56f304455748245e8ee460b38620ab7b775df57ffa63f652cab9e4656e8b4}{hello\+\_\+world\+::devices\+::referee\+::k\+Frame\+Part\+Index\+Header\+Data\+Length}} = sizeof(Frame\+Header\+::sof)
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_ad51f56f304455748245e8ee460b38620a90997edfc4821996eaee7a68ad1c1ec4}{hello\+\_\+world\+::devices\+::referee\+::k\+Frame\+Part\+Index\+Header\+Sequence\+Number}} = k\+Frame\+Part\+Index\+Header\+Data\+Length + sizeof(Frame\+Header\+::data\+\_\+length)
+, \newline
+\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_ad51f56f304455748245e8ee460b38620a0cd92f633436d897c15e77499dd6b28d}{hello\+\_\+world\+::devices\+::referee\+::k\+Frame\+Part\+Index\+Header\+Crc}} = k\+Frame\+Part\+Index\+Header\+Sequence\+Number + sizeof(Frame\+Header\+::sequence\+\_\+number)
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_ad51f56f304455748245e8ee460b38620a2c081cc7883e693086849ff9c1b03d8d}{hello\+\_\+world\+::devices\+::referee\+::k\+Frame\+Part\+Index\+Cmd\+Id}} = sizeof(Frame\+Header)
+, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_ad51f56f304455748245e8ee460b38620a34fcfd7f81989ca7b64c22b379f86a6e}{hello\+\_\+world\+::devices\+::referee\+::k\+Frame\+Part\+Index\+Data}} = k\+Frame\+Part\+Index\+Cmd\+Id + sizeof(Frame\+Cmd\+Id)
+ \}
+\item 
+enum \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_add6d3ff9dc82263c8eda3bebbb2296e1}{hello\+\_\+world\+::devices\+::referee\+::\+Inter\+Among\+Robots\+Id}} \+: uint16\+\_\+t \{ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_add6d3ff9dc82263c8eda3bebbb2296e1a9eadf8a9d3774d16b1d389d84252889c}{hello\+\_\+world\+::devices\+::referee\+::k\+Inter\+Among\+Robots\+Id\+Radar\+Warning}} = 0x0200
+ \}
+\item 
+enum \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aa426410d2ee900fe7a2a9c9cf166f0e8}{hello\+\_\+world\+::devices\+::referee\+::\+Inter\+Among\+Robots\+Data\+Length}} \+: uint16\+\_\+t \{ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aa426410d2ee900fe7a2a9c9cf166f0e8aadecd446da590fa43b52856835c7338e}{hello\+\_\+world\+::devices\+::referee\+::k\+Inter\+Among\+Robots\+Data\+Length\+Radar\+Warning}} = 1u
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\begin{DoxyAuthor}{作者}
+Zhou\+Shichan (\href{mailto:zsc19823382069@163.com}{\texttt{ zsc19823382069@163.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{版本}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{日期}
+2023-\/10-\/30
+\end{DoxyDate}
+\begin{DoxyCopyright}{版权所有}
+Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved.
+\end{DoxyCopyright}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+\begin{DoxyParagraph}{history}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Version   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Date   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Author   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Version   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Date   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Author   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-4}
+\endhead
+\PBS\centering 1.\+0.\+0   &\PBS\centering \{now\+\_\+year\}   &\PBS\centering Zhou\+Shichan   &\PBS\centering description   \\\cline{1-4}
+\end{longtabu}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{last editor Zhou\+Shichan (zsc19823382069@163.com)}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{last edit time 2023-\/10-\/30}
+
+\end{DoxyParagraph}
+
+
+在文件 \mbox{\hyperlink{referee__custom__define_8hpp_source}{referee\+\_\+custom\+\_\+define.\+hpp}} 中定义.
+

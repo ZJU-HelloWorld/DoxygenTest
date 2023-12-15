@@ -1,0 +1,7 @@
+<map id="hello_world::devices::referee::VerifyCrc8CheckSum" name="hello_world::devices::referee::VerifyCrc8CheckSum">
+<area shape="rect" id="Node000001" title="Verifies the CRC8 checksum of a message." alt="" coords="512,5,713,45"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1referee_1_1_referee.html#a823f73d223421b7d025005e99ff08291" title=" " alt="" coords="261,5,464,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="497,28,465,28,465,23,497,23"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1referee_1_1_referee.html#aaa5ff496d5c254b8fd821c351bb75325" title=" " alt="" coords="5,5,213,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="247,28,214,28,214,23,247,23"/>
+</map>

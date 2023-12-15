@@ -1,0 +1,11 @@
+<map id="hello_world::devices::motor::MF9025v2" name="hello_world::devices::motor::MF9025v2">
+<area shape="rect" id="Node000001" title=" " alt="" coords="35,287,173,327"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html" title=" " alt="" coords="35,197,173,237"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,253,107,286,101,286,101,253"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1_mem_mang.html" title=" " alt="" coords="5,102,160,127"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,141,103,196,97,198,86,142"/>
+<area shape="rect" id="Node000004" href="$structhello__world_1_1devices_1_1motor_1_1_motor_info.html" title=" " alt="" coords="185,95,322,135"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="214,146,134,199,131,195,211,141"/>
+<area shape="rect" id="Node000005" href="$structhello__world_1_1devices_1_1motor_1_1_motor_base_info.html" title=" " alt="" coords="176,5,331,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="256,61,256,94,251,94,251,61"/>
+</map>

@@ -1,0 +1,23 @@
+<map id="hello_world::NormPeriodData" name="hello_world::NormPeriodData">
+<area shape="rect" id="Node000001" title="将周期性数据归一化到指定周期区间" alt="" coords="465,147,655,173"/>
+<area shape="rect" id="Node000002" href="$namespacehello__world.html#aa44c70128980881ac6260af9f928309a" title="将角度归一化到[&#45;180°, 180°)" alt="" coords="236,98,417,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="482,146,389,127,391,121,483,141"/>
+<area shape="rect" id="Node000003" href="$namespacehello__world.html#a2b175ee3711275a8279ab6553620bca7" title="将角度归一化到[&#45;π, π)" alt="" coords="236,147,417,173"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="450,163,418,163,418,157,450,157"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#a21092858a98af5688b398d57cd203592" title="将角度转换到指定范围" alt="" coords="239,197,414,237"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="492,179,412,199,410,194,491,174"/>
+<area shape="rect" id="Node000005" href="$classhello__world_1_1devices_1_1motor_1_1_a1.html#a1dc9df605f9df5fff3b2bc8ed4a63ff8" title="将电调发回的 CAN 报文进行解包" alt="" coords="28,5,165,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="239,190,234,186,221,169,214,153,209,121,205,90,198,75,186,59,164,44,167,40,190,55,203,72,210,88,215,120,219,151,226,167,238,182,243,186"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#a84ecfac4c74e3f0f7b85fba6c69f2aa1" title="将电调发回的 CAN 报文进行解包" alt="" coords="5,69,188,109"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="244,192,234,186,218,170,210,154,201,138,186,123,167,112,170,108,190,119,206,135,214,151,223,167,238,182,247,188"/>
+<area shape="rect" id="Node000007" href="$classhello__world_1_1devices_1_1motor_1_1_g_m6020.html#a732687f3fc5d5d302135f950ac260e3f" title="将电调发回的 CAN 报文进行解包" alt="" coords="11,133,182,173"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="238,195,170,176,172,171,239,190"/>
+<area shape="rect" id="Node000008" href="$classhello__world_1_1devices_1_1motor_1_1_m2006.html#a4f74b1c55fc5c0f9e7c28d329ff0c9cd" title="将电调发回的 CAN 报文进行解包" alt="" coords="17,197,177,237"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="224,220,177,220,177,215,224,215"/>
+<area shape="rect" id="Node000009" href="$classhello__world_1_1devices_1_1motor_1_1_m3508.html#aec43855db5fbc6a2fb7b3b550b601f8e" title="将电调发回的 CAN 报文进行解包" alt="" coords="17,261,177,301"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="239,244,172,263,170,258,238,239"/>
+<area shape="rect" id="Node000010" href="$classhello__world_1_1devices_1_1motor_1_1_m8910.html#ae5b934cb41237293299dce618befba6d" title="将电调发回的 CAN 报文进行解包" alt="" coords="17,325,177,365"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="290,249,244,283,189,316,163,327,161,322,187,311,241,279,287,245"/>
+<area shape="rect" id="Node000011" href="$classhello__world_1_1devices_1_1motor_1_1_m_f9025v2.html#ab446cad174a3d963931102233a88c7e8" title="将电调发回的 CAN 报文进行解包" alt="" coords="7,389,187,429"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="307,251,258,316,226,350,190,380,169,391,166,386,186,375,222,346,254,312,303,248"/>
+</map>

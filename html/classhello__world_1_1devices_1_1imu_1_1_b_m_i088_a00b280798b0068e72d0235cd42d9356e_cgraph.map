@@ -1,0 +1,7 @@
+<map id="hello_world::devices::imu::BMI088::BMI088" name="hello_world::devices::imu::BMI088::BMI088">
+<area shape="rect" id="Node000001" title="BMI088 初始化" alt="" coords="5,37,160,77"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#abe2be687095fa7b54d31a3a69693b306" title=" " alt="" coords="210,5,367,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,43,195,37,196,42,161,48"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a54cd103bad13c06059088197dabd6acc" title=" " alt="" coords="208,69,369,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,67,194,72,193,77,160,72"/>
+</map>

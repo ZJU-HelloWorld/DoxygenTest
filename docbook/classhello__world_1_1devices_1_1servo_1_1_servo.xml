@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classhello__world_1_1devices_1_1servo_1_1_servo" xml:lang="zh">
+<title>hello_world::devices::servo::Servo类 参考</title>
+<indexterm><primary>hello_world::devices::servo::Servo</primary></indexterm>
+<para>
+<computeroutput>#include &lt;servo.hpp&gt;</computeroutput>
+</para>
+类 hello_world::devices::servo::Servo 继承关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1servo_1_1_servo__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+hello_world::devices::servo::Servo 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1servo_1_1_servo__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1servo_1_1_servo_1a538666221be8aebbd757061a57203e56">Servo</link> (TIM_HandleTypeDef *htim, uint32_t channel, const <link linkend="_structhello__world_1_1devices_1_1servo_1_1_servo_info">ServoInfo</link> &amp;servo_info, float init_angle)</para>
+
+<para>舵机初始化 </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classhello__world_1_1devices_1_1servo_1_1_servo_1a254eee3c95b8d142babe952441790e99">~Servo</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1devices_1_1servo_1_1_servo_1a8c9c025ba0597d51a6e8933bce379f0e">enable</link> () const</para>
+
+<para>使能舵机 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1devices_1_1servo_1_1_servo_1ab2e32fc0b9d42094ba9bda1371c4ff84">disable</link> () const</para>
+
+<para>失能舵机 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1devices_1_1servo_1_1_servo_1a22fff12088bc63dc21cace008a5e1b35">setAngle</link> (float angle) const</para>
+
+<para>设定舵机角度 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public 成员函数 继承自 <link linkend="_classhello__world_1_1_mem_mang">hello_world::MemMang</link>        <itemizedlist>
+            <listitem><para>void * <link linkend="_classhello__world_1_1_mem_mang_1abcf6e7289814e8da342ba4f47d8af411">operator new</link> (size_t size)</para>
+</listitem>
+            <listitem><para>void * <link linkend="_classhello__world_1_1_mem_mang_1ad10b6eff1541322708e5bde32c590c82">operator new[]</link> (size_t size)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1_mem_mang_1abf1fe21066f52d693e2eec63a5833e8e">operator delete</link> (void *ptr)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1_mem_mang_1a54e1a6a8e01b0996cc2854a8bc1ce7bd">operator delete[]</link> (void *ptr)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para>TIM_HandleTypeDef *const <link linkend="_classhello__world_1_1devices_1_1servo_1_1_servo_1ab09397483f5eb4ac6f879dbaa00407f2">kHtim_</link></para>
+</listitem>
+            <listitem><para>const uint32_t <link linkend="_classhello__world_1_1devices_1_1servo_1_1_servo_1af7138e8cec740393fc793674d9ac23f2">kChannel_</link></para>
+</listitem>
+            <listitem><para>const <link linkend="_structhello__world_1_1devices_1_1servo_1_1_servo_info">ServoInfo</link> <link linkend="_classhello__world_1_1devices_1_1servo_1_1_servo_1a970450231a2ce7b2057d8be915ffde22">kServoInfo_</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 成员函数    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_classhello__world_1_1devices_1_1servo_1_1_servo_1af678b6d9c70e3be611755ac1ae233aa5">angle2Cmp</link> (float angle) const</para>
+
+<para>舵机角度转定时器PWM比较值 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+<para>
+在文件 <link linkend="_servo_8hpp_source">servo.hpp</link> 第 <link linkend="_servo_8hpp_source_1l00039">39</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_classhello__world_1_1devices_1_1servo_1_1_servo_1a538666221be8aebbd757061a57203e56"/><section>
+    <title>Servo()</title>
+<indexterm><primary>Servo</primary><secondary>hello_world::devices::servo::Servo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::servo::Servo</primary><secondary>Servo</secondary></indexterm>
+<para><computeroutput>hello_world::devices::servo::Servo::Servo (TIM_HandleTypeDef * htim, uint32_t channel, const <link linkend="_structhello__world_1_1devices_1_1servo_1_1_servo_info">ServoInfo</link> &amp; servo_info, float init_angle)</computeroutput></para><para>
+
+<para>舵机初始化 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>htim</entry><entry>
+<para>定时器句柄指针 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>channel</entry><entry>
+<para>定时器PWM对应输出通道 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>servo_info</entry><entry>
+<para>舵机参数 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>init_angle</entry><entry>
+<para>舵机初始化角度，单位：deg </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>使用前请先确保定时器的频率为 1MHz， 舵机角度会被自动限制在设定的角度范围内，初始化后舵机默认处于开启状态 </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="_servo_8cpp_source">servo.cpp</link> 第 <link linkend="_servo_8cpp_source_1l00045">45</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1servo_1_1_servo_a538666221be8aebbd757061a57203e56_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1servo_1_1_servo_1a254eee3c95b8d142babe952441790e99"/><section>
+    <title>~Servo()</title>
+<indexterm><primary>~Servo</primary><secondary>hello_world::devices::servo::Servo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::servo::Servo</primary><secondary>~Servo</secondary></indexterm>
+<para><computeroutput>virtual hello_world::devices::servo::Servo::~Servo ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_servo_8hpp_source">servo.hpp</link> 第 <link linkend="_servo_8hpp_source_1l00044">44</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classhello__world_1_1devices_1_1servo_1_1_servo_1af678b6d9c70e3be611755ac1ae233aa5"/><section>
+    <title>angle2Cmp()</title>
+<indexterm><primary>angle2Cmp</primary><secondary>hello_world::devices::servo::Servo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::servo::Servo</primary><secondary>angle2Cmp</secondary></indexterm>
+<para><computeroutput>uint32_t hello_world::devices::servo::Servo::angle2Cmp (float angle) const<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>舵机角度转定时器PWM比较值 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>angle</entry><entry>
+<para>舵机角度，单位：deg </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>定时器PWM比较值</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>舵机角度会被自动限制在设定的角度范围内 </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="_servo_8cpp_source">servo.cpp</link> 第 <link linkend="_servo_8cpp_source_1l00088">88</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1servo_1_1_servo_af678b6d9c70e3be611755ac1ae233aa5_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1servo_1_1_servo_af678b6d9c70e3be611755ac1ae233aa5_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1servo_1_1_servo_1ab2e32fc0b9d42094ba9bda1371c4ff84"/><section>
+    <title>disable()</title>
+<indexterm><primary>disable</primary><secondary>hello_world::devices::servo::Servo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::servo::Servo</primary><secondary>disable</secondary></indexterm>
+<para><computeroutput>void hello_world::devices::servo::Servo::disable ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>失能舵机 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>None </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="_servo_8hpp_source">servo.hpp</link> 第 <link linkend="_servo_8hpp_source_1l00058">58</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1servo_1_1_servo_1a8c9c025ba0597d51a6e8933bce379f0e"/><section>
+    <title>enable()</title>
+<indexterm><primary>enable</primary><secondary>hello_world::devices::servo::Servo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::servo::Servo</primary><secondary>enable</secondary></indexterm>
+<para><computeroutput>void hello_world::devices::servo::Servo::enable ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>使能舵机 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>None </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="_servo_8hpp_source">servo.hpp</link> 第 <link linkend="_servo_8hpp_source_1l00051">51</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1servo_1_1_servo_1a22fff12088bc63dc21cace008a5e1b35"/><section>
+    <title>setAngle()</title>
+<indexterm><primary>setAngle</primary><secondary>hello_world::devices::servo::Servo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::servo::Servo</primary><secondary>setAngle</secondary></indexterm>
+<para><computeroutput>void hello_world::devices::servo::Servo::setAngle (float angle) const</computeroutput></para><para>
+
+<para>设定舵机角度 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>angle</entry><entry>
+<para>舵机角度，单位：deg </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>舵机角度会被自动限制在设定的角度范围内 </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="_servo_8cpp_source">servo.cpp</link> 第 <link linkend="_servo_8cpp_source_1l00077">77</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1servo_1_1_servo_a22fff12088bc63dc21cace008a5e1b35_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classhello__world_1_1devices_1_1servo_1_1_servo_1af7138e8cec740393fc793674d9ac23f2"/><section>
+    <title>kChannel_</title>
+<indexterm><primary>kChannel_</primary><secondary>hello_world::devices::servo::Servo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::servo::Servo</primary><secondary>kChannel_</secondary></indexterm>
+<para><computeroutput>const uint32_t hello_world::devices::servo::Servo::kChannel_</computeroutput></para><para>
+在文件 <link linkend="_servo_8hpp_source">servo.hpp</link> 第 <link linkend="_servo_8hpp_source_1l00063">63</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1servo_1_1_servo_1ab09397483f5eb4ac6f879dbaa00407f2"/><section>
+    <title>kHtim_</title>
+<indexterm><primary>kHtim_</primary><secondary>hello_world::devices::servo::Servo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::servo::Servo</primary><secondary>kHtim_</secondary></indexterm>
+<para><computeroutput>TIM_HandleTypeDef* const hello_world::devices::servo::Servo::kHtim_</computeroutput></para><para>
+在文件 <link linkend="_servo_8hpp_source">servo.hpp</link> 第 <link linkend="_servo_8hpp_source_1l00062">62</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1servo_1_1_servo_1a970450231a2ce7b2057d8be915ffde22"/><section>
+    <title>kServoInfo_</title>
+<indexterm><primary>kServoInfo_</primary><secondary>hello_world::devices::servo::Servo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::servo::Servo</primary><secondary>kServoInfo_</secondary></indexterm>
+<para><computeroutput>const <link linkend="_structhello__world_1_1devices_1_1servo_1_1_servo_info">ServoInfo</link> hello_world::devices::servo::Servo::kServoInfo_</computeroutput></para><para>
+在文件 <link linkend="_servo_8hpp_source">servo.hpp</link> 第 <link linkend="_servo_8hpp_source_1l00064">64</link> 行定义.</para>
+</section>
+</section>
+</section>

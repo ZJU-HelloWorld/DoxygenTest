@@ -1,0 +1,57 @@
+\doxysection{DT7.\+cpp}
+\hypertarget{_d_t7_8cpp_source}{}\label{_d_t7_8cpp_source}\index{HW-\/Components/devices/remote\_control/src/DT7.cpp@{HW-\/Components/devices/remote\_control/src/DT7.cpp}}
+\mbox{\hyperlink{_d_t7_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00015}00015\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00016}00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_d_t7_8hpp}{DT7.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00018}00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{assert_8hpp}{assert.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00020}00020\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacehello__world}{hello\_world}}}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00021}00021\ \{}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00022}00022\ \textcolor{keyword}{namespace\ }devices}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00023}00023\ \{}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00024}00024\ \textcolor{keyword}{namespace\ }remote\_control}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00025}00025\ \{}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00026}00026\ \textcolor{comment}{/*\ Private\ macro\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00027}00027\ \textcolor{comment}{/*\ Private\ constants\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00029}\mbox{\hyperlink{namespacehello__world_1_1devices_1_1remote__control_a3d0a022d873c897523cc02e729183d96}{00029}}\ \textcolor{keyword}{static}\ uint16\_t\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1remote__control_a3d0a022d873c897523cc02e729183d96}{kRcOffset}}\ =\ 1024u;}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00030}\mbox{\hyperlink{namespacehello__world_1_1devices_1_1remote__control_a14bbfac5955f9e1c168041d2984edac2}{00030}}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1remote__control_a14bbfac5955f9e1c168041d2984edac2}{kRcRatio}}\ =\ 1.0f\ /\ 660;}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00031}00031\ \textcolor{comment}{/*\ Private\ types\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00032}00032\ \textcolor{comment}{/*\ Private\ variables\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00033}00033\ \textcolor{comment}{/*\ External\ variables\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00034}00034\ \textcolor{comment}{/*\ Private\ function\ prototypes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00042}\mbox{\hyperlink{classhello__world_1_1devices_1_1remote__control_1_1_d_t7_a1474ba78e4ff59c171227b1b8cf09430}{00042}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1remote__control_1_1_d_t7_a1474ba78e4ff59c171227b1b8cf09430}{DT7::decode}}(\textcolor{keyword}{const}\ uint8\_t\ rx\_data[\mbox{\hyperlink{namespacehello__world_1_1devices_1_1remote__control_a72131314879f315c3a89dba97fc51620}{kRcRxDataLen}}])}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00043}00043\ \{}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00044}00044\ \ \ uint16\_t\ tmp;}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00046}00046\ \ \ tmp\ =\ (rx\_data[0]\ |\ (rx\_data[1]\ <<\ 8))\ \&\ 0x07FF;}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00047}00047\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1remote__control_1_1_d_t7_a8ba28c7c52f761640a8e5ff8c4e4bf5f}{rc\_rh\_}}\ =\ (tmp\ -\/\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1remote__control_a3d0a022d873c897523cc02e729183d96}{kRcOffset}})\ *\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1remote__control_a14bbfac5955f9e1c168041d2984edac2}{kRcRatio}};}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00048}00048\ \ \ tmp\ =\ ((rx\_data[1]\ >>\ 3)\ |\ (rx\_data[2]\ <<\ 5))\ \&\ 0x07FF;}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00049}00049\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1remote__control_1_1_d_t7_a988a560344c934e74385d6f06d598253}{rc\_rv\_}}\ =\ (tmp\ -\/\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1remote__control_a3d0a022d873c897523cc02e729183d96}{kRcOffset}})\ *\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1remote__control_a14bbfac5955f9e1c168041d2984edac2}{kRcRatio}};}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00050}00050\ \ \ tmp\ =\ ((rx\_data[2]\ >>\ 6)\ |\ (rx\_data[3]\ <<\ 2)\ |\ (rx\_data[4]\ <<\ 10))\ \&\ 0x07FF;}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00051}00051\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1remote__control_1_1_d_t7_aca95e0afa0523650dae2de3d44c1ce29}{rc\_lh\_}}\ =\ (tmp\ -\/\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1remote__control_a3d0a022d873c897523cc02e729183d96}{kRcOffset}})\ *\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1remote__control_a14bbfac5955f9e1c168041d2984edac2}{kRcRatio}};}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00052}00052\ \ \ tmp\ =\ ((rx\_data[4]\ >>\ 1)\ |\ (rx\_data[5]\ <<\ 7))\ \&\ 0x07FF;}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00053}00053\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1remote__control_1_1_d_t7_a465e1669a8d4be71940ec7f1f235e056}{rc\_lv\_}}\ =\ (tmp\ -\/\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1remote__control_a3d0a022d873c897523cc02e729183d96}{kRcOffset}})\ *\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1remote__control_a14bbfac5955f9e1c168041d2984edac2}{kRcRatio}};}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00054}00054\ \ \ tmp\ =\ rx\_data[16]\ |\ (rx\_data[17]\ <<\ 8);}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00055}00055\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1remote__control_1_1_d_t7_a4cdc9c3b3a26c1f2718a234877ff6c9b}{rc\_wheel\_}}\ =\ (tmp\ -\/\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1remote__control_a3d0a022d873c897523cc02e729183d96}{kRcOffset}})\ *\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1remote__control_a14bbfac5955f9e1c168041d2984edac2}{kRcRatio}};}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00057}00057\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1remote__control_1_1_d_t7_ad34bc387f429e97a79baa6b512f830b9}{rc\_l\_switch\_}}\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1remote__control_a8fbf90111209d1c457301aec678d7de7}{SwitchState}}(((rx\_data[5]\ >>\ 4)\ \&\ 0x000C)\ >>\ 2);}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00058}00058\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1remote__control_1_1_d_t7_ad4902e41fe1b1367b385f19a18f800cf}{rc\_r\_switch\_}}\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1remote__control_a8fbf90111209d1c457301aec678d7de7}{SwitchState}}((rx\_data[5]\ >>\ 4)\ \&\ 0x0003);}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00060}00060\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1remote__control_1_1_d_t7_ab3bf56de7468f335dbac55558335631c}{mouse\_x\_}}\ =\ rx\_data[6]\ |\ (rx\_data[7]\ <<\ 8);}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00061}00061\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1remote__control_1_1_d_t7_ab4078a534e8549e75f4dc2d3fb5fd2fe}{mouse\_y\_}}\ =\ rx\_data[8]\ |\ (rx\_data[9]\ <<\ 8);}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00062}00062\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1remote__control_1_1_d_t7_a8b1445d2ba4364313f95c2e1ff27d581}{mouse\_z\_}}\ =\ rx\_data[10]\ |\ (rx\_data[11]\ <<\ 8);}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00063}00063\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1remote__control_1_1_d_t7_a9d07a442ff69f1da1a86ccce61116fe9}{mouse\_l\_btn\_}}\ =\ rx\_data[12];}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00064}00064\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1remote__control_1_1_d_t7_a9b943bcc731c858647d6bace847904f4}{mouse\_r\_btn\_}}\ =\ rx\_data[13];}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00066}00066\ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1remote__control_1_1_d_t7_a77b9bcb8c78f34c39cbbf17fb4c33cf3}{key\_}}.data\ =\ rx\_data[14]\ |\ (rx\_data[15]\ <<\ 8);}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00067}00067\ \}}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00068}00068\ \}\ \ \textcolor{comment}{//\ namespace\ remote\_control}}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00069}00069\ \}\ \ \textcolor{comment}{//\ namespace\ devices}}
+\DoxyCodeLine{\Hypertarget{_d_t7_8cpp_source_l00070}00070\ \}\ \ \textcolor{comment}{//\ namespace\ hello\_world}}
+
+\end{DoxyCode}

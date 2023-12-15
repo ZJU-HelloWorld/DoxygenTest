@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_dfbdbdcde8a2fe547c183211b54cc819" xml:lang="zh">
+<title>HW-Components/algorithms/controller/inc 目录参考</title>
+<indexterm><primary>HW-Components/algorithms/controller/inc 目录参考</primary></indexterm>
+inc 的目录依赖关系图<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_dfbdbdcde8a2fe547c183211b54cc819_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>文件    </title>
+        <itemizedlist>
+            <listitem><para>文件 <link linkend="_controller_8hpp">controller.hpp</link></para>
+
+<para>: @history : Version Date Author Note V0.9.0 yyyy-mm-dd &lt;author&gt; 1. </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_controller__base_8hpp">controller_base.hpp</link></para>
+
+<para>: @history : Version Date Author Note V0.9.0 2023-11-25 Caikunzhen 1. </para>
+</listitem>
+            <listitem><para>文件 <link linkend="_pid_8hpp">pid.hpp</link></para>
+</listitem>
+            <listitem><para>文件 <link linkend="_pid__opt_8hpp">pid_opt.hpp</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

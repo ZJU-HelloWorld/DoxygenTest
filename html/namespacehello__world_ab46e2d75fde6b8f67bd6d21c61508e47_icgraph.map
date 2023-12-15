@@ -1,0 +1,19 @@
+<map id="hello_world::PeriodDataSub" name="hello_world::PeriodDataSub">
+<area shape="rect" id="Node000001" title="处理角度越过0值的情况，以半周期为基准" alt="" coords="1179,60,1360,85"/>
+<area shape="rect" id="Node000002" href="$namespacehello__world.html#a7c9ce795c80c4bc674e5470984f99105" title=" " alt="" coords="964,21,1131,61"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1163,60,1131,55,1132,50,1164,55"/>
+<area shape="rect" id="Node000008" href="$namespacehello__world.html#a7640febc082ad62910c63a8feac1c002" title=" " alt="" coords="964,85,1131,125"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="1164,90,1132,95,1131,90,1163,85"/>
+<area shape="rect" id="Node000003" href="$namespacehello__world_1_1algorithms_1_1controller_1_1pid.html#a54cdae6f66cea881673bd9e6b366324c" title="处理角度跨越 0 度的情况" alt="" coords="712,53,916,93"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="949,57,917,61,916,56,949,52"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid.html#a2b8667e517f1999ec3fecffe9e6bd33d" title="PID 控制器的计算函数" alt="" coords="464,53,664,93"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="697,75,664,75,664,70,697,70"/>
+<area shape="rect" id="Node000005" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#accc1fd43233ab6d228f7111eab364c51" title="计算级联 PID 控制器的输出" alt="" coords="235,5,416,60"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="449,56,416,51,417,45,450,51"/>
+<area shape="rect" id="Node000007" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a180ce707d30cae5f45ec5820d1b2c50c" title="计算并行 PID 控制器的输出" alt="" coords="235,84,416,139"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="450,94,417,99,416,94,449,89"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#ae10478e0d731be3f6e6d0c479964d448" title="计算 PID 控制器的输出" alt="" coords="5,45,187,100"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="220,54,187,59,187,54,220,48"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="220,96,187,91,187,85,220,91"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="949,94,916,89,917,84,949,89"/>
+</map>

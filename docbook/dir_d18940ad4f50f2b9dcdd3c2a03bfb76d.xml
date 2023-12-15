@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_d18940ad4f50f2b9dcdd3c2a03bfb76d" xml:lang="zh">
+<title>HW-Components/devices/servo 目录参考</title>
+<indexterm><primary>HW-Components/devices/servo 目录参考</primary></indexterm>
+servo 的目录依赖关系图<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_d18940ad4f50f2b9dcdd3c2a03bfb76d_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>目录    </title>
+        <itemizedlist>
+            <listitem><para>目录 <link linkend="_dir_248691359b536a5250b7dbec5b644a56">inc</link></para>
+</listitem>
+            <listitem><para>目录 <link linkend="_dir_2964721703866b110baeefc79de2c8d8">src</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,626 @@
+\doxysection{hello\+\_\+world 命名空间参考}
+\hypertarget{namespacehello__world}{}\label{namespacehello__world}\index{hello\_world@{hello\_world}}
+\doxysubsubsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacehello__world_1_1algorithms}{algorithms}}
+\item 
+namespace \mbox{\hyperlink{namespacehello__world_1_1devices}{devices}}
+\item 
+namespace \mbox{\hyperlink{namespacehello__world_1_1dsp}{dsp}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classhello__world_1_1_mem_mang}{Mem\+Mang}}
+\item 
+class \mbox{\hyperlink{classhello__world_1_1_wheel}{Wheel}}
+\item 
+struct \mbox{\hyperlink{structhello__world_1_1_wheel_params}{Wheel\+Params}}
+\item 
+class \mbox{\hyperlink{classhello__world_1_1_wheel_pos}{Wheel\+Pos}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespacehello__world_a59b36a6fc3476beb679947a6db5407cd}{Wheel\+Type}} \{ \newline
+\mbox{\hyperlink{namespacehello__world_a59b36a6fc3476beb679947a6db5407cda4cd1ce9be6b5546c52ffd46d1a35d6f0}{Fixed\+Standard\+Wheel}}
+, \mbox{\hyperlink{namespacehello__world_a59b36a6fc3476beb679947a6db5407cdad7b89f5275c1339d4dc453714243b204}{Steered\+Standard\+Wheel}}
+, \mbox{\hyperlink{namespacehello__world_a59b36a6fc3476beb679947a6db5407cdaae017b824d45d1915f2f0991a132243d}{Castor\+Wheel}}
+, \mbox{\hyperlink{namespacehello__world_a59b36a6fc3476beb679947a6db5407cda60a5924ec81e29b039c0e17fc94fbec2}{Swedish\+Wheel}}
+, \newline
+\mbox{\hyperlink{namespacehello__world_a59b36a6fc3476beb679947a6db5407cdae4e9d6a3b1b75a5402efd2402294de6c}{Spherical\+Wheel}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\uint8\+\_\+t \mbox{\hyperlink{namespacehello__world_a0a24a2113234e7e7a7328e70bedb91c1}{Get\+Sign}} (T x)
+\begin{DoxyCompactList}\small\item\em 获取变量的符号 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{namespacehello__world_aa015d79000267b9839acf531c7dbc7a6}{Max}} (T x1, T x2)
+\begin{DoxyCompactList}\small\item\em 获取两个变量间的最大值 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{namespacehello__world_a94594f3432536927055026f3f48af251}{Min}} (T x1, T x2)
+\begin{DoxyCompactList}\small\item\em 获取两个变量间的最小值 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 , typename T3 $>$ }\\T1 \mbox{\hyperlink{namespacehello__world_a34cb06299a34f746d556d23dc16904aa}{Bound}} (T1 x, T2 lim1, T3 lim2)
+\begin{DoxyCompactList}\small\item\em 将输入值限制在一个范围内 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{namespacehello__world_aadc1f0af4d10150fcd1a306c7dc6515c}{Is\+In\+Range}} (T x, T bound1, T bound2)
+\begin{DoxyCompactList}\small\item\em 判断变量是否位于给定的范围内 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespacehello__world_a71f5ddbc81f1fa181ecefaf0b1f51fa8}{Norm\+Period\+Data}} (float period\+\_\+lb, float period\+\_\+ub, float data)
+\begin{DoxyCompactList}\small\item\em 将周期性数据归一化到指定周期区间 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespacehello__world_aa2fc22e21a1835072f26dea54497255c}{Period\+Data2\+Same\+Region}} (float period\+\_\+lb, float period\+\_\+ub, float ref\+\_\+data, float data)
+\begin{DoxyCompactList}\small\item\em 将待处理数据平移到参考数据的所在周期中 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespacehello__world_a8d23c04b152e4fb0c195a75e185f75ed}{Period\+Data2\+Nearest\+Dist}} (float period, float ref\+\_\+data, float data)
+\begin{DoxyCompactList}\small\item\em 将待处理数据平移到距离参考数据最近的值 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespacehello__world_a2b175ee3711275a8279ab6553620bca7}{Angle\+Norm\+Rad}} (float angle)
+\begin{DoxyCompactList}\small\item\em 将角度归一化到\mbox{[}-\/π, π) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespacehello__world_aa44c70128980881ac6260af9f928309a}{Angle\+Norm\+Deg}} (float angle)
+\begin{DoxyCompactList}\small\item\em 将角度归一化到\mbox{[}-\/180°, 180°) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespacehello__world_ab46e2d75fde6b8f67bd6d21c61508e47}{Period\+Data\+Sub}} (float minuend, float subtrahend, float period)
+\begin{DoxyCompactList}\small\item\em 处理角度越过0值的情况，以半周期为基准 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespacehello__world_a7640febc082ad62910c63a8feac1c002}{Handle\+Angle\+Cross0\+Rad}} (float ref, float fdb)
+\item 
+float \mbox{\hyperlink{namespacehello__world_a7c9ce795c80c4bc674e5470984f99105}{Handle\+Angle\+Cross0\+Deg}} (float ref, float fdb)
+\item 
+float \mbox{\hyperlink{namespacehello__world_a8592f8f4b1bf9644d335a61a9d39c543}{Rad2\+Deg}} (float angle)
+\begin{DoxyCompactList}\small\item\em 将弧度制角度转换为角度制 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespacehello__world_afe0a0d8e82fa09f451155c7b2145121c}{Deg2\+Rad}} (float angle)
+\begin{DoxyCompactList}\small\item\em 将角度制角度转换为弧度制 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+static const float \mbox{\hyperlink{namespacehello__world_a8582e15cc16c32ad80a0d6873cf3f830}{k\+Grav\+Acc}} = 9.\+7936f
+\item 
+static const float \mbox{\hyperlink{namespacehello__world_a219e78545f9e9d3987fae46cf7fcdd75}{k\+Rad2\+Deg\+Coff}} = 180 / \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}}
+\item 
+static const float \mbox{\hyperlink{namespacehello__world_aff7ca8b5f1a544cfb645d20c17b2ebcf}{k\+Deg2\+Rad\+Coff}} = \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}} / 180
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{枚举类型说明}
+\Hypertarget{namespacehello__world_a59b36a6fc3476beb679947a6db5407cd}\label{namespacehello__world_a59b36a6fc3476beb679947a6db5407cd} 
+\index{hello\_world@{hello\_world}!WheelType@{WheelType}}
+\index{WheelType@{WheelType}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{WheelType}{WheelType}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{namespacehello__world_a59b36a6fc3476beb679947a6db5407cd}{hello\+\_\+world\+::\+Wheel\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FixedStandardWheel@{FixedStandardWheel}!hello\_world@{hello\_world}}\index{hello\_world@{hello\_world}!FixedStandardWheel@{FixedStandardWheel}}}\Hypertarget{namespacehello__world_a59b36a6fc3476beb679947a6db5407cda4cd1ce9be6b5546c52ffd46d1a35d6f0}\label{namespacehello__world_a59b36a6fc3476beb679947a6db5407cda4cd1ce9be6b5546c52ffd46d1a35d6f0} 
+Fixed\+Standard\+Wheel&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SteeredStandardWheel@{SteeredStandardWheel}!hello\_world@{hello\_world}}\index{hello\_world@{hello\_world}!SteeredStandardWheel@{SteeredStandardWheel}}}\Hypertarget{namespacehello__world_a59b36a6fc3476beb679947a6db5407cdad7b89f5275c1339d4dc453714243b204}\label{namespacehello__world_a59b36a6fc3476beb679947a6db5407cdad7b89f5275c1339d4dc453714243b204} 
+Steered\+Standard\+Wheel&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CastorWheel@{CastorWheel}!hello\_world@{hello\_world}}\index{hello\_world@{hello\_world}!CastorWheel@{CastorWheel}}}\Hypertarget{namespacehello__world_a59b36a6fc3476beb679947a6db5407cdaae017b824d45d1915f2f0991a132243d}\label{namespacehello__world_a59b36a6fc3476beb679947a6db5407cdaae017b824d45d1915f2f0991a132243d} 
+Castor\+Wheel&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SwedishWheel@{SwedishWheel}!hello\_world@{hello\_world}}\index{hello\_world@{hello\_world}!SwedishWheel@{SwedishWheel}}}\Hypertarget{namespacehello__world_a59b36a6fc3476beb679947a6db5407cda60a5924ec81e29b039c0e17fc94fbec2}\label{namespacehello__world_a59b36a6fc3476beb679947a6db5407cda60a5924ec81e29b039c0e17fc94fbec2} 
+Swedish\+Wheel&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SphericalWheel@{SphericalWheel}!hello\_world@{hello\_world}}\index{hello\_world@{hello\_world}!SphericalWheel@{SphericalWheel}}}\Hypertarget{namespacehello__world_a59b36a6fc3476beb679947a6db5407cdae4e9d6a3b1b75a5402efd2402294de6c}\label{namespacehello__world_a59b36a6fc3476beb679947a6db5407cdae4e9d6a3b1b75a5402efd2402294de6c} 
+Spherical\+Wheel&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{chassis__iksolver_8hpp_source}{chassis\+\_\+iksolver.\+hpp}} 第 \mbox{\hyperlink{chassis__iksolver_8hpp_source_l00032}{32}} 行定义.
+
+
+
+\doxysubsection{函数说明}
+\Hypertarget{namespacehello__world_aa44c70128980881ac6260af9f928309a}\label{namespacehello__world_aa44c70128980881ac6260af9f928309a} 
+\index{hello\_world@{hello\_world}!AngleNormDeg@{AngleNormDeg}}
+\index{AngleNormDeg@{AngleNormDeg}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{AngleNormDeg()}{AngleNormDeg()}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::\+Angle\+Norm\+Deg (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+将角度归一化到\mbox{[}-\/180°, 180°) 
+
+
+\begin{DoxyParams}{参数}
+{\em angle} & 待归一化角度，单位：deg \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 归一化后的角度，单位：deg} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+None 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00205}{205}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehello__world_aa44c70128980881ac6260af9f928309a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacehello__world_a2b175ee3711275a8279ab6553620bca7}\label{namespacehello__world_a2b175ee3711275a8279ab6553620bca7} 
+\index{hello\_world@{hello\_world}!AngleNormRad@{AngleNormRad}}
+\index{AngleNormRad@{AngleNormRad}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{AngleNormRad()}{AngleNormRad()}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::\+Angle\+Norm\+Rad (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+将角度归一化到\mbox{[}-\/π, π) 
+
+
+\begin{DoxyParams}{参数}
+{\em angle} & 待归一化角度，单位：rad \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 归一化后的角度，单位：rad} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+None 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00194}{194}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehello__world_a2b175ee3711275a8279ab6553620bca7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacehello__world_a34cb06299a34f746d556d23dc16904aa}\label{namespacehello__world_a34cb06299a34f746d556d23dc16904aa} 
+\index{hello\_world@{hello\_world}!Bound@{Bound}}
+\index{Bound@{Bound}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{Bound()}{Bound()}}
+{\footnotesize\ttfamily template$<$typename T1 , typename T2 , typename T3 $>$ \\
+T1 hello\+\_\+world\+::\+Bound (\begin{DoxyParamCaption}\item[{T1}]{x,  }\item[{T2}]{lim1,  }\item[{T3}]{lim2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+将输入值限制在一个范围内 
+
+
+\begin{DoxyParams}{参数}
+{\em x} & 待范围限制变量 \\
+\hline
+{\em lim1} & 范围边界1 \\
+\hline
+{\em lim2} & 范围边界2 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 范围限制后的值} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+无需考虑两个范围边界的相对大小关系，变量需要支持大小比较 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00092}{92}} 行定义.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehello__world_a34cb06299a34f746d556d23dc16904aa_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacehello__world_afe0a0d8e82fa09f451155c7b2145121c}\label{namespacehello__world_afe0a0d8e82fa09f451155c7b2145121c} 
+\index{hello\_world@{hello\_world}!Deg2Rad@{Deg2Rad}}
+\index{Deg2Rad@{Deg2Rad}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{Deg2Rad()}{Deg2Rad()}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::\+Deg2\+Rad (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+将角度制角度转换为弧度制 
+
+
+\begin{DoxyParams}{参数}
+{\em angle} & 待转换角度，单位：deg \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 输入角度的弧度制表示} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+None 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00256}{256}} 行定义.
+
+\Hypertarget{namespacehello__world_a0a24a2113234e7e7a7328e70bedb91c1}\label{namespacehello__world_a0a24a2113234e7e7a7328e70bedb91c1} 
+\index{hello\_world@{hello\_world}!GetSign@{GetSign}}
+\index{GetSign@{GetSign}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{GetSign()}{GetSign()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+uint8\+\_\+t hello\+\_\+world\+::\+Get\+Sign (\begin{DoxyParamCaption}\item[{T}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取变量的符号 
+
+
+\begin{DoxyParams}{参数}
+{\em x} & 输入变量 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 输入变量的符号} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+只有支持大小比较的变量才可使用该函数 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00046}{46}} 行定义.
+
+\Hypertarget{namespacehello__world_a7c9ce795c80c4bc674e5470984f99105}\label{namespacehello__world_a7c9ce795c80c4bc674e5470984f99105} 
+\index{hello\_world@{hello\_world}!HandleAngleCross0Deg@{HandleAngleCross0Deg}}
+\index{HandleAngleCross0Deg@{HandleAngleCross0Deg}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{HandleAngleCross0Deg()}{HandleAngleCross0Deg()}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::\+Handle\+Angle\+Cross0\+Deg (\begin{DoxyParamCaption}\item[{float}]{ref,  }\item[{float}]{fdb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00237}{237}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehello__world_a7c9ce795c80c4bc674e5470984f99105_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehello__world_a7c9ce795c80c4bc674e5470984f99105_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacehello__world_a7640febc082ad62910c63a8feac1c002}\label{namespacehello__world_a7640febc082ad62910c63a8feac1c002} 
+\index{hello\_world@{hello\_world}!HandleAngleCross0Rad@{HandleAngleCross0Rad}}
+\index{HandleAngleCross0Rad@{HandleAngleCross0Rad}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{HandleAngleCross0Rad()}{HandleAngleCross0Rad()}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::\+Handle\+Angle\+Cross0\+Rad (\begin{DoxyParamCaption}\item[{float}]{ref,  }\item[{float}]{fdb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00233}{233}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehello__world_a7640febc082ad62910c63a8feac1c002_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehello__world_a7640febc082ad62910c63a8feac1c002_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacehello__world_aadc1f0af4d10150fcd1a306c7dc6515c}\label{namespacehello__world_aadc1f0af4d10150fcd1a306c7dc6515c} 
+\index{hello\_world@{hello\_world}!IsInRange@{IsInRange}}
+\index{IsInRange@{IsInRange}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{IsInRange()}{IsInRange()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool hello\+\_\+world\+::\+Is\+In\+Range (\begin{DoxyParamCaption}\item[{T}]{x,  }\item[{T}]{bound1,  }\item[{T}]{bound2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+判断变量是否位于给定的范围内 
+
+
+\begin{DoxyParams}{参数}
+{\em bound1} & 范围边界1（含） \\
+\hline
+{\em bound2} & 范围边界2（含） \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 变量是否位于给定的范围内} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+无需考虑两个范围边界的相对大小关系，变量需要支持大小比较 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00120}{120}} 行定义.
+
+\Hypertarget{namespacehello__world_aa015d79000267b9839acf531c7dbc7a6}\label{namespacehello__world_aa015d79000267b9839acf531c7dbc7a6} 
+\index{hello\_world@{hello\_world}!Max@{Max}}
+\index{Max@{Max}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{Max()}{Max()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T hello\+\_\+world\+::\+Max (\begin{DoxyParamCaption}\item[{T}]{x1,  }\item[{T}]{x2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取两个变量间的最大值 
+
+
+\begin{DoxyParams}{参数}
+{\em x1} & 比较变量1 \\
+\hline
+{\em x2} & 比较变量1 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 二者间的最大值} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+只有支持大小比较的变量才可使用该函数 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00065}{65}} 行定义.
+
+\Hypertarget{namespacehello__world_a94594f3432536927055026f3f48af251}\label{namespacehello__world_a94594f3432536927055026f3f48af251} 
+\index{hello\_world@{hello\_world}!Min@{Min}}
+\index{Min@{Min}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{Min()}{Min()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T hello\+\_\+world\+::\+Min (\begin{DoxyParamCaption}\item[{T}]{x1,  }\item[{T}]{x2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取两个变量间的最小值 
+
+
+\begin{DoxyParams}{参数}
+{\em x1} & 比较变量1 \\
+\hline
+{\em x2} & 比较变量1 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 二者间的最小值} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+只有支持大小比较的变量才可使用该函数 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00078}{78}} 行定义.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehello__world_a94594f3432536927055026f3f48af251_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacehello__world_a71f5ddbc81f1fa181ecefaf0b1f51fa8}\label{namespacehello__world_a71f5ddbc81f1fa181ecefaf0b1f51fa8} 
+\index{hello\_world@{hello\_world}!NormPeriodData@{NormPeriodData}}
+\index{NormPeriodData@{NormPeriodData}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{NormPeriodData()}{NormPeriodData()}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::\+Norm\+Period\+Data (\begin{DoxyParamCaption}\item[{float}]{period\+\_\+lb,  }\item[{float}]{period\+\_\+ub,  }\item[{float}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+将周期性数据归一化到指定周期区间 
+
+
+\begin{DoxyParams}{参数}
+{\em period\+\_\+lb} & 周期区间下界（含） \\
+\hline
+{\em period\+\_\+ub} & 周期区间上界 \\
+\hline
+{\em data} & 待归一化数据 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 归一化后的数据} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+period\+\_\+lb 必须小于 period\+\_\+ub 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00137}{137}} 行定义.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehello__world_a71f5ddbc81f1fa181ecefaf0b1f51fa8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacehello__world_a8d23c04b152e4fb0c195a75e185f75ed}\label{namespacehello__world_a8d23c04b152e4fb0c195a75e185f75ed} 
+\index{hello\_world@{hello\_world}!PeriodData2NearestDist@{PeriodData2NearestDist}}
+\index{PeriodData2NearestDist@{PeriodData2NearestDist}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{PeriodData2NearestDist()}{PeriodData2NearestDist()}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::\+Period\+Data2\+Nearest\+Dist (\begin{DoxyParamCaption}\item[{float}]{period,  }\item[{float}]{ref\+\_\+data,  }\item[{float}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+将待处理数据平移到距离参考数据最近的值 
+
+
+\begin{DoxyParams}{参数}
+{\em period} & 周期 \\
+\hline
+{\em ref\+\_\+data} & 参考数据 \\
+\hline
+{\em data} & 待处理数据 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 平移后的数据} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+None 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00180}{180}} 行定义.
+
+\Hypertarget{namespacehello__world_aa2fc22e21a1835072f26dea54497255c}\label{namespacehello__world_aa2fc22e21a1835072f26dea54497255c} 
+\index{hello\_world@{hello\_world}!PeriodData2SameRegion@{PeriodData2SameRegion}}
+\index{PeriodData2SameRegion@{PeriodData2SameRegion}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{PeriodData2SameRegion()}{PeriodData2SameRegion()}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::\+Period\+Data2\+Same\+Region (\begin{DoxyParamCaption}\item[{float}]{period\+\_\+lb,  }\item[{float}]{period\+\_\+ub,  }\item[{float}]{ref\+\_\+data,  }\item[{float}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+将待处理数据平移到参考数据的所在周期中 
+
+
+\begin{DoxyParams}{参数}
+{\em period\+\_\+lb} & 周期区间下界（含） \\
+\hline
+{\em period\+\_\+ub} & 周期区间上界 \\
+\hline
+{\em ref\+\_\+data} & 参考数据（无需再周期区间之内） \\
+\hline
+{\em data} & 待处理数据 \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 平移后的数据} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+period\+\_\+lb 必须小于 period\+\_\+ub 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00160}{160}} 行定义.
+
+\Hypertarget{namespacehello__world_ab46e2d75fde6b8f67bd6d21c61508e47}\label{namespacehello__world_ab46e2d75fde6b8f67bd6d21c61508e47} 
+\index{hello\_world@{hello\_world}!PeriodDataSub@{PeriodDataSub}}
+\index{PeriodDataSub@{PeriodDataSub}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{PeriodDataSub()}{PeriodDataSub()}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::\+Period\+Data\+Sub (\begin{DoxyParamCaption}\item[{float}]{minuend,  }\item[{float}]{subtrahend,  }\item[{float}]{period }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+处理角度越过0值的情况，以半周期为基准 
+
+
+\begin{DoxyParams}{参数}
+{\em ref} & 指向目标角度的指针 \\
+\hline
+{\em fdb} & 实际反馈的角度值 \\
+\hline
+{\em period} & 角度值的周期，通常是180度\\
+\hline
+\end{DoxyParams}
+处理角度越过0值的情况，确保目标角度和实际反馈的角度值在同一半周期内。 如果目标角度 -\/ 实际反馈的角度 \texorpdfstring{$>$}{>}= half\+\_\+period，则减去2 \texorpdfstring{$\ast$}{*} half\+\_\+period，确保在同一半周期内。 如果目标角度 -\/ 实际反馈的角度 \texorpdfstring{$<$}{<} -\/half\+\_\+period，则加上2 \texorpdfstring{$\ast$}{*} half\+\_\+period，确保在同一半周期内。 
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00222}{222}} 行定义.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehello__world_ab46e2d75fde6b8f67bd6d21c61508e47_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{namespacehello__world_a8592f8f4b1bf9644d335a61a9d39c543}\label{namespacehello__world_a8592f8f4b1bf9644d335a61a9d39c543} 
+\index{hello\_world@{hello\_world}!Rad2Deg@{Rad2Deg}}
+\index{Rad2Deg@{Rad2Deg}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{Rad2Deg()}{Rad2Deg()}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::\+Rad2\+Deg (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+将弧度制角度转换为角度制 
+
+
+\begin{DoxyParams}{参数}
+{\em angle} & 待转换角度，单位：rad \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 输入角度的角度制表示} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+None 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00248}{248}} 行定义.
+
+
+
+\doxysubsection{变量说明}
+\Hypertarget{namespacehello__world_aff7ca8b5f1a544cfb645d20c17b2ebcf}\label{namespacehello__world_aff7ca8b5f1a544cfb645d20c17b2ebcf} 
+\index{hello\_world@{hello\_world}!kDeg2RadCoff@{kDeg2RadCoff}}
+\index{kDeg2RadCoff@{kDeg2RadCoff}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{kDeg2RadCoff}{kDeg2RadCoff}}
+{\footnotesize\ttfamily const float hello\+\_\+world\+::k\+Deg2\+Rad\+Coff = \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}} / 180\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00034}{34}} 行定义.
+
+\Hypertarget{namespacehello__world_a8582e15cc16c32ad80a0d6873cf3f830}\label{namespacehello__world_a8582e15cc16c32ad80a0d6873cf3f830} 
+\index{hello\_world@{hello\_world}!kGravAcc@{kGravAcc}}
+\index{kGravAcc@{kGravAcc}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{kGravAcc}{kGravAcc}}
+{\footnotesize\ttfamily const float hello\+\_\+world\+::k\+Grav\+Acc = 9.\+7936f\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00032}{32}} 行定义.
+
+\Hypertarget{namespacehello__world_a219e78545f9e9d3987fae46cf7fcdd75}\label{namespacehello__world_a219e78545f9e9d3987fae46cf7fcdd75} 
+\index{hello\_world@{hello\_world}!kRad2DegCoff@{kRad2DegCoff}}
+\index{kRad2DegCoff@{kRad2DegCoff}!hello\_world@{hello\_world}}
+\doxysubsubsection{\texorpdfstring{kRad2DegCoff}{kRad2DegCoff}}
+{\footnotesize\ttfamily const float hello\+\_\+world\+::k\+Rad2\+Deg\+Coff = 180 / \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyItemize}
+\item 重力加速度（杭州） 
+\end{DoxyItemize}
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00033}{33}} 行定义.
+

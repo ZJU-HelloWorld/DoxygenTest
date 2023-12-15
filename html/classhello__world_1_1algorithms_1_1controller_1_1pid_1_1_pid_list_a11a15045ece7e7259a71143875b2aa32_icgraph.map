@@ -1,0 +1,18 @@
+<map id="hello_world::algorithms::controller::pid::PidList::size" name="hello_world::algorithms::controller::pid::PidList::size">
+<area shape="rect" id="Node000001" title="获取链表的大小" alt="" coords="464,210,652,250"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#accc1fd43233ab6d228f7111eab364c51" title="计算级联 PID 控制器的输出" alt="" coords="235,5,416,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="532,199,482,136,450,103,414,73,397,63,400,58,418,69,454,99,486,133,537,196"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a8e4bfd26c1bb829f58d3fb14e80c4c0b" title="构造函数，初始化 MultiNodesPid 对象，至少会存在一个 PID 控制器节点，推荐和 paramsAt 函数一起使用" alt="" coords="235,84,416,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="510,205,415,152,392,142,395,137,417,148,512,200"/>
+<area shape="rect" id="Node000005" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a9a3282e6e51a5b7689717079f0d25abe" title="构造函数，初始化 MultiNodesPid 对象，至少会存在一个 PID 控制器节点" alt="" coords="235,163,416,217"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="449,214,416,208,417,203,450,209"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a180ce707d30cae5f45ec5820d1b2c50c" title="计算并行 PID 控制器的输出" alt="" coords="235,241,416,296"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="450,251,417,256,416,251,449,245"/>
+<area shape="rect" id="Node000007" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a5edb64efe535b8e5b8b1e30a91f28fe0" title="重置 PID 控制器" alt="" coords="235,320,416,375"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="510,260,417,310,392,322,390,317,415,305,507,255"/>
+<area shape="rect" id="Node000008" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a02e66f815cbf9b95e4d390a456098850" title="获取 PID 控制器的数量" alt="" coords="235,399,416,453"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="536,264,486,325,453,358,418,388,398,400,395,396,414,384,450,355,482,322,532,260"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#ae10478e0d731be3f6e6d0c479964d448" title="计算 PID 控制器的输出" alt="" coords="5,124,187,179"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="245,69,236,74,143,126,140,121,233,69,243,64"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="245,237,233,231,143,182,146,177,236,226,248,232"/>
+</map>

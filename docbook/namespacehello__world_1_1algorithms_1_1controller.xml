@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacehello__world_1_1algorithms_1_1controller" xml:lang="zh">
+<title>hello_world::algorithms::controller 命名空间参考</title>
+<indexterm><primary>hello_world::algorithms::controller</primary></indexterm>
+<simplesect>
+    <title>命名空间    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacehello__world_1_1algorithms_1_1controller_1_1pid">pid</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>类    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1_controller">Controller</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>枚举    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> { <link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>
+, <link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>枚举类型说明</title>
+<anchor xml:id="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d"/><section>
+    <title>State</title>
+<indexterm><primary>State</primary><secondary>hello_world::algorithms::controller</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller</primary><secondary>State</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">hello_world::algorithms::controller::State</link></computeroutput></para><informaltable frame="all">
+<title>枚举值</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>kStateOk</primary><secondary>hello_world::algorithms::controller</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller</primary><secondary>kStateOk</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53"/>kStateOk</entry><entry></entry></row><row><entry><indexterm><primary>kStateError</primary><secondary>hello_world::algorithms::controller</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller</primary><secondary>kStateError</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9"/>kStateError</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+在文件 <link linkend="_controller__base_8hpp_source">controller_base.hpp</link> 第 <link linkend="_controller__base_8hpp_source_1l00032">32</link> 行定义.</para>
+</section>
+</section>
+</section>

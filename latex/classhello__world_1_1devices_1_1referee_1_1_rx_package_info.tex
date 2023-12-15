@@ -1,0 +1,168 @@
+\doxysection{hello\+\_\+world\+::devices\+::referee\+::Rx\+Package\+Info类 参考}
+\hypertarget{classhello__world_1_1devices_1_1referee_1_1_rx_package_info}{}\label{classhello__world_1_1devices_1_1referee_1_1_rx_package_info}\index{hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}}
+
+
+{\ttfamily \#include $<$referee\+\_\+rx\+\_\+template.\+hpp$>$}
+
+
+
+类 hello\+\_\+world\+::devices\+::referee\+::Rx\+Package\+Info 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1referee_1_1_rx_package_info__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a425addbe56cad6a94fc00d5a4beae287}{Rx\+Package\+Info}} (const \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38a}{Frame\+Cmd\+Id}} command\+\_\+id, const uint32\+\_\+t frequence)
+\item 
+void \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a2767a90b294aac66ab8268a40f89070e}{set\+Handled}} ()
+\item 
+bool \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a4d47f980c5f11bbe7bc5bf5d3cd448a4}{is\+Updated}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_acb3daf6092bba76a10fa7cc2d580a429}{decode}} (const uint8\+\_\+t \texorpdfstring{$\ast$}{*}frame\+\_\+cmd\+\_\+data\+\_\+ptr)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a652358f4036b06f1131520b6b6e8fc2a}{is\+\_\+handled\+\_\+}} = false
+\item 
+\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38a}{Frame\+Cmd\+Id}} \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a75f5994431c01325057a21f5de7394a6}{command\+\_\+id\+\_\+}} = \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa386d9b809aca2e4adb719dc9b59889ce}{k\+Frame\+Cmd\+Id\+None}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a35731243c59c43b397c3b426abd0a631}{update\+\_\+interval\+\_\+}} = 1000u
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_ae30c9a631d1bd61d4599d68b54cbfa8b}{last\+\_\+update\+\_\+tick\+\_\+}} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+friend \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_ae1e2d401d69833283bfa4d2bd4fccf16}{Referee}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{referee__rx__template_8hpp_source}{referee\+\_\+rx\+\_\+template.\+hpp}} 第 \mbox{\hyperlink{referee__rx__template_8hpp_source_l00043}{43}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a425addbe56cad6a94fc00d5a4beae287}\label{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a425addbe56cad6a94fc00d5a4beae287} 
+\index{hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}!RxPackageInfo@{RxPackageInfo}}
+\index{RxPackageInfo@{RxPackageInfo}!hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}}
+\doxysubsubsection{\texorpdfstring{RxPackageInfo()}{RxPackageInfo()}}
+{\footnotesize\ttfamily hello\+\_\+world\+::devices\+::referee\+::\+Rx\+Package\+Info\+::\+Rx\+Package\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38a}{Frame\+Cmd\+Id}}}]{command\+\_\+id,  }\item[{const uint32\+\_\+t}]{frequence }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{referee__rx__template_8hpp_source}{referee\+\_\+rx\+\_\+template.\+hpp}} 第 \mbox{\hyperlink{referee__rx__template_8hpp_source_l00055}{55}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_acb3daf6092bba76a10fa7cc2d580a429}\label{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_acb3daf6092bba76a10fa7cc2d580a429} 
+\index{hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}!decode@{decode}}
+\index{decode@{decode}!hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily virtual bool hello\+\_\+world\+::devices\+::referee\+::\+Rx\+Package\+Info\+::decode (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{frame\+\_\+cmd\+\_\+data\+\_\+ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+在 \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_a69171902885fbe16d886685130c0b9fb}{hello\+\_\+world\+::devices\+::referee\+::\+Rx\+Package$<$ T $>$}}, \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_a69171902885fbe16d886685130c0b9fb}{hello\+\_\+world\+::devices\+::referee\+::\+Rx\+Package$<$ hello\+\_\+world\+::devices\+::referee\+::\+\_\+\+\_\+\+REFEREE\+\_\+\+PACKED $>$}}, \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_a69171902885fbe16d886685130c0b9fb}{hello\+\_\+world\+::devices\+::referee\+::\+Rx\+Package$<$ Inter\+Radar\+Warning $>$}} , 以及 \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_inter_radar_warning_ab36c0be84c4a8b518e7141d77401c425}{hello\+\_\+world\+::devices\+::referee\+::\+Rx\+Package\+Inter\+Radar\+Warning}} 内被实现.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_acb3daf6092bba76a10fa7cc2d580a429_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a4d47f980c5f11bbe7bc5bf5d3cd448a4}\label{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a4d47f980c5f11bbe7bc5bf5d3cd448a4} 
+\index{hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}!isUpdated@{isUpdated}}
+\index{isUpdated@{isUpdated}!hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}}
+\doxysubsubsection{\texorpdfstring{isUpdated()}{isUpdated()}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::devices\+::referee\+::\+Rx\+Package\+Info\+::is\+Updated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{referee__rx__template_8hpp_source}{referee\+\_\+rx\+\_\+template.\+hpp}} 第 \mbox{\hyperlink{referee__rx__template_8hpp_source_l00073}{73}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a4d47f980c5f11bbe7bc5bf5d3cd448a4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a2767a90b294aac66ab8268a40f89070e}\label{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a2767a90b294aac66ab8268a40f89070e} 
+\index{hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}!setHandled@{setHandled}}
+\index{setHandled@{setHandled}!hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}}
+\doxysubsubsection{\texorpdfstring{setHandled()}{setHandled()}}
+{\footnotesize\ttfamily void hello\+\_\+world\+::devices\+::referee\+::\+Rx\+Package\+Info\+::set\+Handled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+在文件 \mbox{\hyperlink{referee__rx__template_8hpp_source}{referee\+\_\+rx\+\_\+template.\+hpp}} 第 \mbox{\hyperlink{referee__rx__template_8hpp_source_l00068}{68}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a75f5994431c01325057a21f5de7394a6}\label{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a75f5994431c01325057a21f5de7394a6} 
+\index{hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}!command\_id\_@{command\_id\_}}
+\index{command\_id\_@{command\_id\_}!hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}}
+\doxysubsubsection{\texorpdfstring{command\_id\_}{command\_id\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38a}{Frame\+Cmd\+Id}} hello\+\_\+world\+::devices\+::referee\+::\+Rx\+Package\+Info\+::command\+\_\+id\+\_\+ = \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa386d9b809aca2e4adb719dc9b59889ce}{k\+Frame\+Cmd\+Id\+None}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{referee__rx__template_8hpp_source}{referee\+\_\+rx\+\_\+template.\+hpp}} 第 \mbox{\hyperlink{referee__rx__template_8hpp_source_l00049}{49}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a652358f4036b06f1131520b6b6e8fc2a}\label{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a652358f4036b06f1131520b6b6e8fc2a} 
+\index{hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}!is\_handled\_@{is\_handled\_}}
+\index{is\_handled\_@{is\_handled\_}!hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}}
+\doxysubsubsection{\texorpdfstring{is\_handled\_}{is\_handled\_}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::devices\+::referee\+::\+Rx\+Package\+Info\+::is\+\_\+handled\+\_\+ = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{referee__rx__template_8hpp_source}{referee\+\_\+rx\+\_\+template.\+hpp}} 第 \mbox{\hyperlink{referee__rx__template_8hpp_source_l00048}{48}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_ae30c9a631d1bd61d4599d68b54cbfa8b}\label{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_ae30c9a631d1bd61d4599d68b54cbfa8b} 
+\index{hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}!last\_update\_tick\_@{last\_update\_tick\_}}
+\index{last\_update\_tick\_@{last\_update\_tick\_}!hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}}
+\doxysubsubsection{\texorpdfstring{last\_update\_tick\_}{last\_update\_tick\_}}
+{\footnotesize\ttfamily uint32\+\_\+t hello\+\_\+world\+::devices\+::referee\+::\+Rx\+Package\+Info\+::last\+\_\+update\+\_\+tick\+\_\+ = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{referee__rx__template_8hpp_source}{referee\+\_\+rx\+\_\+template.\+hpp}} 第 \mbox{\hyperlink{referee__rx__template_8hpp_source_l00051}{51}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_ae1e2d401d69833283bfa4d2bd4fccf16}\label{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_ae1e2d401d69833283bfa4d2bd4fccf16} 
+\index{hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}!Referee@{Referee}}
+\index{Referee@{Referee}!hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}}
+\doxysubsubsection{\texorpdfstring{Referee}{Referee}}
+{\footnotesize\ttfamily friend hello\+\_\+world\+::devices\+::referee\+::\+Rx\+Package\+Info\+::\+Referee\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{referee__rx__template_8hpp_source}{referee\+\_\+rx\+\_\+template.\+hpp}} 第 \mbox{\hyperlink{referee__rx__template_8hpp_source_l00045}{45}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a35731243c59c43b397c3b426abd0a631}\label{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a35731243c59c43b397c3b426abd0a631} 
+\index{hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}!update\_interval\_@{update\_interval\_}}
+\index{update\_interval\_@{update\_interval\_}!hello\_world::devices::referee::RxPackageInfo@{hello\_world::devices::referee::RxPackageInfo}}
+\doxysubsubsection{\texorpdfstring{update\_interval\_}{update\_interval\_}}
+{\footnotesize\ttfamily uint32\+\_\+t hello\+\_\+world\+::devices\+::referee\+::\+Rx\+Package\+Info\+::update\+\_\+interval\+\_\+ = 1000u\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+在文件 \mbox{\hyperlink{referee__rx__template_8hpp_source}{referee\+\_\+rx\+\_\+template.\+hpp}} 第 \mbox{\hyperlink{referee__rx__template_8hpp_source_l00050}{50}} 行定义.
+

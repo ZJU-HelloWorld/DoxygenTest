@@ -1,0 +1,5 @@
+<map id="hello_world::devices::buzzer::Buzzer::mute" name="hello_world::devices::buzzer::Buzzer::mute">
+<area shape="rect" id="Node000001" title="关闭蜂鸣器" alt="" coords="204,5,359,45"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1buzzer_1_1_buzzer.html#ab4a10c92796395a9b6c229f0bfec9cdb" title="播放乐曲" alt="" coords="5,5,156,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,28,156,28,156,23,189,23"/>
+</map>

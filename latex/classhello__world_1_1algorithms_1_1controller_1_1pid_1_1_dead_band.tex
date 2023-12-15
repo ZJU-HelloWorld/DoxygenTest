@@ -1,0 +1,328 @@
+\doxysection{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::Dead\+Band类 参考}
+\hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band}{}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band}\index{hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}}
+
+
+死区优化类  
+
+
+
+
+{\ttfamily \#include $<$pid\+\_\+opt.\+hpp$>$}
+
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_ab1dc5574bcf81f9eef3c0fa6f8b60f3b}{Dead\+Band}} (bool is\+\_\+enabled=false, float lower=-\/0.\+01, float upper=0.\+01)
+\begin{DoxyCompactList}\small\item\em 构造函数，初始化死区优化参数 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_ad973a9b6e41cb2ae18102b2fb8ecf451}{set\+Enabled}} (bool is\+\_\+enabled)
+\begin{DoxyCompactList}\small\item\em 设置是否启用死区优化 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_ad92aba81aeae786833987d340da6d28d}{set\+Lower}} (float lower)
+\begin{DoxyCompactList}\small\item\em 设置死区下限 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a58c526f8628df6c9baf2de0d253af75b}{set\+Upper}} (float upper)
+\begin{DoxyCompactList}\small\item\em 设置死区上限 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a46a07d46aeb0bef20bc732cad70b6f40}{set\+Params}} (bool is\+\_\+enabled, float lower, float upper)
+\begin{DoxyCompactList}\small\item\em 设置死区优化参数 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a3e0c3a79e1424e86dd8d642a65814389}{is\+Legal}} ()
+\begin{DoxyCompactList}\small\item\em 检查死区优化参数是否合法 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_aad31e9ef7c315aea7c9ff7e06d6740b9}{is\+Enabled}} ()
+\begin{DoxyCompactList}\small\item\em 检查是否启用了死区优化 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_adff792034723f0cc61648e5c0696546c}{calc}} (float err)
+\begin{DoxyCompactList}\small\item\em 计算死区优化后的误差值 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a62f41d9f1429169b7149493f6d23ba94}{handle\+Illegal\+Params}} ()
+\begin{DoxyCompactList}\small\item\em 处理非法参数 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_aaaf34c69c7f5968bb9ad919e5b13d168}{is\+\_\+enabled\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 是否启用死区优化 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a6e3d858d858368205efc5895144f6f3e}{lower\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 死区下限 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a7588c98a797ba54f330fe0732a98659b}{upper\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 死区上限 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+死区优化类 
+
+为避免控制作用过于频繁，消除由于频繁动作所引起的振荡，必要时可采用带死区的 PID 控制算法. 判断控制偏差是否小于给定阈值，若小于则输入误差为0。
+
+
+\begin{DoxyItemize}
+\item 具体计算公式见{\ttfamily \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_adff792034723f0cc61648e5c0696546c}{calc(float err)}}。
+\item 参数合法性检查见{\ttfamily \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a3e0c3a79e1424e86dd8d642a65814389}{is\+Legal()}}。
+\item 启用判定见{\ttfamily \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_aad31e9ef7c315aea7c9ff7e06d6740b9}{is\+Enabled()}}。 
+\end{DoxyItemize}
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00901}{901}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_ab1dc5574bcf81f9eef3c0fa6f8b60f3b}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_ab1dc5574bcf81f9eef3c0fa6f8b60f3b} 
+\index{hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}!DeadBand@{DeadBand}}
+\index{DeadBand@{DeadBand}!hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}}
+\doxysubsubsection{\texorpdfstring{DeadBand()}{DeadBand()}}
+{\footnotesize\ttfamily hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Dead\+Band\+::\+Dead\+Band (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+enabled = {\ttfamily false},  }\item[{float}]{lower = {\ttfamily -\/0.01},  }\item[{float}]{upper = {\ttfamily 0.01} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+构造函数，初始化死区优化参数 
+
+
+\begin{DoxyParams}{参数}
+{\em is\+\_\+enabled} & 是否启用死区优化，默认为false \\
+\hline
+{\em lower} & 死区下限，默认值为-\/0.01 \\
+\hline
+{\em upper} & 死区上限，默认值为0.01 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00910}{910}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_adff792034723f0cc61648e5c0696546c}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_adff792034723f0cc61648e5c0696546c} 
+\index{hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}!calc@{calc}}
+\index{calc@{calc}!hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}}
+\doxysubsubsection{\texorpdfstring{calc()}{calc()}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Dead\+Band\+::calc (\begin{DoxyParamCaption}\item[{float}]{err }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+计算死区优化后的误差值 
+
+具体的计算公式为： \textbackslash{}f\textbackslash{}f\mbox{]} e(k)=\textbackslash{}begin\{cases\} e(k)-\/\textbackslash{}epsilon\+\_\+l \& , \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_aad31e9ef7c315aea7c9ff7e06d6740b9}{is\+Enabled()} \textbackslash{}wedge e(k) \textbackslash{}in (-\/\textbackslash{}inf,\textbackslash{}epsilon\+\_\+l) \textbackslash{} 0\&, is\+Enabeld() \textbackslash{}wedge e(k) \textbackslash{}in \mbox{[}\textbackslash{}epsilon\+\_\+l,\textbackslash{}epsilon\+\_\+u\mbox{]}\textbackslash{} e(k)-\/\textbackslash{}epsilon\+\_\+u \& , \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_aad31e9ef7c315aea7c9ff7e06d6740b9}{is\+Enabled()} \textbackslash{}wedge e(k) \textbackslash{}in (\textbackslash{}epsilon\+\_\+u,+\textbackslash{}inf ) \textbackslash{} e(k) \& ,others, \textbackslash{}end\{cases\} 其中 $\epsilon_l$ 为参数中的下限值， $\epsilon_u$为参数中的上限值。 
+\begin{DoxyParams}{参数}
+{\em err} & 本次采样的误差值 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+本次采样死区优化后的误差值 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00996}{996}} 行定义.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_adff792034723f0cc61648e5c0696546c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a62f41d9f1429169b7149493f6d23ba94}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a62f41d9f1429169b7149493f6d23ba94} 
+\index{hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}!handleIllegalParams@{handleIllegalParams}}
+\index{handleIllegalParams@{handleIllegalParams}!hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}}
+\doxysubsubsection{\texorpdfstring{handleIllegalParams()}{handleIllegalParams()}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Dead\+Band\+::handle\+Illegal\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+处理非法参数 
+
+\begin{DoxyReturn}{返回}
+如果存在非法参数返回true，否则返回false 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l01020}{1020}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_aad31e9ef7c315aea7c9ff7e06d6740b9}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_aad31e9ef7c315aea7c9ff7e06d6740b9} 
+\index{hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}!isEnabled@{isEnabled}}
+\index{isEnabled@{isEnabled}!hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}}
+\doxysubsubsection{\texorpdfstring{isEnabled()}{isEnabled()}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Dead\+Band\+::is\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+检查是否启用了死区优化 
+
+\begin{DoxyReturn}{返回}
+如果启用了死区优化并且参数合法，则返回true，否则返回false 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00979}{979}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a3e0c3a79e1424e86dd8d642a65814389}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a3e0c3a79e1424e86dd8d642a65814389} 
+\index{hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}!isLegal@{isLegal}}
+\index{isLegal@{isLegal}!hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}}
+\doxysubsubsection{\texorpdfstring{isLegal()}{isLegal()}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Dead\+Band\+::is\+Legal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+检查死区优化参数是否合法 
+
+\begin{DoxyReturn}{返回}
+参数合法返回true，否则返回false 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00973}{973}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_ad973a9b6e41cb2ae18102b2fb8ecf451}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_ad973a9b6e41cb2ae18102b2fb8ecf451} 
+\index{hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}!setEnabled@{setEnabled}}
+\index{setEnabled@{setEnabled}!hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}}
+\doxysubsubsection{\texorpdfstring{setEnabled()}{setEnabled()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Dead\+Band\+::set\+Enabled (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置是否启用死区优化 
+
+
+\begin{DoxyParams}{参数}
+{\em is\+\_\+enabled} & 是否启用死区优化 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+设置状态，如果参数合法返回k\+State\+Ok，否则在处理非法参数后返回k\+State\+Error 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00920}{920}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_ad92aba81aeae786833987d340da6d28d}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_ad92aba81aeae786833987d340da6d28d} 
+\index{hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}!setLower@{setLower}}
+\index{setLower@{setLower}!hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}}
+\doxysubsubsection{\texorpdfstring{setLower()}{setLower()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Dead\+Band\+::set\+Lower (\begin{DoxyParamCaption}\item[{float}]{lower }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置死区下限 
+
+
+\begin{DoxyParams}{参数}
+{\em lower} & 死区下限 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+设置状态，如果参数合法返回k\+State\+Ok，否则在处理非法参数后返回k\+State\+Error 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em k\+State\+OK} & 设置成功且参数合法 \\
+\hline
+{\em k\+State\+Error} & 设置成功但参数非法 \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00933}{933}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a46a07d46aeb0bef20bc732cad70b6f40}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a46a07d46aeb0bef20bc732cad70b6f40} 
+\index{hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}!setParams@{setParams}}
+\index{setParams@{setParams}!hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}}
+\doxysubsubsection{\texorpdfstring{setParams()}{setParams()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Dead\+Band\+::set\+Params (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+enabled,  }\item[{float}]{lower,  }\item[{float}]{upper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置死区优化参数 
+
+
+\begin{DoxyParams}{参数}
+{\em is\+\_\+enabled} & 是否启用死区优化 \\
+\hline
+{\em lower} & 死区下限 \\
+\hline
+{\em upper} & 死区上限 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+设置状态，如果参数合法返回k\+State\+Ok，否则在处理非法参数后返回k\+State\+Error 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em k\+State\+OK} & 设置成功且参数合法 \\
+\hline
+{\em k\+State\+Error} & 设置成功但参数非法 \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00961}{961}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a58c526f8628df6c9baf2de0d253af75b}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a58c526f8628df6c9baf2de0d253af75b} 
+\index{hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}!setUpper@{setUpper}}
+\index{setUpper@{setUpper}!hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}}
+\doxysubsubsection{\texorpdfstring{setUpper()}{setUpper()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_a3651797f880533c49c9b90a0961c199d}{State}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Dead\+Band\+::set\+Upper (\begin{DoxyParamCaption}\item[{float}]{upper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+设置死区上限 
+
+
+\begin{DoxyParams}{参数}
+{\em upper} & 死区上限 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+设置状态，如果参数合法返回k\+State\+Ok，否则在处理非法参数后返回k\+State\+Error 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{返回值}
+{\em k\+State\+OK} & 设置成功且参数合法 \\
+\hline
+{\em k\+State\+Error} & 设置成功但参数非法 \\
+\hline
+\end{DoxyRetVals}
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l00946}{946}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_aaaf34c69c7f5968bb9ad919e5b13d168}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_aaaf34c69c7f5968bb9ad919e5b13d168} 
+\index{hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}!is\_enabled\_@{is\_enabled\_}}
+\index{is\_enabled\_@{is\_enabled\_}!hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}}
+\doxysubsubsection{\texorpdfstring{is\_enabled\_}{is\_enabled\_}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Dead\+Band\+::is\+\_\+enabled\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+是否启用死区优化 
+
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l01012}{1012}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a6e3d858d858368205efc5895144f6f3e}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a6e3d858d858368205efc5895144f6f3e} 
+\index{hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}!lower\_@{lower\_}}
+\index{lower\_@{lower\_}!hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}}
+\doxysubsubsection{\texorpdfstring{lower\_}{lower\_}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Dead\+Band\+::lower\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+死区下限 
+
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l01013}{1013}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a7588c98a797ba54f330fe0732a98659b}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_a7588c98a797ba54f330fe0732a98659b} 
+\index{hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}!upper\_@{upper\_}}
+\index{upper\_@{upper\_}!hello\_world::algorithms::controller::pid::DeadBand@{hello\_world::algorithms::controller::pid::DeadBand}}
+\doxysubsubsection{\texorpdfstring{upper\_}{upper\_}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Dead\+Band\+::upper\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+死区上限 
+
+
+
+在文件 \mbox{\hyperlink{pid__opt_8hpp_source}{pid\+\_\+opt.\+hpp}} 第 \mbox{\hyperlink{pid__opt_8hpp_source_l01014}{1014}} 行定义.
+

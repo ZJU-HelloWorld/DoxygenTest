@@ -1,0 +1,433 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band" kind="class" language="C++" prot="public">
+    <compoundname>hello_world::algorithms::controller::pid::DeadBand</compoundname>
+    <includes refid="pid__opt_8hpp" local="no">pid_opt.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aaaf34c69c7f5968bb9ad919e5b13d168" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::DeadBand::is_enabled_</definition>
+        <argsstring></argsstring>
+        <name>is_enabled_</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DeadBand::is_enabled_</qualifiedname>
+        <briefdescription>
+<para>是否启用死区优化 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="1012" column="8" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="1012" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a6e3d858d858368205efc5895144f6f3e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::algorithms::controller::pid::DeadBand::lower_</definition>
+        <argsstring></argsstring>
+        <name>lower_</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DeadBand::lower_</qualifiedname>
+        <briefdescription>
+<para>死区下限 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="1013" column="9" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="1013" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a7588c98a797ba54f330fe0732a98659b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::algorithms::controller::pid::DeadBand::upper_</definition>
+        <argsstring></argsstring>
+        <name>upper_</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DeadBand::upper_</qualifiedname>
+        <briefdescription>
+<para>死区上限 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="1014" column="9" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="1014" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ab1dc5574bcf81f9eef3c0fa6f8b60f3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hello_world::algorithms::controller::pid::DeadBand::DeadBand</definition>
+        <argsstring>(bool is_enabled=false, float lower=-0.01, float upper=0.01)</argsstring>
+        <name>DeadBand</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DeadBand::DeadBand</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>is_enabled</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>lower</declname>
+          <defval>-0.01</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>upper</declname>
+          <defval>0.01</defval>
+        </param>
+        <briefdescription>
+<para>构造函数，初始化死区优化参数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>是否启用死区优化，默认为false </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>死区下限，默认值为-0.01 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>死区上限，默认值为0.01 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="910" column="3" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="910" bodyend="913"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ad973a9b6e41cb2ae18102b2fb8ecf451" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>State hello_world::algorithms::controller::pid::DeadBand::setEnabled</definition>
+        <argsstring>(bool is_enabled)</argsstring>
+        <name>setEnabled</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DeadBand::setEnabled</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>is_enabled</declname>
+        </param>
+        <briefdescription>
+<para>设置是否启用死区优化 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>是否启用死区优化 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>设置状态，如果参数合法返回kStateOk，否则在处理非法参数后返回kStateError </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="920" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="920" bodyend="924"/>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" compoundref="controller__base_8hpp" startline="33">hello_world::algorithms::controller::kStateOk</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ad92aba81aeae786833987d340da6d28d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>State hello_world::algorithms::controller::pid::DeadBand::setLower</definition>
+        <argsstring>(float lower)</argsstring>
+        <name>setLower</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DeadBand::setLower</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>lower</declname>
+        </param>
+        <briefdescription>
+<para>设置死区下限 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>死区下限 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>设置状态，如果参数合法返回kStateOk，否则在处理非法参数后返回kStateError </para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>kStateOK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设置成功且参数合法 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kStateError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设置成功但参数非法 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="933" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="933" bodyend="937"/>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9" compoundref="controller__base_8hpp" startline="34">hello_world::algorithms::controller::kStateError</references>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" compoundref="controller__base_8hpp" startline="33">hello_world::algorithms::controller::kStateOk</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a58c526f8628df6c9baf2de0d253af75b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>State hello_world::algorithms::controller::pid::DeadBand::setUpper</definition>
+        <argsstring>(float upper)</argsstring>
+        <name>setUpper</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DeadBand::setUpper</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>upper</declname>
+        </param>
+        <briefdescription>
+<para>设置死区上限 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>upper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>死区上限 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>设置状态，如果参数合法返回kStateOk，否则在处理非法参数后返回kStateError </para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>kStateOK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设置成功且参数合法 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kStateError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设置成功但参数非法 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="946" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="946" bodyend="950"/>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9" compoundref="controller__base_8hpp" startline="34">hello_world::algorithms::controller::kStateError</references>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" compoundref="controller__base_8hpp" startline="33">hello_world::algorithms::controller::kStateOk</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a46a07d46aeb0bef20bc732cad70b6f40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>State hello_world::algorithms::controller::pid::DeadBand::setParams</definition>
+        <argsstring>(bool is_enabled, float lower, float upper)</argsstring>
+        <name>setParams</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DeadBand::setParams</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>is_enabled</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>lower</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>upper</declname>
+        </param>
+        <briefdescription>
+<para>设置死区优化参数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>是否启用死区优化 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>死区下限 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>死区上限 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>设置状态，如果参数合法返回kStateOk，否则在处理非法参数后返回kStateError </para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>kStateOK</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设置成功且参数合法 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kStateError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设置成功但参数非法 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="961" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="961" bodyend="967"/>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9" compoundref="controller__base_8hpp" startline="34">hello_world::algorithms::controller::kStateError</references>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" compoundref="controller__base_8hpp" startline="33">hello_world::algorithms::controller::kStateOk</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a3e0c3a79e1424e86dd8d642a65814389" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::DeadBand::isLegal</definition>
+        <argsstring>()</argsstring>
+        <name>isLegal</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DeadBand::isLegal</qualifiedname>
+        <briefdescription>
+<para>检查死区优化参数是否合法 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>参数合法返回true，否则返回false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="973" column="15" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="973" bodyend="973"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aad31e9ef7c315aea7c9ff7e06d6740b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::DeadBand::isEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>isEnabled</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DeadBand::isEnabled</qualifiedname>
+        <briefdescription>
+<para>检查是否启用了死区优化 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>如果启用了死区优化并且参数合法，则返回true，否则返回false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="979" column="15" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="979" bodyend="979"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1adff792034723f0cc61648e5c0696546c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float hello_world::algorithms::controller::pid::DeadBand::calc</definition>
+        <argsstring>(float err)</argsstring>
+        <name>calc</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DeadBand::calc</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>err</declname>
+        </param>
+        <briefdescription>
+<para>计算死区优化后的误差值 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>具体的计算公式为： \f\f] e(k)=\begin{cases} e(k)-\epsilon_l &amp; , <ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aad31e9ef7c315aea7c9ff7e06d6740b9" kindref="member">isEnabled()</ref> \wedge e(k) \in (-\inf,\epsilon_l) \ 0&amp;, isEnabeld() \wedge e(k) \in [\epsilon_l,\epsilon_u]\ e(k)-\epsilon_u &amp; , <ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aad31e9ef7c315aea7c9ff7e06d6740b9" kindref="member">isEnabled()</ref> \wedge e(k) \in (\epsilon_u,+\inf ) \ e(k) &amp; ,others, \end{cases} 其中 <formula id="11">$\epsilon_l$</formula> 为参数中的下限值， <formula id="12">$\epsilon_u$</formula>为参数中的上限值。 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>err</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>本次采样的误差值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>本次采样死区优化后的误差值 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="996" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="996" bodyend="1009"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a62f41d9f1429169b7149493f6d23ba94" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::DeadBand::handleIllegalParams</definition>
+        <argsstring>()</argsstring>
+        <name>handleIllegalParams</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DeadBand::handleIllegalParams</qualifiedname>
+        <briefdescription>
+<para>处理非法参数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>如果存在非法参数返回true，否则返回false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="1020" column="8" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="1020" bodyend="1030"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>死区优化类 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>为避免控制作用过于频繁，消除由于频繁动作所引起的振荡，必要时可采用带死区的 PID 控制算法. 判断控制偏差是否小于给定阈值，若小于则输入误差为0。</para>
+<para><itemizedlist>
+<listitem><para>具体计算公式见<computeroutput><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1adff792034723f0cc61648e5c0696546c" kindref="member">calc(float err)</ref></computeroutput>。</para>
+</listitem><listitem><para>参数合法性检查见<computeroutput><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a3e0c3a79e1424e86dd8d642a65814389" kindref="member">isLegal()</ref></computeroutput>。</para>
+</listitem><listitem><para>启用判定见<computeroutput><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aad31e9ef7c315aea7c9ff7e06d6740b9" kindref="member">isEnabled()</ref></computeroutput>。 </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="901" column="1" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="902" bodyend="1031"/>
+    <listofallmembers>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1adff792034723f0cc61648e5c0696546c" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DeadBand</scope><name>calc</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ab1dc5574bcf81f9eef3c0fa6f8b60f3b" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DeadBand</scope><name>DeadBand</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a62f41d9f1429169b7149493f6d23ba94" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DeadBand</scope><name>handleIllegalParams</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aaaf34c69c7f5968bb9ad919e5b13d168" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DeadBand</scope><name>is_enabled_</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aad31e9ef7c315aea7c9ff7e06d6740b9" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DeadBand</scope><name>isEnabled</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a3e0c3a79e1424e86dd8d642a65814389" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DeadBand</scope><name>isLegal</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a6e3d858d858368205efc5895144f6f3e" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DeadBand</scope><name>lower_</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ad973a9b6e41cb2ae18102b2fb8ecf451" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DeadBand</scope><name>setEnabled</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ad92aba81aeae786833987d340da6d28d" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DeadBand</scope><name>setLower</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a46a07d46aeb0bef20bc732cad70b6f40" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DeadBand</scope><name>setParams</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a58c526f8628df6c9baf2de0d253af75b" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DeadBand</scope><name>setUpper</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a7588c98a797ba54f330fe0732a98659b" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DeadBand</scope><name>upper_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

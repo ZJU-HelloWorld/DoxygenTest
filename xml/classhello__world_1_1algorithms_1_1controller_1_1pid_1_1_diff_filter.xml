@@ -1,0 +1,576 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter" kind="class" language="C++" prot="public">
+    <compoundname>hello_world::algorithms::controller::pid::DiffFilter</compoundname>
+    <includes refid="pid__opt_8hpp" local="no">pid_opt.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1affe793b9c55f20601c7f57d1585ef597" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::DiffFilter::is_enabled_</definition>
+        <argsstring></argsstring>
+        <name>is_enabled_</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DiffFilter::is_enabled_</qualifiedname>
+        <briefdescription>
+<para>差分滤波器的启用状态 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="749" column="8" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="749" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1abfbade99e658f8d10f4546923a700057" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::algorithms::controller::pid::DiffFilter::lower_</definition>
+        <argsstring></argsstring>
+        <name>lower_</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DiffFilter::lower_</qualifiedname>
+        <briefdescription>
+<para>触发滤波的触发滤波的差分值下限 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="750" column="9" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="750" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a9f245a099d705c321b55e2e2b3cc8285" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::algorithms::controller::pid::DiffFilter::upper_</definition>
+        <argsstring></argsstring>
+        <name>upper_</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DiffFilter::upper_</qualifiedname>
+        <briefdescription>
+<para>触发滤波的触发滤波的差分值上限 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="751" column="9" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="751" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1ae990f047961a5763c8c6569ee3c89eda" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::algorithms::controller::pid::DiffFilter::weight_</definition>
+        <argsstring></argsstring>
+        <name>weight_</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DiffFilter::weight_</qualifiedname>
+        <briefdescription>
+<para>滤波的低通滤波的权重值 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="752" column="9" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="752" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a8bfac77eb061e503e6cfa6f83e57a17f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hello_world::algorithms::controller::pid::DiffFilter::DiffFilter</definition>
+        <argsstring>(bool is_enabled=false, float lower=-0.01, float upper=0.01, float weight=0.5)</argsstring>
+        <name>DiffFilter</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DiffFilter::DiffFilter</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>is_enabled</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>lower</declname>
+          <defval>-0.01</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>upper</declname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+          <defval>0.5</defval>
+        </param>
+        <briefdescription>
+<para>构造函数，初始化DiffFilter对象 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>是否启用差分滤波器，默认为false </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>触发滤波的差分值下限，默认为-0.01 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>触发滤波的差分值上限，默认为0.01 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>低通滤波的权重值，默认为0.5 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="617" column="3" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="617" bodyend="621"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a256cb6a73e68dcca24f3028d095c616c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>State hello_world::algorithms::controller::pid::DiffFilter::setEnabled</definition>
+        <argsstring>(bool is_enabled)</argsstring>
+        <name>setEnabled</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DiffFilter::setEnabled</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>is_enabled</declname>
+        </param>
+        <briefdescription>
+<para>设置差分滤波器的启用状态 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>是否启用差分滤波器 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>状态值，表示参数是否合法。如果合法返回kStateOk；如果非法将处理非法参数并返回kStateError。 </para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>kStateOk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设置成功且参数合法 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kStateError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设置成功但参数非法 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="631" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="631" bodyend="635"/>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" compoundref="controller__base_8hpp" startline="33">hello_world::algorithms::controller::kStateOk</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a88fdf7403e473213eb391af077b79c24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>State hello_world::algorithms::controller::pid::DiffFilter::setLower</definition>
+        <argsstring>(float lower)</argsstring>
+        <name>setLower</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DiffFilter::setLower</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>lower</declname>
+        </param>
+        <briefdescription>
+<para>设置触发滤波的差分值下限 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>触发滤波的差分值下限 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>状态值，表示参数是否合法。如果合法返回kStateOk；如果非法将处理非法参数并返回kStateError。 </para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>kStateOk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设置成功且参数合法 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kStateError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设置成功但参数非法 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="645" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="645" bodyend="649"/>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9" compoundref="controller__base_8hpp" startline="34">hello_world::algorithms::controller::kStateError</references>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" compoundref="controller__base_8hpp" startline="33">hello_world::algorithms::controller::kStateOk</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a5a1e043020a7a8db86ac86ae81437612" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>State hello_world::algorithms::controller::pid::DiffFilter::setUpper</definition>
+        <argsstring>(float upper)</argsstring>
+        <name>setUpper</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DiffFilter::setUpper</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>upper</declname>
+        </param>
+        <briefdescription>
+<para>设置触发滤波的差分值上限 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>upper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>触发滤波的差分值上限 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>状态值，表示参数是否合法。如果合法返回kStateOk；如果非法将处理非法参数并返回kStateError。 </para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>kStateOk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设置成功且参数合法 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kStateError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设置成功但参数非法 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="659" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="659" bodyend="663"/>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9" compoundref="controller__base_8hpp" startline="34">hello_world::algorithms::controller::kStateError</references>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" compoundref="controller__base_8hpp" startline="33">hello_world::algorithms::controller::kStateOk</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a93b299c027188468e329779960c14d50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>State hello_world::algorithms::controller::pid::DiffFilter::setWeight</definition>
+        <argsstring>(float weight)</argsstring>
+        <name>setWeight</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DiffFilter::setWeight</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+<para>设置低通滤波的权重值 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>低通滤波的权重值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>状态值，表示参数是否合法。如果合法返回kStateOk；如果非法将处理非法参数并返回kStateError。 </para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>kStateOk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设置成功且参数合法 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kStateError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设置成功但参数非法 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="673" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="673" bodyend="677"/>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9" compoundref="controller__base_8hpp" startline="34">hello_world::algorithms::controller::kStateError</references>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" compoundref="controller__base_8hpp" startline="33">hello_world::algorithms::controller::kStateOk</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a1d8d7e3208f530845bf7dce233c6413f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>State hello_world::algorithms::controller::pid::DiffFilter::setParams</definition>
+        <argsstring>(bool is_enabled, float lower, float upper, float weight)</argsstring>
+        <name>setParams</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DiffFilter::setParams</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>is_enabled</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>lower</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>upper</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+<para>设置差分滤波器的参数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>是否启用差分滤波器 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>触发滤波的差分值下限 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upper</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>触发滤波的差分值上限 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>低通滤波的权重值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>状态值，表示参数是否合法。如果合法返回kStateOk；如果非法将处理非法参数并返回kStateError。 </para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>kStateOk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设置成功且参数合法 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>kStateError</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>设置成功但参数非法 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="690" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="690" bodyend="698"/>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9" compoundref="controller__base_8hpp" startline="34">hello_world::algorithms::controller::kStateError</references>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" compoundref="controller__base_8hpp" startline="33">hello_world::algorithms::controller::kStateOk</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a38776552d83217c7b6636939bfcfc5bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::DiffFilter::isLegal</definition>
+        <argsstring>()</argsstring>
+        <name>isLegal</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DiffFilter::isLegal</qualifiedname>
+        <briefdescription>
+<para>检查差分滤波器的参数是否合法 判断条件：lower&lt;= upper &amp;&amp; 0 &lt;= weight &amp;&amp; weight &lt;= 1 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>布尔值，表示差分滤波器的参数是否合法 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="705" column="15" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="705" bodyend="708"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a802aa9ef25b7c540407801d5c0889571" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::DiffFilter::isEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>isEnabled</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DiffFilter::isEnabled</qualifiedname>
+        <briefdescription>
+<para>检查差分滤波器是否启用 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>布尔值，表示差分滤波器是否启用 </para>
+</simplesect>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>被启用且参数合法 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>false</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>未被启用或参数非法 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="717" column="15" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="717" bodyend="717"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a7bb924886f04baa6e1b9db604529f93a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float hello_world::algorithms::controller::pid::DiffFilter::calc</definition>
+        <argsstring>(float diff_out, float last_diff_out)</argsstring>
+        <name>calc</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DiffFilter::calc</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>diff_out</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>last_diff_out</declname>
+        </param>
+        <briefdescription>
+<para>计算差分滤波器的输出值 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>具体计算公式：  <formula id="15">\[
+u_d(k)=\begin{cases}
+w*u_d(k-1)+(1-w)*u_d(k)  &amp; ,  isEnabled() \wedge u_d(j) \notin \left [ \epsilon_l,\epsilon_u \right ]   \\
+u_d(k)  &amp; ,others
+\end{cases}
+\]</formula>， 其中 <formula id="11">$\epsilon_l$</formula> 为参数中的下限值， <formula id="12">$\epsilon_u$</formula>为参数中的上限值， <formula id="16">$w$</formula>为参数中的权重值 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>diff_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>当前差分值 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last_diff_out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>上一次的差分值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>计算后的滤波结果 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="736" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="736" bodyend="746"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1aceef1edc7660e5f19c48765498217f24" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::DiffFilter::handleIllegalParams</definition>
+        <argsstring>()</argsstring>
+        <name>handleIllegalParams</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::DiffFilter::handleIllegalParams</qualifiedname>
+        <briefdescription>
+<para>处理非法参数的情况 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>布尔值，表示是否存在非法参数 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="759" column="15" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="759" bodyend="777"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>用于实现差分滤波器功能 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>差分滤波器用于对输入信号进行滤波处理，根据触发滤波的差分值范围和权重进行滤波操作。 微分项可改善系统的动态特性，但也易引进高频干扰，在误差扰动突变时尤其显出微分项的不足。 因此，可以在控制算法中加入一阶惯性环节（低通滤波器），可使系统性能得到改善。 可将滤波器直接加在微分环节上或控制器输出上。 此方案也称为“不完全微分”。 事实上，还可以针对系统的频域特性设计合适的滤波器，这里不做更深入的探究。</para>
+<para><itemizedlist>
+<listitem><para>具体计算公式见<computeroutput><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a7bb924886f04baa6e1b9db604529f93a" kindref="member">calc(float diff_out, float last_diff_out)</ref></computeroutput>。</para>
+</listitem><listitem><para>参数合法性检查见<computeroutput><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a38776552d83217c7b6636939bfcfc5bb" kindref="member">isLegal()</ref></computeroutput>。</para>
+</listitem><listitem><para>启用判定见<computeroutput><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a802aa9ef25b7c540407801d5c0889571" kindref="member">isEnabled()</ref></computeroutput>。 </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="606" column="1" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="607" bodyend="778"/>
+    <listofallmembers>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a7bb924886f04baa6e1b9db604529f93a" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DiffFilter</scope><name>calc</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a8bfac77eb061e503e6cfa6f83e57a17f" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DiffFilter</scope><name>DiffFilter</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1aceef1edc7660e5f19c48765498217f24" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DiffFilter</scope><name>handleIllegalParams</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1affe793b9c55f20601c7f57d1585ef597" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DiffFilter</scope><name>is_enabled_</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a802aa9ef25b7c540407801d5c0889571" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DiffFilter</scope><name>isEnabled</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a38776552d83217c7b6636939bfcfc5bb" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DiffFilter</scope><name>isLegal</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1abfbade99e658f8d10f4546923a700057" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DiffFilter</scope><name>lower_</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a256cb6a73e68dcca24f3028d095c616c" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DiffFilter</scope><name>setEnabled</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a88fdf7403e473213eb391af077b79c24" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DiffFilter</scope><name>setLower</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a1d8d7e3208f530845bf7dce233c6413f" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DiffFilter</scope><name>setParams</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a5a1e043020a7a8db86ac86ae81437612" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DiffFilter</scope><name>setUpper</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a93b299c027188468e329779960c14d50" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DiffFilter</scope><name>setWeight</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a9f245a099d705c321b55e2e2b3cc8285" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DiffFilter</scope><name>upper_</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1ae990f047961a5763c8c6569ee3c89eda" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::DiffFilter</scope><name>weight_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_ff1cab154907602e261025506981162c" xml:lang="zh">
+<title>HW-Components/tools/src 目录参考</title>
+<indexterm><primary>HW-Components/tools/src 目录参考</primary></indexterm>
+src 的目录依赖关系图<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_ff1cab154907602e261025506981162c_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>文件    </title>
+        <itemizedlist>
+            <listitem><para>文件 <link linkend="_tools_8cpp">tools.cpp</link></para>
+
+<para><?linebreak?> </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

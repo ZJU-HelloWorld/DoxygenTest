@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="dir_49decd52c970b6c26b1892145b8c54b6" kind="dir">
+    <compoundname>HW-Components/devices</compoundname>
+    <innerdir refid="dir_5eb125e48023cbf65e0f94ef2b5a6143">HW-Components/devices/buzzer</innerdir>
+    <innerdir refid="dir_0d36f70e890197f66be298058bd32981">HW-Components/devices/imu</innerdir>
+    <innerdir refid="dir_ff73d26a6cf1671bb96d43a8fce53ce5">HW-Components/devices/laser</innerdir>
+    <innerdir refid="dir_0b2a1104b376de6ed9ae0678ded7e530">HW-Components/devices/motor</innerdir>
+    <innerdir refid="dir_9af9d0b351d08575a4dd73329768ab86">HW-Components/devices/referee</innerdir>
+    <innerdir refid="dir_1353eb1815ab0f68dcb05da1f0dd2617">HW-Components/devices/remote_control</innerdir>
+    <innerdir refid="dir_d18940ad4f50f2b9dcdd3c2a03bfb76d">HW-Components/devices/servo</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HW-Components/devices/"/>
+  </compounddef>
+</doxygen>

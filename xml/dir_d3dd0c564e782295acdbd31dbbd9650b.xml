@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="dir_d3dd0c564e782295acdbd31dbbd9650b" kind="dir">
+    <compoundname>HW-Components/algorithms/ik_solver</compoundname>
+    <innerdir refid="dir_535ad3f8b6207be4ddcf812024f9709d">HW-Components/algorithms/ik_solver/inc</innerdir>
+    <innerdir refid="dir_8a581888f3e7b2c7e05ee7fb31df2e6f">HW-Components/algorithms/ik_solver/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HW-Components/algorithms/ik_solver/"/>
+  </compounddef>
+</doxygen>

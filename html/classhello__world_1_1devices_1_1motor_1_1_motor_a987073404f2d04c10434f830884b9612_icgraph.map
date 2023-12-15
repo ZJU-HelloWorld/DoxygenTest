@@ -1,0 +1,27 @@
+<map id="hello_world::devices::motor::Motor::torq" name="hello_world::devices::motor::Motor::torq">
+<area shape="rect" id="Node000001" title=" " alt="" coords="492,69,629,109"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#a44292bfea784425e2c2c81dc4d634371" title="将输出端力矩转换为转子电流" alt="" coords="268,69,431,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="477,92,431,92,431,87,477,87"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#a319adc3f1b7d43fa12015b52a153ea17" title="将输出端力矩转换为原始报文内容" alt="" coords="269,261,430,301"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="528,122,375,263,371,259,524,118"/>
+<area shape="rect" id="Node000012" href="$classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#ace039722135c1bf08b429a4ad41ccc81" title="将输出端力矩转换为原始报文内容" alt="" coords="255,5,444,45"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="478,67,417,48,418,43,479,62"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#a0a61fcd9a79f7bbb0addccaf677f2c5f" title="DM_J4310 初始化" alt="" coords="5,69,207,109"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="253,92,207,92,207,87,253,87"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#ad101045a9eef9a699001fc94631e8395" title="设定发给电调的期望值" alt="" coords="27,133,185,173"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="257,116,185,135,184,130,256,111"/>
+<area shape="rect" id="Node000005" href="$classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#ae15373ce02962c1a287d7e813413869b" title="设定发给电调的期望值" alt="" coords="13,5,199,45"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="256,68,184,48,185,43,257,62"/>
+<area shape="poly" id="edge11_Node000006_Node000004" title=" " alt="" coords="310,254,261,220,205,188,178,176,180,171,208,183,264,216,313,250"/>
+<area shape="rect" id="Node000007" href="$classhello__world_1_1devices_1_1motor_1_1_a1.html#a1c439b72ce074a0e04d38b06749f499c" title="A1 初始化" alt="" coords="37,389,175,429"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="313,313,264,347,208,380,176,393,174,388,205,375,261,343,310,308"/>
+<area shape="rect" id="Node000008" href="$classhello__world_1_1devices_1_1motor_1_1_m2006.html#a52ce5e7bbbb2fffe82f86291b8876221" title="M2006 初始化" alt="" coords="27,453,185,493"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="330,315,279,380,246,414,208,444,186,455,184,450,205,439,242,410,275,376,325,312"/>
+<area shape="rect" id="Node000009" href="$classhello__world_1_1devices_1_1motor_1_1_m3508.html#a2fbed6fbaa90b42893978a1805ea78e6" title="M3508 初始化" alt="" coords="27,197,185,237"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="256,260,184,240,185,235,257,254"/>
+<area shape="rect" id="Node000010" href="$classhello__world_1_1devices_1_1motor_1_1_m8910.html#accd858d8bd3db4aa48532ec8c1f8bd44" title="M8910 初始化" alt="" coords="27,261,185,301"/>
+<area shape="poly" id="edge9_Node000006_Node000010" title=" " alt="" coords="254,284,185,284,185,279,254,279"/>
+<area shape="rect" id="Node000011" href="$classhello__world_1_1devices_1_1motor_1_1_m_f9025v2.html#a87787e5484356144bc7bce7b229398de" title="MF9025v2 初始化" alt="" coords="7,325,205,365"/>
+<area shape="poly" id="edge10_Node000006_Node000011" title=" " alt="" coords="257,308,185,327,184,322,256,303"/>
+<area shape="poly" id="edge13_Node000012_Node000005" title=" " alt="" coords="240,28,200,28,200,23,240,23"/>
+</map>

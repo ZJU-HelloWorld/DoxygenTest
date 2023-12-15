@@ -1,0 +1,9 @@
+<map id="HW&#45;Components/devices/motor/inc/motor_M2006.hpp" name="HW&#45;Components/devices/motor/inc/motor_M2006.hpp">
+<area shape="rect" id="Node000001" title=": @history : Version Date Author Note V0.9.0 2023&#45;11&#45;25 Caikunzhen 1." alt="" coords="97,5,285,45"/>
+<area shape="rect" id="Node000002" href="$motor_8hpp.html" title=": @history : Version Date Author Note V0.9.0 2023&#45;11&#45;25 Caikunzhen 1." alt="" coords="5,93,173,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,57,114,95,110,91,156,53"/>
+<area shape="rect" id="Node000004" href="$motor___m2006_8cpp.html" title=": @history : Version Date Author Note V0.9.0 2023&#45;11&#45;25 Caikunzhen 1." alt="" coords="197,93,387,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="226,53,271,91,268,95,222,57"/>
+<area shape="rect" id="Node000003" href="$motor_8cpp.html" title=": @history : Version Date Author Note V0.9.0 yyyy&#45;mm&#45;dd &lt;author&gt; 1." alt="" coords="5,181,173,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,148,92,181,87,181,87,148"/>
+</map>

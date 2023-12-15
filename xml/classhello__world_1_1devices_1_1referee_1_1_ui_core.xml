@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="classhello__world_1_1devices_1_1referee_1_1_ui_core" kind="class" language="C++" prot="public">
+    <compoundname>hello_world::devices::referee::UiCore</compoundname>
+    <includes refid="referee__ui_8hpp" local="no">referee_ui.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhello__world_1_1devices_1_1referee_1_1_ui_core_1aed6790200318e9cbca4314c0de009306" prot="private" static="no" mutable="no">
+        <type>std::queue&lt; <ref refid="classhello__world_1_1devices_1_1referee_1_1_ui_frame" kindref="compound">UiFrame</ref> &amp; &gt;</type>
+        <definition>std::queue&lt;UiFrame &amp;&gt; hello_world::devices::referee::UiCore::frame_queue_</definition>
+        <argsstring></argsstring>
+        <name>frame_queue_</name>
+        <qualifiedname>hello_world::devices::referee::UiCore::frame_queue_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/referee/inc/referee_ui.hpp" line="125" column="16" bodyfile="HW-Components/devices/referee/inc/referee_ui.hpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1referee_1_1_ui_core_1ac85ff2ea892ae60bf19eea55c63068f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hello_world::devices::referee::UiCore::addFrame</definition>
+        <argsstring>(UiFrame &amp;frame)</argsstring>
+        <name>addFrame</name>
+        <qualifiedname>hello_world::devices::referee::UiCore::addFrame</qualifiedname>
+        <param>
+          <type><ref refid="classhello__world_1_1devices_1_1referee_1_1_ui_frame" kindref="compound">UiFrame</ref> &amp;</type>
+          <declname>frame</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/referee/inc/referee_ui.hpp" line="128" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HW-Components/devices/referee/inc/referee_ui.hpp" line="122" column="1" bodyfile="HW-Components/devices/referee/inc/referee_ui.hpp" bodystart="123" bodyend="129"/>
+    <listofallmembers>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_ui_core_1ac85ff2ea892ae60bf19eea55c63068f4" prot="public" virt="non-virtual"><scope>hello_world::devices::referee::UiCore</scope><name>addFrame</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_ui_core_1aed6790200318e9cbca4314c0de009306" prot="private" virt="non-virtual"><scope>hello_world::devices::referee::UiCore</scope><name>frame_queue_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

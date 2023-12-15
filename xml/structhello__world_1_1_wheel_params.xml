@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="structhello__world_1_1_wheel_params" kind="struct" language="C++" prot="public">
+    <compoundname>hello_world::WheelParams</compoundname>
+    <includes refid="chassis__iksolver_8hpp" local="no">chassis_iksolver.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhello__world_1_1_wheel_params_1ad294c1a9ce8de57ff631415b070ec243" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::WheelParams::ang_vel</definition>
+        <argsstring></argsstring>
+        <name>ang_vel</name>
+        <qualifiedname>hello_world::WheelParams::ang_vel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp" line="89" column="9" bodyfile="HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1_wheel_params_1a480ce1191d5b73d8d689a5033df3b039" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::WheelParams::d_castor</definition>
+        <argsstring></argsstring>
+        <name>d_castor</name>
+        <qualifiedname>hello_world::WheelParams::d_castor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp" line="90" column="9" bodyfile="HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1_wheel_params_1a1725ab49981cbe9edd514dabd5153c05" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::WheelParams::gamma</definition>
+        <argsstring></argsstring>
+        <name>gamma</name>
+        <qualifiedname>hello_world::WheelParams::gamma</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp" line="91" column="9" bodyfile="HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1_wheel_params_1afdae383a7ae1fdc1c1d0758a1ff830ad" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::WheelParams::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <qualifiedname>hello_world::WheelParams::radius</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp" line="92" column="9" bodyfile="HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1_wheel_params_1aa3f33e74fb53bb9a897570897e67a409" prot="public" static="no" mutable="no">
+        <type><ref refid="classhello__world_1_1_wheel_pos" kindref="compound">WheelPos</ref></type>
+        <definition>WheelPos hello_world::WheelParams::center_pos</definition>
+        <argsstring></argsstring>
+        <name>center_pos</name>
+        <qualifiedname>hello_world::WheelParams::center_pos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp" line="93" column="12" bodyfile="HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1_wheel_params_1a9666013efe274ecf44e561550ea5ee83" prot="public" static="no" mutable="no">
+        <type><ref refid="classhello__world_1_1_wheel_pos" kindref="compound">WheelPos</ref></type>
+        <definition>WheelPos hello_world::WheelParams::wheel_pos</definition>
+        <argsstring></argsstring>
+        <name>wheel_pos</name>
+        <qualifiedname>hello_world::WheelParams::wheel_pos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp" line="94" column="12" bodyfile="HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp" bodystart="94" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>hello_world::WheelParams</label>
+        <link refid="structhello__world_1_1_wheel_params"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>center_pos</edgelabel>
+          <edgelabel>wheel_pos</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>hello_world::WheelPos</label>
+        <link refid="classhello__world_1_1_wheel_pos"/>
+      </node>
+    </collaborationgraph>
+    <location file="HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp" line="88" column="1" bodyfile="HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp" bodystart="88" bodyend="95"/>
+    <listofallmembers>
+      <member refid="structhello__world_1_1_wheel_params_1ad294c1a9ce8de57ff631415b070ec243" prot="public" virt="non-virtual"><scope>hello_world::WheelParams</scope><name>ang_vel</name></member>
+      <member refid="structhello__world_1_1_wheel_params_1aa3f33e74fb53bb9a897570897e67a409" prot="public" virt="non-virtual"><scope>hello_world::WheelParams</scope><name>center_pos</name></member>
+      <member refid="structhello__world_1_1_wheel_params_1a480ce1191d5b73d8d689a5033df3b039" prot="public" virt="non-virtual"><scope>hello_world::WheelParams</scope><name>d_castor</name></member>
+      <member refid="structhello__world_1_1_wheel_params_1a1725ab49981cbe9edd514dabd5153c05" prot="public" virt="non-virtual"><scope>hello_world::WheelParams</scope><name>gamma</name></member>
+      <member refid="structhello__world_1_1_wheel_params_1afdae383a7ae1fdc1c1d0758a1ff830ad" prot="public" virt="non-virtual"><scope>hello_world::WheelParams</scope><name>radius</name></member>
+      <member refid="structhello__world_1_1_wheel_params_1a9666013efe274ecf44e561550ea5ee83" prot="public" virt="non-virtual"><scope>hello_world::WheelParams</scope><name>wheel_pos</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

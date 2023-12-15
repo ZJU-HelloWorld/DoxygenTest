@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="dir_f6791751f84cd3da4a25a2f8c8474c38" kind="dir">
+    <compoundname>HW-Components/devices/imu/src</compoundname>
+    <innerfile refid="_b_m_i088_8cpp">BMI088.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HW-Components/devices/imu/src/"/>
+  </compounddef>
+</doxygen>

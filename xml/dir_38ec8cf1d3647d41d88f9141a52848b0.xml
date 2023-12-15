@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="dir_38ec8cf1d3647d41d88f9141a52848b0" kind="dir">
+    <compoundname>HW-Components/devices/buzzer/src</compoundname>
+    <innerfile refid="buzzer_8cpp">buzzer.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HW-Components/devices/buzzer/src/"/>
+  </compounddef>
+</doxygen>

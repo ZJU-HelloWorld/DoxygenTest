@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="classhello__world_1_1devices_1_1referee_1_1_rx_package_inter_radar_warning" kind="class" language="C++" prot="public">
+    <compoundname>hello_world::devices::referee::RxPackageInterRadarWarning</compoundname>
+    <basecompoundref refid="classhello__world_1_1devices_1_1referee_1_1_rx_package" prot="public" virt="non-virtual">hello_world::devices::referee::RxPackage&lt; InterRadarWarning &gt;</basecompoundref>
+    <includes refid="referee__custom__define_8hpp" local="no">referee_custom_define.hpp</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1referee_1_1_rx_package_inter_radar_warning_1a46fe12866c55ba13a3050f1ef3e5935f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hello_world::devices::referee::RxPackageInterRadarWarning::RxPackageInterRadarWarning</definition>
+        <argsstring>()</argsstring>
+        <name>RxPackageInterRadarWarning</name>
+        <qualifiedname>hello_world::devices::referee::RxPackageInterRadarWarning::RxPackageInterRadarWarning</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/referee/inc/referee_custom_define.hpp" line="71" column="5" bodyfile="HW-Components/devices/referee/inc/referee_custom_define.hpp" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1referee_1_1_rx_package_inter_radar_warning_1ab36c0be84c4a8b518e7141d77401c425" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool hello_world::devices::referee::RxPackageInterRadarWarning::decode</definition>
+        <argsstring>(const uint8_t *p_frame_cmd_data)</argsstring>
+        <name>decode</name>
+        <qualifiedname>hello_world::devices::referee::RxPackageInterRadarWarning::decode</qualifiedname>
+        <reimplements refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_1a69171902885fbe16d886685130c0b9fb">decode</reimplements>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>p_frame_cmd_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/referee/inc/referee_custom_define.hpp" line="72" column="17" bodyfile="HW-Components/devices/referee/inc/referee_custom_define.hpp" bodystart="72" bodyend="88"/>
+        <references refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a75f5994431c01325057a21f5de7394a6" compoundref="referee__rx__template_8hpp" startline="49">hello_world::devices::referee::RxPackageInfo::command_id_</references>
+        <references refid="namespacehello__world_1_1devices_1_1referee_1add6d3ff9dc82263c8eda3bebbb2296e1a9eadf8a9d3774d16b1d389d84252889c" compoundref="referee__custom__define_8hpp" startline="57">hello_world::devices::referee::kInterAmongRobotsIdRadarWarning</references>
+        <references refid="namespacehello__world_1_1devices_1_1referee_1a26b5485fc10e35663658bc572a59f1cba1a329bb2e90cf13162772ea34a5855dc" compoundref="referee__protocol_8hpp" startline="432">hello_world::devices::referee::kRobotIdBlueRadar</references>
+        <references refid="namespacehello__world_1_1devices_1_1referee_1a26b5485fc10e35663658bc572a59f1cba1c10f18b412c02fd8f36010c6ab9db1f" compoundref="referee__protocol_8hpp" startline="421">hello_world::devices::referee::kRobotIdRedRadar</references>
+        <references refid="structhello__world_1_1devices_1_1referee_1_1_____r_e_f_e_r_e_e___p_a_c_k_e_d_1a469ed4bc57687c86cc2773332b5f002b" compoundref="referee__protocol_8hpp" startline="463">hello_world::devices::referee::__REFEREE_PACKED::sender_id</references>
+        <references refid="structhello__world_1_1devices_1_1referee_1_1_____r_e_f_e_r_e_e___p_a_c_k_e_d_1ae525464482d2046a9865a70f3d2ae4ea" compoundref="referee__protocol_8hpp" startline="462">hello_world::devices::referee::__REFEREE_PACKED::sub_content_id</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>hello_world::devices::referee::RxPackage&lt; InterRadarWarning &gt;</label>
+        <link refid="classhello__world_1_1devices_1_1referee_1_1_rx_package"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>hello_world::devices::referee::RxPackageInfo</label>
+        <link refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_info"/>
+      </node>
+      <node id="1">
+        <label>hello_world::devices::referee::RxPackageInterRadarWarning</label>
+        <link refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_inter_radar_warning"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>hello_world::devices::referee::RxPackage&lt; InterRadarWarning &gt;</label>
+        <link refid="classhello__world_1_1devices_1_1referee_1_1_rx_package"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>data_</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>hello_world::devices::referee::MainCtrllerKeyboard</label>
+        <link refid="unionhello__world_1_1devices_1_1referee_1_1_main_ctrller_keyboard"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>key</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>hello_world::devices::referee::RxPackageInfo</label>
+        <link refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_info"/>
+      </node>
+      <node id="1">
+        <label>hello_world::devices::referee::RxPackageInterRadarWarning</label>
+        <link refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_inter_radar_warning"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>hello_world::devices::referee::__REFEREE_PACKED</label>
+        <link refid="structhello__world_1_1devices_1_1referee_1_1_____r_e_f_e_r_e_e___p_a_c_k_e_d"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>interaction_graphic</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>keyboard</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="HW-Components/devices/referee/inc/referee_custom_define.hpp" line="68" column="1" bodyfile="HW-Components/devices/referee/inc/referee_custom_define.hpp" bodystart="69" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a75f5994431c01325057a21f5de7394a6" prot="protected" virt="non-virtual"><scope>hello_world::devices::referee::RxPackageInterRadarWarning</scope><name>command_id_</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_1aa26ecd414bcce3624fd4ee43555e06ed" prot="public" virt="non-virtual"><scope>hello_world::devices::referee::RxPackageInterRadarWarning</scope><name>data</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_1a1b773247599e0da8f8e3b2276ad43ce9" prot="private" virt="non-virtual"><scope>hello_world::devices::referee::RxPackageInterRadarWarning</scope><name>data_</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_inter_radar_warning_1ab36c0be84c4a8b518e7141d77401c425" prot="public" virt="virtual"><scope>hello_world::devices::referee::RxPackageInterRadarWarning</scope><name>decode</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a652358f4036b06f1131520b6b6e8fc2a" prot="protected" virt="non-virtual"><scope>hello_world::devices::referee::RxPackageInterRadarWarning</scope><name>is_handled_</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a4d47f980c5f11bbe7bc5bf5d3cd448a4" prot="public" virt="non-virtual"><scope>hello_world::devices::referee::RxPackageInterRadarWarning</scope><name>isUpdated</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1ae30c9a631d1bd61d4599d68b54cbfa8b" prot="protected" virt="non-virtual"><scope>hello_world::devices::referee::RxPackageInterRadarWarning</scope><name>last_update_tick_</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1ae1e2d401d69833283bfa4d2bd4fccf16" prot="private" virt="non-virtual"><scope>hello_world::devices::referee::RxPackageInterRadarWarning</scope><name>Referee</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_1a2f6e09b96618c66f057d7717195e483f" prot="public" virt="non-virtual"><scope>hello_world::devices::referee::RxPackageInterRadarWarning</scope><name>RxPackage</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a425addbe56cad6a94fc00d5a4beae287" prot="public" virt="non-virtual"><scope>hello_world::devices::referee::RxPackageInterRadarWarning</scope><name>RxPackageInfo</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_inter_radar_warning_1a46fe12866c55ba13a3050f1ef3e5935f" prot="public" virt="non-virtual"><scope>hello_world::devices::referee::RxPackageInterRadarWarning</scope><name>RxPackageInterRadarWarning</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a2767a90b294aac66ab8268a40f89070e" prot="public" virt="non-virtual"><scope>hello_world::devices::referee::RxPackageInterRadarWarning</scope><name>setHandled</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a35731243c59c43b397c3b426abd0a631" prot="protected" virt="non-virtual"><scope>hello_world::devices::referee::RxPackageInterRadarWarning</scope><name>update_interval_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

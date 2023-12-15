@@ -1,0 +1,758 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: hello_world::algorithms::controller::pid::SetpointRamping类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">hello_world::algorithms::controller::pid::SetpointRamping类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>设定点斜坡优化类  
+ <a href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="pid__opt_8hpp_source.html">pid_opt.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abfad7fc77ed8ddc3f7b358112b3ef28d" id="r_abfad7fc77ed8ddc3f7b358112b3ef28d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#abfad7fc77ed8ddc3f7b358112b3ef28d">SetpointRamping</a> (bool is_enabled=false, float lower=-0.01, float upper=0.01, float weight=0.5)</td></tr>
+<tr class="memdesc:abfad7fc77ed8ddc3f7b358112b3ef28d"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数，初始化设定点斜坡优化参数  <br /></td></tr>
+<tr class="separator:abfad7fc77ed8ddc3f7b358112b3ef28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a871b1700f3f33338caf9eb893fbe1c5b" id="r_a871b1700f3f33338caf9eb893fbe1c5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#a871b1700f3f33338caf9eb893fbe1c5b">setEnabled</a> (bool is_enabled)</td></tr>
+<tr class="memdesc:a871b1700f3f33338caf9eb893fbe1c5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置是否启用设定点斜坡优化  <br /></td></tr>
+<tr class="separator:a871b1700f3f33338caf9eb893fbe1c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b0695ce28a8513c8496f7fb4879777c" id="r_a8b0695ce28a8513c8496f7fb4879777c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#a8b0695ce28a8513c8496f7fb4879777c">setLower</a> (float lower)</td></tr>
+<tr class="memdesc:a8b0695ce28a8513c8496f7fb4879777c"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置输出下限  <br /></td></tr>
+<tr class="separator:a8b0695ce28a8513c8496f7fb4879777c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a583e8721e40c329c56b831c9d9dbfd96" id="r_a583e8721e40c329c56b831c9d9dbfd96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#a583e8721e40c329c56b831c9d9dbfd96">setUpper</a> (float upper)</td></tr>
+<tr class="memdesc:a583e8721e40c329c56b831c9d9dbfd96"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置输出上限  <br /></td></tr>
+<tr class="separator:a583e8721e40c329c56b831c9d9dbfd96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a800c9eb2af9d26b49be7ec0450d0bb8a" id="r_a800c9eb2af9d26b49be7ec0450d0bb8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#a800c9eb2af9d26b49be7ec0450d0bb8a">setWeight</a> (float weight)</td></tr>
+<tr class="memdesc:a800c9eb2af9d26b49be7ec0450d0bb8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置权重  <br /></td></tr>
+<tr class="separator:a800c9eb2af9d26b49be7ec0450d0bb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a460329f8b9e9879ff4a3b33e23c65a64" id="r_a460329f8b9e9879ff4a3b33e23c65a64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#a460329f8b9e9879ff4a3b33e23c65a64">setParams</a> (bool is_enabled, float lower, float upper, float weight)</td></tr>
+<tr class="memdesc:a460329f8b9e9879ff4a3b33e23c65a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置设定点斜坡优化参数  <br /></td></tr>
+<tr class="separator:a460329f8b9e9879ff4a3b33e23c65a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa422d35b86458e8eefbfff91aabc0663" id="r_aa422d35b86458e8eefbfff91aabc0663"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#aa422d35b86458e8eefbfff91aabc0663">isLegal</a> ()</td></tr>
+<tr class="memdesc:aa422d35b86458e8eefbfff91aabc0663"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查设定点斜坡优化参数是否合法  <br /></td></tr>
+<tr class="separator:aa422d35b86458e8eefbfff91aabc0663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73d9e96b10b0e9782752b7895ca9884" id="r_ae73d9e96b10b0e9782752b7895ca9884"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#ae73d9e96b10b0e9782752b7895ca9884">isEnabled</a> ()</td></tr>
+<tr class="memdesc:ae73d9e96b10b0e9782752b7895ca9884"><td class="mdescLeft">&#160;</td><td class="mdescRight">检查是否启用了设定点斜坡优化  <br /></td></tr>
+<tr class="separator:ae73d9e96b10b0e9782752b7895ca9884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7833313869bfc6845232378f32019e29" id="r_a7833313869bfc6845232378f32019e29"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#a7833313869bfc6845232378f32019e29">calc</a> (float ref, float last_ref)</td></tr>
+<tr class="memdesc:a7833313869bfc6845232378f32019e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算设定点斜坡优化后的输出值  <br /></td></tr>
+<tr class="separator:a7833313869bfc6845232378f32019e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:aa61bfaf1f7fbf60ae83fb6912fd89ef4" id="r_aa61bfaf1f7fbf60ae83fb6912fd89ef4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#aa61bfaf1f7fbf60ae83fb6912fd89ef4">handleIllegalParams</a> ()</td></tr>
+<tr class="memdesc:aa61bfaf1f7fbf60ae83fb6912fd89ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理非法参数  <br /></td></tr>
+<tr class="separator:aa61bfaf1f7fbf60ae83fb6912fd89ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:a1fc6c333f41f638e72eb66b25cb4f3ab" id="r_a1fc6c333f41f638e72eb66b25cb4f3ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#a1fc6c333f41f638e72eb66b25cb4f3ab">is_enabled_</a></td></tr>
+<tr class="memdesc:a1fc6c333f41f638e72eb66b25cb4f3ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">是否启用设定点斜坡优化  <br /></td></tr>
+<tr class="separator:a1fc6c333f41f638e72eb66b25cb4f3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b9cffa6bd25366c81bc5e6ed0a47a62" id="r_a5b9cffa6bd25366c81bc5e6ed0a47a62"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#a5b9cffa6bd25366c81bc5e6ed0a47a62">lower_</a></td></tr>
+<tr class="memdesc:a5b9cffa6bd25366c81bc5e6ed0a47a62"><td class="mdescLeft">&#160;</td><td class="mdescRight">触发设定点斜坡优化的参考值下限  <br /></td></tr>
+<tr class="separator:a5b9cffa6bd25366c81bc5e6ed0a47a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a045c57ece17e2b7d8d0085fbaf99bd06" id="r_a045c57ece17e2b7d8d0085fbaf99bd06"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#a045c57ece17e2b7d8d0085fbaf99bd06">upper_</a></td></tr>
+<tr class="memdesc:a045c57ece17e2b7d8d0085fbaf99bd06"><td class="mdescLeft">&#160;</td><td class="mdescRight">触发设定点斜坡优化的参考值上限  <br /></td></tr>
+<tr class="separator:a045c57ece17e2b7d8d0085fbaf99bd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ea21fd7b12500a62ffb60cfa4b4942" id="r_ae6ea21fd7b12500a62ffb60cfa4b4942"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#ae6ea21fd7b12500a62ffb60cfa4b4942">weight_</a></td></tr>
+<tr class="memdesc:ae6ea21fd7b12500a62ffb60cfa4b4942"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算设定点斜坡优化的权重值  <br /></td></tr>
+<tr class="separator:ae6ea21fd7b12500a62ffb60cfa4b4942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>设定点斜坡优化类 </p>
+<p>当给定值出现较大的阶跃变化，很容易引起超调。 使用线性斜坡函数或一阶滤波为给定值安排过渡过程，使其从其旧值逐渐变化到新值。 这样可以避免阶跃变化产生的不连续性，进而使对象运行平稳，适用于高精度伺服系统的位置跟踪。</p>
+<ul>
+<li>具体计算公式见<code><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#a7833313869bfc6845232378f32019e29" title="计算设定点斜坡优化后的输出值">calc(float ref, float last_ref)</a></code>。</li>
+<li>参数合法性检查见<code><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#aa422d35b86458e8eefbfff91aabc0663" title="检查设定点斜坡优化参数是否合法">isLegal()</a></code>。</li>
+<li>启用判定见<code><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#ae73d9e96b10b0e9782752b7895ca9884" title="检查是否启用了设定点斜坡优化">isEnabled()</a></code>。 </li>
+</ul>
+
+<p class="definition">在文件 <a class="el" href="pid__opt_8hpp_source.html">pid_opt.hpp</a> 第 <a class="el" href="pid__opt_8hpp_source.html#l01045">1045</a> 行定义.</p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a id="abfad7fc77ed8ddc3f7b358112b3ef28d" name="abfad7fc77ed8ddc3f7b358112b3ef28d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfad7fc77ed8ddc3f7b358112b3ef28d">&#9670;&#160;</a></span>SetpointRamping()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">hello_world::algorithms::controller::pid::SetpointRamping::SetpointRamping </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_enabled</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lower</em> = <code>-0.01</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>upper</em> = <code>0.01</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>weight</em> = <code>0.5</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>构造函数，初始化设定点斜坡优化参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_enabled</td><td>是否启用设定点斜坡优化，默认为false </td></tr>
+    <tr><td class="paramname">lower</td><td>输出下限，默认值为-0.01 </td></tr>
+    <tr><td class="paramname">upper</td><td>输出上限，默认值为0.01 </td></tr>
+    <tr><td class="paramname">weight</td><td>权重，默认值为0.5 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="pid__opt_8hpp_source.html">pid_opt.hpp</a> 第 <a class="el" href="pid__opt_8hpp_source.html#l01055">1055</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a7833313869bfc6845232378f32019e29" name="a7833313869bfc6845232378f32019e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7833313869bfc6845232378f32019e29">&#9670;&#160;</a></span>calc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::algorithms::controller::pid::SetpointRamping::calc </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>ref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>last_ref</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算设定点斜坡优化后的输出值 </p>
+<p>具体的计算公式为：  </p><p class="formulaDsp">
+\[
+r(k)=\begin{cases}
+w*r(k-1)+(1-w)*r(k)  &amp; ,  isEnabled() \wedge r(j) \notin \left [ \epsilon_l,\epsilon_u \right ]   \\
+r(k)  &amp; ,others
+\end{cases}
+\]
+</p>
+<p>， 其中 \(\epsilon_l\) 为参数中的下限值， \(\epsilon_u\)为参数中的上限值， \(w\)为参数中的权重值 </p><dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ref</td><td>本次采样的参考值 </td></tr>
+    <tr><td class="paramname">last_ref</td><td>上次采样的参考值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>本次采样的设定点斜坡优化后的输出值 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pid__opt_8hpp_source.html">pid_opt.hpp</a> 第 <a class="el" href="pid__opt_8hpp_source.html#l01162">1162</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_a7833313869bfc6845232378f32019e29_icgraph.svg" width="964" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa61bfaf1f7fbf60ae83fb6912fd89ef4" name="aa61bfaf1f7fbf60ae83fb6912fd89ef4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa61bfaf1f7fbf60ae83fb6912fd89ef4">&#9670;&#160;</a></span>handleIllegalParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hello_world::algorithms::controller::pid::SetpointRamping::handleIllegalParams </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>处理非法参数 </p>
+<p>如果下限大于上限，交换两者的值。 如果权重小于0，设置权重为0。 如果权重大于1，设置权重为1。</p>
+<dl class="section return"><dt>返回</dt><dd>如果存在非法参数返回true，否则返回false </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">true</td><td>存在非法参数 </td></tr>
+    <tr><td class="paramname">false</td><td>不存在非法参数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="pid__opt_8hpp_source.html">pid_opt.hpp</a> 第 <a class="el" href="pid__opt_8hpp_source.html#l01191">1191</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae73d9e96b10b0e9782752b7895ca9884" name="ae73d9e96b10b0e9782752b7895ca9884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae73d9e96b10b0e9782752b7895ca9884">&#9670;&#160;</a></span>isEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hello_world::algorithms::controller::pid::SetpointRamping::isEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检查是否启用了设定点斜坡优化 </p>
+<dl class="section return"><dt>返回</dt><dd>如果启用了设定点斜坡优化并且参数合法，则返回true，否则返回false </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pid__opt_8hpp_source.html">pid_opt.hpp</a> 第 <a class="el" href="pid__opt_8hpp_source.html#l01144">1144</a> 行定义.</p>
+
+</div>
+</div>
+<a id="aa422d35b86458e8eefbfff91aabc0663" name="aa422d35b86458e8eefbfff91aabc0663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa422d35b86458e8eefbfff91aabc0663">&#9670;&#160;</a></span>isLegal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hello_world::algorithms::controller::pid::SetpointRamping::isLegal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>检查设定点斜坡优化参数是否合法 </p>
+<dl class="section return"><dt>返回</dt><dd>参数合法返回true，否则返回false </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pid__opt_8hpp_source.html">pid_opt.hpp</a> 第 <a class="el" href="pid__opt_8hpp_source.html#l01135">1135</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a871b1700f3f33338caf9eb893fbe1c5b" name="a871b1700f3f33338caf9eb893fbe1c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a871b1700f3f33338caf9eb893fbe1c5b">&#9670;&#160;</a></span>setEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a> hello_world::algorithms::controller::pid::SetpointRamping::setEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_enabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置是否启用设定点斜坡优化 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_enabled</td><td>是否启用设定点斜坡优化 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>设置状态，成功返回kStateOk </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pid__opt_8hpp_source.html">pid_opt.hpp</a> 第 <a class="el" href="pid__opt_8hpp_source.html#l01066">1066</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a8b0695ce28a8513c8496f7fb4879777c" name="a8b0695ce28a8513c8496f7fb4879777c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b0695ce28a8513c8496f7fb4879777c">&#9670;&#160;</a></span>setLower()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a> hello_world::algorithms::controller::pid::SetpointRamping::setLower </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lower</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置输出下限 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lower</td><td>输出下限 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>设置状态，如果参数合法返回kStateOk，否则在处理非法参数后返回kStateError </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">kStateOK</td><td>设置成功且参数合法 </td></tr>
+    <tr><td class="paramname">kStateError</td><td>设置成功但参数非法 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="pid__opt_8hpp_source.html">pid_opt.hpp</a> 第 <a class="el" href="pid__opt_8hpp_source.html#l01079">1079</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a460329f8b9e9879ff4a3b33e23c65a64" name="a460329f8b9e9879ff4a3b33e23c65a64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a460329f8b9e9879ff4a3b33e23c65a64">&#9670;&#160;</a></span>setParams()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a> hello_world::algorithms::controller::pid::SetpointRamping::setParams </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>is_enabled</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>lower</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>upper</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>weight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置设定点斜坡优化参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is_enabled</td><td>是否启用设定点斜坡优化 </td></tr>
+    <tr><td class="paramname">lower</td><td>输出下限 </td></tr>
+    <tr><td class="paramname">upper</td><td>输出上限 </td></tr>
+    <tr><td class="paramname">weight</td><td>权重 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>设置状态，如果参数合法返回kStateOk，否则在处理非法参数后返回kStateError </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">kStateOK</td><td>设置成功且参数合法 </td></tr>
+    <tr><td class="paramname">kStateError</td><td>设置成功但参数非法 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="pid__opt_8hpp_source.html">pid_opt.hpp</a> 第 <a class="el" href="pid__opt_8hpp_source.html#l01121">1121</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a583e8721e40c329c56b831c9d9dbfd96" name="a583e8721e40c329c56b831c9d9dbfd96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a583e8721e40c329c56b831c9d9dbfd96">&#9670;&#160;</a></span>setUpper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a> hello_world::algorithms::controller::pid::SetpointRamping::setUpper </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>upper</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置输出上限 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">upper</td><td>输出上限 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>设置状态，如果参数合法返回kStateOk，否则在处理非法参数后返回kStateError </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">kStateOK</td><td>设置成功且参数合法 </td></tr>
+    <tr><td class="paramname">kStateError</td><td>设置成功但参数非法 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="pid__opt_8hpp_source.html">pid_opt.hpp</a> 第 <a class="el" href="pid__opt_8hpp_source.html#l01092">1092</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a800c9eb2af9d26b49be7ec0450d0bb8a" name="a800c9eb2af9d26b49be7ec0450d0bb8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a800c9eb2af9d26b49be7ec0450d0bb8a">&#9670;&#160;</a></span>setWeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a> hello_world::algorithms::controller::pid::SetpointRamping::setWeight </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>weight</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置权重 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">weight</td><td>权重 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>设置状态，如果参数合法返回kStateOk，否则在处理非法参数后返回kStateError </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">kStateOK</td><td>设置成功且参数合法 </td></tr>
+    <tr><td class="paramname">kStateError</td><td>设置成功但参数非法 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">在文件 <a class="el" href="pid__opt_8hpp_source.html">pid_opt.hpp</a> 第 <a class="el" href="pid__opt_8hpp_source.html#l01105">1105</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a1fc6c333f41f638e72eb66b25cb4f3ab" name="a1fc6c333f41f638e72eb66b25cb4f3ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fc6c333f41f638e72eb66b25cb4f3ab">&#9670;&#160;</a></span>is_enabled_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool hello_world::algorithms::controller::pid::SetpointRamping::is_enabled_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>是否启用设定点斜坡优化 </p>
+
+<p class="definition">在文件 <a class="el" href="pid__opt_8hpp_source.html">pid_opt.hpp</a> 第 <a class="el" href="pid__opt_8hpp_source.html#l01175">1175</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a5b9cffa6bd25366c81bc5e6ed0a47a62" name="a5b9cffa6bd25366c81bc5e6ed0a47a62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b9cffa6bd25366c81bc5e6ed0a47a62">&#9670;&#160;</a></span>lower_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::algorithms::controller::pid::SetpointRamping::lower_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>触发设定点斜坡优化的参考值下限 </p>
+
+<p class="definition">在文件 <a class="el" href="pid__opt_8hpp_source.html">pid_opt.hpp</a> 第 <a class="el" href="pid__opt_8hpp_source.html#l01176">1176</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a045c57ece17e2b7d8d0085fbaf99bd06" name="a045c57ece17e2b7d8d0085fbaf99bd06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a045c57ece17e2b7d8d0085fbaf99bd06">&#9670;&#160;</a></span>upper_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::algorithms::controller::pid::SetpointRamping::upper_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>触发设定点斜坡优化的参考值上限 </p>
+
+<p class="definition">在文件 <a class="el" href="pid__opt_8hpp_source.html">pid_opt.hpp</a> 第 <a class="el" href="pid__opt_8hpp_source.html#l01177">1177</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ae6ea21fd7b12500a62ffb60cfa4b4942" name="ae6ea21fd7b12500a62ffb60cfa4b4942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6ea21fd7b12500a62ffb60cfa4b4942">&#9670;&#160;</a></span>weight_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::algorithms::controller::pid::SetpointRamping::weight_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算设定点斜坡优化的权重值 </p>
+
+<p class="definition">在文件 <a class="el" href="pid__opt_8hpp_source.html">pid_opt.hpp</a> 第 <a class="el" href="pid__opt_8hpp_source.html#l01178">1178</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacehello__world.html">hello_world</a></li><li class="navelem"><a class="el" href="namespacehello__world_1_1algorithms.html">algorithms</a></li><li class="navelem"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html">controller</a></li><li class="navelem"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller_1_1pid.html">pid</a></li><li class="navelem"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html">SetpointRamping</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

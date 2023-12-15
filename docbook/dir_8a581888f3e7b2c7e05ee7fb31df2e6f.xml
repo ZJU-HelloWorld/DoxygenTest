@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_8a581888f3e7b2c7e05ee7fb31df2e6f" xml:lang="zh">
+<title>HW-Components/algorithms/ik_solver/src 目录参考</title>
+<indexterm><primary>HW-Components/algorithms/ik_solver/src 目录参考</primary></indexterm>
+src 的目录依赖关系图<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_8a581888f3e7b2c7e05ee7fb31df2e6f_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>文件    </title>
+        <itemizedlist>
+            <listitem><para>文件 <link linkend="_chassis__iksolver_8cpp">chassis_iksolver.cpp</link></para>
+
+<para><?linebreak?> </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

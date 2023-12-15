@@ -1,0 +1,525 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band" xml:lang="zh">
+<title>hello_world::algorithms::controller::pid::DeadBand类 参考</title>
+<indexterm><primary>hello_world::algorithms::controller::pid::DeadBand</primary></indexterm>
+<para>
+
+<para>死区优化类 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;pid_opt.hpp&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ab1dc5574bcf81f9eef3c0fa6f8b60f3b">DeadBand</link> (bool is_enabled=false, float lower=-0.01, float upper=0.01)</para>
+
+<para>构造函数，初始化死区优化参数 </para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ad973a9b6e41cb2ae18102b2fb8ecf451">setEnabled</link> (bool is_enabled)</para>
+
+<para>设置是否启用死区优化 </para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ad92aba81aeae786833987d340da6d28d">setLower</link> (float lower)</para>
+
+<para>设置死区下限 </para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a58c526f8628df6c9baf2de0d253af75b">setUpper</link> (float upper)</para>
+
+<para>设置死区上限 </para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a46a07d46aeb0bef20bc732cad70b6f40">setParams</link> (bool is_enabled, float lower, float upper)</para>
+
+<para>设置死区优化参数 </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a3e0c3a79e1424e86dd8d642a65814389">isLegal</link> ()</para>
+
+<para>检查死区优化参数是否合法 </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aad31e9ef7c315aea7c9ff7e06d6740b9">isEnabled</link> ()</para>
+
+<para>检查是否启用了死区优化 </para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1adff792034723f0cc61648e5c0696546c">calc</link> (float err)</para>
+
+<para>计算死区优化后的误差值 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 成员函数    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a62f41d9f1429169b7149493f6d23ba94">handleIllegalParams</link> ()</para>
+
+<para>处理非法参数 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 属性    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aaaf34c69c7f5968bb9ad919e5b13d168">is_enabled_</link></para>
+
+<para>是否启用死区优化 </para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a6e3d858d858368205efc5895144f6f3e">lower_</link></para>
+
+<para>死区下限 </para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a7588c98a797ba54f330fe0732a98659b">upper_</link></para>
+
+<para>死区上限 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>死区优化类 </para>
+
+
+
+<para>为避免控制作用过于频繁，消除由于频繁动作所引起的振荡，必要时可采用带死区的 PID 控制算法. 判断控制偏差是否小于给定阈值，若小于则输入误差为0。</para>
+
+<para><itemizedlist>
+<listitem>
+<para>具体计算公式见<computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1adff792034723f0cc61648e5c0696546c">calc(float err)</link></computeroutput>。</para>
+</listitem><listitem>
+<para>参数合法性检查见<computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a3e0c3a79e1424e86dd8d642a65814389">isLegal()</link></computeroutput>。</para>
+</listitem><listitem>
+<para>启用判定见<computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aad31e9ef7c315aea7c9ff7e06d6740b9">isEnabled()</link></computeroutput>。 </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00901">901</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ab1dc5574bcf81f9eef3c0fa6f8b60f3b"/><section>
+    <title>DeadBand()</title>
+<indexterm><primary>DeadBand</primary><secondary>hello_world::algorithms::controller::pid::DeadBand</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::DeadBand</primary><secondary>DeadBand</secondary></indexterm>
+<para><computeroutput>hello_world::algorithms::controller::pid::DeadBand::DeadBand (bool is_enabled = <computeroutput>false</computeroutput>
+, float lower = <computeroutput>-0.01</computeroutput>
+, float upper = <computeroutput>0.01</computeroutput>
+)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>构造函数，初始化死区优化参数 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>is_enabled</entry><entry>
+<para>是否启用死区优化，默认为false </para>
+</entry>
+                            </row>
+                            <row>
+<entry>lower</entry><entry>
+<para>死区下限，默认值为-0.01 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>upper</entry><entry>
+<para>死区上限，默认值为0.01 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00910">910</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1adff792034723f0cc61648e5c0696546c"/><section>
+    <title>calc()</title>
+<indexterm><primary>calc</primary><secondary>hello_world::algorithms::controller::pid::DeadBand</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::DeadBand</primary><secondary>calc</secondary></indexterm>
+<para><computeroutput>float hello_world::algorithms::controller::pid::DeadBand::calc (float err)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>计算死区优化后的误差值 </para>
+</para>
+
+<para>具体的计算公式为： \f\f] e(k)=\begin{cases} e(k)-\epsilon_l &amp; , <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aad31e9ef7c315aea7c9ff7e06d6740b9">isEnabled()</link> \wedge e(k) \in (-\inf,\epsilon_l) \ 0&amp;, isEnabeld() \wedge e(k) \in [\epsilon_l,\epsilon_u]\ e(k)-\epsilon_u &amp; , <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aad31e9ef7c315aea7c9ff7e06d6740b9">isEnabled()</link> \wedge e(k) \in (\epsilon_u,+\inf ) \ e(k) &amp; ,others, \end{cases} 其中 <inlinemediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_11.png"/>
+            </imageobject>
+</inlinemediaobject>
+ 为参数中的下限值， <inlinemediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_12.png"/>
+            </imageobject>
+</inlinemediaobject>
+为参数中的上限值。 
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>err</entry><entry>
+<para>本次采样的误差值 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>本次采样死区优化后的误差值 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00996">996</link> 行定义.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_adff792034723f0cc61648e5c0696546c_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a62f41d9f1429169b7149493f6d23ba94"/><section>
+    <title>handleIllegalParams()</title>
+<indexterm><primary>handleIllegalParams</primary><secondary>hello_world::algorithms::controller::pid::DeadBand</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::DeadBand</primary><secondary>handleIllegalParams</secondary></indexterm>
+<para><computeroutput>bool hello_world::algorithms::controller::pid::DeadBand::handleIllegalParams ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>处理非法参数 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>如果存在非法参数返回true，否则返回false </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01020">1020</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aad31e9ef7c315aea7c9ff7e06d6740b9"/><section>
+    <title>isEnabled()</title>
+<indexterm><primary>isEnabled</primary><secondary>hello_world::algorithms::controller::pid::DeadBand</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::DeadBand</primary><secondary>isEnabled</secondary></indexterm>
+<para><computeroutput>bool hello_world::algorithms::controller::pid::DeadBand::isEnabled ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>检查是否启用了死区优化 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>如果启用了死区优化并且参数合法，则返回true，否则返回false </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00979">979</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a3e0c3a79e1424e86dd8d642a65814389"/><section>
+    <title>isLegal()</title>
+<indexterm><primary>isLegal</primary><secondary>hello_world::algorithms::controller::pid::DeadBand</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::DeadBand</primary><secondary>isLegal</secondary></indexterm>
+<para><computeroutput>bool hello_world::algorithms::controller::pid::DeadBand::isLegal ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>检查死区优化参数是否合法 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>参数合法返回true，否则返回false </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00973">973</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ad973a9b6e41cb2ae18102b2fb8ecf451"/><section>
+    <title>setEnabled()</title>
+<indexterm><primary>setEnabled</primary><secondary>hello_world::algorithms::controller::pid::DeadBand</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::DeadBand</primary><secondary>setEnabled</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> hello_world::algorithms::controller::pid::DeadBand::setEnabled (bool is_enabled)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>设置是否启用死区优化 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>is_enabled</entry><entry>
+<para>是否启用死区优化 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>设置状态，如果参数合法返回kStateOk，否则在处理非法参数后返回kStateError </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00920">920</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ad92aba81aeae786833987d340da6d28d"/><section>
+    <title>setLower()</title>
+<indexterm><primary>setLower</primary><secondary>hello_world::algorithms::controller::pid::DeadBand</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::DeadBand</primary><secondary>setLower</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> hello_world::algorithms::controller::pid::DeadBand::setLower (float lower)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>设置死区下限 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>lower</entry><entry>
+<para>死区下限 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>设置状态，如果参数合法返回kStateOk，否则在处理非法参数后返回kStateError </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>kStateOK</entry><entry>
+<para>设置成功且参数合法 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>kStateError</entry><entry>
+<para>设置成功但参数非法 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00933">933</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a46a07d46aeb0bef20bc732cad70b6f40"/><section>
+    <title>setParams()</title>
+<indexterm><primary>setParams</primary><secondary>hello_world::algorithms::controller::pid::DeadBand</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::DeadBand</primary><secondary>setParams</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> hello_world::algorithms::controller::pid::DeadBand::setParams (bool is_enabled, float lower, float upper)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>设置死区优化参数 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>is_enabled</entry><entry>
+<para>是否启用死区优化 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>lower</entry><entry>
+<para>死区下限 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>upper</entry><entry>
+<para>死区上限 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>设置状态，如果参数合法返回kStateOk，否则在处理非法参数后返回kStateError </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>kStateOK</entry><entry>
+<para>设置成功且参数合法 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>kStateError</entry><entry>
+<para>设置成功但参数非法 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00961">961</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a58c526f8628df6c9baf2de0d253af75b"/><section>
+    <title>setUpper()</title>
+<indexterm><primary>setUpper</primary><secondary>hello_world::algorithms::controller::pid::DeadBand</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::DeadBand</primary><secondary>setUpper</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> hello_world::algorithms::controller::pid::DeadBand::setUpper (float upper)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>设置死区上限 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>upper</entry><entry>
+<para>死区上限 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>设置状态，如果参数合法返回kStateOk，否则在处理非法参数后返回kStateError </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>kStateOK</entry><entry>
+<para>设置成功且参数合法 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>kStateError</entry><entry>
+<para>设置成功但参数非法 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00946">946</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aaaf34c69c7f5968bb9ad919e5b13d168"/><section>
+    <title>is_enabled_</title>
+<indexterm><primary>is_enabled_</primary><secondary>hello_world::algorithms::controller::pid::DeadBand</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::DeadBand</primary><secondary>is_enabled_</secondary></indexterm>
+<para><computeroutput>bool hello_world::algorithms::controller::pid::DeadBand::is_enabled_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>是否启用死区优化 </para>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01012">1012</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a6e3d858d858368205efc5895144f6f3e"/><section>
+    <title>lower_</title>
+<indexterm><primary>lower_</primary><secondary>hello_world::algorithms::controller::pid::DeadBand</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::DeadBand</primary><secondary>lower_</secondary></indexterm>
+<para><computeroutput>float hello_world::algorithms::controller::pid::DeadBand::lower_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>死区下限 </para>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01013">1013</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a7588c98a797ba54f330fe0732a98659b"/><section>
+    <title>upper_</title>
+<indexterm><primary>upper_</primary><secondary>hello_world::algorithms::controller::pid::DeadBand</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::DeadBand</primary><secondary>upper_</secondary></indexterm>
+<para><computeroutput>float hello_world::algorithms::controller::pid::DeadBand::upper_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>死区上限 </para>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l01014">1014</link> 行定义.</para>
+</section>
+</section>
+</section>

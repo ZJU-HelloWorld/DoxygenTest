@@ -1,0 +1,671 @@
+\doxysection{hello\+\_\+world\+::devices\+::referee\+::Referee类 参考}
+\hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee}{}\label{classhello__world_1_1devices_1_1referee_1_1_referee}\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+
+
+{\ttfamily \#include $<$referee.\+hpp$>$}
+
+
+
+hello\+\_\+world\+::devices\+::referee\+::Referee 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1referee_1_1_referee__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_acd515216fe22c7574b6b2b67e1c40564}{Rx\+Status}} \{ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_acd515216fe22c7574b6b2b67e1c40564a822de383deb1f262ad0abca7a64e2dfe}{k\+Rx\+Status\+Waiting\+Header\+Sof}} = 0u
+, \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_acd515216fe22c7574b6b2b67e1c40564a6c7f7c7842560ce2a998a594b11341a4}{k\+Rx\+Status\+Header}}
+, \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_acd515216fe22c7574b6b2b67e1c40564a2e65fa1f7070a525a766122e485b089b}{k\+Rx\+Status\+Cmd\+Data\+Tail}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_aaa5ff496d5c254b8fd821c351bb75325}{decode\+Frame}} (const uint8\+\_\+t \texorpdfstring{$\ast$}{*}p\+\_\+frame, const size\+\_\+t \+\_\+frame\+\_\+length)
+\item 
+bool \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a823f73d223421b7d025005e99ff08291}{process\+Byte}} (const uint8\+\_\+t byte)
+\item 
+void \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a7531c733933a65549c9d019e87ee9d0b}{restart\+Decode\+Frame}} (size\+\_\+t frame\+\_\+length=\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_ae04f5c30552f8e2f1caf9d764d1cf075}{k\+Referee\+Max\+Buffer}})
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a5ce1901e90b5565bf0de6c9ce2d48c91}{encode\+Frame}} (const T \&data, const \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38a}{Frame\+Cmd\+Id}} \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a294681f5f7c37c22277f11dde7417d40}{frame\+\_\+cmd\+\_\+id}}, const uint16\+\_\+t sub\+\_\+content\+\_\+id, const uint16\+\_\+t receiver\+\_\+id, uint8\+\_\+t \texorpdfstring{$\ast$}{*}p\+\_\+frame, size\+\_\+t \&frame\+\_\+length)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a120f8c25d0f147f7d903bc09360ac4b6}{Competition\+Status}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a3bbc683a6d31d0976a8489f182afed99}{competition\+\_\+status\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a120f8c25d0f147f7d903bc09360ac4b6}{Competition\+Status}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa7364394d0ed7fb452ef026617eb224ed}{k\+Frame\+Cmd\+Id\+Competition\+Status}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a4d36900cdf6b715f57e22ddcfe6c9352}{k\+Frame\+Frequence\+Competition\+Status}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a9f6f0d0423bf00d0f1ae96a17f631ff3}{Competition\+Result}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a5d51193f3cf84493e4fb026c04e34364}{competition\+\_\+result\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a9f6f0d0423bf00d0f1ae96a17f631ff3}{Competition\+Result}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa342f8915af6e2bbd11b072c59c54468d}{k\+Frame\+Cmd\+Id\+Competition\+Result}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a70a886ccc86a628e5774db963cdd0640}{k\+Frame\+Frequence\+Competition\+Result}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_acebf85c611fd2a8989aa2923de0baa19}{Competition\+Robots\+Hp}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a140df5add0411af6be1306384e21d41b}{competition\+\_\+robots\+\_\+hp\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_acebf85c611fd2a8989aa2923de0baa19}{Competition\+Robots\+Hp}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa8f49f012a4a7959acacc389e423dd88a}{k\+Frame\+Cmd\+Id\+Competition\+Robots\+Hp}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a7fc2a529e3dcf3ff45c6acc996ecbeaa}{k\+Frame\+Frequence\+Competition\+Robots\+Hp}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a3cf074eed7d2349e72a95f38f7f819b9}{Team\+Event}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_aff6da29879d6f71d0f1a56c1390a181d}{team\+\_\+event\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a3cf074eed7d2349e72a95f38f7f819b9}{Team\+Event}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa712cec2841def70d53082a44274ed229}{k\+Frame\+Cmd\+Id\+Team\+Event}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a11167f9592984c8dc52d561406f1cd77}{k\+Frame\+Frequence\+Team\+Event}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a3c34812d70f84885ecf2efec7bb84729}{Team\+Supplier\+Action}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a9cdf9b81c40eff5bcc91e0aee4bee91f}{team\+\_\+supplier\+\_\+action\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a3c34812d70f84885ecf2efec7bb84729}{Team\+Supplier\+Action}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa41a417b13704dcb5b8c24e797f478641}{k\+Frame\+Cmd\+Id\+Team\+Supplier\+Action}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a55874ad4bd02127179643c249046c59c}{k\+Frame\+Frequence\+Team\+Supplier\+Action}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a6443a2db7c3e6433e7d6b57b959a8d9d}{Team\+Referee\+Warning}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_ad19a1226012db0cc3db5b9395d10bdd6}{team\+\_\+referee\+\_\+warning\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a6443a2db7c3e6433e7d6b57b959a8d9d}{Team\+Referee\+Warning}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aacb5b34a786dbc11937bc5d74166f1b2d}{k\+Frame\+Cmd\+Id\+Team\+Referee\+Warning}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a07a8dd6efb9a479f4ffc805864b97daf}{k\+Frame\+Frequence\+Team\+Referee\+Warning}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a92a78741399a846a27c549afb570e2ff}{Robot\+Dart\+Status}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a7fea5e8c47165d9c9b540f1e975bd06a}{robot\+\_\+dart\+\_\+status\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a92a78741399a846a27c549afb570e2ff}{Robot\+Dart\+Status}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa39939cd9347367b235f155f4af7956b8}{k\+Frame\+Cmd\+Id\+Robot\+Dart\+Status}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a4423684366bbab0fea1a1dab7130a302}{k\+Frame\+Frequence\+Robot\+Dart\+Status}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a96bab3b66b40a6869526f99c89aeb435}{Robot\+Performance}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a642505b6deedd6e7c6b6c8ee70c24e5e}{robot\+\_\+performance\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a96bab3b66b40a6869526f99c89aeb435}{Robot\+Performance}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aaec72ea9287faf1dd8a7fb4f9b4cdce49}{k\+Frame\+Cmd\+Id\+Robot\+Performance}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a0a5c4a962f88b0d5b0354b7c60010432}{k\+Frame\+Frequence\+Robot\+Performance}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a6d976c0d386a5c3ffb3a5fa2b73bdac9}{Robot\+Power\+Heat}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_af6c0e1dd85e39a3269746507dbc089c6}{robot\+\_\+power\+\_\+heat\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a6d976c0d386a5c3ffb3a5fa2b73bdac9}{Robot\+Power\+Heat}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa1d548d9ee4126df5808565577339e192}{k\+Frame\+Cmd\+Id\+Robot\+Power\+Heat}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a1e81fd8f846c8a31831415cca528db21}{k\+Frame\+Frequence\+Robot\+Power\+Heat}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a2d932e9aed81b46dbfad7ad062d1b09e}{Robot\+Position}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a36debf018cbf51e943898ab28dcf48e7}{robot\+\_\+position\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a2d932e9aed81b46dbfad7ad062d1b09e}{Robot\+Position}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aae543893a29038a27da8adfbd2ba54fc9}{k\+Frame\+Cmd\+Id\+Robot\+Position}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835acca90839ecbeac0de1c5e3644c061bea}{k\+Frame\+Frequence\+Robot\+Position}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_ac8a0db3ba88eafd84e207c49a903bdb9}{Robot\+Buff}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_aa1141e998033255c57b62425831467ed}{robot\+\_\+buff\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_ac8a0db3ba88eafd84e207c49a903bdb9}{Robot\+Buff}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa925fc9c1e1a2e107d4969975ba20c0e0}{k\+Frame\+Cmd\+Id\+Robot\+Buff}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a5b6592779809f85b3c0531223eda31d4}{k\+Frame\+Frequence\+Robot\+Buff}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a0e3d5447fec459a923c12ed6576eee91}{Robot\+Aerial\+Status}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a5cedba9848dbc3bbd3386274b5c333ab}{robot\+\_\+aerial\+\_\+status\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a0e3d5447fec459a923c12ed6576eee91}{Robot\+Aerial\+Status}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa19f1f2df3d672ea77e61a46e5097f4d5}{k\+Frame\+Cmd\+Id\+Robot\+Aerial\+Status}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835ac3cfa7d08b56c38f095922030c272f3d}{k\+Frame\+Frequence\+Robot\+Aerial\+Status}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aa8bf4c00887719c935f5fdf2aad141e2}{Robot\+Damage}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_ad30e851859ec324d0ffd2741a1c7e19d}{robot\+\_\+damage\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aa8bf4c00887719c935f5fdf2aad141e2}{Robot\+Damage}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa22e913c459302c07ec2237854a238bab}{k\+Frame\+Cmd\+Id\+Robot\+Damage}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835aaefaeff580a7a0e50a9eff7df771d527}{k\+Frame\+Frequence\+Robot\+Damage}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a807097630d76b7ac448adbdadd1910e8}{Robot\+Shoot\+Data}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_ac8b68aed6a56ee4e2c7a7c7ef9bcfa4c}{robot\+\_\+shoot\+\_\+data\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a807097630d76b7ac448adbdadd1910e8}{Robot\+Shoot\+Data}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa2233eaa30b4cfe033481b4fb93b43adf}{k\+Frame\+Cmd\+Id\+Robot\+Shoot\+Data}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a02e84b24a4b696fb40d16f7989a982a5}{k\+Frame\+Frequence\+Robot\+Shoot\+Data}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a1b32b2da561d6dd786cf9334009cc311}{Robot\+Projectile\+Allowance}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_afebcf5378a32190605fe35ef7dc14033}{robot\+\_\+projectile\+\_\+allowance\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a1b32b2da561d6dd786cf9334009cc311}{Robot\+Projectile\+Allowance}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aaf29e784a9d7ef5bc4f59365e1106d85a}{k\+Frame\+Cmd\+Id\+Robot\+Projectile\+Allowance}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a3f18fd7bddde7fd514078ca860d9d4c9}{k\+Frame\+Frequence\+Robot\+Projectile\+Allowance}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a067d420509eb4fec84dddaa3d03b55b0}{Robot\+Rfid}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a2f141df240e890b2286b9f0ee5982469}{robot\+\_\+rfid\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a067d420509eb4fec84dddaa3d03b55b0}{Robot\+Rfid}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aab8c1325040183bd20e072c55bc4e5181}{k\+Frame\+Cmd\+Id\+Robot\+Rfid}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a1bd1faee148ed7f2acc2bec1f8c026c8}{k\+Frame\+Frequence\+Robot\+Rfid}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a696c2912a6e678f9215ccb1da6975e28}{Robot\+Dart\+Client\+Command}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a5ce0f851754908a04814cb0bcaf0f172}{robot\+\_\+dart\+\_\+client\+\_\+command\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a696c2912a6e678f9215ccb1da6975e28}{Robot\+Dart\+Client\+Command}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa7bd95f7ad33d8c829145c9165a28daa0}{k\+Frame\+Cmd\+Id\+Robot\+Dart\+Client\+Command}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835aeb381f93b06411df0b210663d114417e}{k\+Frame\+Frequence\+Robot\+Dart\+Client\+Command}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a07ddd7f4ca1663e96e450eab4d7a4832}{Robots\+Ground\+Position}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a5b736708e0a9613ccac68a8d29c11bbf}{robots\+\_\+ground\+\_\+position\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a07ddd7f4ca1663e96e450eab4d7a4832}{Robots\+Ground\+Position}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa5464cd0d9f0101bb2ce8db996cbf3cc2}{k\+Frame\+Cmd\+Id\+Robots\+Ground\+Position}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a2a597f8a7720274912d1f13e33376af2}{k\+Frame\+Frequence\+Robots\+Ground\+Position}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a700c7baf532de981b4740e60b89869db}{Robot\+Radar\+Mark\+Progress}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a7cc409e584d764578a62fcce886e03b8}{robot\+\_\+radar\+\_\+mark\+\_\+progress\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a700c7baf532de981b4740e60b89869db}{Robot\+Radar\+Mark\+Progress}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aace62ba2eddd97d5eabd420f267c117be}{k\+Frame\+Cmd\+Id\+Robot\+Radar\+Mark\+Progress}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a84334ce543f57e1f6e40cb64e8167418}{k\+Frame\+Frequence\+Robot\+Radar\+Mark\+Progress}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a58ae0c856b79b302d9adf671228c8c2f}{Inter\+Custom\+Ctrller\+To\+Robot}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a541a5328988ee27a441925c135b2abcc}{inter\+\_\+custom\+\_\+controller\+\_\+to\+\_\+robot\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a58ae0c856b79b302d9adf671228c8c2f}{Inter\+Custom\+Ctrller\+To\+Robot}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa330630cfe015f7dd4e6b734f194af541}{k\+Frame\+Cmd\+Id\+Inter\+Custom\+Ctrller\+To\+Robot}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a04a907840b35c4ad94cb3a393af336a5}{k\+Frame\+Frequence\+Inter\+Custom\+Ctrller\+To\+Robot}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_af1ecc145d86067ae99492637275f77b9}{Inter\+Client\+Map\+To\+Robots}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_aa5417b362ca089b8a7bcfab2138af101}{inter\+\_\+client\+\_\+map\+\_\+to\+\_\+robots\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_af1ecc145d86067ae99492637275f77b9}{Inter\+Client\+Map\+To\+Robots}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa024ce6b1532475a35c5b5ddd4934c7de}{k\+Frame\+Cmd\+Id\+Inter\+Client\+Map\+To\+Robots}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a31ea6d86d28b1f06d0e1d568588c03f8}{k\+Frame\+Frequence\+Inter\+Client\+Map\+To\+Robots}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a8cb11ceb823b96a4c356b0dc8b75a986}{Inter\+Ctrller\+To\+Robot}} $>$ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a496facf073c7e9dd5cc2f26b1f2e0ba1}{inter\+\_\+controller\+\_\+to\+\_\+robot\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a8cb11ceb823b96a4c356b0dc8b75a986}{Inter\+Ctrller\+To\+Robot}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa3302e04471e3a5ffaff6bed0e8546bbb}{k\+Frame\+Cmd\+Id\+Inter\+Ctrller\+To\+Robot}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835ae77ced50557b0f77fe62b630c64723df}{k\+Frame\+Frequence\+Inter\+Ctrller\+To\+Robot}})
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_inter_radar_warning}{Rx\+Package\+Inter\+Radar\+Warning}} \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a72226bbfe11ee30e6488ef4857b02e94}{inter\+\_\+radar\+\_\+warning\+\_\+}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_inter_radar_warning}{Rx\+Package\+Inter\+Radar\+Warning}}()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_af9388d8910762162a0d23d0ba44df19a}{decode\+Rx\+Package}} (const uint8\+\_\+t \texorpdfstring{$\ast$}{*}p\+\_\+frame\+\_\+cmd\+\_\+data)
+\item 
+bool \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_aabc8ab368e15253c1f375e15f625e640}{encode\+Set\+Crc}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}p\+\_\+frame, size\+\_\+t frame\+\_\+length)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info}{Rx\+Package\+Info}} \texorpdfstring{$\ast$}{*}const \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a5481fcc9436ee0e8a96d49cd53b0d72e}{k\+Referee\+Rx\+Package\+Ptrs}} \mbox{[}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a757fe050e25f4290f2f9380913a7a851}{k\+Referee\+Rx\+Package\+Number}}\mbox{]}
+\item 
+size\+\_\+t \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a67ca4ac28c08e9598b166cc771002fac}{last\+\_\+updated\+\_\+frame\+\_\+index\+\_\+}} = 0
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>union \{\\
+\>\>struct {\bfseries \_\_REFEREE\_PACKED} \{\\
+\>\>\>\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a6486c1d8e85c356ee100d896c56a289e}{FrameHeader}} \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_aa0d4786341aed66abbc51503150475d9}{frame\_header}}\\
+\>\>\>\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38a}{FrameCmdId}} \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a294681f5f7c37c22277f11dde7417d40}{frame\_cmd\_id}}\\
+\>\>\} \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a399bb53e944d780e73f500606b904bac}{header}}\\
+\>\>uint8\_t \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_aba465970f4869202d98d88fd164f22c0}{frame\_raw}} \mbox{[}\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_ae04f5c30552f8e2f1caf9d764d1cf075}{kRefereeMaxBuffer}}\mbox{]}\\
+\>\} \\
+\>\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_acd515216fe22c7574b6b2b67e1c40564}{RxStatus}} \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a8b316679a2d73ad91d1354e0026f9b4b}{rx\_status}} = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_acd515216fe22c7574b6b2b67e1c40564a822de383deb1f262ad0abca7a64e2dfe}{kRxStatusWaitingHeaderSof}}\\
+\>size\_t \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_aa9a010772a7afefb48266b2a7a1b3e24}{frame\_data\_index}} = 0\\
+\>size\_t \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a1b68da750a70bcbec327decd02302b8b}{frame\_expect\_length}} = 0\\
+\} \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a529c88272742c7f88f22a1a059538ff2}{rx\_info\_}}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct {\bfseries \_\_REFEREE\_PACKED} \{\\
+\>\>\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a6486c1d8e85c356ee100d896c56a289e}{FrameHeader}} \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_aa0d4786341aed66abbc51503150475d9}{frame\_header}}\\
+\>\>\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38a}{FrameCmdId}} \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a294681f5f7c37c22277f11dde7417d40}{frame\_cmd\_id}}\\
+\>\>\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a10ff64448d7c5d3f3a1bc91bf65e7ba2}{InterFrameHeader}} \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a4a3725f356cfb07ddb7d6f780ebcbdef}{inter\_frame\_header}}\\
+\>\} \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a178b713060a7e2bbafa269ae31a3f215}{header}}\\
+\>uint8\_t \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_aba465970f4869202d98d88fd164f22c0}{frame\_raw}} \mbox{[}\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_ae04f5c30552f8e2f1caf9d764d1cf075}{kRefereeMaxBuffer}}\mbox{]}\\
+\} \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a18e2e733ee7fb54dcaed7e3225c6124f}{tx\_info\_}}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+\doxysubsubsection*{静态 Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+static const size\+\_\+t \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a757fe050e25f4290f2f9380913a7a851}{k\+Referee\+Rx\+Package\+Number}} = 23
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00043}{43}} 行定义.
+
+
+
+\doxysubsection{成员枚举类型说明}
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_acd515216fe22c7574b6b2b67e1c40564}\label{classhello__world_1_1devices_1_1referee_1_1_referee_acd515216fe22c7574b6b2b67e1c40564} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!RxStatus@{RxStatus}}
+\index{RxStatus@{RxStatus}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{RxStatus}{RxStatus}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_acd515216fe22c7574b6b2b67e1c40564}{hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::\+Rx\+Status}}}
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kRxStatusWaitingHeaderSof@{kRxStatusWaitingHeaderSof}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!kRxStatusWaitingHeaderSof@{kRxStatusWaitingHeaderSof}}}\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_acd515216fe22c7574b6b2b67e1c40564a822de383deb1f262ad0abca7a64e2dfe}\label{classhello__world_1_1devices_1_1referee_1_1_referee_acd515216fe22c7574b6b2b67e1c40564a822de383deb1f262ad0abca7a64e2dfe} 
+k\+Rx\+Status\+Waiting\+Header\+Sof&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kRxStatusHeader@{kRxStatusHeader}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!kRxStatusHeader@{kRxStatusHeader}}}\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_acd515216fe22c7574b6b2b67e1c40564a6c7f7c7842560ce2a998a594b11341a4}\label{classhello__world_1_1devices_1_1referee_1_1_referee_acd515216fe22c7574b6b2b67e1c40564a6c7f7c7842560ce2a998a594b11341a4} 
+k\+Rx\+Status\+Header&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kRxStatusCmdDataTail@{kRxStatusCmdDataTail}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!kRxStatusCmdDataTail@{kRxStatusCmdDataTail}}}\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_acd515216fe22c7574b6b2b67e1c40564a2e65fa1f7070a525a766122e485b089b}\label{classhello__world_1_1devices_1_1referee_1_1_referee_acd515216fe22c7574b6b2b67e1c40564a2e65fa1f7070a525a766122e485b089b} 
+k\+Rx\+Status\+Cmd\+Data\+Tail&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00046}{46}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_aaa5ff496d5c254b8fd821c351bb75325}\label{classhello__world_1_1devices_1_1referee_1_1_referee_aaa5ff496d5c254b8fd821c351bb75325} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!decodeFrame@{decodeFrame}}
+\index{decodeFrame@{decodeFrame}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{decodeFrame()}{decodeFrame()}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::decode\+Frame (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{p\+\_\+frame,  }\item[{const size\+\_\+t}]{\+\_\+frame\+\_\+length }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8cpp_source}{referee.\+cpp}} 第 \mbox{\hyperlink{referee_8cpp_source_l00041}{41}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1referee_1_1_referee_aaa5ff496d5c254b8fd821c351bb75325_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_af9388d8910762162a0d23d0ba44df19a}\label{classhello__world_1_1devices_1_1referee_1_1_referee_af9388d8910762162a0d23d0ba44df19a} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!decodeRxPackage@{decodeRxPackage}}
+\index{decodeRxPackage@{decodeRxPackage}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{decodeRxPackage()}{decodeRxPackage()}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::decode\+Rx\+Package (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{p\+\_\+frame\+\_\+cmd\+\_\+data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{referee_8cpp_source}{referee.\+cpp}} 第 \mbox{\hyperlink{referee_8cpp_source_l00063}{63}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1referee_1_1_referee_af9388d8910762162a0d23d0ba44df19a_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1referee_1_1_referee_af9388d8910762162a0d23d0ba44df19a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a5ce1901e90b5565bf0de6c9ce2d48c91}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a5ce1901e90b5565bf0de6c9ce2d48c91} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!encodeFrame@{encodeFrame}}
+\index{encodeFrame@{encodeFrame}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{encodeFrame()}{encodeFrame()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::encode\+Frame (\begin{DoxyParamCaption}\item[{const T \&}]{data,  }\item[{const \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38a}{Frame\+Cmd\+Id}}}]{frame\+\_\+cmd\+\_\+id,  }\item[{const uint16\+\_\+t}]{sub\+\_\+content\+\_\+id,  }\item[{const uint16\+\_\+t}]{receiver\+\_\+id,  }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{p\+\_\+frame,  }\item[{size\+\_\+t \&}]{frame\+\_\+length }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00123}{123}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1referee_1_1_referee_a5ce1901e90b5565bf0de6c9ce2d48c91_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_aabc8ab368e15253c1f375e15f625e640}\label{classhello__world_1_1devices_1_1referee_1_1_referee_aabc8ab368e15253c1f375e15f625e640} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!encodeSetCrc@{encodeSetCrc}}
+\index{encodeSetCrc@{encodeSetCrc}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{encodeSetCrc()}{encodeSetCrc()}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::encode\+Set\+Crc (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{p\+\_\+frame,  }\item[{size\+\_\+t}]{frame\+\_\+length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{referee_8cpp_source}{referee.\+cpp}} 第 \mbox{\hyperlink{referee_8cpp_source_l00120}{120}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1referee_1_1_referee_aabc8ab368e15253c1f375e15f625e640_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1referee_1_1_referee_aabc8ab368e15253c1f375e15f625e640_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a823f73d223421b7d025005e99ff08291}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a823f73d223421b7d025005e99ff08291} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!processByte@{processByte}}
+\index{processByte@{processByte}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{processByte()}{processByte()}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::process\+Byte (\begin{DoxyParamCaption}\item[{const uint8\+\_\+t}]{byte }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8cpp_source}{referee.\+cpp}} 第 \mbox{\hyperlink{referee_8cpp_source_l00077}{77}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1referee_1_1_referee_a823f73d223421b7d025005e99ff08291_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1referee_1_1_referee_a823f73d223421b7d025005e99ff08291_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a7531c733933a65549c9d019e87ee9d0b}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a7531c733933a65549c9d019e87ee9d0b} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!restartDecodeFrame@{restartDecodeFrame}}
+\index{restartDecodeFrame@{restartDecodeFrame}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{restartDecodeFrame()}{restartDecodeFrame()}}
+{\footnotesize\ttfamily void hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::restart\+Decode\+Frame (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{frame\+\_\+length = {\ttfamily \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_ae04f5c30552f8e2f1caf9d764d1cf075}{k\+Referee\+Max\+Buffer}}} }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8cpp_source}{referee.\+cpp}} 第 \mbox{\hyperlink{referee_8cpp_source_l00055}{55}} 行定义.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1referee_1_1_referee_a7531c733933a65549c9d019e87ee9d0b_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a5d51193f3cf84493e4fb026c04e34364}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a5d51193f3cf84493e4fb026c04e34364} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!competition\_result\_@{competition\_result\_}}
+\index{competition\_result\_@{competition\_result\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{competition\_result\_}{competition\_result\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a9f6f0d0423bf00d0f1ae96a17f631ff3}{Competition\+Result}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::competition\+\_\+result\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a9f6f0d0423bf00d0f1ae96a17f631ff3}{Competition\+Result}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa342f8915af6e2bbd11b072c59c54468d}{k\+Frame\+Cmd\+Id\+Competition\+Result}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a70a886ccc86a628e5774db963cdd0640}{k\+Frame\+Frequence\+Competition\+Result}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00053}{53}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a140df5add0411af6be1306384e21d41b}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a140df5add0411af6be1306384e21d41b} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!competition\_robots\_hp\_@{competition\_robots\_hp\_}}
+\index{competition\_robots\_hp\_@{competition\_robots\_hp\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{competition\_robots\_hp\_}{competition\_robots\_hp\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_acebf85c611fd2a8989aa2923de0baa19}{Competition\+Robots\+Hp}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::competition\+\_\+robots\+\_\+hp\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_acebf85c611fd2a8989aa2923de0baa19}{Competition\+Robots\+Hp}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa8f49f012a4a7959acacc389e423dd88a}{k\+Frame\+Cmd\+Id\+Competition\+Robots\+Hp}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a7fc2a529e3dcf3ff45c6acc996ecbeaa}{k\+Frame\+Frequence\+Competition\+Robots\+Hp}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00054}{54}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a3bbc683a6d31d0976a8489f182afed99}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a3bbc683a6d31d0976a8489f182afed99} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!competition\_status\_@{competition\_status\_}}
+\index{competition\_status\_@{competition\_status\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{competition\_status\_}{competition\_status\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a120f8c25d0f147f7d903bc09360ac4b6}{Competition\+Status}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::competition\+\_\+status\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a120f8c25d0f147f7d903bc09360ac4b6}{Competition\+Status}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa7364394d0ed7fb452ef026617eb224ed}{k\+Frame\+Cmd\+Id\+Competition\+Status}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a4d36900cdf6b715f57e22ddcfe6c9352}{k\+Frame\+Frequence\+Competition\+Status}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00052}{52}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a294681f5f7c37c22277f11dde7417d40}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a294681f5f7c37c22277f11dde7417d40} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!frame\_cmd\_id@{frame\_cmd\_id}}
+\index{frame\_cmd\_id@{frame\_cmd\_id}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{frame\_cmd\_id}{frame\_cmd\_id}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38a}{Frame\+Cmd\+Id}} hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::frame\+\_\+cmd\+\_\+id}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00099}{99}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_aa9a010772a7afefb48266b2a7a1b3e24}\label{classhello__world_1_1devices_1_1referee_1_1_referee_aa9a010772a7afefb48266b2a7a1b3e24} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!frame\_data\_index@{frame\_data\_index}}
+\index{frame\_data\_index@{frame\_data\_index}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{frame\_data\_index}{frame\_data\_index}}
+{\footnotesize\ttfamily size\+\_\+t hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::frame\+\_\+data\+\_\+index = 0}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00105}{105}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a1b68da750a70bcbec327decd02302b8b}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a1b68da750a70bcbec327decd02302b8b} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!frame\_expect\_length@{frame\_expect\_length}}
+\index{frame\_expect\_length@{frame\_expect\_length}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{frame\_expect\_length}{frame\_expect\_length}}
+{\footnotesize\ttfamily size\+\_\+t hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::frame\+\_\+expect\+\_\+length = 0}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00106}{106}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_aa0d4786341aed66abbc51503150475d9}\label{classhello__world_1_1devices_1_1referee_1_1_referee_aa0d4786341aed66abbc51503150475d9} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!frame\_header@{frame\_header}}
+\index{frame\_header@{frame\_header}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{frame\_header}{frame\_header}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a6486c1d8e85c356ee100d896c56a289e}{Frame\+Header}} hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::frame\+\_\+header}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00098}{98}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_aba465970f4869202d98d88fd164f22c0}\label{classhello__world_1_1devices_1_1referee_1_1_referee_aba465970f4869202d98d88fd164f22c0} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!frame\_raw@{frame\_raw}}
+\index{frame\_raw@{frame\_raw}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{frame\_raw}{frame\_raw}}
+{\footnotesize\ttfamily uint8\+\_\+t hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::frame\+\_\+raw\mbox{[}\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_ae04f5c30552f8e2f1caf9d764d1cf075}{k\+Referee\+Max\+Buffer}}\mbox{]}}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00101}{101}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a399bb53e944d780e73f500606b904bac}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a399bb53e944d780e73f500606b904bac} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!header@{header}}
+\index{header@{header}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily struct  \{ ... \} \+::\+\_\+\+\_\+\+REFEREE\+\_\+\+PACKED hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::header}
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a178b713060a7e2bbafa269ae31a3f215}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a178b713060a7e2bbafa269ae31a3f215} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!header@{header}}
+\index{header@{header}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily struct  \{ ... \} \+::\+\_\+\+\_\+\+REFEREE\+\_\+\+PACKED hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::header}
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_aa5417b362ca089b8a7bcfab2138af101}\label{classhello__world_1_1devices_1_1referee_1_1_referee_aa5417b362ca089b8a7bcfab2138af101} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!inter\_client\_map\_to\_robots\_@{inter\_client\_map\_to\_robots\_}}
+\index{inter\_client\_map\_to\_robots\_@{inter\_client\_map\_to\_robots\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{inter\_client\_map\_to\_robots\_}{inter\_client\_map\_to\_robots\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_af1ecc145d86067ae99492637275f77b9}{Inter\+Client\+Map\+To\+Robots}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::inter\+\_\+client\+\_\+map\+\_\+to\+\_\+robots\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_af1ecc145d86067ae99492637275f77b9}{Inter\+Client\+Map\+To\+Robots}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa024ce6b1532475a35c5b5ddd4934c7de}{k\+Frame\+Cmd\+Id\+Inter\+Client\+Map\+To\+Robots}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a31ea6d86d28b1f06d0e1d568588c03f8}{k\+Frame\+Frequence\+Inter\+Client\+Map\+To\+Robots}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00072}{72}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a496facf073c7e9dd5cc2f26b1f2e0ba1}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a496facf073c7e9dd5cc2f26b1f2e0ba1} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!inter\_controller\_to\_robot\_@{inter\_controller\_to\_robot\_}}
+\index{inter\_controller\_to\_robot\_@{inter\_controller\_to\_robot\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{inter\_controller\_to\_robot\_}{inter\_controller\_to\_robot\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a8cb11ceb823b96a4c356b0dc8b75a986}{Inter\+Ctrller\+To\+Robot}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::inter\+\_\+controller\+\_\+to\+\_\+robot\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a8cb11ceb823b96a4c356b0dc8b75a986}{Inter\+Ctrller\+To\+Robot}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa3302e04471e3a5ffaff6bed0e8546bbb}{k\+Frame\+Cmd\+Id\+Inter\+Ctrller\+To\+Robot}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835ae77ced50557b0f77fe62b630c64723df}{k\+Frame\+Frequence\+Inter\+Ctrller\+To\+Robot}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00073}{73}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a541a5328988ee27a441925c135b2abcc}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a541a5328988ee27a441925c135b2abcc} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!inter\_custom\_controller\_to\_robot\_@{inter\_custom\_controller\_to\_robot\_}}
+\index{inter\_custom\_controller\_to\_robot\_@{inter\_custom\_controller\_to\_robot\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{inter\_custom\_controller\_to\_robot\_}{inter\_custom\_controller\_to\_robot\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a58ae0c856b79b302d9adf671228c8c2f}{Inter\+Custom\+Ctrller\+To\+Robot}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::inter\+\_\+custom\+\_\+controller\+\_\+to\+\_\+robot\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a58ae0c856b79b302d9adf671228c8c2f}{Inter\+Custom\+Ctrller\+To\+Robot}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa330630cfe015f7dd4e6b734f194af541}{k\+Frame\+Cmd\+Id\+Inter\+Custom\+Ctrller\+To\+Robot}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a04a907840b35c4ad94cb3a393af336a5}{k\+Frame\+Frequence\+Inter\+Custom\+Ctrller\+To\+Robot}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00071}{71}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a4a3725f356cfb07ddb7d6f780ebcbdef}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a4a3725f356cfb07ddb7d6f780ebcbdef} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!inter\_frame\_header@{inter\_frame\_header}}
+\index{inter\_frame\_header@{inter\_frame\_header}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{inter\_frame\_header}{inter\_frame\_header}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a10ff64448d7c5d3f3a1bc91bf65e7ba2}{Inter\+Frame\+Header}} hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::inter\+\_\+frame\+\_\+header}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00113}{113}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a72226bbfe11ee30e6488ef4857b02e94}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a72226bbfe11ee30e6488ef4857b02e94} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!inter\_radar\_warning\_@{inter\_radar\_warning\_}}
+\index{inter\_radar\_warning\_@{inter\_radar\_warning\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{inter\_radar\_warning\_}{inter\_radar\_warning\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_inter_radar_warning}{Rx\+Package\+Inter\+Radar\+Warning}} hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::inter\+\_\+radar\+\_\+warning\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_inter_radar_warning}{Rx\+Package\+Inter\+Radar\+Warning}}()}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00074}{74}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a757fe050e25f4290f2f9380913a7a851}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a757fe050e25f4290f2f9380913a7a851} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!kRefereeRxPackageNumber@{kRefereeRxPackageNumber}}
+\index{kRefereeRxPackageNumber@{kRefereeRxPackageNumber}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{kRefereeRxPackageNumber}{kRefereeRxPackageNumber}}
+{\footnotesize\ttfamily const size\+\_\+t hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::k\+Referee\+Rx\+Package\+Number = 23\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00083}{83}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a5481fcc9436ee0e8a96d49cd53b0d72e}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a5481fcc9436ee0e8a96d49cd53b0d72e} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!kRefereeRxPackagePtrs@{kRefereeRxPackagePtrs}}
+\index{kRefereeRxPackagePtrs@{kRefereeRxPackagePtrs}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{kRefereeRxPackagePtrs}{kRefereeRxPackagePtrs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info}{Rx\+Package\+Info}}\texorpdfstring{$\ast$}{*} const hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::k\+Referee\+Rx\+Package\+Ptrs\mbox{[}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a757fe050e25f4290f2f9380913a7a851}{k\+Referee\+Rx\+Package\+Number}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries 初始值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a3bbc683a6d31d0976a8489f182afed99}{competition\_status\_}},\ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a5d51193f3cf84493e4fb026c04e34364}{competition\_result\_}},\ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a140df5add0411af6be1306384e21d41b}{competition\_robots\_hp\_}},\ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_aff6da29879d6f71d0f1a56c1390a181d}{team\_event\_}},\ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a9cdf9b81c40eff5bcc91e0aee4bee91f}{team\_supplier\_action\_}},\ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_ad19a1226012db0cc3db5b9395d10bdd6}{team\_referee\_warning\_}},\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a7fea5e8c47165d9c9b540f1e975bd06a}{robot\_dart\_status\_}},\ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a642505b6deedd6e7c6b6c8ee70c24e5e}{robot\_performance\_}},\ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_af6c0e1dd85e39a3269746507dbc089c6}{robot\_power\_heat\_}},\ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a36debf018cbf51e943898ab28dcf48e7}{robot\_position\_}},\ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_aa1141e998033255c57b62425831467ed}{robot\_buff\_}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a5cedba9848dbc3bbd3386274b5c333ab}{robot\_aerial\_status\_}},\ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_ad30e851859ec324d0ffd2741a1c7e19d}{robot\_damage\_}},\ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_ac8b68aed6a56ee4e2c7a7c7ef9bcfa4c}{robot\_shoot\_data\_}},\ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_afebcf5378a32190605fe35ef7dc14033}{robot\_projectile\_allowance\_}},\ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a2f141df240e890b2286b9f0ee5982469}{robot\_rfid\_}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a5ce0f851754908a04814cb0bcaf0f172}{robot\_dart\_client\_command\_}},\ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a5b736708e0a9613ccac68a8d29c11bbf}{robots\_ground\_position\_}},\ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a7cc409e584d764578a62fcce886e03b8}{robot\_radar\_mark\_progress\_}},\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a541a5328988ee27a441925c135b2abcc}{inter\_custom\_controller\_to\_robot\_}},\ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_aa5417b362ca089b8a7bcfab2138af101}{inter\_client\_map\_to\_robots\_}},\ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a496facf073c7e9dd5cc2f26b1f2e0ba1}{inter\_controller\_to\_robot\_}},\ \ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_a72226bbfe11ee30e6488ef4857b02e94}{inter\_radar\_warning\_}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00084}{84}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a67ca4ac28c08e9598b166cc771002fac}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a67ca4ac28c08e9598b166cc771002fac} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!last\_updated\_frame\_index\_@{last\_updated\_frame\_index\_}}
+\index{last\_updated\_frame\_index\_@{last\_updated\_frame\_index\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{last\_updated\_frame\_index\_}{last\_updated\_frame\_index\_}}
+{\footnotesize\ttfamily size\+\_\+t hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::last\+\_\+updated\+\_\+frame\+\_\+index\+\_\+ = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00093}{93}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a5cedba9848dbc3bbd3386274b5c333ab}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a5cedba9848dbc3bbd3386274b5c333ab} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!robot\_aerial\_status\_@{robot\_aerial\_status\_}}
+\index{robot\_aerial\_status\_@{robot\_aerial\_status\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{robot\_aerial\_status\_}{robot\_aerial\_status\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a0e3d5447fec459a923c12ed6576eee91}{Robot\+Aerial\+Status}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::robot\+\_\+aerial\+\_\+status\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a0e3d5447fec459a923c12ed6576eee91}{Robot\+Aerial\+Status}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa19f1f2df3d672ea77e61a46e5097f4d5}{k\+Frame\+Cmd\+Id\+Robot\+Aerial\+Status}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835ac3cfa7d08b56c38f095922030c272f3d}{k\+Frame\+Frequence\+Robot\+Aerial\+Status}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00063}{63}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_aa1141e998033255c57b62425831467ed}\label{classhello__world_1_1devices_1_1referee_1_1_referee_aa1141e998033255c57b62425831467ed} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!robot\_buff\_@{robot\_buff\_}}
+\index{robot\_buff\_@{robot\_buff\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{robot\_buff\_}{robot\_buff\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_ac8a0db3ba88eafd84e207c49a903bdb9}{Robot\+Buff}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::robot\+\_\+buff\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_ac8a0db3ba88eafd84e207c49a903bdb9}{Robot\+Buff}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa925fc9c1e1a2e107d4969975ba20c0e0}{k\+Frame\+Cmd\+Id\+Robot\+Buff}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a5b6592779809f85b3c0531223eda31d4}{k\+Frame\+Frequence\+Robot\+Buff}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00062}{62}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_ad30e851859ec324d0ffd2741a1c7e19d}\label{classhello__world_1_1devices_1_1referee_1_1_referee_ad30e851859ec324d0ffd2741a1c7e19d} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!robot\_damage\_@{robot\_damage\_}}
+\index{robot\_damage\_@{robot\_damage\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{robot\_damage\_}{robot\_damage\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aa8bf4c00887719c935f5fdf2aad141e2}{Robot\+Damage}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::robot\+\_\+damage\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aa8bf4c00887719c935f5fdf2aad141e2}{Robot\+Damage}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa22e913c459302c07ec2237854a238bab}{k\+Frame\+Cmd\+Id\+Robot\+Damage}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835aaefaeff580a7a0e50a9eff7df771d527}{k\+Frame\+Frequence\+Robot\+Damage}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00064}{64}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a5ce0f851754908a04814cb0bcaf0f172}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a5ce0f851754908a04814cb0bcaf0f172} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!robot\_dart\_client\_command\_@{robot\_dart\_client\_command\_}}
+\index{robot\_dart\_client\_command\_@{robot\_dart\_client\_command\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{robot\_dart\_client\_command\_}{robot\_dart\_client\_command\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a696c2912a6e678f9215ccb1da6975e28}{Robot\+Dart\+Client\+Command}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::robot\+\_\+dart\+\_\+client\+\_\+command\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a696c2912a6e678f9215ccb1da6975e28}{Robot\+Dart\+Client\+Command}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa7bd95f7ad33d8c829145c9165a28daa0}{k\+Frame\+Cmd\+Id\+Robot\+Dart\+Client\+Command}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835aeb381f93b06411df0b210663d114417e}{k\+Frame\+Frequence\+Robot\+Dart\+Client\+Command}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00068}{68}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a7fea5e8c47165d9c9b540f1e975bd06a}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a7fea5e8c47165d9c9b540f1e975bd06a} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!robot\_dart\_status\_@{robot\_dart\_status\_}}
+\index{robot\_dart\_status\_@{robot\_dart\_status\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{robot\_dart\_status\_}{robot\_dart\_status\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a92a78741399a846a27c549afb570e2ff}{Robot\+Dart\+Status}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::robot\+\_\+dart\+\_\+status\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a92a78741399a846a27c549afb570e2ff}{Robot\+Dart\+Status}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa39939cd9347367b235f155f4af7956b8}{k\+Frame\+Cmd\+Id\+Robot\+Dart\+Status}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a4423684366bbab0fea1a1dab7130a302}{k\+Frame\+Frequence\+Robot\+Dart\+Status}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00058}{58}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a642505b6deedd6e7c6b6c8ee70c24e5e}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a642505b6deedd6e7c6b6c8ee70c24e5e} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!robot\_performance\_@{robot\_performance\_}}
+\index{robot\_performance\_@{robot\_performance\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{robot\_performance\_}{robot\_performance\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a96bab3b66b40a6869526f99c89aeb435}{Robot\+Performance}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::robot\+\_\+performance\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a96bab3b66b40a6869526f99c89aeb435}{Robot\+Performance}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aaec72ea9287faf1dd8a7fb4f9b4cdce49}{k\+Frame\+Cmd\+Id\+Robot\+Performance}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a0a5c4a962f88b0d5b0354b7c60010432}{k\+Frame\+Frequence\+Robot\+Performance}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00059}{59}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a36debf018cbf51e943898ab28dcf48e7}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a36debf018cbf51e943898ab28dcf48e7} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!robot\_position\_@{robot\_position\_}}
+\index{robot\_position\_@{robot\_position\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{robot\_position\_}{robot\_position\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a2d932e9aed81b46dbfad7ad062d1b09e}{Robot\+Position}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::robot\+\_\+position\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a2d932e9aed81b46dbfad7ad062d1b09e}{Robot\+Position}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aae543893a29038a27da8adfbd2ba54fc9}{k\+Frame\+Cmd\+Id\+Robot\+Position}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835acca90839ecbeac0de1c5e3644c061bea}{k\+Frame\+Frequence\+Robot\+Position}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00061}{61}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_af6c0e1dd85e39a3269746507dbc089c6}\label{classhello__world_1_1devices_1_1referee_1_1_referee_af6c0e1dd85e39a3269746507dbc089c6} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!robot\_power\_heat\_@{robot\_power\_heat\_}}
+\index{robot\_power\_heat\_@{robot\_power\_heat\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{robot\_power\_heat\_}{robot\_power\_heat\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a6d976c0d386a5c3ffb3a5fa2b73bdac9}{Robot\+Power\+Heat}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::robot\+\_\+power\+\_\+heat\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a6d976c0d386a5c3ffb3a5fa2b73bdac9}{Robot\+Power\+Heat}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa1d548d9ee4126df5808565577339e192}{k\+Frame\+Cmd\+Id\+Robot\+Power\+Heat}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a1e81fd8f846c8a31831415cca528db21}{k\+Frame\+Frequence\+Robot\+Power\+Heat}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00060}{60}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_afebcf5378a32190605fe35ef7dc14033}\label{classhello__world_1_1devices_1_1referee_1_1_referee_afebcf5378a32190605fe35ef7dc14033} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!robot\_projectile\_allowance\_@{robot\_projectile\_allowance\_}}
+\index{robot\_projectile\_allowance\_@{robot\_projectile\_allowance\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{robot\_projectile\_allowance\_}{robot\_projectile\_allowance\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a1b32b2da561d6dd786cf9334009cc311}{Robot\+Projectile\+Allowance}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::robot\+\_\+projectile\+\_\+allowance\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a1b32b2da561d6dd786cf9334009cc311}{Robot\+Projectile\+Allowance}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aaf29e784a9d7ef5bc4f59365e1106d85a}{k\+Frame\+Cmd\+Id\+Robot\+Projectile\+Allowance}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a3f18fd7bddde7fd514078ca860d9d4c9}{k\+Frame\+Frequence\+Robot\+Projectile\+Allowance}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00066}{66}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a7cc409e584d764578a62fcce886e03b8}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a7cc409e584d764578a62fcce886e03b8} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!robot\_radar\_mark\_progress\_@{robot\_radar\_mark\_progress\_}}
+\index{robot\_radar\_mark\_progress\_@{robot\_radar\_mark\_progress\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{robot\_radar\_mark\_progress\_}{robot\_radar\_mark\_progress\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a700c7baf532de981b4740e60b89869db}{Robot\+Radar\+Mark\+Progress}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::robot\+\_\+radar\+\_\+mark\+\_\+progress\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a700c7baf532de981b4740e60b89869db}{Robot\+Radar\+Mark\+Progress}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aace62ba2eddd97d5eabd420f267c117be}{k\+Frame\+Cmd\+Id\+Robot\+Radar\+Mark\+Progress}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a84334ce543f57e1f6e40cb64e8167418}{k\+Frame\+Frequence\+Robot\+Radar\+Mark\+Progress}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00070}{70}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a2f141df240e890b2286b9f0ee5982469}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a2f141df240e890b2286b9f0ee5982469} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!robot\_rfid\_@{robot\_rfid\_}}
+\index{robot\_rfid\_@{robot\_rfid\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{robot\_rfid\_}{robot\_rfid\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a067d420509eb4fec84dddaa3d03b55b0}{Robot\+Rfid}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::robot\+\_\+rfid\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a067d420509eb4fec84dddaa3d03b55b0}{Robot\+Rfid}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aab8c1325040183bd20e072c55bc4e5181}{k\+Frame\+Cmd\+Id\+Robot\+Rfid}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a1bd1faee148ed7f2acc2bec1f8c026c8}{k\+Frame\+Frequence\+Robot\+Rfid}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00067}{67}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_ac8b68aed6a56ee4e2c7a7c7ef9bcfa4c}\label{classhello__world_1_1devices_1_1referee_1_1_referee_ac8b68aed6a56ee4e2c7a7c7ef9bcfa4c} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!robot\_shoot\_data\_@{robot\_shoot\_data\_}}
+\index{robot\_shoot\_data\_@{robot\_shoot\_data\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{robot\_shoot\_data\_}{robot\_shoot\_data\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a807097630d76b7ac448adbdadd1910e8}{Robot\+Shoot\+Data}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::robot\+\_\+shoot\+\_\+data\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a807097630d76b7ac448adbdadd1910e8}{Robot\+Shoot\+Data}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa2233eaa30b4cfe033481b4fb93b43adf}{k\+Frame\+Cmd\+Id\+Robot\+Shoot\+Data}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a02e84b24a4b696fb40d16f7989a982a5}{k\+Frame\+Frequence\+Robot\+Shoot\+Data}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00065}{65}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a5b736708e0a9613ccac68a8d29c11bbf}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a5b736708e0a9613ccac68a8d29c11bbf} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!robots\_ground\_position\_@{robots\_ground\_position\_}}
+\index{robots\_ground\_position\_@{robots\_ground\_position\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{robots\_ground\_position\_}{robots\_ground\_position\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a07ddd7f4ca1663e96e450eab4d7a4832}{Robots\+Ground\+Position}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::robots\+\_\+ground\+\_\+position\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a07ddd7f4ca1663e96e450eab4d7a4832}{Robots\+Ground\+Position}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa5464cd0d9f0101bb2ce8db996cbf3cc2}{k\+Frame\+Cmd\+Id\+Robots\+Ground\+Position}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a2a597f8a7720274912d1f13e33376af2}{k\+Frame\+Frequence\+Robots\+Ground\+Position}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00069}{69}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a529c88272742c7f88f22a1a059538ff2}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a529c88272742c7f88f22a1a059538ff2} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!rx\_info\_@{rx\_info\_}}
+\index{rx\_info\_@{rx\_info\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{[struct]}{[struct]}}
+{\footnotesize\ttfamily struct  \{ ... \}  hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::rx\+\_\+info\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a8b316679a2d73ad91d1354e0026f9b4b}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a8b316679a2d73ad91d1354e0026f9b4b} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!rx\_status@{rx\_status}}
+\index{rx\_status@{rx\_status}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{rx\_status}{rx\_status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_acd515216fe22c7574b6b2b67e1c40564}{Rx\+Status}} hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::rx\+\_\+status = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_referee_acd515216fe22c7574b6b2b67e1c40564a822de383deb1f262ad0abca7a64e2dfe}{k\+Rx\+Status\+Waiting\+Header\+Sof}}}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00104}{104}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_aff6da29879d6f71d0f1a56c1390a181d}\label{classhello__world_1_1devices_1_1referee_1_1_referee_aff6da29879d6f71d0f1a56c1390a181d} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!team\_event\_@{team\_event\_}}
+\index{team\_event\_@{team\_event\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{team\_event\_}{team\_event\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a3cf074eed7d2349e72a95f38f7f819b9}{Team\+Event}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::team\+\_\+event\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a3cf074eed7d2349e72a95f38f7f819b9}{Team\+Event}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa712cec2841def70d53082a44274ed229}{k\+Frame\+Cmd\+Id\+Team\+Event}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a11167f9592984c8dc52d561406f1cd77}{k\+Frame\+Frequence\+Team\+Event}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00055}{55}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_ad19a1226012db0cc3db5b9395d10bdd6}\label{classhello__world_1_1devices_1_1referee_1_1_referee_ad19a1226012db0cc3db5b9395d10bdd6} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!team\_referee\_warning\_@{team\_referee\_warning\_}}
+\index{team\_referee\_warning\_@{team\_referee\_warning\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{team\_referee\_warning\_}{team\_referee\_warning\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a6443a2db7c3e6433e7d6b57b959a8d9d}{Team\+Referee\+Warning}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::team\+\_\+referee\+\_\+warning\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a6443a2db7c3e6433e7d6b57b959a8d9d}{Team\+Referee\+Warning}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aacb5b34a786dbc11937bc5d74166f1b2d}{k\+Frame\+Cmd\+Id\+Team\+Referee\+Warning}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a07a8dd6efb9a479f4ffc805864b97daf}{k\+Frame\+Frequence\+Team\+Referee\+Warning}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00057}{57}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a9cdf9b81c40eff5bcc91e0aee4bee91f}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a9cdf9b81c40eff5bcc91e0aee4bee91f} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!team\_supplier\_action\_@{team\_supplier\_action\_}}
+\index{team\_supplier\_action\_@{team\_supplier\_action\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{team\_supplier\_action\_}{team\_supplier\_action\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a3c34812d70f84885ecf2efec7bb84729}{Team\+Supplier\+Action}}$>$ hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::team\+\_\+supplier\+\_\+action\+\_\+ = \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{Rx\+Package}}$<$\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a3c34812d70f84885ecf2efec7bb84729}{Team\+Supplier\+Action}}$>$(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa41a417b13704dcb5b8c24e797f478641}{k\+Frame\+Cmd\+Id\+Team\+Supplier\+Action}}, \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_aab0bc9c3de95b1bd435ec6a11eeed835a55874ad4bd02127179643c249046c59c}{k\+Frame\+Frequence\+Team\+Supplier\+Action}})}
+
+
+
+在文件 \mbox{\hyperlink{referee_8hpp_source}{referee.\+hpp}} 第 \mbox{\hyperlink{referee_8hpp_source_l00056}{56}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1referee_1_1_referee_a18e2e733ee7fb54dcaed7e3225c6124f}\label{classhello__world_1_1devices_1_1referee_1_1_referee_a18e2e733ee7fb54dcaed7e3225c6124f} 
+\index{hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}!tx\_info\_@{tx\_info\_}}
+\index{tx\_info\_@{tx\_info\_}!hello\_world::devices::referee::Referee@{hello\_world::devices::referee::Referee}}
+\doxysubsubsection{\texorpdfstring{[union]}{[union]}}
+{\footnotesize\ttfamily union  \{ ... \}  hello\+\_\+world\+::devices\+::referee\+::\+Referee\+::tx\+\_\+info\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+

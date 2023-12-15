@@ -1,0 +1,298 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="classhello__world_1_1algorithms_1_1controller_1_1_controller" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>hello_world::algorithms::controller::Controller</compoundname>
+    <basecompoundref refid="classhello__world_1_1_mem_mang" prot="public" virt="non-virtual">hello_world::MemMang</basecompoundref>
+    <derivedcompoundref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid" prot="public" virt="non-virtual">hello_world::algorithms::controller::pid::BasicPid</derivedcompoundref>
+    <derivedcompoundref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid" prot="public" virt="non-virtual">hello_world::algorithms::controller::pid::MultiNodesPid</derivedcompoundref>
+    <includes refid="controller__base_8hpp" local="no">controller_base.hpp</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1_controller_1aaef37bc2917097e1f3956d3e376ea64c" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t hello_world::algorithms::controller::Controller::ref_dim_</definition>
+        <argsstring></argsstring>
+        <name>ref_dim_</name>
+        <qualifiedname>hello_world::algorithms::controller::Controller::ref_dim_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/controller_base.hpp" line="42" column="10" bodyfile="HW-Components/algorithms/controller/inc/controller_base.hpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a8e4bfd26c1bb829f58d3fb14e80c4c0b" compoundref="pid_8cpp" startline="179" endline="192">hello_world::algorithms::controller::pid::MultiNodesPid::MultiNodesPid</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a9a3282e6e51a5b7689717079f0d25abe" compoundref="pid_8cpp" startline="194" endline="212">hello_world::algorithms::controller::pid::MultiNodesPid::MultiNodesPid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a18177bbaffdba8b34721e4c9256e6b8a" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t hello_world::algorithms::controller::Controller::fdb_dim_</definition>
+        <argsstring></argsstring>
+        <name>fdb_dim_</name>
+        <qualifiedname>hello_world::algorithms::controller::Controller::fdb_dim_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/controller_base.hpp" line="43" column="10" bodyfile="HW-Components/algorithms/controller/inc/controller_base.hpp" bodystart="43" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a8e4bfd26c1bb829f58d3fb14e80c4c0b" compoundref="pid_8cpp" startline="179" endline="192">hello_world::algorithms::controller::pid::MultiNodesPid::MultiNodesPid</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a9a3282e6e51a5b7689717079f0d25abe" compoundref="pid_8cpp" startline="194" endline="212">hello_world::algorithms::controller::pid::MultiNodesPid::MultiNodesPid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a174ff1eec5dbf10f728c086b53504a6f" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t hello_world::algorithms::controller::Controller::ffd_dim_</definition>
+        <argsstring></argsstring>
+        <name>ffd_dim_</name>
+        <qualifiedname>hello_world::algorithms::controller::Controller::ffd_dim_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/controller_base.hpp" line="44" column="10" bodyfile="HW-Components/algorithms/controller/inc/controller_base.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1_controller_1aac07a607fecba8eca0a3819ba86d40e2" prot="protected" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t hello_world::algorithms::controller::Controller::out_dim_</definition>
+        <argsstring></argsstring>
+        <name>out_dim_</name>
+        <qualifiedname>hello_world::algorithms::controller::Controller::out_dim_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/controller_base.hpp" line="45" column="10" bodyfile="HW-Components/algorithms/controller/inc/controller_base.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a3fe01fdfc6fc3c17754757d7d0c4cfe9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hello_world::algorithms::controller::Controller::Controller</definition>
+        <argsstring>(size_t ref_dim, size_t fdb_dim, size_t out_dim, size_t ffd_dim=0)</argsstring>
+        <name>Controller</name>
+        <qualifiedname>hello_world::algorithms::controller::Controller::Controller</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>ref_dim</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>fdb_dim</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>out_dim</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>ffd_dim</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/controller_base.hpp" line="48" column="3" bodyfile="HW-Components/algorithms/controller/inc/controller_base.hpp" bodystart="48" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a392091ff03b5346cbbc3ffe14d4a6d83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual hello_world::algorithms::controller::Controller::~Controller</definition>
+        <argsstring>()</argsstring>
+        <name>~Controller</name>
+        <qualifiedname>hello_world::algorithms::controller::Controller::~Controller</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/controller_base.hpp" line="54" column="11" bodyfile="HW-Components/algorithms/controller/inc/controller_base.hpp" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a5c856e2e4d553904a73fa8bf2b1d10f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * hello_world::algorithms::controller::Controller::operator new</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>operator new</name>
+        <qualifiedname>hello_world::algorithms::controller::Controller::operator new</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/controller_base.hpp" line="55" column="8" bodyfile="HW-Components/algorithms/controller/inc/controller_base.hpp" bodystart="55" bodyend="55"/>
+        <references refid="system_8hpp_1a3e218828af7ddd3f4cd0d3772562b520" compoundref="system_8hpp" startline="49">MALLOC</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a097b88e2a82574df8d5a26eeee442525" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * hello_world::algorithms::controller::Controller::operator new[]</definition>
+        <argsstring>(size_t size)</argsstring>
+        <name>operator new[]</name>
+        <qualifiedname>hello_world::algorithms::controller::Controller::operator new[]</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/controller_base.hpp" line="56" column="8" bodyfile="HW-Components/algorithms/controller/inc/controller_base.hpp" bodystart="56" bodyend="56"/>
+        <references refid="system_8hpp_1a3e218828af7ddd3f4cd0d3772562b520" compoundref="system_8hpp" startline="49">MALLOC</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1_controller_1aee97fc5e8af6420ec56ee5ed7fb1f3da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void hello_world::algorithms::controller::Controller::operator delete</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>operator delete</name>
+        <qualifiedname>hello_world::algorithms::controller::Controller::operator delete</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/controller_base.hpp" line="57" column="8" bodyfile="HW-Components/algorithms/controller/inc/controller_base.hpp" bodystart="57" bodyend="57"/>
+        <references refid="system_8hpp_1a9a8e700d56e7d858108b755ad3edb52e" compoundref="system_8hpp" startline="50">FREE</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1_controller_1ad3d671169876c515fc7bf1c3be5f3b23" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void hello_world::algorithms::controller::Controller::operator delete[]</definition>
+        <argsstring>(void *ptr)</argsstring>
+        <name>operator delete[]</name>
+        <qualifiedname>hello_world::algorithms::controller::Controller::operator delete[]</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/controller_base.hpp" line="58" column="8" bodyfile="HW-Components/algorithms/controller/inc/controller_base.hpp" bodystart="58" bodyend="58"/>
+        <references refid="system_8hpp_1a9a8e700d56e7d858108b755ad3edb52e" compoundref="system_8hpp" startline="50">FREE</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a3a59379f79586c7d89f92b3b5f08bb57" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>virtual State hello_world::algorithms::controller::Controller::calc</definition>
+        <argsstring>(const float *ref_ls, const float *fdb_ls, const float *ffd_ls, float *out_ls)=0</argsstring>
+        <name>calc</name>
+        <qualifiedname>hello_world::algorithms::controller::Controller::calc</qualifiedname>
+        <reimplementedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d">calc</reimplementedby>
+        <reimplementedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1ae10478e0d731be3f6e6d0c479964d448">calc</reimplementedby>
+        <param>
+          <type>const float *</type>
+          <declname>ref_ls</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>fdb_ls</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>ffd_ls</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>out_ls</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/controller_base.hpp" line="60" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a1dfc2817c2e54de404466124a6ca4d19" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>virtual State hello_world::algorithms::controller::Controller::reset</definition>
+        <argsstring>()=0</argsstring>
+        <name>reset</name>
+        <qualifiedname>hello_world::algorithms::controller::Controller::reset</qualifiedname>
+        <reimplementedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1ad74407cecfa9cfb473f199d142869f0f">reset</reimplementedby>
+        <reimplementedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a5edb64efe535b8e5b8b1e30a91f28fe0">reset</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/controller_base.hpp" line="63" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>hello_world::MemMang</label>
+        <link refid="classhello__world_1_1_mem_mang"/>
+      </node>
+      <node id="1">
+        <label>hello_world::algorithms::controller::Controller</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>hello_world::algorithms::controller::pid::BasicPid</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>hello_world::algorithms::controller::pid::MultiNodesPid</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>hello_world::MemMang</label>
+        <link refid="classhello__world_1_1_mem_mang"/>
+      </node>
+      <node id="1">
+        <label>hello_world::algorithms::controller::Controller</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="HW-Components/algorithms/controller/inc/controller_base.hpp" line="39" column="1" bodyfile="HW-Components/algorithms/controller/inc/controller_base.hpp" bodystart="40" bodyend="64"/>
+    <listofallmembers>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a3a59379f79586c7d89f92b3b5f08bb57" prot="public" virt="pure-virtual"><scope>hello_world::algorithms::controller::Controller</scope><name>calc</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a3fe01fdfc6fc3c17754757d7d0c4cfe9" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::Controller</scope><name>Controller</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a18177bbaffdba8b34721e4c9256e6b8a" prot="protected" virt="non-virtual"><scope>hello_world::algorithms::controller::Controller</scope><name>fdb_dim_</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a174ff1eec5dbf10f728c086b53504a6f" prot="protected" virt="non-virtual"><scope>hello_world::algorithms::controller::Controller</scope><name>ffd_dim_</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1aee97fc5e8af6420ec56ee5ed7fb1f3da" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::Controller</scope><name>operator delete</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1ad3d671169876c515fc7bf1c3be5f3b23" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::Controller</scope><name>operator delete[]</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a5c856e2e4d553904a73fa8bf2b1d10f0" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::Controller</scope><name>operator new</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a097b88e2a82574df8d5a26eeee442525" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::Controller</scope><name>operator new[]</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1aac07a607fecba8eca0a3819ba86d40e2" prot="protected" virt="non-virtual"><scope>hello_world::algorithms::controller::Controller</scope><name>out_dim_</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1aaef37bc2917097e1f3956d3e376ea64c" prot="protected" virt="non-virtual"><scope>hello_world::algorithms::controller::Controller</scope><name>ref_dim_</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a1dfc2817c2e54de404466124a6ca4d19" prot="public" virt="pure-virtual"><scope>hello_world::algorithms::controller::Controller</scope><name>reset</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a392091ff03b5346cbbc3ffe14d4a6d83" prot="public" virt="virtual"><scope>hello_world::algorithms::controller::Controller</scope><name>~Controller</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

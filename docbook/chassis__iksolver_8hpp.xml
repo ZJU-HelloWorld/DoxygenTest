@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_chassis__iksolver_8hpp" xml:lang="zh">
+<title>HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp 文件参考</title>
+<indexterm><primary>HW-Components/algorithms/ik_solver/inc/chassis_iksolver.hpp</primary></indexterm>
+<para>
+
+<para><?linebreak?> </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;cmath&gt;<?linebreak?>#include &quot;base.hpp&quot;<?linebreak?>#include &quot;system.hpp&quot;<?linebreak?></programlisting>chassis_iksolver.hpp 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="chassis__iksolver_8hpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+此图展示该文件直接或间接的被哪些文件引用了:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="chassis__iksolver_8hpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>类    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classhello__world_1_1_wheel_pos">hello_world::WheelPos</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structhello__world_1_1_wheel_params">hello_world::WheelParams</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_classhello__world_1_1_wheel">hello_world::Wheel</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>命名空间    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacehello__world">hello_world</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>枚举    </title>
+        <itemizedlist>
+            <listitem><para>enum class <link linkend="_namespacehello__world_1a59b36a6fc3476beb679947a6db5407cd">hello_world::WheelType</link> { <?linebreak?><link linkend="_namespacehello__world_1a59b36a6fc3476beb679947a6db5407cda4cd1ce9be6b5546c52ffd46d1a35d6f0">hello_world::FixedStandardWheel</link>
+, <link linkend="_namespacehello__world_1a59b36a6fc3476beb679947a6db5407cdad7b89f5275c1339d4dc453714243b204">hello_world::SteeredStandardWheel</link>
+, <link linkend="_namespacehello__world_1a59b36a6fc3476beb679947a6db5407cdaae017b824d45d1915f2f0991a132243d">hello_world::CastorWheel</link>
+, <link linkend="_namespacehello__world_1a59b36a6fc3476beb679947a6db5407cda60a5924ec81e29b039c0e17fc94fbec2">hello_world::SwedishWheel</link>
+, <?linebreak?><link linkend="_namespacehello__world_1a59b36a6fc3476beb679947a6db5407cdae4e9d6a3b1b75a5402efd2402294de6c">hello_world::SphericalWheel</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para><?linebreak?> </para>
+
+<para><formalpara><title>作者</title>
+
+<para>ZhouShichan (<link xlink:href="mailto:zsc19823382069@163.com">zsc19823382069@163.com</link>) </para>
+</formalpara>
+<formalpara><title>日期</title>
+
+<para>2023-12-13 </para>
+</formalpara>
+<formalpara>
+<title>last edit time 2023-12-14</title>
+<para></para>
+</formalpara>
+<formalpara>
+<title>last editor ZhouShichan (zsc19823382069@163.com)</title>
+<para></para>
+</formalpara>
+<formalpara><title>版本</title>
+
+<para>1.0.0 | 1.0.0 | 2023-MM-DD | ZhouShichan | description |</para>
+</formalpara>
+<formalpara><title>版权所有</title>
+
+<para>Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved.</para>
+</formalpara>
+<caution><title>注意</title>
+
+<para></para>
+</caution>
+<formalpara>
+<title>history</title>
+<para>| Version | Date | Author | Description | | :&#8212;: | :&#8212;: | :&#8212;: | :&#8212;: | </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_chassis__iksolver_8hpp_source">chassis_iksolver.hpp</link> 中定义.</para>
+</section>
+</section>

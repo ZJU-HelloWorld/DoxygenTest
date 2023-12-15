@@ -1,0 +1,607 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacehello__world_1_1devices_1_1imu" xml:lang="zh">
+<title>hello_world::devices::imu 命名空间参考</title>
+<indexterm><primary>hello_world::devices::imu</primary></indexterm>
+<simplesect>
+    <title>类    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classhello__world_1_1devices_1_1imu_1_1_b_m_i088">BMI088</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structhello__world_1_1devices_1_1imu_1_1_b_m_i088_config">BMI088Config</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structhello__world_1_1devices_1_1imu_1_1_b_m_i088_h_w_config">BMI088HWConfig</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>枚举    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_namespacehello__world_1_1devices_1_1imu_1afc65bae6cff924c06f3f762a196d6faf">BMI088ErrState</link> : uint8_t { <?linebreak?><link linkend="_namespacehello__world_1_1devices_1_1imu_1afc65bae6cff924c06f3f762a196d6fafa2145833ba5262dcb4896c6452f5ef83f">kBMI088ErrStateNoErr</link> = 0u
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1afc65bae6cff924c06f3f762a196d6fafa33f5d7685272e1454b0a839318a1c155">kBMI088ErrStateAccNotFound</link> = 1u &lt;&lt; 0
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1afc65bae6cff924c06f3f762a196d6fafaf36788cb829d6f706bbfc614d824e1bf">kBMI088ErrStateGyroNotFound</link> = 1u &lt;&lt; 1
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1afc65bae6cff924c06f3f762a196d6fafa1fd3e7bba87b31d71a08e2b72646a3fd">kBMI088ErrStateAccSelfTestFailed</link> = 1u &lt;&lt; 2
+, <?linebreak?><link linkend="_namespacehello__world_1_1devices_1_1imu_1afc65bae6cff924c06f3f762a196d6fafa5ac7ace53ccf983ab0f56f8e09fb4290">kBMI088ErrStateGyroSelfTestFailed</link> = 1u &lt;&lt; 3
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1afc65bae6cff924c06f3f762a196d6fafa3275cd83116cc9f6625817cfad14a433">kBMI088ErrStateAccConfigErr</link> = 1u &lt;&lt; 4
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1afc65bae6cff924c06f3f762a196d6fafaa325e1db5049d081cd037fe9d8c642f3">kBMI088ErrStateGyroConfigErr</link> = 1u &lt;&lt; 5
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespacehello__world_1_1devices_1_1imu_1a1b5968572f4f140f70490c0056a7ad98">BMI088AccRange</link> : uint8_t { <link linkend="_namespacehello__world_1_1devices_1_1imu_1a1b5968572f4f140f70490c0056a7ad98a60f26b746398fa69d4839af8785af59d">kBMI088AccRange3G</link> = 0x0
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a1b5968572f4f140f70490c0056a7ad98ab5ccec842ab104d17cffb53edd582f80">kBMI088AccRange6G</link> = 0x1
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a1b5968572f4f140f70490c0056a7ad98a4e04e39b914ef040e7d6aac313dbdee9">kBMI088AccRange12G</link> = 0x2
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a1b5968572f4f140f70490c0056a7ad98a5dc50ec716a376d1442bdbf138496785">kBMI088AccRange24G</link> = 0x3
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497">BMI088AccOdr</link> : uint8_t { <?linebreak?><link linkend="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497a62071bd8c96ef5f22eb6d8d90f160552">kBMI088AccOdr12_5</link> = 0x5
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497ab085f3818557b51b69633c707e65b2c9">kBMI088AccOdr25</link> = 0x6
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497aba65b4b84845c947bb5347166927215e">kBMI088AccOdr50</link> = 0x7
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497a40807270c25b0256ebb4f2a4e2bfbd9f">kBMI088AccOdr100</link> = 0x8
+, <?linebreak?><link linkend="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497a07fe99369df0eff0976ab31fd9a2d55e">kBMI088AccOdr200</link> = 0x9
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497a58c0a4713a1aa54ccab0ed34d41c70ab">kBMI088AccOdr400</link> = 0xA
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497a2553e6299eb206a288730af2499f04d4">kBMI088AccOdr800</link> = 0xB
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497ac55c2b705876e73e883aa1b0a536dff8">kBMI088AccOdr1600</link> = 0xC
+ }</para>
+
+<para>BMI088 加速度计输出频率（Output Data Rate），单位：Hz </para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespacehello__world_1_1devices_1_1imu_1ac55ed4d468583311a38f1efe25e41020">BMI088AccOsr</link> : uint8_t { <link linkend="_namespacehello__world_1_1devices_1_1imu_1ac55ed4d468583311a38f1efe25e41020a8e20eec26346459cc412490744d64c87">kBMI088AccOsr4</link> = 0x8
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1ac55ed4d468583311a38f1efe25e41020ac013b97682350a130c6247429b805641">kBMI088AccOsr2</link> = 0x9
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1ac55ed4d468583311a38f1efe25e41020af20f8ca81b3be175c3d94cd3735fb513">kBMI088AccOsrNormal</link> = 0xA
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespacehello__world_1_1devices_1_1imu_1a5f381963a5f36b0ad90316482c9fd6e2">BMI088GyroRange</link> : uint8_t { <?linebreak?><link linkend="_namespacehello__world_1_1devices_1_1imu_1a5f381963a5f36b0ad90316482c9fd6e2ac740d3d399a74eca878975759f08ad1c">kBMI088GyroRange2000Dps</link> = 0x0
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a5f381963a5f36b0ad90316482c9fd6e2a452021d4367dabdf46ec7aa238694832">kBMI088GyroRange1000Dps</link> = 0x1
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a5f381963a5f36b0ad90316482c9fd6e2ac513bf4fce77c2af4d3b4e5e80317413">kBMI088GyroRange500Dps</link> = 0x2
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a5f381963a5f36b0ad90316482c9fd6e2a36f34d39759656d7414b41e71f3ef0d6">kBMI088GyroRange250Dps</link> = 0x3
+, <?linebreak?><link linkend="_namespacehello__world_1_1devices_1_1imu_1a5f381963a5f36b0ad90316482c9fd6e2a1ea96fa03944afd1a30fce6c876cb8da">kBMI088GyroRange125Dps</link> = 0x4
+ }</para>
+</listitem>
+            <listitem><para>enum <link linkend="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356">BMI088GyroOdrFbw</link> : uint8_t { <?linebreak?><link linkend="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356ad5090e935e2c755781bf9d112a8688a7">kBMI088GyroOdrFbw2000_532</link> = 0x0
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356a562703fa619b2a1321424d8615ac309d">kBMI088GyroOdrFbw2000_230</link> = 0x1
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356ac2cf6336e19984057d58b3274bce1aa3">kBMI088GyroOdrFbw1000_116</link> = 0x2
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356a7102d0df15c35757f1078dc032df3646">kBMI088GyroOdrFbw400_47</link> = 0x3
+, <?linebreak?><link linkend="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356ad84eb3a6be9e8198f7037e7abdeca7f5">kBMI088GyroOdrFbw200_23</link> = 0x4
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356a9e65a29b63ec557929fac30bb4ccd2fd">kBMI088GyroOdrFbw100_12</link> = 0x5
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356a8c53fdd3810c947c9b39869168d11ef9">kBMI088GyroOdrFbw200_64</link> = 0x6
+, <link linkend="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356a7388130fb591ae9529da6ce4008ea17d">kBMI088GyroOdrFbw100_32</link> = 0x7
+ }</para>
+
+<para>BMI088 陀螺仪输出频率（Output Data Rate）与滤波器带宽（Filter Bandwidth），单位：Hz </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>函数    </title>
+        <itemizedlist>
+            <listitem><para>static void <link linkend="_namespacehello__world_1_1devices_1_1imu_1a6fc8717b2ca9de9512855bad4d226769">DelayUs</link> (uint16_t us)</para>
+
+<para>微秒级延时 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>变量    </title>
+        <itemizedlist>
+            <listitem><para>static const uint8_t <link linkend="_namespacehello__world_1_1devices_1_1imu_1a19136def24f9f6529f7df46c0625acca">kMaxMultiTransLen</link> = 8u</para>
+</listitem>
+            <listitem><para>static const uint8_t <link linkend="_namespacehello__world_1_1devices_1_1imu_1a56a2243330f6d9b007aae341d01b6f29">kPaddingValue</link> = 0x55</para>
+</listitem>
+            <listitem><para>static uint8_t <link linkend="_namespacehello__world_1_1devices_1_1imu_1af1a33535f593f71f8f97bfe690bba84f">kPaddingData</link> [<link linkend="_namespacehello__world_1_1devices_1_1imu_1a19136def24f9f6529f7df46c0625acca">kMaxMultiTransLen</link>]</para>
+</listitem>
+            <listitem><para>static const float <link linkend="_namespacehello__world_1_1devices_1_1imu_1a5a86856961df34d30843390644886532">kAccSens</link> [4]</para>
+</listitem>
+            <listitem><para>static const float <link linkend="_namespacehello__world_1_1devices_1_1imu_1a0ed80ae63f77153e0821addb336446e2">kGyroSens</link> [5]</para>
+</listitem>
+            <listitem><para>static const float <link linkend="_namespacehello__world_1_1devices_1_1imu_1a27ec247e96dea1a69a25048e94e108ee">kTempSens</link> = 0.125f</para>
+</listitem>
+            <listitem><para>static const float <link linkend="_namespacehello__world_1_1devices_1_1imu_1a3ca6e2287a6e1578dcae2f9837721962">kTempOffset</link> = 23.0f</para>
+</listitem>
+            <listitem><para>static const uint8_t <link linkend="_namespacehello__world_1_1devices_1_1imu_1af60d7777256f8e7b1383437df9d7c420">kWriteSign</link> = 0x00</para>
+</listitem>
+            <listitem><para>static const uint8_t <link linkend="_namespacehello__world_1_1devices_1_1imu_1aa8d641907aa367b051e7f14cdea8673c">kReadSign</link> = 0x80</para>
+</listitem>
+            <listitem><para>static const uint8_t <link linkend="_namespacehello__world_1_1devices_1_1imu_1a3e4baaf9203b036df28de0609668d42f">kGyroRawDataLen</link> = 6u</para>
+</listitem>
+            <listitem><para>static const uint8_t <link linkend="_namespacehello__world_1_1devices_1_1imu_1a9c07d818a5232e233e78057af4cc4f29">kAccRawDataLen</link> = 6u</para>
+</listitem>
+            <listitem><para>static const uint8_t <link linkend="_namespacehello__world_1_1devices_1_1imu_1ae4969e35172560587100082bfede3aef">kTempRawDataLen</link> = 2u</para>
+</listitem>
+            <listitem><para>static const uint8_t <link linkend="_namespacehello__world_1_1devices_1_1imu_1afd57b9ff2061310de106415ffdb4888a">kSpiTimeout</link> = 5u</para>
+</listitem>
+            <listitem><para>static const uint16_t <link linkend="_namespacehello__world_1_1devices_1_1imu_1a2892b2630935424b98256bbac46b7c76">kAccResetTime</link> = 2u</para>
+</listitem>
+            <listitem><para>static const uint8_t <link linkend="_namespacehello__world_1_1devices_1_1imu_1ae62089d70213a8ed855a551b64eccb53">kGyroResetTime</link> = 1u</para>
+</listitem>
+            <listitem><para>static const uint16_t <link linkend="_namespacehello__world_1_1devices_1_1imu_1a2c70146ac241152592c8643c2ddbd571">kCommWaitTime</link> = 2u</para>
+</listitem>
+            <listitem><para>static const uint16_t <link linkend="_namespacehello__world_1_1devices_1_1imu_1a2197d124ccde446fa944ac4c53ddca63">kCheckWaitTime</link> = 120u</para>
+
+<para>寄存器写入后读取间隔时间，单位：us </para>
+</listitem>
+            <listitem><para>static const uint8_t <link linkend="_namespacehello__world_1_1devices_1_1imu_1a4b69bffbbe7c394213f4ba63f4d4e2b7">kAccSelfTestShortDelay</link> = 2u</para>
+
+<para>加速度计自检测短延时，单位：ms </para>
+</listitem>
+            <listitem><para>static const uint8_t <link linkend="_namespacehello__world_1_1devices_1_1imu_1a4d1a7ebd52abf9b9b515be763a3e76e2">kAccSelfTestLongDelay</link> = 50u</para>
+
+<para>加速度计自检测长延时，单位：ms </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>枚举类型说明</title>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497"/><section>
+    <title>BMI088AccOdr</title>
+<indexterm><primary>BMI088AccOdr</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>BMI088AccOdr</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497">hello_world::devices::imu::BMI088AccOdr</link> : uint8_t</computeroutput></para><para>
+
+<para><link linkend="_classhello__world_1_1devices_1_1imu_1_1_b_m_i088">BMI088</link> 加速度计输出频率（Output Data Rate），单位：Hz </para>
+</para>
+<informaltable frame="all">
+<title>枚举值</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>kBMI088AccOdr12_5</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088AccOdr12_5</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497a62071bd8c96ef5f22eb6d8d90f160552"/>kBMI088AccOdr12_5</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088AccOdr25</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088AccOdr25</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497ab085f3818557b51b69633c707e65b2c9"/>kBMI088AccOdr25</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088AccOdr50</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088AccOdr50</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497aba65b4b84845c947bb5347166927215e"/>kBMI088AccOdr50</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088AccOdr100</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088AccOdr100</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497a40807270c25b0256ebb4f2a4e2bfbd9f"/>kBMI088AccOdr100</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088AccOdr200</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088AccOdr200</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497a07fe99369df0eff0976ab31fd9a2d55e"/>kBMI088AccOdr200</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088AccOdr400</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088AccOdr400</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497a58c0a4713a1aa54ccab0ed34d41c70ab"/>kBMI088AccOdr400</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088AccOdr800</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088AccOdr800</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497a2553e6299eb206a288730af2499f04d4"/>kBMI088AccOdr800</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088AccOdr1600</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088AccOdr1600</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a4150d082933f50162a992c3a351f6497ac55c2b705876e73e883aa1b0a536dff8"/>kBMI088AccOdr1600</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+在文件 <link linkend="__b_m_i088_8hpp_source">BMI088.hpp</link> 第 <link linkend="__b_m_i088_8hpp_source_1l00050">50</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1ac55ed4d468583311a38f1efe25e41020"/><section>
+    <title>BMI088AccOsr</title>
+<indexterm><primary>BMI088AccOsr</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>BMI088AccOsr</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespacehello__world_1_1devices_1_1imu_1ac55ed4d468583311a38f1efe25e41020">hello_world::devices::imu::BMI088AccOsr</link> : uint8_t</computeroutput></para><informaltable frame="all">
+<title>枚举值</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>kBMI088AccOsr4</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088AccOsr4</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1ac55ed4d468583311a38f1efe25e41020a8e20eec26346459cc412490744d64c87"/>kBMI088AccOsr4</entry><entry>
+<para><itemizedlist>
+<listitem>
+<para><link linkend="_classhello__world_1_1devices_1_1imu_1_1_b_m_i088">BMI088</link> 加速度计过采样率（Oversampling Rate） </para>
+</listitem></itemizedlist>
+</para>
+</entry></row><row><entry><indexterm><primary>kBMI088AccOsr2</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088AccOsr2</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1ac55ed4d468583311a38f1efe25e41020ac013b97682350a130c6247429b805641"/>kBMI088AccOsr2</entry><entry>
+<para><itemizedlist>
+<listitem>
+<para>4倍过采样 </para>
+</listitem></itemizedlist>
+</para>
+</entry></row><row><entry><indexterm><primary>kBMI088AccOsrNormal</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088AccOsrNormal</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1ac55ed4d468583311a38f1efe25e41020af20f8ca81b3be175c3d94cd3735fb513"/>kBMI088AccOsrNormal</entry><entry>
+<para><itemizedlist>
+<listitem>
+<para>2倍过采样 </para>
+</listitem></itemizedlist>
+</para>
+</entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+在文件 <link linkend="__b_m_i088_8hpp_source">BMI088.hpp</link> 第 <link linkend="__b_m_i088_8hpp_source_1l00061">61</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a1b5968572f4f140f70490c0056a7ad98"/><section>
+    <title>BMI088AccRange</title>
+<indexterm><primary>BMI088AccRange</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>BMI088AccRange</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespacehello__world_1_1devices_1_1imu_1a1b5968572f4f140f70490c0056a7ad98">hello_world::devices::imu::BMI088AccRange</link> : uint8_t</computeroutput></para><informaltable frame="all">
+<title>枚举值</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>kBMI088AccRange3G</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088AccRange3G</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a1b5968572f4f140f70490c0056a7ad98a60f26b746398fa69d4839af8785af59d"/>kBMI088AccRange3G</entry><entry>
+<para><itemizedlist>
+<listitem>
+<para><link linkend="_classhello__world_1_1devices_1_1imu_1_1_b_m_i088">BMI088</link> 加速度计量程，单位：g </para>
+</listitem></itemizedlist>
+</para>
+</entry></row><row><entry><indexterm><primary>kBMI088AccRange6G</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088AccRange6G</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a1b5968572f4f140f70490c0056a7ad98ab5ccec842ab104d17cffb53edd582f80"/>kBMI088AccRange6G</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088AccRange12G</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088AccRange12G</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a1b5968572f4f140f70490c0056a7ad98a4e04e39b914ef040e7d6aac313dbdee9"/>kBMI088AccRange12G</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088AccRange24G</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088AccRange24G</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a1b5968572f4f140f70490c0056a7ad98a5dc50ec716a376d1442bdbf138496785"/>kBMI088AccRange24G</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+在文件 <link linkend="__b_m_i088_8hpp_source">BMI088.hpp</link> 第 <link linkend="__b_m_i088_8hpp_source_1l00042">42</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1afc65bae6cff924c06f3f762a196d6faf"/><section>
+    <title>BMI088ErrState</title>
+<indexterm><primary>BMI088ErrState</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>BMI088ErrState</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespacehello__world_1_1devices_1_1imu_1afc65bae6cff924c06f3f762a196d6faf">hello_world::devices::imu::BMI088ErrState</link> : uint8_t</computeroutput></para><informaltable frame="all">
+<title>枚举值</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>kBMI088ErrStateNoErr</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088ErrStateNoErr</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1afc65bae6cff924c06f3f762a196d6fafa2145833ba5262dcb4896c6452f5ef83f"/>kBMI088ErrStateNoErr</entry><entry>
+<para><itemizedlist>
+<listitem>
+<para>通过或运算拼接 </para>
+</listitem></itemizedlist>
+</para>
+</entry></row><row><entry><indexterm><primary>kBMI088ErrStateAccNotFound</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088ErrStateAccNotFound</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1afc65bae6cff924c06f3f762a196d6fafa33f5d7685272e1454b0a839318a1c155"/>kBMI088ErrStateAccNotFound</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088ErrStateGyroNotFound</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088ErrStateGyroNotFound</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1afc65bae6cff924c06f3f762a196d6fafaf36788cb829d6f706bbfc614d824e1bf"/>kBMI088ErrStateGyroNotFound</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088ErrStateAccSelfTestFailed</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088ErrStateAccSelfTestFailed</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1afc65bae6cff924c06f3f762a196d6fafa1fd3e7bba87b31d71a08e2b72646a3fd"/>kBMI088ErrStateAccSelfTestFailed</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088ErrStateGyroSelfTestFailed</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088ErrStateGyroSelfTestFailed</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1afc65bae6cff924c06f3f762a196d6fafa5ac7ace53ccf983ab0f56f8e09fb4290"/>kBMI088ErrStateGyroSelfTestFailed</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088ErrStateAccConfigErr</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088ErrStateAccConfigErr</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1afc65bae6cff924c06f3f762a196d6fafa3275cd83116cc9f6625817cfad14a433"/>kBMI088ErrStateAccConfigErr</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088ErrStateGyroConfigErr</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088ErrStateGyroConfigErr</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1afc65bae6cff924c06f3f762a196d6fafaa325e1db5049d081cd037fe9d8c642f3"/>kBMI088ErrStateGyroConfigErr</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+在文件 <link linkend="__b_m_i088_8hpp_source">BMI088.hpp</link> 第 <link linkend="__b_m_i088_8hpp_source_1l00032">32</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356"/><section>
+    <title>BMI088GyroOdrFbw</title>
+<indexterm><primary>BMI088GyroOdrFbw</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>BMI088GyroOdrFbw</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356">hello_world::devices::imu::BMI088GyroOdrFbw</link> : uint8_t</computeroutput></para><para>
+
+<para><link linkend="_classhello__world_1_1devices_1_1imu_1_1_b_m_i088">BMI088</link> 陀螺仪输出频率（Output Data Rate）与滤波器带宽（Filter Bandwidth），单位：Hz </para>
+</para>
+<informaltable frame="all">
+<title>枚举值</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>kBMI088GyroOdrFbw2000_532</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088GyroOdrFbw2000_532</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356ad5090e935e2c755781bf9d112a8688a7"/>kBMI088GyroOdrFbw2000_532</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088GyroOdrFbw2000_230</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088GyroOdrFbw2000_230</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356a562703fa619b2a1321424d8615ac309d"/>kBMI088GyroOdrFbw2000_230</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088GyroOdrFbw1000_116</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088GyroOdrFbw1000_116</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356ac2cf6336e19984057d58b3274bce1aa3"/>kBMI088GyroOdrFbw1000_116</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088GyroOdrFbw400_47</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088GyroOdrFbw400_47</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356a7102d0df15c35757f1078dc032df3646"/>kBMI088GyroOdrFbw400_47</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088GyroOdrFbw200_23</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088GyroOdrFbw200_23</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356ad84eb3a6be9e8198f7037e7abdeca7f5"/>kBMI088GyroOdrFbw200_23</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088GyroOdrFbw100_12</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088GyroOdrFbw100_12</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356a9e65a29b63ec557929fac30bb4ccd2fd"/>kBMI088GyroOdrFbw100_12</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088GyroOdrFbw200_64</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088GyroOdrFbw200_64</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356a8c53fdd3810c947c9b39869168d11ef9"/>kBMI088GyroOdrFbw200_64</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088GyroOdrFbw100_32</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088GyroOdrFbw100_32</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a736ed957a696501f01218b1b0a6f3356a7388130fb591ae9529da6ce4008ea17d"/>kBMI088GyroOdrFbw100_32</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+在文件 <link linkend="__b_m_i088_8hpp_source">BMI088.hpp</link> 第 <link linkend="__b_m_i088_8hpp_source_1l00076">76</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a5f381963a5f36b0ad90316482c9fd6e2"/><section>
+    <title>BMI088GyroRange</title>
+<indexterm><primary>BMI088GyroRange</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>BMI088GyroRange</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_namespacehello__world_1_1devices_1_1imu_1a5f381963a5f36b0ad90316482c9fd6e2">hello_world::devices::imu::BMI088GyroRange</link> : uint8_t</computeroutput></para><informaltable frame="all">
+<title>枚举值</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>kBMI088GyroRange2000Dps</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088GyroRange2000Dps</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a5f381963a5f36b0ad90316482c9fd6e2ac740d3d399a74eca878975759f08ad1c"/>kBMI088GyroRange2000Dps</entry><entry>
+<para><itemizedlist>
+<listitem>
+<para><link linkend="_classhello__world_1_1devices_1_1imu_1_1_b_m_i088">BMI088</link> 陀螺仪量程，单位：°/s </para>
+</listitem></itemizedlist>
+</para>
+</entry></row><row><entry><indexterm><primary>kBMI088GyroRange1000Dps</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088GyroRange1000Dps</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a5f381963a5f36b0ad90316482c9fd6e2a452021d4367dabdf46ec7aa238694832"/>kBMI088GyroRange1000Dps</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088GyroRange500Dps</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088GyroRange500Dps</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a5f381963a5f36b0ad90316482c9fd6e2ac513bf4fce77c2af4d3b4e5e80317413"/>kBMI088GyroRange500Dps</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088GyroRange250Dps</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088GyroRange250Dps</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a5f381963a5f36b0ad90316482c9fd6e2a36f34d39759656d7414b41e71f3ef0d6"/>kBMI088GyroRange250Dps</entry><entry></entry></row><row><entry><indexterm><primary>kBMI088GyroRange125Dps</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kBMI088GyroRange125Dps</secondary></indexterm>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a5f381963a5f36b0ad90316482c9fd6e2a1ea96fa03944afd1a30fce6c876cb8da"/>kBMI088GyroRange125Dps</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+在文件 <link linkend="__b_m_i088_8hpp_source">BMI088.hpp</link> 第 <link linkend="__b_m_i088_8hpp_source_1l00067">67</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>函数说明</title>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a6fc8717b2ca9de9512855bad4d226769"/><section>
+    <title>DelayUs()</title>
+<indexterm><primary>DelayUs</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>DelayUs</secondary></indexterm>
+<para><computeroutput>static void hello_world::devices::imu::DelayUs (uint16_t us)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>微秒级延时 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>us</entry><entry>
+<para>需要延时的时间，单位：us </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>None </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00534">534</link> 行定义.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="namespacehello__world_1_1devices_1_1imu_a6fc8717b2ca9de9512855bad4d226769_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>变量说明</title>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a9c07d818a5232e233e78057af4cc4f29"/><section>
+    <title>kAccRawDataLen</title>
+<indexterm><primary>kAccRawDataLen</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kAccRawDataLen</secondary></indexterm>
+<para><computeroutput>const uint8_t hello_world::devices::imu::kAccRawDataLen = 6u<computeroutput>[static]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00090">90</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a2892b2630935424b98256bbac46b7c76"/><section>
+    <title>kAccResetTime</title>
+<indexterm><primary>kAccResetTime</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kAccResetTime</secondary></indexterm>
+<para><computeroutput>const uint16_t hello_world::devices::imu::kAccResetTime = 2u<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><itemizedlist>
+<listitem>
+<para>单位：ms </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00095">95</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a4d1a7ebd52abf9b9b515be763a3e76e2"/><section>
+    <title>kAccSelfTestLongDelay</title>
+<indexterm><primary>kAccSelfTestLongDelay</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kAccSelfTestLongDelay</secondary></indexterm>
+<para><computeroutput>const uint8_t hello_world::devices::imu::kAccSelfTestLongDelay = 50u<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>加速度计自检测长延时，单位：ms </para>
+</para>
+<para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00104">104</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a4b69bffbbe7c394213f4ba63f4d4e2b7"/><section>
+    <title>kAccSelfTestShortDelay</title>
+<indexterm><primary>kAccSelfTestShortDelay</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kAccSelfTestShortDelay</secondary></indexterm>
+<para><computeroutput>const uint8_t hello_world::devices::imu::kAccSelfTestShortDelay = 2u<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>加速度计自检测短延时，单位：ms </para>
+</para>
+<para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00102">102</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a5a86856961df34d30843390644886532"/><section>
+    <title>kAccSens</title>
+<indexterm><primary>kAccSens</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kAccSens</secondary></indexterm>
+<para><computeroutput>const float hello_world::devices::imu::kAccSens[4]<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">初始值:</emphasis><programlisting linenumbering="unnumbered">=&#32;{
+&#32;&#32;&#32;&#32;3&#32;*&#32;kGravAcc&#32;/&#32;32768,
+&#32;&#32;&#32;&#32;6&#32;*&#32;kGravAcc&#32;/&#32;32768,
+&#32;&#32;&#32;&#32;12&#32;*&#32;kGravAcc&#32;/&#32;32768,
+&#32;&#32;&#32;&#32;24&#32;*&#32;kGravAcc&#32;/&#32;32768,
+}
+</programlisting><para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00068">68</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a2197d124ccde446fa944ac4c53ddca63"/><section>
+    <title>kCheckWaitTime</title>
+<indexterm><primary>kCheckWaitTime</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kCheckWaitTime</secondary></indexterm>
+<para><computeroutput>const uint16_t hello_world::devices::imu::kCheckWaitTime = 120u<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>寄存器写入后读取间隔时间，单位：us </para>
+</para>
+
+<para><itemizedlist>
+<listitem>
+<para>通信间隔时间，单位：us </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00099">99</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a2c70146ac241152592c8643c2ddbd571"/><section>
+    <title>kCommWaitTime</title>
+<indexterm><primary>kCommWaitTime</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kCommWaitTime</secondary></indexterm>
+<para><computeroutput>const uint16_t hello_world::devices::imu::kCommWaitTime = 2u<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><itemizedlist>
+<listitem>
+<para>陀螺仪重启耗时，单位：ms </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00097">97</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a3e4baaf9203b036df28de0609668d42f"/><section>
+    <title>kGyroRawDataLen</title>
+<indexterm><primary>kGyroRawDataLen</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kGyroRawDataLen</secondary></indexterm>
+<para><computeroutput>const uint8_t hello_world::devices::imu::kGyroRawDataLen = 6u<computeroutput>[static]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00089">89</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1ae62089d70213a8ed855a551b64eccb53"/><section>
+    <title>kGyroResetTime</title>
+<indexterm><primary>kGyroResetTime</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kGyroResetTime</secondary></indexterm>
+<para><computeroutput>const uint8_t hello_world::devices::imu::kGyroResetTime = 1u<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><itemizedlist>
+<listitem>
+<para>加速度计重启耗时，单位：ms </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00096">96</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a0ed80ae63f77153e0821addb336446e2"/><section>
+    <title>kGyroSens</title>
+<indexterm><primary>kGyroSens</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kGyroSens</secondary></indexterm>
+<para><computeroutput>const float hello_world::devices::imu::kGyroSens[5]<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">初始值:</emphasis><programlisting linenumbering="unnumbered">=&#32;{
+&#32;&#32;&#32;&#32;2000&#32;*&#32;kDeg2RadCoff&#32;/&#32;32768,
+&#32;&#32;&#32;&#32;1000&#32;*&#32;kDeg2RadCoff&#32;/&#32;32768,
+&#32;&#32;&#32;&#32;500&#32;*&#32;kDeg2RadCoff&#32;/&#32;32768,
+&#32;&#32;&#32;&#32;250&#32;*&#32;kDeg2RadCoff&#32;/&#32;32768,
+&#32;&#32;&#32;&#32;125&#32;*&#32;kDeg2RadCoff&#32;/&#32;32768,
+}
+</programlisting><para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00075">75</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a19136def24f9f6529f7df46c0625acca"/><section>
+    <title>kMaxMultiTransLen</title>
+<indexterm><primary>kMaxMultiTransLen</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kMaxMultiTransLen</secondary></indexterm>
+<para><computeroutput>const uint8_t hello_world::devices::imu::kMaxMultiTransLen = 8u<computeroutput>[static]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00055">55</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1af1a33535f593f71f8f97bfe690bba84f"/><section>
+    <title>kPaddingData</title>
+<indexterm><primary>kPaddingData</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kPaddingData</secondary></indexterm>
+<para><computeroutput>uint8_t hello_world::devices::imu::kPaddingData[<link linkend="_namespacehello__world_1_1devices_1_1imu_1a19136def24f9f6529f7df46c0625acca">kMaxMultiTransLen</link>]<computeroutput>[static]</computeroutput></computeroutput></para><emphasis role="strong">初始值:</emphasis><programlisting linenumbering="unnumbered">=&#32;{
+&#32;&#32;&#32;&#32;<link linkend="_namespacehello__world_1_1devices_1_1imu_1a56a2243330f6d9b007aae341d01b6f29">kPaddingValue</link>,
+&#32;&#32;&#32;&#32;<link linkend="_namespacehello__world_1_1devices_1_1imu_1a56a2243330f6d9b007aae341d01b6f29">kPaddingValue</link>,
+&#32;&#32;&#32;&#32;<link linkend="_namespacehello__world_1_1devices_1_1imu_1a56a2243330f6d9b007aae341d01b6f29">kPaddingValue</link>,
+&#32;&#32;&#32;&#32;<link linkend="_namespacehello__world_1_1devices_1_1imu_1a56a2243330f6d9b007aae341d01b6f29">kPaddingValue</link>,
+&#32;&#32;&#32;&#32;<link linkend="_namespacehello__world_1_1devices_1_1imu_1a56a2243330f6d9b007aae341d01b6f29">kPaddingValue</link>,
+&#32;&#32;&#32;&#32;<link linkend="_namespacehello__world_1_1devices_1_1imu_1a56a2243330f6d9b007aae341d01b6f29">kPaddingValue</link>,
+&#32;&#32;&#32;&#32;<link linkend="_namespacehello__world_1_1devices_1_1imu_1a56a2243330f6d9b007aae341d01b6f29">kPaddingValue</link>,
+&#32;&#32;&#32;&#32;<link linkend="_namespacehello__world_1_1devices_1_1imu_1a56a2243330f6d9b007aae341d01b6f29">kPaddingValue</link>,
+}
+</programlisting><para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00057">57</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a56a2243330f6d9b007aae341d01b6f29"/><section>
+    <title>kPaddingValue</title>
+<indexterm><primary>kPaddingValue</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kPaddingValue</secondary></indexterm>
+<para><computeroutput>const uint8_t hello_world::devices::imu::kPaddingValue = 0x55<computeroutput>[static]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00056">56</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1aa8d641907aa367b051e7f14cdea8673c"/><section>
+    <title>kReadSign</title>
+<indexterm><primary>kReadSign</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kReadSign</secondary></indexterm>
+<para><computeroutput>const uint8_t hello_world::devices::imu::kReadSign = 0x80<computeroutput>[static]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00087">87</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1afd57b9ff2061310de106415ffdb4888a"/><section>
+    <title>kSpiTimeout</title>
+<indexterm><primary>kSpiTimeout</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kSpiTimeout</secondary></indexterm>
+<para><computeroutput>const uint8_t hello_world::devices::imu::kSpiTimeout = 5u<computeroutput>[static]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00093">93</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a3ca6e2287a6e1578dcae2f9837721962"/><section>
+    <title>kTempOffset</title>
+<indexterm><primary>kTempOffset</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kTempOffset</secondary></indexterm>
+<para><computeroutput>const float hello_world::devices::imu::kTempOffset = 23.0f<computeroutput>[static]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00084">84</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1ae4969e35172560587100082bfede3aef"/><section>
+    <title>kTempRawDataLen</title>
+<indexterm><primary>kTempRawDataLen</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kTempRawDataLen</secondary></indexterm>
+<para><computeroutput>const uint8_t hello_world::devices::imu::kTempRawDataLen = 2u<computeroutput>[static]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00091">91</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1a27ec247e96dea1a69a25048e94e108ee"/><section>
+    <title>kTempSens</title>
+<indexterm><primary>kTempSens</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kTempSens</secondary></indexterm>
+<para><computeroutput>const float hello_world::devices::imu::kTempSens = 0.125f<computeroutput>[static]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00083">83</link> 行定义.</para>
+</section>
+<anchor xml:id="_namespacehello__world_1_1devices_1_1imu_1af60d7777256f8e7b1383437df9d7c420"/><section>
+    <title>kWriteSign</title>
+<indexterm><primary>kWriteSign</primary><secondary>hello_world::devices::imu</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu</primary><secondary>kWriteSign</secondary></indexterm>
+<para><computeroutput>const uint8_t hello_world::devices::imu::kWriteSign = 0x00<computeroutput>[static]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="__b_m_i088_8cpp_source">BMI088.cpp</link> 第 <link linkend="__b_m_i088_8cpp_source_1l00086">86</link> 行定义.</para>
+</section>
+</section>
+</section>

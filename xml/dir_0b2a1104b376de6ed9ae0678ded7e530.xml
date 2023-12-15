@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="dir_0b2a1104b376de6ed9ae0678ded7e530" kind="dir">
+    <compoundname>HW-Components/devices/motor</compoundname>
+    <innerdir refid="dir_9378adfc3453907965b732b241912c84">HW-Components/devices/motor/inc</innerdir>
+    <innerdir refid="dir_70ed20f9e1565a8320127cffe78c769b">HW-Components/devices/motor/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HW-Components/devices/motor/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_controller_8hpp_source" xml:lang="zh">
+<title>controller.hpp</title>
+<indexterm><primary>HW-Components/algorithms/controller/inc/controller.hpp</primary></indexterm>
+浏览该文件的文档.<programlisting linenumbering="unnumbered"><anchor xml:id="_controller_8hpp_source_1l00001"/>00001 
+<anchor xml:id="_controller_8hpp_source_1l00015"/>00015 <emphasis role="comment">/*&#32;Define&#32;to&#32;prevent&#32;recursive&#32;inclusion&#32;-------------------------------------*/</emphasis>
+<anchor xml:id="_controller_8hpp_source_1l00016"/>00016 <emphasis role="preprocessor">#ifndef&#32;HW_COMPONETS_ALGORITHMS_CONTROLLER_CONTROLLER_HPP_</emphasis>
+<anchor xml:id="_controller_8hpp_source_1l00017"/>00017 <emphasis role="preprocessor">#define&#32;HW_COMPONETS_ALGORITHMS_CONTROLLER_CONTROLLER_HPP_</emphasis>
+<anchor xml:id="_controller_8hpp_source_1l00018"/>00018 
+<anchor xml:id="_controller_8hpp_source_1l00019"/>00019 <emphasis role="comment">/*&#32;Includes&#32;------------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_controller_8hpp_source_1l00020"/>00020 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_controller__base_8hpp">controller_base.hpp</link>&quot;</emphasis>
+<anchor xml:id="_controller_8hpp_source_1l00021"/>00021 <emphasis role="comment">/*&#32;Exported&#32;macro&#32;------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_controller_8hpp_source_1l00022"/>00022 <emphasis role="comment">/*&#32;Exported&#32;constants&#32;--------------------------------------------------------*/</emphasis>
+<anchor xml:id="_controller_8hpp_source_1l00023"/>00023 <emphasis role="comment">/*&#32;Exported&#32;types&#32;------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_controller_8hpp_source_1l00024"/>00024 <emphasis role="comment">/*&#32;Exported&#32;variables&#32;--------------------------------------------------------*/</emphasis>
+<anchor xml:id="_controller_8hpp_source_1l00025"/>00025 <emphasis role="comment">/*&#32;Exported&#32;function&#32;prototypes&#32;----------------------------------------------*/</emphasis>
+<anchor xml:id="_controller_8hpp_source_1l00026"/>00026 
+<anchor xml:id="_controller_8hpp_source_1l00027"/>00027 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;HW_COMPONETS_ALGORITHMS_CONTROLLER_CONTROLLER_HPP_&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+</programlisting></section>

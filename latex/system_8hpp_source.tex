@@ -1,0 +1,78 @@
+\doxysection{system.\+hpp}
+\hypertarget{system_8hpp_source}{}\label{system_8hpp_source}\index{HW-\/Components/tools/inc/system.hpp@{HW-\/Components/tools/inc/system.hpp}}
+\mbox{\hyperlink{system_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00021}00021\ \textcolor{comment}{/*\ Define\ to\ prevent\ recursive\ inclusion\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00022}00022\ \textcolor{preprocessor}{\#ifndef\ HW\_COMPONENTS\_TOOLS\_SYSTEM\_HPP\_}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00023}00023\ \textcolor{preprocessor}{\#define\ HW\_COMPONENTS\_TOOLS\_SYSTEM\_HPP\_}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00025}00025\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00026}00026\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00028}00028\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacehello__world}{hello\_world}}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00029}00029\ \{}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00030}00030\ \textcolor{comment}{/*\ Exported\ macro\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00031}00031\ \textcolor{comment}{/*\ memory\ manage\ and\ RTOS\ features\ */}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00032}00032\ \textcolor{preprocessor}{\#if\ USE\_FREERTOS\_CMSIS}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00033}00033\ \textcolor{preprocessor}{\#include\ "{}cmsis\_os.h"{}}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00034}00034\ \textcolor{preprocessor}{\#define\ MALLOC\ pvPortMalloc}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00035}00035\ \textcolor{preprocessor}{\#define\ FREE\ vPortFree}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00036}00036\ \textcolor{preprocessor}{\#define\ ENTER\_CRITICAL()\ taskENTER\_CRITICAL()}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00037}00037\ \textcolor{preprocessor}{\#define\ EXIT\_CRITICAL()\ taskEXIT\_CRITICAL()}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00038}00038\ \textcolor{preprocessor}{\#define\ ENTER\_CRITICAL\_FROM\_ISR()\ taskENTER\_CRITICAL\_FROM\_ISR()}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00039}00039\ \textcolor{preprocessor}{\#define\ EXIT\_CRITICAL\_FROM\_ISR()\ taskEXIT\_CRITICAL\_FROM\_ISR()}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00040}00040\ \textcolor{preprocessor}{\#define\ Mutex\_t\ SemaphoreHandle\_t}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00041}00041\ \textcolor{preprocessor}{\#define\ MUTEX\_INIT()\ xSemaphoreCreateMutex()}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00042}00042\ \textcolor{preprocessor}{\#define\ MUTEX\_LOCK(xSemaphore)\ pdFALSE\ ==\ xSemaphoreTake(xSemaphore,\ (TickType\_t)10)\ ?\ SYS\_ERROR\ :\ SYS\_OK}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00043}00043\ \textcolor{preprocessor}{\#define\ MUTEX\_UNLOCK(xSemaphore)\ pdFALSE\ ==\ xSemaphoreGive(xSemaphore)\ ?\ SYS\_ERROR\ :\ SYS\_OK}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00044}00044\ \textcolor{preprocessor}{\#define\ MUTEX\_LOCK\_FROM\_ISR(xSemaphore,\ pxHigherPriorityTaskWoken)\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00045}00045\ \textcolor{preprocessor}{\ \ pdFALSE\ ==\ xSemaphoreTakeFromISR(xSemaphore,\ pxHigherPriorityTaskWoken)\ ?\ SYS\_ERROR\ :\ SYS\_OK}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00046}00046\ \textcolor{preprocessor}{\#define\ MUTEX\_UNLOCK\_FROM\_ISR(xSemaphore,\ pxHigherPriorityTaskWoken)\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00047}00047\ \textcolor{preprocessor}{\ \ pdFALSE\ ==\ xSemaphoreGiveFromISR(xSemaphore,\ pxHigherPriorityTaskWoken)\ ?\ SYS\_ERROR\ :\ SYS\_OK}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00048}00048\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00049}\mbox{\hyperlink{system_8hpp_a3e218828af7ddd3f4cd0d3772562b520}{00049}}\ \textcolor{preprocessor}{\#define\ MALLOC\ malloc}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00050}\mbox{\hyperlink{system_8hpp_a9a8e700d56e7d858108b755ad3edb52e}{00050}}\ \textcolor{preprocessor}{\#define\ FREE\ free}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00051}\mbox{\hyperlink{system_8hpp_a96e1f55107bcc6ec80d96e0ee3b108f7}{00051}}\ \textcolor{preprocessor}{\#define\ ENTER\_CRITICAL()\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00052}00052\ \textcolor{preprocessor}{\ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00053}00053\ \textcolor{preprocessor}{\ \ \ \ \_\_disable\_irq();\ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00054}00054\ \textcolor{preprocessor}{\ \ \}\ while\ (0);}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00055}\mbox{\hyperlink{system_8hpp_acc63c500cf503268455a8777eece91a0}{00055}}\ \textcolor{preprocessor}{\#define\ EXIT\_CRITICAL()\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00056}00056\ \textcolor{preprocessor}{\ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00057}00057\ \textcolor{preprocessor}{\ \ \ \ \_\_enable\_irq();\ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00058}00058\ \textcolor{preprocessor}{\ \ \}\ while\ (0);}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00059}\mbox{\hyperlink{system_8hpp_a6f65b0ad8c8a5732495fa067820ced4d}{00059}}\ \textcolor{preprocessor}{\#define\ Mutex\_t\ bool}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00060}\mbox{\hyperlink{system_8hpp_a65b4473e73221450bbdc7a876dd93098}{00060}}\ \textcolor{preprocessor}{\#define\ MUTEX\_INIT()\ true}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00061}\mbox{\hyperlink{system_8hpp_a441b021fa23aeb332a6aa860cb1aee7c}{00061}}\ \textcolor{preprocessor}{\#define\ MUTEX\_LOCK(x)\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00062}00062\ \textcolor{preprocessor}{\ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00063}00063\ \textcolor{preprocessor}{\ \ \ \ (x)\ =\ false;\ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00064}00064\ \textcolor{preprocessor}{\ \ \}\ while\ (0)}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00065}\mbox{\hyperlink{system_8hpp_a04bad901d24418b1d7e307edb0d38662}{00065}}\ \textcolor{preprocessor}{\#define\ MUTEX\_UNLOCK(x)\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00066}00066\ \textcolor{preprocessor}{\ \ do\ \{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00067}00067\ \textcolor{preprocessor}{\ \ \ \ (x)\ =\ true;\ \ \ \ \ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00068}00068\ \textcolor{preprocessor}{\ \ \}\ while\ (0)}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00069}00069\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00070}00070\ \textcolor{comment}{/*\ Exported\ constants\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00071}00071\ \textcolor{comment}{/*\ Exported\ types\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00073}\mbox{\hyperlink{classhello__world_1_1_mem_mang}{00073}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classhello__world_1_1_mem_mang}{MemMang}}\ \ }
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00074}00074\ \{}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00075}00075\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00076}\mbox{\hyperlink{classhello__world_1_1_mem_mang_abcf6e7289814e8da342ba4f47d8af411}{00076}}\ \ \ \textcolor{keywordtype}{void}*\ \textcolor{keyword}{operator}\ \textcolor{keyword}{new}(\textcolor{keywordtype}{size\_t}\ size)\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{system_8hpp_a3e218828af7ddd3f4cd0d3772562b520}{MALLOC}}(size);\ \}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00077}\mbox{\hyperlink{classhello__world_1_1_mem_mang_ad10b6eff1541322708e5bde32c590c82}{00077}}\ \ \ \textcolor{keywordtype}{void}*\ \textcolor{keyword}{operator}\ \textcolor{keyword}{new}[](\textcolor{keywordtype}{size\_t}\ size)\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{system_8hpp_a3e218828af7ddd3f4cd0d3772562b520}{MALLOC}}(size);\ \}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00078}\mbox{\hyperlink{classhello__world_1_1_mem_mang_abf1fe21066f52d693e2eec63a5833e8e}{00078}}\ \ \ \textcolor{keywordtype}{void}\ \textcolor{keyword}{operator}\ \textcolor{keyword}{delete}(\textcolor{keywordtype}{void}*\ ptr)\ \{\ \mbox{\hyperlink{system_8hpp_a9a8e700d56e7d858108b755ad3edb52e}{FREE}}(ptr);\ \}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00079}\mbox{\hyperlink{classhello__world_1_1_mem_mang_a54e1a6a8e01b0996cc2854a8bc1ce7bd}{00079}}\ \ \ \textcolor{keywordtype}{void}\ \textcolor{keyword}{operator}\ \textcolor{keyword}{delete}[](\textcolor{keywordtype}{void}*\ ptr)\ \{\ \mbox{\hyperlink{system_8hpp_a9a8e700d56e7d858108b755ad3edb52e}{FREE}}(ptr);\ \}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00080}00080\ \};}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00081}00081\ \textcolor{comment}{/*\ Exported\ variables\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00082}00082\ \textcolor{comment}{/*\ Exported\ function\ prototypes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00083}00083\ \}\ \ \textcolor{comment}{//\ namespace\ hello\_world}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00085}\mbox{\hyperlink{system_8hpp_a1a7f24760c8c7ad3bfcd54856d906fc2}{00085}}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}*\ \textcolor{keyword}{operator}\ \textcolor{keyword}{new}(\textcolor{keywordtype}{size\_t}\ size)\ \textcolor{keyword}{noexcept}\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{system_8hpp_a3e218828af7ddd3f4cd0d3772562b520}{MALLOC}}(size);\ \}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00086}\mbox{\hyperlink{system_8hpp_afa145befcf5e7b83424408ca503c8637}{00086}}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \textcolor{keyword}{operator}\ \textcolor{keyword}{delete}(\textcolor{keywordtype}{void}*\ ptr)\ \textcolor{keyword}{noexcept}\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{system_8hpp_a9a8e700d56e7d858108b755ad3edb52e}{FREE}}(ptr);\ \}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00087}\mbox{\hyperlink{system_8hpp_aa75472ab4b765cf6f6b5b0ebcd4a28c8}{00087}}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}*\ \textcolor{keyword}{operator}\ \textcolor{keyword}{new}[](\textcolor{keywordtype}{size\_t}\ size)\ \textcolor{keyword}{noexcept}\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{system_8hpp_a3e218828af7ddd3f4cd0d3772562b520}{MALLOC}}(size);\ \}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00088}\mbox{\hyperlink{system_8hpp_a22aea74a1155aa798d6032da46da2391}{00088}}\ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \textcolor{keyword}{operator}\ \textcolor{keyword}{delete}[](\textcolor{keywordtype}{void}*\ ptr)\ \textcolor{keyword}{noexcept}\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{system_8hpp_a9a8e700d56e7d858108b755ad3edb52e}{FREE}}(ptr);\ \}}
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{system_8hpp_source_l00090}00090\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ HW\_COMPONENTS\_TOOLS\_SYSTEM\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

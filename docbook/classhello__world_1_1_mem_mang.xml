@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classhello__world_1_1_mem_mang" xml:lang="zh">
+<title>hello_world::MemMang类 参考</title>
+<indexterm><primary>hello_world::MemMang</primary></indexterm>
+<para>
+<computeroutput>#include &lt;system.hpp&gt;</computeroutput>
+</para>
+类 hello_world::MemMang 继承关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1_mem_mang__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para>void * <link linkend="_classhello__world_1_1_mem_mang_1abcf6e7289814e8da342ba4f47d8af411">operator new</link> (size_t size)</para>
+</listitem>
+            <listitem><para>void * <link linkend="_classhello__world_1_1_mem_mang_1ad10b6eff1541322708e5bde32c590c82">operator new[]</link> (size_t size)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1_mem_mang_1abf1fe21066f52d693e2eec63a5833e8e">operator delete</link> (void *ptr)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1_mem_mang_1a54e1a6a8e01b0996cc2854a8bc1ce7bd">operator delete[]</link> (void *ptr)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para><itemizedlist>
+<listitem>
+<para>用于重载类的内存申请，所有可能需要内存申请的类需要为该类的子类 </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 第 <link linkend="_system_8hpp_source_1l00073">73</link> 行定义.</para>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classhello__world_1_1_mem_mang_1abf1fe21066f52d693e2eec63a5833e8e"/><section>
+    <title>operator delete()</title>
+<indexterm><primary>operator delete</primary><secondary>hello_world::MemMang</secondary></indexterm>
+<indexterm><primary>hello_world::MemMang</primary><secondary>operator delete</secondary></indexterm>
+<para><computeroutput>void hello_world::MemMang::operator delete (void * ptr)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 第 <link linkend="_system_8hpp_source_1l00078">78</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1_mem_mang_1a54e1a6a8e01b0996cc2854a8bc1ce7bd"/><section>
+    <title>operator delete[]()</title>
+<indexterm><primary>operator delete[]</primary><secondary>hello_world::MemMang</secondary></indexterm>
+<indexterm><primary>hello_world::MemMang</primary><secondary>operator delete[]</secondary></indexterm>
+<para><computeroutput>void hello_world::MemMang::operator delete[] (void * ptr)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 第 <link linkend="_system_8hpp_source_1l00079">79</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1_mem_mang_1abcf6e7289814e8da342ba4f47d8af411"/><section>
+    <title>operator new()</title>
+<indexterm><primary>operator new</primary><secondary>hello_world::MemMang</secondary></indexterm>
+<indexterm><primary>hello_world::MemMang</primary><secondary>operator new</secondary></indexterm>
+<para><computeroutput>void * hello_world::MemMang::operator new (size_t size)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 第 <link linkend="_system_8hpp_source_1l00076">76</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1_mem_mang_1ad10b6eff1541322708e5bde32c590c82"/><section>
+    <title>operator new[]()</title>
+<indexterm><primary>operator new[]</primary><secondary>hello_world::MemMang</secondary></indexterm>
+<indexterm><primary>hello_world::MemMang</primary><secondary>operator new[]</secondary></indexterm>
+<para><computeroutput>void * hello_world::MemMang::operator new[] (size_t size)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 第 <link linkend="_system_8hpp_source_1l00077">77</link> 行定义.</para>
+</section>
+</section>
+</section>

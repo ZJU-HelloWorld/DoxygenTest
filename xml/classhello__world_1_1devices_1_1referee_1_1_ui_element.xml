@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="classhello__world_1_1devices_1_1referee_1_1_ui_element" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>hello_world::devices::referee::UiElement</compoundname>
+    <includes refid="referee__ui_8hpp" local="no">referee_ui.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhello__world_1_1devices_1_1referee_1_1_ui_element_1a2fbc452e282d02871a613e8d662e41e1" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend hello_world::devices::referee::UiElement::UiFrame</definition>
+        <argsstring></argsstring>
+        <name>UiFrame</name>
+        <qualifiedname>hello_world::devices::referee::UiElement::UiFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/referee/inc/referee_ui.hpp" line="50" column="12" bodyfile="HW-Components/devices/referee/inc/referee_ui.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classhello__world_1_1devices_1_1referee_1_1_ui_element_1a19f4347351dc884d1ccef9d0f4129e4d" prot="protected" static="no" mutable="no">
+        <type><ref refid="classhello__world_1_1devices_1_1referee_1_1_ui_frame" kindref="compound">UiFrame</ref> *</type>
+        <definition>UiFrame* hello_world::devices::referee::UiElement::patent_</definition>
+        <argsstring></argsstring>
+        <name>patent_</name>
+        <qualifiedname>hello_world::devices::referee::UiElement::patent_</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/referee/inc/referee_ui.hpp" line="53" column="13" bodyfile="HW-Components/devices/referee/inc/referee_ui.hpp" bodystart="53" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1referee_1_1_ui_element_1a7dea54a4df220b4d8084596cfd8c71e0" compoundref="referee__ui_8hpp" startline="57" endline="57">setPatent</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhello__world_1_1devices_1_1referee_1_1_ui_element_1a6604adbd81c49b8ec2fc4d2e986d5c42" prot="protected" static="no" mutable="no">
+        <type><ref refid="namespacehello__world_1_1devices_1_1referee_1a53fc26cbe27cc0f9cceb77263d60e8ea" kindref="member">UiRefeshPriority</ref></type>
+        <definition>UiRefeshPriority hello_world::devices::referee::UiElement::refresh_priority_</definition>
+        <argsstring></argsstring>
+        <name>refresh_priority_</name>
+        <qualifiedname>hello_world::devices::referee::UiElement::refresh_priority_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/referee/inc/referee_ui.hpp" line="54" column="22" bodyfile="HW-Components/devices/referee/inc/referee_ui.hpp" bodystart="54" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1referee_1_1_ui_element_1a79d59fa462d4e64d6b9599b8aa9ee0a2" compoundref="referee__ui_8hpp" startline="58" endline="58">setRefeshPriority</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1referee_1_1_ui_element_1a7dea54a4df220b4d8084596cfd8c71e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void hello_world::devices::referee::UiElement::setPatent</definition>
+        <argsstring>(UiFrame *patent)</argsstring>
+        <name>setPatent</name>
+        <qualifiedname>hello_world::devices::referee::UiElement::setPatent</qualifiedname>
+        <param>
+          <type><ref refid="classhello__world_1_1devices_1_1referee_1_1_ui_frame" kindref="compound">UiFrame</ref> *</type>
+          <declname>patent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/referee/inc/referee_ui.hpp" line="57" column="10" bodyfile="HW-Components/devices/referee/inc/referee_ui.hpp" bodystart="57" bodyend="57"/>
+        <references refid="classhello__world_1_1devices_1_1referee_1_1_ui_element_1a19f4347351dc884d1ccef9d0f4129e4d" compoundref="referee__ui_8hpp" startline="53">patent_</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1referee_1_1_ui_element_1a79d59fa462d4e64d6b9599b8aa9ee0a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void hello_world::devices::referee::UiElement::setRefeshPriority</definition>
+        <argsstring>(UiRefeshPriority refresh_priority)</argsstring>
+        <name>setRefeshPriority</name>
+        <qualifiedname>hello_world::devices::referee::UiElement::setRefeshPriority</qualifiedname>
+        <param>
+          <type><ref refid="namespacehello__world_1_1devices_1_1referee_1a53fc26cbe27cc0f9cceb77263d60e8ea" kindref="member">UiRefeshPriority</ref></type>
+          <declname>refresh_priority</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/referee/inc/referee_ui.hpp" line="58" column="10" bodyfile="HW-Components/devices/referee/inc/referee_ui.hpp" bodystart="58" bodyend="58"/>
+        <references refid="classhello__world_1_1devices_1_1referee_1_1_ui_element_1a6604adbd81c49b8ec2fc4d2e986d5c42" compoundref="referee__ui_8hpp" startline="54">refresh_priority_</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1referee_1_1_ui_element_1a56ea8aac608c9476f7177f450c80eeca" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void hello_world::devices::referee::UiElement::encode</definition>
+        <argsstring>(uint8_t *p_frame_data)=0</argsstring>
+        <name>encode</name>
+        <qualifiedname>hello_world::devices::referee::UiElement::encode</qualifiedname>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_frame_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/referee/inc/referee_ui.hpp" line="59" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>hello_world::devices::referee::UiElement</label>
+        <link refid="classhello__world_1_1devices_1_1referee_1_1_ui_element"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>patent_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>hello_world::devices::referee::UiFrame</label>
+        <link refid="classhello__world_1_1devices_1_1referee_1_1_ui_frame"/>
+      </node>
+    </collaborationgraph>
+    <location file="HW-Components/devices/referee/inc/referee_ui.hpp" line="48" column="1" bodyfile="HW-Components/devices/referee/inc/referee_ui.hpp" bodystart="49" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_ui_element_1a56ea8aac608c9476f7177f450c80eeca" prot="public" virt="pure-virtual"><scope>hello_world::devices::referee::UiElement</scope><name>encode</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_ui_element_1a19f4347351dc884d1ccef9d0f4129e4d" prot="protected" virt="non-virtual"><scope>hello_world::devices::referee::UiElement</scope><name>patent_</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_ui_element_1a6604adbd81c49b8ec2fc4d2e986d5c42" prot="protected" virt="non-virtual"><scope>hello_world::devices::referee::UiElement</scope><name>refresh_priority_</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_ui_element_1a7dea54a4df220b4d8084596cfd8c71e0" prot="public" virt="non-virtual"><scope>hello_world::devices::referee::UiElement</scope><name>setPatent</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_ui_element_1a79d59fa462d4e64d6b9599b8aa9ee0a2" prot="public" virt="non-virtual"><scope>hello_world::devices::referee::UiElement</scope><name>setRefeshPriority</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_ui_element_1a2fbc452e282d02871a613e8d662e41e1" prot="private" virt="non-virtual"><scope>hello_world::devices::referee::UiElement</scope><name>UiFrame</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

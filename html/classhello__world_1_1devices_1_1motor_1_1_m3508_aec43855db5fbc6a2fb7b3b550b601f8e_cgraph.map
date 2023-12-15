@@ -1,0 +1,13 @@
+<map id="hello_world::devices::motor::M3508::decode" name="hello_world::devices::motor::M3508::decode">
+<area shape="rect" id="Node000001" title="将电调发回的 CAN 报文进行解包" alt="" coords="5,97,165,137"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#a21092858a98af5688b398d57cd203592" title="将角度转换到指定范围" alt="" coords="213,33,388,73"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,94,216,76,218,81,156,99"/>
+<area shape="rect" id="Node000005" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#a1e4467d9f449b9c6c7d6886fffa89667" title="将原始报文内容转换为转子电流" alt="" coords="220,97,381,137"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="166,115,205,115,205,120,166,120"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#af74a8c4ad7c0067a2d71afd711639366" title="将原始报文内容转换为输出端力矩" alt="" coords="220,161,381,201"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="156,135,218,154,216,159,154,140"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#acad1e1f1792ab8cb6265b1d5195737f6" title=" " alt="" coords="459,5,602,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="388,40,444,33,445,38,389,45"/>
+<area shape="rect" id="Node000004" href="$namespacehello__world.html#a71f5ddbc81f1fa181ecefaf0b1f51fa8" title="将周期性数据归一化到指定周期区间" alt="" coords="436,70,625,95"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="389,62,421,66,421,71,388,67"/>
+</map>

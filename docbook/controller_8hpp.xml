@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_controller_8hpp" xml:lang="zh">
+<title>HW-Components/algorithms/controller/inc/controller.hpp 文件参考</title>
+<indexterm><primary>HW-Components/algorithms/controller/inc/controller.hpp</primary></indexterm>
+<para>
+
+<para>: @history : Version Date Author Note V0.9.0 yyyy-mm-dd &lt;author&gt; 1. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;controller_base.hpp&quot;<?linebreak?></programlisting>controller.hpp 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="controller_8hpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<section>
+<title>详细描述</title>
+
+<para>: @history : Version Date Author Note V0.9.0 yyyy-mm-dd &lt;author&gt; 1. </para>
+
+<para>&lt;note&gt;</para>
+
+<para><caution><title>注意</title>
+
+<para>:</para>
+</caution>
+Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved. </para>
+<para>
+在文件 <link linkend="_controller_8hpp_source">controller.hpp</link> 中定义.</para>
+</section>
+</section>

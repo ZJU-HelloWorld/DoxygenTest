@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node" xml:lang="zh">
+<title>hello_world::algorithms::controller::pid::PidNode类 参考</title>
+<indexterm><primary>hello_world::algorithms::controller::pid::PidNode</primary></indexterm>
+<para>
+
+<para>PID节点类，用于实现PID链表 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;pid.hpp&gt;</computeroutput>
+</para>
+类 hello_world::algorithms::controller::pid::PidNode 继承关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+hello_world::algorithms::controller::pid::PidNode 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_1a8f257d2cab4440643f594f495f5898c1">PidNode</link> ()</para>
+
+<para>默认构造函数，初始化 <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node">PidNode</link> 对象 </para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_1a62ddf96bd84373676dfdf60698f965cd">PidNode</link> (const <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid">BasicPid</link> &amp;pid)</para>
+
+<para>构造函数，使用 <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid">BasicPid</link> 对象初始化 <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node">PidNode</link> </para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_1a1684576a170011f31be07b61b22afd4a">PidNode</link> (const <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params">BasicPidParams</link> &amp;params)</para>
+
+<para>构造函数，使用 <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params">BasicPidParams</link> 对象初始化 <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node">PidNode</link> </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public 成员函数 继承自 <link linkend="_classhello__world_1_1_mem_mang">hello_world::MemMang</link>        <itemizedlist>
+            <listitem><para>void * <link linkend="_classhello__world_1_1_mem_mang_1abcf6e7289814e8da342ba4f47d8af411">operator new</link> (size_t size)</para>
+</listitem>
+            <listitem><para>void * <link linkend="_classhello__world_1_1_mem_mang_1ad10b6eff1541322708e5bde32c590c82">operator new[]</link> (size_t size)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1_mem_mang_1abf1fe21066f52d693e2eec63a5833e8e">operator delete</link> (void *ptr)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1_mem_mang_1a54e1a6a8e01b0996cc2854a8bc1ce7bd">operator delete[]</link> (void *ptr)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid">BasicPid</link> <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_1adb8ec7824738a35f300525749aa2f36e">obj_</link></para>
+
+<para>PID对象 </para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node">PidNode</link> * <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_1a7be6366e2fa1a9d1b8a84ca9101e668f">next_ptr_</link></para>
+
+<para>指向后一个节点的指针 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>PID节点类，用于实现PID链表 </para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00210">210</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_1a8f257d2cab4440643f594f495f5898c1"/><section>
+    <title>PidNode()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>PidNode</primary><secondary>hello_world::algorithms::controller::pid::PidNode</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::PidNode</primary><secondary>PidNode</secondary></indexterm>
+<para><computeroutput>hello_world::algorithms::controller::pid::PidNode::PidNode ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>默认构造函数，初始化 <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node">PidNode</link> 对象 </para>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00218">218</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_1a62ddf96bd84373676dfdf60698f965cd"/><section>
+    <title>PidNode()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>PidNode</primary><secondary>hello_world::algorithms::controller::pid::PidNode</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::PidNode</primary><secondary>PidNode</secondary></indexterm>
+<para><computeroutput>hello_world::algorithms::controller::pid::PidNode::PidNode (const <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid">BasicPid</link> &amp; pid)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>构造函数，使用 <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid">BasicPid</link> 对象初始化 <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node">PidNode</link> </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>pid</entry><entry>
+<para>用于初始化 <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node">PidNode</link> 的 <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid">BasicPid</link> 对象 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00224">224</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_1a1684576a170011f31be07b61b22afd4a"/><section>
+    <title>PidNode()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>PidNode</primary><secondary>hello_world::algorithms::controller::pid::PidNode</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::PidNode</primary><secondary>PidNode</secondary></indexterm>
+<para><computeroutput>hello_world::algorithms::controller::pid::PidNode::PidNode (const <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params">BasicPidParams</link> &amp; params)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>构造函数，使用 <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params">BasicPidParams</link> 对象初始化 <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node">PidNode</link> </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>params</entry><entry>
+<para>用于初始化 <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node">PidNode</link> 的 <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params">BasicPidParams</link> 对象 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00230">230</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_1a7be6366e2fa1a9d1b8a84ca9101e668f"/><section>
+    <title>next_ptr_</title>
+<indexterm><primary>next_ptr_</primary><secondary>hello_world::algorithms::controller::pid::PidNode</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::PidNode</primary><secondary>next_ptr_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node">PidNode</link>* hello_world::algorithms::controller::pid::PidNode::next_ptr_</computeroutput></para><para>
+
+<para>指向后一个节点的指针 </para>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00214">214</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_1adb8ec7824738a35f300525749aa2f36e"/><section>
+    <title>obj_</title>
+<indexterm><primary>obj_</primary><secondary>hello_world::algorithms::controller::pid::PidNode</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::PidNode</primary><secondary>obj_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid">BasicPid</link> hello_world::algorithms::controller::pid::PidNode::obj_</computeroutput></para><para>
+
+<para>PID对象 </para>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00213">213</link> 行定义.</para>
+</section>
+</section>
+</section>

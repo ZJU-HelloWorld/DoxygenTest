@@ -1,0 +1,7 @@
+<map id="hello_world::devices::imu::BMI088::gyroMultiRead" name="hello_world::devices::imu::BMI088::gyroMultiRead">
+<area shape="rect" id="Node000001" title="陀螺仪多寄存器数据读取" alt="" coords="5,37,200,77"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a54cd103bad13c06059088197dabd6acc" title=" " alt="" coords="248,5,409,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,41,233,36,234,41,201,46"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#ac7e428dbf85a72f9b9689a78e7e73f02" title=" " alt="" coords="249,69,408,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="201,69,235,73,234,79,200,74"/>
+</map>

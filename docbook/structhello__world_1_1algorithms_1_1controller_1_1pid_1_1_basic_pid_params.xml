@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params" xml:lang="zh">
+<title>hello_world::algorithms::controller::pid::BasicPidParams结构体 参考</title>
+<indexterm><primary>hello_world::algorithms::controller::pid::BasicPidParams</primary></indexterm>
+<para>
+
+<para>定义了基础 PID 的参数 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;pid.hpp&gt;</computeroutput>
+</para>
+hello_world::algorithms::controller::pid::BasicPidParams 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a315027b98690d9d1000cd13afb9ab5fa">auto_reset</link> = false</para>
+
+<para>是否自动清零 </para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1_1pid_1a67467db7aaca33bbced40cf20bdfaafd">Arocss0Type</link> <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1af62e93ac21f9e92f27ef150280a2ce13">across0</link> = <link linkend="_namespacehello__world_1_1algorithms_1_1controller_1_1pid_1a67467db7aaca33bbced40cf20bdfaafdaeb0056ee6a32b1921222ec92c33e044f">kArocss0None</link></para>
+
+<para>零点跨越类型 </para>
+</listitem>
+            <listitem><para>float <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a53f2d1c0c504d9e588aaa81fb35aef3f">kp</link> = 0.6</para>
+
+<para>比例系数 </para>
+</listitem>
+            <listitem><para>float <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1add7049534381e7311d599920e2327137">ki</link> = 0.0</para>
+
+<para>积分系数 </para>
+</listitem>
+            <listitem><para>float <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a886fe384bcefc5273e5b48d8750c8bac">kd</link> = 0.0</para>
+
+<para>微分系数 </para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1aff64c84f92c7b638faedb46399c13ead">max_interval_ms</link></para>
+
+<para>最大控制周期，单位ms，超出表示采样异常, 如果<computeroutput>auto_reset</computeroutput>为true，则会自动清零 </para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit">OutLimit</link> <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1aaad3f4ef38c31d3a683eff6c32ddd663">out_limit</link></para>
+
+<para>输出限制 </para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal">InteTrapezoidal</link> <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a632be6ac5c03bb76b7ada8e139717985">inte_trapezoidal</link></para>
+
+<para>梯形积分优化器 </para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup">InteAntiWindup</link> <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1ac0387bf7993c7517548a59f07b96406f">inte_anti_windup</link></para>
+
+<para>积分抗饱和优化器 </para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate">InteChangingRate</link> <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a912be6ad456f53dafa4d3c0675b79a93">inte_changing_rate</link></para>
+
+<para>变速积分优化器 </para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation">InteSeparation</link> <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a966dc600bbe6bc806109b194e7fa0775">inte_separation</link></para>
+
+<para>积分分离优化器 </para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter">DiffFilter</link> <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1aa1fd5eea795d5cc28f2dd09965ab069e">diff_filter</link></para>
+
+<para>微分滤波优化器 </para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous">DiffPrevious</link> <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a5c218122c4cb7e4e25b5d888795d1b18">diff_previous</link></para>
+
+<para>微分先行优化器 </para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band">DeadBand</link> <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a26a25950b6b3c164140404ce5462bb81">dead_band</link></para>
+
+<para>误差死区优化器 </para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping">SetpointRamping</link> <link linkend="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a70ea00392a227dbb346be455b123efd3">setpointe_ramping</link></para>
+
+<para>设定值斜坡优化器 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>定义了基础 PID 的参数 </para>
+
+
+
+<para>一般而言，这些参数需要在初始化时进行配置 优化器参数的默认值参见各个优化器的定义 </para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00071">71</link> 行定义.</para>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1af62e93ac21f9e92f27ef150280a2ce13"/><section>
+    <title>across0</title>
+<indexterm><primary>across0</primary><secondary>hello_world::algorithms::controller::pid::BasicPidParams</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::BasicPidParams</primary><secondary>across0</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1_1pid_1a67467db7aaca33bbced40cf20bdfaafd">Arocss0Type</link> hello_world::algorithms::controller::pid::BasicPidParams::across0 = <link linkend="_namespacehello__world_1_1algorithms_1_1controller_1_1pid_1a67467db7aaca33bbced40cf20bdfaafdaeb0056ee6a32b1921222ec92c33e044f">kArocss0None</link></computeroutput></para><para>
+
+<para>零点跨越类型 </para>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00073">73</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a315027b98690d9d1000cd13afb9ab5fa"/><section>
+    <title>auto_reset</title>
+<indexterm><primary>auto_reset</primary><secondary>hello_world::algorithms::controller::pid::BasicPidParams</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::BasicPidParams</primary><secondary>auto_reset</secondary></indexterm>
+<para><computeroutput>bool hello_world::algorithms::controller::pid::BasicPidParams::auto_reset = false</computeroutput></para><para>
+
+<para>是否自动清零 </para>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00072">72</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a26a25950b6b3c164140404ce5462bb81"/><section>
+    <title>dead_band</title>
+<indexterm><primary>dead_band</primary><secondary>hello_world::algorithms::controller::pid::BasicPidParams</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::BasicPidParams</primary><secondary>dead_band</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band">DeadBand</link> hello_world::algorithms::controller::pid::BasicPidParams::dead_band</computeroutput></para><para>
+
+<para>误差死区优化器 </para>
+</para>
+
+<para><formalpara><title>参见</title>
+
+<para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band">DeadBand</link> </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00087">87</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1aa1fd5eea795d5cc28f2dd09965ab069e"/><section>
+    <title>diff_filter</title>
+<indexterm><primary>diff_filter</primary><secondary>hello_world::algorithms::controller::pid::BasicPidParams</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::BasicPidParams</primary><secondary>diff_filter</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter">DiffFilter</link> hello_world::algorithms::controller::pid::BasicPidParams::diff_filter</computeroutput></para><para>
+
+<para>微分滤波优化器 </para>
+</para>
+
+<para><formalpara><title>参见</title>
+
+<para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter">DiffFilter</link> </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00085">85</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a5c218122c4cb7e4e25b5d888795d1b18"/><section>
+    <title>diff_previous</title>
+<indexterm><primary>diff_previous</primary><secondary>hello_world::algorithms::controller::pid::BasicPidParams</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::BasicPidParams</primary><secondary>diff_previous</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous">DiffPrevious</link> hello_world::algorithms::controller::pid::BasicPidParams::diff_previous</computeroutput></para><para>
+
+<para>微分先行优化器 </para>
+</para>
+
+<para><formalpara><title>参见</title>
+
+<para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous">DiffPrevious</link> </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00086">86</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1ac0387bf7993c7517548a59f07b96406f"/><section>
+    <title>inte_anti_windup</title>
+<indexterm><primary>inte_anti_windup</primary><secondary>hello_world::algorithms::controller::pid::BasicPidParams</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::BasicPidParams</primary><secondary>inte_anti_windup</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup">InteAntiWindup</link> hello_world::algorithms::controller::pid::BasicPidParams::inte_anti_windup</computeroutput></para><para>
+
+<para>积分抗饱和优化器 </para>
+</para>
+
+<para><formalpara><title>参见</title>
+
+<para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup">InteAntiWindup</link> </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00081">81</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a912be6ad456f53dafa4d3c0675b79a93"/><section>
+    <title>inte_changing_rate</title>
+<indexterm><primary>inte_changing_rate</primary><secondary>hello_world::algorithms::controller::pid::BasicPidParams</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::BasicPidParams</primary><secondary>inte_changing_rate</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate">InteChangingRate</link> hello_world::algorithms::controller::pid::BasicPidParams::inte_changing_rate</computeroutput></para><para>
+
+<para>变速积分优化器 </para>
+</para>
+
+<para><formalpara><title>参见</title>
+
+<para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate">InteChangingRate</link> </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00083">83</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a966dc600bbe6bc806109b194e7fa0775"/><section>
+    <title>inte_separation</title>
+<indexterm><primary>inte_separation</primary><secondary>hello_world::algorithms::controller::pid::BasicPidParams</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::BasicPidParams</primary><secondary>inte_separation</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation">InteSeparation</link> hello_world::algorithms::controller::pid::BasicPidParams::inte_separation</computeroutput></para><para>
+
+<para>积分分离优化器 </para>
+</para>
+
+<para><formalpara><title>参见</title>
+
+<para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation">InteSeparation</link> </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00084">84</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a632be6ac5c03bb76b7ada8e139717985"/><section>
+    <title>inte_trapezoidal</title>
+<indexterm><primary>inte_trapezoidal</primary><secondary>hello_world::algorithms::controller::pid::BasicPidParams</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::BasicPidParams</primary><secondary>inte_trapezoidal</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal">InteTrapezoidal</link> hello_world::algorithms::controller::pid::BasicPidParams::inte_trapezoidal</computeroutput></para><para>
+
+<para>梯形积分优化器 </para>
+</para>
+
+<para><formalpara><title>参见</title>
+
+<para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal">InteTrapezoidal</link> </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00080">80</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a886fe384bcefc5273e5b48d8750c8bac"/><section>
+    <title>kd</title>
+<indexterm><primary>kd</primary><secondary>hello_world::algorithms::controller::pid::BasicPidParams</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::BasicPidParams</primary><secondary>kd</secondary></indexterm>
+<para><computeroutput>float hello_world::algorithms::controller::pid::BasicPidParams::kd = 0.0</computeroutput></para><para>
+
+<para>微分系数 </para>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00076">76</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1add7049534381e7311d599920e2327137"/><section>
+    <title>ki</title>
+<indexterm><primary>ki</primary><secondary>hello_world::algorithms::controller::pid::BasicPidParams</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::BasicPidParams</primary><secondary>ki</secondary></indexterm>
+<para><computeroutput>float hello_world::algorithms::controller::pid::BasicPidParams::ki = 0.0</computeroutput></para><para>
+
+<para>积分系数 </para>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00075">75</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a53f2d1c0c504d9e588aaa81fb35aef3f"/><section>
+    <title>kp</title>
+<indexterm><primary>kp</primary><secondary>hello_world::algorithms::controller::pid::BasicPidParams</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::BasicPidParams</primary><secondary>kp</secondary></indexterm>
+<para><computeroutput>float hello_world::algorithms::controller::pid::BasicPidParams::kp = 0.6</computeroutput></para><para>
+
+<para>比例系数 </para>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00074">74</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1aff64c84f92c7b638faedb46399c13ead"/><section>
+    <title>max_interval_ms</title>
+<indexterm><primary>max_interval_ms</primary><secondary>hello_world::algorithms::controller::pid::BasicPidParams</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::BasicPidParams</primary><secondary>max_interval_ms</secondary></indexterm>
+<para><computeroutput>uint32_t hello_world::algorithms::controller::pid::BasicPidParams::max_interval_ms</computeroutput></para><emphasis role="strong">初始值:</emphasis><programlisting linenumbering="unnumbered">=
+&#32;&#32;&#32;&#32;&#32;&#32;5
+</programlisting><para>
+
+<para>最大控制周期，单位ms，超出表示采样异常, 如果<computeroutput>auto_reset</computeroutput>为true，则会自动清零 </para>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00077">77</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1aaad3f4ef38c31d3a683eff6c32ddd663"/><section>
+    <title>out_limit</title>
+<indexterm><primary>out_limit</primary><secondary>hello_world::algorithms::controller::pid::BasicPidParams</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::BasicPidParams</primary><secondary>out_limit</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit">OutLimit</link> hello_world::algorithms::controller::pid::BasicPidParams::out_limit</computeroutput></para><para>
+
+<para>输出限制 </para>
+</para>
+
+<para><formalpara><title>参见</title>
+
+<para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit">OutLimit</link> </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00079">79</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a70ea00392a227dbb346be455b123efd3"/><section>
+    <title>setpointe_ramping</title>
+<indexterm><primary>setpointe_ramping</primary><secondary>hello_world::algorithms::controller::pid::BasicPidParams</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::BasicPidParams</primary><secondary>setpointe_ramping</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping">SetpointRamping</link> hello_world::algorithms::controller::pid::BasicPidParams::setpointe_ramping</computeroutput></para><para>
+
+<para>设定值斜坡优化器 </para>
+</para>
+
+<para><formalpara><title>参见</title>
+
+<para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping">SetpointRamping</link> </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid_8hpp_source">pid.hpp</link> 第 <link linkend="_pid_8hpp_source_1l00088">88</link> 行定义.</para>
+</section>
+</section>
+</section>

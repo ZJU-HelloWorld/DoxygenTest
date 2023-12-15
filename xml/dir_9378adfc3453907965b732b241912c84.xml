@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="dir_9378adfc3453907965b732b241912c84" kind="dir">
+    <compoundname>HW-Components/devices/motor/inc</compoundname>
+    <innerfile refid="motor_8hpp">motor.hpp</innerfile>
+    <innerfile refid="motor___a1_8hpp">motor_A1.hpp</innerfile>
+    <innerfile refid="motor__base_8hpp">motor_base.hpp</innerfile>
+    <innerfile refid="motor___d_m___j4310_8hpp">motor_DM_J4310.hpp</innerfile>
+    <innerfile refid="motor___g_m6020_8hpp">motor_GM6020.hpp</innerfile>
+    <innerfile refid="motor___m2006_8hpp">motor_M2006.hpp</innerfile>
+    <innerfile refid="motor___m3508_8hpp">motor_M3508.hpp</innerfile>
+    <innerfile refid="motor___m8910_8hpp">motor_M8910.hpp</innerfile>
+    <innerfile refid="motor___m_f9025v2_8hpp">motor_MF9025v2.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HW-Components/devices/motor/inc/"/>
+  </compounddef>
+</doxygen>

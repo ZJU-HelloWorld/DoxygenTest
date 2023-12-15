@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_7052dcf5f8ef4e64dad5acb34918f40a" xml:lang="zh">
+<title>HW-Components/dsp/tick 目录参考</title>
+<indexterm><primary>HW-Components/dsp/tick 目录参考</primary></indexterm>
+tick 的目录依赖关系图<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_7052dcf5f8ef4e64dad5acb34918f40a_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>文件    </title>
+        <itemizedlist>
+            <listitem><para>文件 <link linkend="_tick_8cpp">tick.cpp</link></para>
+</listitem>
+            <listitem><para>文件 <link linkend="_tick_8hpp">tick.hpp</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

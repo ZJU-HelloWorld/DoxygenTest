@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="tools_8cpp" kind="file" language="C++">
+    <compoundname>tools.cpp</compoundname>
+    <innernamespace refid="namespacehello__world">hello_world</innernamespace>
+    <briefdescription>
+<para><linebreak/>
+ </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>ZhouShichan (<ulink url="mailto:zsc19823382069@163.com">zsc19823382069@163.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>1.0.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-11-11</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved.</para>
+</simplesect>
+<simplesect kind="attention"><para></para>
+</simplesect>
+<simplesect kind="par"><title>history</title><para><table rows="2" cols="4"><row>
+<entry thead="yes" align='center'><para>Version   </para>
+</entry><entry thead="yes" align='center'><para>Date   </para>
+</entry><entry thead="yes" align='center'><para>Author   </para>
+</entry><entry thead="yes" align='center'><para>Description    </para>
+</entry></row>
+<row>
+<entry thead="no" align='center'><para>1.0.0   </para>
+</entry><entry thead="no" align='center'><para>{now_year}   </para>
+</entry><entry thead="no" align='center'><para>ZhouShichan   </para>
+</entry><entry thead="no" align='center'><para>description   </para>
+</entry></row>
+</table>
+</para>
+</simplesect>
+<simplesect kind="par"><title>last editor ZhouShichan (zsc19823382069@163.com)</title><para></para>
+</simplesect>
+<simplesect kind="par"><title>last edit time 2023-11-11</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacehello__world" kindref="compound">hello_world</ref>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>macro<sp/>-------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>constants<sp/>---------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>types<sp/>-------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>variables<sp/>---------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>External<sp/>variables<sp/>--------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>function<sp/>prototypes<sp/>-----------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>function<sp/>definitions<sp/>-----------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Private<sp/>function<sp/>definitions<sp/>-----------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight><highlight class="comment">//<sp/>namespace<sp/>hello_world</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="HW-Components/tools/src/tools.cpp"/>
+  </compounddef>
+</doxygen>

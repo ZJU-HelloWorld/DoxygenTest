@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal" xml:lang="zh">
+<title>hello_world::algorithms::controller::pid::InteTrapezoidal类 参考</title>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteTrapezoidal</primary></indexterm>
+<para>
+
+<para>梯形积分优化类 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;pid_opt.hpp&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a9ca799c65218c3a2e3330a541f88c0be">InteTrapezoidal</link> (bool is_enabled=true)</para>
+
+<para>构造函数，初始化梯形积分优化参数 </para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a8cf08bb315081cc0a13229debb39a357">setParams</link> (bool is_enabled)</para>
+
+<para>设置梯形积分优化参数 </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1ae700d88586383eeeb43a25834f5be1a3">isLegal</link> ()</para>
+
+<para>检查梯形积分优化参数是否合法 </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a89787230e29cc4b858c45398952eef93">isEnabled</link> ()</para>
+
+<para>检查是否启用了梯形积分优化 </para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a8efa8ae3581ad2dcae6cbb86c2848213">calc</link> (float err, float last_err)</para>
+
+<para>计算梯形积分优化后的积分误差值 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 属性    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1ade4897f2c5f2d7f99ab4a1d5b580c3bc">is_enabled_</link></para>
+
+<para>是否启用梯形积分优化 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>梯形积分优化类 </para>
+
+
+
+<para>梯形积分优化的原理是将本次采样的误差值和上次采样的误差值的平均值作为本次采样的积分误差值。<itemizedlist>
+<listitem>
+<para>具体计算公式见<computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a8efa8ae3581ad2dcae6cbb86c2848213">calc(float err, float last_err)</link></computeroutput>。</para>
+</listitem><listitem>
+<para>参数合法性检查见<computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1ae700d88586383eeeb43a25834f5be1a3">isLegal()</link></computeroutput>。</para>
+</listitem><listitem>
+<para>启用判定见<computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a89787230e29cc4b858c45398952eef93">isEnabled()</link></computeroutput>。 </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00064">64</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a9ca799c65218c3a2e3330a541f88c0be"/><section>
+    <title>InteTrapezoidal()</title>
+<indexterm><primary>InteTrapezoidal</primary><secondary>hello_world::algorithms::controller::pid::InteTrapezoidal</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteTrapezoidal</primary><secondary>InteTrapezoidal</secondary></indexterm>
+<para><computeroutput>hello_world::algorithms::controller::pid::InteTrapezoidal::InteTrapezoidal (bool is_enabled = <computeroutput>true</computeroutput>
+)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>构造函数，初始化梯形积分优化参数 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>is_enabled</entry><entry>
+<para>是否启用梯形积分优化，默认为true </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00071">71</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a8efa8ae3581ad2dcae6cbb86c2848213"/><section>
+    <title>calc()</title>
+<indexterm><primary>calc</primary><secondary>hello_world::algorithms::controller::pid::InteTrapezoidal</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteTrapezoidal</primary><secondary>calc</secondary></indexterm>
+<para><computeroutput>float hello_world::algorithms::controller::pid::InteTrapezoidal::calc (float err, float last_err)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>计算梯形积分优化后的积分误差值 </para>
+</para>
+
+<para>具体计算公式为：          <mediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_9.png"/>
+            </imageobject>
+        </mediaobject>
+ 
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>err</entry><entry>
+<para>本次采样的误差值 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>last_err</entry><entry>
+<para>上次采样的误差值 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>本次采样的梯形积分优化后的积分误差值。如果没有启用梯形积分优化，则返回本次采样的误差值。 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00110">110</link> 行定义.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_a8efa8ae3581ad2dcae6cbb86c2848213_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a89787230e29cc4b858c45398952eef93"/><section>
+    <title>isEnabled()</title>
+<indexterm><primary>isEnabled</primary><secondary>hello_world::algorithms::controller::pid::InteTrapezoidal</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteTrapezoidal</primary><secondary>isEnabled</secondary></indexterm>
+<para><computeroutput>bool hello_world::algorithms::controller::pid::InteTrapezoidal::isEnabled ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>检查是否启用了梯形积分优化 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>如果启用了梯形积分优化并且参数合法，则返回true，否则返回false </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00094">94</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1ae700d88586383eeeb43a25834f5be1a3"/><section>
+    <title>isLegal()</title>
+<indexterm><primary>isLegal</primary><secondary>hello_world::algorithms::controller::pid::InteTrapezoidal</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteTrapezoidal</primary><secondary>isLegal</secondary></indexterm>
+<para><computeroutput>bool hello_world::algorithms::controller::pid::InteTrapezoidal::isLegal ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>检查梯形积分优化参数是否合法 </para>
+</para>
+
+<para><formalpara><title>返回</title>
+
+<para>始终返回true </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00088">88</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a8cf08bb315081cc0a13229debb39a357"/><section>
+    <title>setParams()</title>
+<indexterm><primary>setParams</primary><secondary>hello_world::algorithms::controller::pid::InteTrapezoidal</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteTrapezoidal</primary><secondary>setParams</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> hello_world::algorithms::controller::pid::InteTrapezoidal::setParams (bool is_enabled)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>设置梯形积分优化参数 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>is_enabled</entry><entry>
+<para>是否启用梯形积分优化 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>设置状态，始终返回kStateOk </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00078">78</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1ade4897f2c5f2d7f99ab4a1d5b580c3bc"/><section>
+    <title>is_enabled_</title>
+<indexterm><primary>is_enabled_</primary><secondary>hello_world::algorithms::controller::pid::InteTrapezoidal</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteTrapezoidal</primary><secondary>is_enabled_</secondary></indexterm>
+<para><computeroutput>bool hello_world::algorithms::controller::pid::InteTrapezoidal::is_enabled_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>是否启用梯形积分优化 </para>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00120">120</link> 行定义.</para>
+</section>
+</section>
+</section>

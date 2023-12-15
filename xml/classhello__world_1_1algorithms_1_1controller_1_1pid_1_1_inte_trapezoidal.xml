@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal" kind="class" language="C++" prot="public">
+    <compoundname>hello_world::algorithms::controller::pid::InteTrapezoidal</compoundname>
+    <includes refid="pid__opt_8hpp" local="no">pid_opt.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1ade4897f2c5f2d7f99ab4a1d5b580c3bc" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::InteTrapezoidal::is_enabled_</definition>
+        <argsstring></argsstring>
+        <name>is_enabled_</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteTrapezoidal::is_enabled_</qualifiedname>
+        <briefdescription>
+<para>是否启用梯形积分优化 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="120" column="8" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a9ca799c65218c3a2e3330a541f88c0be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hello_world::algorithms::controller::pid::InteTrapezoidal::InteTrapezoidal</definition>
+        <argsstring>(bool is_enabled=true)</argsstring>
+        <name>InteTrapezoidal</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteTrapezoidal::InteTrapezoidal</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>is_enabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>构造函数，初始化梯形积分优化参数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>是否启用梯形积分优化，默认为true </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="71" column="3" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a8cf08bb315081cc0a13229debb39a357" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>State hello_world::algorithms::controller::pid::InteTrapezoidal::setParams</definition>
+        <argsstring>(bool is_enabled)</argsstring>
+        <name>setParams</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteTrapezoidal::setParams</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>is_enabled</declname>
+        </param>
+        <briefdescription>
+<para>设置梯形积分优化参数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>is_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>是否启用梯形积分优化 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>设置状态，始终返回kStateOk </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="78" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="78" bodyend="82"/>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" compoundref="controller__base_8hpp" startline="33">hello_world::algorithms::controller::kStateOk</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1ae700d88586383eeeb43a25834f5be1a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::InteTrapezoidal::isLegal</definition>
+        <argsstring>()</argsstring>
+        <name>isLegal</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteTrapezoidal::isLegal</qualifiedname>
+        <briefdescription>
+<para>检查梯形积分优化参数是否合法 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>始终返回true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="88" column="15" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="88" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a89787230e29cc4b858c45398952eef93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::InteTrapezoidal::isEnabled</definition>
+        <argsstring>()</argsstring>
+        <name>isEnabled</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteTrapezoidal::isEnabled</qualifiedname>
+        <briefdescription>
+<para>检查是否启用了梯形积分优化 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>如果启用了梯形积分优化并且参数合法，则返回true，否则返回false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="94" column="15" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="94" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a8efa8ae3581ad2dcae6cbb86c2848213" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float hello_world::algorithms::controller::pid::InteTrapezoidal::calc</definition>
+        <argsstring>(float err, float last_err)</argsstring>
+        <name>calc</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::InteTrapezoidal::calc</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>err</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>last_err</declname>
+        </param>
+        <briefdescription>
+<para>计算梯形积分优化后的积分误差值 </para>
+        </briefdescription>
+        <detaileddescription>
+<para>具体计算公式为：  <formula id="9">\[
+e_i(k)=\begin{cases}
+\left ( e(k)+e(k-1) \right )/2&amp;\text{if} \quad isEnabled()\\
+e(k)&amp; others
+\end{cases}
+\]</formula> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>err</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>本次采样的误差值 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last_err</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>上次采样的误差值 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>本次采样的梯形积分优化后的积分误差值。如果没有启用梯形积分优化，则返回本次采样的误差值。 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="110" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="110" bodyend="117"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>梯形积分优化类 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>梯形积分优化的原理是将本次采样的误差值和上次采样的误差值的平均值作为本次采样的积分误差值。<itemizedlist>
+<listitem><para>具体计算公式见<computeroutput><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a8efa8ae3581ad2dcae6cbb86c2848213" kindref="member">calc(float err, float last_err)</ref></computeroutput>。</para>
+</listitem><listitem><para>参数合法性检查见<computeroutput><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1ae700d88586383eeeb43a25834f5be1a3" kindref="member">isLegal()</ref></computeroutput>。</para>
+</listitem><listitem><para>启用判定见<computeroutput><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a89787230e29cc4b858c45398952eef93" kindref="member">isEnabled()</ref></computeroutput>。 </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="64" column="1" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="65" bodyend="121"/>
+    <listofallmembers>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a8efa8ae3581ad2dcae6cbb86c2848213" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteTrapezoidal</scope><name>calc</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a9ca799c65218c3a2e3330a541f88c0be" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteTrapezoidal</scope><name>InteTrapezoidal</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1ade4897f2c5f2d7f99ab4a1d5b580c3bc" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteTrapezoidal</scope><name>is_enabled_</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a89787230e29cc4b858c45398952eef93" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteTrapezoidal</scope><name>isEnabled</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1ae700d88586383eeeb43a25834f5be1a3" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteTrapezoidal</scope><name>isLegal</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a8cf08bb315081cc0a13229debb39a357" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::InteTrapezoidal</scope><name>setParams</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

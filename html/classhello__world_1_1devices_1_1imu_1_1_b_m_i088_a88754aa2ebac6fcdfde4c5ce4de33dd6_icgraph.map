@@ -1,0 +1,5 @@
+<map id="hello_world::devices::imu::BMI088::gyroInit" name="hello_world::devices::imu::BMI088::gyroInit">
+<area shape="rect" id="Node000001" title="陀螺仪配置" alt="" coords="191,5,344,45"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a623a7d90db0585ea45bac12fd3d19061" title="进行 BMI088 芯片配置" alt="" coords="5,5,143,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,28,143,28,143,23,176,23"/>
+</map>

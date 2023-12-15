@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="structhello__world_1_1devices_1_1motor_1_1_optional_params" kind="struct" language="C++" prot="public">
+    <compoundname>hello_world::devices::motor::OptionalParams</compoundname>
+    <includes refid="motor__base_8hpp" local="no">motor_base.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a40afccbd81c17e22779f7df471f2ec0b" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacehello__world_1_1devices_1_1motor_1a4777995093ebbd290b833795e49749b7" kindref="member">InputType</ref></type>
+        <definition>InputType hello_world::devices::motor::OptionalParams::input_type</definition>
+        <argsstring></argsstring>
+        <name>input_type</name>
+        <qualifiedname>hello_world::devices::motor::OptionalParams::input_type</qualifiedname>
+        <initializer>= <ref refid="namespacehello__world_1_1devices_1_1motor_1a4777995093ebbd290b833795e49749b7a3af8d233b879c0e5323904dd850fbfe3" kindref="member">kInputTypeRaw</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_base.hpp" line="101" column="13" bodyfile="HW-Components/devices/motor/inc/motor_base.hpp" bodystart="101" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_a1_1a1c439b72ce074a0e04d38b06749f499c" compoundref="motor___a1_8cpp" startline="54" endline="124">hello_world::devices::motor::A1::A1</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a0a61fcd9a79f7bbb0addccaf677f2c5f" compoundref="motor___d_m___j4310_8cpp" startline="97" endline="162">hello_world::devices::motor::DM_J4310::DM_J4310</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_g_m6020_1ad61341de888f13343d20bd7e0b06f3c1" compoundref="motor___g_m6020_8cpp" startline="54" endline="103">hello_world::devices::motor::GM6020::GM6020</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m2006_1a52ce5e7bbbb2fffe82f86291b8876221" compoundref="motor___m2006_8cpp" startline="54" endline="124">hello_world::devices::motor::M2006::M2006</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m3508_1a2fbed6fbaa90b42893978a1805ea78e6" compoundref="motor___m3508_8cpp" startline="54" endline="124">hello_world::devices::motor::M3508::M3508</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m8910_1accd858d8bd3db4aa48532ec8c1f8bd44" compoundref="motor___m8910_8cpp" startline="54" endline="124">hello_world::devices::motor::M8910::M8910</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m_f9025v2_1a87787e5484356144bc7bce7b229398de" compoundref="motor___m_f9025v2_8cpp" startline="54" endline="124">hello_world::devices::motor::MF9025v2::MF9025v2</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a1917a38f2bec6dbe8b7982ba4857142a" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacehello__world_1_1devices_1_1motor_1a0163710b33b99ac98bcbcb1f43d78248" kindref="member">AngleRange</ref></type>
+        <definition>AngleRange hello_world::devices::motor::OptionalParams::angle_range</definition>
+        <argsstring></argsstring>
+        <name>angle_range</name>
+        <qualifiedname>hello_world::devices::motor::OptionalParams::angle_range</qualifiedname>
+        <initializer>= <ref refid="namespacehello__world_1_1devices_1_1motor_1a0163710b33b99ac98bcbcb1f43d78248a0e264d4f119a2e5d4c62691f3f35e317" kindref="member">kAngleRangeNegInfToPosInf</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_base.hpp" line="102" column="14" bodyfile="HW-Components/devices/motor/inc/motor_base.hpp" bodystart="102" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_a1_1a1c439b72ce074a0e04d38b06749f499c" compoundref="motor___a1_8cpp" startline="54" endline="124">hello_world::devices::motor::A1::A1</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a0a61fcd9a79f7bbb0addccaf677f2c5f" compoundref="motor___d_m___j4310_8cpp" startline="97" endline="162">hello_world::devices::motor::DM_J4310::DM_J4310</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_g_m6020_1ad61341de888f13343d20bd7e0b06f3c1" compoundref="motor___g_m6020_8cpp" startline="54" endline="103">hello_world::devices::motor::GM6020::GM6020</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m2006_1a52ce5e7bbbb2fffe82f86291b8876221" compoundref="motor___m2006_8cpp" startline="54" endline="124">hello_world::devices::motor::M2006::M2006</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m3508_1a2fbed6fbaa90b42893978a1805ea78e6" compoundref="motor___m3508_8cpp" startline="54" endline="124">hello_world::devices::motor::M3508::M3508</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m8910_1accd858d8bd3db4aa48532ec8c1f8bd44" compoundref="motor___m8910_8cpp" startline="54" endline="124">hello_world::devices::motor::M8910::M8910</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m_f9025v2_1a87787e5484356144bc7bce7b229398de" compoundref="motor___m_f9025v2_8cpp" startline="54" endline="124">hello_world::devices::motor::MF9025v2::MF9025v2</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1devices_1_1motor_1_1_optional_params_1abb17f065132ebdcc2a00916fb36e2873" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacehello__world_1_1devices_1_1motor_1a44985d99992e9464953d243bf3b561fd" kindref="member">Dir</ref></type>
+        <definition>Dir hello_world::devices::motor::OptionalParams::dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <qualifiedname>hello_world::devices::motor::OptionalParams::dir</qualifiedname>
+        <initializer>= <ref refid="namespacehello__world_1_1devices_1_1motor_1a44985d99992e9464953d243bf3b561fda8ef76451782f120b178cb02bdcbe9917" kindref="member">kDirFwd</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_base.hpp" line="103" column="7" bodyfile="HW-Components/devices/motor/inc/motor_base.hpp" bodystart="103" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_a1_1a1c439b72ce074a0e04d38b06749f499c" compoundref="motor___a1_8cpp" startline="54" endline="124">hello_world::devices::motor::A1::A1</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a0a61fcd9a79f7bbb0addccaf677f2c5f" compoundref="motor___d_m___j4310_8cpp" startline="97" endline="162">hello_world::devices::motor::DM_J4310::DM_J4310</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_g_m6020_1ad61341de888f13343d20bd7e0b06f3c1" compoundref="motor___g_m6020_8cpp" startline="54" endline="103">hello_world::devices::motor::GM6020::GM6020</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m2006_1a52ce5e7bbbb2fffe82f86291b8876221" compoundref="motor___m2006_8cpp" startline="54" endline="124">hello_world::devices::motor::M2006::M2006</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m3508_1a2fbed6fbaa90b42893978a1805ea78e6" compoundref="motor___m3508_8cpp" startline="54" endline="124">hello_world::devices::motor::M3508::M3508</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m8910_1accd858d8bd3db4aa48532ec8c1f8bd44" compoundref="motor___m8910_8cpp" startline="54" endline="124">hello_world::devices::motor::M8910::M8910</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m_f9025v2_1a87787e5484356144bc7bce7b229398de" compoundref="motor___m_f9025v2_8cpp" startline="54" endline="124">hello_world::devices::motor::MF9025v2::MF9025v2</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a7324141855f9f70be7be484df0f511e6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hello_world::devices::motor::OptionalParams::remove_build_in_reducer</definition>
+        <argsstring></argsstring>
+        <name>remove_build_in_reducer</name>
+        <qualifiedname>hello_world::devices::motor::OptionalParams::remove_build_in_reducer</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>是否移除电机自带的减速器 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_base.hpp" line="105" column="8" bodyfile="HW-Components/devices/motor/inc/motor_base.hpp" bodystart="105" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_a1_1a1c439b72ce074a0e04d38b06749f499c" compoundref="motor___a1_8cpp" startline="54" endline="124">hello_world::devices::motor::A1::A1</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a0a61fcd9a79f7bbb0addccaf677f2c5f" compoundref="motor___d_m___j4310_8cpp" startline="97" endline="162">hello_world::devices::motor::DM_J4310::DM_J4310</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_g_m6020_1ad61341de888f13343d20bd7e0b06f3c1" compoundref="motor___g_m6020_8cpp" startline="54" endline="103">hello_world::devices::motor::GM6020::GM6020</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m2006_1a52ce5e7bbbb2fffe82f86291b8876221" compoundref="motor___m2006_8cpp" startline="54" endline="124">hello_world::devices::motor::M2006::M2006</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m3508_1a2fbed6fbaa90b42893978a1805ea78e6" compoundref="motor___m3508_8cpp" startline="54" endline="124">hello_world::devices::motor::M3508::M3508</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m8910_1accd858d8bd3db4aa48532ec8c1f8bd44" compoundref="motor___m8910_8cpp" startline="54" endline="124">hello_world::devices::motor::M8910::M8910</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m_f9025v2_1a87787e5484356144bc7bce7b229398de" compoundref="motor___m_f9025v2_8cpp" startline="54" endline="124">hello_world::devices::motor::MF9025v2::MF9025v2</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a36043885b6010524f0011531b6415e0a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::devices::motor::OptionalParams::angle_offset</definition>
+        <argsstring></argsstring>
+        <name>angle_offset</name>
+        <qualifiedname>hello_world::devices::motor::OptionalParams::angle_offset</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>电机输出端实际角度与规定角度的差值 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_base.hpp" line="107" column="9" bodyfile="HW-Components/devices/motor/inc/motor_base.hpp" bodystart="107" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_a1_1a1c439b72ce074a0e04d38b06749f499c" compoundref="motor___a1_8cpp" startline="54" endline="124">hello_world::devices::motor::A1::A1</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a0a61fcd9a79f7bbb0addccaf677f2c5f" compoundref="motor___d_m___j4310_8cpp" startline="97" endline="162">hello_world::devices::motor::DM_J4310::DM_J4310</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_g_m6020_1ad61341de888f13343d20bd7e0b06f3c1" compoundref="motor___g_m6020_8cpp" startline="54" endline="103">hello_world::devices::motor::GM6020::GM6020</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m2006_1a52ce5e7bbbb2fffe82f86291b8876221" compoundref="motor___m2006_8cpp" startline="54" endline="124">hello_world::devices::motor::M2006::M2006</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m3508_1a2fbed6fbaa90b42893978a1805ea78e6" compoundref="motor___m3508_8cpp" startline="54" endline="124">hello_world::devices::motor::M3508::M3508</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m8910_1accd858d8bd3db4aa48532ec8c1f8bd44" compoundref="motor___m8910_8cpp" startline="54" endline="124">hello_world::devices::motor::M8910::M8910</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m_f9025v2_1a87787e5484356144bc7bce7b229398de" compoundref="motor___m_f9025v2_8cpp" startline="54" endline="124">hello_world::devices::motor::MF9025v2::MF9025v2</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1devices_1_1motor_1_1_optional_params_1ab0a4704479885c3da95f9e0bee91026d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::devices::motor::OptionalParams::ex_redu_rat</definition>
+        <argsstring></argsstring>
+        <name>ex_redu_rat</name>
+        <qualifiedname>hello_world::devices::motor::OptionalParams::ex_redu_rat</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+<para>电机外置减速器的减速比（额外） </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_base.hpp" line="109" column="9" bodyfile="HW-Components/devices/motor/inc/motor_base.hpp" bodystart="109" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_a1_1a1c439b72ce074a0e04d38b06749f499c" compoundref="motor___a1_8cpp" startline="54" endline="124">hello_world::devices::motor::A1::A1</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a0a61fcd9a79f7bbb0addccaf677f2c5f" compoundref="motor___d_m___j4310_8cpp" startline="97" endline="162">hello_world::devices::motor::DM_J4310::DM_J4310</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_g_m6020_1ad61341de888f13343d20bd7e0b06f3c1" compoundref="motor___g_m6020_8cpp" startline="54" endline="103">hello_world::devices::motor::GM6020::GM6020</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m2006_1a52ce5e7bbbb2fffe82f86291b8876221" compoundref="motor___m2006_8cpp" startline="54" endline="124">hello_world::devices::motor::M2006::M2006</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m3508_1a2fbed6fbaa90b42893978a1805ea78e6" compoundref="motor___m3508_8cpp" startline="54" endline="124">hello_world::devices::motor::M3508::M3508</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m8910_1accd858d8bd3db4aa48532ec8c1f8bd44" compoundref="motor___m8910_8cpp" startline="54" endline="124">hello_world::devices::motor::M8910::M8910</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m_f9025v2_1a87787e5484356144bc7bce7b229398de" compoundref="motor___m_f9025v2_8cpp" startline="54" endline="124">hello_world::devices::motor::MF9025v2::MF9025v2</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a406c5a28341a65489f7450f8800c7bc1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::devices::motor::OptionalParams::max_raw_input_lim</definition>
+        <argsstring></argsstring>
+        <name>max_raw_input_lim</name>
+        <qualifiedname>hello_world::devices::motor::OptionalParams::max_raw_input_lim</qualifiedname>
+        <initializer>= std::numeric_limits&lt;float&gt;::max()</initializer>
+        <briefdescription>
+<para>报文输入限制 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_base.hpp" line="111" column="9" bodyfile="HW-Components/devices/motor/inc/motor_base.hpp" bodystart="111" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_a1_1a1c439b72ce074a0e04d38b06749f499c" compoundref="motor___a1_8cpp" startline="54" endline="124">hello_world::devices::motor::A1::A1</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_g_m6020_1ad61341de888f13343d20bd7e0b06f3c1" compoundref="motor___g_m6020_8cpp" startline="54" endline="103">hello_world::devices::motor::GM6020::GM6020</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m2006_1a52ce5e7bbbb2fffe82f86291b8876221" compoundref="motor___m2006_8cpp" startline="54" endline="124">hello_world::devices::motor::M2006::M2006</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m3508_1a2fbed6fbaa90b42893978a1805ea78e6" compoundref="motor___m3508_8cpp" startline="54" endline="124">hello_world::devices::motor::M3508::M3508</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m8910_1accd858d8bd3db4aa48532ec8c1f8bd44" compoundref="motor___m8910_8cpp" startline="54" endline="124">hello_world::devices::motor::M8910::M8910</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m_f9025v2_1a87787e5484356144bc7bce7b229398de" compoundref="motor___m_f9025v2_8cpp" startline="54" endline="124">hello_world::devices::motor::MF9025v2::MF9025v2</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a2230b1a9af266b248a2642e032d1a4a7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::devices::motor::OptionalParams::max_torq_input_lim</definition>
+        <argsstring></argsstring>
+        <name>max_torq_input_lim</name>
+        <qualifiedname>hello_world::devices::motor::OptionalParams::max_torq_input_lim</qualifiedname>
+        <initializer>= std::numeric_limits&lt;float&gt;::max()</initializer>
+        <briefdescription>
+<para>力矩输入限制 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_base.hpp" line="113" column="9" bodyfile="HW-Components/devices/motor/inc/motor_base.hpp" bodystart="113" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_a1_1a1c439b72ce074a0e04d38b06749f499c" compoundref="motor___a1_8cpp" startline="54" endline="124">hello_world::devices::motor::A1::A1</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a0a61fcd9a79f7bbb0addccaf677f2c5f" compoundref="motor___d_m___j4310_8cpp" startline="97" endline="162">hello_world::devices::motor::DM_J4310::DM_J4310</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m2006_1a52ce5e7bbbb2fffe82f86291b8876221" compoundref="motor___m2006_8cpp" startline="54" endline="124">hello_world::devices::motor::M2006::M2006</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m3508_1a2fbed6fbaa90b42893978a1805ea78e6" compoundref="motor___m3508_8cpp" startline="54" endline="124">hello_world::devices::motor::M3508::M3508</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m8910_1accd858d8bd3db4aa48532ec8c1f8bd44" compoundref="motor___m8910_8cpp" startline="54" endline="124">hello_world::devices::motor::M8910::M8910</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m_f9025v2_1a87787e5484356144bc7bce7b229398de" compoundref="motor___m_f9025v2_8cpp" startline="54" endline="124">hello_world::devices::motor::MF9025v2::MF9025v2</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a89486565dd10e3184bf9f54408743f8a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::devices::motor::OptionalParams::max_curr_input_lim</definition>
+        <argsstring></argsstring>
+        <name>max_curr_input_lim</name>
+        <qualifiedname>hello_world::devices::motor::OptionalParams::max_curr_input_lim</qualifiedname>
+        <initializer>= std::numeric_limits&lt;float&gt;::max()</initializer>
+        <briefdescription>
+<para>电流输入限制 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/motor/inc/motor_base.hpp" line="115" column="9" bodyfile="HW-Components/devices/motor/inc/motor_base.hpp" bodystart="115" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_a1_1a1c439b72ce074a0e04d38b06749f499c" compoundref="motor___a1_8cpp" startline="54" endline="124">hello_world::devices::motor::A1::A1</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310_1a0a61fcd9a79f7bbb0addccaf677f2c5f" compoundref="motor___d_m___j4310_8cpp" startline="97" endline="162">hello_world::devices::motor::DM_J4310::DM_J4310</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m2006_1a52ce5e7bbbb2fffe82f86291b8876221" compoundref="motor___m2006_8cpp" startline="54" endline="124">hello_world::devices::motor::M2006::M2006</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m3508_1a2fbed6fbaa90b42893978a1805ea78e6" compoundref="motor___m3508_8cpp" startline="54" endline="124">hello_world::devices::motor::M3508::M3508</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m8910_1accd858d8bd3db4aa48532ec8c1f8bd44" compoundref="motor___m8910_8cpp" startline="54" endline="124">hello_world::devices::motor::M8910::M8910</referencedby>
+        <referencedby refid="classhello__world_1_1devices_1_1motor_1_1_m_f9025v2_1a87787e5484356144bc7bce7b229398de" compoundref="motor___m_f9025v2_8cpp" startline="54" endline="124">hello_world::devices::motor::MF9025v2::MF9025v2</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>电机初始化可选参数 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HW-Components/devices/motor/inc/motor_base.hpp" line="100" column="1" bodyfile="HW-Components/devices/motor/inc/motor_base.hpp" bodystart="100" bodyend="116"/>
+    <listofallmembers>
+      <member refid="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a36043885b6010524f0011531b6415e0a" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::OptionalParams</scope><name>angle_offset</name></member>
+      <member refid="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a1917a38f2bec6dbe8b7982ba4857142a" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::OptionalParams</scope><name>angle_range</name></member>
+      <member refid="structhello__world_1_1devices_1_1motor_1_1_optional_params_1abb17f065132ebdcc2a00916fb36e2873" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::OptionalParams</scope><name>dir</name></member>
+      <member refid="structhello__world_1_1devices_1_1motor_1_1_optional_params_1ab0a4704479885c3da95f9e0bee91026d" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::OptionalParams</scope><name>ex_redu_rat</name></member>
+      <member refid="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a40afccbd81c17e22779f7df471f2ec0b" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::OptionalParams</scope><name>input_type</name></member>
+      <member refid="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a89486565dd10e3184bf9f54408743f8a" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::OptionalParams</scope><name>max_curr_input_lim</name></member>
+      <member refid="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a406c5a28341a65489f7450f8800c7bc1" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::OptionalParams</scope><name>max_raw_input_lim</name></member>
+      <member refid="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a2230b1a9af266b248a2642e032d1a4a7" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::OptionalParams</scope><name>max_torq_input_lim</name></member>
+      <member refid="structhello__world_1_1devices_1_1motor_1_1_optional_params_1a7324141855f9f70be7be484df0f511e6" prot="public" virt="non-virtual"><scope>hello_world::devices::motor::OptionalParams</scope><name>remove_build_in_reducer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

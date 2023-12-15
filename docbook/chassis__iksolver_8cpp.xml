@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_chassis__iksolver_8cpp" xml:lang="zh">
+<title>HW-Components/algorithms/ik_solver/src/chassis_iksolver.cpp 文件参考</title>
+<indexterm><primary>HW-Components/algorithms/ik_solver/src/chassis_iksolver.cpp</primary></indexterm>
+<para>
+
+<para><?linebreak?> </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;chassis_iksolver.hpp&quot;<?linebreak?></programlisting>chassis_iksolver.cpp 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="chassis__iksolver_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>命名空间    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacehello__world">hello_world</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para><?linebreak?> </para>
+
+<para><formalpara><title>作者</title>
+
+<para>ZhouShichan (<link xlink:href="mailto:zsc19823382069@163.com">zsc19823382069@163.com</link>) </para>
+</formalpara>
+<formalpara><title>日期</title>
+
+<para>2023-12-13 </para>
+</formalpara>
+<formalpara>
+<title>last edit time 2023-12-13</title>
+<para></para>
+</formalpara>
+<formalpara>
+<title>last editor ZhouShichan (zsc19823382069@163.com)</title>
+<para></para>
+</formalpara>
+<formalpara><title>版本</title>
+
+<para>1.0.0 | 1.0.0 | 2023-MM-DD | ZhouShichan | description |</para>
+</formalpara>
+<formalpara><title>版权所有</title>
+
+<para>Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved.</para>
+</formalpara>
+<caution><title>注意</title>
+
+<para></para>
+</caution>
+<formalpara>
+<title>history</title>
+<para>| Version | Date | Author | Description | | :&#8212;: | :&#8212;: | :&#8212;: | :&#8212;: | </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_chassis__iksolver_8cpp_source">chassis_iksolver.cpp</link> 中定义.</para>
+</section>
+</section>

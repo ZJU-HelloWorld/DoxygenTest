@@ -1,0 +1,309 @@
+\doxysection{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::Basic\+Pid\+Params结构体 参考}
+\hypertarget{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params}{}\label{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params}\index{hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}}
+
+
+定义了基础 PID 的参数  
+
+
+
+
+{\ttfamily \#include $<$pid.\+hpp$>$}
+
+
+
+hello\+\_\+world\+::algorithms\+::controller\+::pid\+::Basic\+Pid\+Params 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a315027b98690d9d1000cd13afb9ab5fa}{auto\+\_\+reset}} = false
+\begin{DoxyCompactList}\small\item\em 是否自动清零 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafd}{Arocss0\+Type}} \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_af62e93ac21f9e92f27ef150280a2ce13}{across0}} = \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafdaeb0056ee6a32b1921222ec92c33e044f}{k\+Arocss0\+None}}
+\begin{DoxyCompactList}\small\item\em 零点跨越类型 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a53f2d1c0c504d9e588aaa81fb35aef3f}{kp}} = 0.\+6
+\begin{DoxyCompactList}\small\item\em 比例系数 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_add7049534381e7311d599920e2327137}{ki}} = 0.\+0
+\begin{DoxyCompactList}\small\item\em 积分系数 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a886fe384bcefc5273e5b48d8750c8bac}{kd}} = 0.\+0
+\begin{DoxyCompactList}\small\item\em 微分系数 \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_aff64c84f92c7b638faedb46399c13ead}{max\+\_\+interval\+\_\+ms}}
+\begin{DoxyCompactList}\small\item\em 最大控制周期，单位ms，超出表示采样异常, 如果{\ttfamily auto\+\_\+reset}为true，则会自动清零 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit}{Out\+Limit}} \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_aaad3f4ef38c31d3a683eff6c32ddd663}{out\+\_\+limit}}
+\begin{DoxyCompactList}\small\item\em 输出限制 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal}{Inte\+Trapezoidal}} \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a632be6ac5c03bb76b7ada8e139717985}{inte\+\_\+trapezoidal}}
+\begin{DoxyCompactList}\small\item\em 梯形积分优化器 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup}{Inte\+Anti\+Windup}} \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_ac0387bf7993c7517548a59f07b96406f}{inte\+\_\+anti\+\_\+windup}}
+\begin{DoxyCompactList}\small\item\em 积分抗饱和优化器 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate}{Inte\+Changing\+Rate}} \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a912be6ad456f53dafa4d3c0675b79a93}{inte\+\_\+changing\+\_\+rate}}
+\begin{DoxyCompactList}\small\item\em 变速积分优化器 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation}{Inte\+Separation}} \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a966dc600bbe6bc806109b194e7fa0775}{inte\+\_\+separation}}
+\begin{DoxyCompactList}\small\item\em 积分分离优化器 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter}{Diff\+Filter}} \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_aa1fd5eea795d5cc28f2dd09965ab069e}{diff\+\_\+filter}}
+\begin{DoxyCompactList}\small\item\em 微分滤波优化器 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous}{Diff\+Previous}} \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a5c218122c4cb7e4e25b5d888795d1b18}{diff\+\_\+previous}}
+\begin{DoxyCompactList}\small\item\em 微分先行优化器 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band}{Dead\+Band}} \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a26a25950b6b3c164140404ce5462bb81}{dead\+\_\+band}}
+\begin{DoxyCompactList}\small\item\em 误差死区优化器 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping}{Setpoint\+Ramping}} \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a70ea00392a227dbb346be455b123efd3}{setpointe\+\_\+ramping}}
+\begin{DoxyCompactList}\small\item\em 设定值斜坡优化器 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+定义了基础 PID 的参数 
+
+一般而言，这些参数需要在初始化时进行配置 优化器参数的默认值参见各个优化器的定义 
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00071}{71}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_af62e93ac21f9e92f27ef150280a2ce13}\label{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_af62e93ac21f9e92f27ef150280a2ce13} 
+\index{hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}!across0@{across0}}
+\index{across0@{across0}!hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}}
+\doxysubsubsection{\texorpdfstring{across0}{across0}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafd}{Arocss0\+Type}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid\+Params\+::across0 = \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafdaeb0056ee6a32b1921222ec92c33e044f}{k\+Arocss0\+None}}}
+
+
+
+零点跨越类型 
+
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00073}{73}} 行定义.
+
+\Hypertarget{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a315027b98690d9d1000cd13afb9ab5fa}\label{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a315027b98690d9d1000cd13afb9ab5fa} 
+\index{hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}!auto\_reset@{auto\_reset}}
+\index{auto\_reset@{auto\_reset}!hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}}
+\doxysubsubsection{\texorpdfstring{auto\_reset}{auto\_reset}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid\+Params\+::auto\+\_\+reset = false}
+
+
+
+是否自动清零 
+
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00072}{72}} 行定义.
+
+\Hypertarget{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a26a25950b6b3c164140404ce5462bb81}\label{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a26a25950b6b3c164140404ce5462bb81} 
+\index{hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}!dead\_band@{dead\_band}}
+\index{dead\_band@{dead\_band}!hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}}
+\doxysubsubsection{\texorpdfstring{dead\_band}{dead\_band}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band}{Dead\+Band}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid\+Params\+::dead\+\_\+band}
+
+
+
+误差死区优化器 
+
+\begin{DoxySeeAlso}{参见}
+\doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band}{Dead\+Band} 
+\end{DoxySeeAlso}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00087}{87}} 行定义.
+
+\Hypertarget{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_aa1fd5eea795d5cc28f2dd09965ab069e}\label{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_aa1fd5eea795d5cc28f2dd09965ab069e} 
+\index{hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}!diff\_filter@{diff\_filter}}
+\index{diff\_filter@{diff\_filter}!hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}}
+\doxysubsubsection{\texorpdfstring{diff\_filter}{diff\_filter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter}{Diff\+Filter}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid\+Params\+::diff\+\_\+filter}
+
+
+
+微分滤波优化器 
+
+\begin{DoxySeeAlso}{参见}
+\doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter}{Diff\+Filter} 
+\end{DoxySeeAlso}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00085}{85}} 行定义.
+
+\Hypertarget{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a5c218122c4cb7e4e25b5d888795d1b18}\label{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a5c218122c4cb7e4e25b5d888795d1b18} 
+\index{hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}!diff\_previous@{diff\_previous}}
+\index{diff\_previous@{diff\_previous}!hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}}
+\doxysubsubsection{\texorpdfstring{diff\_previous}{diff\_previous}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous}{Diff\+Previous}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid\+Params\+::diff\+\_\+previous}
+
+
+
+微分先行优化器 
+
+\begin{DoxySeeAlso}{参见}
+\doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous}{Diff\+Previous} 
+\end{DoxySeeAlso}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00086}{86}} 行定义.
+
+\Hypertarget{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_ac0387bf7993c7517548a59f07b96406f}\label{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_ac0387bf7993c7517548a59f07b96406f} 
+\index{hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}!inte\_anti\_windup@{inte\_anti\_windup}}
+\index{inte\_anti\_windup@{inte\_anti\_windup}!hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}}
+\doxysubsubsection{\texorpdfstring{inte\_anti\_windup}{inte\_anti\_windup}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup}{Inte\+Anti\+Windup}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid\+Params\+::inte\+\_\+anti\+\_\+windup}
+
+
+
+积分抗饱和优化器 
+
+\begin{DoxySeeAlso}{参见}
+\doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup}{Inte\+Anti\+Windup} 
+\end{DoxySeeAlso}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00081}{81}} 行定义.
+
+\Hypertarget{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a912be6ad456f53dafa4d3c0675b79a93}\label{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a912be6ad456f53dafa4d3c0675b79a93} 
+\index{hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}!inte\_changing\_rate@{inte\_changing\_rate}}
+\index{inte\_changing\_rate@{inte\_changing\_rate}!hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}}
+\doxysubsubsection{\texorpdfstring{inte\_changing\_rate}{inte\_changing\_rate}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate}{Inte\+Changing\+Rate}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid\+Params\+::inte\+\_\+changing\+\_\+rate}
+
+
+
+变速积分优化器 
+
+\begin{DoxySeeAlso}{参见}
+\doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate}{Inte\+Changing\+Rate} 
+\end{DoxySeeAlso}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00083}{83}} 行定义.
+
+\Hypertarget{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a966dc600bbe6bc806109b194e7fa0775}\label{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a966dc600bbe6bc806109b194e7fa0775} 
+\index{hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}!inte\_separation@{inte\_separation}}
+\index{inte\_separation@{inte\_separation}!hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}}
+\doxysubsubsection{\texorpdfstring{inte\_separation}{inte\_separation}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation}{Inte\+Separation}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid\+Params\+::inte\+\_\+separation}
+
+
+
+积分分离优化器 
+
+\begin{DoxySeeAlso}{参见}
+\doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation}{Inte\+Separation} 
+\end{DoxySeeAlso}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00084}{84}} 行定义.
+
+\Hypertarget{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a632be6ac5c03bb76b7ada8e139717985}\label{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a632be6ac5c03bb76b7ada8e139717985} 
+\index{hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}!inte\_trapezoidal@{inte\_trapezoidal}}
+\index{inte\_trapezoidal@{inte\_trapezoidal}!hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}}
+\doxysubsubsection{\texorpdfstring{inte\_trapezoidal}{inte\_trapezoidal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal}{Inte\+Trapezoidal}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid\+Params\+::inte\+\_\+trapezoidal}
+
+
+
+梯形积分优化器 
+
+\begin{DoxySeeAlso}{参见}
+\doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal}{Inte\+Trapezoidal} 
+\end{DoxySeeAlso}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00080}{80}} 行定义.
+
+\Hypertarget{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a886fe384bcefc5273e5b48d8750c8bac}\label{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a886fe384bcefc5273e5b48d8750c8bac} 
+\index{hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}!kd@{kd}}
+\index{kd@{kd}!hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}}
+\doxysubsubsection{\texorpdfstring{kd}{kd}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid\+Params\+::kd = 0.\+0}
+
+
+
+微分系数 
+
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00076}{76}} 行定义.
+
+\Hypertarget{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_add7049534381e7311d599920e2327137}\label{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_add7049534381e7311d599920e2327137} 
+\index{hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}!ki@{ki}}
+\index{ki@{ki}!hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}}
+\doxysubsubsection{\texorpdfstring{ki}{ki}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid\+Params\+::ki = 0.\+0}
+
+
+
+积分系数 
+
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00075}{75}} 行定义.
+
+\Hypertarget{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a53f2d1c0c504d9e588aaa81fb35aef3f}\label{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a53f2d1c0c504d9e588aaa81fb35aef3f} 
+\index{hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}!kp@{kp}}
+\index{kp@{kp}!hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}}
+\doxysubsubsection{\texorpdfstring{kp}{kp}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid\+Params\+::kp = 0.\+6}
+
+
+
+比例系数 
+
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00074}{74}} 行定义.
+
+\Hypertarget{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_aff64c84f92c7b638faedb46399c13ead}\label{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_aff64c84f92c7b638faedb46399c13ead} 
+\index{hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}!max\_interval\_ms@{max\_interval\_ms}}
+\index{max\_interval\_ms@{max\_interval\_ms}!hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}}
+\doxysubsubsection{\texorpdfstring{max\_interval\_ms}{max\_interval\_ms}}
+{\footnotesize\ttfamily uint32\+\_\+t hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid\+Params\+::max\+\_\+interval\+\_\+ms}
+
+{\bfseries 初始值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\ \ \ \ \ \ 5}
+
+\end{DoxyCode}
+
+
+最大控制周期，单位ms，超出表示采样异常, 如果{\ttfamily auto\+\_\+reset}为true，则会自动清零 
+
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00077}{77}} 行定义.
+
+\Hypertarget{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_aaad3f4ef38c31d3a683eff6c32ddd663}\label{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_aaad3f4ef38c31d3a683eff6c32ddd663} 
+\index{hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}!out\_limit@{out\_limit}}
+\index{out\_limit@{out\_limit}!hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}}
+\doxysubsubsection{\texorpdfstring{out\_limit}{out\_limit}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit}{Out\+Limit}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid\+Params\+::out\+\_\+limit}
+
+
+
+输出限制 
+
+\begin{DoxySeeAlso}{参见}
+\doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit}{Out\+Limit} 
+\end{DoxySeeAlso}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00079}{79}} 行定义.
+
+\Hypertarget{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a70ea00392a227dbb346be455b123efd3}\label{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_a70ea00392a227dbb346be455b123efd3} 
+\index{hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}!setpointe\_ramping@{setpointe\_ramping}}
+\index{setpointe\_ramping@{setpointe\_ramping}!hello\_world::algorithms::controller::pid::BasicPidParams@{hello\_world::algorithms::controller::pid::BasicPidParams}}
+\doxysubsubsection{\texorpdfstring{setpointe\_ramping}{setpointe\_ramping}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping}{Setpoint\+Ramping}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid\+Params\+::setpointe\+\_\+ramping}
+
+
+
+设定值斜坡优化器 
+
+\begin{DoxySeeAlso}{参见}
+\doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping}{Setpoint\+Ramping} 
+\end{DoxySeeAlso}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00088}{88}} 行定义.
+

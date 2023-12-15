@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="controller__base_8hpp" kind="file" language="C++">
+    <compoundname>controller_base.hpp</compoundname>
+    <includes local="no">cstddef</includes>
+    <includes refid="system_8hpp" local="yes">system.hpp</includes>
+    <includedby refid="controller_8hpp" local="yes">HW-Components/algorithms/controller/inc/controller.hpp</includedby>
+    <includedby refid="pid_8hpp" local="yes">HW-Components/algorithms/controller/inc/pid.hpp</includedby>
+    <includedby refid="pid__opt_8hpp" local="yes">HW-Components/algorithms/controller/inc/pid_opt.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>HW-Components/algorithms/controller/inc/controller_base.hpp</label>
+        <link refid="controller__base_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>system.hpp</label>
+        <link refid="system_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cstddef</label>
+      </node>
+      <node id="4">
+        <label>cstdlib</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>HW-Components/algorithms/controller/inc/controller.hpp</label>
+        <link refid="controller_8hpp"/>
+      </node>
+      <node id="1">
+        <label>HW-Components/algorithms/controller/inc/controller_base.hpp</label>
+        <link refid="controller__base_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>HW-Components/algorithms/controller/inc/pid.hpp</label>
+        <link refid="pid_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>HW-Components/algorithms/controller/inc/pid_opt.hpp</label>
+        <link refid="pid__opt_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>HW-Components/algorithms/controller/src/pid.cpp</label>
+        <link refid="pid_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classhello__world_1_1algorithms_1_1controller_1_1_controller" prot="public">hello_world::algorithms::controller::Controller</innerclass>
+    <innernamespace refid="namespacehello__world">hello_world</innernamespace>
+    <innernamespace refid="namespacehello__world_1_1algorithms">hello_world::algorithms</innernamespace>
+    <innernamespace refid="namespacehello__world_1_1algorithms_1_1controller">hello_world::algorithms::controller</innernamespace>
+    <briefdescription>
+<para>: @history : Version Date Author Note V0.9.0 2023-11-25 Caikunzhen 1. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>未测试版本</para>
+<para><simplesect kind="attention"><para>:</para>
+</simplesect>
+Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HW_COMPONETS_ALGORITHMS_CONTROLLER_CONTROLLER_BASE_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HW_COMPONETS_ALGORITHMS_CONTROLLER_CONTROLLER_BASE_HPP_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="system_8hpp" kindref="compound">system.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="namespacehello__world" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacehello__world" kindref="compound">hello_world</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26" refid="namespacehello__world_1_1algorithms" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">algorithms</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28" refid="namespacehello__world_1_1algorithms_1_1controller" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">controller</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>macro<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref><sp/>{</highlight></codeline>
+<codeline lineno="33" refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" kindref="member">kStateOk</ref>,</highlight></codeline>
+<codeline lineno="34" refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9" kindref="member">kStateError</ref>,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>constants<sp/>--------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>types<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classhello__world_1_1algorithms_1_1controller_1_1_controller" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classhello__world_1_1algorithms_1_1controller_1_1_controller" kindref="compound">Controller</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classhello__world_1_1_mem_mang" kindref="compound">MemMang</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42" refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1aaef37bc2917097e1f3956d3e376ea64c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1aaef37bc2917097e1f3956d3e376ea64c" kindref="member">ref_dim_</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a18177bbaffdba8b34721e4c9256e6b8a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a18177bbaffdba8b34721e4c9256e6b8a" kindref="member">fdb_dim_</ref>;</highlight></codeline>
+<codeline lineno="44" refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a174ff1eec5dbf10f728c086b53504a6f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a174ff1eec5dbf10f728c086b53504a6f" kindref="member">ffd_dim_</ref>;</highlight></codeline>
+<codeline lineno="45" refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1aac07a607fecba8eca0a3819ba86d40e2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1aac07a607fecba8eca0a3819ba86d40e2" kindref="member">out_dim_</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48" refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a3fe01fdfc6fc3c17754757d7d0c4cfe9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a3fe01fdfc6fc3c17754757d7d0c4cfe9" kindref="member">Controller</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ref_dim,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>fdb_dim,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>out_dim,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ffd_dim<sp/>=<sp/>0)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1aaef37bc2917097e1f3956d3e376ea64c" kindref="member">ref_dim_</ref>(ref_dim),</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a18177bbaffdba8b34721e4c9256e6b8a" kindref="member">fdb_dim_</ref>(fdb_dim),</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a174ff1eec5dbf10f728c086b53504a6f" kindref="member">ffd_dim_</ref>(ffd_dim),</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1aac07a607fecba8eca0a3819ba86d40e2" kindref="member">out_dim_</ref>(out_dim){};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a392091ff03b5346cbbc3ffe14d4a6d83" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a392091ff03b5346cbbc3ffe14d4a6d83" kindref="member">~Controller</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="55" refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a5c856e2e4d553904a73fa8bf2b1d10f0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="system_8hpp_1a3e218828af7ddd3f4cd0d3772562b520" kindref="member">MALLOC</ref>(size);<sp/>}</highlight></codeline>
+<codeline lineno="56" refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a097b88e2a82574df8d5a26eeee442525" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">[](</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="system_8hpp_1a3e218828af7ddd3f4cd0d3772562b520" kindref="member">MALLOC</ref>(size);<sp/>}</highlight></codeline>
+<codeline lineno="57" refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1aee97fc5e8af6420ec56ee5ed7fb1f3da" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ptr)<sp/>{<sp/><ref refid="system_8hpp_1a9a8e700d56e7d858108b755ad3edb52e" kindref="member">FREE</ref>(ptr);<sp/>}</highlight></codeline>
+<codeline lineno="58" refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1ad3d671169876c515fc7bf1c3be5f3b23" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[](</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>ptr)<sp/>{<sp/><ref refid="system_8hpp_1a9a8e700d56e7d858108b755ad3edb52e" kindref="member">FREE</ref>(ptr);<sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a3a59379f79586c7d89f92b3b5f08bb57" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref><sp/><ref refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a3a59379f79586c7d89f92b3b5f08bb57" kindref="member">calc</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>ref_ls,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>fdb_ls,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>ffd_ls,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>out_ls)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a1dfc2817c2e54de404466124a6ca4d19" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref><sp/><ref refid="classhello__world_1_1algorithms_1_1controller_1_1_controller_1a1dfc2817c2e54de404466124a6ca4d19" kindref="member">reset</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>variables<sp/>--------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>function<sp/>prototypes<sp/>----------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>algorithms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>hello_world</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HW_COMPONETS_ALGORITHMS_CONTROLLER_CONTROLLER_BASE_HPP_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="HW-Components/algorithms/controller/inc/controller_base.hpp"/>
+  </compounddef>
+</doxygen>

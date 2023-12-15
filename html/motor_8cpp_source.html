@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: HW-Components/devices/motor/src/motor.cpp 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('motor_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">motor.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="motor_8cpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/* Includes ------------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="motor_8hpp.html">motor.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="assert_8hpp.html">assert.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacehello__world.html">hello_world</a></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span>devices</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>motor</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">/* Private macro -------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/* Private constants ---------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">/* Private types -------------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/* Private variables ---------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/* External variables --------------------------------------------------------*/</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">/* Private function prototypes -----------------------------------------------*/</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="namespacehello__world_1_1devices_1_1motor.html#ae3492ca32e729aaaecd5def06d638f86">   43</a></span><a class="code hl_class" href="classhello__world_1_1devices_1_1motor_1_1_motor.html">Motor</a>* <a class="code hl_function" href="namespacehello__world_1_1devices_1_1motor.html#ae3492ca32e729aaaecd5def06d638f86">CreateMotor</a>(<a class="code hl_enumeration" href="namespacehello__world_1_1devices_1_1motor.html#a0764cc873981eb673e5cefe2b89d84c8">MotorType</a> motor_type, uint8_t <span class="keywordtype">id</span>,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                   <span class="keyword">const</span> <a class="code hl_struct" href="structhello__world_1_1devices_1_1motor_1_1_optional_params.html">OptionalParams</a>&amp; optinal_params)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordflow">switch</span> (motor_type) {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacehello__world_1_1devices_1_1motor.html#a0764cc873981eb673e5cefe2b89d84c8a07e240d42d2ba719073e07afb4203d04">kMotorTypeGM6020</a>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="classhello__world_1_1devices_1_1motor_1_1_g_m6020.html">GM6020</a>(<span class="keywordtype">id</span>, optinal_params);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacehello__world_1_1devices_1_1motor.html#a0764cc873981eb673e5cefe2b89d84c8a8c5f2196eac5420dc4627ef0514f558e">kMotorTypeM2006</a>:</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="classhello__world_1_1devices_1_1motor_1_1_m2006.html">M2006</a>(<span class="keywordtype">id</span>, optinal_params);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacehello__world_1_1devices_1_1motor.html#a0764cc873981eb673e5cefe2b89d84c8a55160f7f5f669aa27a24c3cad2deaf1d">kMotorTypeM3508</a>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="classhello__world_1_1devices_1_1motor_1_1_m3508.html">M3508</a>(<span class="keywordtype">id</span>, optinal_params);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacehello__world_1_1devices_1_1motor.html#a0764cc873981eb673e5cefe2b89d84c8ae6e021cdc218f10377913d33f426fb11">kMotorTypeM8910</a>:</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="classhello__world_1_1devices_1_1motor_1_1_m8910.html">M8910</a>(<span class="keywordtype">id</span>, optinal_params);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacehello__world_1_1devices_1_1motor.html#a0764cc873981eb673e5cefe2b89d84c8affc5737d4b2d3625a210240cd4315718">kMotorTypeA1</a>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="classhello__world_1_1devices_1_1motor_1_1_a1.html">A1</a>(<span class="keywordtype">id</span>, optinal_params);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacehello__world_1_1devices_1_1motor.html#a0764cc873981eb673e5cefe2b89d84c8abd589290db96bf5712052ec3f3f3ee02">kMotorTypeDM_J4310</a>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html">DM_J4310</a>(<span class="keywordtype">id</span>, optinal_params);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacehello__world_1_1devices_1_1motor.html#a0764cc873981eb673e5cefe2b89d84c8a5a037ca22e20940dab8499c86f40fb49">kMotorTypeMF9025v2</a>:</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="classhello__world_1_1devices_1_1motor_1_1_m_f9025v2.html">MF9025v2</a>(<span class="keywordtype">id</span>, optinal_params);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <a class="code hl_define" href="assert_8hpp.html#a5969df827ceb603bed14c4106586484a">HW_ASSERT</a>(0, <span class="stringliteral">&quot;Error motor type&quot;</span>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
+</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}  <span class="comment">// namespace motor</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}  <span class="comment">// namespace devices</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}  <span class="comment">// namespace hello_world</span></div>
+<div class="ttc" id="aassert_8hpp_html"><div class="ttname"><a href="assert_8hpp.html">assert.hpp</a></div><div class="ttdoc">: @history : Version Date Author Note V0.9.0 yyyy-mm-dd &lt;author&gt; 1.</div></div>
+<div class="ttc" id="aassert_8hpp_html_a5969df827ceb603bed14c4106586484a"><div class="ttname"><a href="assert_8hpp.html#a5969df827ceb603bed14c4106586484a">HW_ASSERT</a></div><div class="ttdeci">#define HW_ASSERT(expr, format,...)</div><div class="ttdef"><b>Definition</b> <a href="assert_8hpp_source.html#l00036">assert.hpp:36</a></div></div>
+<div class="ttc" id="aclasshello__world_1_1devices_1_1motor_1_1_a1_html"><div class="ttname"><a href="classhello__world_1_1devices_1_1motor_1_1_a1.html">hello_world::devices::motor::A1</a></div><div class="ttdef"><b>Definition</b> <a href="motor___a1_8hpp_source.html#l00032">motor_A1.hpp:33</a></div></div>
+<div class="ttc" id="aclasshello__world_1_1devices_1_1motor_1_1_d_m___j4310_html"><div class="ttname"><a href="classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html">hello_world::devices::motor::DM_J4310</a></div><div class="ttdef"><b>Definition</b> <a href="motor___d_m___j4310_8hpp_source.html#l00032">motor_DM_J4310.hpp:33</a></div></div>
+<div class="ttc" id="aclasshello__world_1_1devices_1_1motor_1_1_g_m6020_html"><div class="ttname"><a href="classhello__world_1_1devices_1_1motor_1_1_g_m6020.html">hello_world::devices::motor::GM6020</a></div><div class="ttdef"><b>Definition</b> <a href="motor___g_m6020_8hpp_source.html#l00032">motor_GM6020.hpp:33</a></div></div>
+<div class="ttc" id="aclasshello__world_1_1devices_1_1motor_1_1_m2006_html"><div class="ttname"><a href="classhello__world_1_1devices_1_1motor_1_1_m2006.html">hello_world::devices::motor::M2006</a></div><div class="ttdef"><b>Definition</b> <a href="motor___m2006_8hpp_source.html#l00032">motor_M2006.hpp:33</a></div></div>
+<div class="ttc" id="aclasshello__world_1_1devices_1_1motor_1_1_m3508_html"><div class="ttname"><a href="classhello__world_1_1devices_1_1motor_1_1_m3508.html">hello_world::devices::motor::M3508</a></div><div class="ttdef"><b>Definition</b> <a href="motor___m3508_8hpp_source.html#l00032">motor_M3508.hpp:33</a></div></div>
+<div class="ttc" id="aclasshello__world_1_1devices_1_1motor_1_1_m8910_html"><div class="ttname"><a href="classhello__world_1_1devices_1_1motor_1_1_m8910.html">hello_world::devices::motor::M8910</a></div><div class="ttdef"><b>Definition</b> <a href="motor___m8910_8hpp_source.html#l00032">motor_M8910.hpp:33</a></div></div>
+<div class="ttc" id="aclasshello__world_1_1devices_1_1motor_1_1_m_f9025v2_html"><div class="ttname"><a href="classhello__world_1_1devices_1_1motor_1_1_m_f9025v2.html">hello_world::devices::motor::MF9025v2</a></div><div class="ttdef"><b>Definition</b> <a href="motor___m_f9025v2_8hpp_source.html#l00032">motor_MF9025v2.hpp:33</a></div></div>
+<div class="ttc" id="aclasshello__world_1_1devices_1_1motor_1_1_motor_html"><div class="ttname"><a href="classhello__world_1_1devices_1_1motor_1_1_motor.html">hello_world::devices::motor::Motor</a></div><div class="ttdef"><b>Definition</b> <a href="motor__base_8hpp_source.html#l00118">motor_base.hpp:119</a></div></div>
+<div class="ttc" id="amotor_8hpp_html"><div class="ttname"><a href="motor_8hpp.html">motor.hpp</a></div><div class="ttdoc">: @history : Version Date Author Note V0.9.0 2023-11-25 Caikunzhen 1.</div></div>
+<div class="ttc" id="anamespacehello__world_1_1devices_1_1motor_html_a0764cc873981eb673e5cefe2b89d84c8"><div class="ttname"><a href="namespacehello__world_1_1devices_1_1motor.html#a0764cc873981eb673e5cefe2b89d84c8">hello_world::devices::motor::MotorType</a></div><div class="ttdeci">MotorType</div><div class="ttdef"><b>Definition</b> <a href="motor_8hpp_source.html#l00037">motor.hpp:37</a></div></div>
+<div class="ttc" id="anamespacehello__world_1_1devices_1_1motor_html_a0764cc873981eb673e5cefe2b89d84c8a07e240d42d2ba719073e07afb4203d04"><div class="ttname"><a href="namespacehello__world_1_1devices_1_1motor.html#a0764cc873981eb673e5cefe2b89d84c8a07e240d42d2ba719073e07afb4203d04">hello_world::devices::motor::kMotorTypeGM6020</a></div><div class="ttdeci">@ kMotorTypeGM6020</div><div class="ttdef"><b>Definition</b> <a href="motor_8hpp_source.html#l00038">motor.hpp:38</a></div></div>
+<div class="ttc" id="anamespacehello__world_1_1devices_1_1motor_html_a0764cc873981eb673e5cefe2b89d84c8a55160f7f5f669aa27a24c3cad2deaf1d"><div class="ttname"><a href="namespacehello__world_1_1devices_1_1motor.html#a0764cc873981eb673e5cefe2b89d84c8a55160f7f5f669aa27a24c3cad2deaf1d">hello_world::devices::motor::kMotorTypeM3508</a></div><div class="ttdeci">@ kMotorTypeM3508</div><div class="ttdef"><b>Definition</b> <a href="motor_8hpp_source.html#l00040">motor.hpp:40</a></div></div>
+<div class="ttc" id="anamespacehello__world_1_1devices_1_1motor_html_a0764cc873981eb673e5cefe2b89d84c8a5a037ca22e20940dab8499c86f40fb49"><div class="ttname"><a href="namespacehello__world_1_1devices_1_1motor.html#a0764cc873981eb673e5cefe2b89d84c8a5a037ca22e20940dab8499c86f40fb49">hello_world::devices::motor::kMotorTypeMF9025v2</a></div><div class="ttdeci">@ kMotorTypeMF9025v2</div><div class="ttdef"><b>Definition</b> <a href="motor_8hpp_source.html#l00044">motor.hpp:44</a></div></div>
+<div class="ttc" id="anamespacehello__world_1_1devices_1_1motor_html_a0764cc873981eb673e5cefe2b89d84c8a8c5f2196eac5420dc4627ef0514f558e"><div class="ttname"><a href="namespacehello__world_1_1devices_1_1motor.html#a0764cc873981eb673e5cefe2b89d84c8a8c5f2196eac5420dc4627ef0514f558e">hello_world::devices::motor::kMotorTypeM2006</a></div><div class="ttdeci">@ kMotorTypeM2006</div><div class="ttdef"><b>Definition</b> <a href="motor_8hpp_source.html#l00039">motor.hpp:39</a></div></div>
+<div class="ttc" id="anamespacehello__world_1_1devices_1_1motor_html_a0764cc873981eb673e5cefe2b89d84c8abd589290db96bf5712052ec3f3f3ee02"><div class="ttname"><a href="namespacehello__world_1_1devices_1_1motor.html#a0764cc873981eb673e5cefe2b89d84c8abd589290db96bf5712052ec3f3f3ee02">hello_world::devices::motor::kMotorTypeDM_J4310</a></div><div class="ttdeci">@ kMotorTypeDM_J4310</div><div class="ttdef"><b>Definition</b> <a href="motor_8hpp_source.html#l00043">motor.hpp:43</a></div></div>
+<div class="ttc" id="anamespacehello__world_1_1devices_1_1motor_html_a0764cc873981eb673e5cefe2b89d84c8ae6e021cdc218f10377913d33f426fb11"><div class="ttname"><a href="namespacehello__world_1_1devices_1_1motor.html#a0764cc873981eb673e5cefe2b89d84c8ae6e021cdc218f10377913d33f426fb11">hello_world::devices::motor::kMotorTypeM8910</a></div><div class="ttdeci">@ kMotorTypeM8910</div><div class="ttdef"><b>Definition</b> <a href="motor_8hpp_source.html#l00041">motor.hpp:41</a></div></div>
+<div class="ttc" id="anamespacehello__world_1_1devices_1_1motor_html_a0764cc873981eb673e5cefe2b89d84c8affc5737d4b2d3625a210240cd4315718"><div class="ttname"><a href="namespacehello__world_1_1devices_1_1motor.html#a0764cc873981eb673e5cefe2b89d84c8affc5737d4b2d3625a210240cd4315718">hello_world::devices::motor::kMotorTypeA1</a></div><div class="ttdeci">@ kMotorTypeA1</div><div class="ttdef"><b>Definition</b> <a href="motor_8hpp_source.html#l00042">motor.hpp:42</a></div></div>
+<div class="ttc" id="anamespacehello__world_1_1devices_1_1motor_html_ae3492ca32e729aaaecd5def06d638f86"><div class="ttname"><a href="namespacehello__world_1_1devices_1_1motor.html#ae3492ca32e729aaaecd5def06d638f86">hello_world::devices::motor::CreateMotor</a></div><div class="ttdeci">Motor * CreateMotor(MotorType motor_type, uint8_t id, const OptionalParams &amp;optinal_params=OptionalParams())</div><div class="ttdoc">根据所需的电机类型创建电机并初始化</div><div class="ttdef"><b>Definition</b> <a href="motor_8cpp_source.html#l00043">motor.cpp:43</a></div></div>
+<div class="ttc" id="anamespacehello__world_html"><div class="ttname"><a href="namespacehello__world.html">hello_world</a></div><div class="ttdef"><b>Definition</b> <a href="controller__base_8hpp_source.html#l00024">controller_base.hpp:25</a></div></div>
+<div class="ttc" id="astructhello__world_1_1devices_1_1motor_1_1_optional_params_html"><div class="ttname"><a href="structhello__world_1_1devices_1_1motor_1_1_optional_params.html">hello_world::devices::motor::OptionalParams</a></div><div class="ttdoc">电机初始化可选参数</div><div class="ttdef"><b>Definition</b> <a href="motor__base_8hpp_source.html#l00100">motor_base.hpp:100</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bf2c932e12fd3661bca25c493e91b85c.html">HW-Components</a></li><li class="navelem"><a class="el" href="dir_49decd52c970b6c26b1892145b8c54b6.html">devices</a></li><li class="navelem"><a class="el" href="dir_0b2a1104b376de6ed9ae0678ded7e530.html">motor</a></li><li class="navelem"><a class="el" href="dir_70ed20f9e1565a8320127cffe78c769b.html">src</a></li><li class="navelem"><a class="el" href="motor_8cpp.html">motor.cpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

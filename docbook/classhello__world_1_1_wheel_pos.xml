@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classhello__world_1_1_wheel_pos" xml:lang="zh">
+<title>hello_world::WheelPos类 参考</title>
+<indexterm><primary>hello_world::WheelPos</primary></indexterm>
+<para>
+<computeroutput>#include &lt;chassis_iksolver.hpp&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classhello__world_1_1_wheel_pos_1a86398c41824df8885c49137d4828f754">WheelPos</link> (float <link linkend="_classhello__world_1_1_wheel_pos_1a40a008b0a46e73e15f0a509574b48323">x</link>=0.0f, float <link linkend="_classhello__world_1_1_wheel_pos_1a021532e134f2f8ef9fe7bcd39b39d741">y</link>=0.0f)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp; <link linkend="_classhello__world_1_1_wheel_pos_1ae4e58fe69ba96ac7aa280b45e4644abf">operator=</link> (const <link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp;rhs)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> <link linkend="_classhello__world_1_1_wheel_pos_1aaa54f05bfa2e2812eb40acbdb86d61a9">operator+</link> (const <link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp;rhs) const</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> <link linkend="_classhello__world_1_1_wheel_pos_1a383fb7f91e16659d485305cb846423e5">operator-</link> (const <link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp;rhs) const</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp; <link linkend="_classhello__world_1_1_wheel_pos_1a11b5907775e24cf58ae047278bebcd65">operator+=</link> (const <link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp;rhs)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp; <link linkend="_classhello__world_1_1_wheel_pos_1aeed6d3b00ad1e0cc90cecf2ee94f036a">operator-=</link> (const <link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp;rhs)</para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1_wheel_pos_1acf52474963b14fd2c0edfe1795486a0c">distTo</link> (const <link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp;rhs=<link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link>(0, 0)) const</para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1_wheel_pos_1a6311d5ad8b375e79a12d2f9569f30de7">norm</link> () const</para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1_wheel_pos_1a40a008b0a46e73e15f0a509574b48323">x</link> () const</para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1_wheel_pos_1a021532e134f2f8ef9fe7bcd39b39d741">y</link> () const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 属性    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_classhello__world_1_1_wheel_pos_1ae39a98362b24b70424139bbf2f4a11e1">x_</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1_wheel_pos_1a6076d24bdb402993ecf5ccfc06dea9b1">y_</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+<para>
+在文件 <link linkend="_chassis__iksolver_8hpp_source">chassis_iksolver.hpp</link> 第 <link linkend="_chassis__iksolver_8hpp_source_1l00043">43</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_classhello__world_1_1_wheel_pos_1a86398c41824df8885c49137d4828f754"/><section>
+    <title>WheelPos()</title>
+<indexterm><primary>WheelPos</primary><secondary>hello_world::WheelPos</secondary></indexterm>
+<indexterm><primary>hello_world::WheelPos</primary><secondary>WheelPos</secondary></indexterm>
+<para><computeroutput>hello_world::WheelPos::WheelPos (float x = <computeroutput>0.0f</computeroutput>
+, float y = <computeroutput>0.0f</computeroutput>
+)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_chassis__iksolver_8hpp_source">chassis_iksolver.hpp</link> 第 <link linkend="_chassis__iksolver_8hpp_source_1l00046">46</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classhello__world_1_1_wheel_pos_1acf52474963b14fd2c0edfe1795486a0c"/><section>
+    <title>distTo()</title>
+<indexterm><primary>distTo</primary><secondary>hello_world::WheelPos</secondary></indexterm>
+<indexterm><primary>hello_world::WheelPos</primary><secondary>distTo</secondary></indexterm>
+<para><computeroutput>float hello_world::WheelPos::distTo (const <link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp; rhs = <computeroutput><link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link>(0,&#160;0)</computeroutput>
+) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_chassis__iksolver_8hpp_source">chassis_iksolver.hpp</link> 第 <link linkend="_chassis__iksolver_8hpp_source_1l00073">73</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1_wheel_pos_1a6311d5ad8b375e79a12d2f9569f30de7"/><section>
+    <title>norm()</title>
+<indexterm><primary>norm</primary><secondary>hello_world::WheelPos</secondary></indexterm>
+<indexterm><primary>hello_world::WheelPos</primary><secondary>norm</secondary></indexterm>
+<para><computeroutput>float hello_world::WheelPos::norm ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_chassis__iksolver_8hpp_source">chassis_iksolver.hpp</link> 第 <link linkend="_chassis__iksolver_8hpp_source_1l00079">79</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1_wheel_pos_1aaa54f05bfa2e2812eb40acbdb86d61a9"/><section>
+    <title>operator+()</title>
+<indexterm><primary>operator+</primary><secondary>hello_world::WheelPos</secondary></indexterm>
+<indexterm><primary>hello_world::WheelPos</primary><secondary>operator+</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> hello_world::WheelPos::operator+ (const <link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp; rhs) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_chassis__iksolver_8hpp_source">chassis_iksolver.hpp</link> 第 <link linkend="_chassis__iksolver_8hpp_source_1l00053">53</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1_wheel_pos_1a11b5907775e24cf58ae047278bebcd65"/><section>
+    <title>operator+=()</title>
+<indexterm><primary>operator+=</primary><secondary>hello_world::WheelPos</secondary></indexterm>
+<indexterm><primary>hello_world::WheelPos</primary><secondary>operator+=</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp; hello_world::WheelPos::operator+= (const <link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp; rhs)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_chassis__iksolver_8hpp_source">chassis_iksolver.hpp</link> 第 <link linkend="_chassis__iksolver_8hpp_source_1l00061">61</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1_wheel_pos_1a383fb7f91e16659d485305cb846423e5"/><section>
+    <title>operator-()</title>
+<indexterm><primary>operator-</primary><secondary>hello_world::WheelPos</secondary></indexterm>
+<indexterm><primary>hello_world::WheelPos</primary><secondary>operator-</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> hello_world::WheelPos::operator- (const <link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp; rhs) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_chassis__iksolver_8hpp_source">chassis_iksolver.hpp</link> 第 <link linkend="_chassis__iksolver_8hpp_source_1l00057">57</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1_wheel_pos_1aeed6d3b00ad1e0cc90cecf2ee94f036a"/><section>
+    <title>operator-=()</title>
+<indexterm><primary>operator-=</primary><secondary>hello_world::WheelPos</secondary></indexterm>
+<indexterm><primary>hello_world::WheelPos</primary><secondary>operator-=</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp; hello_world::WheelPos::operator-= (const <link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp; rhs)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_chassis__iksolver_8hpp_source">chassis_iksolver.hpp</link> 第 <link linkend="_chassis__iksolver_8hpp_source_1l00067">67</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1_wheel_pos_1ae4e58fe69ba96ac7aa280b45e4644abf"/><section>
+    <title>operator=()</title>
+<indexterm><primary>operator=</primary><secondary>hello_world::WheelPos</secondary></indexterm>
+<indexterm><primary>hello_world::WheelPos</primary><secondary>operator=</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp; hello_world::WheelPos::operator= (const <link linkend="_classhello__world_1_1_wheel_pos">WheelPos</link> &amp; rhs)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_chassis__iksolver_8hpp_source">chassis_iksolver.hpp</link> 第 <link linkend="_chassis__iksolver_8hpp_source_1l00047">47</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1_wheel_pos_1a40a008b0a46e73e15f0a509574b48323"/><section>
+    <title>x()</title>
+<indexterm><primary>x</primary><secondary>hello_world::WheelPos</secondary></indexterm>
+<indexterm><primary>hello_world::WheelPos</primary><secondary>x</secondary></indexterm>
+<para><computeroutput>float hello_world::WheelPos::x ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_chassis__iksolver_8hpp_source">chassis_iksolver.hpp</link> 第 <link linkend="_chassis__iksolver_8hpp_source_1l00080">80</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1_wheel_pos_1a021532e134f2f8ef9fe7bcd39b39d741"/><section>
+    <title>y()</title>
+<indexterm><primary>y</primary><secondary>hello_world::WheelPos</secondary></indexterm>
+<indexterm><primary>hello_world::WheelPos</primary><secondary>y</secondary></indexterm>
+<para><computeroutput>float hello_world::WheelPos::y ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_chassis__iksolver_8hpp_source">chassis_iksolver.hpp</link> 第 <link linkend="_chassis__iksolver_8hpp_source_1l00081">81</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classhello__world_1_1_wheel_pos_1ae39a98362b24b70424139bbf2f4a11e1"/><section>
+    <title>x_</title>
+<indexterm><primary>x_</primary><secondary>hello_world::WheelPos</secondary></indexterm>
+<indexterm><primary>hello_world::WheelPos</primary><secondary>x_</secondary></indexterm>
+<para><computeroutput>float hello_world::WheelPos::x_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_chassis__iksolver_8hpp_source">chassis_iksolver.hpp</link> 第 <link linkend="_chassis__iksolver_8hpp_source_1l00084">84</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1_wheel_pos_1a6076d24bdb402993ecf5ccfc06dea9b1"/><section>
+    <title>y_</title>
+<indexterm><primary>y_</primary><secondary>hello_world::WheelPos</secondary></indexterm>
+<indexterm><primary>hello_world::WheelPos</primary><secondary>y_</secondary></indexterm>
+<para><computeroutput>float hello_world::WheelPos::y_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_chassis__iksolver_8hpp_source">chassis_iksolver.hpp</link> 第 <link linkend="_chassis__iksolver_8hpp_source_1l00085">85</link> 行定义.</para>
+</section>
+</section>
+</section>

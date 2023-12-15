@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_referee_8hpp" xml:lang="zh">
+<title>HW-Components/devices/referee/inc/referee.hpp 文件参考</title>
+<indexterm><primary>HW-Components/devices/referee/inc/referee.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;cstddef&gt;<?linebreak?>#include &quot;referee_custom_define.hpp&quot;<?linebreak?>#include &quot;referee_protocol.hpp&quot;<?linebreak?>#include &quot;referee_rx_template.hpp&quot;<?linebreak?></programlisting>referee.hpp 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="referee_8hpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+此图展示该文件直接或间接的被哪些文件引用了:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="referee_8hpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>类    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee">hello_world::devices::referee::Referee</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>命名空间    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacehello__world">hello_world</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacehello__world_1_1devices">hello_world::devices</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacehello__world_1_1devices_1_1referee">hello_world::devices::referee</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>变量    </title>
+        <itemizedlist>
+            <listitem><para>const size_t <link linkend="_namespacehello__world_1_1devices_1_1referee_1ae04f5c30552f8e2f1caf9d764d1cf075">hello_world::devices::referee::kRefereeMaxBuffer</link> = 0xFF</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para><formalpara><title>作者</title>
+
+<para>ZhouShichan (<link xlink:href="mailto:zsc19823382069@163.com">zsc19823382069@163.com</link>) </para>
+</formalpara>
+<formalpara><title>版本</title>
+
+<para>1.0.0 </para>
+</formalpara>
+<formalpara><title>日期</title>
+
+<para>2023-10-28</para>
+</formalpara>
+<formalpara><title>版权所有</title>
+
+<para>Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved.</para>
+</formalpara>
+<caution><title>注意</title>
+
+<para></para>
+</caution>
+<formalpara>
+<title>history</title>
+<para><informaltable frame="all">
+    <tgroup cols="4" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+<thead>
+      <row  class='markdownTableHead'>
+<entry align='center'>
+<para>Version   </para>
+</entry><entry align='center'>
+<para>Date   </para>
+</entry><entry align='center'>
+<para>Author   </para>
+</entry><entry align='center'>
+<para>Description    </para>
+</entry></row>
+</thead><tbody>
+      <row  class='markdownTableRowOdd'>
+<entry align='center'>
+<para>1.0.0   </para>
+</entry><entry align='center'>
+<para>2023-10-28   </para>
+</entry><entry align='center'>
+<para>ZhouShichan   </para>
+</entry><entry align='center'>
+<para>description   </para>
+</entry></row>
+    </tbody>
+    </tgroup>
+</informaltable>
+</para>
+</formalpara>
+<formalpara>
+<title>last editor ZhouShichan (zsc19823382069@163.com)</title>
+<para></para>
+</formalpara>
+<formalpara>
+<title>last edit time 2023-10-28</title>
+<para></para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 中定义.</para>
+</section>
+</section>

@@ -1,0 +1,19 @@
+<map id="hello_world::devices::motor::A1::A1" name="hello_world::devices::motor::A1::A1">
+<area shape="rect" id="Node000001" title="A1 初始化" alt="" coords="5,156,143,196"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#aebf04ce4e3628c60907a29771f383027" title="将转子电流转换为原始报文内容" alt="" coords="191,5,352,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,154,131,105,159,79,189,55,197,50,200,55,192,60,162,83,135,109,93,157"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#ab3e2187f017e86c6d4a83caa55fe9419" title=" " alt="" coords="203,69,340,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="116,153,190,119,203,113,206,118,192,124,118,158"/>
+<area shape="rect" id="Node000005" href="$namespacehello__world.html#a94594f3432536927055026f3f48af251" title="获取两个变量间的最小值" alt="" coords="214,134,329,159"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="142,163,199,155,200,160,143,168"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#a1e4467d9f449b9c6c7d6886fffa89667" title="将原始报文内容转换为转子电流" alt="" coords="191,184,352,224"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="143,183,176,188,175,193,142,188"/>
+<area shape="rect" id="Node000007" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#af74a8c4ad7c0067a2d71afd711639366" title="将原始报文内容转换为输出端力矩" alt="" coords="191,248,352,288"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="114,194,192,234,205,239,202,244,190,238,112,199"/>
+<area shape="rect" id="Node000008" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#a319adc3f1b7d43fa12015b52a153ea17" title="将输出端力矩转换为原始报文内容" alt="" coords="191,312,352,352"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="92,195,134,246,162,273,192,298,199,302,196,307,189,302,158,277,130,249,88,198"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#a7fbec1460a1db6c45b4c57fd0497e5e0" title=" " alt="" coords="400,5,537,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="352,23,385,23,385,28,352,28"/>
+<area shape="rect" id="Node000009" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#a987073404f2d04c10434f830884b9612" title=" " alt="" coords="400,312,537,352"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="352,329,385,329,385,335,352,335"/>
+</map>

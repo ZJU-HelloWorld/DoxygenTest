@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit" kind="class" language="C++" prot="public">
+    <compoundname>hello_world::algorithms::controller::pid::OutLimit</compoundname>
+    <includes refid="pid__opt_8hpp" local="no">pid_opt.hpp</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a3430a294b2f92a382a28d97774d06fa7" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::algorithms::controller::pid::OutLimit::lower_</definition>
+        <argsstring></argsstring>
+        <name>lower_</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::OutLimit::lower_</qualifiedname>
+        <briefdescription>
+<para>输出下限 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="1258" column="9" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="1258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a235d72d9af7f487975cc6595e40cce52" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::algorithms::controller::pid::OutLimit::upper_</definition>
+        <argsstring></argsstring>
+        <name>upper_</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::OutLimit::upper_</qualifiedname>
+        <briefdescription>
+<para>输出上限 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="1259" column="9" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="1259" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1ad2b3c4ee279f22bfda11019999139142" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hello_world::algorithms::controller::pid::OutLimit::OutLimit</definition>
+        <argsstring>(float lower=-0.1f, float upper=0.1f)</argsstring>
+        <name>OutLimit</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::OutLimit::OutLimit</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>lower</declname>
+          <defval>-0.1f</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>upper</declname>
+          <defval>0.1f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="1214" column="3" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="1214" bodyend="1223"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a1407f4408006dc5cd1a22b20bef31e49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>State hello_world::algorithms::controller::pid::OutLimit::setLower</definition>
+        <argsstring>(float lower)</argsstring>
+        <name>setLower</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::OutLimit::setLower</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>lower</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="1224" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="1224" bodyend="1228"/>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9" compoundref="controller__base_8hpp" startline="34">hello_world::algorithms::controller::kStateError</references>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" compoundref="controller__base_8hpp" startline="33">hello_world::algorithms::controller::kStateOk</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a0a2155cd0a909a9f847b7d59c8a2f98a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>State hello_world::algorithms::controller::pid::OutLimit::setUpper</definition>
+        <argsstring>(float upper)</argsstring>
+        <name>setUpper</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::OutLimit::setUpper</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>upper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="1229" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="1229" bodyend="1233"/>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9" compoundref="controller__base_8hpp" startline="34">hello_world::algorithms::controller::kStateError</references>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" compoundref="controller__base_8hpp" startline="33">hello_world::algorithms::controller::kStateOk</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1abe6c996621f6258c50ecc9447e33c4d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" kindref="member">State</ref></type>
+        <definition>State hello_world::algorithms::controller::pid::OutLimit::setParams</definition>
+        <argsstring>(float lower, float upper)</argsstring>
+        <name>setParams</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::OutLimit::setParams</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>lower</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>upper</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="1234" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="1234" bodyend="1239"/>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9" compoundref="controller__base_8hpp" startline="34">hello_world::algorithms::controller::kStateError</references>
+        <references refid="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" compoundref="controller__base_8hpp" startline="33">hello_world::algorithms::controller::kStateOk</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a18ce069e47c786aee47bed954a354c43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::OutLimit::isLegal</definition>
+        <argsstring>()</argsstring>
+        <name>isLegal</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::OutLimit::isLegal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="1241" column="15" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="1241" bodyend="1241"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a958ca6f80deb49af0d3c4d4bed32db42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float hello_world::algorithms::controller::pid::OutLimit::calc</definition>
+        <argsstring>(float out)</argsstring>
+        <name>calc</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::OutLimit::calc</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="1243" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="1243" bodyend="1255"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1accc1fd43233ab6d228f7111eab364c51" compoundref="pid_8cpp" startline="250" endline="294">hello_world::algorithms::controller::pid::MultiNodesPid::cascade_calc</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a180ce707d30cae5f45ec5820d1b2c50c" compoundref="pid_8cpp" startline="296" endline="332">hello_world::algorithms::controller::pid::MultiNodesPid::parallel_calc</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1abfed2dd8851ab68aeda95769feda99a3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::OutLimit::handleIllegalParams</definition>
+        <argsstring>()</argsstring>
+        <name>handleIllegalParams</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::OutLimit::handleIllegalParams</qualifiedname>
+        <briefdescription>
+<para>处理非法参数 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>如果存在非法参数返回true，否则返回false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="1264" column="15" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="1264" bodyend="1274"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HW-Components/algorithms/controller/inc/pid_opt.hpp" line="1211" column="1" bodyfile="HW-Components/algorithms/controller/inc/pid_opt.hpp" bodystart="1212" bodyend="1275"/>
+    <listofallmembers>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a958ca6f80deb49af0d3c4d4bed32db42" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::OutLimit</scope><name>calc</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1abfed2dd8851ab68aeda95769feda99a3" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::OutLimit</scope><name>handleIllegalParams</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a18ce069e47c786aee47bed954a354c43" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::OutLimit</scope><name>isLegal</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a3430a294b2f92a382a28d97774d06fa7" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::OutLimit</scope><name>lower_</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1ad2b3c4ee279f22bfda11019999139142" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::OutLimit</scope><name>OutLimit</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a1407f4408006dc5cd1a22b20bef31e49" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::OutLimit</scope><name>setLower</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1abe6c996621f6258c50ecc9447e33c4d4" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::OutLimit</scope><name>setParams</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a0a2155cd0a909a9f847b7d59c8a2f98a" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::OutLimit</scope><name>setUpper</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a235d72d9af7f487975cc6595e40cce52" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::OutLimit</scope><name>upper_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

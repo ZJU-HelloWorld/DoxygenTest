@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_assert_8hpp" xml:lang="zh">
+<title>HW-Components/tools/inc/assert.hpp 文件参考</title>
+<indexterm><primary>HW-Components/tools/inc/assert.hpp</primary></indexterm>
+<para>
+
+<para>: @history : Version Date Author Note V0.9.0 yyyy-mm-dd &lt;author&gt; 1. </para>
+ 
+</para>
+此图展示该文件直接或间接的被哪些文件引用了:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="assert_8hpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>宏定义    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_assert_8hpp_1ae4c11203ee79b13512356a202f825393">USE_CUSTOM_DEFINE_ASSERT</link>&#160;&#160;&#160;0</para>
+</listitem>
+            <listitem><para>#define <link linkend="_assert_8hpp_1a5969df827ceb603bed14c4106586484a">HW_ASSERT</link>(expr,  format, ...)&#160;&#160;&#160;((void)0U)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>: @history : Version Date Author Note V0.9.0 yyyy-mm-dd &lt;author&gt; 1. </para>
+
+<para>&lt;note&gt;</para>
+
+<para><caution><title>注意</title>
+
+<para>:</para>
+</caution>
+Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved. </para>
+<para>
+在文件 <link linkend="_assert_8hpp_source">assert.hpp</link> 中定义.</para>
+</section>
+<section>
+<title>宏定义说明</title>
+<anchor xml:id="_assert_8hpp_1a5969df827ceb603bed14c4106586484a"/><section>
+    <title>HW_ASSERT</title>
+<indexterm><primary>HW_ASSERT</primary><secondary>assert.hpp</secondary></indexterm>
+<indexterm><primary>assert.hpp</primary><secondary>HW_ASSERT</secondary></indexterm>
+<para><computeroutput>#define HW_ASSERT( expr,  format,  ...)&#160;&#160;&#160;((void)0U)</computeroutput></para><para>
+在文件 <link linkend="_assert_8hpp_source">assert.hpp</link> 第 <link linkend="_assert_8hpp_source_1l00036">36</link> 行定义.</para>
+</section>
+<anchor xml:id="_assert_8hpp_1ae4c11203ee79b13512356a202f825393"/><section>
+    <title>USE_CUSTOM_DEFINE_ASSERT</title>
+<indexterm><primary>USE_CUSTOM_DEFINE_ASSERT</primary><secondary>assert.hpp</secondary></indexterm>
+<indexterm><primary>assert.hpp</primary><secondary>USE_CUSTOM_DEFINE_ASSERT</secondary></indexterm>
+<para><computeroutput>#define USE_CUSTOM_DEFINE_ASSERT&#160;&#160;&#160;0</computeroutput></para><para>
+在文件 <link linkend="_assert_8hpp_source">assert.hpp</link> 第 <link linkend="_assert_8hpp_source_1l00022">22</link> 行定义.</para>
+</section>
+</section>
+</section>

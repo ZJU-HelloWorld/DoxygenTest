@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_08714f63fcc3403b297393de896eeb83" xml:lang="zh">
+<title>HW-Components/devices/referee/inc 目录参考</title>
+<indexterm><primary>HW-Components/devices/referee/inc 目录参考</primary></indexterm>
+inc 的目录依赖关系图<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_08714f63fcc3403b297393de896eeb83_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>文件    </title>
+        <itemizedlist>
+            <listitem><para>文件 <link linkend="_referee_8hpp">referee.hpp</link></para>
+</listitem>
+            <listitem><para>文件 <link linkend="_referee__custom__define_8hpp">referee_custom_define.hpp</link></para>
+</listitem>
+            <listitem><para>文件 <link linkend="_referee__protocol_8hpp">referee_protocol.hpp</link></para>
+</listitem>
+            <listitem><para>文件 <link linkend="_referee__rx__template_8hpp">referee_rx_template.hpp</link></para>
+</listitem>
+            <listitem><para>文件 <link linkend="_referee__ui_8hpp">referee_ui.hpp</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

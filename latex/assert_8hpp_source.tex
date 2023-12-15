@@ -1,0 +1,29 @@
+\doxysection{assert.\+hpp}
+\hypertarget{assert_8hpp_source}{}\label{assert_8hpp_source}\index{HW-\/Components/tools/inc/assert.hpp@{HW-\/Components/tools/inc/assert.hpp}}
+\mbox{\hyperlink{assert_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00015}00015\ \textcolor{comment}{/*\ Define\ to\ prevent\ recursive\ inclusion\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00016}00016\ \textcolor{preprocessor}{\#ifndef\ HW\_COMPONENTS\_TOOLS\_ASSERT\_HPP\_}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00017}00017\ \textcolor{preprocessor}{\#define\ HW\_COMPONENTS\_TOOLS\_ASSERT\_HPP\_}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00019}00019\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00020}00020\ \textcolor{comment}{/*\ Exported\ macro\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00021}00021\ \textcolor{preprocessor}{\#ifndef\ USE\_CUSTOM\_DEFINE\_ASSERT}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00022}\mbox{\hyperlink{assert_8hpp_ae4c11203ee79b13512356a202f825393}{00022}}\ \textcolor{preprocessor}{\#define\ USE\_CUSTOM\_DEFINE\_ASSERT\ 0\ \ }\textcolor{comment}{//<\ 启用自定义\ assert}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00023}00023\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00024}00024\ \textcolor{preprocessor}{\#if\ USE\_CUSTOM\_DEFINE\_ASSERT}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00032}00032\ \textcolor{preprocessor}{\#define\ HW\_ASSERT(expr,\ format,\ ...)\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00033}00033\ \textcolor{preprocessor}{\ \ ((expr)\ ?\ (void)0U\ :\ assert\_failed((uint8\_t*)\_\_FILE\_\_,\ \_\_LINE\_\_))}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00034}00034\ \textcolor{keywordtype}{void}\ assert\_failed(uint8\_t*\ file,\ uint32\_t\ line);}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00035}00035\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00036}\mbox{\hyperlink{assert_8hpp_a5969df827ceb603bed14c4106586484a}{00036}}\ \textcolor{preprocessor}{\#define\ HW\_ASSERT(expr,\ format,\ ...)\ ((void)0U)}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00037}00037\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00038}00038\ \textcolor{comment}{/*\ Exported\ constants\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00039}00039\ \textcolor{comment}{/*\ Exported\ types\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00040}00040\ \textcolor{comment}{/*\ Exported\ variables\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00041}00041\ \textcolor{comment}{/*\ Exported\ function\ prototypes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{assert_8hpp_source_l00043}00043\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ HW\_COMPONENTS\_TOOLS\_ASSERT\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

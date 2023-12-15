@@ -1,0 +1,9 @@
+<map id="hello_world::devices::imu::BMI088::getTemp" name="hello_world::devices::imu::BMI088::getTemp">
+<area shape="rect" id="Node000001" title="获取温度数据" alt="" coords="5,37,167,77"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#ad8bdc7c9eee4bb3c35ee8467df9e49ae" title="加速度计多寄存器数据读取" alt="" coords="215,37,405,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,55,200,55,200,60,167,60"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#abe2be687095fa7b54d31a3a69693b306" title=" " alt="" coords="453,5,611,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="405,41,438,36,439,41,406,46"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#ad1ea4fa147f8bb2da18049c229404f65" title=" " alt="" coords="455,69,609,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="406,68,440,73,440,79,405,74"/>
+</map>

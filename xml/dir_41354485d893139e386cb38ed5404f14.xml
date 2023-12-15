@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="dir_41354485d893139e386cb38ed5404f14" kind="dir">
+    <compoundname>HW-Components/tools</compoundname>
+    <innerdir refid="dir_f13f24004e6ba5642ff6600c044d1e12">HW-Components/tools/inc</innerdir>
+    <innerdir refid="dir_ff1cab154907602e261025506981162c">HW-Components/tools/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HW-Components/tools/"/>
+  </compounddef>
+</doxygen>

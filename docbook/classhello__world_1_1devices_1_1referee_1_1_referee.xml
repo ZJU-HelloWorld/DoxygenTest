@@ -1,0 +1,586 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee" xml:lang="zh">
+<title>hello_world::devices::referee::Referee类 参考</title>
+<indexterm><primary>hello_world::devices::referee::Referee</primary></indexterm>
+<para>
+<computeroutput>#include &lt;referee.hpp&gt;</computeroutput>
+</para>
+hello_world::devices::referee::Referee 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1referee_1_1_referee__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 类型    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1acd515216fe22c7574b6b2b67e1c40564">RxStatus</link> { <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1acd515216fe22c7574b6b2b67e1c40564a822de383deb1f262ad0abca7a64e2dfe">kRxStatusWaitingHeaderSof</link> = 0u
+, <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1acd515216fe22c7574b6b2b67e1c40564a6c7f7c7842560ce2a998a594b11341a4">kRxStatusHeader</link>
+, <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1acd515216fe22c7574b6b2b67e1c40564a2e65fa1f7070a525a766122e485b089b">kRxStatusCmdDataTail</link>
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1aaa5ff496d5c254b8fd821c351bb75325">decodeFrame</link> (const uint8_t *p_frame, const size_t _frame_length)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a823f73d223421b7d025005e99ff08291">processByte</link> (const uint8_t byte)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a7531c733933a65549c9d019e87ee9d0b">restartDecodeFrame</link> (size_t frame_length=<link linkend="_namespacehello__world_1_1devices_1_1referee_1ae04f5c30552f8e2f1caf9d764d1cf075">kRefereeMaxBuffer</link>)</para>
+</listitem>
+            <listitem><para>template&lt;typename T &gt; </para><para>bool <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a5ce1901e90b5565bf0de6c9ce2d48c91">encodeFrame</link> (const T &amp;data, const <link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38a">FrameCmdId</link> <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a294681f5f7c37c22277f11dde7417d40">frame_cmd_id</link>, const uint16_t sub_content_id, const uint16_t receiver_id, uint8_t *p_frame, size_t &amp;frame_length)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a120f8c25d0f147f7d903bc09360ac4b6">CompetitionStatus</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a3bbc683a6d31d0976a8489f182afed99">competition_status_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a120f8c25d0f147f7d903bc09360ac4b6">CompetitionStatus</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa7364394d0ed7fb452ef026617eb224ed">kFrameCmdIdCompetitionStatus</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a4d36900cdf6b715f57e22ddcfe6c9352">kFrameFrequenceCompetitionStatus</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a9f6f0d0423bf00d0f1ae96a17f631ff3">CompetitionResult</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a5d51193f3cf84493e4fb026c04e34364">competition_result_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a9f6f0d0423bf00d0f1ae96a17f631ff3">CompetitionResult</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa342f8915af6e2bbd11b072c59c54468d">kFrameCmdIdCompetitionResult</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a70a886ccc86a628e5774db963cdd0640">kFrameFrequenceCompetitionResult</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1acebf85c611fd2a8989aa2923de0baa19">CompetitionRobotsHp</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a140df5add0411af6be1306384e21d41b">competition_robots_hp_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1acebf85c611fd2a8989aa2923de0baa19">CompetitionRobotsHp</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa8f49f012a4a7959acacc389e423dd88a">kFrameCmdIdCompetitionRobotsHp</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a7fc2a529e3dcf3ff45c6acc996ecbeaa">kFrameFrequenceCompetitionRobotsHp</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a3cf074eed7d2349e72a95f38f7f819b9">TeamEvent</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1aff6da29879d6f71d0f1a56c1390a181d">team_event_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a3cf074eed7d2349e72a95f38f7f819b9">TeamEvent</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa712cec2841def70d53082a44274ed229">kFrameCmdIdTeamEvent</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a11167f9592984c8dc52d561406f1cd77">kFrameFrequenceTeamEvent</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a3c34812d70f84885ecf2efec7bb84729">TeamSupplierAction</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a9cdf9b81c40eff5bcc91e0aee4bee91f">team_supplier_action_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a3c34812d70f84885ecf2efec7bb84729">TeamSupplierAction</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa41a417b13704dcb5b8c24e797f478641">kFrameCmdIdTeamSupplierAction</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a55874ad4bd02127179643c249046c59c">kFrameFrequenceTeamSupplierAction</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a6443a2db7c3e6433e7d6b57b959a8d9d">TeamRefereeWarning</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1ad19a1226012db0cc3db5b9395d10bdd6">team_referee_warning_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a6443a2db7c3e6433e7d6b57b959a8d9d">TeamRefereeWarning</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aacb5b34a786dbc11937bc5d74166f1b2d">kFrameCmdIdTeamRefereeWarning</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a07a8dd6efb9a479f4ffc805864b97daf">kFrameFrequenceTeamRefereeWarning</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a92a78741399a846a27c549afb570e2ff">RobotDartStatus</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a7fea5e8c47165d9c9b540f1e975bd06a">robot_dart_status_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a92a78741399a846a27c549afb570e2ff">RobotDartStatus</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa39939cd9347367b235f155f4af7956b8">kFrameCmdIdRobotDartStatus</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a4423684366bbab0fea1a1dab7130a302">kFrameFrequenceRobotDartStatus</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a96bab3b66b40a6869526f99c89aeb435">RobotPerformance</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a642505b6deedd6e7c6b6c8ee70c24e5e">robot_performance_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a96bab3b66b40a6869526f99c89aeb435">RobotPerformance</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aaec72ea9287faf1dd8a7fb4f9b4cdce49">kFrameCmdIdRobotPerformance</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a0a5c4a962f88b0d5b0354b7c60010432">kFrameFrequenceRobotPerformance</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a6d976c0d386a5c3ffb3a5fa2b73bdac9">RobotPowerHeat</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1af6c0e1dd85e39a3269746507dbc089c6">robot_power_heat_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a6d976c0d386a5c3ffb3a5fa2b73bdac9">RobotPowerHeat</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa1d548d9ee4126df5808565577339e192">kFrameCmdIdRobotPowerHeat</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a1e81fd8f846c8a31831415cca528db21">kFrameFrequenceRobotPowerHeat</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a2d932e9aed81b46dbfad7ad062d1b09e">RobotPosition</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a36debf018cbf51e943898ab28dcf48e7">robot_position_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a2d932e9aed81b46dbfad7ad062d1b09e">RobotPosition</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aae543893a29038a27da8adfbd2ba54fc9">kFrameCmdIdRobotPosition</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835acca90839ecbeac0de1c5e3644c061bea">kFrameFrequenceRobotPosition</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1ac8a0db3ba88eafd84e207c49a903bdb9">RobotBuff</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1aa1141e998033255c57b62425831467ed">robot_buff_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1ac8a0db3ba88eafd84e207c49a903bdb9">RobotBuff</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa925fc9c1e1a2e107d4969975ba20c0e0">kFrameCmdIdRobotBuff</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a5b6592779809f85b3c0531223eda31d4">kFrameFrequenceRobotBuff</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a0e3d5447fec459a923c12ed6576eee91">RobotAerialStatus</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a5cedba9848dbc3bbd3386274b5c333ab">robot_aerial_status_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a0e3d5447fec459a923c12ed6576eee91">RobotAerialStatus</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa19f1f2df3d672ea77e61a46e5097f4d5">kFrameCmdIdRobotAerialStatus</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835ac3cfa7d08b56c38f095922030c272f3d">kFrameFrequenceRobotAerialStatus</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1aa8bf4c00887719c935f5fdf2aad141e2">RobotDamage</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1ad30e851859ec324d0ffd2741a1c7e19d">robot_damage_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1aa8bf4c00887719c935f5fdf2aad141e2">RobotDamage</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa22e913c459302c07ec2237854a238bab">kFrameCmdIdRobotDamage</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835aaefaeff580a7a0e50a9eff7df771d527">kFrameFrequenceRobotDamage</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a807097630d76b7ac448adbdadd1910e8">RobotShootData</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1ac8b68aed6a56ee4e2c7a7c7ef9bcfa4c">robot_shoot_data_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a807097630d76b7ac448adbdadd1910e8">RobotShootData</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa2233eaa30b4cfe033481b4fb93b43adf">kFrameCmdIdRobotShootData</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a02e84b24a4b696fb40d16f7989a982a5">kFrameFrequenceRobotShootData</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a1b32b2da561d6dd786cf9334009cc311">RobotProjectileAllowance</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1afebcf5378a32190605fe35ef7dc14033">robot_projectile_allowance_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a1b32b2da561d6dd786cf9334009cc311">RobotProjectileAllowance</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aaf29e784a9d7ef5bc4f59365e1106d85a">kFrameCmdIdRobotProjectileAllowance</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a3f18fd7bddde7fd514078ca860d9d4c9">kFrameFrequenceRobotProjectileAllowance</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a067d420509eb4fec84dddaa3d03b55b0">RobotRfid</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a2f141df240e890b2286b9f0ee5982469">robot_rfid_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a067d420509eb4fec84dddaa3d03b55b0">RobotRfid</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aab8c1325040183bd20e072c55bc4e5181">kFrameCmdIdRobotRfid</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a1bd1faee148ed7f2acc2bec1f8c026c8">kFrameFrequenceRobotRfid</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a696c2912a6e678f9215ccb1da6975e28">RobotDartClientCommand</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a5ce0f851754908a04814cb0bcaf0f172">robot_dart_client_command_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a696c2912a6e678f9215ccb1da6975e28">RobotDartClientCommand</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa7bd95f7ad33d8c829145c9165a28daa0">kFrameCmdIdRobotDartClientCommand</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835aeb381f93b06411df0b210663d114417e">kFrameFrequenceRobotDartClientCommand</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a07ddd7f4ca1663e96e450eab4d7a4832">RobotsGroundPosition</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a5b736708e0a9613ccac68a8d29c11bbf">robots_ground_position_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a07ddd7f4ca1663e96e450eab4d7a4832">RobotsGroundPosition</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa5464cd0d9f0101bb2ce8db996cbf3cc2">kFrameCmdIdRobotsGroundPosition</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a2a597f8a7720274912d1f13e33376af2">kFrameFrequenceRobotsGroundPosition</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a700c7baf532de981b4740e60b89869db">RobotRadarMarkProgress</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a7cc409e584d764578a62fcce886e03b8">robot_radar_mark_progress_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a700c7baf532de981b4740e60b89869db">RobotRadarMarkProgress</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aace62ba2eddd97d5eabd420f267c117be">kFrameCmdIdRobotRadarMarkProgress</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a84334ce543f57e1f6e40cb64e8167418">kFrameFrequenceRobotRadarMarkProgress</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a58ae0c856b79b302d9adf671228c8c2f">InterCustomCtrllerToRobot</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a541a5328988ee27a441925c135b2abcc">inter_custom_controller_to_robot_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a58ae0c856b79b302d9adf671228c8c2f">InterCustomCtrllerToRobot</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa330630cfe015f7dd4e6b734f194af541">kFrameCmdIdInterCustomCtrllerToRobot</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a04a907840b35c4ad94cb3a393af336a5">kFrameFrequenceInterCustomCtrllerToRobot</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1af1ecc145d86067ae99492637275f77b9">InterClientMapToRobots</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1aa5417b362ca089b8a7bcfab2138af101">inter_client_map_to_robots_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1af1ecc145d86067ae99492637275f77b9">InterClientMapToRobots</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa024ce6b1532475a35c5b5ddd4934c7de">kFrameCmdIdInterClientMapToRobots</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a31ea6d86d28b1f06d0e1d568588c03f8">kFrameFrequenceInterClientMapToRobots</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt; <link linkend="_namespacehello__world_1_1devices_1_1referee_1a8cb11ceb823b96a4c356b0dc8b75a986">InterCtrllerToRobot</link> &gt; <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a496facf073c7e9dd5cc2f26b1f2e0ba1">inter_controller_to_robot_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a8cb11ceb823b96a4c356b0dc8b75a986">InterCtrllerToRobot</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa3302e04471e3a5ffaff6bed0e8546bbb">kFrameCmdIdInterCtrllerToRobot</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835ae77ced50557b0f77fe62b630c64723df">kFrameFrequenceInterCtrllerToRobot</link>)</para>
+</listitem>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_inter_radar_warning">RxPackageInterRadarWarning</link> <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a72226bbfe11ee30e6488ef4857b02e94">inter_radar_warning_</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_inter_radar_warning">RxPackageInterRadarWarning</link>()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 成员函数    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1af9388d8910762162a0d23d0ba44df19a">decodeRxPackage</link> (const uint8_t *p_frame_cmd_data)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1aabc8ab368e15253c1f375e15f625e640">encodeSetCrc</link> (uint8_t *p_frame, size_t frame_length)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 属性    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info">RxPackageInfo</link> *const <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a5481fcc9436ee0e8a96d49cd53b0d72e">kRefereeRxPackagePtrs</link> [<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a757fe050e25f4290f2f9380913a7a851">kRefereeRxPackageNumber</link>]</para>
+</listitem>
+            <listitem><para>size_t <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a67ca4ac28c08e9598b166cc771002fac">last_updated_frame_index_</link> = 0</para>
+</listitem>
+            <listitem><para>struct {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;union {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;&#160;&#160;&#160;struct <emphasis role="strong">__REFEREE_PACKED</emphasis> {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a6486c1d8e85c356ee100d896c56a289e">FrameHeader</link> <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1aa0d4786341aed66abbc51503150475d9">frame_header</link></para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38a">FrameCmdId</link> <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a294681f5f7c37c22277f11dde7417d40">frame_cmd_id</link></para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;&#160;&#160;&#160;} <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a399bb53e944d780e73f500606b904bac">header</link></para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;&#160;&#160;&#160;uint8_t <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1aba465970f4869202d98d88fd164f22c0">frame_raw</link> [<link linkend="_namespacehello__world_1_1devices_1_1referee_1ae04f5c30552f8e2f1caf9d764d1cf075">kRefereeMaxBuffer</link>]</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;} </para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1acd515216fe22c7574b6b2b67e1c40564">RxStatus</link> <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a8b316679a2d73ad91d1354e0026f9b4b">rx_status</link> = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1acd515216fe22c7574b6b2b67e1c40564a822de383deb1f262ad0abca7a64e2dfe">kRxStatusWaitingHeaderSof</link></para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;size_t <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1aa9a010772a7afefb48266b2a7a1b3e24">frame_data_index</link> = 0</para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;size_t <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a1b68da750a70bcbec327decd02302b8b">frame_expect_length</link> = 0</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a529c88272742c7f88f22a1a059538ff2">rx_info_</link></para>
+</listitem>
+            <listitem><para>union {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;struct <emphasis role="strong">__REFEREE_PACKED</emphasis> {</para>
+        <itemizedlist>
+            <listitem><para>&#160;&#160;&#160;&#160;&#160;&#160;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a6486c1d8e85c356ee100d896c56a289e">FrameHeader</link> <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1aa0d4786341aed66abbc51503150475d9">frame_header</link></para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;&#160;&#160;&#160;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38a">FrameCmdId</link> <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a294681f5f7c37c22277f11dde7417d40">frame_cmd_id</link></para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;&#160;&#160;&#160;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a10ff64448d7c5d3f3a1bc91bf65e7ba2">InterFrameHeader</link> <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a4a3725f356cfb07ddb7d6f780ebcbdef">inter_frame_header</link></para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;} <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a178b713060a7e2bbafa269ae31a3f215">header</link></para>
+</listitem>
+            <listitem><para>&#160;&#160;&#160;uint8_t <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1aba465970f4869202d98d88fd164f22c0">frame_raw</link> [<link linkend="_namespacehello__world_1_1devices_1_1referee_1ae04f5c30552f8e2f1caf9d764d1cf075">kRefereeMaxBuffer</link>]</para>
+</listitem>
+        </itemizedlist>
+</listitem>
+            <listitem><para>} <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a18e2e733ee7fb54dcaed7e3225c6124f">tx_info_</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>静态 Private 属性    </title>
+        <itemizedlist>
+            <listitem><para>static const size_t <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a757fe050e25f4290f2f9380913a7a851">kRefereeRxPackageNumber</link> = 23</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+<para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00043">43</link> 行定义.</para>
+</section>
+<section>
+<title>成员枚举类型说明</title>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1acd515216fe22c7574b6b2b67e1c40564"/><section>
+    <title>RxStatus</title>
+<indexterm><primary>RxStatus</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>RxStatus</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1acd515216fe22c7574b6b2b67e1c40564">hello_world::devices::referee::Referee::RxStatus</link></computeroutput></para><informaltable frame="all">
+<title>枚举值</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>kRxStatusWaitingHeaderSof</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>kRxStatusWaitingHeaderSof</secondary></indexterm>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1acd515216fe22c7574b6b2b67e1c40564a822de383deb1f262ad0abca7a64e2dfe"/>kRxStatusWaitingHeaderSof</entry><entry></entry></row><row><entry><indexterm><primary>kRxStatusHeader</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>kRxStatusHeader</secondary></indexterm>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1acd515216fe22c7574b6b2b67e1c40564a6c7f7c7842560ce2a998a594b11341a4"/>kRxStatusHeader</entry><entry></entry></row><row><entry><indexterm><primary>kRxStatusCmdDataTail</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>kRxStatusCmdDataTail</secondary></indexterm>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1acd515216fe22c7574b6b2b67e1c40564a2e65fa1f7070a525a766122e485b089b"/>kRxStatusCmdDataTail</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00046">46</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1aaa5ff496d5c254b8fd821c351bb75325"/><section>
+    <title>decodeFrame()</title>
+<indexterm><primary>decodeFrame</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>decodeFrame</secondary></indexterm>
+<para><computeroutput>bool hello_world::devices::referee::Referee::decodeFrame (const uint8_t * p_frame, const size_t _frame_length)</computeroutput></para><para>
+在文件 <link linkend="_referee_8cpp_source">referee.cpp</link> 第 <link linkend="_referee_8cpp_source_1l00041">41</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1referee_1_1_referee_aaa5ff496d5c254b8fd821c351bb75325_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1af9388d8910762162a0d23d0ba44df19a"/><section>
+    <title>decodeRxPackage()</title>
+<indexterm><primary>decodeRxPackage</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>decodeRxPackage</secondary></indexterm>
+<para><computeroutput>bool hello_world::devices::referee::Referee::decodeRxPackage (const uint8_t * p_frame_cmd_data)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_referee_8cpp_source">referee.cpp</link> 第 <link linkend="_referee_8cpp_source_1l00063">63</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1referee_1_1_referee_af9388d8910762162a0d23d0ba44df19a_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1referee_1_1_referee_af9388d8910762162a0d23d0ba44df19a_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a5ce1901e90b5565bf0de6c9ce2d48c91"/><section>
+    <title>encodeFrame()</title>
+<indexterm><primary>encodeFrame</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>encodeFrame</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>bool hello_world::devices::referee::Referee::encodeFrame (const T &amp; data, const <link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38a">FrameCmdId</link> frame_cmd_id, const uint16_t sub_content_id, const uint16_t receiver_id, uint8_t * p_frame, size_t &amp; frame_length)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00123">123</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1referee_1_1_referee_a5ce1901e90b5565bf0de6c9ce2d48c91_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1aabc8ab368e15253c1f375e15f625e640"/><section>
+    <title>encodeSetCrc()</title>
+<indexterm><primary>encodeSetCrc</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>encodeSetCrc</secondary></indexterm>
+<para><computeroutput>bool hello_world::devices::referee::Referee::encodeSetCrc (uint8_t * p_frame, size_t frame_length)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_referee_8cpp_source">referee.cpp</link> 第 <link linkend="_referee_8cpp_source_1l00120">120</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1referee_1_1_referee_aabc8ab368e15253c1f375e15f625e640_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1referee_1_1_referee_aabc8ab368e15253c1f375e15f625e640_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a823f73d223421b7d025005e99ff08291"/><section>
+    <title>processByte()</title>
+<indexterm><primary>processByte</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>processByte</secondary></indexterm>
+<para><computeroutput>bool hello_world::devices::referee::Referee::processByte (const uint8_t byte)</computeroutput></para><para>
+在文件 <link linkend="_referee_8cpp_source">referee.cpp</link> 第 <link linkend="_referee_8cpp_source_1l00077">77</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1referee_1_1_referee_a823f73d223421b7d025005e99ff08291_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1referee_1_1_referee_a823f73d223421b7d025005e99ff08291_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a7531c733933a65549c9d019e87ee9d0b"/><section>
+    <title>restartDecodeFrame()</title>
+<indexterm><primary>restartDecodeFrame</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>restartDecodeFrame</secondary></indexterm>
+<para><computeroutput>void hello_world::devices::referee::Referee::restartDecodeFrame (size_t frame_length = <computeroutput><link linkend="_namespacehello__world_1_1devices_1_1referee_1ae04f5c30552f8e2f1caf9d764d1cf075">kRefereeMaxBuffer</link></computeroutput>
+)</computeroutput></para><para>
+在文件 <link linkend="_referee_8cpp_source">referee.cpp</link> 第 <link linkend="_referee_8cpp_source_1l00055">55</link> 行定义.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1referee_1_1_referee_a7531c733933a65549c9d019e87ee9d0b_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a5d51193f3cf84493e4fb026c04e34364"/><section>
+    <title>competition_result_</title>
+<indexterm><primary>competition_result_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>competition_result_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a9f6f0d0423bf00d0f1ae96a17f631ff3">CompetitionResult</link>&gt; hello_world::devices::referee::Referee::competition_result_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a9f6f0d0423bf00d0f1ae96a17f631ff3">CompetitionResult</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa342f8915af6e2bbd11b072c59c54468d">kFrameCmdIdCompetitionResult</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a70a886ccc86a628e5774db963cdd0640">kFrameFrequenceCompetitionResult</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00053">53</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a140df5add0411af6be1306384e21d41b"/><section>
+    <title>competition_robots_hp_</title>
+<indexterm><primary>competition_robots_hp_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>competition_robots_hp_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1acebf85c611fd2a8989aa2923de0baa19">CompetitionRobotsHp</link>&gt; hello_world::devices::referee::Referee::competition_robots_hp_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1acebf85c611fd2a8989aa2923de0baa19">CompetitionRobotsHp</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa8f49f012a4a7959acacc389e423dd88a">kFrameCmdIdCompetitionRobotsHp</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a7fc2a529e3dcf3ff45c6acc996ecbeaa">kFrameFrequenceCompetitionRobotsHp</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00054">54</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a3bbc683a6d31d0976a8489f182afed99"/><section>
+    <title>competition_status_</title>
+<indexterm><primary>competition_status_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>competition_status_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a120f8c25d0f147f7d903bc09360ac4b6">CompetitionStatus</link>&gt; hello_world::devices::referee::Referee::competition_status_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a120f8c25d0f147f7d903bc09360ac4b6">CompetitionStatus</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa7364394d0ed7fb452ef026617eb224ed">kFrameCmdIdCompetitionStatus</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a4d36900cdf6b715f57e22ddcfe6c9352">kFrameFrequenceCompetitionStatus</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00052">52</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a294681f5f7c37c22277f11dde7417d40"/><section>
+    <title>frame_cmd_id</title>
+<indexterm><primary>frame_cmd_id</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>frame_cmd_id</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38a">FrameCmdId</link> hello_world::devices::referee::Referee::frame_cmd_id</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00099">99</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1aa9a010772a7afefb48266b2a7a1b3e24"/><section>
+    <title>frame_data_index</title>
+<indexterm><primary>frame_data_index</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>frame_data_index</secondary></indexterm>
+<para><computeroutput>size_t hello_world::devices::referee::Referee::frame_data_index = 0</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00105">105</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a1b68da750a70bcbec327decd02302b8b"/><section>
+    <title>frame_expect_length</title>
+<indexterm><primary>frame_expect_length</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>frame_expect_length</secondary></indexterm>
+<para><computeroutput>size_t hello_world::devices::referee::Referee::frame_expect_length = 0</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00106">106</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1aa0d4786341aed66abbc51503150475d9"/><section>
+    <title>frame_header</title>
+<indexterm><primary>frame_header</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>frame_header</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1devices_1_1referee_1a6486c1d8e85c356ee100d896c56a289e">FrameHeader</link> hello_world::devices::referee::Referee::frame_header</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00098">98</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1aba465970f4869202d98d88fd164f22c0"/><section>
+    <title>frame_raw</title>
+<indexterm><primary>frame_raw</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>frame_raw</secondary></indexterm>
+<para><computeroutput>uint8_t hello_world::devices::referee::Referee::frame_raw[<link linkend="_namespacehello__world_1_1devices_1_1referee_1ae04f5c30552f8e2f1caf9d764d1cf075">kRefereeMaxBuffer</link>]</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00101">101</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a399bb53e944d780e73f500606b904bac"/><section>
+    <title>[struct]<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>header</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>header</secondary></indexterm>
+<para><computeroutput>struct  { ... } ::__REFEREE_PACKED hello_world::devices::referee::Referee::header</computeroutput></para></section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a178b713060a7e2bbafa269ae31a3f215"/><section>
+    <title>[struct]<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>header</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>header</secondary></indexterm>
+<para><computeroutput>struct  { ... } ::__REFEREE_PACKED hello_world::devices::referee::Referee::header</computeroutput></para></section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1aa5417b362ca089b8a7bcfab2138af101"/><section>
+    <title>inter_client_map_to_robots_</title>
+<indexterm><primary>inter_client_map_to_robots_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>inter_client_map_to_robots_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1af1ecc145d86067ae99492637275f77b9">InterClientMapToRobots</link>&gt; hello_world::devices::referee::Referee::inter_client_map_to_robots_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1af1ecc145d86067ae99492637275f77b9">InterClientMapToRobots</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa024ce6b1532475a35c5b5ddd4934c7de">kFrameCmdIdInterClientMapToRobots</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a31ea6d86d28b1f06d0e1d568588c03f8">kFrameFrequenceInterClientMapToRobots</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00072">72</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a496facf073c7e9dd5cc2f26b1f2e0ba1"/><section>
+    <title>inter_controller_to_robot_</title>
+<indexterm><primary>inter_controller_to_robot_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>inter_controller_to_robot_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a8cb11ceb823b96a4c356b0dc8b75a986">InterCtrllerToRobot</link>&gt; hello_world::devices::referee::Referee::inter_controller_to_robot_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a8cb11ceb823b96a4c356b0dc8b75a986">InterCtrllerToRobot</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa3302e04471e3a5ffaff6bed0e8546bbb">kFrameCmdIdInterCtrllerToRobot</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835ae77ced50557b0f77fe62b630c64723df">kFrameFrequenceInterCtrllerToRobot</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00073">73</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a541a5328988ee27a441925c135b2abcc"/><section>
+    <title>inter_custom_controller_to_robot_</title>
+<indexterm><primary>inter_custom_controller_to_robot_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>inter_custom_controller_to_robot_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a58ae0c856b79b302d9adf671228c8c2f">InterCustomCtrllerToRobot</link>&gt; hello_world::devices::referee::Referee::inter_custom_controller_to_robot_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a58ae0c856b79b302d9adf671228c8c2f">InterCustomCtrllerToRobot</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa330630cfe015f7dd4e6b734f194af541">kFrameCmdIdInterCustomCtrllerToRobot</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a04a907840b35c4ad94cb3a393af336a5">kFrameFrequenceInterCustomCtrllerToRobot</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00071">71</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a4a3725f356cfb07ddb7d6f780ebcbdef"/><section>
+    <title>inter_frame_header</title>
+<indexterm><primary>inter_frame_header</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>inter_frame_header</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1devices_1_1referee_1a10ff64448d7c5d3f3a1bc91bf65e7ba2">InterFrameHeader</link> hello_world::devices::referee::Referee::inter_frame_header</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00113">113</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a72226bbfe11ee30e6488ef4857b02e94"/><section>
+    <title>inter_radar_warning_</title>
+<indexterm><primary>inter_radar_warning_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>inter_radar_warning_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_inter_radar_warning">RxPackageInterRadarWarning</link> hello_world::devices::referee::Referee::inter_radar_warning_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_inter_radar_warning">RxPackageInterRadarWarning</link>()</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00074">74</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a757fe050e25f4290f2f9380913a7a851"/><section>
+    <title>kRefereeRxPackageNumber</title>
+<indexterm><primary>kRefereeRxPackageNumber</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>kRefereeRxPackageNumber</secondary></indexterm>
+<para><computeroutput>const size_t hello_world::devices::referee::Referee::kRefereeRxPackageNumber = 23<computeroutput>[static]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00083">83</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a5481fcc9436ee0e8a96d49cd53b0d72e"/><section>
+    <title>kRefereeRxPackagePtrs</title>
+<indexterm><primary>kRefereeRxPackagePtrs</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>kRefereeRxPackagePtrs</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info">RxPackageInfo</link>* const hello_world::devices::referee::Referee::kRefereeRxPackagePtrs[<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a757fe050e25f4290f2f9380913a7a851">kRefereeRxPackageNumber</link>]<computeroutput>[private]</computeroutput></computeroutput></para><emphasis role="strong">初始值:</emphasis><programlisting linenumbering="unnumbered">=&#32;{
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a3bbc683a6d31d0976a8489f182afed99">competition_status_</link>,&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a5d51193f3cf84493e4fb026c04e34364">competition_result_</link>,&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a140df5add0411af6be1306384e21d41b">competition_robots_hp_</link>,&#32;&#32;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1aff6da29879d6f71d0f1a56c1390a181d">team_event_</link>,&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a9cdf9b81c40eff5bcc91e0aee4bee91f">team_supplier_action_</link>,&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1ad19a1226012db0cc3db5b9395d10bdd6">team_referee_warning_</link>,&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a7fea5e8c47165d9c9b540f1e975bd06a">robot_dart_status_</link>,&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a642505b6deedd6e7c6b6c8ee70c24e5e">robot_performance_</link>,&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1af6c0e1dd85e39a3269746507dbc089c6">robot_power_heat_</link>,&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a36debf018cbf51e943898ab28dcf48e7">robot_position_</link>,&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1aa1141e998033255c57b62425831467ed">robot_buff_</link>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a5cedba9848dbc3bbd3386274b5c333ab">robot_aerial_status_</link>,&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1ad30e851859ec324d0ffd2741a1c7e19d">robot_damage_</link>,&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1ac8b68aed6a56ee4e2c7a7c7ef9bcfa4c">robot_shoot_data_</link>,&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1afebcf5378a32190605fe35ef7dc14033">robot_projectile_allowance_</link>,&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a2f141df240e890b2286b9f0ee5982469">robot_rfid_</link>,
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a5ce0f851754908a04814cb0bcaf0f172">robot_dart_client_command_</link>,&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a5b736708e0a9613ccac68a8d29c11bbf">robots_ground_position_</link>,&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a7cc409e584d764578a62fcce886e03b8">robot_radar_mark_progress_</link>,&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a541a5328988ee27a441925c135b2abcc">inter_custom_controller_to_robot_</link>,&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1aa5417b362ca089b8a7bcfab2138af101">inter_client_map_to_robots_</link>,&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a496facf073c7e9dd5cc2f26b1f2e0ba1">inter_controller_to_robot_</link>,&#32;&#32;
+&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1a72226bbfe11ee30e6488ef4857b02e94">inter_radar_warning_</link>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+&#32;&#32;&#32;&#32;}
+</programlisting><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00084">84</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a67ca4ac28c08e9598b166cc771002fac"/><section>
+    <title>last_updated_frame_index_</title>
+<indexterm><primary>last_updated_frame_index_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>last_updated_frame_index_</secondary></indexterm>
+<para><computeroutput>size_t hello_world::devices::referee::Referee::last_updated_frame_index_ = 0<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00093">93</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a5cedba9848dbc3bbd3386274b5c333ab"/><section>
+    <title>robot_aerial_status_</title>
+<indexterm><primary>robot_aerial_status_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>robot_aerial_status_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a0e3d5447fec459a923c12ed6576eee91">RobotAerialStatus</link>&gt; hello_world::devices::referee::Referee::robot_aerial_status_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a0e3d5447fec459a923c12ed6576eee91">RobotAerialStatus</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa19f1f2df3d672ea77e61a46e5097f4d5">kFrameCmdIdRobotAerialStatus</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835ac3cfa7d08b56c38f095922030c272f3d">kFrameFrequenceRobotAerialStatus</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00063">63</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1aa1141e998033255c57b62425831467ed"/><section>
+    <title>robot_buff_</title>
+<indexterm><primary>robot_buff_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>robot_buff_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1ac8a0db3ba88eafd84e207c49a903bdb9">RobotBuff</link>&gt; hello_world::devices::referee::Referee::robot_buff_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1ac8a0db3ba88eafd84e207c49a903bdb9">RobotBuff</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa925fc9c1e1a2e107d4969975ba20c0e0">kFrameCmdIdRobotBuff</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a5b6592779809f85b3c0531223eda31d4">kFrameFrequenceRobotBuff</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00062">62</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1ad30e851859ec324d0ffd2741a1c7e19d"/><section>
+    <title>robot_damage_</title>
+<indexterm><primary>robot_damage_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>robot_damage_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1aa8bf4c00887719c935f5fdf2aad141e2">RobotDamage</link>&gt; hello_world::devices::referee::Referee::robot_damage_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1aa8bf4c00887719c935f5fdf2aad141e2">RobotDamage</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa22e913c459302c07ec2237854a238bab">kFrameCmdIdRobotDamage</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835aaefaeff580a7a0e50a9eff7df771d527">kFrameFrequenceRobotDamage</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00064">64</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a5ce0f851754908a04814cb0bcaf0f172"/><section>
+    <title>robot_dart_client_command_</title>
+<indexterm><primary>robot_dart_client_command_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>robot_dart_client_command_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a696c2912a6e678f9215ccb1da6975e28">RobotDartClientCommand</link>&gt; hello_world::devices::referee::Referee::robot_dart_client_command_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a696c2912a6e678f9215ccb1da6975e28">RobotDartClientCommand</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa7bd95f7ad33d8c829145c9165a28daa0">kFrameCmdIdRobotDartClientCommand</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835aeb381f93b06411df0b210663d114417e">kFrameFrequenceRobotDartClientCommand</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00068">68</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a7fea5e8c47165d9c9b540f1e975bd06a"/><section>
+    <title>robot_dart_status_</title>
+<indexterm><primary>robot_dart_status_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>robot_dart_status_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a92a78741399a846a27c549afb570e2ff">RobotDartStatus</link>&gt; hello_world::devices::referee::Referee::robot_dart_status_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a92a78741399a846a27c549afb570e2ff">RobotDartStatus</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa39939cd9347367b235f155f4af7956b8">kFrameCmdIdRobotDartStatus</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a4423684366bbab0fea1a1dab7130a302">kFrameFrequenceRobotDartStatus</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00058">58</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a642505b6deedd6e7c6b6c8ee70c24e5e"/><section>
+    <title>robot_performance_</title>
+<indexterm><primary>robot_performance_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>robot_performance_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a96bab3b66b40a6869526f99c89aeb435">RobotPerformance</link>&gt; hello_world::devices::referee::Referee::robot_performance_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a96bab3b66b40a6869526f99c89aeb435">RobotPerformance</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aaec72ea9287faf1dd8a7fb4f9b4cdce49">kFrameCmdIdRobotPerformance</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a0a5c4a962f88b0d5b0354b7c60010432">kFrameFrequenceRobotPerformance</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00059">59</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a36debf018cbf51e943898ab28dcf48e7"/><section>
+    <title>robot_position_</title>
+<indexterm><primary>robot_position_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>robot_position_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a2d932e9aed81b46dbfad7ad062d1b09e">RobotPosition</link>&gt; hello_world::devices::referee::Referee::robot_position_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a2d932e9aed81b46dbfad7ad062d1b09e">RobotPosition</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aae543893a29038a27da8adfbd2ba54fc9">kFrameCmdIdRobotPosition</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835acca90839ecbeac0de1c5e3644c061bea">kFrameFrequenceRobotPosition</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00061">61</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1af6c0e1dd85e39a3269746507dbc089c6"/><section>
+    <title>robot_power_heat_</title>
+<indexterm><primary>robot_power_heat_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>robot_power_heat_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a6d976c0d386a5c3ffb3a5fa2b73bdac9">RobotPowerHeat</link>&gt; hello_world::devices::referee::Referee::robot_power_heat_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a6d976c0d386a5c3ffb3a5fa2b73bdac9">RobotPowerHeat</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa1d548d9ee4126df5808565577339e192">kFrameCmdIdRobotPowerHeat</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a1e81fd8f846c8a31831415cca528db21">kFrameFrequenceRobotPowerHeat</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00060">60</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1afebcf5378a32190605fe35ef7dc14033"/><section>
+    <title>robot_projectile_allowance_</title>
+<indexterm><primary>robot_projectile_allowance_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>robot_projectile_allowance_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a1b32b2da561d6dd786cf9334009cc311">RobotProjectileAllowance</link>&gt; hello_world::devices::referee::Referee::robot_projectile_allowance_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a1b32b2da561d6dd786cf9334009cc311">RobotProjectileAllowance</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aaf29e784a9d7ef5bc4f59365e1106d85a">kFrameCmdIdRobotProjectileAllowance</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a3f18fd7bddde7fd514078ca860d9d4c9">kFrameFrequenceRobotProjectileAllowance</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00066">66</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a7cc409e584d764578a62fcce886e03b8"/><section>
+    <title>robot_radar_mark_progress_</title>
+<indexterm><primary>robot_radar_mark_progress_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>robot_radar_mark_progress_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a700c7baf532de981b4740e60b89869db">RobotRadarMarkProgress</link>&gt; hello_world::devices::referee::Referee::robot_radar_mark_progress_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a700c7baf532de981b4740e60b89869db">RobotRadarMarkProgress</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aace62ba2eddd97d5eabd420f267c117be">kFrameCmdIdRobotRadarMarkProgress</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a84334ce543f57e1f6e40cb64e8167418">kFrameFrequenceRobotRadarMarkProgress</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00070">70</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a2f141df240e890b2286b9f0ee5982469"/><section>
+    <title>robot_rfid_</title>
+<indexterm><primary>robot_rfid_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>robot_rfid_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a067d420509eb4fec84dddaa3d03b55b0">RobotRfid</link>&gt; hello_world::devices::referee::Referee::robot_rfid_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a067d420509eb4fec84dddaa3d03b55b0">RobotRfid</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aab8c1325040183bd20e072c55bc4e5181">kFrameCmdIdRobotRfid</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a1bd1faee148ed7f2acc2bec1f8c026c8">kFrameFrequenceRobotRfid</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00067">67</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1ac8b68aed6a56ee4e2c7a7c7ef9bcfa4c"/><section>
+    <title>robot_shoot_data_</title>
+<indexterm><primary>robot_shoot_data_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>robot_shoot_data_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a807097630d76b7ac448adbdadd1910e8">RobotShootData</link>&gt; hello_world::devices::referee::Referee::robot_shoot_data_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a807097630d76b7ac448adbdadd1910e8">RobotShootData</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa2233eaa30b4cfe033481b4fb93b43adf">kFrameCmdIdRobotShootData</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a02e84b24a4b696fb40d16f7989a982a5">kFrameFrequenceRobotShootData</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00065">65</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a5b736708e0a9613ccac68a8d29c11bbf"/><section>
+    <title>robots_ground_position_</title>
+<indexterm><primary>robots_ground_position_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>robots_ground_position_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a07ddd7f4ca1663e96e450eab4d7a4832">RobotsGroundPosition</link>&gt; hello_world::devices::referee::Referee::robots_ground_position_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a07ddd7f4ca1663e96e450eab4d7a4832">RobotsGroundPosition</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa5464cd0d9f0101bb2ce8db996cbf3cc2">kFrameCmdIdRobotsGroundPosition</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a2a597f8a7720274912d1f13e33376af2">kFrameFrequenceRobotsGroundPosition</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00069">69</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a529c88272742c7f88f22a1a059538ff2"/><section>
+    <title>[struct]</title>
+<indexterm><primary>rx_info_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>rx_info_</secondary></indexterm>
+<para><computeroutput>struct  { ... }  hello_world::devices::referee::Referee::rx_info_<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a8b316679a2d73ad91d1354e0026f9b4b"/><section>
+    <title>rx_status</title>
+<indexterm><primary>rx_status</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>rx_status</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1acd515216fe22c7574b6b2b67e1c40564">RxStatus</link> hello_world::devices::referee::Referee::rx_status = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_referee_1acd515216fe22c7574b6b2b67e1c40564a822de383deb1f262ad0abca7a64e2dfe">kRxStatusWaitingHeaderSof</link></computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00104">104</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1aff6da29879d6f71d0f1a56c1390a181d"/><section>
+    <title>team_event_</title>
+<indexterm><primary>team_event_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>team_event_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a3cf074eed7d2349e72a95f38f7f819b9">TeamEvent</link>&gt; hello_world::devices::referee::Referee::team_event_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a3cf074eed7d2349e72a95f38f7f819b9">TeamEvent</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa712cec2841def70d53082a44274ed229">kFrameCmdIdTeamEvent</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a11167f9592984c8dc52d561406f1cd77">kFrameFrequenceTeamEvent</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00055">55</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1ad19a1226012db0cc3db5b9395d10bdd6"/><section>
+    <title>team_referee_warning_</title>
+<indexterm><primary>team_referee_warning_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>team_referee_warning_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a6443a2db7c3e6433e7d6b57b959a8d9d">TeamRefereeWarning</link>&gt; hello_world::devices::referee::Referee::team_referee_warning_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a6443a2db7c3e6433e7d6b57b959a8d9d">TeamRefereeWarning</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aacb5b34a786dbc11937bc5d74166f1b2d">kFrameCmdIdTeamRefereeWarning</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a07a8dd6efb9a479f4ffc805864b97daf">kFrameFrequenceTeamRefereeWarning</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00057">57</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a9cdf9b81c40eff5bcc91e0aee4bee91f"/><section>
+    <title>team_supplier_action_</title>
+<indexterm><primary>team_supplier_action_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>team_supplier_action_</secondary></indexterm>
+<para><computeroutput><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a3c34812d70f84885ecf2efec7bb84729">TeamSupplierAction</link>&gt; hello_world::devices::referee::Referee::team_supplier_action_ = <link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&lt;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a3c34812d70f84885ecf2efec7bb84729">TeamSupplierAction</link>&gt;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa41a417b13704dcb5b8c24e797f478641">kFrameCmdIdTeamSupplierAction</link>, <link linkend="_namespacehello__world_1_1devices_1_1referee_1aab0bc9c3de95b1bd435ec6a11eeed835a55874ad4bd02127179643c249046c59c">kFrameFrequenceTeamSupplierAction</link>)</computeroutput></para><para>
+在文件 <link linkend="_referee_8hpp_source">referee.hpp</link> 第 <link linkend="_referee_8hpp_source_1l00056">56</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1referee_1_1_referee_1a18e2e733ee7fb54dcaed7e3225c6124f"/><section>
+    <title>[union]</title>
+<indexterm><primary>tx_info_</primary><secondary>hello_world::devices::referee::Referee</secondary></indexterm>
+<indexterm><primary>hello_world::devices::referee::Referee</primary><secondary>tx_info_</secondary></indexterm>
+<para><computeroutput>union  { ... }  hello_world::devices::referee::Referee::tx_info_<computeroutput>[private]</computeroutput></computeroutput></para></section>
+</section>
+</section>

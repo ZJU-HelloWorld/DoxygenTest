@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_motor___a1_8hpp_source" xml:lang="zh">
+<title>motor_A1.hpp</title>
+<indexterm><primary>HW-Components/devices/motor/inc/motor_A1.hpp</primary></indexterm>
+浏览该文件的文档.<programlisting linenumbering="unnumbered"><anchor xml:id="_motor___a1_8hpp_source_1l00001"/>00001 
+<anchor xml:id="_motor___a1_8hpp_source_1l00015"/>00015 <emphasis role="comment">/*&#32;Define&#32;to&#32;prevent&#32;recursive&#32;inclusion&#32;-------------------------------------*/</emphasis>
+<anchor xml:id="_motor___a1_8hpp_source_1l00016"/>00016 <emphasis role="preprocessor">#ifndef&#32;HW_COMPONENTS_DEVICES_MOTOR_MOTOR_A1_HPP_</emphasis>
+<anchor xml:id="_motor___a1_8hpp_source_1l00017"/>00017 <emphasis role="preprocessor">#define&#32;HW_COMPONENTS_DEVICES_MOTOR_MOTOR_A1_HPP_</emphasis>
+<anchor xml:id="_motor___a1_8hpp_source_1l00018"/>00018 
+<anchor xml:id="_motor___a1_8hpp_source_1l00019"/>00019 <emphasis role="comment">/*&#32;Includes&#32;------------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_motor___a1_8hpp_source_1l00020"/>00020 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_motor__base_8hpp">motor_base.hpp</link>&quot;</emphasis>
+<anchor xml:id="_motor___a1_8hpp_source_1l00021"/>00021 
+<anchor xml:id="_motor___a1_8hpp_source_1l00022"/>00022 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacehello__world">hello_world</link>
+<anchor xml:id="_motor___a1_8hpp_source_1l00023"/>00023 {
+<anchor xml:id="_motor___a1_8hpp_source_1l00024"/>00024 <emphasis role="keyword">namespace&#32;</emphasis>devices
+<anchor xml:id="_motor___a1_8hpp_source_1l00025"/>00025 {
+<anchor xml:id="_motor___a1_8hpp_source_1l00026"/>00026 <emphasis role="keyword">namespace&#32;</emphasis>motor
+<anchor xml:id="_motor___a1_8hpp_source_1l00027"/>00027 {
+<anchor xml:id="_motor___a1_8hpp_source_1l00028"/>00028 <emphasis role="comment">/*&#32;Exported&#32;macro&#32;------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_motor___a1_8hpp_source_1l00029"/>00029 <emphasis role="comment">/*&#32;Exported&#32;constants&#32;--------------------------------------------------------*/</emphasis>
+<anchor xml:id="_motor___a1_8hpp_source_1l00030"/>00030 <emphasis role="comment">/*&#32;Exported&#32;types&#32;------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_motor___a1_8hpp_source_1l00031"/>00031 
+<anchor xml:id="_motor___a1_8hpp_source_1l00032"/><link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1">00032</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1">A1</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_classhello__world_1_1devices_1_1motor_1_1_motor">Motor</link>
+<anchor xml:id="_motor___a1_8hpp_source_1l00033"/>00033 {
+<anchor xml:id="_motor___a1_8hpp_source_1l00034"/>00034 &#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_motor___a1_8hpp_source_1l00035"/>00035 &#32;&#32;<emphasis role="keyword">explicit</emphasis>&#32;<link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1">A1</link>(
+<anchor xml:id="_motor___a1_8hpp_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;uint8_t&#32;<emphasis role="keywordtype">id</emphasis>,&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_structhello__world_1_1devices_1_1motor_1_1_optional_params">OptionalParams</link>&#32;&amp;optinal_params&#32;=&#32;<link linkend="_structhello__world_1_1devices_1_1motor_1_1_optional_params">OptionalParams</link>());
+<anchor xml:id="_motor___a1_8hpp_source_1l00037"/><link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1_1a6354e7c721bb68bccfd3f2074271c691">00037</link> &#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1_1a6354e7c721bb68bccfd3f2074271c691">~A1</link>(){};
+<anchor xml:id="_motor___a1_8hpp_source_1l00038"/>00038 
+<anchor xml:id="_motor___a1_8hpp_source_1l00039"/>00039 &#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380c">State</link>&#32;<link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1_1a2033dda3651a1a97182e23fb8ccceae3">encode</link>(
+<anchor xml:id="_motor___a1_8hpp_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;uint8_t&#32;tx_data[8],&#32;uint32_t&#32;tx_msg_std_id)&#32;<emphasis role="keyword">const&#32;override</emphasis>;
+<anchor xml:id="_motor___a1_8hpp_source_1l00041"/>00041 
+<anchor xml:id="_motor___a1_8hpp_source_1l00042"/>00042 &#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_namespacehello__world_1_1devices_1_1motor_1ae5d33e6b7fa4db1777f88ab1faf4380c">State</link>&#32;<link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1_1a1dc9df605f9df5fff3b2bc8ed4a63ff8">decode</link>(
+<anchor xml:id="_motor___a1_8hpp_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;uint8_t&#32;rx_data[8],&#32;uint32_t&#32;rx_msg_std_id)&#32;<emphasis role="keyword">override</emphasis>;
+<anchor xml:id="_motor___a1_8hpp_source_1l00044"/>00044 
+<anchor xml:id="_motor___a1_8hpp_source_1l00045"/><link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1_1a29abb54bd838c74882800af7ae8b049c">00045</link> &#32;&#32;uint8_t&#32;<link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1_1a29abb54bd838c74882800af7ae8b049c">temp</link>(<emphasis role="keywordtype">void</emphasis>)<emphasis role="keyword">&#32;const&#32;</emphasis>{&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1_1afad471979520f9924a7cbe1fc316ee0f">temp_</link>;&#32;}
+<anchor xml:id="_motor___a1_8hpp_source_1l00046"/>00046 
+<anchor xml:id="_motor___a1_8hpp_source_1l00047"/>00047 &#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_motor___a1_8hpp_source_1l00048"/><link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1_1afad471979520f9924a7cbe1fc316ee0f">00048</link> &#32;&#32;uint8_t&#32;<link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1_1afad471979520f9924a7cbe1fc316ee0f">temp_</link>;&#32;&#32;
+<anchor xml:id="_motor___a1_8hpp_source_1l00049"/>00049 
+<anchor xml:id="_motor___a1_8hpp_source_1l00050"/><link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1_1af4c56eb1e0be14082267658ead55ff6e">00050</link> &#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">constexpr</emphasis>&#32;uint32_t&#32;<link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1_1af4c56eb1e0be14082267658ead55ff6e">kTx1_3_</link>&#32;=&#32;0x400;
+<anchor xml:id="_motor___a1_8hpp_source_1l00051"/><link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1_1a9d296f5f06469e196e4fd5fa8ba9605d">00051</link> &#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">constexpr</emphasis>&#32;uint32_t&#32;<link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1_1a9d296f5f06469e196e4fd5fa8ba9605d">kTx4_6_</link>&#32;=&#32;0x3FF;
+<anchor xml:id="_motor___a1_8hpp_source_1l00052"/><link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1_1aeae7b715d776503b5ca862abf98ba425">00052</link> &#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keyword">constexpr</emphasis>&#32;uint32_t&#32;<link linkend="_classhello__world_1_1devices_1_1motor_1_1_a1_1aeae7b715d776503b5ca862abf98ba425">kRx0_</link>&#32;=&#32;0x400;
+<anchor xml:id="_motor___a1_8hpp_source_1l00053"/>00053 };
+<anchor xml:id="_motor___a1_8hpp_source_1l00054"/>00054 
+<anchor xml:id="_motor___a1_8hpp_source_1l00055"/>00055 <emphasis role="comment">/*&#32;Exported&#32;variables&#32;--------------------------------------------------------*/</emphasis>
+<anchor xml:id="_motor___a1_8hpp_source_1l00056"/>00056 <emphasis role="comment">/*&#32;Exported&#32;function&#32;prototypes&#32;----------------------------------------------*/</emphasis>
+<anchor xml:id="_motor___a1_8hpp_source_1l00057"/>00057 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;motor</emphasis>
+<anchor xml:id="_motor___a1_8hpp_source_1l00058"/>00058 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;devices</emphasis>
+<anchor xml:id="_motor___a1_8hpp_source_1l00059"/>00059 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;hello_world</emphasis>
+<anchor xml:id="_motor___a1_8hpp_source_1l00060"/>00060 
+<anchor xml:id="_motor___a1_8hpp_source_1l00061"/>00061 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;HW_COMPONENTS_DEVICES_MOTOR_MOTOR_A1_HPP_&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+</programlisting></section>

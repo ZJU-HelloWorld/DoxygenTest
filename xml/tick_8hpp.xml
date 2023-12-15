@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="tick_8hpp" kind="file" language="C++">
+    <compoundname>tick.hpp</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="pid_8cpp" local="yes">HW-Components/algorithms/controller/src/pid.cpp</includedby>
+    <includedby refid="buzzer_8cpp" local="yes">HW-Components/devices/buzzer/src/buzzer.cpp</includedby>
+    <includedby refid="referee__rx__template_8hpp" local="yes">HW-Components/devices/referee/inc/referee_rx_template.hpp</includedby>
+    <includedby refid="tick_8cpp" local="yes">HW-Components/dsp/tick/tick.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>HW-Components/dsp/tick/tick.hpp</label>
+        <link refid="tick_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>HW-Components/algorithms/controller/src/pid.cpp</label>
+        <link refid="pid_8cpp"/>
+      </node>
+      <node id="3">
+        <label>HW-Components/devices/buzzer/src/buzzer.cpp</label>
+        <link refid="buzzer_8cpp"/>
+      </node>
+      <node id="5">
+        <label>HW-Components/devices/referee/inc/referee.hpp</label>
+        <link refid="referee_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>HW-Components/devices/referee/inc/referee_custom_define.hpp</label>
+        <link refid="referee__custom__define_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>HW-Components/devices/referee/inc/referee_rx_template.hpp</label>
+        <link refid="referee__rx__template_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>HW-Components/devices/referee/prv/referee_size_check.hpp</label>
+        <link refid="referee__size__check_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>HW-Components/devices/referee/src/referee.cpp</label>
+        <link refid="referee_8cpp"/>
+      </node>
+      <node id="9">
+        <label>HW-Components/dsp/tick/tick.cpp</label>
+        <link refid="tick_8cpp"/>
+      </node>
+      <node id="1">
+        <label>HW-Components/dsp/tick/tick.hpp</label>
+        <link refid="tick_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespacehello__world">hello_world</innernamespace>
+    <innernamespace refid="namespacehello__world_1_1dsp">hello_world::dsp</innernamespace>
+    <innernamespace refid="namespacehello__world_1_1dsp_1_1tick">hello_world::dsp::tick</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>ZhouShichan (<ulink url="mailto:zsc19823382069@163.com">zsc19823382069@163.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>1.0.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-10-31</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved.</para>
+</simplesect>
+<simplesect kind="attention"><para></para>
+</simplesect>
+<simplesect kind="par"><title>history</title><para><table rows="2" cols="4"><row>
+<entry thead="yes" align='center'><para>Version   </para>
+</entry><entry thead="yes" align='center'><para>Date   </para>
+</entry><entry thead="yes" align='center'><para>Author   </para>
+</entry><entry thead="yes" align='center'><para>Description    </para>
+</entry></row>
+<row>
+<entry thead="no" align='center'><para>1.0.0   </para>
+</entry><entry thead="no" align='center'><para>{now_year}   </para>
+</entry><entry thead="no" align='center'><para>ZhouShichan   </para>
+</entry><entry thead="no" align='center'><para>description   </para>
+</entry></row>
+</table>
+</para>
+</simplesect>
+<simplesect kind="par"><title>last editor ZhouShichan (zsc19823382069@163.com)</title><para></para>
+</simplesect>
+<simplesect kind="par"><title>last edit time 2023-10-31</title><para></para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Define<sp/>to<sp/>prevent<sp/>recursive<sp/>inclusion<sp/>-------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_HW_COMPONENTS_CPP_SYSTEM_TICK_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_HW_COMPONENTS_CPP_SYSTEM_TICK_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Includes<sp/>------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacehello__world" kindref="compound">hello_world</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">dsp</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">tick</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>macro<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>constants<sp/>--------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>types<sp/>------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>variables<sp/>--------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Exported<sp/>function<sp/>prototypes<sp/>----------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">uint32_t<sp/><ref refid="namespacehello__world_1_1dsp_1_1tick_1a0c9c44ee367dc665cc6f1a6d830da9ee" kindref="member">GetTickUs</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">uint32_t<sp/><ref refid="namespacehello__world_1_1dsp_1_1tick_1a97910b07255da1979f8ceafd8c6d2ea5" kindref="member">GetTickMs</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">uint32_t<sp/><ref refid="namespacehello__world_1_1dsp_1_1tick_1a3bb6f5ee2096e411df77150fbac949a5" kindref="member">GetTickS</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>tick</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>dsp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>hello_world</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HW_COMPONENTS_CPP_SYSTEM_TICK_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="HW-Components/dsp/tick/tick.hpp"/>
+  </compounddef>
+</doxygen>

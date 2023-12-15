@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: HW-Components/devices/imu/inc/BMI088.hpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_b_m_i088_8hpp.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#enum-members">枚举</a>  </div>
+  <div class="headertitle"><div class="title">BMI088.hpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>: @history : Version Date Author Note V1.0.0 2023-12-08 Caikunzhen 1.  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;arm_math.h&quot;</code><br />
+<code>#include &quot;stm32f4xx_hal.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="system_8hpp_source.html">system.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+BMI088.hpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_b_m_i088_8hpp__incl.svg" width="358" height="198"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件直接或间接的被哪些文件引用了:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="_b_m_i088_8hpp__dep__incl.svg" width="371" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="_b_m_i088_8hpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhello__world_1_1devices_1_1imu_1_1_b_m_i088_h_w_config.html">hello_world::devices::imu::BMI088HWConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structhello__world_1_1devices_1_1imu_1_1_b_m_i088_config.html">hello_world::devices::imu::BMI088Config</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html">hello_world::devices::imu::BMI088</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:namespacehello__world" id="r_namespacehello__world"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehello__world.html">hello_world</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacehello__world_1_1devices" id="r_namespacehello__world_1_1devices"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehello__world_1_1devices.html">hello_world::devices</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacehello__world_1_1devices_1_1imu" id="r_namespacehello__world_1_1devices_1_1imu"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehello__world_1_1devices_1_1imu.html">hello_world::devices::imu</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:afc65bae6cff924c06f3f762a196d6faf" id="r_afc65bae6cff924c06f3f762a196d6faf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehello__world_1_1devices_1_1imu.html#afc65bae6cff924c06f3f762a196d6faf">hello_world::devices::imu::BMI088ErrState</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespacehello__world_1_1devices_1_1imu.html#afc65bae6cff924c06f3f762a196d6fafa2145833ba5262dcb4896c6452f5ef83f">hello_world::devices::imu::kBMI088ErrStateNoErr</a> = 0u
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#afc65bae6cff924c06f3f762a196d6fafa33f5d7685272e1454b0a839318a1c155">hello_world::devices::imu::kBMI088ErrStateAccNotFound</a> = 1u &lt;&lt; 0
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#afc65bae6cff924c06f3f762a196d6fafaf36788cb829d6f706bbfc614d824e1bf">hello_world::devices::imu::kBMI088ErrStateGyroNotFound</a> = 1u &lt;&lt; 1
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#afc65bae6cff924c06f3f762a196d6fafa1fd3e7bba87b31d71a08e2b72646a3fd">hello_world::devices::imu::kBMI088ErrStateAccSelfTestFailed</a> = 1u &lt;&lt; 2
+, <br />
+&#160;&#160;<a class="el" href="namespacehello__world_1_1devices_1_1imu.html#afc65bae6cff924c06f3f762a196d6fafa5ac7ace53ccf983ab0f56f8e09fb4290">hello_world::devices::imu::kBMI088ErrStateGyroSelfTestFailed</a> = 1u &lt;&lt; 3
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#afc65bae6cff924c06f3f762a196d6fafa3275cd83116cc9f6625817cfad14a433">hello_world::devices::imu::kBMI088ErrStateAccConfigErr</a> = 1u &lt;&lt; 4
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#afc65bae6cff924c06f3f762a196d6fafaa325e1db5049d081cd037fe9d8c642f3">hello_world::devices::imu::kBMI088ErrStateGyroConfigErr</a> = 1u &lt;&lt; 5
+<br />
+ }</td></tr>
+<tr class="separator:afc65bae6cff924c06f3f762a196d6faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b5968572f4f140f70490c0056a7ad98" id="r_a1b5968572f4f140f70490c0056a7ad98"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a1b5968572f4f140f70490c0056a7ad98">hello_world::devices::imu::BMI088AccRange</a> : uint8_t { <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a1b5968572f4f140f70490c0056a7ad98a60f26b746398fa69d4839af8785af59d">hello_world::devices::imu::kBMI088AccRange3G</a> = 0x0
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a1b5968572f4f140f70490c0056a7ad98ab5ccec842ab104d17cffb53edd582f80">hello_world::devices::imu::kBMI088AccRange6G</a> = 0x1
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a1b5968572f4f140f70490c0056a7ad98a4e04e39b914ef040e7d6aac313dbdee9">hello_world::devices::imu::kBMI088AccRange12G</a> = 0x2
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a1b5968572f4f140f70490c0056a7ad98a5dc50ec716a376d1442bdbf138496785">hello_world::devices::imu::kBMI088AccRange24G</a> = 0x3
+ }</td></tr>
+<tr class="separator:a1b5968572f4f140f70490c0056a7ad98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4150d082933f50162a992c3a351f6497" id="r_a4150d082933f50162a992c3a351f6497"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a4150d082933f50162a992c3a351f6497">hello_world::devices::imu::BMI088AccOdr</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a4150d082933f50162a992c3a351f6497a62071bd8c96ef5f22eb6d8d90f160552">hello_world::devices::imu::kBMI088AccOdr12_5</a> = 0x5
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a4150d082933f50162a992c3a351f6497ab085f3818557b51b69633c707e65b2c9">hello_world::devices::imu::kBMI088AccOdr25</a> = 0x6
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a4150d082933f50162a992c3a351f6497aba65b4b84845c947bb5347166927215e">hello_world::devices::imu::kBMI088AccOdr50</a> = 0x7
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a4150d082933f50162a992c3a351f6497a40807270c25b0256ebb4f2a4e2bfbd9f">hello_world::devices::imu::kBMI088AccOdr100</a> = 0x8
+, <br />
+&#160;&#160;<a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a4150d082933f50162a992c3a351f6497a07fe99369df0eff0976ab31fd9a2d55e">hello_world::devices::imu::kBMI088AccOdr200</a> = 0x9
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a4150d082933f50162a992c3a351f6497a58c0a4713a1aa54ccab0ed34d41c70ab">hello_world::devices::imu::kBMI088AccOdr400</a> = 0xA
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a4150d082933f50162a992c3a351f6497a2553e6299eb206a288730af2499f04d4">hello_world::devices::imu::kBMI088AccOdr800</a> = 0xB
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a4150d082933f50162a992c3a351f6497ac55c2b705876e73e883aa1b0a536dff8">hello_world::devices::imu::kBMI088AccOdr1600</a> = 0xC
+<br />
+ }</td></tr>
+<tr class="memdesc:a4150d082933f50162a992c3a351f6497"><td class="mdescLeft">&#160;</td><td class="mdescRight">BMI088 加速度计输出频率（Output Data Rate），单位：Hz  <a href="namespacehello__world_1_1devices_1_1imu.html#a4150d082933f50162a992c3a351f6497">更多...</a><br /></td></tr>
+<tr class="separator:a4150d082933f50162a992c3a351f6497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55ed4d468583311a38f1efe25e41020" id="r_ac55ed4d468583311a38f1efe25e41020"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehello__world_1_1devices_1_1imu.html#ac55ed4d468583311a38f1efe25e41020">hello_world::devices::imu::BMI088AccOsr</a> : uint8_t { <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#ac55ed4d468583311a38f1efe25e41020a8e20eec26346459cc412490744d64c87">hello_world::devices::imu::kBMI088AccOsr4</a> = 0x8
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#ac55ed4d468583311a38f1efe25e41020ac013b97682350a130c6247429b805641">hello_world::devices::imu::kBMI088AccOsr2</a> = 0x9
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#ac55ed4d468583311a38f1efe25e41020af20f8ca81b3be175c3d94cd3735fb513">hello_world::devices::imu::kBMI088AccOsrNormal</a> = 0xA
+ }</td></tr>
+<tr class="separator:ac55ed4d468583311a38f1efe25e41020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f381963a5f36b0ad90316482c9fd6e2" id="r_a5f381963a5f36b0ad90316482c9fd6e2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a5f381963a5f36b0ad90316482c9fd6e2">hello_world::devices::imu::BMI088GyroRange</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a5f381963a5f36b0ad90316482c9fd6e2ac740d3d399a74eca878975759f08ad1c">hello_world::devices::imu::kBMI088GyroRange2000Dps</a> = 0x0
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a5f381963a5f36b0ad90316482c9fd6e2a452021d4367dabdf46ec7aa238694832">hello_world::devices::imu::kBMI088GyroRange1000Dps</a> = 0x1
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a5f381963a5f36b0ad90316482c9fd6e2ac513bf4fce77c2af4d3b4e5e80317413">hello_world::devices::imu::kBMI088GyroRange500Dps</a> = 0x2
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a5f381963a5f36b0ad90316482c9fd6e2a36f34d39759656d7414b41e71f3ef0d6">hello_world::devices::imu::kBMI088GyroRange250Dps</a> = 0x3
+, <br />
+&#160;&#160;<a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a5f381963a5f36b0ad90316482c9fd6e2a1ea96fa03944afd1a30fce6c876cb8da">hello_world::devices::imu::kBMI088GyroRange125Dps</a> = 0x4
+<br />
+ }</td></tr>
+<tr class="separator:a5f381963a5f36b0ad90316482c9fd6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a736ed957a696501f01218b1b0a6f3356" id="r_a736ed957a696501f01218b1b0a6f3356"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a736ed957a696501f01218b1b0a6f3356">hello_world::devices::imu::BMI088GyroOdrFbw</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a736ed957a696501f01218b1b0a6f3356ad5090e935e2c755781bf9d112a8688a7">hello_world::devices::imu::kBMI088GyroOdrFbw2000_532</a> = 0x0
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a736ed957a696501f01218b1b0a6f3356a562703fa619b2a1321424d8615ac309d">hello_world::devices::imu::kBMI088GyroOdrFbw2000_230</a> = 0x1
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a736ed957a696501f01218b1b0a6f3356ac2cf6336e19984057d58b3274bce1aa3">hello_world::devices::imu::kBMI088GyroOdrFbw1000_116</a> = 0x2
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a736ed957a696501f01218b1b0a6f3356a7102d0df15c35757f1078dc032df3646">hello_world::devices::imu::kBMI088GyroOdrFbw400_47</a> = 0x3
+, <br />
+&#160;&#160;<a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a736ed957a696501f01218b1b0a6f3356ad84eb3a6be9e8198f7037e7abdeca7f5">hello_world::devices::imu::kBMI088GyroOdrFbw200_23</a> = 0x4
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a736ed957a696501f01218b1b0a6f3356a9e65a29b63ec557929fac30bb4ccd2fd">hello_world::devices::imu::kBMI088GyroOdrFbw100_12</a> = 0x5
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a736ed957a696501f01218b1b0a6f3356a8c53fdd3810c947c9b39869168d11ef9">hello_world::devices::imu::kBMI088GyroOdrFbw200_64</a> = 0x6
+, <a class="el" href="namespacehello__world_1_1devices_1_1imu.html#a736ed957a696501f01218b1b0a6f3356a7388130fb591ae9529da6ce4008ea17d">hello_world::devices::imu::kBMI088GyroOdrFbw100_32</a> = 0x7
+<br />
+ }</td></tr>
+<tr class="memdesc:a736ed957a696501f01218b1b0a6f3356"><td class="mdescLeft">&#160;</td><td class="mdescRight">BMI088 陀螺仪输出频率（Output Data Rate）与滤波器带宽（Filter Bandwidth），单位：Hz  <a href="namespacehello__world_1_1devices_1_1imu.html#a736ed957a696501f01218b1b0a6f3356">更多...</a><br /></td></tr>
+<tr class="separator:a736ed957a696501f01218b1b0a6f3356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>: @history : Version Date Author Note V1.0.0 2023-12-08 Caikunzhen 1. </p>
+<p>完成第一版测试</p>
+<dl class="section attention"><dt>注意</dt><dd>:</dd></dl>
+<p>Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved. </p>
+
+<p class="definition">在文件 <a class="el" href="_b_m_i088_8hpp_source.html">BMI088.hpp</a> 中定义.</p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_bf2c932e12fd3661bca25c493e91b85c.html">HW-Components</a></li><li class="navelem"><a class="el" href="dir_49decd52c970b6c26b1892145b8c54b6.html">devices</a></li><li class="navelem"><a class="el" href="dir_0d36f70e890197f66be298058bd32981.html">imu</a></li><li class="navelem"><a class="el" href="dir_ac947090296fc38a62bc2ce3e3a311c1.html">inc</a></li><li class="navelem"><a class="el" href="_b_m_i088_8hpp.html">BMI088.hpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_buzzer_8cpp" xml:lang="zh">
+<title>HW-Components/devices/buzzer/src/buzzer.cpp 文件参考</title>
+<indexterm><primary>HW-Components/devices/buzzer/src/buzzer.cpp</primary></indexterm>
+<para>
+
+<para>: @history : Version Date Author Note V0.9.0 2023-11-28 Caikunzhen 1. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;buzzer.hpp&quot;<?linebreak?>#include &lt;cmath&gt;<?linebreak?>#include &quot;assert.hpp&quot;<?linebreak?>#include &quot;base.hpp&quot;<?linebreak?>#include &quot;tick.hpp&quot;<?linebreak?></programlisting>buzzer.cpp 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="buzzer_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>命名空间    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacehello__world">hello_world</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacehello__world_1_1devices">hello_world::devices</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacehello__world_1_1devices_1_1buzzer">hello_world::devices::buzzer</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>变量    </title>
+        <itemizedlist>
+            <listitem><para>static const float <link linkend="_namespacehello__world_1_1devices_1_1buzzer_1a3c9fc26c3cdc343d34458d093dd3cc5f">hello_world::devices::buzzer::kTimerFreq</link> = 1e6f</para>
+</listitem>
+            <listitem><para>static const float <link linkend="_namespacehello__world_1_1devices_1_1buzzer_1a482cb003f98ad42ba36d039c6c2a1317">hello_world::devices::buzzer::kMaxDuty</link> = 0.5f</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>: @history : Version Date Author Note V0.9.0 2023-11-28 Caikunzhen 1. </para>
+
+<para>未测试版本 V1.0.0 2023-12-05 Caikunzhen 1. 完成测试</para>
+
+<para><caution><title>注意</title>
+
+<para>:</para>
+</caution>
+Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved. </para>
+<para>
+在文件 <link linkend="_buzzer_8cpp_source">buzzer.cpp</link> 中定义.</para>
+</section>
+</section>

@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="namespacehello__world_1_1devices_1_1remote__control" kind="namespace" language="C++">
+    <compoundname>hello_world::devices::remote_control</compoundname>
+    <innerclass refid="classhello__world_1_1devices_1_1remote__control_1_1_d_t7" prot="public">hello_world::devices::remote_control::DT7</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacehello__world_1_1devices_1_1remote__control_1a8fbf90111209d1c457301aec678d7de7" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>SwitchState</name>
+        <qualifiedname>hello_world::devices::remote_control::SwitchState</qualifiedname>
+        <enumvalue id="namespacehello__world_1_1devices_1_1remote__control_1a8fbf90111209d1c457301aec678d7de7afdb5ea6c827b4e733861cddbbbfb6a8c" prot="public">
+          <name>kSwitchStateUp</name>
+          <initializer>= 1u</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehello__world_1_1devices_1_1remote__control_1a8fbf90111209d1c457301aec678d7de7a526546b8f9b96961d19ad04acc73064c" prot="public">
+          <name>kSwitchStateMid</name>
+          <initializer>= 3u</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehello__world_1_1devices_1_1remote__control_1a8fbf90111209d1c457301aec678d7de7abfa5890694c572ce1f8e7b85bec6c414" prot="public">
+          <name>kSwitchStateDown</name>
+          <initializer>= 2u</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/remote_control/inc/DT7.hpp" line="31" column="1" bodyfile="HW-Components/devices/remote_control/inc/DT7.hpp" bodystart="31" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacehello__world_1_1devices_1_1remote__control_1a72131314879f315c3a89dba97fc51620" prot="public" static="yes" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t hello_world::devices::remote_control::kRcRxDataLen</definition>
+        <argsstring></argsstring>
+        <name>kRcRxDataLen</name>
+        <qualifiedname>hello_world::devices::remote_control::kRcRxDataLen</qualifiedname>
+        <initializer>= 18u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/remote_control/inc/DT7.hpp" line="38" column="22" bodyfile="HW-Components/devices/remote_control/inc/DT7.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehello__world_1_1devices_1_1remote__control_1a3d0a022d873c897523cc02e729183d96" prot="public" static="yes" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t hello_world::devices::remote_control::kRcOffset</definition>
+        <argsstring></argsstring>
+        <name>kRcOffset</name>
+        <qualifiedname>hello_world::devices::remote_control::kRcOffset</qualifiedname>
+        <initializer>= 1024u</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/remote_control/src/DT7.cpp" line="29" column="17" bodyfile="HW-Components/devices/remote_control/src/DT7.cpp" bodystart="29" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1remote__control_1_1_d_t7_1a1474ba78e4ff59c171227b1b8cf09430" compoundref="_d_t7_8cpp" startline="42" endline="67">hello_world::devices::remote_control::DT7::decode</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="namespacehello__world_1_1devices_1_1remote__control_1a14bbfac5955f9e1c168041d2984edac2" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::devices::remote_control::kRcRatio</definition>
+        <argsstring></argsstring>
+        <name>kRcRatio</name>
+        <qualifiedname>hello_world::devices::remote_control::kRcRatio</qualifiedname>
+        <initializer>= 1.0f / 660</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/remote_control/src/DT7.cpp" line="30" column="14" bodyfile="HW-Components/devices/remote_control/src/DT7.cpp" bodystart="30" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1remote__control_1_1_d_t7_1a1474ba78e4ff59c171227b1b8cf09430" compoundref="_d_t7_8cpp" startline="42" endline="67">hello_world::devices::remote_control::DT7::decode</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HW-Components/devices/remote_control/inc/DT7.hpp" line="27" column="1"/>
+  </compounddef>
+</doxygen>

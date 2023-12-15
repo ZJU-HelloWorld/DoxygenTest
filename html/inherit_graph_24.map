@@ -1,0 +1,41 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="Node000000" href="$classhello__world_1_1_mem_mang.html" title=" " alt="" coords="5,287,160,312"/>
+<area shape="rect" id="Node000001" href="$classhello__world_1_1_wheel.html" title=" " alt="" coords="225,5,356,31"/>
+<area shape="poly" id="edge12_Node000000_Node000001" title=" " alt="" coords="87,271,101,222,124,160,158,97,181,67,206,41,226,29,229,34,210,45,185,71,163,100,129,163,106,224,92,273"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1algorithms_1_1controller_1_1_controller.html" title=" " alt="" coords="213,55,368,95"/>
+<area shape="poly" id="edge13_Node000000_Node000002" title=" " alt="" coords="92,272,110,235,135,191,167,145,206,105,224,94,227,98,210,109,171,149,139,194,114,238,97,274"/>
+<area shape="rect" id="Node000005" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list.html" title="一个用于存储 PidNode 的链表类，用于 Ozone 监视" alt="" coords="213,119,369,159"/>
+<area shape="poly" id="edge16_Node000000_Node000005" title=" " alt="" coords="100,273,145,221,175,194,207,169,227,158,230,162,209,174,178,198,149,225,104,276"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node.html" title="PID节点类，用于实现PID链表" alt="" coords="208,183,373,223"/>
+<area shape="poly" id="edge17_Node000000_Node000006" title=" " alt="" coords="119,277,207,233,234,221,236,226,209,238,122,282"/>
+<area shape="rect" id="Node000007" href="$classhello__world_1_1devices_1_1buzzer_1_1_buzzer.html" title=" " alt="" coords="222,247,359,287"/>
+<area shape="poly" id="edge18_Node000000_Node000007" title=" " alt="" coords="174,283,221,275,222,281,175,288"/>
+<area shape="rect" id="Node000008" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html" title=" " alt="" coords="222,311,359,351"/>
+<area shape="poly" id="edge19_Node000000_Node000008" title=" " alt="" coords="175,311,222,318,221,323,174,316"/>
+<area shape="rect" id="Node000009" href="$classhello__world_1_1devices_1_1laser_1_1_laser.html" title=" " alt="" coords="222,375,359,415"/>
+<area shape="poly" id="edge20_Node000000_Node000009" title=" " alt="" coords="122,317,209,361,236,372,234,377,207,366,119,322"/>
+<area shape="rect" id="Node000010" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html" title=" " alt="" coords="222,439,359,479"/>
+<area shape="poly" id="edge21_Node000000_Node000010" title=" " alt="" coords="104,322,149,374,178,401,209,425,230,436,227,441,207,430,175,405,145,377,100,326"/>
+<area shape="rect" id="Node000018" href="$classhello__world_1_1devices_1_1remote__control_1_1_d_t7.html" title=" " alt="" coords="217,503,364,543"/>
+<area shape="poly" id="edge29_Node000000_Node000018" title=" " alt="" coords="97,325,114,361,139,405,171,450,210,489,227,501,224,505,206,493,167,453,135,408,110,364,92,327"/>
+<area shape="rect" id="Node000019" href="$classhello__world_1_1devices_1_1servo_1_1_servo.html" title=" " alt="" coords="222,567,359,607"/>
+<area shape="poly" id="edge30_Node000000_Node000019" title=" " alt="" coords="93,326,107,374,130,435,164,498,185,527,210,553,225,565,222,569,206,557,181,531,160,501,125,437,102,376,88,327"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid.html" title="基础 PID 控制器类，继承自Controller类" alt="" coords="437,23,605,63"/>
+<area shape="poly" id="edge14_Node000002_Node000003" title=" " alt="" coords="382,60,437,52,437,58,383,65"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html" title="一个多节点 PID 控制器类，继承自 Controller 类，目前实现类型有串联或并联" alt="" coords="421,87,621,127"/>
+<area shape="poly" id="edge15_Node000002_Node000004" title=" " alt="" coords="383,85,421,91,421,96,383,91"/>
+<area shape="rect" id="Node000011" href="$classhello__world_1_1devices_1_1motor_1_1_a1.html" title=" " alt="" coords="453,247,590,287"/>
+<area shape="poly" id="edge22_Node000010_Node000011" title=" " alt="" coords="369,428,371,426,384,410,390,394,394,362,399,330,406,314,420,297,451,278,454,283,423,301,411,317,404,332,399,363,395,396,388,412,375,429,372,432"/>
+<area shape="rect" id="Node000012" href="$classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html" title=" " alt="" coords="453,311,590,351"/>
+<area shape="poly" id="edge23_Node000010_Node000012" title=" " alt="" coords="366,429,372,425,387,410,395,394,403,377,420,361,451,345,453,350,423,365,408,381,399,396,391,413,375,429,369,434"/>
+<area shape="rect" id="Node000013" href="$classhello__world_1_1devices_1_1motor_1_1_g_m6020.html" title=" " alt="" coords="453,375,590,415"/>
+<area shape="poly" id="edge24_Node000010_Node000013" title=" " alt="" coords="373,434,451,412,453,417,374,439"/>
+<area shape="rect" id="Node000014" href="$classhello__world_1_1devices_1_1motor_1_1_m2006.html" title=" " alt="" coords="453,439,590,479"/>
+<area shape="poly" id="edge25_Node000010_Node000014" title=" " alt="" coords="374,457,452,457,452,462,374,462"/>
+<area shape="rect" id="Node000015" href="$classhello__world_1_1devices_1_1motor_1_1_m3508.html" title=" " alt="" coords="453,503,590,543"/>
+<area shape="poly" id="edge26_Node000010_Node000015" title=" " alt="" coords="374,480,453,502,451,507,373,485"/>
+<area shape="rect" id="Node000016" href="$classhello__world_1_1devices_1_1motor_1_1_m8910.html" title=" " alt="" coords="453,567,590,607"/>
+<area shape="poly" id="edge27_Node000010_Node000016" title=" " alt="" coords="369,485,375,489,391,506,399,522,408,538,423,553,453,569,451,574,420,557,403,541,395,525,387,509,372,493,366,489"/>
+<area shape="rect" id="Node000017" href="$classhello__world_1_1devices_1_1motor_1_1_m_f9025v2.html" title=" " alt="" coords="453,631,590,671"/>
+<area shape="poly" id="edge28_Node000010_Node000017" title=" " alt="" coords="372,487,375,490,388,506,395,523,399,555,404,587,411,602,423,617,454,636,451,641,420,621,406,605,399,588,394,556,390,524,384,509,371,493,369,491"/>
+</map>

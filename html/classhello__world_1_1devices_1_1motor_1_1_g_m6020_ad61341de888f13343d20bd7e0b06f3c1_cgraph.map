@@ -1,0 +1,7 @@
+<map id="hello_world::devices::motor::GM6020::GM6020" name="hello_world::devices::motor::GM6020::GM6020">
+<area shape="rect" id="Node000001" title="GM6020 初始化" alt="" coords="5,35,183,75"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#ab3e2187f017e86c6d4a83caa55fe9419" title=" " alt="" coords="231,5,368,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,39,215,35,216,40,183,45"/>
+<area shape="rect" id="Node000003" href="$namespacehello__world.html#a94594f3432536927055026f3f48af251" title="获取两个变量间的最小值" alt="" coords="242,70,357,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="183,64,228,70,227,76,183,69"/>
+</map>

@@ -1,0 +1,511 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer" xml:lang="zh">
+<title>hello_world::devices::buzzer::Buzzer类 参考</title>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary></indexterm>
+<para>
+<computeroutput>#include &lt;buzzer.hpp&gt;</computeroutput>
+</para>
+类 hello_world::devices::buzzer::Buzzer 继承关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1buzzer_1_1_buzzer__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+hello_world::devices::buzzer::Buzzer 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1buzzer_1_1_buzzer__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a9901a266077ad9867ddad94ecab40d2d">Buzzer</link> (TIM_HandleTypeDef *htim, uint32_t channel, <link linkend="_namespacehello__world_1_1devices_1_1buzzer_1a2e5d78b68fcdefd56e87870dfb59b4d9">PlayConfig</link> play_config, const <link linkend="_structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info">TuneListInfo</link> *kTuneListInfoPtr)</para>
+
+<para>蜂鸣器初始化 </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1ae7e3608ab6c6dbd22beac772658dccdb">~Buzzer</link> ()</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a497ecbf63e22e6ce52e19536e8337d22">is_playing</link> (void) const</para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1devices_1_1buzzer_1a2e5d78b68fcdefd56e87870dfb59b4d9">PlayConfig</link> <link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a4b9145b78c0492ffd54c37bae36cc8e0">get_play_config</link> (void) const</para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a4186105c4e8cedc66d9363698c2e0e9b">set_play_config</link> (<link linkend="_namespacehello__world_1_1devices_1_1buzzer_1a2e5d78b68fcdefd56e87870dfb59b4d9">PlayConfig</link> play_config)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1ab2c457527b41d290e2e68101c508b73a">mute</link> (void) const</para>
+
+<para>关闭蜂鸣器 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1ab4a10c92796395a9b6c229f0bfec9cdb">play</link> (void)</para>
+
+<para>播放乐曲 </para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a67595f4b9558ce6320b85f9c580f7b95">setNewTune</link> (const <link linkend="_structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info">TuneListInfo</link> *kTuneListInfoPtr)</para>
+
+<para>设置新的乐曲信息 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public 成员函数 继承自 <link linkend="_classhello__world_1_1_mem_mang">hello_world::MemMang</link>        <itemizedlist>
+            <listitem><para>void * <link linkend="_classhello__world_1_1_mem_mang_1abcf6e7289814e8da342ba4f47d8af411">operator new</link> (size_t size)</para>
+</listitem>
+            <listitem><para>void * <link linkend="_classhello__world_1_1_mem_mang_1ad10b6eff1541322708e5bde32c590c82">operator new[]</link> (size_t size)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1_mem_mang_1abf1fe21066f52d693e2eec63a5833e8e">operator delete</link> (void *ptr)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classhello__world_1_1_mem_mang_1a54e1a6a8e01b0996cc2854a8bc1ce7bd">operator delete[]</link> (void *ptr)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para>TIM_HandleTypeDef *const <link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a3b838c1b98dc600c53705e9fe04d99a4">kHtim_</link></para>
+</listitem>
+            <listitem><para>const uint32_t <link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a15bb4ff8e5ba9bc2d340063ba0058bb7">kChannel_</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 成员函数    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a4098153da83266e584a961b94e2213c4">tune2AutoReload</link> (<link linkend="_namespacehello__world_1_1devices_1_1buzzer_1a0db5beb79cee27259eaefb4a2a04126d">Tune</link> tune) const</para>
+
+<para>将音符转化为对应的定时器重载值 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 属性    </title>
+        <itemizedlist>
+            <listitem><para>const <link linkend="_structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info">TuneListInfo</link> * <link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1abcbd00189b50b82539d9b86d97694ad6">kTuneListInfoPtr_</link></para>
+</listitem>
+            <listitem><para>size_t <link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a3b93cc23f3be6bb791b9a0ca9dacad39">tune_idx_</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1ab4775b8ae94a043ac58824f4ebb4be37">tune_start_tick_</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1devices_1_1buzzer_1a2e5d78b68fcdefd56e87870dfb59b4d9">PlayConfig</link> <link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a552e1698456e2a148072f21ed59abaaa">play_config_</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a8947005e9e7acd2250aec39402bdb9e9">tune_switch_</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1ade3f992137ca255598cda0947b55f778">is_playing_</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1ad0d5171f1e0990b68bfbc4392d73d7b3">last_is_playing_</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+<para>
+在文件 <link linkend="_buzzer_8hpp_source">buzzer.hpp</link> 第 <link linkend="_buzzer_8hpp_source_1l00124">124</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a9901a266077ad9867ddad94ecab40d2d"/><section>
+    <title>Buzzer()</title>
+<indexterm><primary>Buzzer</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>Buzzer</secondary></indexterm>
+<para><computeroutput>hello_world::devices::buzzer::Buzzer::Buzzer (TIM_HandleTypeDef * htim, uint32_t channel, <link linkend="_namespacehello__world_1_1devices_1_1buzzer_1a2e5d78b68fcdefd56e87870dfb59b4d9">PlayConfig</link> play_config, const <link linkend="_structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info">TuneListInfo</link> * kTuneListInfoPtr)</computeroutput></para><para>
+
+<para>蜂鸣器初始化 </para>
+</para>
+
+<para><itemizedlist>
+<listitem>
+<para>PWM 最大占空比
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>htim</entry><entry>
+<para>定时器句柄指针 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>channel</entry><entry>
+<para>定时器PWM对应输出通道 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>kTuneListInfoPtr</entry><entry>
+<para>乐曲信息指针， 请确保播放期间指针所指内容没有被释放 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>使用前请先确保定时器的频率为 1MHz， 声音强度与播放的音符会被自行限定到合理取值范围中，蜂鸣器默认开启 </para>
+</note>
+</para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="_buzzer_8cpp_source">buzzer.cpp</link> 第 <link linkend="_buzzer_8cpp_source_1l00051">51</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a9901a266077ad9867ddad94ecab40d2d_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1ae7e3608ab6c6dbd22beac772658dccdb"/><section>
+    <title>~Buzzer()</title>
+<indexterm><primary>~Buzzer</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>~Buzzer</secondary></indexterm>
+<para><computeroutput>virtual hello_world::devices::buzzer::Buzzer::~Buzzer ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_buzzer_8hpp_source">buzzer.hpp</link> 第 <link linkend="_buzzer_8hpp_source_1l00129">129</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a4b9145b78c0492ffd54c37bae36cc8e0"/><section>
+    <title>get_play_config()</title>
+<indexterm><primary>get_play_config</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>get_play_config</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1devices_1_1buzzer_1a2e5d78b68fcdefd56e87870dfb59b4d9">PlayConfig</link> hello_world::devices::buzzer::Buzzer::get_play_config (void ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_buzzer_8hpp_source">buzzer.hpp</link> 第 <link linkend="_buzzer_8hpp_source_1l00133">133</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a497ecbf63e22e6ce52e19536e8337d22"/><section>
+    <title>is_playing()</title>
+<indexterm><primary>is_playing</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>is_playing</secondary></indexterm>
+<para><computeroutput>bool hello_world::devices::buzzer::Buzzer::is_playing (void ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_buzzer_8hpp_source">buzzer.hpp</link> 第 <link linkend="_buzzer_8hpp_source_1l00131">131</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1ab2c457527b41d290e2e68101c508b73a"/><section>
+    <title>mute()</title>
+<indexterm><primary>mute</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>mute</secondary></indexterm>
+<para><computeroutput>void hello_world::devices::buzzer::Buzzer::mute (void ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>关闭蜂鸣器 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>None </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="_buzzer_8hpp_source">buzzer.hpp</link> 第 <link linkend="_buzzer_8hpp_source_1l00142">142</link> 行定义.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ab2c457527b41d290e2e68101c508b73a_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1ab4a10c92796395a9b6c229f0bfec9cdb"/><section>
+    <title>play()</title>
+<indexterm><primary>play</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>play</secondary></indexterm>
+<para><computeroutput>void hello_world::devices::buzzer::Buzzer::play (void )</computeroutput></para><para>
+
+<para>播放乐曲 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>请确保该方法以至少 1kHz 的频率被调用 </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="_buzzer_8cpp_source">buzzer.cpp</link> 第 <link linkend="_buzzer_8cpp_source_1l00106">106</link> 行定义.</para>
+函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1buzzer_1_1_buzzer_ab4a10c92796395a9b6c229f0bfec9cdb_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a4186105c4e8cedc66d9363698c2e0e9b"/><section>
+    <title>set_play_config()</title>
+<indexterm><primary>set_play_config</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>set_play_config</secondary></indexterm>
+<para><computeroutput>void hello_world::devices::buzzer::Buzzer::set_play_config (<link linkend="_namespacehello__world_1_1devices_1_1buzzer_1a2e5d78b68fcdefd56e87870dfb59b4d9">PlayConfig</link> play_config)</computeroutput></para><para>
+在文件 <link linkend="_buzzer_8cpp_source">buzzer.cpp</link> 第 <link linkend="_buzzer_8cpp_source_1l00067">67</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a67595f4b9558ce6320b85f9c580f7b95"/><section>
+    <title>setNewTune()</title>
+<indexterm><primary>setNewTune</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>setNewTune</secondary></indexterm>
+<para><computeroutput>void hello_world::devices::buzzer::Buzzer::setNewTune (const <link linkend="_structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info">TuneListInfo</link> * kTuneListInfoPtr)</computeroutput></para><para>
+
+<para>设置新的乐曲信息 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>kTuneListInfoPtr</entry><entry>
+<para>乐曲信息指针， 请确保播放期间指针所指内容没有被释放 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>None</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>使用前请先确保定时器的频率为 1MHz， 声音强度与播放的音符会被自行限定到合理取值范围中，调用后蜂鸣器会自动开启 </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="_buzzer_8cpp_source">buzzer.cpp</link> 第 <link linkend="_buzzer_8cpp_source_1l00087">87</link> 行定义.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a67595f4b9558ce6320b85f9c580f7b95_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a4098153da83266e584a961b94e2213c4"/><section>
+    <title>tune2AutoReload()</title>
+<indexterm><primary>tune2AutoReload</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>tune2AutoReload</secondary></indexterm>
+<para><computeroutput>uint32_t hello_world::devices::buzzer::Buzzer::tune2AutoReload (<link linkend="_namespacehello__world_1_1devices_1_1buzzer_1a0db5beb79cee27259eaefb4a2a04126d">Tune</link> tune) const<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>将音符转化为对应的定时器重载值 </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>tune</entry><entry>
+<para>音符 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+返回值</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>对应的定时器重载值</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>注解</title>
+
+<para>音符会被自行限定到合理取值范围中 </para>
+</note>
+</para>
+<para>
+在文件 <link linkend="_buzzer_8cpp_source">buzzer.cpp</link> 第 <link linkend="_buzzer_8cpp_source_1l00165">165</link> 行定义.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1devices_1_1buzzer_1_1_buzzer_a4098153da83266e584a961b94e2213c4_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1ade3f992137ca255598cda0947b55f778"/><section>
+    <title>is_playing_</title>
+<indexterm><primary>is_playing_</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>is_playing_</secondary></indexterm>
+<para><computeroutput>bool hello_world::devices::buzzer::Buzzer::is_playing_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_buzzer_8hpp_source">buzzer.hpp</link> 第 <link linkend="_buzzer_8hpp_source_1l00159">159</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a15bb4ff8e5ba9bc2d340063ba0058bb7"/><section>
+    <title>kChannel_</title>
+<indexterm><primary>kChannel_</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>kChannel_</secondary></indexterm>
+<para><computeroutput>const uint32_t hello_world::devices::buzzer::Buzzer::kChannel_</computeroutput></para><para>
+在文件 <link linkend="_buzzer_8hpp_source">buzzer.hpp</link> 第 <link linkend="_buzzer_8hpp_source_1l00149">149</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a3b838c1b98dc600c53705e9fe04d99a4"/><section>
+    <title>kHtim_</title>
+<indexterm><primary>kHtim_</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>kHtim_</secondary></indexterm>
+<para><computeroutput>TIM_HandleTypeDef* const hello_world::devices::buzzer::Buzzer::kHtim_</computeroutput></para><para>
+在文件 <link linkend="_buzzer_8hpp_source">buzzer.hpp</link> 第 <link linkend="_buzzer_8hpp_source_1l00148">148</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1abcbd00189b50b82539d9b86d97694ad6"/><section>
+    <title>kTuneListInfoPtr_</title>
+<indexterm><primary>kTuneListInfoPtr_</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>kTuneListInfoPtr_</secondary></indexterm>
+<para><computeroutput>const <link linkend="_structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info">TuneListInfo</link>* hello_world::devices::buzzer::Buzzer::kTuneListInfoPtr_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_buzzer_8hpp_source">buzzer.hpp</link> 第 <link linkend="_buzzer_8hpp_source_1l00154">154</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1ad0d5171f1e0990b68bfbc4392d73d7b3"/><section>
+    <title>last_is_playing_</title>
+<indexterm><primary>last_is_playing_</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>last_is_playing_</secondary></indexterm>
+<para><computeroutput>bool hello_world::devices::buzzer::Buzzer::last_is_playing_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_buzzer_8hpp_source">buzzer.hpp</link> 第 <link linkend="_buzzer_8hpp_source_1l00160">160</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a552e1698456e2a148072f21ed59abaaa"/><section>
+    <title>play_config_</title>
+<indexterm><primary>play_config_</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>play_config_</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1devices_1_1buzzer_1a2e5d78b68fcdefd56e87870dfb59b4d9">PlayConfig</link> hello_world::devices::buzzer::Buzzer::play_config_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_buzzer_8hpp_source">buzzer.hpp</link> 第 <link linkend="_buzzer_8hpp_source_1l00157">157</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a3b93cc23f3be6bb791b9a0ca9dacad39"/><section>
+    <title>tune_idx_</title>
+<indexterm><primary>tune_idx_</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>tune_idx_</secondary></indexterm>
+<para><computeroutput>size_t hello_world::devices::buzzer::Buzzer::tune_idx_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_buzzer_8hpp_source">buzzer.hpp</link> 第 <link linkend="_buzzer_8hpp_source_1l00155">155</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1ab4775b8ae94a043ac58824f4ebb4be37"/><section>
+    <title>tune_start_tick_</title>
+<indexterm><primary>tune_start_tick_</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>tune_start_tick_</secondary></indexterm>
+<para><computeroutput>uint32_t hello_world::devices::buzzer::Buzzer::tune_start_tick_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_buzzer_8hpp_source">buzzer.hpp</link> 第 <link linkend="_buzzer_8hpp_source_1l00156">156</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1a8947005e9e7acd2250aec39402bdb9e9"/><section>
+    <title>tune_switch_</title>
+<indexterm><primary>tune_switch_</primary><secondary>hello_world::devices::buzzer::Buzzer</secondary></indexterm>
+<indexterm><primary>hello_world::devices::buzzer::Buzzer</primary><secondary>tune_switch_</secondary></indexterm>
+<para><computeroutput>bool hello_world::devices::buzzer::Buzzer::tune_switch_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_buzzer_8hpp_source">buzzer.hpp</link> 第 <link linkend="_buzzer_8hpp_source_1l00158">158</link> 行定义.</para>
+</section>
+</section>
+</section>

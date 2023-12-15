@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info" kind="struct" language="C++" prot="public">
+    <compoundname>hello_world::devices::buzzer::TuneListInfo</compoundname>
+    <includes refid="buzzer_8hpp" local="no">buzzer.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info_1a4cb3c97639dfe61c0729c40b80380fa1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::devices::buzzer::TuneListInfo::intensity_scale</definition>
+        <argsstring></argsstring>
+        <name>intensity_scale</name>
+        <qualifiedname>hello_world::devices::buzzer::TuneListInfo::intensity_scale</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/buzzer/inc/buzzer.hpp" line="119" column="9" bodyfile="HW-Components/devices/buzzer/inc/buzzer.hpp" bodystart="119" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1ab4a10c92796395a9b6c229f0bfec9cdb" compoundref="buzzer_8cpp" startline="106" endline="157">hello_world::devices::buzzer::Buzzer::play</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info_1abfacb236c2a5ef6dc1499c96af943738" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t hello_world::devices::buzzer::TuneListInfo::tune_duration</definition>
+        <argsstring></argsstring>
+        <name>tune_duration</name>
+        <qualifiedname>hello_world::devices::buzzer::TuneListInfo::tune_duration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>声音强度，(0, 1] </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/buzzer/inc/buzzer.hpp" line="120" column="12" bodyfile="HW-Components/devices/buzzer/inc/buzzer.hpp" bodystart="120" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1ab4a10c92796395a9b6c229f0bfec9cdb" compoundref="buzzer_8cpp" startline="106" endline="157">hello_world::devices::buzzer::Buzzer::play</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info_1a0aefddbb58c23c7d906baf5bce59a4bf" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacehello__world_1_1devices_1_1buzzer_1a0db5beb79cee27259eaefb4a2a04126d" kindref="member">Tune</ref></type>
+        <definition>Tune hello_world::devices::buzzer::TuneListInfo::list[kTuneListMaxLen]</definition>
+        <argsstring>[kTuneListMaxLen]</argsstring>
+        <name>list</name>
+        <qualifiedname>hello_world::devices::buzzer::TuneListInfo::list</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><itemizedlist>
+<listitem><para>单音持续时长，单位：ms </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/buzzer/inc/buzzer.hpp" line="121" column="8" bodyfile="HW-Components/devices/buzzer/inc/buzzer.hpp" bodystart="121" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1devices_1_1buzzer_1_1_buzzer_1ab4a10c92796395a9b6c229f0bfec9cdb" compoundref="buzzer_8cpp" startline="106" endline="157">hello_world::devices::buzzer::Buzzer::play</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HW-Components/devices/buzzer/inc/buzzer.hpp" line="118" column="1" bodyfile="HW-Components/devices/buzzer/inc/buzzer.hpp" bodystart="118" bodyend="122"/>
+    <listofallmembers>
+      <member refid="structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info_1a4cb3c97639dfe61c0729c40b80380fa1" prot="public" virt="non-virtual"><scope>hello_world::devices::buzzer::TuneListInfo</scope><name>intensity_scale</name></member>
+      <member refid="structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info_1a0aefddbb58c23c7d906baf5bce59a4bf" prot="public" virt="non-virtual"><scope>hello_world::devices::buzzer::TuneListInfo</scope><name>list</name></member>
+      <member refid="structhello__world_1_1devices_1_1buzzer_1_1_tune_list_info_1abfacb236c2a5ef6dc1499c96af943738" prot="public" virt="non-virtual"><scope>hello_world::devices::buzzer::TuneListInfo</scope><name>tune_duration</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

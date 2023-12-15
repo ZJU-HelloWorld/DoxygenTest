@@ -1,0 +1,15 @@
+<map id="hello_world::devices::referee::GetCrc8CheckSum" name="hello_world::devices::referee::GetCrc8CheckSum">
+<area shape="rect" id="Node000001" title="Calculate and return the CRC8 checksum of a message." alt="" coords="779,37,968,77"/>
+<area shape="rect" id="Node000002" href="$namespacehello__world_1_1devices_1_1referee.html#a1010051b064aba848f58d85e35720c8e" title="Set the last byte of a message to a CRC8 checksum." alt="" coords="520,5,731,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="764,46,731,42,731,36,764,41"/>
+<area shape="rect" id="Node000005" href="$namespacehello__world_1_1devices_1_1referee.html#a5ac9b8968addb626ab283eaf7b80bd6c" title="Verifies the CRC8 checksum of a message." alt="" coords="525,69,726,109"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="764,74,727,79,726,74,763,69"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1referee_1_1_referee.html#aabc8ab368e15253c1f375e15f625e640" title=" " alt="" coords="261,5,472,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="505,28,473,28,473,23,505,23"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1devices_1_1referee_1_1_referee.html#a5ce1901e90b5565bf0de6c9ce2d48c91" title=" " alt="" coords="5,5,213,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="246,28,214,28,214,23,246,23"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1devices_1_1referee_1_1_referee.html#a823f73d223421b7d025005e99ff08291" title=" " alt="" coords="265,69,468,109"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="510,92,468,92,468,87,510,87"/>
+<area shape="rect" id="Node000007" href="$classhello__world_1_1devices_1_1referee_1_1_referee.html#aaa5ff496d5c254b8fd821c351bb75325" title=" " alt="" coords="5,69,213,109"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="250,92,214,92,214,87,250,87"/>
+</map>

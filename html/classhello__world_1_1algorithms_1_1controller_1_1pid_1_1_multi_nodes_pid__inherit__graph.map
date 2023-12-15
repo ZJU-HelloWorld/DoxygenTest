@@ -1,0 +1,7 @@
+<map id="hello_world::algorithms::controller::pid::MultiNodesPid" name="hello_world::algorithms::controller::pid::MultiNodesPid">
+<area shape="rect" id="Node000001" title="一个多节点 PID 控制器类，继承自 Controller 类，目前实现类型有串联或并联" alt="" coords="5,167,205,207"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1algorithms_1_1controller_1_1_controller.html" title=" " alt="" coords="28,79,183,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,133,108,166,103,166,103,133"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1_mem_mang.html" title=" " alt="" coords="28,5,183,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="108,45,108,79,103,79,103,45"/>
+</map>

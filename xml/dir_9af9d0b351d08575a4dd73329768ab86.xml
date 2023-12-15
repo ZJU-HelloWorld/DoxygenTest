@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="dir_9af9d0b351d08575a4dd73329768ab86" kind="dir">
+    <compoundname>HW-Components/devices/referee</compoundname>
+    <innerdir refid="dir_08714f63fcc3403b297393de896eeb83">HW-Components/devices/referee/inc</innerdir>
+    <innerdir refid="dir_3262e1d76bbd0400e3919de14b78ae13">HW-Components/devices/referee/prv</innerdir>
+    <innerdir refid="dir_8480b207c016162edd758ed248e64054">HW-Components/devices/referee/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HW-Components/devices/referee/"/>
+  </compounddef>
+</doxygen>

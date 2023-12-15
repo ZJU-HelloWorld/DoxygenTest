@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacehello__world_1_1devices_1_1laser" xml:lang="zh">
+<title>hello_world::devices::laser 命名空间参考</title>
+<indexterm><primary>hello_world::devices::laser</primary></indexterm>
+<simplesect>
+    <title>类    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classhello__world_1_1devices_1_1laser_1_1_laser">Laser</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

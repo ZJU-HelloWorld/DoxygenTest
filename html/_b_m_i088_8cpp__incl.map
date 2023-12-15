@@ -1,0 +1,26 @@
+<map id="HW&#45;Components/devices/imu/src/BMI088.cpp" name="HW&#45;Components/devices/imu/src/BMI088.cpp">
+<area shape="rect" id="Node000001" title=": @history : Version Date Author Note V0.9.0 yyyy&#45;mm&#45;dd &lt;author&gt; 1." alt="" coords="308,5,476,45"/>
+<area shape="rect" id="Node000002" href="$_b_m_i088_8hpp.html" title=": @history : Version Date Author Note V1.0.0 2023&#45;12&#45;08 Caikunzhen 1." alt="" coords="133,93,224,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="340,48,225,90,224,85,338,43"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="248,93,309,119"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="365,48,309,87,306,83,362,44"/>
+<area shape="rect" id="Node000008" href="$_b_m_i088__reg_8hpp.html" title=": @history : Version Date Author Note V0.9.0 2023&#45;12&#45;05 Caikunzhen 1." alt="" coords="334,93,450,119"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="395,46,395,79,389,79,389,46"/>
+<area shape="rect" id="Node000009" href="$assert_8hpp.html" title=": @history : Version Date Author Note V0.9.0 yyyy&#45;mm&#45;dd &lt;author&gt; 1." alt="" coords="441,167,524,192"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="420,44,443,65,464,92,476,122,483,152,477,153,471,124,459,95,439,69,416,48"/>
+<area shape="rect" id="Node000010" href="$base_8hpp.html" title=": @history : Version Date Author Note V0.9.0 yyyy&#45;mm&#45;dd &lt;author&gt; 1." alt="" coords="535,93,609,119"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="438,44,532,85,530,90,435,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,167,96,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="158,122,86,162,83,157,156,117"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="120,167,237,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="181,119,181,152,176,152,176,119"/>
+<area shape="rect" id="Node000005" href="$system_8hpp.html" title=" " alt="" coords="261,167,352,192"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="202,117,274,157,271,162,199,122"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="277,240,337,265"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="309,192,309,225,304,225,304,192"/>
+<area shape="poly" id="edge12_Node000010_Node000009" title=" " alt="" coords="559,121,510,160,507,155,555,117"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="548,167,607,192"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="576,119,578,151,573,152,570,119"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="631,167,692,192"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="589,117,637,155,634,160,585,121"/>
+</map>

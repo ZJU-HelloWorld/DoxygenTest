@@ -1,0 +1,156 @@
+\doxysection{hello\+\_\+world\+::devices\+::motor\+::Optional\+Params结构体 参考}
+\hypertarget{structhello__world_1_1devices_1_1motor_1_1_optional_params}{}\label{structhello__world_1_1devices_1_1motor_1_1_optional_params}\index{hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}}
+
+
+电机初始化可选参数  
+
+
+
+
+{\ttfamily \#include $<$motor\+\_\+base.\+hpp$>$}
+
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7}{Input\+Type}} \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params_a40afccbd81c17e22779f7df471f2ec0b}{input\+\_\+type}} = \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7a3af8d233b879c0e5323904dd850fbfe3}{k\+Input\+Type\+Raw}}
+\item 
+\mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248}{Angle\+Range}} \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params_a1917a38f2bec6dbe8b7982ba4857142a}{angle\+\_\+range}} = \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248a0e264d4f119a2e5d4c62691f3f35e317}{k\+Angle\+Range\+Neg\+Inf\+To\+Pos\+Inf}}
+\item 
+\mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a44985d99992e9464953d243bf3b561fd}{Dir}} \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params_abb17f065132ebdcc2a00916fb36e2873}{dir}} = \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a44985d99992e9464953d243bf3b561fda8ef76451782f120b178cb02bdcbe9917}{k\+Dir\+Fwd}}
+\item 
+bool \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params_a7324141855f9f70be7be484df0f511e6}{remove\+\_\+build\+\_\+in\+\_\+reducer}} = false
+\begin{DoxyCompactList}\small\item\em 是否移除电机自带的减速器 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params_a36043885b6010524f0011531b6415e0a}{angle\+\_\+offset}} = 0
+\begin{DoxyCompactList}\small\item\em 电机输出端实际角度与规定角度的差值 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params_ab0a4704479885c3da95f9e0bee91026d}{ex\+\_\+redu\+\_\+rat}} = 1
+\begin{DoxyCompactList}\small\item\em 电机外置减速器的减速比（额外） \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params_a406c5a28341a65489f7450f8800c7bc1}{max\+\_\+raw\+\_\+input\+\_\+lim}} = std\+::numeric\+\_\+limits$<$float$>$\+::max()
+\begin{DoxyCompactList}\small\item\em 报文输入限制 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params_a2230b1a9af266b248a2642e032d1a4a7}{max\+\_\+torq\+\_\+input\+\_\+lim}} = std\+::numeric\+\_\+limits$<$float$>$\+::max()
+\begin{DoxyCompactList}\small\item\em 力矩输入限制 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params_a89486565dd10e3184bf9f54408743f8a}{max\+\_\+curr\+\_\+input\+\_\+lim}} = std\+::numeric\+\_\+limits$<$float$>$\+::max()
+\begin{DoxyCompactList}\small\item\em 电流输入限制 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+电机初始化可选参数 
+
+在文件 \mbox{\hyperlink{motor__base_8hpp_source}{motor\+\_\+base.\+hpp}} 第 \mbox{\hyperlink{motor__base_8hpp_source_l00100}{100}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{structhello__world_1_1devices_1_1motor_1_1_optional_params_a36043885b6010524f0011531b6415e0a}\label{structhello__world_1_1devices_1_1motor_1_1_optional_params_a36043885b6010524f0011531b6415e0a} 
+\index{hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}!angle\_offset@{angle\_offset}}
+\index{angle\_offset@{angle\_offset}!hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}}
+\doxysubsubsection{\texorpdfstring{angle\_offset}{angle\_offset}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::devices\+::motor\+::\+Optional\+Params\+::angle\+\_\+offset = 0}
+
+
+
+电机输出端实际角度与规定角度的差值 
+
+
+
+在文件 \mbox{\hyperlink{motor__base_8hpp_source}{motor\+\_\+base.\+hpp}} 第 \mbox{\hyperlink{motor__base_8hpp_source_l00107}{107}} 行定义.
+
+\Hypertarget{structhello__world_1_1devices_1_1motor_1_1_optional_params_a1917a38f2bec6dbe8b7982ba4857142a}\label{structhello__world_1_1devices_1_1motor_1_1_optional_params_a1917a38f2bec6dbe8b7982ba4857142a} 
+\index{hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}!angle\_range@{angle\_range}}
+\index{angle\_range@{angle\_range}!hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}}
+\doxysubsubsection{\texorpdfstring{angle\_range}{angle\_range}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248}{Angle\+Range}} hello\+\_\+world\+::devices\+::motor\+::\+Optional\+Params\+::angle\+\_\+range = \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0163710b33b99ac98bcbcb1f43d78248a0e264d4f119a2e5d4c62691f3f35e317}{k\+Angle\+Range\+Neg\+Inf\+To\+Pos\+Inf}}}
+
+
+
+在文件 \mbox{\hyperlink{motor__base_8hpp_source}{motor\+\_\+base.\+hpp}} 第 \mbox{\hyperlink{motor__base_8hpp_source_l00102}{102}} 行定义.
+
+\Hypertarget{structhello__world_1_1devices_1_1motor_1_1_optional_params_abb17f065132ebdcc2a00916fb36e2873}\label{structhello__world_1_1devices_1_1motor_1_1_optional_params_abb17f065132ebdcc2a00916fb36e2873} 
+\index{hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}!dir@{dir}}
+\index{dir@{dir}!hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}}
+\doxysubsubsection{\texorpdfstring{dir}{dir}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a44985d99992e9464953d243bf3b561fd}{Dir}} hello\+\_\+world\+::devices\+::motor\+::\+Optional\+Params\+::dir = \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a44985d99992e9464953d243bf3b561fda8ef76451782f120b178cb02bdcbe9917}{k\+Dir\+Fwd}}}
+
+
+
+在文件 \mbox{\hyperlink{motor__base_8hpp_source}{motor\+\_\+base.\+hpp}} 第 \mbox{\hyperlink{motor__base_8hpp_source_l00103}{103}} 行定义.
+
+\Hypertarget{structhello__world_1_1devices_1_1motor_1_1_optional_params_ab0a4704479885c3da95f9e0bee91026d}\label{structhello__world_1_1devices_1_1motor_1_1_optional_params_ab0a4704479885c3da95f9e0bee91026d} 
+\index{hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}!ex\_redu\_rat@{ex\_redu\_rat}}
+\index{ex\_redu\_rat@{ex\_redu\_rat}!hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}}
+\doxysubsubsection{\texorpdfstring{ex\_redu\_rat}{ex\_redu\_rat}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::devices\+::motor\+::\+Optional\+Params\+::ex\+\_\+redu\+\_\+rat = 1}
+
+
+
+电机外置减速器的减速比（额外） 
+
+
+
+在文件 \mbox{\hyperlink{motor__base_8hpp_source}{motor\+\_\+base.\+hpp}} 第 \mbox{\hyperlink{motor__base_8hpp_source_l00109}{109}} 行定义.
+
+\Hypertarget{structhello__world_1_1devices_1_1motor_1_1_optional_params_a40afccbd81c17e22779f7df471f2ec0b}\label{structhello__world_1_1devices_1_1motor_1_1_optional_params_a40afccbd81c17e22779f7df471f2ec0b} 
+\index{hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}!input\_type@{input\_type}}
+\index{input\_type@{input\_type}!hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}}
+\doxysubsubsection{\texorpdfstring{input\_type}{input\_type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7}{Input\+Type}} hello\+\_\+world\+::devices\+::motor\+::\+Optional\+Params\+::input\+\_\+type = \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a4777995093ebbd290b833795e49749b7a3af8d233b879c0e5323904dd850fbfe3}{k\+Input\+Type\+Raw}}}
+
+
+
+在文件 \mbox{\hyperlink{motor__base_8hpp_source}{motor\+\_\+base.\+hpp}} 第 \mbox{\hyperlink{motor__base_8hpp_source_l00101}{101}} 行定义.
+
+\Hypertarget{structhello__world_1_1devices_1_1motor_1_1_optional_params_a89486565dd10e3184bf9f54408743f8a}\label{structhello__world_1_1devices_1_1motor_1_1_optional_params_a89486565dd10e3184bf9f54408743f8a} 
+\index{hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}!max\_curr\_input\_lim@{max\_curr\_input\_lim}}
+\index{max\_curr\_input\_lim@{max\_curr\_input\_lim}!hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}}
+\doxysubsubsection{\texorpdfstring{max\_curr\_input\_lim}{max\_curr\_input\_lim}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::devices\+::motor\+::\+Optional\+Params\+::max\+\_\+curr\+\_\+input\+\_\+lim = std\+::numeric\+\_\+limits$<$float$>$\+::max()}
+
+
+
+电流输入限制 
+
+
+
+在文件 \mbox{\hyperlink{motor__base_8hpp_source}{motor\+\_\+base.\+hpp}} 第 \mbox{\hyperlink{motor__base_8hpp_source_l00115}{115}} 行定义.
+
+\Hypertarget{structhello__world_1_1devices_1_1motor_1_1_optional_params_a406c5a28341a65489f7450f8800c7bc1}\label{structhello__world_1_1devices_1_1motor_1_1_optional_params_a406c5a28341a65489f7450f8800c7bc1} 
+\index{hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}!max\_raw\_input\_lim@{max\_raw\_input\_lim}}
+\index{max\_raw\_input\_lim@{max\_raw\_input\_lim}!hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}}
+\doxysubsubsection{\texorpdfstring{max\_raw\_input\_lim}{max\_raw\_input\_lim}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::devices\+::motor\+::\+Optional\+Params\+::max\+\_\+raw\+\_\+input\+\_\+lim = std\+::numeric\+\_\+limits$<$float$>$\+::max()}
+
+
+
+报文输入限制 
+
+
+
+在文件 \mbox{\hyperlink{motor__base_8hpp_source}{motor\+\_\+base.\+hpp}} 第 \mbox{\hyperlink{motor__base_8hpp_source_l00111}{111}} 行定义.
+
+\Hypertarget{structhello__world_1_1devices_1_1motor_1_1_optional_params_a2230b1a9af266b248a2642e032d1a4a7}\label{structhello__world_1_1devices_1_1motor_1_1_optional_params_a2230b1a9af266b248a2642e032d1a4a7} 
+\index{hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}!max\_torq\_input\_lim@{max\_torq\_input\_lim}}
+\index{max\_torq\_input\_lim@{max\_torq\_input\_lim}!hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}}
+\doxysubsubsection{\texorpdfstring{max\_torq\_input\_lim}{max\_torq\_input\_lim}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::devices\+::motor\+::\+Optional\+Params\+::max\+\_\+torq\+\_\+input\+\_\+lim = std\+::numeric\+\_\+limits$<$float$>$\+::max()}
+
+
+
+力矩输入限制 
+
+
+
+在文件 \mbox{\hyperlink{motor__base_8hpp_source}{motor\+\_\+base.\+hpp}} 第 \mbox{\hyperlink{motor__base_8hpp_source_l00113}{113}} 行定义.
+
+\Hypertarget{structhello__world_1_1devices_1_1motor_1_1_optional_params_a7324141855f9f70be7be484df0f511e6}\label{structhello__world_1_1devices_1_1motor_1_1_optional_params_a7324141855f9f70be7be484df0f511e6} 
+\index{hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}!remove\_build\_in\_reducer@{remove\_build\_in\_reducer}}
+\index{remove\_build\_in\_reducer@{remove\_build\_in\_reducer}!hello\_world::devices::motor::OptionalParams@{hello\_world::devices::motor::OptionalParams}}
+\doxysubsubsection{\texorpdfstring{remove\_build\_in\_reducer}{remove\_build\_in\_reducer}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::devices\+::motor\+::\+Optional\+Params\+::remove\+\_\+build\+\_\+in\+\_\+reducer = false}
+
+
+
+是否移除电机自带的减速器 
+
+
+
+在文件 \mbox{\hyperlink{motor__base_8hpp_source}{motor\+\_\+base.\+hpp}} 第 \mbox{\hyperlink{motor__base_8hpp_source_l00105}{105}} 行定义.
+

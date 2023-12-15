@@ -1,0 +1,10 @@
+<map id="hello_world::algorithms::controller::pid::MultiNodesPid::MultiNodesPid" name="hello_world::algorithms::controller::pid::MultiNodesPid::MultiNodesPid">
+<area shape="rect" id="Node000001" title="构造函数，初始化 MultiNodesPid 对象，至少会存在一个 PID 控制器节点" alt="" coords="5,54,187,109"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list.html#a3b9df804e3d0bd9402c289727b00a25e" title="向链表尾部添加一个新的 PidNode" alt="" coords="235,29,427,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,66,219,62,220,67,187,72"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list.html#a11a15045ece7e7259a71143875b2aa32" title="获取链表的大小" alt="" coords="237,93,425,133"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="187,91,222,96,221,101,187,96"/>
+<area shape="poly" id="edge3_Node000002_Node000002" title=" " alt="" coords="288,30,285,20,292,10,308,5,331,3,357,5,371,12,369,17,355,11,331,8,309,10,296,15,291,21,293,28"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid.html#a7de4709eb73b91ffef6b5896dd45d8ed" title="获取 PID 参数的常量引用" alt="" coords="475,22,643,77"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="427,47,460,47,460,52,427,52"/>
+</map>

@@ -1,0 +1,18 @@
+<map id="hello_world::devices::motor::DM_J4310::decode" name="hello_world::devices::motor::DM_J4310::decode">
+<area shape="rect" id="Node000001" title="将电调发回的 CAN 报文进行解包" alt="" coords="5,96,188,136"/>
+<area shape="rect" id="Node000002" href="$namespacehello__world_1_1devices_1_1motor.html#aa4ac89a85a2b03e90b1606d4c9962f7c" title="根据给定的范围和位数，将 uint 转换为 float" alt="" coords="499,32,637,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,93,168,52,200,32,235,17,301,5,369,4,433,12,490,25,489,30,433,18,369,10,302,10,237,22,203,37,171,56,120,97"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#acad1e1f1792ab8cb6265b1d5195737f6" title=" " alt="" coords="497,153,639,193"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="178,134,236,145,365,160,482,167,482,173,365,165,236,150,177,139"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#a21092858a98af5688b398d57cd203592" title="将角度转换到指定范围" alt="" coords="243,210,418,250"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,134,237,189,265,202,263,207,235,194,131,138"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#acb60cb1b9843925d02c8a07c4b39aff4" title="将原始报文内容转换为转子电流" alt="" coords="236,32,425,72"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="172,92,240,73,242,79,173,98"/>
+<area shape="rect" id="Node000007" href="$classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#aa2784ed2ea68d2c48641004fdbd5ea52" title="将原始报文内容转换为输出端力矩" alt="" coords="236,96,425,136"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="188,113,221,113,221,118,188,118"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="415,207,482,191,483,196,417,212"/>
+<area shape="rect" id="Node000005" href="$namespacehello__world.html#a71f5ddbc81f1fa181ecefaf0b1f51fa8" title="将周期性数据归一化到指定周期区间" alt="" coords="473,218,663,243"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="418,228,458,228,458,233,418,233"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="426,49,484,49,484,54,426,54"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="407,92,484,71,485,77,408,98"/>
+</map>

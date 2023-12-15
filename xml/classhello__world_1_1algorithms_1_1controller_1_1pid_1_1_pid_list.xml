@@ -1,0 +1,572 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list" kind="class" language="C++" prot="public">
+    <compoundname>hello_world::algorithms::controller::pid::PidList</compoundname>
+    <basecompoundref refid="classhello__world_1_1_mem_mang" prot="public" virt="non-virtual">hello_world::MemMang</basecompoundref>
+    <includes refid="pid_8hpp" local="no">pid.hpp</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a4c4c1b76f8b632d221ea20e93f55cac7" prot="public" static="no">
+        <type><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node" kindref="compound">PidNode</ref> *</type>
+        <definition>typedef PidNode* hello_world::algorithms::controller::pid::PidList::iterator</definition>
+        <argsstring></argsstring>
+        <name>iterator</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::iterator</qualifiedname>
+        <briefdescription>
+<para>定义迭代器类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="240" column="19" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a1d2485619e4354fa8d5a3544bcf4b877" prot="public" static="no">
+        <type>const <ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node" kindref="compound">PidNode</ref> *</type>
+        <definition>typedef const PidNode* hello_world::algorithms::controller::pid::PidList::const_iterator</definition>
+        <argsstring></argsstring>
+        <name>const_iterator</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::const_iterator</qualifiedname>
+        <briefdescription>
+<para>定义常量迭代器类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="241" column="25" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="241" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1ab268cd237b3c6ad1b134d92d67b657d8" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t hello_world::algorithms::controller::pid::PidList::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::size_</qualifiedname>
+        <briefdescription>
+<para>链表的大小 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="319" column="10" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="319" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1adc2b7b05bea0ffea750ed9a212467145" compoundref="pid_8cpp" startline="140" endline="150">push</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a5ea468d831da1cfd880ad38897d227d2" compoundref="pid_8cpp" startline="151" endline="173">removeTail</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a11a15045ece7e7259a71143875b2aa32" compoundref="pid_8hpp" startline="288" endline="288">size</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1af548c6769ca5c6239989fad85f203f6f" prot="private" static="no" mutable="no">
+        <type><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node" kindref="compound">PidNode</ref> *</type>
+        <definition>PidNode* hello_world::algorithms::controller::pid::PidList::head_ptr_</definition>
+        <argsstring></argsstring>
+        <name>head_ptr_</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::head_ptr_</qualifiedname>
+        <briefdescription>
+<para>链表的头指针 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="320" column="11" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="320" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a3f374c443b6a07e0df4e800c253643c9" compoundref="pid_8hpp" startline="295" endline="295">begin</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a6756a733783fa560b806f7d6cc9fb7da" compoundref="pid_8hpp" startline="309" endline="309">begin</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a2d94d2bc545bc8d673f4de9592d647c1" compoundref="pid_8hpp" startline="282" endline="282">empty</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1adc2b7b05bea0ffea750ed9a212467145" compoundref="pid_8cpp" startline="140" endline="150">push</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a5ea468d831da1cfd880ad38897d227d2" compoundref="pid_8cpp" startline="151" endline="173">removeTail</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a4e49baca02d46d036fafef6413fd5179" prot="private" static="no" mutable="no">
+        <type><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node" kindref="compound">PidNode</ref> *</type>
+        <definition>PidNode* hello_world::algorithms::controller::pid::PidList::tail_ptr_</definition>
+        <argsstring></argsstring>
+        <name>tail_ptr_</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::tail_ptr_</qualifiedname>
+        <briefdescription>
+<para>链表的尾指针 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="321" column="11" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="321" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a2d94d2bc545bc8d673f4de9592d647c1" compoundref="pid_8hpp" startline="282" endline="282">empty</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1adc2b7b05bea0ffea750ed9a212467145" compoundref="pid_8cpp" startline="140" endline="150">push</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a5ea468d831da1cfd880ad38897d227d2" compoundref="pid_8cpp" startline="151" endline="173">removeTail</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1acd0b93d9b41b68568bcfaa496f2b8e0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hello_world::algorithms::controller::pid::PidList::PidList</definition>
+        <argsstring>()</argsstring>
+        <name>PidList</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::PidList</qualifiedname>
+        <briefdescription>
+<para>默认构造函数，初始化 <ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list" kindref="compound">PidList</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="246" column="3" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="246" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a8ad0d9ef13dc836eab3f26c1de2e87ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>hello_world::algorithms::controller::pid::PidList::~PidList</definition>
+        <argsstring>()</argsstring>
+        <name>~PidList</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::~PidList</qualifiedname>
+        <briefdescription>
+<para>析构函数，清空链表 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="251" column="3" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="251" bodyend="251"/>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1acff9c6256713181463dac33bcc8930a5" compoundref="pid_8cpp" startline="174" endline="177">clear</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a82678264b9a57ef20f837874771fed9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>hello_world::algorithms::controller::pid::PidList::PidList</definition>
+        <argsstring>(const PidList &amp;)=delete</argsstring>
+        <name>PidList</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::PidList</qualifiedname>
+        <param>
+          <type>const <ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list" kindref="compound">PidList</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>禁止复制构造 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="253" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a330534326e74b5ece9098a9c25a37a51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list" kindref="compound">PidList</ref> &amp;</type>
+        <definition>PidList &amp; hello_world::algorithms::controller::pid::PidList::operator=</definition>
+        <argsstring>(const PidList &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list" kindref="compound">PidList</ref> &amp;</type>
+        </param>
+        <briefdescription>
+<para>禁止赋值操作 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="254" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a3b9df804e3d0bd9402c289727b00a25e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hello_world::algorithms::controller::pid::PidList::push</definition>
+        <argsstring>(const BasicPid &amp;obj)</argsstring>
+        <name>push</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::push</qualifiedname>
+        <param>
+          <type>const <ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid" kindref="compound">BasicPid</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>向链表尾部添加一个新的 <ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node" kindref="compound">PidNode</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>要添加的 <ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid" kindref="compound">BasicPid</ref> 对象 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="260" column="8" bodyfile="HW-Components/algorithms/controller/src/pid.cpp" bodystart="139" bodyend="139"/>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a7de4709eb73b91ffef6b5896dd45d8ed" compoundref="pid_8hpp" startline="187" endline="187">hello_world::algorithms::controller::pid::BasicPid::params</references>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a3b9df804e3d0bd9402c289727b00a25e" compoundref="pid_8cpp" startline="139" endline="139">push</references>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a8e4bfd26c1bb829f58d3fb14e80c4c0b" compoundref="pid_8cpp" startline="179" endline="192">hello_world::algorithms::controller::pid::MultiNodesPid::MultiNodesPid</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a9a3282e6e51a5b7689717079f0d25abe" compoundref="pid_8cpp" startline="194" endline="212">hello_world::algorithms::controller::pid::MultiNodesPid::MultiNodesPid</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a3b9df804e3d0bd9402c289727b00a25e" compoundref="pid_8cpp" startline="139" endline="139">push</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1adc2b7b05bea0ffea750ed9a212467145" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hello_world::algorithms::controller::pid::PidList::push</definition>
+        <argsstring>(const BasicPidParams &amp;params)</argsstring>
+        <name>push</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::push</qualifiedname>
+        <param>
+          <type>const <ref refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params" kindref="compound">BasicPidParams</ref> &amp;</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>向链表尾部添加一个新的 <ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node" kindref="compound">PidNode</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>要添加的 <ref refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params" kindref="compound">BasicPidParams</ref> 对象 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="266" column="8" bodyfile="HW-Components/algorithms/controller/src/pid.cpp" bodystart="140" bodyend="150"/>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a2d94d2bc545bc8d673f4de9592d647c1" compoundref="pid_8hpp" startline="282" endline="282">empty</references>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1af548c6769ca5c6239989fad85f203f6f" compoundref="pid_8hpp" startline="320">head_ptr_</references>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_1a7be6366e2fa1a9d1b8a84ca9101e668f" compoundref="pid_8hpp" startline="214">hello_world::algorithms::controller::pid::PidNode::next_ptr_</references>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1ab268cd237b3c6ad1b134d92d67b657d8" compoundref="pid_8hpp" startline="319">size_</references>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a4e49baca02d46d036fafef6413fd5179" compoundref="pid_8hpp" startline="321">tail_ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a5ea468d831da1cfd880ad38897d227d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hello_world::algorithms::controller::pid::PidList::removeTail</definition>
+        <argsstring>()</argsstring>
+        <name>removeTail</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::removeTail</qualifiedname>
+        <briefdescription>
+<para>移除链表尾部的 <ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node" kindref="compound">PidNode</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="271" column="8" bodyfile="HW-Components/algorithms/controller/src/pid.cpp" bodystart="151" bodyend="173"/>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a2d94d2bc545bc8d673f4de9592d647c1" compoundref="pid_8hpp" startline="282" endline="282">empty</references>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1af548c6769ca5c6239989fad85f203f6f" compoundref="pid_8hpp" startline="320">head_ptr_</references>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_1a7be6366e2fa1a9d1b8a84ca9101e668f" compoundref="pid_8hpp" startline="214">hello_world::algorithms::controller::pid::PidNode::next_ptr_</references>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1ab268cd237b3c6ad1b134d92d67b657d8" compoundref="pid_8hpp" startline="319">size_</references>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a4e49baca02d46d036fafef6413fd5179" compoundref="pid_8hpp" startline="321">tail_ptr_</references>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1acff9c6256713181463dac33bcc8930a5" compoundref="pid_8cpp" startline="174" endline="177">clear</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1acff9c6256713181463dac33bcc8930a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hello_world::algorithms::controller::pid::PidList::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::clear</qualifiedname>
+        <briefdescription>
+<para>清空链表 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="276" column="8" bodyfile="HW-Components/algorithms/controller/src/pid.cpp" bodystart="174" bodyend="177"/>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a2d94d2bc545bc8d673f4de9592d647c1" compoundref="pid_8hpp" startline="282" endline="282">empty</references>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a5ea468d831da1cfd880ad38897d227d2" compoundref="pid_8cpp" startline="151" endline="173">removeTail</references>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a8ad0d9ef13dc836eab3f26c1de2e87ec" compoundref="pid_8hpp" startline="251" endline="251">~PidList</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a2d94d2bc545bc8d673f4de9592d647c1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::PidList::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::empty</qualifiedname>
+        <briefdescription>
+<para>检查链表是否为空 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>如果链表为空则返回 true，否则返回 false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="282" column="8" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="282" bodyend="282"/>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1af548c6769ca5c6239989fad85f203f6f" compoundref="pid_8hpp" startline="320">head_ptr_</references>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a4e49baca02d46d036fafef6413fd5179" compoundref="pid_8hpp" startline="321">tail_ptr_</references>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1acff9c6256713181463dac33bcc8930a5" compoundref="pid_8cpp" startline="174" endline="177">clear</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1adc2b7b05bea0ffea750ed9a212467145" compoundref="pid_8cpp" startline="140" endline="150">push</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a5ea468d831da1cfd880ad38897d227d2" compoundref="pid_8cpp" startline="151" endline="173">removeTail</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a11a15045ece7e7259a71143875b2aa32" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t hello_world::algorithms::controller::pid::PidList::size</definition>
+        <argsstring>() const</argsstring>
+        <name>size</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::size</qualifiedname>
+        <briefdescription>
+<para>获取链表的大小 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>链表的大小 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="288" column="10" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="288" bodyend="288"/>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1ab268cd237b3c6ad1b134d92d67b657d8" compoundref="pid_8hpp" startline="319">size_</references>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1accc1fd43233ab6d228f7111eab364c51" compoundref="pid_8cpp" startline="250" endline="294">hello_world::algorithms::controller::pid::MultiNodesPid::cascade_calc</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a8e4bfd26c1bb829f58d3fb14e80c4c0b" compoundref="pid_8cpp" startline="179" endline="192">hello_world::algorithms::controller::pid::MultiNodesPid::MultiNodesPid</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a9a3282e6e51a5b7689717079f0d25abe" compoundref="pid_8cpp" startline="194" endline="212">hello_world::algorithms::controller::pid::MultiNodesPid::MultiNodesPid</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a180ce707d30cae5f45ec5820d1b2c50c" compoundref="pid_8cpp" startline="296" endline="332">hello_world::algorithms::controller::pid::MultiNodesPid::parallel_calc</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a5edb64efe535b8e5b8b1e30a91f28fe0" compoundref="pid_8cpp" startline="214" endline="224">hello_world::algorithms::controller::pid::MultiNodesPid::reset</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a02e66f815cbf9b95e4d390a456098850" compoundref="pid_8hpp" startline="405" endline="405">hello_world::algorithms::controller::pid::MultiNodesPid::size</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a3f374c443b6a07e0df4e800c253643c9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a4c4c1b76f8b632d221ea20e93f55cac7" kindref="member">iterator</ref></type>
+        <definition>iterator hello_world::algorithms::controller::pid::PidList::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::begin</qualifiedname>
+        <briefdescription>
+<para>获取链表的开始迭代器 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>链表的开始迭代器 </para>
+</simplesect>
+<simplesect kind="attention"><para>当链表为空时，返回nullptr </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="295" column="12" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="295" bodyend="295"/>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1af548c6769ca5c6239989fad85f203f6f" compoundref="pid_8hpp" startline="320">head_ptr_</references>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1accc1fd43233ab6d228f7111eab364c51" compoundref="pid_8cpp" startline="250" endline="294">hello_world::algorithms::controller::pid::MultiNodesPid::cascade_calc</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a180ce707d30cae5f45ec5820d1b2c50c" compoundref="pid_8cpp" startline="296" endline="332">hello_world::algorithms::controller::pid::MultiNodesPid::parallel_calc</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a5798e287814521e3627db78943c840c4" compoundref="pid_8cpp" startline="238" endline="248">hello_world::algorithms::controller::pid::MultiNodesPid::paramsAt</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a5edb64efe535b8e5b8b1e30a91f28fe0" compoundref="pid_8cpp" startline="214" endline="224">hello_world::algorithms::controller::pid::MultiNodesPid::reset</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a25c937a246eff76147e6f2c0cf5a0d86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a4c4c1b76f8b632d221ea20e93f55cac7" kindref="member">iterator</ref></type>
+        <definition>iterator hello_world::algorithms::controller::pid::PidList::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::end</qualifiedname>
+        <briefdescription>
+<para>获取链表的结束迭代器 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>链表的结束迭代器 </para>
+</simplesect>
+<simplesect kind="attention"><para>实际是nulllptr，仅供判断迭代结束使用 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="302" column="12" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="302" bodyend="302"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1accc1fd43233ab6d228f7111eab364c51" compoundref="pid_8cpp" startline="250" endline="294">hello_world::algorithms::controller::pid::MultiNodesPid::cascade_calc</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a180ce707d30cae5f45ec5820d1b2c50c" compoundref="pid_8cpp" startline="296" endline="332">hello_world::algorithms::controller::pid::MultiNodesPid::parallel_calc</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a5798e287814521e3627db78943c840c4" compoundref="pid_8cpp" startline="238" endline="248">hello_world::algorithms::controller::pid::MultiNodesPid::paramsAt</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_1a5edb64efe535b8e5b8b1e30a91f28fe0" compoundref="pid_8cpp" startline="214" endline="224">hello_world::algorithms::controller::pid::MultiNodesPid::reset</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a6756a733783fa560b806f7d6cc9fb7da" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a1d2485619e4354fa8d5a3544bcf4b877" kindref="member">const_iterator</ref></type>
+        <definition>const_iterator hello_world::algorithms::controller::pid::PidList::begin</definition>
+        <argsstring>() const</argsstring>
+        <name>begin</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::begin</qualifiedname>
+        <briefdescription>
+<para>获取链表的开始常量迭代器 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>链表的开始常量迭代器 </para>
+</simplesect>
+<simplesect kind="attention"><para>当链表为空时，返回nullptr </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="309" column="18" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="309" bodyend="309"/>
+        <references refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1af548c6769ca5c6239989fad85f203f6f" compoundref="pid_8hpp" startline="320">head_ptr_</references>
+      </memberdef>
+      <memberdef kind="function" id="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a7b014801351059fe1d1c6d769f0b84b6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a1d2485619e4354fa8d5a3544bcf4b877" kindref="member">const_iterator</ref></type>
+        <definition>const_iterator hello_world::algorithms::controller::pid::PidList::end</definition>
+        <argsstring>() const</argsstring>
+        <name>end</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::PidList::end</qualifiedname>
+        <briefdescription>
+<para>获取链表的结束常量迭代器 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>链表的结束常量迭代器 </para>
+</simplesect>
+<simplesect kind="attention"><para>实际是nulllptr，仅供判断迭代结束使用 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="316" column="18" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="316" bodyend="316"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>一个用于存储 <ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node" kindref="compound">PidNode</ref> 的链表类，用于 Ozone 监视 </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>hello_world::MemMang</label>
+        <link refid="classhello__world_1_1_mem_mang"/>
+      </node>
+      <node id="1">
+        <label>hello_world::algorithms::controller::pid::PidList</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>hello_world::MemMang</label>
+        <link refid="classhello__world_1_1_mem_mang"/>
+      </node>
+      <node id="5">
+        <label>hello_world::algorithms::controller::Controller</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>hello_world::algorithms::controller::pid::BasicPid</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>params_</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>datas_</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>hello_world::algorithms::controller::pid::BasicPidDatas</label>
+        <link refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_datas"/>
+      </node>
+      <node id="6">
+        <label>hello_world::algorithms::controller::pid::BasicPidParams</label>
+        <link refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>out_limit</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>inte_trapezoidal</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>inte_anti_windup</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>inte_changing_rate</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>inte_separation</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>diff_filter</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>diff_previous</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>dead_band</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>setpointe_ramping</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>hello_world::algorithms::controller::pid::DeadBand</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band"/>
+      </node>
+      <node id="12">
+        <label>hello_world::algorithms::controller::pid::DiffFilter</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter"/>
+      </node>
+      <node id="13">
+        <label>hello_world::algorithms::controller::pid::DiffPrevious</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous"/>
+      </node>
+      <node id="9">
+        <label>hello_world::algorithms::controller::pid::InteAntiWindup</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup"/>
+      </node>
+      <node id="10">
+        <label>hello_world::algorithms::controller::pid::InteChangingRate</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate"/>
+      </node>
+      <node id="11">
+        <label>hello_world::algorithms::controller::pid::InteSeparation</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation"/>
+      </node>
+      <node id="8">
+        <label>hello_world::algorithms::controller::pid::InteTrapezoidal</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal"/>
+      </node>
+      <node id="7">
+        <label>hello_world::algorithms::controller::pid::OutLimit</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit"/>
+      </node>
+      <node id="1">
+        <label>hello_world::algorithms::controller::pid::PidList</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>head_ptr_</edgelabel>
+          <edgelabel>tail_ptr_</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>hello_world::algorithms::controller::pid::PidNode</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>obj_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>next_ptr_</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>hello_world::algorithms::controller::pid::SetpointRamping</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping"/>
+      </node>
+    </collaborationgraph>
+    <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="237" column="1" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="238" bodyend="322"/>
+    <listofallmembers>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a3f374c443b6a07e0df4e800c253643c9" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>begin</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a6756a733783fa560b806f7d6cc9fb7da" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>begin</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1acff9c6256713181463dac33bcc8930a5" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>clear</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a1d2485619e4354fa8d5a3544bcf4b877" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>const_iterator</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a2d94d2bc545bc8d673f4de9592d647c1" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>empty</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a25c937a246eff76147e6f2c0cf5a0d86" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>end</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a7b014801351059fe1d1c6d769f0b84b6" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>end</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1af548c6769ca5c6239989fad85f203f6f" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>head_ptr_</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a4c4c1b76f8b632d221ea20e93f55cac7" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>iterator</name></member>
+      <member refid="classhello__world_1_1_mem_mang_1abf1fe21066f52d693e2eec63a5833e8e" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>operator delete</name></member>
+      <member refid="classhello__world_1_1_mem_mang_1a54e1a6a8e01b0996cc2854a8bc1ce7bd" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>operator delete[]</name></member>
+      <member refid="classhello__world_1_1_mem_mang_1abcf6e7289814e8da342ba4f47d8af411" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>operator new</name></member>
+      <member refid="classhello__world_1_1_mem_mang_1ad10b6eff1541322708e5bde32c590c82" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>operator new[]</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a330534326e74b5ece9098a9c25a37a51" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>operator=</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1acd0b93d9b41b68568bcfaa496f2b8e0b" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>PidList</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a82678264b9a57ef20f837874771fed9a" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>PidList</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a3b9df804e3d0bd9402c289727b00a25e" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>push</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1adc2b7b05bea0ffea750ed9a212467145" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>push</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a5ea468d831da1cfd880ad38897d227d2" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>removeTail</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a11a15045ece7e7259a71143875b2aa32" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>size</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1ab268cd237b3c6ad1b134d92d67b657d8" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>size_</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a4e49baca02d46d036fafef6413fd5179" prot="private" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>tail_ptr_</name></member>
+      <member refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_1a8ad0d9ef13dc836eab3f26c1de2e87ec" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::PidList</scope><name>~PidList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_referee__rx__template_8hpp_source" xml:lang="zh">
+<title>referee_rx_template.hpp</title>
+<indexterm><primary>HW-Components/devices/referee/inc/referee_rx_template.hpp</primary></indexterm>
+浏览该文件的文档.<programlisting linenumbering="unnumbered"><anchor xml:id="_referee__rx__template_8hpp_source_1l00001"/>00001 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00002"/>00002 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00021"/>00021 <emphasis role="comment">/*&#32;Define&#32;to&#32;prevent&#32;recursive&#32;inclusion&#32;-------------------------------------*/</emphasis>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00022"/>00022 <emphasis role="preprocessor">#ifndef&#32;HWCOMPONETS_DEVICES_REFEREE_RX_TEMPLATE_H_</emphasis>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00023"/>00023 <emphasis role="preprocessor">#define&#32;HWCOMPONETS_DEVICES_REFEREE_RX_TEMPLATE_H_</emphasis>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00024"/>00024 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00025"/>00025 <emphasis role="comment">/*&#32;Includes&#32;------------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00026"/>00026 <emphasis role="preprocessor">#include&#32;&lt;cstdint&gt;</emphasis>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00027"/>00027 <emphasis role="preprocessor">#include&#32;&lt;cstring&gt;</emphasis>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00028"/>00028 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00029"/>00029 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_referee__protocol_8hpp">referee_protocol.hpp</link>&quot;</emphasis>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00030"/>00030 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_tick_8hpp">tick.hpp</link>&quot;</emphasis>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00031"/>00031 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00032"/>00032 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacehello__world">hello_world</link>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00033"/>00033 {
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00034"/>00034 <emphasis role="keyword">namespace&#32;</emphasis>devices
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00035"/>00035 {
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00036"/>00036 <emphasis role="keyword">namespace&#32;</emphasis>referee
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00037"/>00037 {
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00038"/>00038 <emphasis role="comment">/*&#32;Exported&#32;macro&#32;------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00039"/>00039 <emphasis role="comment">/*&#32;Exported&#32;constants&#32;--------------------------------------------------------*/</emphasis>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00040"/>00040 <emphasis role="comment">/*&#32;Exported&#32;types&#32;------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00041"/>00041 <emphasis role="keyword">class&#32;</emphasis>Referee;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00042"/>00042 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00043"/><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info">00043</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info">RxPackageInfo</link>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00044"/>00044 {
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00045"/><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1ae1e2d401d69833283bfa4d2bd4fccf16">00045</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">friend</emphasis>&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1ae1e2d401d69833283bfa4d2bd4fccf16">Referee</link>;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00046"/>00046 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00047"/>00047 &#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>:
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00048"/><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a652358f4036b06f1131520b6b6e8fc2a">00048</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a652358f4036b06f1131520b6b6e8fc2a">is_handled_</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00049"/><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a75f5994431c01325057a21f5de7394a6">00049</link> &#32;&#32;&#32;&#32;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38a">FrameCmdId</link>&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a75f5994431c01325057a21f5de7394a6">command_id_</link>&#32;=&#32;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38aa386d9b809aca2e4adb719dc9b59889ce">kFrameCmdIdNone</link>;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00050"/><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a35731243c59c43b397c3b426abd0a631">00050</link> &#32;&#32;&#32;&#32;uint32_t&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a35731243c59c43b397c3b426abd0a631">update_interval_</link>&#32;=&#32;1000u;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00051"/><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1ae30c9a631d1bd61d4599d68b54cbfa8b">00051</link> &#32;&#32;&#32;&#32;uint32_t&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1ae30c9a631d1bd61d4599d68b54cbfa8b">last_update_tick_</link>&#32;=&#32;0;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00052"/><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1acb3daf6092bba76a10fa7cc2d580a429">00052</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1acb3daf6092bba76a10fa7cc2d580a429">decode</link>(<emphasis role="keyword">const</emphasis>&#32;uint8_t&#32;*frame_cmd_data_ptr)&#32;=&#32;0;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00053"/>00053 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00054"/>00054 &#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00055"/><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a425addbe56cad6a94fc00d5a4beae287">00055</link> &#32;&#32;&#32;&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a425addbe56cad6a94fc00d5a4beae287">RxPackageInfo</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38a">FrameCmdId</link>&#32;command_id,&#32;<emphasis role="keyword">const</emphasis>&#32;uint32_t&#32;frequence)
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00056"/>00056 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00057"/>00057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;command_id_&#32;=&#32;command_id;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00058"/>00058 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00059"/>00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(frequence&#32;&gt;=&#32;1)&#32;{
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00060"/>00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;update_interval_&#32;=&#32;1000&#32;/&#32;frequence;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00061"/>00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00062"/>00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;update_interval_&#32;=&#32;1000;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00064"/>00064 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00065"/>00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;last_update_tick_&#32;=&#32;0;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00066"/>00066 &#32;&#32;&#32;&#32;};
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00067"/>00067 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00068"/><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a2767a90b294aac66ab8268a40f89070e">00068</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a2767a90b294aac66ab8268a40f89070e">setHandled</link>()
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00069"/>00069 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00070"/>00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a652358f4036b06f1131520b6b6e8fc2a">is_handled_</link>&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00071"/>00071 &#32;&#32;&#32;&#32;};
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00072"/>00072 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00073"/><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a4d47f980c5f11bbe7bc5bf5d3cd448a4">00073</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a4d47f980c5f11bbe7bc5bf5d3cd448a4">isUpdated</link>()<emphasis role="keyword">&#32;const</emphasis>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00074"/>00074 <emphasis role="keyword">&#32;&#32;&#32;&#32;</emphasis>{
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;uint32_t&#32;now_tick&#32;=&#32;<link linkend="_namespacehello__world_1_1dsp_1_1tick_1a97910b07255da1979f8ceafd8c6d2ea5">dsp::tick::GetTickMs</link>();
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00076"/>00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;((now_tick&#32;-&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1ae30c9a631d1bd61d4599d68b54cbfa8b">last_update_tick_</link>)&#32;&lt;=&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a35731243c59c43b397c3b426abd0a631">update_interval_</link>)&#32;&amp;&amp;&#32;(<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info_1a652358f4036b06f1131520b6b6e8fc2a">is_handled_</link>&#32;==&#32;<emphasis role="keyword">false</emphasis>);
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00077"/>00077 &#32;&#32;&#32;&#32;};
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00078"/>00078 };
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00079"/>00079 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00080"/>00080 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00081"/><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">00081</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package">RxPackage</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info">RxPackageInfo</link>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00082"/>00082 {
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00083"/><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_1a69171902885fbe16d886685130c0b9fb">00083</link> &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_1a69171902885fbe16d886685130c0b9fb">decode</link>(<emphasis role="keyword">const</emphasis>&#32;uint8_t&#32;*frame_cmd_data_ptr);
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00084"/><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_1a1b773247599e0da8f8e3b2276ad43ce9">00084</link> &#32;&#32;&#32;&#32;T&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_1a1b773247599e0da8f8e3b2276ad43ce9">data_</link>;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00085"/>00085 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00086"/>00086 &#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00087"/><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_1aa26ecd414bcce3624fd4ee43555e06ed">00087</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;T&#32;&amp;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_1aa26ecd414bcce3624fd4ee43555e06ed">data</link>()
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00088"/>00088 &#32;&#32;&#32;&#32;{
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00089"/>00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_1a1b773247599e0da8f8e3b2276ad43ce9">data_</link>;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00090"/>00090 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00091"/><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_1a2f6e09b96618c66f057d7717195e483f">00091</link> &#32;&#32;&#32;&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_1a2f6e09b96618c66f057d7717195e483f">RxPackage</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38a">FrameCmdId</link>&#32;command_id,&#32;<emphasis role="keyword">const</emphasis>&#32;uint32_t&#32;frequence)&#32;:&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_info">RxPackageInfo</link>(command_id,&#32;frequence){};
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00092"/>00092 };
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00093"/>00093 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00094"/>00094 <emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00095"/><link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_1a69171902885fbe16d886685130c0b9fb">00095</link> <emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1devices_1_1referee_1_1_rx_package_1a69171902885fbe16d886685130c0b9fb">RxPackage&lt;T&gt;::decode</link>(<emphasis role="keyword">const</emphasis>&#32;uint8_t&#32;*frame_cmd_data_ptr)
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00096"/>00096 {
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00097"/>00097 &#32;&#32;&#32;&#32;<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38a">FrameCmdId</link>&#32;cmd_id&#32;=&#32;(<link linkend="_namespacehello__world_1_1devices_1_1referee_1a51755bb88aea2d560575188f43afc38a">FrameCmdId</link>)(frame_cmd_data_ptr[0]&#32;|&#32;frame_cmd_data_ptr[1]&#32;&lt;&lt;&#32;8);
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00098"/>00098 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(command_id_&#32;!=&#32;cmd_id)&#32;{
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00099"/>00099 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00100"/>00100 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00101"/>00101 &#32;&#32;&#32;&#32;memcpy(&amp;data_,&#32;frame_cmd_data_ptr&#32;+&#32;2,&#32;<emphasis role="keyword">sizeof</emphasis>(T));
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00102"/>00102 &#32;&#32;&#32;&#32;last_update_tick_&#32;=&#32;<link linkend="_namespacehello__world_1_1dsp_1_1tick_1a97910b07255da1979f8ceafd8c6d2ea5">dsp::tick::GetTickMs</link>();
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00103"/>00103 &#32;&#32;&#32;&#32;is_handled_&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00104"/>00104 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00105"/>00105 };
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00106"/>00106 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00107"/>00107 <emphasis role="comment">/*&#32;Exported&#32;variables&#32;--------------------------------------------------------*/</emphasis>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00108"/>00108 <emphasis role="comment">/*&#32;Exported&#32;function&#32;prototypes&#32;----------------------------------------------*/</emphasis>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00109"/>00109 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00110"/>00110 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;referee</emphasis>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00111"/>00111 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00112"/>00112 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;devices</emphasis>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00113"/>00113 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00114"/>00114 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;hello_world</emphasis>
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00115"/>00115 
+<anchor xml:id="_referee__rx__template_8hpp_source_1l00116"/>00116 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;HWCOMPONETS_DEVICES_REFEREE_RX_TEMPLATE_H_&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+</programlisting></section>

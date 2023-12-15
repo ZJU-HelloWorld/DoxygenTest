@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_914e213ab34dfe4d3be56ed6727e39d6" xml:lang="zh">
+<title>HW-Components/algorithms 目录参考</title>
+<indexterm><primary>HW-Components/algorithms 目录参考</primary></indexterm>
+algorithms 的目录依赖关系图<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_914e213ab34dfe4d3be56ed6727e39d6_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>目录    </title>
+        <itemizedlist>
+            <listitem><para>目录 <link linkend="_dir_54dabecd4565b16190808dfe22634721">controller</link></para>
+</listitem>
+            <listitem><para>目录 <link linkend="_dir_d3dd0c564e782295acdbd31dbbd9650b">ik_solver</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,26 @@
+<map id="hello_world::devices::motor::DM_J4310::setInput" name="hello_world::devices::motor::DM_J4310::setInput">
+<area shape="rect" id="Node000001" title="设定发给电调的期望值" alt="" coords="5,151,192,191"/>
+<area shape="rect" id="Node000002" href="$namespacehello__world.html#a34cb06299a34f746d556d23dc16904aa" title="将输入值限制在一个范围内" alt="" coords="269,5,400,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,149,166,95,201,66,239,41,254,34,257,38,241,46,204,70,170,99,119,153"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#a358bd9981d81d72077e27f42d775e431" title="将转子电流转换为原始报文内容" alt="" coords="240,119,429,159"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="192,156,225,152,225,157,193,161"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#a6e11db30817cf05232ee3d52ed48030b" title="将转子电流转换为输出端力矩" alt="" coords="253,55,416,95"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="141,148,239,105,256,98,258,103,241,110,143,153"/>
+<area shape="rect" id="Node000007" href="$classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#aa2784ed2ea68d2c48641004fdbd5ea52" title="将原始报文内容转换为输出端力矩" alt="" coords="240,311,429,351"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="119,190,171,243,205,272,241,297,251,302,249,307,239,302,202,276,167,247,116,194"/>
+<area shape="rect" id="Node000009" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#a44292bfea784425e2c2c81dc4d634371" title="将输出端力矩转换为转子电流" alt="" coords="253,247,416,287"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="143,189,241,233,258,239,256,244,239,238,141,194"/>
+<area shape="rect" id="Node000011" href="$classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#ace039722135c1bf08b429a4ad41ccc81" title="将输出端力矩转换为原始报文内容" alt="" coords="240,183,429,223"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="193,181,225,186,225,191,192,187"/>
+<area shape="rect" id="Node000004" href="$namespacehello__world_1_1devices_1_1motor.html#a5102e8812e14a2caaf3a2fc96b18efa3" title="根据给定的范围和位数，将 float 转换为 uint" alt="" coords="477,135,615,175"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="430,144,463,146,462,152,430,149"/>
+<area shape="rect" id="Node000005" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#a7fbec1460a1db6c45b4c57fd0497e5e0" title=" " alt="" coords="477,63,615,103"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="412,116,462,103,464,108,413,121"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="416,76,462,78,462,83,416,81"/>
+<area shape="rect" id="Node000008" href="$namespacehello__world_1_1devices_1_1motor.html#aa4ac89a85a2b03e90b1606d4c9962f7c" title="根据给定的范围和位数，将 uint 转换为 float" alt="" coords="477,311,615,351"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="430,329,463,329,463,334,430,334"/>
+<area shape="rect" id="Node000010" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#a987073404f2d04c10434f830884b9612" title=" " alt="" coords="477,215,615,255"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="416,252,462,245,463,251,416,258"/>
+<area shape="poly" id="edge12_Node000011_Node000004" title=" " alt="" coords="425,180,462,172,464,177,426,185"/>
+<area shape="poly" id="edge13_Node000011_Node000010" title=" " alt="" coords="430,215,463,220,462,225,430,220"/>
+</map>

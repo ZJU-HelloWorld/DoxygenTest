@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_efb0ec8d37d4e3ee43207fb26754ffbf" xml:lang="zh">
+<title>HW-Components/dsp 目录参考</title>
+<indexterm><primary>HW-Components/dsp 目录参考</primary></indexterm>
+dsp 的目录依赖关系图<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_efb0ec8d37d4e3ee43207fb26754ffbf_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>目录    </title>
+        <itemizedlist>
+            <listitem><para>目录 <link linkend="_dir_7052dcf5f8ef4e64dad5acb34918f40a">tick</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

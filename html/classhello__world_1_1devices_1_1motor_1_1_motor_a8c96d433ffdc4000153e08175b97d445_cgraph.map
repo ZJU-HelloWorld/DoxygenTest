@@ -1,0 +1,5 @@
+<map id="hello_world::devices::motor::Motor::setAngleValue" name="hello_world::devices::motor::Motor::setAngleValue">
+<area shape="rect" id="Node000001" title="将当前电机输出端所处位置设置为指定的角度" alt="" coords="5,5,201,45"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#acad1e1f1792ab8cb6265b1d5195737f6" title=" " alt="" coords="249,5,392,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,23,234,23,234,28,202,28"/>
+</map>

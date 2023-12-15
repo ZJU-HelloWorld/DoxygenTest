@@ -1,0 +1,13 @@
+<map id="hello_world::devices::buzzer::Buzzer::play" name="hello_world::devices::buzzer::Buzzer::play">
+<area shape="rect" id="Node000001" title="播放乐曲" alt="" coords="5,87,156,127"/>
+<area shape="rect" id="Node000002" href="$namespacehello__world.html#a34cb06299a34f746d556d23dc16904aa" title="将输入值限制在一个范围内" alt="" coords="231,5,362,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,84,156,62,203,41,226,33,227,38,205,46,159,67,118,89"/>
+<area shape="rect" id="Node000003" href="$namespacehello__world_1_1dsp_1_1tick.html#a97910b07255da1979f8ceafd8c6d2ea5" title=" " alt="" coords="225,55,369,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,94,210,85,211,91,157,99"/>
+<area shape="rect" id="Node000005" href="$classhello__world_1_1devices_1_1buzzer_1_1_buzzer.html#ab2c457527b41d290e2e68101c508b73a" title="关闭蜂鸣器" alt="" coords="219,119,374,159"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="157,116,205,123,204,128,156,121"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1devices_1_1buzzer_1_1_buzzer.html#a4098153da83266e584a961b94e2213c4" title="将音符转化为对应的定时器重载值" alt="" coords="204,184,389,239"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="121,126,205,169,218,175,216,180,203,174,118,130"/>
+<area shape="rect" id="Node000004" href="$namespacehello__world_1_1dsp_1_1tick.html#a0c9c44ee367dc665cc6f1a6d830da9ee" title=" " alt="" coords="437,55,581,95"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="369,73,422,73,422,78,369,78"/>
+</map>

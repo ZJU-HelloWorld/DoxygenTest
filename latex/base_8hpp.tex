@@ -1,0 +1,105 @@
+\doxysection{HW-\/\+Components/tools/inc/base.hpp 文件参考}
+\hypertarget{base_8hpp}{}\label{base_8hpp}\index{HW-\/Components/tools/inc/base.hpp@{HW-\/Components/tools/inc/base.hpp}}
+
+
+\+: @history \+: Version Date Author Note V0.\+9.\+0 yyyy-\/mm-\/dd $<$author$>$ 1.  
+
+
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include "{}assert.\+hpp"{}}\newline
+base.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{base_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{base_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacehello__world}{hello\+\_\+world}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{宏定义}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}}~3.\+14159265358979f
+\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\uint8\+\_\+t \mbox{\hyperlink{namespacehello__world_a0a24a2113234e7e7a7328e70bedb91c1}{hello\+\_\+world\+::\+Get\+Sign}} (T x)
+\begin{DoxyCompactList}\small\item\em 获取变量的符号 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{namespacehello__world_aa015d79000267b9839acf531c7dbc7a6}{hello\+\_\+world\+::\+Max}} (T x1, T x2)
+\begin{DoxyCompactList}\small\item\em 获取两个变量间的最大值 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{namespacehello__world_a94594f3432536927055026f3f48af251}{hello\+\_\+world\+::\+Min}} (T x1, T x2)
+\begin{DoxyCompactList}\small\item\em 获取两个变量间的最小值 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 , typename T3 $>$ }\\T1 \mbox{\hyperlink{namespacehello__world_a34cb06299a34f746d556d23dc16904aa}{hello\+\_\+world\+::\+Bound}} (T1 x, T2 lim1, T3 lim2)
+\begin{DoxyCompactList}\small\item\em 将输入值限制在一个范围内 \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{namespacehello__world_aadc1f0af4d10150fcd1a306c7dc6515c}{hello\+\_\+world\+::\+Is\+In\+Range}} (T x, T bound1, T bound2)
+\begin{DoxyCompactList}\small\item\em 判断变量是否位于给定的范围内 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespacehello__world_a71f5ddbc81f1fa181ecefaf0b1f51fa8}{hello\+\_\+world\+::\+Norm\+Period\+Data}} (float period\+\_\+lb, float period\+\_\+ub, float data)
+\begin{DoxyCompactList}\small\item\em 将周期性数据归一化到指定周期区间 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespacehello__world_aa2fc22e21a1835072f26dea54497255c}{hello\+\_\+world\+::\+Period\+Data2\+Same\+Region}} (float period\+\_\+lb, float period\+\_\+ub, float ref\+\_\+data, float data)
+\begin{DoxyCompactList}\small\item\em 将待处理数据平移到参考数据的所在周期中 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespacehello__world_a8d23c04b152e4fb0c195a75e185f75ed}{hello\+\_\+world\+::\+Period\+Data2\+Nearest\+Dist}} (float period, float ref\+\_\+data, float data)
+\begin{DoxyCompactList}\small\item\em 将待处理数据平移到距离参考数据最近的值 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespacehello__world_a2b175ee3711275a8279ab6553620bca7}{hello\+\_\+world\+::\+Angle\+Norm\+Rad}} (float angle)
+\begin{DoxyCompactList}\small\item\em 将角度归一化到\mbox{[}-\/π, π) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespacehello__world_aa44c70128980881ac6260af9f928309a}{hello\+\_\+world\+::\+Angle\+Norm\+Deg}} (float angle)
+\begin{DoxyCompactList}\small\item\em 将角度归一化到\mbox{[}-\/180°, 180°) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespacehello__world_ab46e2d75fde6b8f67bd6d21c61508e47}{hello\+\_\+world\+::\+Period\+Data\+Sub}} (float minuend, float subtrahend, float period)
+\begin{DoxyCompactList}\small\item\em 处理角度越过0值的情况，以半周期为基准 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespacehello__world_a7640febc082ad62910c63a8feac1c002}{hello\+\_\+world\+::\+Handle\+Angle\+Cross0\+Rad}} (float ref, float fdb)
+\item 
+float \mbox{\hyperlink{namespacehello__world_a7c9ce795c80c4bc674e5470984f99105}{hello\+\_\+world\+::\+Handle\+Angle\+Cross0\+Deg}} (float ref, float fdb)
+\item 
+float \mbox{\hyperlink{namespacehello__world_a8592f8f4b1bf9644d335a61a9d39c543}{hello\+\_\+world\+::\+Rad2\+Deg}} (float angle)
+\begin{DoxyCompactList}\small\item\em 将弧度制角度转换为角度制 \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{namespacehello__world_afe0a0d8e82fa09f451155c7b2145121c}{hello\+\_\+world\+::\+Deg2\+Rad}} (float angle)
+\begin{DoxyCompactList}\small\item\em 将角度制角度转换为弧度制 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+static const float \mbox{\hyperlink{namespacehello__world_a8582e15cc16c32ad80a0d6873cf3f830}{hello\+\_\+world\+::k\+Grav\+Acc}} = 9.\+7936f
+\item 
+static const float \mbox{\hyperlink{namespacehello__world_a219e78545f9e9d3987fae46cf7fcdd75}{hello\+\_\+world\+::k\+Rad2\+Deg\+Coff}} = 180 / \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}}
+\item 
+static const float \mbox{\hyperlink{namespacehello__world_aff7ca8b5f1a544cfb645d20c17b2ebcf}{hello\+\_\+world\+::k\+Deg2\+Rad\+Coff}} = \mbox{\hyperlink{base_8hpp_a598a3330b3c21701223ee0ca14316eca}{PI}} / 180
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\+: @history \+: Version Date Author Note V0.\+9.\+0 yyyy-\/mm-\/dd $<$author$>$ 1. 
+
+$<$note$>$
+
+\begin{DoxyAttention}{注意}
+\+:
+\end{DoxyAttention}
+Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved. 
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 中定义.
+
+
+
+\doxysubsection{宏定义说明}
+\Hypertarget{base_8hpp_a598a3330b3c21701223ee0ca14316eca}\label{base_8hpp_a598a3330b3c21701223ee0ca14316eca} 
+\index{base.hpp@{base.hpp}!PI@{PI}}
+\index{PI@{PI}!base.hpp@{base.hpp}}
+\doxysubsubsection{\texorpdfstring{PI}{PI}}
+{\footnotesize\ttfamily \#define PI~3.\+14159265358979f}
+
+
+
+在文件 \mbox{\hyperlink{base_8hpp_source}{base.\+hpp}} 第 \mbox{\hyperlink{base_8hpp_source_l00028}{28}} 行定义.
+

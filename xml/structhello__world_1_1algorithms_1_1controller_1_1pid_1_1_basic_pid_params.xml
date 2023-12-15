@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params" kind="struct" language="C++" prot="public">
+    <compoundname>hello_world::algorithms::controller::pid::BasicPidParams</compoundname>
+    <includes refid="pid_8hpp" local="no">pid.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a315027b98690d9d1000cd13afb9ab5fa" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool hello_world::algorithms::controller::pid::BasicPidParams::auto_reset</definition>
+        <argsstring></argsstring>
+        <name>auto_reset</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::BasicPidParams::auto_reset</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>是否自动清零 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="72" column="8" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="72" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1af62e93ac21f9e92f27ef150280a2ce13" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacehello__world_1_1algorithms_1_1controller_1_1pid_1a67467db7aaca33bbced40cf20bdfaafd" kindref="member">Arocss0Type</ref></type>
+        <definition>Arocss0Type hello_world::algorithms::controller::pid::BasicPidParams::across0</definition>
+        <argsstring></argsstring>
+        <name>across0</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::BasicPidParams::across0</qualifiedname>
+        <initializer>= <ref refid="namespacehello__world_1_1algorithms_1_1controller_1_1pid_1a67467db7aaca33bbced40cf20bdfaafdaeb0056ee6a32b1921222ec92c33e044f" kindref="member">kArocss0None</ref></initializer>
+        <briefdescription>
+<para>零点跨越类型 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="73" column="15" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="73" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a53f2d1c0c504d9e588aaa81fb35aef3f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::algorithms::controller::pid::BasicPidParams::kp</definition>
+        <argsstring></argsstring>
+        <name>kp</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::BasicPidParams::kp</qualifiedname>
+        <initializer>= 0.6</initializer>
+        <briefdescription>
+<para>比例系数 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="74" column="9" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="74" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a1b70f32c6a0140eed7c4c76597689b66" compoundref="pid_8hpp" startline="142" endline="148">hello_world::algorithms::controller::pid::BasicPid::BasicPid</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1add7049534381e7311d599920e2327137" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::algorithms::controller::pid::BasicPidParams::ki</definition>
+        <argsstring></argsstring>
+        <name>ki</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::BasicPidParams::ki</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+<para>积分系数 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="75" column="9" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="75" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a1b70f32c6a0140eed7c4c76597689b66" compoundref="pid_8hpp" startline="142" endline="148">hello_world::algorithms::controller::pid::BasicPid::BasicPid</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a886fe384bcefc5273e5b48d8750c8bac" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float hello_world::algorithms::controller::pid::BasicPidParams::kd</definition>
+        <argsstring></argsstring>
+        <name>kd</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::BasicPidParams::kd</qualifiedname>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+<para>微分系数 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="76" column="9" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="76" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a1b70f32c6a0140eed7c4c76597689b66" compoundref="pid_8hpp" startline="142" endline="148">hello_world::algorithms::controller::pid::BasicPid::BasicPid</referencedby>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1aff64c84f92c7b638faedb46399c13ead" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t hello_world::algorithms::controller::pid::BasicPidParams::max_interval_ms</definition>
+        <argsstring></argsstring>
+        <name>max_interval_ms</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::BasicPidParams::max_interval_ms</qualifiedname>
+        <initializer>=
+      5</initializer>
+        <briefdescription>
+<para>最大控制周期，单位ms，超出表示采样异常, 如果<computeroutput>auto_reset</computeroutput>为true，则会自动清零 </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="77" column="12" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="77" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1aaad3f4ef38c31d3a683eff6c32ddd663" prot="public" static="no" mutable="no">
+        <type><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit" kindref="compound">OutLimit</ref></type>
+        <definition>OutLimit hello_world::algorithms::controller::pid::BasicPidParams::out_limit</definition>
+        <argsstring></argsstring>
+        <name>out_limit</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::BasicPidParams::out_limit</qualifiedname>
+        <briefdescription>
+<para>输出限制 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit" kindref="compound">OutLimit</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="79" column="12" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="79" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a632be6ac5c03bb76b7ada8e139717985" prot="public" static="no" mutable="no">
+        <type><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal" kindref="compound">InteTrapezoidal</ref></type>
+        <definition>InteTrapezoidal hello_world::algorithms::controller::pid::BasicPidParams::inte_trapezoidal</definition>
+        <argsstring></argsstring>
+        <name>inte_trapezoidal</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::BasicPidParams::inte_trapezoidal</qualifiedname>
+        <briefdescription>
+<para>梯形积分优化器 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal" kindref="compound">InteTrapezoidal</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="80" column="19" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="80" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1ac0387bf7993c7517548a59f07b96406f" prot="public" static="no" mutable="no">
+        <type><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup" kindref="compound">InteAntiWindup</ref></type>
+        <definition>InteAntiWindup hello_world::algorithms::controller::pid::BasicPidParams::inte_anti_windup</definition>
+        <argsstring></argsstring>
+        <name>inte_anti_windup</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::BasicPidParams::inte_anti_windup</qualifiedname>
+        <briefdescription>
+<para>积分抗饱和优化器 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup" kindref="compound">InteAntiWindup</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="81" column="18" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="81" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a912be6ad456f53dafa4d3c0675b79a93" prot="public" static="no" mutable="no">
+        <type><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate" kindref="compound">InteChangingRate</ref></type>
+        <definition>InteChangingRate hello_world::algorithms::controller::pid::BasicPidParams::inte_changing_rate</definition>
+        <argsstring></argsstring>
+        <name>inte_changing_rate</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::BasicPidParams::inte_changing_rate</qualifiedname>
+        <briefdescription>
+<para>变速积分优化器 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate" kindref="compound">InteChangingRate</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="83" column="7" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="83" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a966dc600bbe6bc806109b194e7fa0775" prot="public" static="no" mutable="no">
+        <type><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation" kindref="compound">InteSeparation</ref></type>
+        <definition>InteSeparation hello_world::algorithms::controller::pid::BasicPidParams::inte_separation</definition>
+        <argsstring></argsstring>
+        <name>inte_separation</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::BasicPidParams::inte_separation</qualifiedname>
+        <briefdescription>
+<para>积分分离优化器 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation" kindref="compound">InteSeparation</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="84" column="18" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="84" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1aa1fd5eea795d5cc28f2dd09965ab069e" prot="public" static="no" mutable="no">
+        <type><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter" kindref="compound">DiffFilter</ref></type>
+        <definition>DiffFilter hello_world::algorithms::controller::pid::BasicPidParams::diff_filter</definition>
+        <argsstring></argsstring>
+        <name>diff_filter</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::BasicPidParams::diff_filter</qualifiedname>
+        <briefdescription>
+<para>微分滤波优化器 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter" kindref="compound">DiffFilter</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="85" column="14" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="85" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a5c218122c4cb7e4e25b5d888795d1b18" prot="public" static="no" mutable="no">
+        <type><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous" kindref="compound">DiffPrevious</ref></type>
+        <definition>DiffPrevious hello_world::algorithms::controller::pid::BasicPidParams::diff_previous</definition>
+        <argsstring></argsstring>
+        <name>diff_previous</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::BasicPidParams::diff_previous</qualifiedname>
+        <briefdescription>
+<para>微分先行优化器 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous" kindref="compound">DiffPrevious</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="86" column="16" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="86" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a26a25950b6b3c164140404ce5462bb81" prot="public" static="no" mutable="no">
+        <type><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band" kindref="compound">DeadBand</ref></type>
+        <definition>DeadBand hello_world::algorithms::controller::pid::BasicPidParams::dead_band</definition>
+        <argsstring></argsstring>
+        <name>dead_band</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::BasicPidParams::dead_band</qualifiedname>
+        <briefdescription>
+<para>误差死区优化器 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band" kindref="compound">DeadBand</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="87" column="12" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="87" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a70ea00392a227dbb346be455b123efd3" prot="public" static="no" mutable="no">
+        <type><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping" kindref="compound">SetpointRamping</ref></type>
+        <definition>SetpointRamping hello_world::algorithms::controller::pid::BasicPidParams::setpointe_ramping</definition>
+        <argsstring></argsstring>
+        <name>setpointe_ramping</name>
+        <qualifiedname>hello_world::algorithms::controller::pid::BasicPidParams::setpointe_ramping</qualifiedname>
+        <briefdescription>
+<para>设定值斜坡优化器 </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping" kindref="compound">SetpointRamping</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="88" column="19" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="88" bodyend="-1"/>
+        <referencedby refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_1a2b8667e517f1999ec3fecffe9e6bd33d" compoundref="pid_8cpp" startline="60" endline="137">hello_world::algorithms::controller::pid::BasicPid::calc</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>定义了基础 PID 的参数 </para>
+    </briefdescription>
+    <detaileddescription>
+<para>一般而言，这些参数需要在初始化时进行配置 优化器参数的默认值参见各个优化器的定义 </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>hello_world::algorithms::controller::pid::BasicPidParams</label>
+        <link refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>out_limit</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>inte_trapezoidal</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>inte_anti_windup</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>inte_changing_rate</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>inte_separation</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>diff_filter</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>diff_previous</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>dead_band</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>setpointe_ramping</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>hello_world::algorithms::controller::pid::DeadBand</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band"/>
+      </node>
+      <node id="7">
+        <label>hello_world::algorithms::controller::pid::DiffFilter</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter"/>
+      </node>
+      <node id="8">
+        <label>hello_world::algorithms::controller::pid::DiffPrevious</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous"/>
+      </node>
+      <node id="4">
+        <label>hello_world::algorithms::controller::pid::InteAntiWindup</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup"/>
+      </node>
+      <node id="5">
+        <label>hello_world::algorithms::controller::pid::InteChangingRate</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate"/>
+      </node>
+      <node id="6">
+        <label>hello_world::algorithms::controller::pid::InteSeparation</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation"/>
+      </node>
+      <node id="3">
+        <label>hello_world::algorithms::controller::pid::InteTrapezoidal</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal"/>
+      </node>
+      <node id="2">
+        <label>hello_world::algorithms::controller::pid::OutLimit</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit"/>
+      </node>
+      <node id="10">
+        <label>hello_world::algorithms::controller::pid::SetpointRamping</label>
+        <link refid="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping"/>
+      </node>
+    </collaborationgraph>
+    <location file="HW-Components/algorithms/controller/inc/pid.hpp" line="71" column="1" bodyfile="HW-Components/algorithms/controller/inc/pid.hpp" bodystart="71" bodyend="89"/>
+    <listofallmembers>
+      <member refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1af62e93ac21f9e92f27ef150280a2ce13" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::BasicPidParams</scope><name>across0</name></member>
+      <member refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a315027b98690d9d1000cd13afb9ab5fa" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::BasicPidParams</scope><name>auto_reset</name></member>
+      <member refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a26a25950b6b3c164140404ce5462bb81" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::BasicPidParams</scope><name>dead_band</name></member>
+      <member refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1aa1fd5eea795d5cc28f2dd09965ab069e" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::BasicPidParams</scope><name>diff_filter</name></member>
+      <member refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a5c218122c4cb7e4e25b5d888795d1b18" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::BasicPidParams</scope><name>diff_previous</name></member>
+      <member refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1ac0387bf7993c7517548a59f07b96406f" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::BasicPidParams</scope><name>inte_anti_windup</name></member>
+      <member refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a912be6ad456f53dafa4d3c0675b79a93" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::BasicPidParams</scope><name>inte_changing_rate</name></member>
+      <member refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a966dc600bbe6bc806109b194e7fa0775" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::BasicPidParams</scope><name>inte_separation</name></member>
+      <member refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a632be6ac5c03bb76b7ada8e139717985" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::BasicPidParams</scope><name>inte_trapezoidal</name></member>
+      <member refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a886fe384bcefc5273e5b48d8750c8bac" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::BasicPidParams</scope><name>kd</name></member>
+      <member refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1add7049534381e7311d599920e2327137" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::BasicPidParams</scope><name>ki</name></member>
+      <member refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a53f2d1c0c504d9e588aaa81fb35aef3f" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::BasicPidParams</scope><name>kp</name></member>
+      <member refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1aff64c84f92c7b638faedb46399c13ead" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::BasicPidParams</scope><name>max_interval_ms</name></member>
+      <member refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1aaad3f4ef38c31d3a683eff6c32ddd663" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::BasicPidParams</scope><name>out_limit</name></member>
+      <member refid="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params_1a70ea00392a227dbb346be455b123efd3" prot="public" virt="non-virtual"><scope>hello_world::algorithms::controller::pid::BasicPidParams</scope><name>setpointe_ramping</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

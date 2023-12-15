@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__d_t7_8cpp_source" xml:lang="zh">
+<title>DT7.cpp</title>
+<indexterm><primary>HW-Components/devices/remote_control/src/DT7.cpp</primary></indexterm>
+浏览该文件的文档.<programlisting linenumbering="unnumbered"><anchor xml:id="__d_t7_8cpp_source_1l00001"/>00001 
+<anchor xml:id="__d_t7_8cpp_source_1l00015"/>00015 <emphasis role="comment">/*&#32;Includes&#32;------------------------------------------------------------------*/</emphasis>
+<anchor xml:id="__d_t7_8cpp_source_1l00016"/>00016 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__d_t7_8hpp">DT7.hpp</link>&quot;</emphasis>
+<anchor xml:id="__d_t7_8cpp_source_1l00017"/>00017 
+<anchor xml:id="__d_t7_8cpp_source_1l00018"/>00018 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_assert_8hpp">assert.hpp</link>&quot;</emphasis>
+<anchor xml:id="__d_t7_8cpp_source_1l00019"/>00019 
+<anchor xml:id="__d_t7_8cpp_source_1l00020"/>00020 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacehello__world">hello_world</link>
+<anchor xml:id="__d_t7_8cpp_source_1l00021"/>00021 {
+<anchor xml:id="__d_t7_8cpp_source_1l00022"/>00022 <emphasis role="keyword">namespace&#32;</emphasis>devices
+<anchor xml:id="__d_t7_8cpp_source_1l00023"/>00023 {
+<anchor xml:id="__d_t7_8cpp_source_1l00024"/>00024 <emphasis role="keyword">namespace&#32;</emphasis>remote_control
+<anchor xml:id="__d_t7_8cpp_source_1l00025"/>00025 {
+<anchor xml:id="__d_t7_8cpp_source_1l00026"/>00026 <emphasis role="comment">/*&#32;Private&#32;macro&#32;-------------------------------------------------------------*/</emphasis>
+<anchor xml:id="__d_t7_8cpp_source_1l00027"/>00027 <emphasis role="comment">/*&#32;Private&#32;constants&#32;---------------------------------------------------------*/</emphasis>
+<anchor xml:id="__d_t7_8cpp_source_1l00028"/>00028 
+<anchor xml:id="__d_t7_8cpp_source_1l00029"/><link linkend="_namespacehello__world_1_1devices_1_1remote__control_1a3d0a022d873c897523cc02e729183d96">00029</link> <emphasis role="keyword">static</emphasis>&#32;uint16_t&#32;<link linkend="_namespacehello__world_1_1devices_1_1remote__control_1a3d0a022d873c897523cc02e729183d96">kRcOffset</link>&#32;=&#32;1024u;
+<anchor xml:id="__d_t7_8cpp_source_1l00030"/><link linkend="_namespacehello__world_1_1devices_1_1remote__control_1a14bbfac5955f9e1c168041d2984edac2">00030</link> <emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_namespacehello__world_1_1devices_1_1remote__control_1a14bbfac5955f9e1c168041d2984edac2">kRcRatio</link>&#32;=&#32;1.0f&#32;/&#32;660;
+<anchor xml:id="__d_t7_8cpp_source_1l00031"/>00031 <emphasis role="comment">/*&#32;Private&#32;types&#32;-------------------------------------------------------------*/</emphasis>
+<anchor xml:id="__d_t7_8cpp_source_1l00032"/>00032 <emphasis role="comment">/*&#32;Private&#32;variables&#32;---------------------------------------------------------*/</emphasis>
+<anchor xml:id="__d_t7_8cpp_source_1l00033"/>00033 <emphasis role="comment">/*&#32;External&#32;variables&#32;--------------------------------------------------------*/</emphasis>
+<anchor xml:id="__d_t7_8cpp_source_1l00034"/>00034 <emphasis role="comment">/*&#32;Private&#32;function&#32;prototypes&#32;-----------------------------------------------*/</emphasis>
+<anchor xml:id="__d_t7_8cpp_source_1l00035"/>00035 
+<anchor xml:id="__d_t7_8cpp_source_1l00042"/><link linkend="_classhello__world_1_1devices_1_1remote__control_1_1_d_t7_1a1474ba78e4ff59c171227b1b8cf09430">00042</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classhello__world_1_1devices_1_1remote__control_1_1_d_t7_1a1474ba78e4ff59c171227b1b8cf09430">DT7::decode</link>(<emphasis role="keyword">const</emphasis>&#32;uint8_t&#32;rx_data[<link linkend="_namespacehello__world_1_1devices_1_1remote__control_1a72131314879f315c3a89dba97fc51620">kRcRxDataLen</link>])
+<anchor xml:id="__d_t7_8cpp_source_1l00043"/>00043 {
+<anchor xml:id="__d_t7_8cpp_source_1l00044"/>00044 &#32;&#32;uint16_t&#32;tmp;
+<anchor xml:id="__d_t7_8cpp_source_1l00045"/>00045 
+<anchor xml:id="__d_t7_8cpp_source_1l00046"/>00046 &#32;&#32;tmp&#32;=&#32;(rx_data[0]&#32;|&#32;(rx_data[1]&#32;&lt;&lt;&#32;8))&#32;&amp;&#32;0x07FF;
+<anchor xml:id="__d_t7_8cpp_source_1l00047"/>00047 &#32;&#32;<link linkend="_classhello__world_1_1devices_1_1remote__control_1_1_d_t7_1a8ba28c7c52f761640a8e5ff8c4e4bf5f">rc_rh_</link>&#32;=&#32;(tmp&#32;-&#32;<link linkend="_namespacehello__world_1_1devices_1_1remote__control_1a3d0a022d873c897523cc02e729183d96">kRcOffset</link>)&#32;*&#32;<link linkend="_namespacehello__world_1_1devices_1_1remote__control_1a14bbfac5955f9e1c168041d2984edac2">kRcRatio</link>;
+<anchor xml:id="__d_t7_8cpp_source_1l00048"/>00048 &#32;&#32;tmp&#32;=&#32;((rx_data[1]&#32;&gt;&gt;&#32;3)&#32;|&#32;(rx_data[2]&#32;&lt;&lt;&#32;5))&#32;&amp;&#32;0x07FF;
+<anchor xml:id="__d_t7_8cpp_source_1l00049"/>00049 &#32;&#32;<link linkend="_classhello__world_1_1devices_1_1remote__control_1_1_d_t7_1a988a560344c934e74385d6f06d598253">rc_rv_</link>&#32;=&#32;(tmp&#32;-&#32;<link linkend="_namespacehello__world_1_1devices_1_1remote__control_1a3d0a022d873c897523cc02e729183d96">kRcOffset</link>)&#32;*&#32;<link linkend="_namespacehello__world_1_1devices_1_1remote__control_1a14bbfac5955f9e1c168041d2984edac2">kRcRatio</link>;
+<anchor xml:id="__d_t7_8cpp_source_1l00050"/>00050 &#32;&#32;tmp&#32;=&#32;((rx_data[2]&#32;&gt;&gt;&#32;6)&#32;|&#32;(rx_data[3]&#32;&lt;&lt;&#32;2)&#32;|&#32;(rx_data[4]&#32;&lt;&lt;&#32;10))&#32;&amp;&#32;0x07FF;
+<anchor xml:id="__d_t7_8cpp_source_1l00051"/>00051 &#32;&#32;<link linkend="_classhello__world_1_1devices_1_1remote__control_1_1_d_t7_1aca95e0afa0523650dae2de3d44c1ce29">rc_lh_</link>&#32;=&#32;(tmp&#32;-&#32;<link linkend="_namespacehello__world_1_1devices_1_1remote__control_1a3d0a022d873c897523cc02e729183d96">kRcOffset</link>)&#32;*&#32;<link linkend="_namespacehello__world_1_1devices_1_1remote__control_1a14bbfac5955f9e1c168041d2984edac2">kRcRatio</link>;
+<anchor xml:id="__d_t7_8cpp_source_1l00052"/>00052 &#32;&#32;tmp&#32;=&#32;((rx_data[4]&#32;&gt;&gt;&#32;1)&#32;|&#32;(rx_data[5]&#32;&lt;&lt;&#32;7))&#32;&amp;&#32;0x07FF;
+<anchor xml:id="__d_t7_8cpp_source_1l00053"/>00053 &#32;&#32;<link linkend="_classhello__world_1_1devices_1_1remote__control_1_1_d_t7_1a465e1669a8d4be71940ec7f1f235e056">rc_lv_</link>&#32;=&#32;(tmp&#32;-&#32;<link linkend="_namespacehello__world_1_1devices_1_1remote__control_1a3d0a022d873c897523cc02e729183d96">kRcOffset</link>)&#32;*&#32;<link linkend="_namespacehello__world_1_1devices_1_1remote__control_1a14bbfac5955f9e1c168041d2984edac2">kRcRatio</link>;
+<anchor xml:id="__d_t7_8cpp_source_1l00054"/>00054 &#32;&#32;tmp&#32;=&#32;rx_data[16]&#32;|&#32;(rx_data[17]&#32;&lt;&lt;&#32;8);
+<anchor xml:id="__d_t7_8cpp_source_1l00055"/>00055 &#32;&#32;<link linkend="_classhello__world_1_1devices_1_1remote__control_1_1_d_t7_1a4cdc9c3b3a26c1f2718a234877ff6c9b">rc_wheel_</link>&#32;=&#32;(tmp&#32;-&#32;<link linkend="_namespacehello__world_1_1devices_1_1remote__control_1a3d0a022d873c897523cc02e729183d96">kRcOffset</link>)&#32;*&#32;<link linkend="_namespacehello__world_1_1devices_1_1remote__control_1a14bbfac5955f9e1c168041d2984edac2">kRcRatio</link>;
+<anchor xml:id="__d_t7_8cpp_source_1l00056"/>00056 
+<anchor xml:id="__d_t7_8cpp_source_1l00057"/>00057 &#32;&#32;<link linkend="_classhello__world_1_1devices_1_1remote__control_1_1_d_t7_1ad34bc387f429e97a79baa6b512f830b9">rc_l_switch_</link>&#32;=&#32;<link linkend="_namespacehello__world_1_1devices_1_1remote__control_1a8fbf90111209d1c457301aec678d7de7">SwitchState</link>(((rx_data[5]&#32;&gt;&gt;&#32;4)&#32;&amp;&#32;0x000C)&#32;&gt;&gt;&#32;2);
+<anchor xml:id="__d_t7_8cpp_source_1l00058"/>00058 &#32;&#32;<link linkend="_classhello__world_1_1devices_1_1remote__control_1_1_d_t7_1ad4902e41fe1b1367b385f19a18f800cf">rc_r_switch_</link>&#32;=&#32;<link linkend="_namespacehello__world_1_1devices_1_1remote__control_1a8fbf90111209d1c457301aec678d7de7">SwitchState</link>((rx_data[5]&#32;&gt;&gt;&#32;4)&#32;&amp;&#32;0x0003);
+<anchor xml:id="__d_t7_8cpp_source_1l00059"/>00059 
+<anchor xml:id="__d_t7_8cpp_source_1l00060"/>00060 &#32;&#32;<link linkend="_classhello__world_1_1devices_1_1remote__control_1_1_d_t7_1ab3bf56de7468f335dbac55558335631c">mouse_x_</link>&#32;=&#32;rx_data[6]&#32;|&#32;(rx_data[7]&#32;&lt;&lt;&#32;8);
+<anchor xml:id="__d_t7_8cpp_source_1l00061"/>00061 &#32;&#32;<link linkend="_classhello__world_1_1devices_1_1remote__control_1_1_d_t7_1ab4078a534e8549e75f4dc2d3fb5fd2fe">mouse_y_</link>&#32;=&#32;rx_data[8]&#32;|&#32;(rx_data[9]&#32;&lt;&lt;&#32;8);
+<anchor xml:id="__d_t7_8cpp_source_1l00062"/>00062 &#32;&#32;<link linkend="_classhello__world_1_1devices_1_1remote__control_1_1_d_t7_1a8b1445d2ba4364313f95c2e1ff27d581">mouse_z_</link>&#32;=&#32;rx_data[10]&#32;|&#32;(rx_data[11]&#32;&lt;&lt;&#32;8);
+<anchor xml:id="__d_t7_8cpp_source_1l00063"/>00063 &#32;&#32;<link linkend="_classhello__world_1_1devices_1_1remote__control_1_1_d_t7_1a9d07a442ff69f1da1a86ccce61116fe9">mouse_l_btn_</link>&#32;=&#32;rx_data[12];
+<anchor xml:id="__d_t7_8cpp_source_1l00064"/>00064 &#32;&#32;<link linkend="_classhello__world_1_1devices_1_1remote__control_1_1_d_t7_1a9b943bcc731c858647d6bace847904f4">mouse_r_btn_</link>&#32;=&#32;rx_data[13];
+<anchor xml:id="__d_t7_8cpp_source_1l00065"/>00065 
+<anchor xml:id="__d_t7_8cpp_source_1l00066"/>00066 &#32;&#32;<link linkend="_classhello__world_1_1devices_1_1remote__control_1_1_d_t7_1a77b9bcb8c78f34c39cbbf17fb4c33cf3">key_</link>.data&#32;=&#32;rx_data[14]&#32;|&#32;(rx_data[15]&#32;&lt;&lt;&#32;8);
+<anchor xml:id="__d_t7_8cpp_source_1l00067"/>00067 }
+<anchor xml:id="__d_t7_8cpp_source_1l00068"/>00068 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;remote_control</emphasis>
+<anchor xml:id="__d_t7_8cpp_source_1l00069"/>00069 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;devices</emphasis>
+<anchor xml:id="__d_t7_8cpp_source_1l00070"/>00070 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;hello_world</emphasis>
+</programlisting></section>

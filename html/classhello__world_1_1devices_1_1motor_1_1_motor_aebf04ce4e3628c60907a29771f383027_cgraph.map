@@ -1,0 +1,5 @@
+<map id="hello_world::devices::motor::Motor::curr2raw" name="hello_world::devices::motor::Motor::curr2raw">
+<area shape="rect" id="Node000001" title="将转子电流转换为原始报文内容" alt="" coords="5,5,167,45"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#a7fbec1460a1db6c45b4c57fd0497e5e0" title=" " alt="" coords="215,5,352,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,23,200,23,200,28,167,28"/>
+</map>

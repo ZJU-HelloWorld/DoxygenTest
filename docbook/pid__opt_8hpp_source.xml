@@ -1,0 +1,629 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_pid__opt_8hpp_source" xml:lang="zh">
+<title>pid_opt.hpp</title>
+<indexterm><primary>HW-Components/algorithms/controller/inc/pid_opt.hpp</primary></indexterm>
+浏览该文件的文档.<programlisting linenumbering="unnumbered"><anchor xml:id="_pid__opt_8hpp_source_1l00001"/>00001 
+<anchor xml:id="_pid__opt_8hpp_source_1l00002"/>00002 
+<anchor xml:id="_pid__opt_8hpp_source_1l00022"/>00022 <emphasis role="comment">/*&#32;Define&#32;to&#32;prevent&#32;recursive&#32;inclusion&#32;-------------------------------------*/</emphasis>
+<anchor xml:id="_pid__opt_8hpp_source_1l00023"/>00023 <emphasis role="preprocessor">#ifndef&#32;HWCOMPONENTS_ALGORITHMS_CONTROLLER_PID_OPT_HPP_</emphasis>
+<anchor xml:id="_pid__opt_8hpp_source_1l00024"/>00024 <emphasis role="preprocessor">#define&#32;HWCOMPONENTS_ALGORITHMS_CONTROLLER_PID_OPT_HPP_</emphasis>
+<anchor xml:id="_pid__opt_8hpp_source_1l00025"/>00025 
+<anchor xml:id="_pid__opt_8hpp_source_1l00026"/>00026 <emphasis role="preprocessor">#ifndef&#32;__PACKED_PID_PARAMS</emphasis>
+<anchor xml:id="_pid__opt_8hpp_source_1l00034"/><link linkend="_pid__opt_8hpp_1ab8ddc47b889ad4fc0d4aeadab4395434">00034</link> <emphasis role="preprocessor">#define&#32;__PACKED_PID_PARAMS&#32;__attribute__((packed))</emphasis>
+<anchor xml:id="_pid__opt_8hpp_source_1l00040"/>00040 <emphasis role="comment">//&#32;#define&#32;__PACKED_PID_PARAMS&#32;__attribute__((aligned(4)))</emphasis>
+<anchor xml:id="_pid__opt_8hpp_source_1l00041"/>00041 <emphasis role="preprocessor">#endif</emphasis>
+<anchor xml:id="_pid__opt_8hpp_source_1l00042"/>00042 <emphasis role="comment">/*&#32;Includes&#32;------------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_pid__opt_8hpp_source_1l00043"/>00043 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_controller__base_8hpp">controller_base.hpp</link>&quot;</emphasis>
+<anchor xml:id="_pid__opt_8hpp_source_1l00044"/>00044 <emphasis role="comment">/*&#32;Exported&#32;macro&#32;------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_pid__opt_8hpp_source_1l00045"/>00045 
+<anchor xml:id="_pid__opt_8hpp_source_1l00046"/>00046 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacehello__world">hello_world</link>
+<anchor xml:id="_pid__opt_8hpp_source_1l00047"/>00047 {
+<anchor xml:id="_pid__opt_8hpp_source_1l00048"/>00048 <emphasis role="keyword">namespace&#32;</emphasis>algorithms
+<anchor xml:id="_pid__opt_8hpp_source_1l00049"/>00049 {
+<anchor xml:id="_pid__opt_8hpp_source_1l00050"/>00050 <emphasis role="keyword">namespace&#32;</emphasis>controller
+<anchor xml:id="_pid__opt_8hpp_source_1l00051"/>00051 {
+<anchor xml:id="_pid__opt_8hpp_source_1l00052"/>00052 <emphasis role="keyword">namespace&#32;</emphasis>pid
+<anchor xml:id="_pid__opt_8hpp_source_1l00053"/>00053 {
+<anchor xml:id="_pid__opt_8hpp_source_1l00054"/>00054 
+<anchor xml:id="_pid__opt_8hpp_source_1l00064"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal">00064</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_pid__opt_8hpp_1ab8ddc47b889ad4fc0d4aeadab4395434">__PACKED_PID_PARAMS</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal">InteTrapezoidal</link>
+<anchor xml:id="_pid__opt_8hpp_source_1l00065"/>00065 {
+<anchor xml:id="_pid__opt_8hpp_source_1l00066"/>00066 &#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l00071"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a9ca799c65218c3a2e3330a541f88c0be">00071</link> &#32;&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a9ca799c65218c3a2e3330a541f88c0be">InteTrapezoidal</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled&#32;=&#32;<emphasis role="keyword">true</emphasis>)&#32;:&#32;is_enabled_(is_enabled){};
+<anchor xml:id="_pid__opt_8hpp_source_1l00072"/>00072 
+<anchor xml:id="_pid__opt_8hpp_source_1l00078"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a8cf08bb315081cc0a13229debb39a357">00078</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a8cf08bb315081cc0a13229debb39a357">setParams</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled)
+<anchor xml:id="_pid__opt_8hpp_source_1l00079"/>00079 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00080"/>00080 &#32;&#32;&#32;&#32;is_enabled_&#32;=&#32;is_enabled;
+<anchor xml:id="_pid__opt_8hpp_source_1l00081"/>00081 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00082"/>00082 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00083"/>00083 
+<anchor xml:id="_pid__opt_8hpp_source_1l00088"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1ae700d88586383eeeb43a25834f5be1a3">00088</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1ae700d88586383eeeb43a25834f5be1a3">isLegal</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">true</emphasis>;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00089"/>00089 
+<anchor xml:id="_pid__opt_8hpp_source_1l00094"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a89787230e29cc4b858c45398952eef93">00094</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a89787230e29cc4b858c45398952eef93">isEnabled</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;is_enabled_&#32;&amp;&amp;&#32;isLegal();&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00095"/>00095 
+<anchor xml:id="_pid__opt_8hpp_source_1l00110"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a8efa8ae3581ad2dcae6cbb86c2848213">00110</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1a8efa8ae3581ad2dcae6cbb86c2848213">calc</link>(<emphasis role="keywordtype">float</emphasis>&#32;err,&#32;<emphasis role="keywordtype">float</emphasis>&#32;last_err)
+<anchor xml:id="_pid__opt_8hpp_source_1l00111"/>00111 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00112"/>00112 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;inte_err&#32;=&#32;err;
+<anchor xml:id="_pid__opt_8hpp_source_1l00113"/>00113 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(isEnabled())&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00114"/>00114 &#32;&#32;&#32;&#32;&#32;&#32;inte_err&#32;=&#32;(err&#32;+&#32;last_err)&#32;/&#32;2;
+<anchor xml:id="_pid__opt_8hpp_source_1l00115"/>00115 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00116"/>00116 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;inte_err;
+<anchor xml:id="_pid__opt_8hpp_source_1l00117"/>00117 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00118"/>00118 
+<anchor xml:id="_pid__opt_8hpp_source_1l00119"/>00119 &#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l00120"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1ade4897f2c5f2d7f99ab4a1d5b580c3bc">00120</link> &#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal_1ade4897f2c5f2d7f99ab4a1d5b580c3bc">is_enabled_</link>;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l00121"/>00121 };
+<anchor xml:id="_pid__opt_8hpp_source_1l00122"/>00122 
+<anchor xml:id="_pid__opt_8hpp_source_1l00141"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup">00141</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_pid__opt_8hpp_1ab8ddc47b889ad4fc0d4aeadab4395434">__PACKED_PID_PARAMS</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup">InteAntiWindup</link>
+<anchor xml:id="_pid__opt_8hpp_source_1l00142"/>00142 {
+<anchor xml:id="_pid__opt_8hpp_source_1l00143"/>00143 &#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l00150"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1a8eb55119483f5d49173d2c77cdb9a556">00150</link> &#32;&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1a8eb55119483f5d49173d2c77cdb9a556">InteAntiWindup</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled&#32;=&#32;<emphasis role="keyword">true</emphasis>,&#32;<emphasis role="keywordtype">float</emphasis>&#32;lower&#32;=&#32;-0.01,
+<anchor xml:id="_pid__opt_8hpp_source_1l00151"/>00151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;upper&#32;=&#32;0.01)
+<anchor xml:id="_pid__opt_8hpp_source_1l00152"/>00152 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00153"/>00153 &#32;&#32;&#32;&#32;setParams(is_enabled,&#32;lower,&#32;upper);
+<anchor xml:id="_pid__opt_8hpp_source_1l00154"/>00154 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00155"/>00155 
+<anchor xml:id="_pid__opt_8hpp_source_1l00162"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1a926793e090a2c5c64c308216c3e6dc78">00162</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1a926793e090a2c5c64c308216c3e6dc78">setEnabled</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled)
+<anchor xml:id="_pid__opt_8hpp_source_1l00163"/>00163 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00164"/>00164 &#32;&#32;&#32;&#32;is_enabled_&#32;=&#32;is_enabled;
+<anchor xml:id="_pid__opt_8hpp_source_1l00165"/>00165 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00166"/>00166 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00167"/>00167 
+<anchor xml:id="_pid__opt_8hpp_source_1l00175"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1ab1a3b82928ba4589ae7db1b9fe40cbd0">00175</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1ab1a3b82928ba4589ae7db1b9fe40cbd0">setLower</link>(<emphasis role="keywordtype">float</emphasis>&#32;lower)
+<anchor xml:id="_pid__opt_8hpp_source_1l00176"/>00176 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00177"/>00177 &#32;&#32;&#32;&#32;lower_&#32;=&#32;lower;
+<anchor xml:id="_pid__opt_8hpp_source_1l00178"/>00178 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00179"/>00179 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00180"/>00180 
+<anchor xml:id="_pid__opt_8hpp_source_1l00188"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1a99aa5b1cebc90714af693d7e8d816ffa">00188</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1a99aa5b1cebc90714af693d7e8d816ffa">setUpper</link>(<emphasis role="keywordtype">float</emphasis>&#32;upper)
+<anchor xml:id="_pid__opt_8hpp_source_1l00189"/>00189 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00190"/>00190 &#32;&#32;&#32;&#32;upper_&#32;=&#32;upper;
+<anchor xml:id="_pid__opt_8hpp_source_1l00191"/>00191 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00192"/>00192 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00193"/>00193 
+<anchor xml:id="_pid__opt_8hpp_source_1l00203"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1ac93a2147653984691a43405c9ccca14b">00203</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1ac93a2147653984691a43405c9ccca14b">setParams</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled,&#32;<emphasis role="keywordtype">float</emphasis>&#32;lower,&#32;<emphasis role="keywordtype">float</emphasis>&#32;upper)
+<anchor xml:id="_pid__opt_8hpp_source_1l00204"/>00204 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00205"/>00205 &#32;&#32;&#32;&#32;is_enabled_&#32;=&#32;is_enabled;
+<anchor xml:id="_pid__opt_8hpp_source_1l00206"/>00206 &#32;&#32;&#32;&#32;lower_&#32;=&#32;lower;
+<anchor xml:id="_pid__opt_8hpp_source_1l00207"/>00207 &#32;&#32;&#32;&#32;upper_&#32;=&#32;upper;
+<anchor xml:id="_pid__opt_8hpp_source_1l00208"/>00208 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00209"/>00209 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00210"/>00210 
+<anchor xml:id="_pid__opt_8hpp_source_1l00216"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1ad27d81071f442d261ef75f8633fc1b34">00216</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1ad27d81071f442d261ef75f8633fc1b34">isLegal</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;lower_&#32;&lt;=&#32;upper_;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00217"/>00217 
+<anchor xml:id="_pid__opt_8hpp_source_1l00222"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1a7f1d16186e9a57d867b26ef93874c508">00222</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1a7f1d16186e9a57d867b26ef93874c508">isEnabled</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;is_enabled_&#32;&amp;&amp;&#32;isLegal();&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00223"/>00223 
+<anchor xml:id="_pid__opt_8hpp_source_1l00238"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1ae1314426af77e207b2a80bdd060b173f">00238</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1ae1314426af77e207b2a80bdd060b173f">calc</link>(<emphasis role="keywordtype">float</emphasis>&#32;err,&#32;<emphasis role="keywordtype">float</emphasis>&#32;last_inte_out)
+<anchor xml:id="_pid__opt_8hpp_source_1l00239"/>00239 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00240"/>00240 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;ratio&#32;=&#32;1;
+<anchor xml:id="_pid__opt_8hpp_source_1l00241"/>00241 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(isEnabled())&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00242"/>00242 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(err&#32;*&#32;last_inte_out&#32;&gt;&#32;0&#32;||&#32;last_inte_out&#32;&lt;&#32;lower_&#32;||
+<anchor xml:id="_pid__opt_8hpp_source_1l00243"/>00243 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;last_inte_out&#32;&gt;&#32;upper_)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00244"/>00244 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ratio&#32;=&#32;0;
+<anchor xml:id="_pid__opt_8hpp_source_1l00245"/>00245 &#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00246"/>00246 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00247"/>00247 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;ratio;
+<anchor xml:id="_pid__opt_8hpp_source_1l00248"/>00248 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00249"/>00249 
+<anchor xml:id="_pid__opt_8hpp_source_1l00250"/>00250 &#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l00251"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1a50a25dea16fff05f0d7f03cb02b2990b">00251</link> &#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1a50a25dea16fff05f0d7f03cb02b2990b">is_enabled_</link>;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l00252"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1a0db915fe3d477396d68fb0462fcf3a28">00252</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1a0db915fe3d477396d68fb0462fcf3a28">lower_</link>;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l00253"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1a15f1c738125bfca7994e2c9b304b61e8">00253</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1a15f1c738125bfca7994e2c9b304b61e8">upper_</link>;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l00254"/>00254 
+<anchor xml:id="_pid__opt_8hpp_source_1l00259"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1a072df8cac095c2c4dd47ee0485f3ab70">00259</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup_1a072df8cac095c2c4dd47ee0485f3ab70">handleIllegalParams</link>()
+<anchor xml:id="_pid__opt_8hpp_source_1l00260"/>00260 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00261"/>00261 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00262"/>00262 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(lower_&#32;&gt;&#32;upper_)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00263"/>00263 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;tmp&#32;=&#32;upper_;
+<anchor xml:id="_pid__opt_8hpp_source_1l00264"/>00264 &#32;&#32;&#32;&#32;&#32;&#32;upper_&#32;=&#32;lower_;
+<anchor xml:id="_pid__opt_8hpp_source_1l00265"/>00265 &#32;&#32;&#32;&#32;&#32;&#32;lower_&#32;=&#32;tmp;
+<anchor xml:id="_pid__opt_8hpp_source_1l00266"/>00266 &#32;&#32;&#32;&#32;&#32;&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00267"/>00267 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00268"/>00268 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;with_illegal_params;
+<anchor xml:id="_pid__opt_8hpp_source_1l00269"/>00269 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00270"/>00270 };
+<anchor xml:id="_pid__opt_8hpp_source_1l00271"/>00271 
+<anchor xml:id="_pid__opt_8hpp_source_1l00286"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation">00286</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_pid__opt_8hpp_1ab8ddc47b889ad4fc0d4aeadab4395434">__PACKED_PID_PARAMS</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation">InteSeparation</link>
+<anchor xml:id="_pid__opt_8hpp_source_1l00287"/>00287 {
+<anchor xml:id="_pid__opt_8hpp_source_1l00288"/>00288 &#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l00295"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1aef48252097d7a6124d95f70655049da1">00295</link> &#32;&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1aef48252097d7a6124d95f70655049da1">InteSeparation</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled&#32;=&#32;<emphasis role="keyword">false</emphasis>,&#32;<emphasis role="keywordtype">float</emphasis>&#32;lower&#32;=&#32;-0.01,
+<anchor xml:id="_pid__opt_8hpp_source_1l00296"/>00296 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;upper&#32;=&#32;0.01)
+<anchor xml:id="_pid__opt_8hpp_source_1l00297"/>00297 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00298"/>00298 &#32;&#32;&#32;&#32;setParams(is_enabled,&#32;lower,&#32;upper);
+<anchor xml:id="_pid__opt_8hpp_source_1l00299"/>00299 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00300"/>00300 
+<anchor xml:id="_pid__opt_8hpp_source_1l00306"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1ad8ba81bb697a83d3441030e54c3f9efb">00306</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1ad8ba81bb697a83d3441030e54c3f9efb">setEnabled</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled)
+<anchor xml:id="_pid__opt_8hpp_source_1l00307"/>00307 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00308"/>00308 &#32;&#32;&#32;&#32;is_enabled_&#32;=&#32;is_enabled;
+<anchor xml:id="_pid__opt_8hpp_source_1l00309"/>00309 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00310"/>00310 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00311"/>00311 
+<anchor xml:id="_pid__opt_8hpp_source_1l00319"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1a691be4f9d4c9afca98b56c790a931178">00319</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1a691be4f9d4c9afca98b56c790a931178">setLower</link>(<emphasis role="keywordtype">float</emphasis>&#32;lower)
+<anchor xml:id="_pid__opt_8hpp_source_1l00320"/>00320 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00321"/>00321 &#32;&#32;&#32;&#32;lower_&#32;=&#32;lower;
+<anchor xml:id="_pid__opt_8hpp_source_1l00322"/>00322 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00323"/>00323 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00324"/>00324 
+<anchor xml:id="_pid__opt_8hpp_source_1l00332"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1adc622a3fbd9c6ffc02ba194be3f44728">00332</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1adc622a3fbd9c6ffc02ba194be3f44728">setUpper</link>(<emphasis role="keywordtype">float</emphasis>&#32;upper)
+<anchor xml:id="_pid__opt_8hpp_source_1l00333"/>00333 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00334"/>00334 &#32;&#32;&#32;&#32;upper_&#32;=&#32;upper;
+<anchor xml:id="_pid__opt_8hpp_source_1l00335"/>00335 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00336"/>00336 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00337"/>00337 
+<anchor xml:id="_pid__opt_8hpp_source_1l00347"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1af42d69d2d570f2bb4049e4488675d9c2">00347</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1af42d69d2d570f2bb4049e4488675d9c2">setParams</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled,&#32;<emphasis role="keywordtype">float</emphasis>&#32;lower,&#32;<emphasis role="keywordtype">float</emphasis>&#32;upper)
+<anchor xml:id="_pid__opt_8hpp_source_1l00348"/>00348 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00349"/>00349 &#32;&#32;&#32;&#32;is_enabled_&#32;=&#32;is_enabled;
+<anchor xml:id="_pid__opt_8hpp_source_1l00350"/>00350 &#32;&#32;&#32;&#32;lower_&#32;=&#32;lower;
+<anchor xml:id="_pid__opt_8hpp_source_1l00351"/>00351 &#32;&#32;&#32;&#32;upper_&#32;=&#32;upper;
+<anchor xml:id="_pid__opt_8hpp_source_1l00352"/>00352 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00353"/>00353 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00354"/>00354 
+<anchor xml:id="_pid__opt_8hpp_source_1l00360"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1a97563f41187932bac8b7bd882c26686e">00360</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1a97563f41187932bac8b7bd882c26686e">isLegal</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;lower_&#32;&lt;=&#32;upper_;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00361"/>00361 
+<anchor xml:id="_pid__opt_8hpp_source_1l00366"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1a2f95e2c479492053a3b852200bb4d8ac">00366</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1a2f95e2c479492053a3b852200bb4d8ac">isEnabled</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;is_enabled_&#32;&amp;&amp;&#32;isLegal();&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00367"/>00367 
+<anchor xml:id="_pid__opt_8hpp_source_1l00383"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1a882d032c53d0a62764140564737524ff">00383</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1a882d032c53d0a62764140564737524ff">calc</link>(<emphasis role="keywordtype">float</emphasis>&#32;err)
+<anchor xml:id="_pid__opt_8hpp_source_1l00384"/>00384 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00385"/>00385 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;ratio&#32;=&#32;1;
+<anchor xml:id="_pid__opt_8hpp_source_1l00386"/>00386 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(isEnabled())&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00387"/>00387 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(err&#32;&lt;&#32;lower_&#32;||&#32;err&#32;&gt;=&#32;upper_)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00388"/>00388 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ratio&#32;=&#32;0;
+<anchor xml:id="_pid__opt_8hpp_source_1l00389"/>00389 &#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00390"/>00390 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00391"/>00391 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;ratio;
+<anchor xml:id="_pid__opt_8hpp_source_1l00392"/>00392 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00393"/>00393 
+<anchor xml:id="_pid__opt_8hpp_source_1l00394"/>00394 &#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l00395"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1ae3c971f227d276220e6e78432157401f">00395</link> &#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1ae3c971f227d276220e6e78432157401f">is_enabled_</link>;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l00396"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1a184372730ac1a2b4105cfc98a271feb4">00396</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1a184372730ac1a2b4105cfc98a271feb4">lower_</link>;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l00397"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1ade70be3123b226c5b3c571f839e54610">00397</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1ade70be3123b226c5b3c571f839e54610">upper_</link>;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l00398"/>00398 
+<anchor xml:id="_pid__opt_8hpp_source_1l00403"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1ad968a914a79f6fa4c8220d5770b00d52">00403</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation_1ad968a914a79f6fa4c8220d5770b00d52">handleIllegalParams</link>()
+<anchor xml:id="_pid__opt_8hpp_source_1l00404"/>00404 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00405"/>00405 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(lower_&#32;&gt;&#32;upper_)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00406"/>00406 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;tmp&#32;=&#32;upper_;
+<anchor xml:id="_pid__opt_8hpp_source_1l00407"/>00407 &#32;&#32;&#32;&#32;&#32;&#32;upper_&#32;=&#32;lower_;
+<anchor xml:id="_pid__opt_8hpp_source_1l00408"/>00408 &#32;&#32;&#32;&#32;&#32;&#32;lower_&#32;=&#32;tmp;
+<anchor xml:id="_pid__opt_8hpp_source_1l00409"/>00409 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00410"/>00410 &#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00411"/>00411 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00412"/>00412 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00413"/>00413 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00414"/>00414 };
+<anchor xml:id="_pid__opt_8hpp_source_1l00431"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate">00431</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_pid__opt_8hpp_1ab8ddc47b889ad4fc0d4aeadab4395434">__PACKED_PID_PARAMS</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate">InteChangingRate</link>
+<anchor xml:id="_pid__opt_8hpp_source_1l00432"/>00432 {
+<anchor xml:id="_pid__opt_8hpp_source_1l00433"/>00433 &#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l00443"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a506b7c98c045905a49095a8cf6288ea9">00443</link> &#32;&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a506b7c98c045905a49095a8cf6288ea9">InteChangingRate</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled&#32;=&#32;<emphasis role="keyword">false</emphasis>,&#32;<emphasis role="keywordtype">float</emphasis>&#32;lower&#32;=&#32;0.01,
+<anchor xml:id="_pid__opt_8hpp_source_1l00444"/>00444 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;upper&#32;=&#32;0.02)
+<anchor xml:id="_pid__opt_8hpp_source_1l00445"/>00445 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00446"/>00446 &#32;&#32;&#32;&#32;setParams(is_enabled,&#32;lower,&#32;upper);
+<anchor xml:id="_pid__opt_8hpp_source_1l00447"/>00447 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00448"/>00448 
+<anchor xml:id="_pid__opt_8hpp_source_1l00457"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a3a6861604d04c04d6473a2a3c8cc4318">00457</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a3a6861604d04c04d6473a2a3c8cc4318">setEnabled</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled)
+<anchor xml:id="_pid__opt_8hpp_source_1l00458"/>00458 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00459"/>00459 &#32;&#32;&#32;&#32;is_enabled_&#32;=&#32;is_enabled;
+<anchor xml:id="_pid__opt_8hpp_source_1l00460"/>00460 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00461"/>00461 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00462"/>00462 
+<anchor xml:id="_pid__opt_8hpp_source_1l00471"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a467a3cdb86fbd990bff08e5af8868aae">00471</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a467a3cdb86fbd990bff08e5af8868aae">setLower</link>(<emphasis role="keywordtype">float</emphasis>&#32;lower)
+<anchor xml:id="_pid__opt_8hpp_source_1l00472"/>00472 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00473"/>00473 &#32;&#32;&#32;&#32;lower_&#32;=&#32;lower;
+<anchor xml:id="_pid__opt_8hpp_source_1l00474"/>00474 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00475"/>00475 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00476"/>00476 
+<anchor xml:id="_pid__opt_8hpp_source_1l00485"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a007ec567f2c141935945525b65fa62b2">00485</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a007ec567f2c141935945525b65fa62b2">setUpper</link>(<emphasis role="keywordtype">float</emphasis>&#32;upper)
+<anchor xml:id="_pid__opt_8hpp_source_1l00486"/>00486 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00487"/>00487 &#32;&#32;&#32;&#32;upper_&#32;=&#32;upper;
+<anchor xml:id="_pid__opt_8hpp_source_1l00488"/>00488 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00489"/>00489 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00490"/>00490 
+<anchor xml:id="_pid__opt_8hpp_source_1l00501"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a75716b9a88f3540ced6e43a784fd581b">00501</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a75716b9a88f3540ced6e43a784fd581b">setParams</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled,&#32;<emphasis role="keywordtype">float</emphasis>&#32;lower,&#32;<emphasis role="keywordtype">float</emphasis>&#32;upper)
+<anchor xml:id="_pid__opt_8hpp_source_1l00502"/>00502 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00503"/>00503 &#32;&#32;&#32;&#32;is_enabled_&#32;=&#32;is_enabled;
+<anchor xml:id="_pid__opt_8hpp_source_1l00504"/>00504 &#32;&#32;&#32;&#32;lower_&#32;=&#32;lower;
+<anchor xml:id="_pid__opt_8hpp_source_1l00505"/>00505 &#32;&#32;&#32;&#32;upper_&#32;=&#32;upper;
+<anchor xml:id="_pid__opt_8hpp_source_1l00506"/>00506 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00507"/>00507 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00508"/>00508 
+<anchor xml:id="_pid__opt_8hpp_source_1l00516"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a8d502f3c77c8e4e1b31d1e6b5a4932c8">00516</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a8d502f3c77c8e4e1b31d1e6b5a4932c8">isLegal</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;0&#32;&lt;=&#32;lower_&#32;&amp;&amp;&#32;lower_&#32;&lt;&#32;upper_;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00517"/>00517 
+<anchor xml:id="_pid__opt_8hpp_source_1l00525"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a8e66e6ed87adc8a05e6f3df448a8fb00">00525</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a8e66e6ed87adc8a05e6f3df448a8fb00">isEnabled</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;is_enabled_&#32;&amp;&amp;&#32;isLegal();&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00526"/>00526 
+<anchor xml:id="_pid__opt_8hpp_source_1l00546"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a22842000f2832dba50540f0f6954244f">00546</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a22842000f2832dba50540f0f6954244f">calc</link>(<emphasis role="keywordtype">float</emphasis>&#32;err)
+<anchor xml:id="_pid__opt_8hpp_source_1l00547"/>00547 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00548"/>00548 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;ratio&#32;=&#32;1;
+<anchor xml:id="_pid__opt_8hpp_source_1l00549"/>00549 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(isEnabled())&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00550"/>00550 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;fabs_err&#32;=&#32;err&#32;&lt;&#32;0&#32;?&#32;-err&#32;:&#32;err;
+<anchor xml:id="_pid__opt_8hpp_source_1l00551"/>00551 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(fabs_err&#32;&gt;&#32;upper_)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00552"/>00552 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ratio&#32;=&#32;0;
+<anchor xml:id="_pid__opt_8hpp_source_1l00553"/>00553 &#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(fabs_err&#32;&gt;&#32;lower_)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00554"/>00554 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ratio&#32;=&#32;(upper_&#32;-&#32;fabs_err)&#32;/&#32;(upper_&#32;-&#32;lower_);
+<anchor xml:id="_pid__opt_8hpp_source_1l00555"/>00555 &#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00556"/>00556 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00557"/>00557 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;ratio;
+<anchor xml:id="_pid__opt_8hpp_source_1l00558"/>00558 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00559"/>00559 
+<anchor xml:id="_pid__opt_8hpp_source_1l00560"/>00560 &#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l00561"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1af08dc32dff2d2863a888d5b5091c451f">00561</link> &#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1af08dc32dff2d2863a888d5b5091c451f">is_enabled_</link>;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l00562"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a125fe291ddd003e4191e5f76d491e171">00562</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a125fe291ddd003e4191e5f76d491e171">lower_</link>;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l00563"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a4982c86d248cd862eebce69a9fae10d6">00563</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a4982c86d248cd862eebce69a9fae10d6">upper_</link>;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l00564"/>00564 
+<anchor xml:id="_pid__opt_8hpp_source_1l00574"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a81d4b7384be1017acf61b8ae24125e7a">00574</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a81d4b7384be1017acf61b8ae24125e7a">handleIllegalParams</link>()
+<anchor xml:id="_pid__opt_8hpp_source_1l00575"/>00575 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00576"/>00576 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00577"/>00577 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(lower_&#32;&lt;&#32;0)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00578"/>00578 &#32;&#32;&#32;&#32;&#32;&#32;lower_&#32;=&#32;0;
+<anchor xml:id="_pid__opt_8hpp_source_1l00579"/>00579 &#32;&#32;&#32;&#32;&#32;&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00580"/>00580 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00581"/>00581 
+<anchor xml:id="_pid__opt_8hpp_source_1l00582"/>00582 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(lower_&#32;&gt;&#32;upper_)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00583"/>00583 &#32;&#32;&#32;&#32;&#32;&#32;upper_&#32;=&#32;lower_&#32;+&#32;0.001f;
+<anchor xml:id="_pid__opt_8hpp_source_1l00584"/>00584 &#32;&#32;&#32;&#32;&#32;&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00585"/>00585 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00586"/>00586 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;with_illegal_params;
+<anchor xml:id="_pid__opt_8hpp_source_1l00587"/>00587 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00588"/>00588 };
+<anchor xml:id="_pid__opt_8hpp_source_1l00589"/>00589 
+<anchor xml:id="_pid__opt_8hpp_source_1l00606"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter">00606</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_pid__opt_8hpp_1ab8ddc47b889ad4fc0d4aeadab4395434">__PACKED_PID_PARAMS</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter">DiffFilter</link>
+<anchor xml:id="_pid__opt_8hpp_source_1l00607"/>00607 {
+<anchor xml:id="_pid__opt_8hpp_source_1l00608"/>00608 &#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l00617"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a8bfac77eb061e503e6cfa6f83e57a17f">00617</link> &#32;&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a8bfac77eb061e503e6cfa6f83e57a17f">DiffFilter</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled&#32;=&#32;<emphasis role="keyword">false</emphasis>,&#32;<emphasis role="keywordtype">float</emphasis>&#32;lower&#32;=&#32;-0.01,&#32;<emphasis role="keywordtype">float</emphasis>&#32;upper&#32;=&#32;0.01,
+<anchor xml:id="_pid__opt_8hpp_source_1l00618"/>00618 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;weight&#32;=&#32;0.5)
+<anchor xml:id="_pid__opt_8hpp_source_1l00619"/>00619 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00620"/>00620 &#32;&#32;&#32;&#32;setParams(is_enabled,&#32;lower,&#32;upper,&#32;weight);
+<anchor xml:id="_pid__opt_8hpp_source_1l00621"/>00621 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00622"/>00622 
+<anchor xml:id="_pid__opt_8hpp_source_1l00631"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a256cb6a73e68dcca24f3028d095c616c">00631</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a256cb6a73e68dcca24f3028d095c616c">setEnabled</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled)
+<anchor xml:id="_pid__opt_8hpp_source_1l00632"/>00632 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00633"/>00633 &#32;&#32;&#32;&#32;is_enabled_&#32;=&#32;is_enabled;
+<anchor xml:id="_pid__opt_8hpp_source_1l00634"/>00634 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00635"/>00635 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00636"/>00636 
+<anchor xml:id="_pid__opt_8hpp_source_1l00645"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a88fdf7403e473213eb391af077b79c24">00645</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a88fdf7403e473213eb391af077b79c24">setLower</link>(<emphasis role="keywordtype">float</emphasis>&#32;lower)
+<anchor xml:id="_pid__opt_8hpp_source_1l00646"/>00646 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00647"/>00647 &#32;&#32;&#32;&#32;lower_&#32;=&#32;lower;
+<anchor xml:id="_pid__opt_8hpp_source_1l00648"/>00648 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00649"/>00649 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00650"/>00650 
+<anchor xml:id="_pid__opt_8hpp_source_1l00659"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a5a1e043020a7a8db86ac86ae81437612">00659</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a5a1e043020a7a8db86ac86ae81437612">setUpper</link>(<emphasis role="keywordtype">float</emphasis>&#32;upper)
+<anchor xml:id="_pid__opt_8hpp_source_1l00660"/>00660 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00661"/>00661 &#32;&#32;&#32;&#32;upper_&#32;=&#32;upper;
+<anchor xml:id="_pid__opt_8hpp_source_1l00662"/>00662 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00663"/>00663 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00664"/>00664 
+<anchor xml:id="_pid__opt_8hpp_source_1l00673"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a93b299c027188468e329779960c14d50">00673</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a93b299c027188468e329779960c14d50">setWeight</link>(<emphasis role="keywordtype">float</emphasis>&#32;weight)
+<anchor xml:id="_pid__opt_8hpp_source_1l00674"/>00674 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00675"/>00675 &#32;&#32;&#32;&#32;weight_&#32;=&#32;weight;
+<anchor xml:id="_pid__opt_8hpp_source_1l00676"/>00676 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00677"/>00677 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00678"/>00678 
+<anchor xml:id="_pid__opt_8hpp_source_1l00690"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a1d8d7e3208f530845bf7dce233c6413f">00690</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a1d8d7e3208f530845bf7dce233c6413f">setParams</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled,&#32;<emphasis role="keywordtype">float</emphasis>&#32;lower,&#32;<emphasis role="keywordtype">float</emphasis>&#32;upper,
+<anchor xml:id="_pid__opt_8hpp_source_1l00691"/>00691 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;weight)
+<anchor xml:id="_pid__opt_8hpp_source_1l00692"/>00692 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00693"/>00693 &#32;&#32;&#32;&#32;is_enabled_&#32;=&#32;is_enabled;
+<anchor xml:id="_pid__opt_8hpp_source_1l00694"/>00694 &#32;&#32;&#32;&#32;lower_&#32;=&#32;lower;
+<anchor xml:id="_pid__opt_8hpp_source_1l00695"/>00695 &#32;&#32;&#32;&#32;upper_&#32;=&#32;upper;
+<anchor xml:id="_pid__opt_8hpp_source_1l00696"/>00696 &#32;&#32;&#32;&#32;weight_&#32;=&#32;weight;
+<anchor xml:id="_pid__opt_8hpp_source_1l00697"/>00697 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00698"/>00698 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00699"/>00699 
+<anchor xml:id="_pid__opt_8hpp_source_1l00705"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a38776552d83217c7b6636939bfcfc5bb">00705</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a38776552d83217c7b6636939bfcfc5bb">isLegal</link>()
+<anchor xml:id="_pid__opt_8hpp_source_1l00706"/>00706 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00707"/>00707 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;lower_&#32;&lt;=&#32;upper_&#32;&amp;&amp;&#32;0&#32;&lt;=&#32;weight_&#32;&amp;&amp;&#32;weight_&#32;&lt;=&#32;1;
+<anchor xml:id="_pid__opt_8hpp_source_1l00708"/>00708 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00709"/>00709 
+<anchor xml:id="_pid__opt_8hpp_source_1l00717"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a802aa9ef25b7c540407801d5c0889571">00717</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a802aa9ef25b7c540407801d5c0889571">isEnabled</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;is_enabled_&#32;&amp;&amp;&#32;isLegal();&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00718"/>00718 
+<anchor xml:id="_pid__opt_8hpp_source_1l00736"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a7bb924886f04baa6e1b9db604529f93a">00736</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a7bb924886f04baa6e1b9db604529f93a">calc</link>(<emphasis role="keywordtype">float</emphasis>&#32;diff_out,&#32;<emphasis role="keywordtype">float</emphasis>&#32;last_diff_out)
+<anchor xml:id="_pid__opt_8hpp_source_1l00737"/>00737 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00738"/>00738 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;res&#32;=&#32;diff_out;
+<anchor xml:id="_pid__opt_8hpp_source_1l00739"/>00739 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(isEnabled())&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00740"/>00740 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;delta_diff_out&#32;=&#32;diff_out&#32;-&#32;last_diff_out;
+<anchor xml:id="_pid__opt_8hpp_source_1l00741"/>00741 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(delta_diff_out&#32;&lt;=&#32;lower_&#32;||&#32;delta_diff_out&#32;&gt;=&#32;upper_)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00742"/>00742 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;res&#32;=&#32;weight_&#32;*&#32;last_diff_out&#32;+&#32;(1&#32;-&#32;weight_)&#32;*&#32;diff_out;
+<anchor xml:id="_pid__opt_8hpp_source_1l00743"/>00743 &#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00744"/>00744 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00745"/>00745 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_pid__opt_8hpp_source_1l00746"/>00746 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00747"/>00747 
+<anchor xml:id="_pid__opt_8hpp_source_1l00748"/>00748 &#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l00749"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1affe793b9c55f20601c7f57d1585ef597">00749</link> &#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1affe793b9c55f20601c7f57d1585ef597">is_enabled_</link>;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l00750"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1abfbade99e658f8d10f4546923a700057">00750</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1abfbade99e658f8d10f4546923a700057">lower_</link>;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l00751"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a9f245a099d705c321b55e2e2b3cc8285">00751</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1a9f245a099d705c321b55e2e2b3cc8285">upper_</link>;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l00752"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1ae990f047961a5763c8c6569ee3c89eda">00752</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1ae990f047961a5763c8c6569ee3c89eda">weight_</link>;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l00753"/>00753 
+<anchor xml:id="_pid__opt_8hpp_source_1l00759"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1aceef1edc7660e5f19c48765498217f24">00759</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter_1aceef1edc7660e5f19c48765498217f24">handleIllegalParams</link>()
+<anchor xml:id="_pid__opt_8hpp_source_1l00760"/>00760 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00761"/>00761 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00762"/>00762 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(lower_&#32;&gt;&#32;upper_)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00763"/>00763 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;tmp&#32;=&#32;upper_;
+<anchor xml:id="_pid__opt_8hpp_source_1l00764"/>00764 &#32;&#32;&#32;&#32;&#32;&#32;upper_&#32;=&#32;lower_;
+<anchor xml:id="_pid__opt_8hpp_source_1l00765"/>00765 &#32;&#32;&#32;&#32;&#32;&#32;lower_&#32;=&#32;tmp;
+<anchor xml:id="_pid__opt_8hpp_source_1l00766"/>00766 &#32;&#32;&#32;&#32;&#32;&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00767"/>00767 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00768"/>00768 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(weight_&#32;&lt;&#32;0)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00769"/>00769 &#32;&#32;&#32;&#32;&#32;&#32;weight_&#32;=&#32;0;
+<anchor xml:id="_pid__opt_8hpp_source_1l00770"/>00770 &#32;&#32;&#32;&#32;&#32;&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00771"/>00771 &#32;&#32;&#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00772"/>00772 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(weight_&#32;&gt;&#32;1)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00773"/>00773 &#32;&#32;&#32;&#32;&#32;&#32;weight_&#32;=&#32;1;
+<anchor xml:id="_pid__opt_8hpp_source_1l00774"/>00774 &#32;&#32;&#32;&#32;&#32;&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00775"/>00775 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00776"/>00776 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;with_illegal_params;
+<anchor xml:id="_pid__opt_8hpp_source_1l00777"/>00777 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00778"/>00778 };
+<anchor xml:id="_pid__opt_8hpp_source_1l00791"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous">00791</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_pid__opt_8hpp_1ab8ddc47b889ad4fc0d4aeadab4395434">__PACKED_PID_PARAMS</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous">DiffPrevious</link>
+<anchor xml:id="_pid__opt_8hpp_source_1l00792"/>00792 {
+<anchor xml:id="_pid__opt_8hpp_source_1l00793"/>00793 &#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l00798"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1a89d9400882a9039da7729e0abcc9f205">00798</link> &#32;&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1a89d9400882a9039da7729e0abcc9f205">DiffPrevious</link>(<emphasis role="keywordtype">float</emphasis>&#32;weight&#32;=&#32;0.5)&#32;{&#32;setParams(weight);&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00799"/>00799 
+<anchor xml:id="_pid__opt_8hpp_source_1l00805"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1a9aaa5c9fe1d78f62d54f12f6b4bc773e">00805</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1a9aaa5c9fe1d78f62d54f12f6b4bc773e">setEnabled</link>(<emphasis role="keywordtype">float</emphasis>&#32;weight)&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;setWeight(weight);&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00806"/>00806 
+<anchor xml:id="_pid__opt_8hpp_source_1l00814"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1a6e067e78fbba8b78694c53ee6bdc4cc7">00814</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1a6e067e78fbba8b78694c53ee6bdc4cc7">setWeight</link>(<emphasis role="keywordtype">float</emphasis>&#32;weight)
+<anchor xml:id="_pid__opt_8hpp_source_1l00815"/>00815 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00816"/>00816 &#32;&#32;&#32;&#32;weight_&#32;=&#32;weight;
+<anchor xml:id="_pid__opt_8hpp_source_1l00817"/>00817 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00818"/>00818 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00819"/>00819 
+<anchor xml:id="_pid__opt_8hpp_source_1l00827"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1a4e192c0d515a1bfb5b8cc3f0f2772e9c">00827</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1a4e192c0d515a1bfb5b8cc3f0f2772e9c">setParams</link>(<emphasis role="keywordtype">float</emphasis>&#32;weight)&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;setWeight(weight);&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00828"/>00828 
+<anchor xml:id="_pid__opt_8hpp_source_1l00834"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1a2407309871346e34031d483bb9974daa">00834</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1a2407309871346e34031d483bb9974daa">isLegal</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;0&#32;&lt;=&#32;weight_&#32;&amp;&amp;&#32;weight_&#32;&lt;=&#32;1;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00835"/>00835 
+<anchor xml:id="_pid__opt_8hpp_source_1l00840"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1a251efdca45313d86ab0daa779583255f">00840</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1a251efdca45313d86ab0daa779583255f">isEnabled</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;isLegal()&#32;&amp;&amp;&#32;weight_&#32;!=&#32;0;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00841"/>00841 
+<anchor xml:id="_pid__opt_8hpp_source_1l00860"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1ac654422982d9475cf5c6f6c061cd2aeb">00860</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1ac654422982d9475cf5c6f6c061cd2aeb">calc</link>(<emphasis role="keywordtype">float</emphasis>&#32;fdb,&#32;<emphasis role="keywordtype">float</emphasis>&#32;last_fdb,&#32;<emphasis role="keywordtype">float</emphasis>&#32;err,&#32;<emphasis role="keywordtype">float</emphasis>&#32;last_err)
+<anchor xml:id="_pid__opt_8hpp_source_1l00861"/>00861 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00862"/>00862 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;diff&#32;=&#32;err&#32;-&#32;last_err;
+<anchor xml:id="_pid__opt_8hpp_source_1l00863"/>00863 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(isEnabled())&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00864"/>00864 &#32;&#32;&#32;&#32;&#32;&#32;diff&#32;=&#32;(1&#32;-&#32;weight_)&#32;*&#32;diff&#32;+&#32;weight_&#32;*&#32;(fdb&#32;-&#32;last_fdb);
+<anchor xml:id="_pid__opt_8hpp_source_1l00865"/>00865 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00866"/>00866 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;diff;
+<anchor xml:id="_pid__opt_8hpp_source_1l00867"/>00867 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00868"/>00868 
+<anchor xml:id="_pid__opt_8hpp_source_1l00869"/>00869 &#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l00870"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1ad085fab9a4dbec69506b1effe527a60f">00870</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1ad085fab9a4dbec69506b1effe527a60f">weight_</link>;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l00871"/>00871 
+<anchor xml:id="_pid__opt_8hpp_source_1l00876"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1a68e08fa7ab70f66f0ba633ff139b7c27">00876</link> &#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous_1a68e08fa7ab70f66f0ba633ff139b7c27">handleIllegalParams</link>()
+<anchor xml:id="_pid__opt_8hpp_source_1l00877"/>00877 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00878"/>00878 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00879"/>00879 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(weight_&#32;&lt;&#32;0)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00880"/>00880 &#32;&#32;&#32;&#32;&#32;&#32;weight_&#32;=&#32;0;
+<anchor xml:id="_pid__opt_8hpp_source_1l00881"/>00881 &#32;&#32;&#32;&#32;&#32;&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00882"/>00882 &#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(weight_&#32;&gt;&#32;1)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00883"/>00883 &#32;&#32;&#32;&#32;&#32;&#32;weight_&#32;=&#32;1;
+<anchor xml:id="_pid__opt_8hpp_source_1l00884"/>00884 &#32;&#32;&#32;&#32;&#32;&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00885"/>00885 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00886"/>00886 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;with_illegal_params;
+<anchor xml:id="_pid__opt_8hpp_source_1l00887"/>00887 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00888"/>00888 };
+<anchor xml:id="_pid__opt_8hpp_source_1l00889"/>00889 
+<anchor xml:id="_pid__opt_8hpp_source_1l00901"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band">00901</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_pid__opt_8hpp_1ab8ddc47b889ad4fc0d4aeadab4395434">__PACKED_PID_PARAMS</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band">DeadBand</link>
+<anchor xml:id="_pid__opt_8hpp_source_1l00902"/>00902 {
+<anchor xml:id="_pid__opt_8hpp_source_1l00903"/>00903 &#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l00910"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ab1dc5574bcf81f9eef3c0fa6f8b60f3b">00910</link> &#32;&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ab1dc5574bcf81f9eef3c0fa6f8b60f3b">DeadBand</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled&#32;=&#32;<emphasis role="keyword">false</emphasis>,&#32;<emphasis role="keywordtype">float</emphasis>&#32;lower&#32;=&#32;-0.01,&#32;<emphasis role="keywordtype">float</emphasis>&#32;upper&#32;=&#32;0.01)
+<anchor xml:id="_pid__opt_8hpp_source_1l00911"/>00911 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00912"/>00912 &#32;&#32;&#32;&#32;setParams(is_enabled,&#32;lower,&#32;upper);
+<anchor xml:id="_pid__opt_8hpp_source_1l00913"/>00913 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00914"/>00914 
+<anchor xml:id="_pid__opt_8hpp_source_1l00920"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ad973a9b6e41cb2ae18102b2fb8ecf451">00920</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ad973a9b6e41cb2ae18102b2fb8ecf451">setEnabled</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled)
+<anchor xml:id="_pid__opt_8hpp_source_1l00921"/>00921 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00922"/>00922 &#32;&#32;&#32;&#32;is_enabled_&#32;=&#32;is_enabled;
+<anchor xml:id="_pid__opt_8hpp_source_1l00923"/>00923 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00924"/>00924 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00925"/>00925 
+<anchor xml:id="_pid__opt_8hpp_source_1l00933"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ad92aba81aeae786833987d340da6d28d">00933</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1ad92aba81aeae786833987d340da6d28d">setLower</link>(<emphasis role="keywordtype">float</emphasis>&#32;lower)
+<anchor xml:id="_pid__opt_8hpp_source_1l00934"/>00934 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00935"/>00935 &#32;&#32;&#32;&#32;lower_&#32;=&#32;lower;
+<anchor xml:id="_pid__opt_8hpp_source_1l00936"/>00936 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00937"/>00937 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00938"/>00938 
+<anchor xml:id="_pid__opt_8hpp_source_1l00946"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a58c526f8628df6c9baf2de0d253af75b">00946</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a58c526f8628df6c9baf2de0d253af75b">setUpper</link>(<emphasis role="keywordtype">float</emphasis>&#32;upper)
+<anchor xml:id="_pid__opt_8hpp_source_1l00947"/>00947 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00948"/>00948 &#32;&#32;&#32;&#32;upper_&#32;=&#32;upper;
+<anchor xml:id="_pid__opt_8hpp_source_1l00949"/>00949 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00950"/>00950 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00951"/>00951 
+<anchor xml:id="_pid__opt_8hpp_source_1l00961"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a46a07d46aeb0bef20bc732cad70b6f40">00961</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a46a07d46aeb0bef20bc732cad70b6f40">setParams</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled,&#32;<emphasis role="keywordtype">float</emphasis>&#32;lower,&#32;<emphasis role="keywordtype">float</emphasis>&#32;upper)
+<anchor xml:id="_pid__opt_8hpp_source_1l00962"/>00962 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00963"/>00963 &#32;&#32;&#32;&#32;is_enabled_&#32;=&#32;is_enabled;
+<anchor xml:id="_pid__opt_8hpp_source_1l00964"/>00964 &#32;&#32;&#32;&#32;lower_&#32;=&#32;lower;
+<anchor xml:id="_pid__opt_8hpp_source_1l00965"/>00965 &#32;&#32;&#32;&#32;upper_&#32;=&#32;upper;
+<anchor xml:id="_pid__opt_8hpp_source_1l00966"/>00966 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l00967"/>00967 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l00968"/>00968 
+<anchor xml:id="_pid__opt_8hpp_source_1l00973"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a3e0c3a79e1424e86dd8d642a65814389">00973</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a3e0c3a79e1424e86dd8d642a65814389">isLegal</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;lower_&#32;&lt;=&#32;upper_;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00974"/>00974 
+<anchor xml:id="_pid__opt_8hpp_source_1l00979"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aad31e9ef7c315aea7c9ff7e06d6740b9">00979</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aad31e9ef7c315aea7c9ff7e06d6740b9">isEnabled</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;is_enabled_&#32;&amp;&amp;&#32;isLegal();&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l00980"/>00980 
+<anchor xml:id="_pid__opt_8hpp_source_1l00996"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1adff792034723f0cc61648e5c0696546c">00996</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1adff792034723f0cc61648e5c0696546c">calc</link>(<emphasis role="keywordtype">float</emphasis>&#32;err)
+<anchor xml:id="_pid__opt_8hpp_source_1l00997"/>00997 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l00998"/>00998 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;res&#32;=&#32;err;
+<anchor xml:id="_pid__opt_8hpp_source_1l00999"/>00999 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(isEnabled())&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01000"/>01000 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(err&#32;&gt;&#32;upper_)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01001"/>01001 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;res&#32;=&#32;err&#32;-&#32;upper_;
+<anchor xml:id="_pid__opt_8hpp_source_1l01002"/>01002 &#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(err&#32;&lt;&#32;lower_)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01003"/>01003 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;res&#32;=&#32;err&#32;-&#32;lower_;
+<anchor xml:id="_pid__opt_8hpp_source_1l01004"/>01004 &#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01005"/>01005 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;res&#32;=&#32;0;
+<anchor xml:id="_pid__opt_8hpp_source_1l01006"/>01006 &#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01007"/>01007 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01008"/>01008 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_pid__opt_8hpp_source_1l01009"/>01009 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l01010"/>01010 
+<anchor xml:id="_pid__opt_8hpp_source_1l01011"/>01011 &#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l01012"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aaaf34c69c7f5968bb9ad919e5b13d168">01012</link> &#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1aaaf34c69c7f5968bb9ad919e5b13d168">is_enabled_</link>;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l01013"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a6e3d858d858368205efc5895144f6f3e">01013</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a6e3d858d858368205efc5895144f6f3e">lower_</link>;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l01014"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a7588c98a797ba54f330fe0732a98659b">01014</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a7588c98a797ba54f330fe0732a98659b">upper_</link>;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l01015"/>01015 
+<anchor xml:id="_pid__opt_8hpp_source_1l01020"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a62f41d9f1429169b7149493f6d23ba94">01020</link> &#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band_1a62f41d9f1429169b7149493f6d23ba94">handleIllegalParams</link>()
+<anchor xml:id="_pid__opt_8hpp_source_1l01021"/>01021 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01022"/>01022 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l01023"/>01023 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(lower_&#32;&gt;&#32;upper_)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01024"/>01024 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;tmp&#32;=&#32;upper_;
+<anchor xml:id="_pid__opt_8hpp_source_1l01025"/>01025 &#32;&#32;&#32;&#32;&#32;&#32;upper_&#32;=&#32;lower_;
+<anchor xml:id="_pid__opt_8hpp_source_1l01026"/>01026 &#32;&#32;&#32;&#32;&#32;&#32;lower_&#32;=&#32;tmp;
+<anchor xml:id="_pid__opt_8hpp_source_1l01027"/>01027 &#32;&#32;&#32;&#32;&#32;&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l01028"/>01028 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01029"/>01029 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;with_illegal_params;
+<anchor xml:id="_pid__opt_8hpp_source_1l01030"/>01030 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l01031"/>01031 };
+<anchor xml:id="_pid__opt_8hpp_source_1l01032"/>01032 
+<anchor xml:id="_pid__opt_8hpp_source_1l01045"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping">01045</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_pid__opt_8hpp_1ab8ddc47b889ad4fc0d4aeadab4395434">__PACKED_PID_PARAMS</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping">SetpointRamping</link>
+<anchor xml:id="_pid__opt_8hpp_source_1l01046"/>01046 {
+<anchor xml:id="_pid__opt_8hpp_source_1l01047"/>01047 &#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l01055"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1abfad7fc77ed8ddc3f7b358112b3ef28d">01055</link> &#32;&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1abfad7fc77ed8ddc3f7b358112b3ef28d">SetpointRamping</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled&#32;=&#32;<emphasis role="keyword">false</emphasis>,&#32;<emphasis role="keywordtype">float</emphasis>&#32;lower&#32;=&#32;-0.01,
+<anchor xml:id="_pid__opt_8hpp_source_1l01056"/>01056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;upper&#32;=&#32;0.01,&#32;<emphasis role="keywordtype">float</emphasis>&#32;weight&#32;=&#32;0.5)
+<anchor xml:id="_pid__opt_8hpp_source_1l01057"/>01057 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01058"/>01058 &#32;&#32;&#32;&#32;setParams(is_enabled,&#32;lower,&#32;upper,&#32;weight);
+<anchor xml:id="_pid__opt_8hpp_source_1l01059"/>01059 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l01060"/>01060 
+<anchor xml:id="_pid__opt_8hpp_source_1l01066"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a871b1700f3f33338caf9eb893fbe1c5b">01066</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a871b1700f3f33338caf9eb893fbe1c5b">setEnabled</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled)
+<anchor xml:id="_pid__opt_8hpp_source_1l01067"/>01067 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01068"/>01068 &#32;&#32;&#32;&#32;is_enabled_&#32;=&#32;is_enabled;
+<anchor xml:id="_pid__opt_8hpp_source_1l01069"/>01069 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l01070"/>01070 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01071"/>01071 
+<anchor xml:id="_pid__opt_8hpp_source_1l01079"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a8b0695ce28a8513c8496f7fb4879777c">01079</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a8b0695ce28a8513c8496f7fb4879777c">setLower</link>(<emphasis role="keywordtype">float</emphasis>&#32;lower)
+<anchor xml:id="_pid__opt_8hpp_source_1l01080"/>01080 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01081"/>01081 &#32;&#32;&#32;&#32;lower_&#32;=&#32;lower;
+<anchor xml:id="_pid__opt_8hpp_source_1l01082"/>01082 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l01083"/>01083 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01084"/>01084 
+<anchor xml:id="_pid__opt_8hpp_source_1l01092"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a583e8721e40c329c56b831c9d9dbfd96">01092</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a583e8721e40c329c56b831c9d9dbfd96">setUpper</link>(<emphasis role="keywordtype">float</emphasis>&#32;upper)
+<anchor xml:id="_pid__opt_8hpp_source_1l01093"/>01093 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01094"/>01094 &#32;&#32;&#32;&#32;upper_&#32;=&#32;upper;
+<anchor xml:id="_pid__opt_8hpp_source_1l01095"/>01095 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l01096"/>01096 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01097"/>01097 
+<anchor xml:id="_pid__opt_8hpp_source_1l01105"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a800c9eb2af9d26b49be7ec0450d0bb8a">01105</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a800c9eb2af9d26b49be7ec0450d0bb8a">setWeight</link>(<emphasis role="keywordtype">float</emphasis>&#32;weight)
+<anchor xml:id="_pid__opt_8hpp_source_1l01106"/>01106 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01107"/>01107 &#32;&#32;&#32;&#32;weight_&#32;=&#32;weight;
+<anchor xml:id="_pid__opt_8hpp_source_1l01108"/>01108 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l01109"/>01109 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01110"/>01110 
+<anchor xml:id="_pid__opt_8hpp_source_1l01121"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a460329f8b9e9879ff4a3b33e23c65a64">01121</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a460329f8b9e9879ff4a3b33e23c65a64">setParams</link>(<emphasis role="keywordtype">bool</emphasis>&#32;is_enabled,&#32;<emphasis role="keywordtype">float</emphasis>&#32;lower,&#32;<emphasis role="keywordtype">float</emphasis>&#32;upper,
+<anchor xml:id="_pid__opt_8hpp_source_1l01122"/>01122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;weight)
+<anchor xml:id="_pid__opt_8hpp_source_1l01123"/>01123 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01124"/>01124 &#32;&#32;&#32;&#32;is_enabled_&#32;=&#32;is_enabled;
+<anchor xml:id="_pid__opt_8hpp_source_1l01125"/>01125 &#32;&#32;&#32;&#32;lower_&#32;=&#32;lower;
+<anchor xml:id="_pid__opt_8hpp_source_1l01126"/>01126 &#32;&#32;&#32;&#32;upper_&#32;=&#32;upper;
+<anchor xml:id="_pid__opt_8hpp_source_1l01127"/>01127 &#32;&#32;&#32;&#32;weight_&#32;=&#32;weight;
+<anchor xml:id="_pid__opt_8hpp_source_1l01128"/>01128 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l01129"/>01129 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01130"/>01130 
+<anchor xml:id="_pid__opt_8hpp_source_1l01135"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1aa422d35b86458e8eefbfff91aabc0663">01135</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1aa422d35b86458e8eefbfff91aabc0663">isLegal</link>()
+<anchor xml:id="_pid__opt_8hpp_source_1l01136"/>01136 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01137"/>01137 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;lower_&#32;&lt;=&#32;upper_&#32;&amp;&amp;&#32;0&#32;&lt;=&#32;weight_&#32;&amp;&amp;&#32;weight_&#32;&lt;=&#32;1;
+<anchor xml:id="_pid__opt_8hpp_source_1l01138"/>01138 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l01139"/>01139 
+<anchor xml:id="_pid__opt_8hpp_source_1l01144"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1ae73d9e96b10b0e9782752b7895ca9884">01144</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1ae73d9e96b10b0e9782752b7895ca9884">isEnabled</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;is_enabled_&#32;&amp;&amp;&#32;isLegal();&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l01145"/>01145 
+<anchor xml:id="_pid__opt_8hpp_source_1l01162"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a7833313869bfc6845232378f32019e29">01162</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a7833313869bfc6845232378f32019e29">calc</link>(<emphasis role="keywordtype">float</emphasis>&#32;ref,&#32;<emphasis role="keywordtype">float</emphasis>&#32;last_ref)
+<anchor xml:id="_pid__opt_8hpp_source_1l01163"/>01163 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01164"/>01164 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;res&#32;=&#32;ref;
+<anchor xml:id="_pid__opt_8hpp_source_1l01165"/>01165 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(isEnabled())&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01166"/>01166 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;delta_err&#32;=&#32;ref&#32;-&#32;last_ref;
+<anchor xml:id="_pid__opt_8hpp_source_1l01167"/>01167 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(delta_err&#32;&lt;=&#32;lower_&#32;||&#32;delta_err&#32;&gt;=&#32;upper_)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01168"/>01168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;res&#32;=&#32;weight_&#32;*&#32;last_ref&#32;+&#32;(1&#32;-&#32;weight_)&#32;*&#32;ref;
+<anchor xml:id="_pid__opt_8hpp_source_1l01169"/>01169 &#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01170"/>01170 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01171"/>01171 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;res;
+<anchor xml:id="_pid__opt_8hpp_source_1l01172"/>01172 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l01173"/>01173 
+<anchor xml:id="_pid__opt_8hpp_source_1l01174"/>01174 &#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l01175"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a1fc6c333f41f638e72eb66b25cb4f3ab">01175</link> &#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a1fc6c333f41f638e72eb66b25cb4f3ab">is_enabled_</link>;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l01176"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a5b9cffa6bd25366c81bc5e6ed0a47a62">01176</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a5b9cffa6bd25366c81bc5e6ed0a47a62">lower_</link>;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l01177"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a045c57ece17e2b7d8d0085fbaf99bd06">01177</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1a045c57ece17e2b7d8d0085fbaf99bd06">upper_</link>;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l01178"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1ae6ea21fd7b12500a62ffb60cfa4b4942">01178</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1ae6ea21fd7b12500a62ffb60cfa4b4942">weight_</link>;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l01179"/>01179 
+<anchor xml:id="_pid__opt_8hpp_source_1l01191"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1aa61bfaf1f7fbf60ae83fb6912fd89ef4">01191</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping_1aa61bfaf1f7fbf60ae83fb6912fd89ef4">handleIllegalParams</link>()
+<anchor xml:id="_pid__opt_8hpp_source_1l01192"/>01192 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01193"/>01193 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l01194"/>01194 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(lower_&#32;&gt;&#32;upper_)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01195"/>01195 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;tmp&#32;=&#32;upper_;
+<anchor xml:id="_pid__opt_8hpp_source_1l01196"/>01196 &#32;&#32;&#32;&#32;&#32;&#32;upper_&#32;=&#32;lower_;
+<anchor xml:id="_pid__opt_8hpp_source_1l01197"/>01197 &#32;&#32;&#32;&#32;&#32;&#32;lower_&#32;=&#32;tmp;
+<anchor xml:id="_pid__opt_8hpp_source_1l01198"/>01198 &#32;&#32;&#32;&#32;&#32;&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l01199"/>01199 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01200"/>01200 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(weight_&#32;&lt;&#32;0)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01201"/>01201 &#32;&#32;&#32;&#32;&#32;&#32;weight_&#32;=&#32;0;
+<anchor xml:id="_pid__opt_8hpp_source_1l01202"/>01202 &#32;&#32;&#32;&#32;&#32;&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l01203"/>01203 &#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(weight_&#32;&gt;&#32;1)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01204"/>01204 &#32;&#32;&#32;&#32;&#32;&#32;weight_&#32;=&#32;1;
+<anchor xml:id="_pid__opt_8hpp_source_1l01205"/>01205 &#32;&#32;&#32;&#32;&#32;&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l01206"/>01206 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01207"/>01207 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;with_illegal_params;
+<anchor xml:id="_pid__opt_8hpp_source_1l01208"/>01208 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l01209"/>01209 };
+<anchor xml:id="_pid__opt_8hpp_source_1l01210"/>01210 
+<anchor xml:id="_pid__opt_8hpp_source_1l01211"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit">01211</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_pid__opt_8hpp_1ab8ddc47b889ad4fc0d4aeadab4395434">__PACKED_PID_PARAMS</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit">OutLimit</link>
+<anchor xml:id="_pid__opt_8hpp_source_1l01212"/>01212 {
+<anchor xml:id="_pid__opt_8hpp_source_1l01213"/>01213 &#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l01214"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1ad2b3c4ee279f22bfda11019999139142">01214</link> &#32;&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1ad2b3c4ee279f22bfda11019999139142">OutLimit</link>(<emphasis role="keywordtype">float</emphasis>&#32;lower&#32;=&#32;-0.1f,&#32;<emphasis role="keywordtype">float</emphasis>&#32;upper&#32;=&#32;0.1f)
+<anchor xml:id="_pid__opt_8hpp_source_1l01215"/>01215 &#32;&#32;&#32;&#32;&#32;&#32;:&#32;lower_(lower),&#32;upper_(upper)
+<anchor xml:id="_pid__opt_8hpp_source_1l01216"/>01216 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01217"/>01217 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;如果下限大于上限，则交换两者的值</emphasis>
+<anchor xml:id="_pid__opt_8hpp_source_1l01218"/>01218 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(lower&#32;&gt;&#32;upper)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01219"/>01219 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;tmp&#32;=&#32;upper;
+<anchor xml:id="_pid__opt_8hpp_source_1l01220"/>01220 &#32;&#32;&#32;&#32;&#32;&#32;upper&#32;=&#32;lower;
+<anchor xml:id="_pid__opt_8hpp_source_1l01221"/>01221 &#32;&#32;&#32;&#32;&#32;&#32;lower&#32;=&#32;tmp;
+<anchor xml:id="_pid__opt_8hpp_source_1l01222"/>01222 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01223"/>01223 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l01224"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a1407f4408006dc5cd1a22b20bef31e49">01224</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a1407f4408006dc5cd1a22b20bef31e49">setLower</link>(<emphasis role="keywordtype">float</emphasis>&#32;lower)
+<anchor xml:id="_pid__opt_8hpp_source_1l01225"/>01225 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01226"/>01226 &#32;&#32;&#32;&#32;lower_&#32;=&#32;lower;
+<anchor xml:id="_pid__opt_8hpp_source_1l01227"/>01227 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l01228"/>01228 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01229"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a0a2155cd0a909a9f847b7d59c8a2f98a">01229</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a0a2155cd0a909a9f847b7d59c8a2f98a">setUpper</link>(<emphasis role="keywordtype">float</emphasis>&#32;upper)
+<anchor xml:id="_pid__opt_8hpp_source_1l01230"/>01230 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01231"/>01231 &#32;&#32;&#32;&#32;upper_&#32;=&#32;upper;
+<anchor xml:id="_pid__opt_8hpp_source_1l01232"/>01232 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l01233"/>01233 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01234"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1abe6c996621f6258c50ecc9447e33c4d4">01234</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1abe6c996621f6258c50ecc9447e33c4d4">setParams</link>(<emphasis role="keywordtype">float</emphasis>&#32;lower,&#32;<emphasis role="keywordtype">float</emphasis>&#32;upper)
+<anchor xml:id="_pid__opt_8hpp_source_1l01235"/>01235 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01236"/>01236 &#32;&#32;&#32;&#32;lower_&#32;=&#32;lower;
+<anchor xml:id="_pid__opt_8hpp_source_1l01237"/>01237 &#32;&#32;&#32;&#32;upper_&#32;=&#32;upper;
+<anchor xml:id="_pid__opt_8hpp_source_1l01238"/>01238 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;handleIllegalParams()&#32;?&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9">kStateError</link>&#32;:&#32;<link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53">kStateOk</link>;
+<anchor xml:id="_pid__opt_8hpp_source_1l01239"/>01239 &#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01240"/>01240 
+<anchor xml:id="_pid__opt_8hpp_source_1l01241"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a18ce069e47c786aee47bed954a354c43">01241</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a18ce069e47c786aee47bed954a354c43">isLegal</link>()&#32;{&#32;<emphasis role="keywordflow">return</emphasis>&#32;lower_&#32;&lt;=&#32;upper_;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l01242"/>01242 
+<anchor xml:id="_pid__opt_8hpp_source_1l01243"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a958ca6f80deb49af0d3c4d4bed32db42">01243</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a958ca6f80deb49af0d3c4d4bed32db42">calc</link>(<emphasis role="keywordtype">float</emphasis>&#32;out)
+<anchor xml:id="_pid__opt_8hpp_source_1l01244"/>01244 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01245"/>01245 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!isLegal())&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01246"/>01246 &#32;&#32;&#32;&#32;&#32;&#32;handleIllegalParams();
+<anchor xml:id="_pid__opt_8hpp_source_1l01247"/>01247 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01248"/>01248 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(out&#32;&gt;&#32;upper_)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01249"/>01249 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;upper_;
+<anchor xml:id="_pid__opt_8hpp_source_1l01250"/>01250 &#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(out&#32;&lt;&#32;lower_)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01251"/>01251 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;lower_;
+<anchor xml:id="_pid__opt_8hpp_source_1l01252"/>01252 &#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01253"/>01253 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;out;
+<anchor xml:id="_pid__opt_8hpp_source_1l01254"/>01254 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01255"/>01255 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l01256"/>01256 
+<anchor xml:id="_pid__opt_8hpp_source_1l01257"/>01257 &#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_pid__opt_8hpp_source_1l01258"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a3430a294b2f92a382a28d97774d06fa7">01258</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a3430a294b2f92a382a28d97774d06fa7">lower_</link>;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l01259"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a235d72d9af7f487975cc6595e40cce52">01259</link> &#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1a235d72d9af7f487975cc6595e40cce52">upper_</link>;&#32;&#32;
+<anchor xml:id="_pid__opt_8hpp_source_1l01264"/><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1abfed2dd8851ab68aeda95769feda99a3">01264</link> &#32;&#32;<emphasis role="keyword">inline</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit_1abfed2dd8851ab68aeda95769feda99a3">handleIllegalParams</link>()
+<anchor xml:id="_pid__opt_8hpp_source_1l01265"/>01265 &#32;&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01266"/>01266 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l01267"/>01267 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(lower_&#32;&gt;&#32;upper_)&#32;{
+<anchor xml:id="_pid__opt_8hpp_source_1l01268"/>01268 &#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;tmp&#32;=&#32;upper_;
+<anchor xml:id="_pid__opt_8hpp_source_1l01269"/>01269 &#32;&#32;&#32;&#32;&#32;&#32;upper_&#32;=&#32;lower_;
+<anchor xml:id="_pid__opt_8hpp_source_1l01270"/>01270 &#32;&#32;&#32;&#32;&#32;&#32;lower_&#32;=&#32;tmp;
+<anchor xml:id="_pid__opt_8hpp_source_1l01271"/>01271 &#32;&#32;&#32;&#32;&#32;&#32;with_illegal_params&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_pid__opt_8hpp_source_1l01272"/>01272 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_pid__opt_8hpp_source_1l01273"/>01273 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;with_illegal_params;
+<anchor xml:id="_pid__opt_8hpp_source_1l01274"/>01274 &#32;&#32;};
+<anchor xml:id="_pid__opt_8hpp_source_1l01275"/>01275 };
+<anchor xml:id="_pid__opt_8hpp_source_1l01276"/>01276 
+<anchor xml:id="_pid__opt_8hpp_source_1l01277"/>01277 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;pid</emphasis>
+<anchor xml:id="_pid__opt_8hpp_source_1l01278"/>01278 
+<anchor xml:id="_pid__opt_8hpp_source_1l01279"/>01279 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;controller</emphasis>
+<anchor xml:id="_pid__opt_8hpp_source_1l01280"/>01280 
+<anchor xml:id="_pid__opt_8hpp_source_1l01281"/>01281 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;algorithms</emphasis>
+<anchor xml:id="_pid__opt_8hpp_source_1l01282"/>01282 
+<anchor xml:id="_pid__opt_8hpp_source_1l01283"/>01283 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;hello_world</emphasis>
+<anchor xml:id="_pid__opt_8hpp_source_1l01284"/>01284 
+<anchor xml:id="_pid__opt_8hpp_source_1l01285"/>01285 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;HWCOMPONENTS_ALGORITHMS_CONTROLLER_PID_OPT_HPP_&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+</programlisting></section>

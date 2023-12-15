@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structhello__world_1_1devices_1_1imu_1_1_b_m_i088_h_w_config" xml:lang="zh">
+<title>hello_world::devices::imu::BMI088HWConfig结构体 参考</title>
+<indexterm><primary>hello_world::devices::imu::BMI088HWConfig</primary></indexterm>
+<para>
+<computeroutput>#include &lt;BMI088.hpp&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para>SPI_HandleTypeDef * <link linkend="_structhello__world_1_1devices_1_1imu_1_1_b_m_i088_h_w_config_1a2db84789946a96e6da7270210040fda1">hspi</link></para>
+</listitem>
+            <listitem><para>GPIO_TypeDef * <link linkend="_structhello__world_1_1devices_1_1imu_1_1_b_m_i088_h_w_config_1a2de40c3e70f1a794abcb7a80b549684f">acc_cs_port</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_structhello__world_1_1devices_1_1imu_1_1_b_m_i088_h_w_config_1aafa4fdc0a360b169e39c9840f0d0edaa">acc_cs_pin</link></para>
+</listitem>
+            <listitem><para>GPIO_TypeDef * <link linkend="_structhello__world_1_1devices_1_1imu_1_1_b_m_i088_h_w_config_1a0fca17a5ba5e46d782504924fced34ac">gyro_cs_port</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_structhello__world_1_1devices_1_1imu_1_1_b_m_i088_h_w_config_1aeb68dcecfb7e6ec90510f6d1c9c3ade2">gyro_cs_pin</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+<para>
+在文件 <link linkend="__b_m_i088_8hpp_source">BMI088.hpp</link> 第 <link linkend="__b_m_i088_8hpp_source_1l00089">89</link> 行定义.</para>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_structhello__world_1_1devices_1_1imu_1_1_b_m_i088_h_w_config_1aafa4fdc0a360b169e39c9840f0d0edaa"/><section>
+    <title>acc_cs_pin</title>
+<indexterm><primary>acc_cs_pin</primary><secondary>hello_world::devices::imu::BMI088HWConfig</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu::BMI088HWConfig</primary><secondary>acc_cs_pin</secondary></indexterm>
+<para><computeroutput>uint32_t hello_world::devices::imu::BMI088HWConfig::acc_cs_pin</computeroutput></para>
+<para><itemizedlist>
+<listitem>
+<para>加速度计片选端口 </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="__b_m_i088_8hpp_source">BMI088.hpp</link> 第 <link linkend="__b_m_i088_8hpp_source_1l00092">92</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1devices_1_1imu_1_1_b_m_i088_h_w_config_1a2de40c3e70f1a794abcb7a80b549684f"/><section>
+    <title>acc_cs_port</title>
+<indexterm><primary>acc_cs_port</primary><secondary>hello_world::devices::imu::BMI088HWConfig</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu::BMI088HWConfig</primary><secondary>acc_cs_port</secondary></indexterm>
+<para><computeroutput>GPIO_TypeDef* hello_world::devices::imu::BMI088HWConfig::acc_cs_port</computeroutput></para>
+<para><itemizedlist>
+<listitem>
+<para>IMU 对应的 SPI 句柄的指针 </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="__b_m_i088_8hpp_source">BMI088.hpp</link> 第 <link linkend="__b_m_i088_8hpp_source_1l00091">91</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1devices_1_1imu_1_1_b_m_i088_h_w_config_1aeb68dcecfb7e6ec90510f6d1c9c3ade2"/><section>
+    <title>gyro_cs_pin</title>
+<indexterm><primary>gyro_cs_pin</primary><secondary>hello_world::devices::imu::BMI088HWConfig</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu::BMI088HWConfig</primary><secondary>gyro_cs_pin</secondary></indexterm>
+<para><computeroutput>uint32_t hello_world::devices::imu::BMI088HWConfig::gyro_cs_pin</computeroutput></para>
+<para><itemizedlist>
+<listitem>
+<para>陀螺仪片选端口 </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="__b_m_i088_8hpp_source">BMI088.hpp</link> 第 <link linkend="__b_m_i088_8hpp_source_1l00094">94</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1devices_1_1imu_1_1_b_m_i088_h_w_config_1a0fca17a5ba5e46d782504924fced34ac"/><section>
+    <title>gyro_cs_port</title>
+<indexterm><primary>gyro_cs_port</primary><secondary>hello_world::devices::imu::BMI088HWConfig</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu::BMI088HWConfig</primary><secondary>gyro_cs_port</secondary></indexterm>
+<para><computeroutput>GPIO_TypeDef* hello_world::devices::imu::BMI088HWConfig::gyro_cs_port</computeroutput></para>
+<para><itemizedlist>
+<listitem>
+<para>加速度计片选引脚 </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="__b_m_i088_8hpp_source">BMI088.hpp</link> 第 <link linkend="__b_m_i088_8hpp_source_1l00093">93</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1devices_1_1imu_1_1_b_m_i088_h_w_config_1a2db84789946a96e6da7270210040fda1"/><section>
+    <title>hspi</title>
+<indexterm><primary>hspi</primary><secondary>hello_world::devices::imu::BMI088HWConfig</secondary></indexterm>
+<indexterm><primary>hello_world::devices::imu::BMI088HWConfig</primary><secondary>hspi</secondary></indexterm>
+<para><computeroutput>SPI_HandleTypeDef* hello_world::devices::imu::BMI088HWConfig::hspi</computeroutput></para>
+<para><itemizedlist>
+<listitem>
+<para><link linkend="_classhello__world_1_1devices_1_1imu_1_1_b_m_i088">BMI088</link> 硬件配置 </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="__b_m_i088_8hpp_source">BMI088.hpp</link> 第 <link linkend="__b_m_i088_8hpp_source_1l00090">90</link> 行定义.</para>
+</section>
+</section>
+</section>

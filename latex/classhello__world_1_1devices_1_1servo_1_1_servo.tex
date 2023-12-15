@@ -1,0 +1,283 @@
+\doxysection{hello\+\_\+world\+::devices\+::servo\+::Servo类 参考}
+\hypertarget{classhello__world_1_1devices_1_1servo_1_1_servo}{}\label{classhello__world_1_1devices_1_1servo_1_1_servo}\index{hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}}
+
+
+{\ttfamily \#include $<$servo.\+hpp$>$}
+
+
+
+类 hello\+\_\+world\+::devices\+::servo\+::Servo 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classhello__world_1_1devices_1_1servo_1_1_servo__inherit__graph}
+\end{center}
+\end{figure}
+
+
+hello\+\_\+world\+::devices\+::servo\+::Servo 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{classhello__world_1_1devices_1_1servo_1_1_servo__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhello__world_1_1devices_1_1servo_1_1_servo_a538666221be8aebbd757061a57203e56}{Servo}} (TIM\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}htim, uint32\+\_\+t channel, const \mbox{\hyperlink{structhello__world_1_1devices_1_1servo_1_1_servo_info}{Servo\+Info}} \&servo\+\_\+info, float init\+\_\+angle)
+\begin{DoxyCompactList}\small\item\em 舵机初始化 \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classhello__world_1_1devices_1_1servo_1_1_servo_a254eee3c95b8d142babe952441790e99}{\texorpdfstring{$\sim$}{\string~}\+Servo}} ()
+\item 
+void \mbox{\hyperlink{classhello__world_1_1devices_1_1servo_1_1_servo_a8c9c025ba0597d51a6e8933bce379f0e}{enable}} () const
+\begin{DoxyCompactList}\small\item\em 使能舵机 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhello__world_1_1devices_1_1servo_1_1_servo_ab2e32fc0b9d42094ba9bda1371c4ff84}{disable}} () const
+\begin{DoxyCompactList}\small\item\em 失能舵机 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhello__world_1_1devices_1_1servo_1_1_servo_a22fff12088bc63dc21cace008a5e1b35}{set\+Angle}} (float angle) const
+\begin{DoxyCompactList}\small\item\em 设定舵机角度 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classhello__world_1_1_mem_mang}{hello\+\_\+world\+::\+Mem\+Mang}}}
+\begin{DoxyCompactItemize}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classhello__world_1_1_mem_mang_abcf6e7289814e8da342ba4f47d8af411}{operator new}} (size\+\_\+t size)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classhello__world_1_1_mem_mang_ad10b6eff1541322708e5bde32c590c82}{operator new\mbox{[}$\,$\mbox{]}}} (size\+\_\+t size)
+\item 
+void \mbox{\hyperlink{classhello__world_1_1_mem_mang_abf1fe21066f52d693e2eec63a5833e8e}{operator delete}} (void \texorpdfstring{$\ast$}{*}ptr)
+\item 
+void \mbox{\hyperlink{classhello__world_1_1_mem_mang_a54e1a6a8e01b0996cc2854a8bc1ce7bd}{operator delete\mbox{[}$\,$\mbox{]}}} (void \texorpdfstring{$\ast$}{*}ptr)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+TIM\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}const \mbox{\hyperlink{classhello__world_1_1devices_1_1servo_1_1_servo_ab09397483f5eb4ac6f879dbaa00407f2}{k\+Htim\+\_\+}}
+\item 
+const uint32\+\_\+t \mbox{\hyperlink{classhello__world_1_1devices_1_1servo_1_1_servo_af7138e8cec740393fc793674d9ac23f2}{k\+Channel\+\_\+}}
+\item 
+const \mbox{\hyperlink{structhello__world_1_1devices_1_1servo_1_1_servo_info}{Servo\+Info}} \mbox{\hyperlink{classhello__world_1_1devices_1_1servo_1_1_servo_a970450231a2ce7b2057d8be915ffde22}{k\+Servo\+Info\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classhello__world_1_1devices_1_1servo_1_1_servo_af678b6d9c70e3be611755ac1ae233aa5}{angle2\+Cmp}} (float angle) const
+\begin{DoxyCompactList}\small\item\em 舵机角度转定时器\+PWM比较值 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+
+
+在文件 \mbox{\hyperlink{servo_8hpp_source}{servo.\+hpp}} 第 \mbox{\hyperlink{servo_8hpp_source_l00039}{39}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classhello__world_1_1devices_1_1servo_1_1_servo_a538666221be8aebbd757061a57203e56}\label{classhello__world_1_1devices_1_1servo_1_1_servo_a538666221be8aebbd757061a57203e56} 
+\index{hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}!Servo@{Servo}}
+\index{Servo@{Servo}!hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}}
+\doxysubsubsection{\texorpdfstring{Servo()}{Servo()}}
+{\footnotesize\ttfamily hello\+\_\+world\+::devices\+::servo\+::\+Servo\+::\+Servo (\begin{DoxyParamCaption}\item[{TIM\+\_\+\+Handle\+Type\+Def \texorpdfstring{$\ast$}{*}}]{htim,  }\item[{uint32\+\_\+t}]{channel,  }\item[{const \mbox{\hyperlink{structhello__world_1_1devices_1_1servo_1_1_servo_info}{Servo\+Info}} \&}]{servo\+\_\+info,  }\item[{float}]{init\+\_\+angle }\end{DoxyParamCaption})}
+
+
+
+舵机初始化 
+
+
+\begin{DoxyParams}{参数}
+{\em htim} & 定时器句柄指针 \\
+\hline
+{\em channel} & 定时器\+PWM对应输出通道 \\
+\hline
+{\em servo\+\_\+info} & 舵机参数 \\
+\hline
+{\em init\+\_\+angle} & 舵机初始化角度，单位：deg \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+使用前请先确保定时器的频率为 1MHz， 舵机角度会被自动限制在设定的角度范围内，初始化后舵机默认处于开启状态 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{servo_8cpp_source}{servo.\+cpp}} 第 \mbox{\hyperlink{servo_8cpp_source_l00045}{45}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1servo_1_1_servo_a538666221be8aebbd757061a57203e56_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1devices_1_1servo_1_1_servo_a254eee3c95b8d142babe952441790e99}\label{classhello__world_1_1devices_1_1servo_1_1_servo_a254eee3c95b8d142babe952441790e99} 
+\index{hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}!````~Servo@{\texorpdfstring{$\sim$}{\string~}Servo}}
+\index{````~Servo@{\texorpdfstring{$\sim$}{\string~}Servo}!hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Servo()}{\string~Servo()}}
+{\footnotesize\ttfamily virtual hello\+\_\+world\+::devices\+::servo\+::\+Servo\+::\texorpdfstring{$\sim$}{\string~}\+Servo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+在文件 \mbox{\hyperlink{servo_8hpp_source}{servo.\+hpp}} 第 \mbox{\hyperlink{servo_8hpp_source_l00044}{44}} 行定义.
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classhello__world_1_1devices_1_1servo_1_1_servo_af678b6d9c70e3be611755ac1ae233aa5}\label{classhello__world_1_1devices_1_1servo_1_1_servo_af678b6d9c70e3be611755ac1ae233aa5} 
+\index{hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}!angle2Cmp@{angle2Cmp}}
+\index{angle2Cmp@{angle2Cmp}!hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}}
+\doxysubsubsection{\texorpdfstring{angle2Cmp()}{angle2Cmp()}}
+{\footnotesize\ttfamily uint32\+\_\+t hello\+\_\+world\+::devices\+::servo\+::\+Servo\+::angle2\+Cmp (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+舵机角度转定时器\+PWM比较值 
+
+
+\begin{DoxyParams}{参数}
+{\em angle} & 舵机角度，单位：deg \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em 定时器\+PWM比较值} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+舵机角度会被自动限制在设定的角度范围内 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{servo_8cpp_source}{servo.\+cpp}} 第 \mbox{\hyperlink{servo_8cpp_source_l00088}{88}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classhello__world_1_1devices_1_1servo_1_1_servo_af678b6d9c70e3be611755ac1ae233aa5_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1servo_1_1_servo_af678b6d9c70e3be611755ac1ae233aa5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1devices_1_1servo_1_1_servo_ab2e32fc0b9d42094ba9bda1371c4ff84}\label{classhello__world_1_1devices_1_1servo_1_1_servo_ab2e32fc0b9d42094ba9bda1371c4ff84} 
+\index{hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}!disable@{disable}}
+\index{disable@{disable}!hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily void hello\+\_\+world\+::devices\+::servo\+::\+Servo\+::disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+失能舵机 
+
+
+\begin{DoxyRetVals}{返回值}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+None 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{servo_8hpp_source}{servo.\+hpp}} 第 \mbox{\hyperlink{servo_8hpp_source_l00058}{58}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1servo_1_1_servo_a8c9c025ba0597d51a6e8933bce379f0e}\label{classhello__world_1_1devices_1_1servo_1_1_servo_a8c9c025ba0597d51a6e8933bce379f0e} 
+\index{hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}!enable@{enable}}
+\index{enable@{enable}!hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}}
+\doxysubsubsection{\texorpdfstring{enable()}{enable()}}
+{\footnotesize\ttfamily void hello\+\_\+world\+::devices\+::servo\+::\+Servo\+::enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+使能舵机 
+
+
+\begin{DoxyRetVals}{返回值}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+None 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{servo_8hpp_source}{servo.\+hpp}} 第 \mbox{\hyperlink{servo_8hpp_source_l00051}{51}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1servo_1_1_servo_a22fff12088bc63dc21cace008a5e1b35}\label{classhello__world_1_1devices_1_1servo_1_1_servo_a22fff12088bc63dc21cace008a5e1b35} 
+\index{hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}!setAngle@{setAngle}}
+\index{setAngle@{setAngle}!hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}}
+\doxysubsubsection{\texorpdfstring{setAngle()}{setAngle()}}
+{\footnotesize\ttfamily void hello\+\_\+world\+::devices\+::servo\+::\+Servo\+::set\+Angle (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption}) const}
+
+
+
+设定舵机角度 
+
+
+\begin{DoxyParams}{参数}
+{\em angle} & 舵机角度，单位：deg \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{返回值}
+{\em None} & \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyNote}{注解}
+舵机角度会被自动限制在设定的角度范围内 
+\end{DoxyNote}
+
+
+在文件 \mbox{\hyperlink{servo_8cpp_source}{servo.\+cpp}} 第 \mbox{\hyperlink{servo_8cpp_source_l00077}{77}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1devices_1_1servo_1_1_servo_a22fff12088bc63dc21cace008a5e1b35_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classhello__world_1_1devices_1_1servo_1_1_servo_af7138e8cec740393fc793674d9ac23f2}\label{classhello__world_1_1devices_1_1servo_1_1_servo_af7138e8cec740393fc793674d9ac23f2} 
+\index{hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}!kChannel\_@{kChannel\_}}
+\index{kChannel\_@{kChannel\_}!hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}}
+\doxysubsubsection{\texorpdfstring{kChannel\_}{kChannel\_}}
+{\footnotesize\ttfamily const uint32\+\_\+t hello\+\_\+world\+::devices\+::servo\+::\+Servo\+::k\+Channel\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{servo_8hpp_source}{servo.\+hpp}} 第 \mbox{\hyperlink{servo_8hpp_source_l00063}{63}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1servo_1_1_servo_ab09397483f5eb4ac6f879dbaa00407f2}\label{classhello__world_1_1devices_1_1servo_1_1_servo_ab09397483f5eb4ac6f879dbaa00407f2} 
+\index{hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}!kHtim\_@{kHtim\_}}
+\index{kHtim\_@{kHtim\_}!hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}}
+\doxysubsubsection{\texorpdfstring{kHtim\_}{kHtim\_}}
+{\footnotesize\ttfamily TIM\+\_\+\+Handle\+Type\+Def\texorpdfstring{$\ast$}{*} const hello\+\_\+world\+::devices\+::servo\+::\+Servo\+::k\+Htim\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{servo_8hpp_source}{servo.\+hpp}} 第 \mbox{\hyperlink{servo_8hpp_source_l00062}{62}} 行定义.
+
+\Hypertarget{classhello__world_1_1devices_1_1servo_1_1_servo_a970450231a2ce7b2057d8be915ffde22}\label{classhello__world_1_1devices_1_1servo_1_1_servo_a970450231a2ce7b2057d8be915ffde22} 
+\index{hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}!kServoInfo\_@{kServoInfo\_}}
+\index{kServoInfo\_@{kServoInfo\_}!hello\_world::devices::servo::Servo@{hello\_world::devices::servo::Servo}}
+\doxysubsubsection{\texorpdfstring{kServoInfo\_}{kServoInfo\_}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structhello__world_1_1devices_1_1servo_1_1_servo_info}{Servo\+Info}} hello\+\_\+world\+::devices\+::servo\+::\+Servo\+::k\+Servo\+Info\+\_\+}
+
+
+
+在文件 \mbox{\hyperlink{servo_8hpp_source}{servo.\+hpp}} 第 \mbox{\hyperlink{servo_8hpp_source_l00064}{64}} 行定义.
+

@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="classhello__world_1_1devices_1_1referee_1_1_ui_frame_graphic_character" kind="class" language="C++" prot="public">
+    <compoundname>hello_world::devices::referee::UiFrameGraphicCharacter</compoundname>
+    <basecompoundref refid="classhello__world_1_1devices_1_1referee_1_1_ui_frame" prot="public" virt="non-virtual">hello_world::devices::referee::UiFrame</basecompoundref>
+    <includes refid="referee__ui_8hpp" local="no">referee_ui.hpp</includes>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classhello__world_1_1devices_1_1referee_1_1_ui_frame_graphic_character_1add586fb4d374b9b5854d44f43d14cbb9" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="namespacehello__world_1_1devices_1_1referee_1a8e7639f1c5a4590979395f8c830f47b4" kindref="member">UiSubCmdId</ref></type>
+        <definition>const UiSubCmdId hello_world::devices::referee::UiFrameGraphicCharacter::sub_cmd_id_</definition>
+        <argsstring></argsstring>
+        <name>sub_cmd_id_</name>
+        <qualifiedname>hello_world::devices::referee::UiFrameGraphicCharacter::sub_cmd_id_</qualifiedname>
+        <initializer>= <ref refid="namespacehello__world_1_1devices_1_1referee_1a8e7639f1c5a4590979395f8c830f47b4a84333964f2689eba755f73190a3f4fc7" kindref="member">kUiSubCmdIdDrawCharacter</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/referee/inc/referee_ui.hpp" line="116" column="29" bodyfile="HW-Components/devices/referee/inc/referee_ui.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classhello__world_1_1devices_1_1referee_1_1_ui_frame_graphic_character_1aa8b64e43b3e65a06e704d463d1c1c630" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool hello_world::devices::referee::UiFrameGraphicCharacter::encodeFrame</definition>
+        <argsstring>(uint8_t *p_frame_data)</argsstring>
+        <name>encodeFrame</name>
+        <qualifiedname>hello_world::devices::referee::UiFrameGraphicCharacter::encodeFrame</qualifiedname>
+        <reimplements refid="classhello__world_1_1devices_1_1referee_1_1_ui_frame_1af0e8b998468da14ec93938a55a167da6">encodeFrame</reimplements>
+        <param>
+          <type>uint8_t *</type>
+          <declname>p_frame_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/devices/referee/inc/referee_ui.hpp" line="119" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>hello_world::devices::referee::UiFrame</label>
+        <link refid="classhello__world_1_1devices_1_1referee_1_1_ui_frame"/>
+      </node>
+      <node id="1">
+        <label>hello_world::devices::referee::UiFrameGraphicCharacter</label>
+        <link refid="classhello__world_1_1devices_1_1referee_1_1_ui_frame_graphic_character"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>hello_world::devices::referee::UiFrame</label>
+        <link refid="classhello__world_1_1devices_1_1referee_1_1_ui_frame"/>
+      </node>
+      <node id="1">
+        <label>hello_world::devices::referee::UiFrameGraphicCharacter</label>
+        <link refid="classhello__world_1_1devices_1_1referee_1_1_ui_frame_graphic_character"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="HW-Components/devices/referee/inc/referee_ui.hpp" line="113" column="1" bodyfile="HW-Components/devices/referee/inc/referee_ui.hpp" bodystart="114" bodyend="120"/>
+    <listofallmembers>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_ui_frame_graphic_character_1aa8b64e43b3e65a06e704d463d1c1c630" prot="public" virt="virtual"><scope>hello_world::devices::referee::UiFrameGraphicCharacter</scope><name>encodeFrame</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_ui_frame_1ad5c92f4aac3a99a2487d5ca977c26d34" prot="protected" virt="non-virtual"><scope>hello_world::devices::referee::UiFrameGraphicCharacter</scope><name>frame_cmd_id_</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_ui_frame_1a66843f13e5f2d95cdcb05acab3fc00db" prot="protected" virt="non-virtual"><scope>hello_world::devices::referee::UiFrameGraphicCharacter</scope><name>robot_id_</name></member>
+      <member refid="classhello__world_1_1devices_1_1referee_1_1_ui_frame_graphic_character_1add586fb4d374b9b5854d44f43d14cbb9" prot="private" virt="non-virtual"><scope>hello_world::devices::referee::UiFrameGraphicCharacter</scope><name>sub_cmd_id_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

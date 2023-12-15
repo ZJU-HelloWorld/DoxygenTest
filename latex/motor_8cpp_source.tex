@@ -1,0 +1,51 @@
+\doxysection{motor.\+cpp}
+\hypertarget{motor_8cpp_source}{}\label{motor_8cpp_source}\index{HW-\/Components/devices/motor/src/motor.cpp@{HW-\/Components/devices/motor/src/motor.cpp}}
+\mbox{\hyperlink{motor_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00015}00015\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00016}00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{motor_8hpp}{motor.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00018}00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{assert_8hpp}{assert.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00020}00020\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacehello__world}{hello\_world}}}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00021}00021\ \{}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00022}00022\ \textcolor{keyword}{namespace\ }devices}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00023}00023\ \{}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00024}00024\ \textcolor{keyword}{namespace\ }motor}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00025}00025\ \{}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00026}00026\ \textcolor{comment}{/*\ Private\ macro\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00027}00027\ \textcolor{comment}{/*\ Private\ constants\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00028}00028\ \textcolor{comment}{/*\ Private\ types\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00029}00029\ \textcolor{comment}{/*\ Private\ variables\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00030}00030\ \textcolor{comment}{/*\ External\ variables\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00031}00031\ \textcolor{comment}{/*\ Private\ function\ prototypes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00043}\mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae3492ca32e729aaaecd5def06d638f86}{00043}}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_motor}{Motor}}*\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_ae3492ca32e729aaaecd5def06d638f86}{CreateMotor}}(\mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8}{MotorType}}\ motor\_type,\ uint8\_t\ \textcolor{keywordtype}{id},}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{structhello__world_1_1devices_1_1motor_1_1_optional_params}{OptionalParams}}\&\ optinal\_params)}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00045}00045\ \{}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00046}00046\ \ \ \textcolor{keywordflow}{switch}\ (motor\_type)\ \{}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00047}00047\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8a07e240d42d2ba719073e07afb4203d04}{kMotorTypeGM6020}}:}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00048}00048\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_g_m6020}{GM6020}}(\textcolor{keywordtype}{id},\ optinal\_params);}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00049}00049\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8a8c5f2196eac5420dc4627ef0514f558e}{kMotorTypeM2006}}:}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00050}00050\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_m2006}{M2006}}(\textcolor{keywordtype}{id},\ optinal\_params);}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00051}00051\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8a55160f7f5f669aa27a24c3cad2deaf1d}{kMotorTypeM3508}}:}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00052}00052\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_m3508}{M3508}}(\textcolor{keywordtype}{id},\ optinal\_params);}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8ae6e021cdc218f10377913d33f426fb11}{kMotorTypeM8910}}:}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00054}00054\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_m8910}{M8910}}(\textcolor{keywordtype}{id},\ optinal\_params);}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00055}00055\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8affc5737d4b2d3625a210240cd4315718}{kMotorTypeA1}}:}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00056}00056\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_a1}{A1}}(\textcolor{keywordtype}{id},\ optinal\_params);}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00057}00057\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8abd589290db96bf5712052ec3f3f3ee02}{kMotorTypeDM\_J4310}}:}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00058}00058\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_d_m___j4310}{DM\_J4310}}(\textcolor{keywordtype}{id},\ optinal\_params);}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00059}00059\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1motor_a0764cc873981eb673e5cefe2b89d84c8a5a037ca22e20940dab8499c86f40fb49}{kMotorTypeMF9025v2}}:}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00060}00060\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1motor_1_1_m_f9025v2}{MF9025v2}}(\textcolor{keywordtype}{id},\ optinal\_params);}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00061}00061\ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00062}00062\ \ \ \ \ \ \ \mbox{\hyperlink{assert_8hpp_a5969df827ceb603bed14c4106586484a}{HW\_ASSERT}}(0,\ \textcolor{stringliteral}{"{}Error\ motor\ type"{}});}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00063}00063\ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00064}00064\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00065}00065\ \}}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00066}00066\ \}\ \ \textcolor{comment}{//\ namespace\ motor}}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00067}00067\ \}\ \ \textcolor{comment}{//\ namespace\ devices}}
+\DoxyCodeLine{\Hypertarget{motor_8cpp_source_l00068}00068\ \}\ \ \textcolor{comment}{//\ namespace\ hello\_world}}
+
+\end{DoxyCode}

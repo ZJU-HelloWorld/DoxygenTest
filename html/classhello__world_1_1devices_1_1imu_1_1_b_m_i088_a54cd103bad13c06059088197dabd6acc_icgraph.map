@@ -1,0 +1,24 @@
+<map id="hello_world::devices::imu::BMI088::gyroCsH" name="hello_world::devices::imu::BMI088::gyroCsH">
+<area shape="rect" id="Node000001" title=" " alt="" coords="869,101,1031,141"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a00b280798b0068e72d0235cd42d9356e" title="BMI088 初始化" alt="" coords="647,5,801,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="898,97,820,60,790,48,792,43,822,55,900,92"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a443cf9b8f3e44acea8ac21258b4d7363" title="陀螺仪多寄存器数据读取" alt="" coords="627,69,821,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="854,110,822,106,822,101,855,105"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a16b8a6609a3b902bc05c4e2857801cd2" title="读取陀螺仪寄存器数据" alt="" coords="641,133,807,173"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="855,137,808,144,807,139,854,132"/>
+<area shape="rect" id="Node000010" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#adf2ebc011e80e2ad115716307c773c6f" title="向陀螺仪寄存器写入数据" alt="" coords="641,197,807,237"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="900,151,822,188,792,199,790,194,820,183,898,146"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a00755ad04aebc2df220b39f1a83bf811" title="获取陀螺仪数据" alt="" coords="395,69,579,109"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="612,92,579,92,579,87,612,87"/>
+<area shape="rect" id="Node000005" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#aa4b8ef9d615c0ead67e6b88c34bd84d1" title="获取传感器数据" alt="" coords="191,69,347,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="380,92,347,92,347,87,380,87"/>
+<area shape="rect" id="Node000007" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a88754aa2ebac6fcdfde4c5ce4de33dd6" title="陀螺仪配置" alt="" coords="192,187,345,227"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="626,158,515,164,395,177,341,189,340,183,394,172,514,158,626,152"/>
+<area shape="rect" id="Node000009" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#ac8c0c2e64b56c3feb6888446b4830be3" title="陀螺仪自检测" alt="" coords="395,187,578,227"/>
+<area shape="poly" id="edge8_Node000006_Node000009" title=" " alt="" coords="627,178,579,189,578,184,626,173"/>
+<area shape="rect" id="Node000008" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a623a7d90db0585ea45bac12fd3d19061" title="进行 BMI088 芯片配置" alt="" coords="5,187,143,227"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="177,209,143,209,143,204,177,204"/>
+<area shape="poly" id="edge9_Node000009_Node000007" title=" " alt="" coords="381,209,346,209,346,204,381,204"/>
+<area shape="poly" id="edge11_Node000010_Node000007" title=" " alt="" coords="626,236,579,241,487,247,394,241,337,230,338,225,395,236,487,242,578,236,626,231"/>
+<area shape="poly" id="edge12_Node000010_Node000009" title=" " alt="" coords="626,216,578,213,579,208,626,210"/>
+</map>

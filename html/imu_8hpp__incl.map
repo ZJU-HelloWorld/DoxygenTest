@@ -1,0 +1,13 @@
+<map id="HW&#45;Components/devices/imu/inc/imu.hpp" name="HW&#45;Components/devices/imu/inc/imu.hpp">
+<area shape="rect" id="Node000001" title=": @history : Version Date Author Note V0.9.0 yyyy&#45;mm&#45;dd &lt;author&gt; 1." alt="" coords="95,5,263,45"/>
+<area shape="rect" id="Node000002" href="$_b_m_i088_8hpp.html" title=": @history : Version Date Author Note V1.0.0 2023&#45;12&#45;08 Caikunzhen 1." alt="" coords="133,93,224,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,46,181,79,176,79,176,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,167,96,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="158,122,86,162,83,157,156,117"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="120,167,237,192"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="181,119,181,152,176,152,176,119"/>
+<area shape="rect" id="Node000005" href="$system_8hpp.html" title=" " alt="" coords="261,167,352,192"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="202,117,274,157,271,162,199,122"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="277,240,337,265"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="309,192,309,225,304,225,304,192"/>
+</map>

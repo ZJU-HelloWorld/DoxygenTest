@@ -1,0 +1,7 @@
+<map id="hello_world::devices::motor::DM_J4310::curr2raw" name="hello_world::devices::motor::DM_J4310::curr2raw">
+<area shape="rect" id="Node000001" title="将转子电流转换为原始报文内容" alt="" coords="5,37,195,77"/>
+<area shape="rect" id="Node000002" href="$namespacehello__world_1_1devices_1_1motor.html#a5102e8812e14a2caaf3a2fc96b18efa3" title="根据给定的范围和位数，将 float 转换为 uint" alt="" coords="243,5,380,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,40,227,35,228,41,196,46"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#a7fbec1460a1db6c45b4c57fd0497e5e0" title=" " alt="" coords="243,69,380,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,69,228,74,227,79,195,74"/>
+</map>

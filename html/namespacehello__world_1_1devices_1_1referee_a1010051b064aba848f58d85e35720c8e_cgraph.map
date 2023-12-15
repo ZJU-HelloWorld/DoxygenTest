@@ -1,0 +1,5 @@
+<map id="hello_world::devices::referee::SetEndCrc8CheckSum" name="hello_world::devices::referee::SetEndCrc8CheckSum">
+<area shape="rect" id="Node000001" title="Set the last byte of a message to a CRC8 checksum." alt="" coords="5,5,216,45"/>
+<area shape="rect" id="Node000002" href="$namespacehello__world_1_1devices_1_1referee.html#a42050a73d989fc581253585524abbf57" title="Calculate and return the CRC8 checksum of a message." alt="" coords="264,5,453,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,23,249,23,249,28,216,28"/>
+</map>

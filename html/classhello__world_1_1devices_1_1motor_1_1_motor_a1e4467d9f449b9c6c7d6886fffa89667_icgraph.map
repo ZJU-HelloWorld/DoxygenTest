@@ -1,0 +1,27 @@
+<map id="hello_world::devices::motor::Motor::raw2curr" name="hello_world::devices::motor::Motor::raw2curr">
+<area shape="rect" id="Node000001" title="将原始报文内容转换为转子电流" alt="" coords="251,357,412,397"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1motor_1_1_a1.html#a1c439b72ce074a0e04d38b06749f499c" title="A1 初始化" alt="" coords="35,5,173,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="323,343,312,282,290,206,274,166,254,127,230,91,201,59,172,41,174,37,204,55,234,88,258,125,278,164,295,204,317,281,328,342"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1motor_1_1_a1.html#a1dc9df605f9df5fff3b2bc8ed4a63ff8" title="将电调发回的 CAN 报文进行解包" alt="" coords="35,69,173,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="319,344,304,294,280,235,246,175,225,148,201,123,172,106,174,101,204,119,229,144,251,172,285,233,310,293,325,342"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1devices_1_1motor_1_1_g_m6020.html#a732687f3fc5d5d302135f950ac260e3f" title="将电调发回的 CAN 报文进行解包" alt="" coords="19,133,189,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="314,345,296,308,271,266,239,224,201,187,182,176,185,171,204,183,243,220,275,263,300,305,318,342"/>
+<area shape="rect" id="Node000005" href="$classhello__world_1_1devices_1_1motor_1_1_m2006.html#a4f74b1c55fc5c0f9e7c28d329ff0c9cd" title="将电调发回的 CAN 报文进行解包" alt="" coords="24,197,184,237"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="304,347,259,298,231,273,201,252,179,240,182,236,204,247,235,269,263,294,308,344"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1devices_1_1motor_1_1_m3508.html#aec43855db5fbc6a2fb7b3b550b601f8e" title="将电调发回的 CAN 报文进行解包" alt="" coords="24,261,184,301"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="279,353,202,316,171,304,173,299,204,311,282,348"/>
+<area shape="rect" id="Node000007" href="$classhello__world_1_1devices_1_1motor_1_1_m8910.html#ae5b934cb41237293299dce618befba6d" title="将电调发回的 CAN 报文进行解包" alt="" coords="24,325,184,365"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="236,367,184,359,185,354,236,361"/>
+<area shape="rect" id="Node000008" href="$classhello__world_1_1devices_1_1motor_1_1_m_f9025v2.html#ab446cad174a3d963931102233a88c7e8" title="将电调发回的 CAN 报文进行解包" alt="" coords="14,389,194,429"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="236,393,195,399,194,394,236,388"/>
+<area shape="rect" id="Node000009" href="$classhello__world_1_1devices_1_1motor_1_1_m2006.html#a52ce5e7bbbb2fffe82f86291b8876221" title="M2006 初始化" alt="" coords="25,453,183,493"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="282,407,204,444,173,455,171,450,202,439,279,402"/>
+<area shape="rect" id="Node000010" href="$classhello__world_1_1devices_1_1motor_1_1_m3508.html#a2fbed6fbaa90b42893978a1805ea78e6" title="M3508 初始化" alt="" coords="25,517,183,557"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="308,411,263,460,235,486,204,508,182,519,179,514,201,503,231,481,259,456,304,407"/>
+<area shape="rect" id="Node000011" href="$classhello__world_1_1devices_1_1motor_1_1_m8910.html#accd858d8bd3db4aa48532ec8c1f8bd44" title="M8910 初始化" alt="" coords="25,581,183,621"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="318,412,300,449,275,492,243,535,204,571,185,583,182,579,201,567,239,531,271,489,296,447,314,410"/>
+<area shape="rect" id="Node000012" href="$classhello__world_1_1devices_1_1motor_1_1_m_f9025v2.html#a87787e5484356144bc7bce7b229398de" title="MF9025v2 初始化" alt="" coords="5,645,203,685"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="325,413,310,462,285,522,251,583,229,611,204,635,187,647,184,643,201,631,225,607,246,580,280,520,304,460,319,411"/>
+<area shape="rect" id="Node000013" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#ad101045a9eef9a699001fc94631e8395" title="设定发给电调的期望值" alt="" coords="25,709,183,749"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="328,413,317,474,295,550,278,591,258,630,234,667,204,699,185,713,182,708,201,695,230,663,254,627,274,588,290,549,312,472,323,412"/>
+</map>

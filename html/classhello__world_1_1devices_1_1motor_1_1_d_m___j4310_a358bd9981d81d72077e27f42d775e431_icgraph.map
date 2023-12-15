@@ -1,0 +1,5 @@
+<map id="hello_world::devices::motor::DM_J4310::curr2raw" name="hello_world::devices::motor::DM_J4310::curr2raw">
+<area shape="rect" id="Node000001" title="将转子电流转换为原始报文内容" alt="" coords="240,5,429,45"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#ae15373ce02962c1a287d7e813413869b" title="设定发给电调的期望值" alt="" coords="5,5,192,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,28,193,28,193,23,225,23"/>
+</map>

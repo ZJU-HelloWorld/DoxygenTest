@@ -1,0 +1,151 @@
+\doxysection{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::Pid\+Node类 参考}
+\hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}\index{hello\_world::algorithms::controller::pid::PidNode@{hello\_world::algorithms::controller::pid::PidNode}}
+
+
+PID节点类，用于实现\+PID链表  
+
+
+
+
+{\ttfamily \#include $<$pid.\+hpp$>$}
+
+
+
+类 hello\+\_\+world\+::algorithms\+::controller\+::pid\+::Pid\+Node 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+hello\+\_\+world\+::algorithms\+::controller\+::pid\+::Pid\+Node 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_a8f257d2cab4440643f594f495f5898c1}{Pid\+Node}} ()
+\begin{DoxyCompactList}\small\item\em 默认构造函数，初始化 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} 对象 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_a62ddf96bd84373676dfdf60698f965cd}{Pid\+Node}} (const \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid}{Basic\+Pid}} \&pid)
+\begin{DoxyCompactList}\small\item\em 构造函数，使用 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid}{Basic\+Pid} 对象初始化 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_a1684576a170011f31be07b61b22afd4a}{Pid\+Node}} (const \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params}{Basic\+Pid\+Params}} \&params)
+\begin{DoxyCompactList}\small\item\em 构造函数，使用 \doxylink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params}{Basic\+Pid\+Params} 对象初始化 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classhello__world_1_1_mem_mang}{hello\+\_\+world\+::\+Mem\+Mang}}}
+\begin{DoxyCompactItemize}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classhello__world_1_1_mem_mang_abcf6e7289814e8da342ba4f47d8af411}{operator new}} (size\+\_\+t size)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classhello__world_1_1_mem_mang_ad10b6eff1541322708e5bde32c590c82}{operator new\mbox{[}$\,$\mbox{]}}} (size\+\_\+t size)
+\item 
+void \mbox{\hyperlink{classhello__world_1_1_mem_mang_abf1fe21066f52d693e2eec63a5833e8e}{operator delete}} (void \texorpdfstring{$\ast$}{*}ptr)
+\item 
+void \mbox{\hyperlink{classhello__world_1_1_mem_mang_a54e1a6a8e01b0996cc2854a8bc1ce7bd}{operator delete\mbox{[}$\,$\mbox{]}}} (void \texorpdfstring{$\ast$}{*}ptr)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid}{Basic\+Pid}} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_adb8ec7824738a35f300525749aa2f36e}{obj\+\_\+}}
+\begin{DoxyCompactList}\small\item\em PID对象 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_a7be6366e2fa1a9d1b8a84ca9101e668f}{next\+\_\+ptr\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 指向后一个节点的指针 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+PID节点类，用于实现\+PID链表 
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00210}{210}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_a8f257d2cab4440643f594f495f5898c1}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_a8f257d2cab4440643f594f495f5898c1} 
+\index{hello\_world::algorithms::controller::pid::PidNode@{hello\_world::algorithms::controller::pid::PidNode}!PidNode@{PidNode}}
+\index{PidNode@{PidNode}!hello\_world::algorithms::controller::pid::PidNode@{hello\_world::algorithms::controller::pid::PidNode}}
+\doxysubsubsection{\texorpdfstring{PidNode()}{PidNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+Node\+::\+Pid\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+默认构造函数，初始化 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} 对象 
+
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00218}{218}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_a62ddf96bd84373676dfdf60698f965cd}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_a62ddf96bd84373676dfdf60698f965cd} 
+\index{hello\_world::algorithms::controller::pid::PidNode@{hello\_world::algorithms::controller::pid::PidNode}!PidNode@{PidNode}}
+\index{PidNode@{PidNode}!hello\_world::algorithms::controller::pid::PidNode@{hello\_world::algorithms::controller::pid::PidNode}}
+\doxysubsubsection{\texorpdfstring{PidNode()}{PidNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+Node\+::\+Pid\+Node (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid}{Basic\+Pid}} \&}]{pid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+构造函数，使用 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid}{Basic\+Pid} 对象初始化 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} 
+
+
+\begin{DoxyParams}{参数}
+{\em pid} & 用于初始化 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} 的 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid}{Basic\+Pid} 对象 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00224}{224}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_a1684576a170011f31be07b61b22afd4a}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_a1684576a170011f31be07b61b22afd4a} 
+\index{hello\_world::algorithms::controller::pid::PidNode@{hello\_world::algorithms::controller::pid::PidNode}!PidNode@{PidNode}}
+\index{PidNode@{PidNode}!hello\_world::algorithms::controller::pid::PidNode@{hello\_world::algorithms::controller::pid::PidNode}}
+\doxysubsubsection{\texorpdfstring{PidNode()}{PidNode()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+Node\+::\+Pid\+Node (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params}{Basic\+Pid\+Params}} \&}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+构造函数，使用 \doxylink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params}{Basic\+Pid\+Params} 对象初始化 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} 
+
+
+\begin{DoxyParams}{参数}
+{\em params} & 用于初始化 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} 的 \doxylink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params}{Basic\+Pid\+Params} 对象 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00230}{230}} 行定义.
+
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_a7be6366e2fa1a9d1b8a84ca9101e668f}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_a7be6366e2fa1a9d1b8a84ca9101e668f} 
+\index{hello\_world::algorithms::controller::pid::PidNode@{hello\_world::algorithms::controller::pid::PidNode}!next\_ptr\_@{next\_ptr\_}}
+\index{next\_ptr\_@{next\_ptr\_}!hello\_world::algorithms::controller::pid::PidNode@{hello\_world::algorithms::controller::pid::PidNode}}
+\doxysubsubsection{\texorpdfstring{next\_ptr\_}{next\_ptr\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node}}\texorpdfstring{$\ast$}{*} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+Node\+::next\+\_\+ptr\+\_\+}
+
+
+
+指向后一个节点的指针 
+
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00214}{214}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_adb8ec7824738a35f300525749aa2f36e}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node_adb8ec7824738a35f300525749aa2f36e} 
+\index{hello\_world::algorithms::controller::pid::PidNode@{hello\_world::algorithms::controller::pid::PidNode}!obj\_@{obj\_}}
+\index{obj\_@{obj\_}!hello\_world::algorithms::controller::pid::PidNode@{hello\_world::algorithms::controller::pid::PidNode}}
+\doxysubsubsection{\texorpdfstring{obj\_}{obj\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid}{Basic\+Pid}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+Node\+::obj\+\_\+}
+
+
+
+PID对象 
+
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00213}{213}} 行定义.
+

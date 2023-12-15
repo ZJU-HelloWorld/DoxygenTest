@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_ff73d26a6cf1671bb96d43a8fce53ce5" xml:lang="zh">
+<title>HW-Components/devices/laser 目录参考</title>
+<indexterm><primary>HW-Components/devices/laser 目录参考</primary></indexterm>
+laser 的目录依赖关系图<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_ff73d26a6cf1671bb96d43a8fce53ce5_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>目录    </title>
+        <itemizedlist>
+            <listitem><para>目录 <link linkend="_dir_e8bd1a84f8538ffc5de3dbd278499ab3">inc</link></para>
+</listitem>
+            <listitem><para>目录 <link linkend="_dir_79fc1cd7611e3036bf0c752c128e2b6e">src</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

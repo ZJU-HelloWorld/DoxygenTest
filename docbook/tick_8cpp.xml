@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_tick_8cpp" xml:lang="zh">
+<title>HW-Components/dsp/tick/tick.cpp 文件参考</title>
+<indexterm><primary>HW-Components/dsp/tick/tick.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;tick.hpp&quot;<?linebreak?>#include &quot;stm32f4xx_hal.h&quot;<?linebreak?></programlisting>tick.cpp 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="tick_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>命名空间    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacehello__world">hello_world</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacehello__world_1_1dsp">hello_world::dsp</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacehello__world_1_1dsp_1_1tick">hello_world::dsp::tick</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>宏定义    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_tick_8cpp_1a11b4e8e0765b2c1c39b23bdb5be54416">USE_HAL_TICK</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>函数    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_namespacehello__world_1_1dsp_1_1tick_1a0c9c44ee367dc665cc6f1a6d830da9ee">hello_world::dsp::tick::GetTickUs</link> ()</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_namespacehello__world_1_1dsp_1_1tick_1a97910b07255da1979f8ceafd8c6d2ea5">hello_world::dsp::tick::GetTickMs</link> ()</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_namespacehello__world_1_1dsp_1_1tick_1a3bb6f5ee2096e411df77150fbac949a5">hello_world::dsp::tick::GetTickS</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>变量    </title>
+        <itemizedlist>
+            <listitem><para>uint32_t <link linkend="_namespacehello__world_1_1dsp_1_1tick_1a22bb956e1d5ebc7cef5e5e11d54580de">hello_world::dsp::tick::start_tick_us</link> = <link linkend="_namespacehello__world_1_1dsp_1_1tick_1a0c9c44ee367dc665cc6f1a6d830da9ee">GetTickUs</link>()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para><formalpara><title>作者</title>
+
+<para>ZhouShichan (<link xlink:href="mailto:zsc19823382069@163.com">zsc19823382069@163.com</link>) </para>
+</formalpara>
+<formalpara><title>版本</title>
+
+<para>1.0.0 </para>
+</formalpara>
+<formalpara><title>日期</title>
+
+<para>2023-10-31</para>
+</formalpara>
+<formalpara><title>版权所有</title>
+
+<para>Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved.</para>
+</formalpara>
+<caution><title>注意</title>
+
+<para></para>
+</caution>
+<formalpara>
+<title>history</title>
+<para><informaltable frame="all">
+    <tgroup cols="4" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+<thead>
+      <row  class='markdownTableHead'>
+<entry align='center'>
+<para>Version   </para>
+</entry><entry align='center'>
+<para>Date   </para>
+</entry><entry align='center'>
+<para>Author   </para>
+</entry><entry align='center'>
+<para>Description    </para>
+</entry></row>
+</thead><tbody>
+      <row  class='markdownTableRowOdd'>
+<entry align='center'>
+<para>1.0.0   </para>
+</entry><entry align='center'>
+<para>{now_year}   </para>
+</entry><entry align='center'>
+<para>ZhouShichan   </para>
+</entry><entry align='center'>
+<para>description   </para>
+</entry></row>
+    </tbody>
+    </tgroup>
+</informaltable>
+</para>
+</formalpara>
+<formalpara>
+<title>last editor ZhouShichan (zsc19823382069@163.com)</title>
+<para></para>
+</formalpara>
+<formalpara>
+<title>last edit time 2023-10-31</title>
+<para></para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_tick_8cpp_source">tick.cpp</link> 中定义.</para>
+</section>
+<section>
+<title>宏定义说明</title>
+<anchor xml:id="_tick_8cpp_1a11b4e8e0765b2c1c39b23bdb5be54416"/><section>
+    <title>USE_HAL_TICK</title>
+<indexterm><primary>USE_HAL_TICK</primary><secondary>tick.cpp</secondary></indexterm>
+<indexterm><primary>tick.cpp</primary><secondary>USE_HAL_TICK</secondary></indexterm>
+<para><computeroutput>#define USE_HAL_TICK</computeroutput></para><para>
+在文件 <link linkend="_tick_8cpp_source">tick.cpp</link> 第 <link linkend="_tick_8cpp_source_1l00023">23</link> 行定义.</para>
+</section>
+</section>
+</section>

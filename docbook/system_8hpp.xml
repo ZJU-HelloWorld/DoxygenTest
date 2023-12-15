@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_system_8hpp" xml:lang="zh">
+<title>HW-Components/tools/inc/system.hpp 文件参考</title>
+<indexterm><primary>HW-Components/tools/inc/system.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;cstdlib&gt;<?linebreak?></programlisting>system.hpp 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="system_8hpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+此图展示该文件直接或间接的被哪些文件引用了:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="system_8hpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>类    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classhello__world_1_1_mem_mang">hello_world::MemMang</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>命名空间    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacehello__world">hello_world</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>宏定义    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_system_8hpp_1a3e218828af7ddd3f4cd0d3772562b520">MALLOC</link>&#160;&#160;&#160;malloc</para>
+</listitem>
+            <listitem><para>#define <link linkend="_system_8hpp_1a9a8e700d56e7d858108b755ad3edb52e">FREE</link>&#160;&#160;&#160;free</para>
+</listitem>
+            <listitem><para>#define <link linkend="_system_8hpp_1a96e1f55107bcc6ec80d96e0ee3b108f7">ENTER_CRITICAL</link>()</para>
+</listitem>
+            <listitem><para>#define <link linkend="_system_8hpp_1acc63c500cf503268455a8777eece91a0">EXIT_CRITICAL</link>()</para>
+</listitem>
+            <listitem><para>#define <link linkend="_system_8hpp_1a6f65b0ad8c8a5732495fa067820ced4d">Mutex_t</link>&#160;&#160;&#160;bool</para>
+</listitem>
+            <listitem><para>#define <link linkend="_system_8hpp_1a65b4473e73221450bbdc7a876dd93098">MUTEX_INIT</link>()&#160;&#160;&#160;true</para>
+</listitem>
+            <listitem><para>#define <link linkend="_system_8hpp_1a441b021fa23aeb332a6aa860cb1aee7c">MUTEX_LOCK</link>(x)</para>
+</listitem>
+            <listitem><para>#define <link linkend="_system_8hpp_1a04bad901d24418b1d7e307edb0d38662">MUTEX_UNLOCK</link>(x)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>函数    </title>
+        <itemizedlist>
+            <listitem><para>void * <link linkend="_system_8hpp_1a1a7f24760c8c7ad3bfcd54856d906fc2">operator new</link> (size_t size) noexcept</para>
+</listitem>
+            <listitem><para>void <link linkend="_system_8hpp_1afa145befcf5e7b83424408ca503c8637">operator delete</link> (void *ptr) noexcept</para>
+</listitem>
+            <listitem><para>void * <link linkend="_system_8hpp_1aa75472ab4b765cf6f6b5b0ebcd4a28c8">operator new[]</link> (size_t size) noexcept</para>
+</listitem>
+            <listitem><para>void <link linkend="_system_8hpp_1a22aea74a1155aa798d6032da46da2391">operator delete[]</link> (void *ptr) noexcept</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para><formalpara><title>作者</title>
+
+<para>ZhouShichan (<link xlink:href="mailto:zsc19823382069@163.com">zsc19823382069@163.com</link>) </para>
+</formalpara>
+<formalpara><title>版本</title>
+
+<para>1.0.0 </para>
+</formalpara>
+<formalpara><title>日期</title>
+
+<para>2023-11-25</para>
+</formalpara>
+<formalpara><title>版权所有</title>
+
+<para>Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved.</para>
+</formalpara>
+<caution><title>注意</title>
+
+<para></para>
+</caution>
+<formalpara>
+<title>history</title>
+<para><informaltable frame="all">
+    <tgroup cols="4" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+      <colspec colname='c3'/>
+      <colspec colname='c4'/>
+<thead>
+      <row  class='markdownTableHead'>
+<entry align='center'>
+<para>Version   </para>
+</entry><entry align='center'>
+<para>Date   </para>
+</entry><entry align='center'>
+<para>Author   </para>
+</entry><entry align='center'>
+<para>Description    </para>
+</entry></row>
+</thead><tbody>
+      <row  class='markdownTableRowOdd'>
+<entry align='center'>
+<para>1.0.0   </para>
+</entry><entry align='center'>
+<para>{now_year}   </para>
+</entry><entry align='center'>
+<para>ZhouShichan   </para>
+</entry><entry align='center'>
+<para>description   </para>
+</entry></row>
+    </tbody>
+    </tgroup>
+</informaltable>
+</para>
+</formalpara>
+<formalpara>
+<title>last editor ZhouShichan (zsc19823382069@163.com)</title>
+<para></para>
+</formalpara>
+<formalpara>
+<title>last edit time 2023-11-25</title>
+<para></para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 中定义.</para>
+</section>
+<section>
+<title>宏定义说明</title>
+<anchor xml:id="_system_8hpp_1a96e1f55107bcc6ec80d96e0ee3b108f7"/><section>
+    <title>ENTER_CRITICAL</title>
+<indexterm><primary>ENTER_CRITICAL</primary><secondary>system.hpp</secondary></indexterm>
+<indexterm><primary>system.hpp</primary><secondary>ENTER_CRITICAL</secondary></indexterm>
+<para><computeroutput>#define ENTER_CRITICAL( )</computeroutput></para><emphasis role="strong">值:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;<emphasis role="keywordflow">do</emphasis>&#32;{&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;\
+&#32;&#32;&#32;&#32;__disable_irq();&#32;&#32;&#32;&#32;&#32;\
+&#32;&#32;}&#32;<emphasis role="keywordflow">while</emphasis>&#32;(0);
+</programlisting><para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 第 <link linkend="_system_8hpp_source_1l00051">51</link> 行定义.</para>
+</section>
+<anchor xml:id="_system_8hpp_1acc63c500cf503268455a8777eece91a0"/><section>
+    <title>EXIT_CRITICAL</title>
+<indexterm><primary>EXIT_CRITICAL</primary><secondary>system.hpp</secondary></indexterm>
+<indexterm><primary>system.hpp</primary><secondary>EXIT_CRITICAL</secondary></indexterm>
+<para><computeroutput>#define EXIT_CRITICAL( )</computeroutput></para><emphasis role="strong">值:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;<emphasis role="keywordflow">do</emphasis>&#32;{&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;\
+&#32;&#32;&#32;&#32;__enable_irq();&#32;&#32;&#32;&#32;&#32;\
+&#32;&#32;}&#32;<emphasis role="keywordflow">while</emphasis>&#32;(0);
+</programlisting><para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 第 <link linkend="_system_8hpp_source_1l00055">55</link> 行定义.</para>
+</section>
+<anchor xml:id="_system_8hpp_1a9a8e700d56e7d858108b755ad3edb52e"/><section>
+    <title>FREE</title>
+<indexterm><primary>FREE</primary><secondary>system.hpp</secondary></indexterm>
+<indexterm><primary>system.hpp</primary><secondary>FREE</secondary></indexterm>
+<para><computeroutput>#define FREE&#160;&#160;&#160;free</computeroutput></para><para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 第 <link linkend="_system_8hpp_source_1l00050">50</link> 行定义.</para>
+</section>
+<anchor xml:id="_system_8hpp_1a3e218828af7ddd3f4cd0d3772562b520"/><section>
+    <title>MALLOC</title>
+<indexterm><primary>MALLOC</primary><secondary>system.hpp</secondary></indexterm>
+<indexterm><primary>system.hpp</primary><secondary>MALLOC</secondary></indexterm>
+<para><computeroutput>#define MALLOC&#160;&#160;&#160;malloc</computeroutput></para><para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 第 <link linkend="_system_8hpp_source_1l00049">49</link> 行定义.</para>
+</section>
+<anchor xml:id="_system_8hpp_1a65b4473e73221450bbdc7a876dd93098"/><section>
+    <title>MUTEX_INIT</title>
+<indexterm><primary>MUTEX_INIT</primary><secondary>system.hpp</secondary></indexterm>
+<indexterm><primary>system.hpp</primary><secondary>MUTEX_INIT</secondary></indexterm>
+<para><computeroutput>#define MUTEX_INIT( )&#160;&#160;&#160;true</computeroutput></para><para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 第 <link linkend="_system_8hpp_source_1l00060">60</link> 行定义.</para>
+</section>
+<anchor xml:id="_system_8hpp_1a441b021fa23aeb332a6aa860cb1aee7c"/><section>
+    <title>MUTEX_LOCK</title>
+<indexterm><primary>MUTEX_LOCK</primary><secondary>system.hpp</secondary></indexterm>
+<indexterm><primary>system.hpp</primary><secondary>MUTEX_LOCK</secondary></indexterm>
+<para><computeroutput>#define MUTEX_LOCK( x)</computeroutput></para><emphasis role="strong">值:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;<emphasis role="keywordflow">do</emphasis>&#32;{&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;\
+&#32;&#32;&#32;&#32;(x)&#32;=&#32;<emphasis role="keyword">false</emphasis>;&#32;&#32;&#32;&#32;&#32;&#32;\
+&#32;&#32;}&#32;<emphasis role="keywordflow">while</emphasis>&#32;(0)
+</programlisting><para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 第 <link linkend="_system_8hpp_source_1l00061">61</link> 行定义.</para>
+</section>
+<anchor xml:id="_system_8hpp_1a6f65b0ad8c8a5732495fa067820ced4d"/><section>
+    <title>Mutex_t</title>
+<indexterm><primary>Mutex_t</primary><secondary>system.hpp</secondary></indexterm>
+<indexterm><primary>system.hpp</primary><secondary>Mutex_t</secondary></indexterm>
+<para><computeroutput>#define Mutex_t&#160;&#160;&#160;bool</computeroutput></para><para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 第 <link linkend="_system_8hpp_source_1l00059">59</link> 行定义.</para>
+</section>
+<anchor xml:id="_system_8hpp_1a04bad901d24418b1d7e307edb0d38662"/><section>
+    <title>MUTEX_UNLOCK</title>
+<indexterm><primary>MUTEX_UNLOCK</primary><secondary>system.hpp</secondary></indexterm>
+<indexterm><primary>system.hpp</primary><secondary>MUTEX_UNLOCK</secondary></indexterm>
+<para><computeroutput>#define MUTEX_UNLOCK( x)</computeroutput></para><emphasis role="strong">值:</emphasis><programlisting linenumbering="unnumbered">&#32;&#32;<emphasis role="keywordflow">do</emphasis>&#32;{&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;\
+&#32;&#32;&#32;&#32;(x)&#32;=&#32;<emphasis role="keyword">true</emphasis>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;\
+&#32;&#32;}&#32;<emphasis role="keywordflow">while</emphasis>&#32;(0)
+</programlisting><para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 第 <link linkend="_system_8hpp_source_1l00065">65</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>函数说明</title>
+<anchor xml:id="_system_8hpp_1afa145befcf5e7b83424408ca503c8637"/><section>
+    <title>operator delete()</title>
+<indexterm><primary>operator delete</primary><secondary>system.hpp</secondary></indexterm>
+<indexterm><primary>system.hpp</primary><secondary>operator delete</secondary></indexterm>
+<para><computeroutput>void operator delete (void * ptr)<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 第 <link linkend="_system_8hpp_source_1l00086">86</link> 行定义.</para>
+</section>
+<anchor xml:id="_system_8hpp_1a22aea74a1155aa798d6032da46da2391"/><section>
+    <title>operator delete[]()</title>
+<indexterm><primary>operator delete[]</primary><secondary>system.hpp</secondary></indexterm>
+<indexterm><primary>system.hpp</primary><secondary>operator delete[]</secondary></indexterm>
+<para><computeroutput>void operator delete[] (void * ptr)<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 第 <link linkend="_system_8hpp_source_1l00088">88</link> 行定义.</para>
+</section>
+<anchor xml:id="_system_8hpp_1a1a7f24760c8c7ad3bfcd54856d906fc2"/><section>
+    <title>operator new()</title>
+<indexterm><primary>operator new</primary><secondary>system.hpp</secondary></indexterm>
+<indexterm><primary>system.hpp</primary><secondary>operator new</secondary></indexterm>
+<para><computeroutput>void * operator new (size_t size)<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 第 <link linkend="_system_8hpp_source_1l00085">85</link> 行定义.</para>
+</section>
+<anchor xml:id="_system_8hpp_1aa75472ab4b765cf6f6b5b0ebcd4a28c8"/><section>
+    <title>operator new[]()</title>
+<indexterm><primary>operator new[]</primary><secondary>system.hpp</secondary></indexterm>
+<indexterm><primary>system.hpp</primary><secondary>operator new[]</secondary></indexterm>
+<para><computeroutput>void * operator new[] (size_t size)<computeroutput>[inline]</computeroutput>, <computeroutput>[noexcept]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_system_8hpp_source">system.hpp</link> 第 <link linkend="_system_8hpp_source_1l00087">87</link> 行定义.</para>
+</section>
+</section>
+</section>

@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_tick_8hpp_source" xml:lang="zh">
+<title>tick.hpp</title>
+<indexterm><primary>HW-Components/dsp/tick/tick.hpp</primary></indexterm>
+浏览该文件的文档.<programlisting linenumbering="unnumbered"><anchor xml:id="_tick_8hpp_source_1l00001"/>00001 
+<anchor xml:id="_tick_8hpp_source_1l00002"/>00002 
+<anchor xml:id="_tick_8hpp_source_1l00021"/>00021 <emphasis role="comment">/*&#32;Define&#32;to&#32;prevent&#32;recursive&#32;inclusion&#32;-------------------------------------*/</emphasis>
+<anchor xml:id="_tick_8hpp_source_1l00022"/>00022 <emphasis role="preprocessor">#ifndef&#32;_HW_COMPONENTS_CPP_SYSTEM_TICK_H_</emphasis>
+<anchor xml:id="_tick_8hpp_source_1l00023"/>00023 <emphasis role="preprocessor">#define&#32;_HW_COMPONENTS_CPP_SYSTEM_TICK_H_</emphasis>
+<anchor xml:id="_tick_8hpp_source_1l00024"/>00024 
+<anchor xml:id="_tick_8hpp_source_1l00025"/>00025 <emphasis role="comment">/*&#32;Includes&#32;------------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_tick_8hpp_source_1l00026"/>00026 
+<anchor xml:id="_tick_8hpp_source_1l00027"/>00027 <emphasis role="preprocessor">#include&#32;&lt;stdint.h&gt;</emphasis>
+<anchor xml:id="_tick_8hpp_source_1l00028"/>00028 
+<anchor xml:id="_tick_8hpp_source_1l00029"/>00029 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacehello__world">hello_world</link>
+<anchor xml:id="_tick_8hpp_source_1l00030"/>00030 {
+<anchor xml:id="_tick_8hpp_source_1l00031"/>00031 <emphasis role="keyword">namespace&#32;</emphasis>dsp
+<anchor xml:id="_tick_8hpp_source_1l00032"/>00032 {
+<anchor xml:id="_tick_8hpp_source_1l00033"/>00033 <emphasis role="keyword">namespace&#32;</emphasis>tick
+<anchor xml:id="_tick_8hpp_source_1l00034"/>00034 {
+<anchor xml:id="_tick_8hpp_source_1l00035"/>00035 <emphasis role="comment">/*&#32;Exported&#32;macro&#32;------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_tick_8hpp_source_1l00036"/>00036 <emphasis role="comment">/*&#32;Exported&#32;constants&#32;--------------------------------------------------------*/</emphasis>
+<anchor xml:id="_tick_8hpp_source_1l00037"/>00037 <emphasis role="comment">/*&#32;Exported&#32;types&#32;------------------------------------------------------------*/</emphasis>
+<anchor xml:id="_tick_8hpp_source_1l00038"/>00038 <emphasis role="comment">/*&#32;Exported&#32;variables&#32;--------------------------------------------------------*/</emphasis>
+<anchor xml:id="_tick_8hpp_source_1l00039"/>00039 <emphasis role="comment">/*&#32;Exported&#32;function&#32;prototypes&#32;----------------------------------------------*/</emphasis>
+<anchor xml:id="_tick_8hpp_source_1l00040"/>00040 uint32_t&#32;<link linkend="_namespacehello__world_1_1dsp_1_1tick_1a0c9c44ee367dc665cc6f1a6d830da9ee">GetTickUs</link>();
+<anchor xml:id="_tick_8hpp_source_1l00041"/>00041 uint32_t&#32;<link linkend="_namespacehello__world_1_1dsp_1_1tick_1a97910b07255da1979f8ceafd8c6d2ea5">GetTickMs</link>();
+<anchor xml:id="_tick_8hpp_source_1l00042"/>00042 uint32_t&#32;<link linkend="_namespacehello__world_1_1dsp_1_1tick_1a3bb6f5ee2096e411df77150fbac949a5">GetTickS</link>();
+<anchor xml:id="_tick_8hpp_source_1l00043"/>00043 
+<anchor xml:id="_tick_8hpp_source_1l00044"/>00044 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;tick</emphasis>
+<anchor xml:id="_tick_8hpp_source_1l00045"/>00045 
+<anchor xml:id="_tick_8hpp_source_1l00046"/>00046 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;dsp</emphasis>
+<anchor xml:id="_tick_8hpp_source_1l00047"/>00047 
+<anchor xml:id="_tick_8hpp_source_1l00048"/>00048 }&#32;&#32;<emphasis role="comment">//&#32;namespace&#32;hello_world</emphasis>
+<anchor xml:id="_tick_8hpp_source_1l00049"/>00049 
+<anchor xml:id="_tick_8hpp_source_1l00050"/>00050 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">/*&#32;HW_COMPONENTS_CPP_SYSTEM_TICK_H_&#32;*/</emphasis><emphasis role="preprocessor"></emphasis>
+</programlisting></section>

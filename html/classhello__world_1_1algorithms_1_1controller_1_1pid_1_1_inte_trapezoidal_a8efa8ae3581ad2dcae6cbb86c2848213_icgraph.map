@@ -1,0 +1,12 @@
+<map id="hello_world::algorithms::controller::pid::InteTrapezoidal::calc" name="hello_world::algorithms::controller::pid::InteTrapezoidal::calc">
+<area shape="rect" id="Node000001" title="计算梯形积分优化后的积分误差值" alt="" coords="712,53,947,93"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid.html#a2b8667e517f1999ec3fecffe9e6bd33d" title="PID 控制器的计算函数" alt="" coords="464,53,664,93"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="697,75,664,75,664,70,697,70"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#accc1fd43233ab6d228f7111eab364c51" title="计算级联 PID 控制器的输出" alt="" coords="235,5,416,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="449,56,416,51,417,45,450,51"/>
+<area shape="rect" id="Node000005" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a180ce707d30cae5f45ec5820d1b2c50c" title="计算并行 PID 控制器的输出" alt="" coords="235,84,416,139"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="450,94,417,99,416,94,449,89"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#ae10478e0d731be3f6e6d0c479964d448" title="计算 PID 控制器的输出" alt="" coords="5,45,187,100"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="220,54,187,59,187,54,220,48"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="220,96,187,91,187,85,220,91"/>
+</map>

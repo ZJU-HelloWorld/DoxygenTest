@@ -1,0 +1,887 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>My Project: hello_world::algorithms::controller::pid::MultiNodesPid类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript">
+window.MathJax = {
+  options: {
+    ignoreHtmlClass: 'tex2jax_ignore',
+    processHtmlClass: 'tex2jax_process'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">My Project
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pri-methods">Private 成员函数</a> &#124;
+<a href="#pri-attribs">Private 属性</a> &#124;
+<a href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">hello_world::algorithms::controller::pid::MultiNodesPid类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>一个多节点 PID 控制器类，继承自 <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html">Controller</a> 类，目前实现类型有串联或并联  
+ <a href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="pid_8hpp_source.html">pid.hpp</a>&gt;</code></p>
+<div class="dynheader">
+类 hello_world::algorithms::controller::pid::MultiNodesPid 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid__inherit__graph.svg" width="211" height="212"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+hello_world::algorithms::controller::pid::MultiNodesPid 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid__coll__graph.svg" width="1716" height="648"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:aa1dffa33b44dd44a17cc074900d7e058" id="r_aa1dffa33b44dd44a17cc074900d7e058"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params.html">BasicPidParams</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#aa1dffa33b44dd44a17cc074900d7e058">Params</a></td></tr>
+<tr class="memdesc:aa1dffa33b44dd44a17cc074900d7e058"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义 Params 类型为 <code><a class="el" href="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params.html" title="定义了基础 PID 的参数">BasicPidParams</a></code>  <br /></td></tr>
+<tr class="separator:aa1dffa33b44dd44a17cc074900d7e058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1284a87ed9e883dafa07b53cc68513e5" id="r_a1284a87ed9e883dafa07b53cc68513e5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespacehello__world_1_1algorithms_1_1controller_1_1pid.html#ae7056f306e67c77cdcc0145836828ea5">MultiNodesPidType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a1284a87ed9e883dafa07b53cc68513e5">Type</a></td></tr>
+<tr class="memdesc:a1284a87ed9e883dafa07b53cc68513e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义 Type 类型为 <code>MultiNodesPidType</code>  <br /></td></tr>
+<tr class="separator:a1284a87ed9e883dafa07b53cc68513e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a8e4bfd26c1bb829f58d3fb14e80c4c0b" id="r_a8e4bfd26c1bb829f58d3fb14e80c4c0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a8e4bfd26c1bb829f58d3fb14e80c4c0b">MultiNodesPid</a> (<a class="el" href="namespacehello__world_1_1algorithms_1_1controller_1_1pid.html#ae7056f306e67c77cdcc0145836828ea5">Type</a> type, <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit.html">OutLimit</a> out_limit, size_t count)</td></tr>
+<tr class="memdesc:a8e4bfd26c1bb829f58d3fb14e80c4c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数，初始化 <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html" title="一个多节点 PID 控制器类，继承自 Controller 类，目前实现类型有串联或并联">MultiNodesPid</a> 对象，至少会存在一个 PID 控制器节点，推荐和 <code>paramsAt</code> 函数一起使用  <br /></td></tr>
+<tr class="separator:a8e4bfd26c1bb829f58d3fb14e80c4c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3282e6e51a5b7689717079f0d25abe" id="r_a9a3282e6e51a5b7689717079f0d25abe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a9a3282e6e51a5b7689717079f0d25abe">MultiNodesPid</a> (<a class="el" href="namespacehello__world_1_1algorithms_1_1controller_1_1pid.html#ae7056f306e67c77cdcc0145836828ea5">Type</a> type, <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit.html">OutLimit</a> out_limit, size_t count, const <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#aa1dffa33b44dd44a17cc074900d7e058">Params</a> *params_arr)</td></tr>
+<tr class="memdesc:a9a3282e6e51a5b7689717079f0d25abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">构造函数，初始化 <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html" title="一个多节点 PID 控制器类，继承自 Controller 类，目前实现类型有串联或并联">MultiNodesPid</a> 对象，至少会存在一个 PID 控制器节点  <br /></td></tr>
+<tr class="separator:a9a3282e6e51a5b7689717079f0d25abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5edb64efe535b8e5b8b1e30a91f28fe0" id="r_a5edb64efe535b8e5b8b1e30a91f28fe0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a5edb64efe535b8e5b8b1e30a91f28fe0">reset</a> () override</td></tr>
+<tr class="memdesc:a5edb64efe535b8e5b8b1e30a91f28fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">重置 PID 控制器  <br /></td></tr>
+<tr class="separator:a5edb64efe535b8e5b8b1e30a91f28fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae10478e0d731be3f6e6d0c479964d448" id="r_ae10478e0d731be3f6e6d0c479964d448"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#ae10478e0d731be3f6e6d0c479964d448">calc</a> (const float *ref_ls, const float *fdb_ls, const float *ffd_ls, float *out_ls) override</td></tr>
+<tr class="memdesc:ae10478e0d731be3f6e6d0c479964d448"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算 PID 控制器的输出  <br /></td></tr>
+<tr class="separator:ae10478e0d731be3f6e6d0c479964d448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e66f815cbf9b95e4d390a456098850" id="r_a02e66f815cbf9b95e4d390a456098850"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a02e66f815cbf9b95e4d390a456098850">size</a> () const</td></tr>
+<tr class="memdesc:a02e66f815cbf9b95e4d390a456098850"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 PID 控制器的数量  <br /></td></tr>
+<tr class="separator:a02e66f815cbf9b95e4d390a456098850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9124ff9fabf43c21a73a294148697976" id="r_a9124ff9fabf43c21a73a294148697976"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a9124ff9fabf43c21a73a294148697976">out</a> () const</td></tr>
+<tr class="memdesc:a9124ff9fabf43c21a73a294148697976"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 PID 控制器的输出  <br /></td></tr>
+<tr class="separator:a9124ff9fabf43c21a73a294148697976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5798e287814521e3627db78943c840c4" id="r_a5798e287814521e3627db78943c840c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#aa1dffa33b44dd44a17cc074900d7e058">Params</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a5798e287814521e3627db78943c840c4">paramsAt</a> (size_t idx)</td></tr>
+<tr class="memdesc:a5798e287814521e3627db78943c840c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取指定索引处 PID 控制器的参数  <br /></td></tr>
+<tr class="separator:a5798e287814521e3627db78943c840c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classhello__world_1_1algorithms_1_1controller_1_1_controller"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhello__world_1_1algorithms_1_1controller_1_1_controller')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html">hello_world::algorithms::controller::Controller</a></td></tr>
+<tr class="memitem:a3fe01fdfc6fc3c17754757d7d0c4cfe9 inherit pub_methods_classhello__world_1_1algorithms_1_1controller_1_1_controller" id="r_a3fe01fdfc6fc3c17754757d7d0c4cfe9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html#a3fe01fdfc6fc3c17754757d7d0c4cfe9">Controller</a> (size_t ref_dim, size_t fdb_dim, size_t out_dim, size_t ffd_dim=0)</td></tr>
+<tr class="separator:a3fe01fdfc6fc3c17754757d7d0c4cfe9 inherit pub_methods_classhello__world_1_1algorithms_1_1controller_1_1_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a392091ff03b5346cbbc3ffe14d4a6d83 inherit pub_methods_classhello__world_1_1algorithms_1_1controller_1_1_controller" id="r_a392091ff03b5346cbbc3ffe14d4a6d83"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html#a392091ff03b5346cbbc3ffe14d4a6d83">~Controller</a> ()</td></tr>
+<tr class="separator:a392091ff03b5346cbbc3ffe14d4a6d83 inherit pub_methods_classhello__world_1_1algorithms_1_1controller_1_1_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c856e2e4d553904a73fa8bf2b1d10f0 inherit pub_methods_classhello__world_1_1algorithms_1_1controller_1_1_controller" id="r_a5c856e2e4d553904a73fa8bf2b1d10f0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html#a5c856e2e4d553904a73fa8bf2b1d10f0">operator new</a> (size_t size)</td></tr>
+<tr class="separator:a5c856e2e4d553904a73fa8bf2b1d10f0 inherit pub_methods_classhello__world_1_1algorithms_1_1controller_1_1_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097b88e2a82574df8d5a26eeee442525 inherit pub_methods_classhello__world_1_1algorithms_1_1controller_1_1_controller" id="r_a097b88e2a82574df8d5a26eeee442525"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html#a097b88e2a82574df8d5a26eeee442525">operator new[]</a> (size_t size)</td></tr>
+<tr class="separator:a097b88e2a82574df8d5a26eeee442525 inherit pub_methods_classhello__world_1_1algorithms_1_1controller_1_1_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee97fc5e8af6420ec56ee5ed7fb1f3da inherit pub_methods_classhello__world_1_1algorithms_1_1controller_1_1_controller" id="r_aee97fc5e8af6420ec56ee5ed7fb1f3da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html#aee97fc5e8af6420ec56ee5ed7fb1f3da">operator delete</a> (void *ptr)</td></tr>
+<tr class="separator:aee97fc5e8af6420ec56ee5ed7fb1f3da inherit pub_methods_classhello__world_1_1algorithms_1_1controller_1_1_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3d671169876c515fc7bf1c3be5f3b23 inherit pub_methods_classhello__world_1_1algorithms_1_1controller_1_1_controller" id="r_ad3d671169876c515fc7bf1c3be5f3b23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html#ad3d671169876c515fc7bf1c3be5f3b23">operator delete[]</a> (void *ptr)</td></tr>
+<tr class="separator:ad3d671169876c515fc7bf1c3be5f3b23 inherit pub_methods_classhello__world_1_1algorithms_1_1controller_1_1_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classhello__world_1_1_mem_mang"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classhello__world_1_1_mem_mang')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classhello__world_1_1_mem_mang.html">hello_world::MemMang</a></td></tr>
+<tr class="memitem:abcf6e7289814e8da342ba4f47d8af411 inherit pub_methods_classhello__world_1_1_mem_mang" id="r_abcf6e7289814e8da342ba4f47d8af411"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1_mem_mang.html#abcf6e7289814e8da342ba4f47d8af411">operator new</a> (size_t size)</td></tr>
+<tr class="separator:abcf6e7289814e8da342ba4f47d8af411 inherit pub_methods_classhello__world_1_1_mem_mang"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10b6eff1541322708e5bde32c590c82 inherit pub_methods_classhello__world_1_1_mem_mang" id="r_ad10b6eff1541322708e5bde32c590c82"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1_mem_mang.html#ad10b6eff1541322708e5bde32c590c82">operator new[]</a> (size_t size)</td></tr>
+<tr class="separator:ad10b6eff1541322708e5bde32c590c82 inherit pub_methods_classhello__world_1_1_mem_mang"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1fe21066f52d693e2eec63a5833e8e inherit pub_methods_classhello__world_1_1_mem_mang" id="r_abf1fe21066f52d693e2eec63a5833e8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1_mem_mang.html#abf1fe21066f52d693e2eec63a5833e8e">operator delete</a> (void *ptr)</td></tr>
+<tr class="separator:abf1fe21066f52d693e2eec63a5833e8e inherit pub_methods_classhello__world_1_1_mem_mang"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e1a6a8e01b0996cc2854a8bc1ce7bd inherit pub_methods_classhello__world_1_1_mem_mang" id="r_a54e1a6a8e01b0996cc2854a8bc1ce7bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1_mem_mang.html#a54e1a6a8e01b0996cc2854a8bc1ce7bd">operator delete[]</a> (void *ptr)</td></tr>
+<tr class="separator:a54e1a6a8e01b0996cc2854a8bc1ce7bd inherit pub_methods_classhello__world_1_1_mem_mang"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private 成员函数</h2></td></tr>
+<tr class="memitem:accc1fd43233ab6d228f7111eab364c51" id="r_accc1fd43233ab6d228f7111eab364c51"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#accc1fd43233ab6d228f7111eab364c51">cascade_calc</a> (const float *ref_ls, const float *fdb_ls, const float *ffd_ls, float *out_ls)</td></tr>
+<tr class="memdesc:accc1fd43233ab6d228f7111eab364c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算级联 PID 控制器的输出  <br /></td></tr>
+<tr class="separator:accc1fd43233ab6d228f7111eab364c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a180ce707d30cae5f45ec5820d1b2c50c" id="r_a180ce707d30cae5f45ec5820d1b2c50c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a180ce707d30cae5f45ec5820d1b2c50c">parallel_calc</a> (const float *ref_ls, const float *fdb_ls, const float *ffd_ls, float *out_ls)</td></tr>
+<tr class="memdesc:a180ce707d30cae5f45ec5820d1b2c50c"><td class="mdescLeft">&#160;</td><td class="mdescRight">计算并行 PID 控制器的输出  <br /></td></tr>
+<tr class="separator:a180ce707d30cae5f45ec5820d1b2c50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private 属性</h2></td></tr>
+<tr class="memitem:ab06cc5de8b8e69bd63c1c19317afdede" id="r_ab06cc5de8b8e69bd63c1c19317afdede"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list.html">PidList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#ab06cc5de8b8e69bd63c1c19317afdede">pid_list_</a></td></tr>
+<tr class="memdesc:ab06cc5de8b8e69bd63c1c19317afdede"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID 控制器列表  <br /></td></tr>
+<tr class="separator:ab06cc5de8b8e69bd63c1c19317afdede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba0574fd4cea5a7babe59f5fb9c1d08" id="r_a6ba0574fd4cea5a7babe59f5fb9c1d08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit.html">OutLimit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a6ba0574fd4cea5a7babe59f5fb9c1d08">out_limit_</a></td></tr>
+<tr class="memdesc:a6ba0574fd4cea5a7babe59f5fb9c1d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">输出限制  <br /></td></tr>
+<tr class="separator:a6ba0574fd4cea5a7babe59f5fb9c1d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e4f96a6abf9a261b9d5961b4352c78e" id="r_a6e4f96a6abf9a261b9d5961b4352c78e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller_1_1pid.html#ae7056f306e67c77cdcc0145836828ea5">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a6e4f96a6abf9a261b9d5961b4352c78e">type_</a></td></tr>
+<tr class="memdesc:a6e4f96a6abf9a261b9d5961b4352c78e"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID 类型  <br /></td></tr>
+<tr class="separator:a6e4f96a6abf9a261b9d5961b4352c78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46bcce0ae0037c45b1e5f2c88a957498" id="r_a46bcce0ae0037c45b1e5f2c88a957498"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a46bcce0ae0037c45b1e5f2c88a957498">out_</a></td></tr>
+<tr class="memdesc:a46bcce0ae0037c45b1e5f2c88a957498"><td class="mdescLeft">&#160;</td><td class="mdescRight">PID 输出  <br /></td></tr>
+<tr class="separator:a46bcce0ae0037c45b1e5f2c88a957498"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_attribs_classhello__world_1_1algorithms_1_1controller_1_1_controller"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classhello__world_1_1algorithms_1_1controller_1_1_controller')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html">hello_world::algorithms::controller::Controller</a></td></tr>
+<tr class="memitem:aaef37bc2917097e1f3956d3e376ea64c inherit pro_attribs_classhello__world_1_1algorithms_1_1controller_1_1_controller" id="r_aaef37bc2917097e1f3956d3e376ea64c"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html#aaef37bc2917097e1f3956d3e376ea64c">ref_dim_</a></td></tr>
+<tr class="separator:aaef37bc2917097e1f3956d3e376ea64c inherit pro_attribs_classhello__world_1_1algorithms_1_1controller_1_1_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18177bbaffdba8b34721e4c9256e6b8a inherit pro_attribs_classhello__world_1_1algorithms_1_1controller_1_1_controller" id="r_a18177bbaffdba8b34721e4c9256e6b8a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html#a18177bbaffdba8b34721e4c9256e6b8a">fdb_dim_</a></td></tr>
+<tr class="separator:a18177bbaffdba8b34721e4c9256e6b8a inherit pro_attribs_classhello__world_1_1algorithms_1_1controller_1_1_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a174ff1eec5dbf10f728c086b53504a6f inherit pro_attribs_classhello__world_1_1algorithms_1_1controller_1_1_controller" id="r_a174ff1eec5dbf10f728c086b53504a6f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html#a174ff1eec5dbf10f728c086b53504a6f">ffd_dim_</a></td></tr>
+<tr class="separator:a174ff1eec5dbf10f728c086b53504a6f inherit pro_attribs_classhello__world_1_1algorithms_1_1controller_1_1_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac07a607fecba8eca0a3819ba86d40e2 inherit pro_attribs_classhello__world_1_1algorithms_1_1controller_1_1_controller" id="r_aac07a607fecba8eca0a3819ba86d40e2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html#aac07a607fecba8eca0a3819ba86d40e2">out_dim_</a></td></tr>
+<tr class="separator:aac07a607fecba8eca0a3819ba86d40e2 inherit pro_attribs_classhello__world_1_1algorithms_1_1controller_1_1_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>一个多节点 PID 控制器类，继承自 <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html">Controller</a> 类，目前实现类型有串联或并联 </p>
+
+<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00338">338</a> 行定义.</p>
+</div><h2 class="groupheader">成员类型定义说明</h2>
+<a id="aa1dffa33b44dd44a17cc074900d7e058" name="aa1dffa33b44dd44a17cc074900d7e058"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1dffa33b44dd44a17cc074900d7e058">&#9670;&#160;</a></span>Params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params.html">BasicPidParams</a> <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#aa1dffa33b44dd44a17cc074900d7e058">hello_world::algorithms::controller::pid::MultiNodesPid::Params</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义 Params 类型为 <code><a class="el" href="structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params.html" title="定义了基础 PID 的参数">BasicPidParams</a></code> </p>
+
+<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00341">341</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a1284a87ed9e883dafa07b53cc68513e5" name="a1284a87ed9e883dafa07b53cc68513e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1284a87ed9e883dafa07b53cc68513e5">&#9670;&#160;</a></span>Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="namespacehello__world_1_1algorithms_1_1controller_1_1pid.html#ae7056f306e67c77cdcc0145836828ea5">MultiNodesPidType</a> <a class="el" href="namespacehello__world_1_1algorithms_1_1controller_1_1pid.html#ae7056f306e67c77cdcc0145836828ea5">hello_world::algorithms::controller::pid::MultiNodesPid::Type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义 Type 类型为 <code>MultiNodesPidType</code> </p>
+
+<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00342">342</a> 行定义.</p>
+
+</div>
+</div>
+<h2 class="groupheader">构造及析构函数说明</h2>
+<a id="a8e4bfd26c1bb829f58d3fb14e80c4c0b" name="a8e4bfd26c1bb829f58d3fb14e80c4c0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e4bfd26c1bb829f58d3fb14e80c4c0b">&#9670;&#160;</a></span>MultiNodesPid() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hello_world::algorithms::controller::pid::MultiNodesPid::MultiNodesPid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller_1_1pid.html#ae7056f306e67c77cdcc0145836828ea5">Type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit.html">OutLimit</a>&#160;</td>
+          <td class="paramname"><em>out_limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数，初始化 <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html" title="一个多节点 PID 控制器类，继承自 Controller 类，目前实现类型有串联或并联">MultiNodesPid</a> 对象，至少会存在一个 PID 控制器节点，推荐和 <code>paramsAt</code> 函数一起使用 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>PID 类型 </td></tr>
+    <tr><td class="paramname">out_limit</td><td>输出限制 </td></tr>
+    <tr><td class="paramname">count</td><td>PID 数量</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>如果 count 为 0，则将其设置为 1。 然后，根据 count 的值创建相应数量的 PID 控制器，并将它们添加到 pid_list_ 中。 反馈值维数为 PID 控制器节点的数量。 如果 type 为 kParallel，则将参考值维数与反馈值维数相同。 前馈值维数和输出值维数始终为 1。 </p><dl class="section note"><dt>注解</dt><dd>如果需要修改 PID 参数，推荐使用 <code>paramsAt</code> 函数 </dd>
+<dd>
+相较于初始化时确定参数更加安全、灵活，不必预先声明参数数组 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pid_8cpp_source.html">pid.cpp</a> 第 <a class="el" href="pid_8cpp_source.html#l00179">179</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_a8e4bfd26c1bb829f58d3fb14e80c4c0b_cgraph.svg" width="648" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a9a3282e6e51a5b7689717079f0d25abe" name="a9a3282e6e51a5b7689717079f0d25abe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a3282e6e51a5b7689717079f0d25abe">&#9670;&#160;</a></span>MultiNodesPid() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hello_world::algorithms::controller::pid::MultiNodesPid::MultiNodesPid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller_1_1pid.html#ae7056f306e67c77cdcc0145836828ea5">Type</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit.html">OutLimit</a>&#160;</td>
+          <td class="paramname"><em>out_limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#aa1dffa33b44dd44a17cc074900d7e058">Params</a> *&#160;</td>
+          <td class="paramname"><em>params_arr</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>构造函数，初始化 <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html" title="一个多节点 PID 控制器类，继承自 Controller 类，目前实现类型有串联或并联">MultiNodesPid</a> 对象，至少会存在一个 PID 控制器节点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>PID 类型 </td></tr>
+    <tr><td class="paramname">out_limit</td><td>输出限制 </td></tr>
+    <tr><td class="paramname">count</td><td>PID 数量 </td></tr>
+    <tr><td class="paramname">params_arr</td><td>PID 参数数组</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>如果 count 为 0，则将其设置为 1。 如果 params_arr 为 nullptr，则使用默认参数创建 PID 控制器。 然后，根据 count 的值创建相应数量的 PID 控制器，并将它们添加到 pid_list_ 中。 反馈值维数为 PID 控制器节点的数量。 如果 type 为 kParallel，则将参考值维数与反馈值维数相同。 前馈值维数和输出值维数始终为 1。 </p><dl class="section note"><dt>注解</dt><dd>如果需要修改 PID 参数，推荐使用 <code>paramsAt</code> 函数 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pid_8cpp_source.html">pid.cpp</a> 第 <a class="el" href="pid_8cpp_source.html#l00194">194</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_a9a3282e6e51a5b7689717079f0d25abe_cgraph.svg" width="648" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="ae10478e0d731be3f6e6d0c479964d448" name="ae10478e0d731be3f6e6d0c479964d448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae10478e0d731be3f6e6d0c479964d448">&#9670;&#160;</a></span>calc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a> hello_world::algorithms::controller::pid::MultiNodesPid::calc </td>
+          <td>(</td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>ref_ls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>fdb_ls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>ffd_ls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>out_ls</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算 PID 控制器的输出 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ref_ls</td><td>参考值数组 </td></tr>
+    <tr><td class="paramname">fdb_ls</td><td>反馈值数组 </td></tr>
+    <tr><td class="paramname">ffd_ls</td><td>前馈值数组 </td></tr>
+    <tr><td class="paramname">out_ls</td><td>输出值数组 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>表示计算过程是否正常的状态值 </dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>- 如果类型是 <code>kCascade</code>，则调用 <code>cascade_calc</code> 函数计算输出； </dd>
+<dd>
+- 如果类型是 <code>kParallel</code>，则调用 <code>parallel_calc</code> 函数计算输出； </dd>
+<dd>
+- 否则，返回错误状态 <code>kStateError</code> </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="namespacehello__world_1_1algorithms_1_1controller_1_1pid.html#ae7056f306e67c77cdcc0145836828ea5" title="定义了多节点 PID 的类型">MultiNodesPidType</a> </dd>
+<dd>
+<a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#accc1fd43233ab6d228f7111eab364c51" title="计算级联 PID 控制器的输出">cascade_calc(const float *ref_ls, const float *fdb_ls, const float *ffd_ls, float *out_ls)</a> </dd>
+<dd>
+<a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a180ce707d30cae5f45ec5820d1b2c50c" title="计算并行 PID 控制器的输出">parallel_calc(const float *ref_ls, const float *fdb_ls, const float *ffd_ls, float *out_ls)</a> </dd></dl>
+
+<p>实现了 <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html#a3a59379f79586c7d89f92b3b5f08bb57">hello_world::algorithms::controller::Controller</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="pid_8cpp_source.html">pid.cpp</a> 第 <a class="el" href="pid_8cpp_source.html#l00226">226</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_ae10478e0d731be3f6e6d0c479964d448_cgraph.svg" width="1408" height="851"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="accc1fd43233ab6d228f7111eab364c51" name="accc1fd43233ab6d228f7111eab364c51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accc1fd43233ab6d228f7111eab364c51">&#9670;&#160;</a></span>cascade_calc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a> hello_world::algorithms::controller::pid::MultiNodesPid::cascade_calc </td>
+          <td>(</td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>ref_ls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>fdb_ls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>ffd_ls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>out_ls</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算级联 PID 控制器的输出 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ref_ls</td><td>参考值数组，只使用第一个值，如果为nullptr则使用 <code>0</code> </td></tr>
+    <tr><td class="paramname">fdb_ls</td><td>反馈值数组，将使用等同于 <code><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a02e66f815cbf9b95e4d390a456098850" title="获取 PID 控制器的数量">size()</a></code> 个数的值，如果为 <code>nullptr</code> 将不会进行计算，且会将输出置零 </td></tr>
+    <tr><td class="paramname">ffd_ls</td><td>前馈值数组，只使用第一个值，如果为 <code>nullptr</code> 则使用 <code>0</code> </td></tr>
+    <tr><td class="paramname">out_ls</td><td>输出值数组，只使用第一个值，为 <code>nullptr</code> 时输出传递失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>表示计算过程是否正常的状态值 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">kStateOk</td><td>计算成功且所有参数均不为 <code>nullptr</code> </td></tr>
+    <tr><td class="paramname">kStateError</td><td>有参数为 <code>nullptr</code>，计算成功与否视参数而定 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>- 当 <code>ref_ls</code> 为 <code>nullptr</code> 时，使用 <code>0</code> 作为参考值 </dd>
+<dd>
+- 当 <code>fdb_ls</code> 为 <code>nullptr</code> 时，计算失败，并将输出置零 </dd>
+<dd>
+- 当 <code>ffd_ls</code> 为 <code>nullptr</code> 时，使用 <code>0</code> 作为前馈值 </dd>
+<dd>
+- 当 <code>out_ls</code> 为 <code>nullptr</code> 时，输出传递失败 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pid_8cpp_source.html">pid.cpp</a> 第 <a class="el" href="pid_8cpp_source.html#l00250">250</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_accc1fd43233ab6d228f7111eab364c51_cgraph.svg" width="1179" height="851"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_accc1fd43233ab6d228f7111eab364c51_icgraph.svg" width="422" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a9124ff9fabf43c21a73a294148697976" name="a9124ff9fabf43c21a73a294148697976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9124ff9fabf43c21a73a294148697976">&#9670;&#160;</a></span>out()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::algorithms::controller::pid::MultiNodesPid::out </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取 PID 控制器的输出 </p>
+<dl class="section return"><dt>返回</dt><dd>PID 控制器的输出 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00411">411</a> 行定义.</p>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_a9124ff9fabf43c21a73a294148697976_icgraph.svg" width="651" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a180ce707d30cae5f45ec5820d1b2c50c" name="a180ce707d30cae5f45ec5820d1b2c50c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a180ce707d30cae5f45ec5820d1b2c50c">&#9670;&#160;</a></span>parallel_calc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a> hello_world::algorithms::controller::pid::MultiNodesPid::parallel_calc </td>
+          <td>(</td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>ref_ls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>fdb_ls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>ffd_ls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>out_ls</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>计算并行 PID 控制器的输出 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ref_ls</td><td>参考值数组，将使用等同于 <code><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a02e66f815cbf9b95e4d390a456098850" title="获取 PID 控制器的数量">size()</a></code> 个数的值，如果为 <code>nullptr</code> 将不会进行计算，且会将输出置零 </td></tr>
+    <tr><td class="paramname">fdb_ls</td><td>反馈值数组，将使用等同于 <code><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a02e66f815cbf9b95e4d390a456098850" title="获取 PID 控制器的数量">size()</a></code> 个数的值，如果为 <code>nullptr</code> 将不会进行计算，且会将输出置零 </td></tr>
+    <tr><td class="paramname">ffd_ls</td><td>前馈值数组，只使用第一个值，如果为 <code>nullptr</code> 则使用 <code>0</code> </td></tr>
+    <tr><td class="paramname">out_ls</td><td>输出值数组，只使用第一个值，为 <code>nullptr</code> 时输出传递失败 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>表示计算过程是否正常的状态值 </dd></dl>
+<dl class="retval"><dt>返回值</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">kStateOk</td><td>计算成功且所有参数均不为 <code>nullptr</code> </td></tr>
+    <tr><td class="paramname">kStateError</td><td>有参数为 <code>nullptr</code>，计算成功与否视参数而定 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>注意</dt><dd>- 当 <code>ref_ls</code> 为 <code>nullptr</code> 时，计算失败，并将输出置零 </dd>
+<dd>
+- 当 <code>fdb_ls</code> 为 <code>nullptr</code> 时，计算失败，并将输出置零 </dd>
+<dd>
+- 当 <code>ffd_ls</code> 为 <code>nullptr</code> 时，使用 0 作为前馈值 </dd>
+<dd>
+- 当 <code>out_ls</code> 为 <code>nullptr</code> 时，输出传递失败 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pid_8cpp_source.html">pid.cpp</a> 第 <a class="el" href="pid_8cpp_source.html#l00296">296</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_a180ce707d30cae5f45ec5820d1b2c50c_cgraph.svg" width="1179" height="851"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_a180ce707d30cae5f45ec5820d1b2c50c_icgraph.svg" width="422" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a5798e287814521e3627db78943c840c4" name="a5798e287814521e3627db78943c840c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5798e287814521e3627db78943c840c4">&#9670;&#160;</a></span>paramsAt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#aa1dffa33b44dd44a17cc074900d7e058">MultiNodesPid::Params</a> &amp; hello_world::algorithms::controller::pid::MultiNodesPid::paramsAt </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取指定索引处 PID 控制器的参数 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">idx</td><td>PID 控制器的索引 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>指定索引处 PID 控制器的参数。如果索引超出 PID 控制器列表的范围，返回最后一个 PID 控制器的参数。 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pid_8cpp_source.html">pid.cpp</a> 第 <a class="el" href="pid_8cpp_source.html#l00238">238</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_a5798e287814521e3627db78943c840c4_cgraph.svg" width="426" height="210"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a5edb64efe535b8e5b8b1e30a91f28fe0" name="a5edb64efe535b8e5b8b1e30a91f28fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5edb64efe535b8e5b8b1e30a91f28fe0">&#9670;&#160;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html#a3651797f880533c49c9b90a0961c199d">State</a> hello_world::algorithms::controller::pid::MultiNodesPid::reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>重置 PID 控制器 </p>
+<dl class="section return"><dt>返回</dt><dd>始终返回 kStateOk </dd></dl>
+
+<p>实现了 <a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1_controller.html#a1dfc2817c2e54de404466124a6ca4d19">hello_world::algorithms::controller::Controller</a>.</p>
+
+<p class="definition">在文件 <a class="el" href="pid_8cpp_source.html">pid.cpp</a> 第 <a class="el" href="pid_8cpp_source.html#l00214">214</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_a5edb64efe535b8e5b8b1e30a91f28fe0_cgraph.svg" width="428" height="275"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a02e66f815cbf9b95e4d390a456098850" name="a02e66f815cbf9b95e4d390a456098850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02e66f815cbf9b95e4d390a456098850">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t hello_world::algorithms::controller::pid::MultiNodesPid::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取 PID 控制器的数量 </p>
+<dl class="section return"><dt>返回</dt><dd>PID 控制器的数量 </dd></dl>
+
+<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00405">405</a> 行定义.</p>
+<div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_a02e66f815cbf9b95e4d390a456098850_cgraph.svg" width="428" height="66"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a id="a46bcce0ae0037c45b1e5f2c88a957498" name="a46bcce0ae0037c45b1e5f2c88a957498"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46bcce0ae0037c45b1e5f2c88a957498">&#9670;&#160;</a></span>out_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float hello_world::algorithms::controller::pid::MultiNodesPid::out_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PID 输出 </p>
+
+<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00424">424</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6ba0574fd4cea5a7babe59f5fb9c1d08" name="a6ba0574fd4cea5a7babe59f5fb9c1d08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ba0574fd4cea5a7babe59f5fb9c1d08">&#9670;&#160;</a></span>out_limit_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit.html">OutLimit</a> hello_world::algorithms::controller::pid::MultiNodesPid::out_limit_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>输出限制 </p>
+
+<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00422">422</a> 行定义.</p>
+
+</div>
+</div>
+<a id="ab06cc5de8b8e69bd63c1c19317afdede" name="ab06cc5de8b8e69bd63c1c19317afdede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab06cc5de8b8e69bd63c1c19317afdede">&#9670;&#160;</a></span>pid_list_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list.html">PidList</a> hello_world::algorithms::controller::pid::MultiNodesPid::pid_list_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PID 控制器列表 </p>
+
+<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00421">421</a> 行定义.</p>
+
+</div>
+</div>
+<a id="a6e4f96a6abf9a261b9d5961b4352c78e" name="a6e4f96a6abf9a261b9d5961b4352c78e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e4f96a6abf9a261b9d5961b4352c78e">&#9670;&#160;</a></span>type_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller_1_1pid.html#ae7056f306e67c77cdcc0145836828ea5">Type</a> hello_world::algorithms::controller::pid::MultiNodesPid::type_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>PID 类型 </p>
+
+<p class="definition">在文件 <a class="el" href="pid_8hpp_source.html">pid.hpp</a> 第 <a class="el" href="pid_8hpp_source.html#l00423">423</a> 行定义.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacehello__world.html">hello_world</a></li><li class="navelem"><a class="el" href="namespacehello__world_1_1algorithms.html">algorithms</a></li><li class="navelem"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller.html">controller</a></li><li class="navelem"><a class="el" href="namespacehello__world_1_1algorithms_1_1controller_1_1pid.html">pid</a></li><li class="navelem"><a class="el" href="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html">MultiNodesPid</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
+</body>
+</html>

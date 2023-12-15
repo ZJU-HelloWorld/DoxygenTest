@@ -1,0 +1,11 @@
+<map id="hello_world::devices::referee::Referee::encodeSetCrc" name="hello_world::devices::referee::Referee::encodeSetCrc">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,37,216,77"/>
+<area shape="rect" id="Node000002" href="$namespacehello__world_1_1devices_1_1referee.html#a73a313c37bf9c08d99668eb8e20b0126" title="Set the last two bytes of a message to a CRC16 checksum." alt="" coords="264,5,483,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,42,249,38,249,43,217,47"/>
+<area shape="rect" id="Node000004" href="$namespacehello__world_1_1devices_1_1referee.html#a1010051b064aba848f58d85e35720c8e" title="Set the last byte of a message to a CRC8 checksum." alt="" coords="268,69,479,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="217,68,254,72,253,77,216,73"/>
+<area shape="rect" id="Node000003" href="$namespacehello__world_1_1devices_1_1referee.html#a30f1e50d6e85c306486883a0668b7f50" title="Calculate and return the CRC16 checksum of a message." alt="" coords="531,5,727,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="483,23,516,23,516,28,483,28"/>
+<area shape="rect" id="Node000005" href="$namespacehello__world_1_1devices_1_1referee.html#a42050a73d989fc581253585524abbf57" title="Calculate and return the CRC8 checksum of a message." alt="" coords="534,69,723,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="479,87,519,87,519,92,479,92"/>
+</map>

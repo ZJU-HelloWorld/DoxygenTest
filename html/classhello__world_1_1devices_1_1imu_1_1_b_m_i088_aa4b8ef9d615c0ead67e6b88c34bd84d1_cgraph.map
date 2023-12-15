@@ -1,0 +1,24 @@
+<map id="hello_world::devices::imu::BMI088::getData" name="hello_world::devices::imu::BMI088::getData">
+<area shape="rect" id="Node000001" title="获取传感器数据" alt="" coords="5,101,161,141"/>
+<area shape="rect" id="Node000002" href="$namespacehello__world_1_1devices_1_1imu.html#a6fc8717b2ca9de9512855bad4d226769" title="微秒级延时" alt="" coords="233,5,370,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,99,208,55,223,49,225,54,210,60,122,103"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#ad236f84f69a0ef4e8befa96479bf5618" title="获取加速度计数据" alt="" coords="212,69,391,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,107,197,102,198,107,162,113"/>
+<area shape="rect" id="Node000007" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a00755ad04aebc2df220b39f1a83bf811" title="获取陀螺仪数据" alt="" coords="209,197,393,237"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="122,139,210,183,225,189,223,194,208,188,120,144"/>
+<area shape="rect" id="Node000011" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a0672cec3591e037942c7bc03b31dd24a" title="获取温度数据" alt="" coords="221,133,382,173"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="162,130,206,137,205,142,161,135"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#ad8bdc7c9eee4bb3c35ee8467df9e49ae" title="加速度计多寄存器数据读取" alt="" coords="443,101,634,141"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="391,99,429,104,428,109,391,104"/>
+<area shape="rect" id="Node000005" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#abe2be687095fa7b54d31a3a69693b306" title=" " alt="" coords="686,53,843,93"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="634,99,671,90,672,96,635,104"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#ad1ea4fa147f8bb2da18049c229404f65" title=" " alt="" coords="687,117,842,157"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="634,125,673,128,672,133,634,131"/>
+<area shape="rect" id="Node000008" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a443cf9b8f3e44acea8ac21258b4d7363" title="陀螺仪多寄存器数据读取" alt="" coords="441,197,636,237"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="394,215,427,215,427,220,394,220"/>
+<area shape="rect" id="Node000009" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#a54cd103bad13c06059088197dabd6acc" title=" " alt="" coords="684,189,845,229"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="637,211,669,210,669,215,637,217"/>
+<area shape="rect" id="Node000010" href="$classhello__world_1_1devices_1_1imu_1_1_b_m_i088.html#ac7e428dbf85a72f9b9689a78e7e73f02" title=" " alt="" coords="685,253,844,293"/>
+<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="623,235,671,248,670,253,621,240"/>
+<area shape="poly" id="edge11_Node000011_Node000004" title=" " alt="" coords="382,140,428,134,429,139,382,145"/>
+</map>

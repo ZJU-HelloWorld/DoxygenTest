@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structhello__world_1_1devices_1_1motor_1_1_motor_info" xml:lang="zh">
+<title>hello_world::devices::motor::MotorInfo结构体 参考</title>
+<indexterm><primary>hello_world::devices::motor::MotorInfo</primary></indexterm>
+<para>
+<computeroutput>#include &lt;motor_base.hpp&gt;</computeroutput>
+</para>
+类 hello_world::devices::motor::MotorInfo 继承关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="structhello__world_1_1devices_1_1motor_1_1_motor_info__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+hello_world::devices::motor::MotorInfo 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="structhello__world_1_1devices_1_1motor_1_1_motor_info__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_info">MotorInfo</link> &amp; <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_info_1a4feee96066013ceaa8ace8772d56ae05">operator=</link> (const <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_base_info">MotorBaseInfo</link> &amp;motor_base_info)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public 属性    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacehello__world_1_1devices_1_1motor_1a44985d99992e9464953d243bf3b561fd">Dir</link> <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_info_1a16bfca55d6a9c16d3bed3794f59eae55">dir</link></para>
+</listitem>
+            <listitem><para>uint8_t <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_info_1ad5c740f3c72547a3d4b6a9ac07eb52fe">id</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1devices_1_1motor_1a0163710b33b99ac98bcbcb1f43d78248">AngleRange</link> <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_info_1a9e6c4b4561b5da0bb08b88c80953eece">angle_range</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1devices_1_1motor_1a4777995093ebbd290b833795e49749b7">InputType</link> <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_info_1af8fc7f4030e24c85518c7239bcac9a86">input_type</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_info_1a3e96084a1a764a8bc1be4d4e34ef97b5">rx_id</link></para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_info_1a85fb9e3e5d5e207f69ad906f092b3ddc">tx_id</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_info_1a7d770e09d97238decfb61382deac39eb">angle_offset</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public 属性 继承自 <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_base_info">hello_world::devices::motor::MotorBaseInfo</link>        <itemizedlist>
+            <listitem><para>float <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a2b549445c9205d4d98b6afaab8a8a429">raw_input_lim</link></para>
+
+<para>电机输入限制 </para>
+</listitem>
+            <listitem><para>float <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a362055600c7cf9836de0659f3ea0b20a">torq_input_lim</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a2ffd7b526a967afe22b3bdb838daea0b">curr_input_lim</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1aab060e462db1531a4f83938f55eb451e">torq_const</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a01dc4c2e170bc8fd5a7a0a9f53492fa8">redu_rat</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a8f5d394a3576db17dd28638cee9df294">angle_rat</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a178a3dba463610ff33a84ebc7a784e3a">vel_rat</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a81f24bfe8c051b12daae94ff7db420cb">curr_rat</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a3562541633ec1b0c3ce86247a9934d8b">torq_rat</link></para>
+</listitem>
+            <listitem><para>uint16_t <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1a4b2d0ce1a40596b10eca0b17952a18f3">cross_0_value</link></para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1devices_1_1motor_1a23bd0e79c78258c715635edf82874176">RawMappingType</link> <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_base_info_1acb21ee3bdda76d2bc1c43299f9c397b6">raw_mapping_type</link></para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>详细描述</title>
+<para>
+在文件 <link linkend="_motor__base_8hpp_source">motor_base.hpp</link> 第 <link linkend="_motor__base_8hpp_source_1l00082">82</link> 行定义.</para>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_structhello__world_1_1devices_1_1motor_1_1_motor_info_1a4feee96066013ceaa8ace8772d56ae05"/><section>
+    <title>operator=()</title>
+<indexterm><primary>operator=</primary><secondary>hello_world::devices::motor::MotorInfo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::MotorInfo</primary><secondary>operator=</secondary></indexterm>
+<para><computeroutput><link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_info">MotorInfo</link> &amp; hello_world::devices::motor::MotorInfo::operator= (const <link linkend="_structhello__world_1_1devices_1_1motor_1_1_motor_base_info">MotorBaseInfo</link> &amp; motor_base_info)<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para><itemizedlist>
+<listitem>
+<para>电机输出端实际角度与规定角度的差值 </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="_motor__base_8hpp_source">motor_base.hpp</link> 第 <link linkend="_motor__base_8hpp_source_1l00091">91</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_structhello__world_1_1devices_1_1motor_1_1_motor_info_1a7d770e09d97238decfb61382deac39eb"/><section>
+    <title>angle_offset</title>
+<indexterm><primary>angle_offset</primary><secondary>hello_world::devices::motor::MotorInfo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::MotorInfo</primary><secondary>angle_offset</secondary></indexterm>
+<para><computeroutput>float hello_world::devices::motor::MotorInfo::angle_offset</computeroutput></para>
+<para><itemizedlist>
+<listitem>
+<para>发给电机的报文的ID </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="_motor__base_8hpp_source">motor_base.hpp</link> 第 <link linkend="_motor__base_8hpp_source_1l00089">89</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1devices_1_1motor_1_1_motor_info_1a9e6c4b4561b5da0bb08b88c80953eece"/><section>
+    <title>angle_range</title>
+<indexterm><primary>angle_range</primary><secondary>hello_world::devices::motor::MotorInfo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::MotorInfo</primary><secondary>angle_range</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1devices_1_1motor_1a0163710b33b99ac98bcbcb1f43d78248">AngleRange</link> hello_world::devices::motor::MotorInfo::angle_range</computeroutput></para><para>
+在文件 <link linkend="_motor__base_8hpp_source">motor_base.hpp</link> 第 <link linkend="_motor__base_8hpp_source_1l00085">85</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1devices_1_1motor_1_1_motor_info_1a16bfca55d6a9c16d3bed3794f59eae55"/><section>
+    <title>dir</title>
+<indexterm><primary>dir</primary><secondary>hello_world::devices::motor::MotorInfo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::MotorInfo</primary><secondary>dir</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1devices_1_1motor_1a44985d99992e9464953d243bf3b561fd">Dir</link> hello_world::devices::motor::MotorInfo::dir</computeroutput></para><para>
+在文件 <link linkend="_motor__base_8hpp_source">motor_base.hpp</link> 第 <link linkend="_motor__base_8hpp_source_1l00083">83</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1devices_1_1motor_1_1_motor_info_1ad5c740f3c72547a3d4b6a9ac07eb52fe"/><section>
+    <title>id</title>
+<indexterm><primary>id</primary><secondary>hello_world::devices::motor::MotorInfo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::MotorInfo</primary><secondary>id</secondary></indexterm>
+<para><computeroutput>uint8_t hello_world::devices::motor::MotorInfo::id</computeroutput></para><para>
+在文件 <link linkend="_motor__base_8hpp_source">motor_base.hpp</link> 第 <link linkend="_motor__base_8hpp_source_1l00084">84</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1devices_1_1motor_1_1_motor_info_1af8fc7f4030e24c85518c7239bcac9a86"/><section>
+    <title>input_type</title>
+<indexterm><primary>input_type</primary><secondary>hello_world::devices::motor::MotorInfo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::MotorInfo</primary><secondary>input_type</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1devices_1_1motor_1a4777995093ebbd290b833795e49749b7">InputType</link> hello_world::devices::motor::MotorInfo::input_type</computeroutput></para><para>
+在文件 <link linkend="_motor__base_8hpp_source">motor_base.hpp</link> 第 <link linkend="_motor__base_8hpp_source_1l00086">86</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1devices_1_1motor_1_1_motor_info_1a3e96084a1a764a8bc1be4d4e34ef97b5"/><section>
+    <title>rx_id</title>
+<indexterm><primary>rx_id</primary><secondary>hello_world::devices::motor::MotorInfo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::MotorInfo</primary><secondary>rx_id</secondary></indexterm>
+<para><computeroutput>uint32_t hello_world::devices::motor::MotorInfo::rx_id</computeroutput></para><para>
+在文件 <link linkend="_motor__base_8hpp_source">motor_base.hpp</link> 第 <link linkend="_motor__base_8hpp_source_1l00087">87</link> 行定义.</para>
+</section>
+<anchor xml:id="_structhello__world_1_1devices_1_1motor_1_1_motor_info_1a85fb9e3e5d5e207f69ad906f092b3ddc"/><section>
+    <title>tx_id</title>
+<indexterm><primary>tx_id</primary><secondary>hello_world::devices::motor::MotorInfo</secondary></indexterm>
+<indexterm><primary>hello_world::devices::motor::MotorInfo</primary><secondary>tx_id</secondary></indexterm>
+<para><computeroutput>uint32_t hello_world::devices::motor::MotorInfo::tx_id</computeroutput></para>
+<para><itemizedlist>
+<listitem>
+<para>电机发回的报文的ID </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="_motor__base_8hpp_source">motor_base.hpp</link> 第 <link linkend="_motor__base_8hpp_source_1l00088">88</link> 行定义.</para>
+</section>
+</section>
+</section>

@@ -1,0 +1,485 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate" xml:lang="zh">
+<title>hello_world::algorithms::controller::pid::InteChangingRate类 参考</title>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteChangingRate</primary></indexterm>
+<para>
+
+<para>控制器参数类 </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;pid_opt.hpp&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a506b7c98c045905a49095a8cf6288ea9">InteChangingRate</link> (bool is_enabled=false, float lower=0.01, float upper=0.02)</para>
+
+<para>构造函数 </para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a3a6861604d04c04d6473a2a3c8cc4318">setEnabled</link> (bool is_enabled)</para>
+
+<para>设置使能状态 </para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a467a3cdb86fbd990bff08e5af8868aae">setLower</link> (float lower)</para>
+
+<para>设置下限 </para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a007ec567f2c141935945525b65fa62b2">setUpper</link> (float upper)</para>
+
+<para>设置上限 </para>
+</listitem>
+            <listitem><para><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a75716b9a88f3540ced6e43a784fd581b">setParams</link> (bool is_enabled, float lower, float upper)</para>
+
+<para>设置参数 </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a8d502f3c77c8e4e1b31d1e6b5a4932c8">isLegal</link> ()</para>
+
+<para>判断参数是否合法 </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a8e66e6ed87adc8a05e6f3df448a8fb00">isEnabled</link> ()</para>
+
+<para>判断参数是否使能 </para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a22842000f2832dba50540f0f6954244f">calc</link> (float err)</para>
+
+<para>计算比例系数 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 成员函数    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a81d4b7384be1017acf61b8ae24125e7a">handleIllegalParams</link> ()</para>
+
+<para>处理非法参数 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private 属性    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1af08dc32dff2d2863a888d5b5091c451f">is_enabled_</link></para>
+
+<para>使能状态 </para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a125fe291ddd003e4191e5f76d491e171">lower_</link></para>
+
+<para>下限 </para>
+</listitem>
+            <listitem><para>float <link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a4982c86d248cd862eebce69a9fae10d6">upper_</link></para>
+
+<para>上限 </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>控制器参数类 </para>
+
+
+
+<para>用于计算变速积分比例系数。</para>
+
+<para>基于积分分离优化的思想，根据系统偏差大小改变积分的速度，偏差越大，积分越慢，反之则越快，形成连续的变化过程。 在积分项计算公式中引入变速积分比例系数 <inlinemediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_7.png"/>
+            </imageobject>
+</inlinemediaobject>
+。 此时积分项表示为 <inlinemediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_8.png"/>
+            </imageobject>
+</inlinemediaobject>
+ 控制器参数类用于计算变速积分比例系数，根据给定的上下限和使能状态，计算比例系数。</para>
+
+<para><itemizedlist>
+<listitem>
+<para>具体计算公式见<computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a22842000f2832dba50540f0f6954244f">calc(float err)</link></computeroutput>。</para>
+</listitem><listitem>
+<para>参数合法性检查见<computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a8d502f3c77c8e4e1b31d1e6b5a4932c8">isLegal()</link></computeroutput>。</para>
+</listitem><listitem>
+<para>启用判定见<computeroutput><link linkend="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a8e66e6ed87adc8a05e6f3df448a8fb00">isEnabled()</link></computeroutput>。 </para>
+</listitem></itemizedlist>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00431">431</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a506b7c98c045905a49095a8cf6288ea9"/><section>
+    <title>InteChangingRate()</title>
+<indexterm><primary>InteChangingRate</primary><secondary>hello_world::algorithms::controller::pid::InteChangingRate</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteChangingRate</primary><secondary>InteChangingRate</secondary></indexterm>
+<para><computeroutput>hello_world::algorithms::controller::pid::InteChangingRate::InteChangingRate (bool is_enabled = <computeroutput>false</computeroutput>
+, float lower = <computeroutput>0.01</computeroutput>
+, float upper = <computeroutput>0.02</computeroutput>
+)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>构造函数 </para>
+</para>
+
+<para>构造函数用于初始化控制器参数对象，并设置默认的使能状态、下限和上限</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>is_enabled</entry><entry>
+<para>是否使能，默认为false </para>
+</entry>
+                            </row>
+                            <row>
+<entry>lower</entry><entry>
+<para>下限，默认为0.01 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>upper</entry><entry>
+<para>上限，默认为0.02 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00443">443</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>成员函数说明</title>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a22842000f2832dba50540f0f6954244f"/><section>
+    <title>calc()</title>
+<indexterm><primary>calc</primary><secondary>hello_world::algorithms::controller::pid::InteChangingRate</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteChangingRate</primary><secondary>calc</secondary></indexterm>
+<para><computeroutput>float hello_world::algorithms::controller::pid::InteChangingRate::calc (float err)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>计算比例系数 </para>
+</para>
+
+<para>根据给定的误差值计算比例系数 如果使能状态为真，且误差值超过上限，则比例系数为0； 如果使能状态为真，且误差值在上下限之间，则根据误差值的大小计算比例系数</para>
+
+<para>计算公式为：          <mediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_14.png"/>
+            </imageobject>
+        </mediaobject>
+, 其中 <inlinemediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_11.png"/>
+            </imageobject>
+</inlinemediaobject>
+ 为参数中的下限值， <inlinemediaobject>
+            <imageobject>
+                <imagedata align="center" valign="middle" scalefit="0" fileref="form_12.png"/>
+            </imageobject>
+</inlinemediaobject>
+为参数中的上限值。 
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>err</entry><entry>
+<para>误差值 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>比例系数 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00546">546</link> 行定义.</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_a22842000f2832dba50540f0f6954244f_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a81d4b7384be1017acf61b8ae24125e7a"/><section>
+    <title>handleIllegalParams()</title>
+<indexterm><primary>handleIllegalParams</primary><secondary>hello_world::algorithms::controller::pid::InteChangingRate</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteChangingRate</primary><secondary>handleIllegalParams</secondary></indexterm>
+<para><computeroutput>bool hello_world::algorithms::controller::pid::InteChangingRate::handleIllegalParams ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>处理非法参数 </para>
+</para>
+
+<para>处理控制器参数的非法情况，包括下限小于0和下限大于上限 如果下限小于0，则将下限设置为0，并返回true表示参数非法； 如果下限大于上限，则将上限设置为下限加上一个较小的值，并返回true表示参数非法</para>
+
+<para><formalpara><title>返回</title>
+
+<para>是否存在非法参数 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00574">574</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a8e66e6ed87adc8a05e6f3df448a8fb00"/><section>
+    <title>isEnabled()</title>
+<indexterm><primary>isEnabled</primary><secondary>hello_world::algorithms::controller::pid::InteChangingRate</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteChangingRate</primary><secondary>isEnabled</secondary></indexterm>
+<para><computeroutput>bool hello_world::algorithms::controller::pid::InteChangingRate::isEnabled ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>判断参数是否使能 </para>
+</para>
+
+<para>判断控制器参数是否使能，需要同时满足使能状态和参数合法性</para>
+
+<para><formalpara><title>返回</title>
+
+<para>参数使能性 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00525">525</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a8d502f3c77c8e4e1b31d1e6b5a4932c8"/><section>
+    <title>isLegal()</title>
+<indexterm><primary>isLegal</primary><secondary>hello_world::algorithms::controller::pid::InteChangingRate</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteChangingRate</primary><secondary>isLegal</secondary></indexterm>
+<para><computeroutput>bool hello_world::algorithms::controller::pid::InteChangingRate::isLegal ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>判断参数是否合法 </para>
+</para>
+
+<para>判断控制器参数是否合法，即下限是否小于上限</para>
+
+<para><formalpara><title>返回</title>
+
+<para>参数合法性 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00516">516</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a3a6861604d04c04d6473a2a3c8cc4318"/><section>
+    <title>setEnabled()</title>
+<indexterm><primary>setEnabled</primary><secondary>hello_world::algorithms::controller::pid::InteChangingRate</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteChangingRate</primary><secondary>setEnabled</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> hello_world::algorithms::controller::pid::InteChangingRate::setEnabled (bool is_enabled)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>设置使能状态 </para>
+</para>
+
+<para>设置控制器参数的使能状态</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>is_enabled</entry><entry>
+<para>是否使能 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>设置结果状态 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00457">457</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a467a3cdb86fbd990bff08e5af8868aae"/><section>
+    <title>setLower()</title>
+<indexterm><primary>setLower</primary><secondary>hello_world::algorithms::controller::pid::InteChangingRate</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteChangingRate</primary><secondary>setLower</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> hello_world::algorithms::controller::pid::InteChangingRate::setLower (float lower)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>设置下限 </para>
+</para>
+
+<para>设置控制器参数的下限</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>lower</entry><entry>
+<para>下限值 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>设置结果状态 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00471">471</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a75716b9a88f3540ced6e43a784fd581b"/><section>
+    <title>setParams()</title>
+<indexterm><primary>setParams</primary><secondary>hello_world::algorithms::controller::pid::InteChangingRate</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteChangingRate</primary><secondary>setParams</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> hello_world::algorithms::controller::pid::InteChangingRate::setParams (bool is_enabled, float lower, float upper)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>设置参数 </para>
+</para>
+
+<para>设置控制器参数的使能状态、下限和上限</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>is_enabled</entry><entry>
+<para>是否使能 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>lower</entry><entry>
+<para>下限值 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>upper</entry><entry>
+<para>上限值 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>设置结果状态 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00501">501</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a007ec567f2c141935945525b65fa62b2"/><section>
+    <title>setUpper()</title>
+<indexterm><primary>setUpper</primary><secondary>hello_world::algorithms::controller::pid::InteChangingRate</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteChangingRate</primary><secondary>setUpper</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d">State</link> hello_world::algorithms::controller::pid::InteChangingRate::setUpper (float upper)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>设置上限 </para>
+</para>
+
+<para>设置控制器参数的上限</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>upper</entry><entry>
+<para>上限值 </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>设置结果状态 </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00485">485</link> 行定义.</para>
+</section>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1af08dc32dff2d2863a888d5b5091c451f"/><section>
+    <title>is_enabled_</title>
+<indexterm><primary>is_enabled_</primary><secondary>hello_world::algorithms::controller::pid::InteChangingRate</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteChangingRate</primary><secondary>is_enabled_</secondary></indexterm>
+<para><computeroutput>bool hello_world::algorithms::controller::pid::InteChangingRate::is_enabled_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>使能状态 </para>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00561">561</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a125fe291ddd003e4191e5f76d491e171"/><section>
+    <title>lower_</title>
+<indexterm><primary>lower_</primary><secondary>hello_world::algorithms::controller::pid::InteChangingRate</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteChangingRate</primary><secondary>lower_</secondary></indexterm>
+<para><computeroutput>float hello_world::algorithms::controller::pid::InteChangingRate::lower_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>下限 </para>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00562">562</link> 行定义.</para>
+</section>
+<anchor xml:id="_classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate_1a4982c86d248cd862eebce69a9fae10d6"/><section>
+    <title>upper_</title>
+<indexterm><primary>upper_</primary><secondary>hello_world::algorithms::controller::pid::InteChangingRate</secondary></indexterm>
+<indexterm><primary>hello_world::algorithms::controller::pid::InteChangingRate</primary><secondary>upper_</secondary></indexterm>
+<para><computeroutput>float hello_world::algorithms::controller::pid::InteChangingRate::upper_<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>上限 </para>
+</para>
+<para>
+在文件 <link linkend="_pid__opt_8hpp_source">pid_opt.hpp</link> 第 <link linkend="_pid__opt_8hpp_source_1l00563">563</link> 行定义.</para>
+</section>
+</section>
+</section>

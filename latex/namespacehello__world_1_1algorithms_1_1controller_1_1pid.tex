@@ -1,0 +1,163 @@
+\doxysection{hello\+\_\+world\+::algorithms\+::controller\+::pid 命名空间参考}
+\hypertarget{namespacehello__world_1_1algorithms_1_1controller_1_1pid}{}\label{namespacehello__world_1_1algorithms_1_1controller_1_1pid}\index{hello\_world::algorithms::controller::pid@{hello\_world::algorithms::controller::pid}}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid}{Basic\+Pid}}
+\begin{DoxyCompactList}\small\item\em 基础 PID 控制器类，继承自\+Controller类 \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_datas}{Basic\+Pid\+Datas}}
+\begin{DoxyCompactList}\small\item\em 基础 PID 的数据结构体 \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params}{Basic\+Pid\+Params}}
+\begin{DoxyCompactList}\small\item\em 定义了基础 PID 的参数 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band}{Dead\+Band}}
+\begin{DoxyCompactList}\small\item\em 死区优化类 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter}{Diff\+Filter}}
+\begin{DoxyCompactList}\small\item\em 用于实现差分滤波器功能 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous}{Diff\+Previous}}
+\begin{DoxyCompactList}\small\item\em 微分先行优化类 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup}{Inte\+Anti\+Windup}}
+\begin{DoxyCompactList}\small\item\em 积分抗饱和优化类 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate}{Inte\+Changing\+Rate}}
+\begin{DoxyCompactList}\small\item\em 控制器参数类 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation}{Inte\+Separation}}
+\begin{DoxyCompactList}\small\item\em 积分分离优化类 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal}{Inte\+Trapezoidal}}
+\begin{DoxyCompactList}\small\item\em 梯形积分优化类 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid}{Multi\+Nodes\+Pid}}
+\begin{DoxyCompactList}\small\item\em 一个多节点 PID 控制器类，继承自 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1_controller}{Controller} 类，目前实现类型有串联或并联 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit}{Out\+Limit}}
+\item 
+class \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list}{Pid\+List}}
+\begin{DoxyCompactList}\small\item\em 一个用于存储 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} 的链表类，用于 Ozone 监视 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node}}
+\begin{DoxyCompactList}\small\item\em PID节点类，用于实现\+PID链表 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping}{Setpoint\+Ramping}}
+\begin{DoxyCompactList}\small\item\em 设定点斜坡优化类 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafd}{Arocss0\+Type}} \{ \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafdaeb0056ee6a32b1921222ec92c33e044f}{k\+Arocss0\+None}} = 0u
+, \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafdaca69f1b608769b74fb2fa511c72e449e}{k\+Arocss0\+Rad}}
+, \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafdad112435b8a0aad3baa195abc10a81c87}{k\+Arocss0\+Deg}}
+ \}
+\begin{DoxyCompactList}\small\item\em 定义了过零处理的类型 \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_ae7056f306e67c77cdcc0145836828ea5}{Multi\+Nodes\+Pid\+Type}} \{ \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_ae7056f306e67c77cdcc0145836828ea5ac841bbe8691e4f1391d0f13b6ef1c3e1}{k\+Cascade}} = 0u
+, \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_ae7056f306e67c77cdcc0145836828ea5a6fb3551e3657204372d76d2d9b83a3b9}{k\+Parallel}}
+ \}
+\begin{DoxyCompactList}\small\item\em 定义了多节点 PID 的类型 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a54cdae6f66cea881673bd9e6b366324c}{Handle\+Across0}} (float ref, float fdb, \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafd}{Arocss0\+Type}} across0)
+\begin{DoxyCompactList}\small\item\em 处理角度跨越 0 度的情况 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{枚举类型说明}
+\Hypertarget{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafd}\label{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafd} 
+\index{hello\_world::algorithms::controller::pid@{hello\_world::algorithms::controller::pid}!Arocss0Type@{Arocss0Type}}
+\index{Arocss0Type@{Arocss0Type}!hello\_world::algorithms::controller::pid@{hello\_world::algorithms::controller::pid}}
+\doxysubsubsection{\texorpdfstring{Arocss0Type}{Arocss0Type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafd}{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Arocss0\+Type}}}
+
+
+
+定义了过零处理的类型 
+
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kArocss0None@{kArocss0None}!hello\_world::algorithms::controller::pid@{hello\_world::algorithms::controller::pid}}\index{hello\_world::algorithms::controller::pid@{hello\_world::algorithms::controller::pid}!kArocss0None@{kArocss0None}}}\Hypertarget{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafdaeb0056ee6a32b1921222ec92c33e044f}\label{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafdaeb0056ee6a32b1921222ec92c33e044f} 
+k\+Arocss0\+None&不进行过零处理 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kArocss0Rad@{kArocss0Rad}!hello\_world::algorithms::controller::pid@{hello\_world::algorithms::controller::pid}}\index{hello\_world::algorithms::controller::pid@{hello\_world::algorithms::controller::pid}!kArocss0Rad@{kArocss0Rad}}}\Hypertarget{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafdaca69f1b608769b74fb2fa511c72e449e}\label{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafdaca69f1b608769b74fb2fa511c72e449e} 
+k\+Arocss0\+Rad&采用弧度制进行过零处理 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kArocss0Deg@{kArocss0Deg}!hello\_world::algorithms::controller::pid@{hello\_world::algorithms::controller::pid}}\index{hello\_world::algorithms::controller::pid@{hello\_world::algorithms::controller::pid}!kArocss0Deg@{kArocss0Deg}}}\Hypertarget{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafdad112435b8a0aad3baa195abc10a81c87}\label{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafdad112435b8a0aad3baa195abc10a81c87} 
+k\+Arocss0\+Deg&采用角度制进行过零处理 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00057}{57}} 行定义.
+
+\Hypertarget{namespacehello__world_1_1algorithms_1_1controller_1_1pid_ae7056f306e67c77cdcc0145836828ea5}\label{namespacehello__world_1_1algorithms_1_1controller_1_1pid_ae7056f306e67c77cdcc0145836828ea5} 
+\index{hello\_world::algorithms::controller::pid@{hello\_world::algorithms::controller::pid}!MultiNodesPidType@{MultiNodesPidType}}
+\index{MultiNodesPidType@{MultiNodesPidType}!hello\_world::algorithms::controller::pid@{hello\_world::algorithms::controller::pid}}
+\doxysubsubsection{\texorpdfstring{MultiNodesPidType}{MultiNodesPidType}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_ae7056f306e67c77cdcc0145836828ea5}{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Multi\+Nodes\+Pid\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+定义了多节点 PID 的类型 
+
+\begin{DoxySeeAlso}{参见}
+\doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_accc1fd43233ab6d228f7111eab364c51}{Multi\+Nodes\+Pid\+::cascade\+\_\+calc(const float \texorpdfstring{$\ast$}{*}ref\+\_\+ls, const float \texorpdfstring{$\ast$}{*}fdb\+\_\+ls, const float \texorpdfstring{$\ast$}{*}ffd\+\_\+ls, float \texorpdfstring{$\ast$}{*}out\+\_\+ls)}; 
+
+\doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid_a180ce707d30cae5f45ec5820d1b2c50c}{Multi\+Nodes\+Pid\+::parallel\+\_\+calc(const float \texorpdfstring{$\ast$}{*}ref\+\_\+ls, const float \texorpdfstring{$\ast$}{*}fdb\+\_\+ls, const float \texorpdfstring{$\ast$}{*}ffd\+\_\+ls, float \texorpdfstring{$\ast$}{*}out\+\_\+ls)} 
+\end{DoxySeeAlso}
+\begin{DoxyEnumFields}{枚举值}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kCascade@{kCascade}!hello\_world::algorithms::controller::pid@{hello\_world::algorithms::controller::pid}}\index{hello\_world::algorithms::controller::pid@{hello\_world::algorithms::controller::pid}!kCascade@{kCascade}}}\Hypertarget{namespacehello__world_1_1algorithms_1_1controller_1_1pid_ae7056f306e67c77cdcc0145836828ea5ac841bbe8691e4f1391d0f13b6ef1c3e1}\label{namespacehello__world_1_1algorithms_1_1controller_1_1pid_ae7056f306e67c77cdcc0145836828ea5ac841bbe8691e4f1391d0f13b6ef1c3e1} 
+k\+Cascade&串联类型 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{kParallel@{kParallel}!hello\_world::algorithms::controller::pid@{hello\_world::algorithms::controller::pid}}\index{hello\_world::algorithms::controller::pid@{hello\_world::algorithms::controller::pid}!kParallel@{kParallel}}}\Hypertarget{namespacehello__world_1_1algorithms_1_1controller_1_1pid_ae7056f306e67c77cdcc0145836828ea5a6fb3551e3657204372d76d2d9b83a3b9}\label{namespacehello__world_1_1algorithms_1_1controller_1_1pid_ae7056f306e67c77cdcc0145836828ea5a6fb3551e3657204372d76d2d9b83a3b9} 
+k\+Parallel&并联类型 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00330}{330}} 行定义.
+
+
+
+\doxysubsection{函数说明}
+\Hypertarget{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a54cdae6f66cea881673bd9e6b366324c}\label{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a54cdae6f66cea881673bd9e6b366324c} 
+\index{hello\_world::algorithms::controller::pid@{hello\_world::algorithms::controller::pid}!HandleAcross0@{HandleAcross0}}
+\index{HandleAcross0@{HandleAcross0}!hello\_world::algorithms::controller::pid@{hello\_world::algorithms::controller::pid}}
+\doxysubsubsection{\texorpdfstring{HandleAcross0()}{HandleAcross0()}}
+{\footnotesize\ttfamily float hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Handle\+Across0 (\begin{DoxyParamCaption}\item[{float}]{ref,  }\item[{float}]{fdb,  }\item[{\mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafd}{Arocss0\+Type}}}]{across0 }\end{DoxyParamCaption})}
+
+
+
+处理角度跨越 0 度的情况 
+
+
+\begin{DoxyParams}{参数}
+{\em ref} & 参考角度 \\
+\hline
+{\em fdb} & 反馈角度 \\
+\hline
+{\em across0} & 角度跨越 0 度的类型 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{返回}
+处理后的参考角度。 
+
+-\/ 如果 across0 为 k\+Arocss0\+Rad，则调用 Handle\+Angle\+Cross0\+Rad 函数处理参考角度； 
+
+-\/ 如果 across0 为 k\+Arocss0\+Deg，则调用 Handle\+Angle\+Cross0\+Deg 函数处理参考角度； 
+
+-\/ 否则，返回原始的参考角度。 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pid_8cpp_source}{pid.\+cpp}} 第 \mbox{\hyperlink{pid_8cpp_source_l00336}{336}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a54cdae6f66cea881673bd9e6b366324c_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a54cdae6f66cea881673bd9e6b366324c_icgraph}
+\end{center}
+\end{figure}

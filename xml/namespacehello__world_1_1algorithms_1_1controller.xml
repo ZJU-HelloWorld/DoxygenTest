@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="zh">
+  <compounddef id="namespacehello__world_1_1algorithms_1_1controller" kind="namespace" language="C++">
+    <compoundname>hello_world::algorithms::controller</compoundname>
+    <innerclass refid="classhello__world_1_1algorithms_1_1controller_1_1_controller" prot="public">hello_world::algorithms::controller::Controller</innerclass>
+    <innernamespace refid="namespacehello__world_1_1algorithms_1_1controller_1_1pid">hello_world::algorithms::controller::pid</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>State</name>
+        <qualifiedname>hello_world::algorithms::controller::State</qualifiedname>
+        <enumvalue id="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199da55ce72715605bed221a607365a27be53" prot="public">
+          <name>kStateOk</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacehello__world_1_1algorithms_1_1controller_1a3651797f880533c49c9b90a0961c199dab648f0f65a574817d57104ddd4c7b4a9" prot="public">
+          <name>kStateError</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HW-Components/algorithms/controller/inc/controller_base.hpp" line="32" column="1" bodyfile="HW-Components/algorithms/controller/inc/controller_base.hpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HW-Components/algorithms/controller/inc/controller_base.hpp" line="28" column="1"/>
+  </compounddef>
+</doxygen>

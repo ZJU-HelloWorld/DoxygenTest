@@ -1,0 +1,59 @@
+<map id="hello_world::algorithms::controller::pid::MultiNodesPid::calc" name="hello_world::algorithms::controller::pid::MultiNodesPid::calc">
+<area shape="rect" id="Node000001" title="计算 PID 控制器的输出" alt="" coords="5,203,187,258"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#accc1fd43233ab6d228f7111eab364c51" title="计算级联 PID 控制器的输出" alt="" coords="235,163,416,218"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,212,219,206,220,212,187,217"/>
+<area shape="rect" id="Node000025" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a180ce707d30cae5f45ec5820d1b2c50c" title="计算并行 PID 控制器的输出" alt="" coords="235,242,416,297"/>
+<area shape="poly" id="edge26_Node000001_Node000025" title=" " alt="" coords="187,243,220,249,219,254,186,249"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list.html#a3f374c443b6a07e0df4e800c253643c9" title="获取链表的开始迭代器" alt="" coords="486,206,642,261"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="417,204,472,214,471,219,416,210"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid.html#a2b8667e517f1999ec3fecffe9e6bd33d" title="PID 控制器的计算函数" alt="" coords="464,400,664,440"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="405,217,418,228,437,255,445,281,451,307,466,336,493,365,522,389,518,393,489,368,462,339,446,309,440,282,432,257,414,231,401,221"/>
+<area shape="rect" id="Node000012" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_out_limit.html#a958ca6f80deb49af0d3c4d4bed32db42" title=" " alt="" coords="737,5,934,45"/>
+<area shape="poly" id="edge22_Node000002_Node000012" title=" " alt="" coords="342,161,391,101,425,72,463,48,527,26,594,14,661,9,722,10,722,15,661,15,595,19,528,31,465,53,428,76,395,105,347,164"/>
+<area shape="rect" id="Node000022" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list.html#a25c937a246eff76147e6f2c0cf5a0d86" title="获取链表的结束迭代器" alt="" coords="471,63,657,103"/>
+<area shape="poly" id="edge23_Node000002_Node000022" title=" " alt="" coords="371,160,463,112,479,106,481,111,465,117,373,165"/>
+<area shape="rect" id="Node000023" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid.html#a9124ff9fabf43c21a73a294148697976" title="获取 PID 控制器的输出" alt="" coords="473,127,655,182"/>
+<area shape="poly" id="edge24_Node000002_Node000023" title=" " alt="" coords="416,174,458,168,459,173,417,180"/>
+<area shape="rect" id="Node000024" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list.html#a11a15045ece7e7259a71143875b2aa32" title="获取链表的大小" alt="" coords="470,285,658,325"/>
+<area shape="poly" id="edge25_Node000002_Node000024" title=" " alt="" coords="398,216,418,227,442,249,466,270,479,277,476,281,462,274,438,253,414,231,396,221"/>
+<area shape="rect" id="Node000005" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_filter.html#a7bb924886f04baa6e1b9db604529f93a" title="计算差分滤波器的输出值" alt="" coords="738,69,933,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="640,397,662,380,682,347,689,314,688,282,683,250,679,218,679,185,688,152,710,120,723,108,727,112,714,123,692,155,684,186,684,217,689,249,694,282,694,315,687,349,666,383,644,402"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_separation.html#a882d032c53d0a62764140564737524ff" title="计算积分分离优化后的输出值" alt="" coords="720,133,951,173"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="639,397,662,380,678,355,685,331,686,307,684,282,682,258,684,233,692,208,710,184,713,181,717,184,714,187,697,211,689,234,687,258,689,282,691,306,690,332,683,357,666,383,643,402"/>
+<area shape="rect" id="Node000007" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_changing_rate.html#a22842000f2832dba50540f0f6954244f" title="计算比例系数" alt="" coords="740,198,931,253"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="636,397,662,379,674,365,680,351,685,322,690,293,698,278,710,263,725,252,728,256,714,267,702,281,695,295,690,323,685,353,678,368,666,383,639,402"/>
+<area shape="rect" id="Node000008" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_dead_band.html#adff792034723f0cc61648e5c0696546c" title="计算死区优化后的误差值" alt="" coords="731,277,939,317"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="629,397,662,379,677,366,685,353,695,340,711,327,721,321,724,326,713,332,699,344,690,356,681,370,666,384,631,402"/>
+<area shape="rect" id="Node000009" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_trapezoidal.html#a8efa8ae3581ad2dcae6cbb86c2848213" title="计算梯形积分优化后的积分误差值" alt="" coords="718,341,953,381"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="659,397,725,382,726,388,660,402"/>
+<area shape="rect" id="Node000010" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_inte_anti_windup.html#ae1314426af77e207b2a80bdd060b173f" title="计算积分抗饱和优化后的输出值" alt="" coords="717,405,953,445"/>
+<area shape="poly" id="edge9_Node000004_Node000010" title=" " alt="" coords="665,419,703,420,703,425,665,425"/>
+<area shape="rect" id="Node000011" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_diff_previous.html#ac654422982d9475cf5c6f6c061cd2aeb" title="计算微分先行优化后的输出值" alt="" coords="728,469,943,509"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="646,438,741,462,739,468,645,443"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="641,397,662,380,676,359,686,338,693,298,691,258,683,218,675,178,674,137,683,97,694,76,710,56,722,45,726,49,714,59,699,79,688,99,679,138,681,177,688,217,696,257,699,298,691,340,681,361,666,383,644,401"/>
+<area shape="rect" id="Node000013" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_setpoint_ramping.html#a7833313869bfc6845232378f32019e29" title="计算设定点斜坡优化后的输出值" alt="" coords="712,533,959,573"/>
+<area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="591,438,645,479,713,519,729,525,727,530,711,524,642,484,588,443"/>
+<area shape="rect" id="Node000014" href="$namespacehello__world_1_1dsp_1_1tick.html#a97910b07255da1979f8ceafd8c6d2ea5" title=" " alt="" coords="763,597,907,637"/>
+<area shape="poly" id="edge13_Node000004_Node000014" title=" " alt="" coords="580,439,632,510,670,550,713,583,750,599,748,604,711,588,666,554,628,513,575,442"/>
+<area shape="rect" id="Node000016" href="$namespacehello__world_1_1algorithms_1_1controller_1_1pid.html#a54cdae6f66cea881673bd9e6b366324c" title="处理角度跨越 0 度的情况" alt="" coords="733,661,937,701"/>
+<area shape="poly" id="edge15_Node000004_Node000016" title=" " alt="" coords="575,439,593,483,622,540,662,598,687,624,714,647,722,652,719,657,710,651,683,628,658,601,618,542,588,485,570,441"/>
+<area shape="rect" id="Node000020" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid.html#a0dabd4a10fd3786e05c0fc5fa7bc9441" title="获取 PID 控制器的输出" alt="" coords="738,725,933,765"/>
+<area shape="poly" id="edge20_Node000004_Node000020" title=" " alt="" coords="572,440,586,494,613,568,632,607,655,645,682,681,714,711,726,720,723,724,710,715,678,684,651,648,628,610,608,570,581,496,567,441"/>
+<area shape="rect" id="Node000021" href="$classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid.html#ad74407cecfa9cfb473f199d142869f0f" title="重置PID数据" alt="" coords="751,790,919,845"/>
+<area shape="poly" id="edge21_Node000004_Node000021" title=" " alt="" coords="570,440,582,504,607,595,625,643,649,691,679,736,714,775,740,793,737,797,710,779,674,739,645,694,621,645,602,596,577,505,565,441"/>
+<area shape="rect" id="Node000015" href="$namespacehello__world_1_1dsp_1_1tick.html#a0c9c44ee367dc665cc6f1a6d830da9ee" title=" " alt="" coords="1018,597,1162,637"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="908,615,1003,615,1003,620,908,620"/>
+<area shape="rect" id="Node000017" href="$namespacehello__world.html#a7c9ce795c80c4bc674e5470984f99105" title=" " alt="" coords="1007,661,1173,701"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="938,679,992,679,992,684,938,684"/>
+<area shape="rect" id="Node000019" href="$namespacehello__world.html#a7640febc082ad62910c63a8feac1c002" title=" " alt="" coords="1007,725,1173,765"/>
+<area shape="poly" id="edge18_Node000016_Node000019" title=" " alt="" coords="918,699,994,719,993,724,917,705"/>
+<area shape="rect" id="Node000018" href="$namespacehello__world.html#ab46e2d75fde6b8f67bd6d21c61508e47" title="处理角度越过0值的情况，以半周期为基准" alt="" coords="1221,701,1403,726"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="1174,691,1207,695,1206,701,1173,696"/>
+<area shape="poly" id="edge19_Node000019_Node000018" title=" " alt="" coords="1173,731,1206,726,1207,731,1174,736"/>
+<area shape="poly" id="edge27_Node000025_Node000003" title=" " alt="" coords="416,253,471,245,472,250,417,258"/>
+<area shape="poly" id="edge28_Node000025_Node000004" title=" " alt="" coords="357,295,406,337,465,379,489,391,487,396,463,384,403,342,353,299"/>
+<area shape="poly" id="edge29_Node000025_Node000012" title=" " alt="" coords="370,295,433,329,471,345,511,358,552,365,591,365,629,356,662,335,677,320,688,305,698,272,696,238,690,202,682,166,679,129,687,92,696,73,710,56,722,45,725,49,714,59,701,76,692,94,685,129,687,165,695,201,702,237,703,273,693,307,682,323,666,339,631,360,592,370,551,370,510,363,469,350,431,334,367,300"/>
+<area shape="poly" id="edge30_Node000025_Node000022" title=" " alt="" coords="400,239,414,227,425,213,432,199,437,171,442,142,450,127,462,113,466,109,470,113,466,117,454,130,447,144,442,172,437,201,430,216,418,231,403,244"/>
+<area shape="poly" id="edge31_Node000025_Node000023" title=" " alt="" coords="392,239,415,227,438,209,463,191,471,186,474,191,465,196,441,213,417,232,395,244"/>
+<area shape="poly" id="edge32_Node000025_Node000024" title=" " alt="" coords="417,280,455,286,455,292,416,286"/>
+</map>

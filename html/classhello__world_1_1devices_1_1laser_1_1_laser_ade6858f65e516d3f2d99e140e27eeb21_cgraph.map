@@ -1,0 +1,7 @@
+<map id="hello_world::devices::laser::Laser::Laser" name="hello_world::devices::laser::Laser::Laser">
+<area shape="rect" id="Node000001" title="红点激光器初始化" alt="" coords="5,5,144,45"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1laser_1_1_laser.html#a71727ea81371581d369751653e0fc5ca" title="百分比亮度转定时器PWM比较值" alt="" coords="192,5,383,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,23,177,23,177,28,144,28"/>
+<area shape="rect" id="Node000003" href="$namespacehello__world.html#a34cb06299a34f746d556d23dc16904aa" title="将输入值限制在一个范围内" alt="" coords="431,13,561,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="383,23,415,23,415,28,383,28"/>
+</map>

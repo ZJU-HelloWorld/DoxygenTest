@@ -1,0 +1,104 @@
+\doxysection{referee\+\_\+rx\+\_\+template.\+hpp}
+\hypertarget{referee__rx__template_8hpp_source}{}\label{referee__rx__template_8hpp_source}\index{HW-\/Components/devices/referee/inc/referee\_rx\_template.hpp@{HW-\/Components/devices/referee/inc/referee\_rx\_template.hpp}}
+\mbox{\hyperlink{referee__rx__template_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00021}00021\ \textcolor{comment}{/*\ Define\ to\ prevent\ recursive\ inclusion\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00022}00022\ \textcolor{preprocessor}{\#ifndef\ HWCOMPONETS\_DEVICES\_REFEREE\_RX\_TEMPLATE\_H\_}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00023}00023\ \textcolor{preprocessor}{\#define\ HWCOMPONETS\_DEVICES\_REFEREE\_RX\_TEMPLATE\_H\_}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00025}00025\ \textcolor{comment}{/*\ Includes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00026}00026\ \textcolor{preprocessor}{\#include\ <cstdint>}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00027}00027\ \textcolor{preprocessor}{\#include\ <cstring>}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00029}00029\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{referee__protocol_8hpp}{referee\_protocol.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00030}00030\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{tick_8hpp}{tick.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00032}00032\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacehello__world}{hello\_world}}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00033}00033\ \{}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00034}00034\ \textcolor{keyword}{namespace\ }devices}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00035}00035\ \{}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00036}00036\ \textcolor{keyword}{namespace\ }referee}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00037}00037\ \{}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00038}00038\ \textcolor{comment}{/*\ Exported\ macro\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00039}00039\ \textcolor{comment}{/*\ Exported\ constants\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00040}00040\ \textcolor{comment}{/*\ Exported\ types\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00041}00041\ \textcolor{keyword}{class\ }Referee;}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00043}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info}{00043}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info}{RxPackageInfo}}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00044}00044\ \{}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00045}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_ae1e2d401d69833283bfa4d2bd4fccf16}{00045}}\ \ \ \ \ \textcolor{keyword}{friend}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_ae1e2d401d69833283bfa4d2bd4fccf16}{Referee}};}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00047}00047\ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00048}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a652358f4036b06f1131520b6b6e8fc2a}{00048}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a652358f4036b06f1131520b6b6e8fc2a}{is\_handled\_}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00049}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a75f5994431c01325057a21f5de7394a6}{00049}}\ \ \ \ \ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38a}{FrameCmdId}}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a75f5994431c01325057a21f5de7394a6}{command\_id\_}}\ =\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38aa386d9b809aca2e4adb719dc9b59889ce}{kFrameCmdIdNone}};}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00050}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a35731243c59c43b397c3b426abd0a631}{00050}}\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a35731243c59c43b397c3b426abd0a631}{update\_interval\_}}\ =\ 1000u;}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00051}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_ae30c9a631d1bd61d4599d68b54cbfa8b}{00051}}\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_ae30c9a631d1bd61d4599d68b54cbfa8b}{last\_update\_tick\_}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00052}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_acb3daf6092bba76a10fa7cc2d580a429}{00052}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_acb3daf6092bba76a10fa7cc2d580a429}{decode}}(\textcolor{keyword}{const}\ uint8\_t\ *frame\_cmd\_data\_ptr)\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00054}00054\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00055}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a425addbe56cad6a94fc00d5a4beae287}{00055}}\ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a425addbe56cad6a94fc00d5a4beae287}{RxPackageInfo}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38a}{FrameCmdId}}\ command\_id,\ \textcolor{keyword}{const}\ uint32\_t\ frequence)}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00056}00056\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00057}00057\ \ \ \ \ \ \ \ \ this-\/>command\_id\_\ =\ command\_id;}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (frequence\ >=\ 1)\ \{}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>update\_interval\_\ =\ 1000\ /\ frequence;}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ this-\/>update\_interval\_\ =\ 1000;}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00065}00065\ \ \ \ \ \ \ \ \ this-\/>last\_update\_tick\_\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00066}00066\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00068}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a2767a90b294aac66ab8268a40f89070e}{00068}}\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a2767a90b294aac66ab8268a40f89070e}{setHandled}}()}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00069}00069\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00070}00070\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a652358f4036b06f1131520b6b6e8fc2a}{is\_handled\_}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00071}00071\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00073}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a4d47f980c5f11bbe7bc5bf5d3cd448a4}{00073}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a4d47f980c5f11bbe7bc5bf5d3cd448a4}{isUpdated}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00074}00074\ \textcolor{keyword}{\ \ \ \ }\{}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00075}00075\ \ \ \ \ \ \ \ \ uint32\_t\ now\_tick\ =\ \mbox{\hyperlink{namespacehello__world_1_1dsp_1_1tick_a97910b07255da1979f8ceafd8c6d2ea5}{dsp::tick::GetTickMs}}();}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00076}00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ((now\_tick\ -\/\ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_ae30c9a631d1bd61d4599d68b54cbfa8b}{last\_update\_tick\_}})\ <=\ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a35731243c59c43b397c3b426abd0a631}{update\_interval\_}})\ \&\&\ (\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info_a652358f4036b06f1131520b6b6e8fc2a}{is\_handled\_}}\ ==\ \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00077}00077\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00078}00078\ \};}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00080}00080\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00081}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{00081}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package}{RxPackage}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info}{RxPackageInfo}}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00082}00082\ \{}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00083}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_a69171902885fbe16d886685130c0b9fb}{00083}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_a69171902885fbe16d886685130c0b9fb}{decode}}(\textcolor{keyword}{const}\ uint8\_t\ *frame\_cmd\_data\_ptr);}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00084}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_a1b773247599e0da8f8e3b2276ad43ce9}{00084}}\ \ \ \ \ T\ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_a1b773247599e0da8f8e3b2276ad43ce9}{data\_}};}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00086}00086\ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00087}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_aa26ecd414bcce3624fd4ee43555e06ed}{00087}}\ \ \ \ \ \textcolor{keyword}{const}\ T\ \&\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_aa26ecd414bcce3624fd4ee43555e06ed}{data}}()}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00088}00088\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00089}00089\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_a1b773247599e0da8f8e3b2276ad43ce9}{data\_}};}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00090}00090\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00091}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_a2f6e09b96618c66f057d7717195e483f}{00091}}\ \ \ \ \ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_a2f6e09b96618c66f057d7717195e483f}{RxPackage}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38a}{FrameCmdId}}\ command\_id,\ \textcolor{keyword}{const}\ uint32\_t\ frequence)\ :\ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_info}{RxPackageInfo}}(command\_id,\ frequence)\{\};}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00092}00092\ \};}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00094}00094\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00095}\mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_a69171902885fbe16d886685130c0b9fb}{00095}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classhello__world_1_1devices_1_1referee_1_1_rx_package_a69171902885fbe16d886685130c0b9fb}{RxPackage<T>::decode}}(\textcolor{keyword}{const}\ uint8\_t\ *frame\_cmd\_data\_ptr)}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00096}00096\ \{}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00097}00097\ \ \ \ \ \mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38a}{FrameCmdId}}\ cmd\_id\ =\ (\mbox{\hyperlink{namespacehello__world_1_1devices_1_1referee_a51755bb88aea2d560575188f43afc38a}{FrameCmdId}})(frame\_cmd\_data\_ptr[0]\ |\ frame\_cmd\_data\_ptr[1]\ <<\ 8);}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00098}00098\ \ \ \ \ \textcolor{keywordflow}{if}\ (command\_id\_\ !=\ cmd\_id)\ \{}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00099}00099\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00100}00100\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00101}00101\ \ \ \ \ memcpy(\&data\_,\ frame\_cmd\_data\_ptr\ +\ 2,\ \textcolor{keyword}{sizeof}(T));}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00102}00102\ \ \ \ \ last\_update\_tick\_\ =\ \mbox{\hyperlink{namespacehello__world_1_1dsp_1_1tick_a97910b07255da1979f8ceafd8c6d2ea5}{dsp::tick::GetTickMs}}();}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00103}00103\ \ \ \ \ is\_handled\_\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00104}00104\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00105}00105\ \};}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00107}00107\ \textcolor{comment}{/*\ Exported\ variables\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00108}00108\ \textcolor{comment}{/*\ Exported\ function\ prototypes\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/*/}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00110}00110\ \}\ \ \textcolor{comment}{//\ namespace\ referee}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00111}00111\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00112}00112\ \}\ \ \textcolor{comment}{//\ namespace\ devices}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00113}00113\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00114}00114\ \}\ \ \textcolor{comment}{//\ namespace\ hello\_world}}
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00115}00115\ }
+\DoxyCodeLine{\Hypertarget{referee__rx__template_8hpp_source_l00116}00116\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ HWCOMPONETS\_DEVICES\_REFEREE\_RX\_TEMPLATE\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

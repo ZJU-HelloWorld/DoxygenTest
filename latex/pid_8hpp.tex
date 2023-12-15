@@ -1,0 +1,104 @@
+\doxysection{HW-\/\+Components/algorithms/controller/inc/pid.hpp 文件参考}
+\hypertarget{pid_8hpp}{}\label{pid_8hpp}\index{HW-\/Components/algorithms/controller/inc/pid.hpp@{HW-\/Components/algorithms/controller/inc/pid.hpp}}
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include "{}controller\+\_\+base.\+hpp"{}}\newline
+{\ttfamily \#include "{}pid\+\_\+opt.\+hpp"{}}\newline
+{\ttfamily \#include "{}system.\+hpp"{}}\newline
+pid.\+hpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{pid_8hpp__incl}
+\end{center}
+\end{figure}
+此图展示该文件直接或间接的被哪些文件引用了\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{pid_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params}{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid\+Params}}
+\begin{DoxyCompactList}\small\item\em 定义了基础 PID 的参数 \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_datas}{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid\+Datas}}
+\begin{DoxyCompactList}\small\item\em 基础 PID 的数据结构体 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid}{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Basic\+Pid}}
+\begin{DoxyCompactList}\small\item\em 基础 PID 控制器类，继承自\+Controller类 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+Node}}
+\begin{DoxyCompactList}\small\item\em PID节点类，用于实现\+PID链表 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list}{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List}}
+\begin{DoxyCompactList}\small\item\em 一个用于存储 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} 的链表类，用于 Ozone 监视 \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_multi_nodes_pid}{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Multi\+Nodes\+Pid}}
+\begin{DoxyCompactList}\small\item\em 一个多节点 PID 控制器类，继承自 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1_controller}{Controller} 类，目前实现类型有串联或并联 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{命名空间}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacehello__world}{hello\+\_\+world}}
+\item 
+namespace \mbox{\hyperlink{namespacehello__world_1_1algorithms}{hello\+\_\+world\+::algorithms}}
+\item 
+namespace \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller}{hello\+\_\+world\+::algorithms\+::controller}}
+\item 
+namespace \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid}{hello\+\_\+world\+::algorithms\+::controller\+::pid}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{枚举}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafd}{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Arocss0\+Type}} \{ \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafdaeb0056ee6a32b1921222ec92c33e044f}{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::k\+Arocss0\+None}} = 0u
+, \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafdaca69f1b608769b74fb2fa511c72e449e}{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::k\+Arocss0\+Rad}}
+, \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_a67467db7aaca33bbced40cf20bdfaafdad112435b8a0aad3baa195abc10a81c87}{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::k\+Arocss0\+Deg}}
+ \}
+\begin{DoxyCompactList}\small\item\em 定义了过零处理的类型 \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_ae7056f306e67c77cdcc0145836828ea5}{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Multi\+Nodes\+Pid\+Type}} \{ \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_ae7056f306e67c77cdcc0145836828ea5ac841bbe8691e4f1391d0f13b6ef1c3e1}{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::k\+Cascade}} = 0u
+, \mbox{\hyperlink{namespacehello__world_1_1algorithms_1_1controller_1_1pid_ae7056f306e67c77cdcc0145836828ea5a6fb3551e3657204372d76d2d9b83a3b9}{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::k\+Parallel}}
+ \}
+\begin{DoxyCompactList}\small\item\em 定义了多节点 PID 的类型 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+\begin{DoxyAuthor}{作者}
+Zhou\+Shichan (\href{mailto:zsc19823382069@163.com}{\texttt{ zsc19823382069@163.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{版本}
+1.\+0.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{日期}
+2023-\/11-\/11
+\end{DoxyDate}
+\begin{DoxyCopyright}{版权所有}
+Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved.
+\end{DoxyCopyright}
+\begin{DoxyAttention}{注意}
+
+\end{DoxyAttention}
+\begin{DoxyParagraph}{history}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{4}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Version   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Date   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Author   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-4}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Version   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Date   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Author   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-4}
+\endhead
+\PBS\centering 1.\+0.\+0   &\PBS\centering \{now\+\_\+year\}   &\PBS\centering Zhou\+Shichan   &\PBS\centering description   \\\cline{1-4}
+\end{longtabu}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{last editor Zhou\+Shichan (zsc19823382069@163.com)}
+
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{last edit time 2023-\/11-\/11}
+
+\end{DoxyParagraph}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 中定义.
+

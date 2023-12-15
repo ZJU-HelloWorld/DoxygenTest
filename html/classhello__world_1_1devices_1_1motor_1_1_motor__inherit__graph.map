@@ -1,0 +1,19 @@
+<map id="hello_world::devices::motor::Motor" name="hello_world::devices::motor::Motor">
+<area shape="rect" id="Node000001" title=" " alt="" coords="208,197,345,237"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1motor_1_1_a1.html" title=" " alt="" coords="393,5,531,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="293,183,333,120,361,86,392,55,409,44,412,48,395,59,365,89,338,123,297,186"/>
+<area shape="rect" id="Node000004" href="$classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html" title=" " alt="" coords="393,69,531,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="308,185,347,152,392,119,412,108,415,112,395,124,350,156,312,189"/>
+<area shape="rect" id="Node000005" href="$classhello__world_1_1devices_1_1motor_1_1_g_m6020.html" title=" " alt="" coords="393,133,531,173"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="349,189,401,171,403,176,351,195"/>
+<area shape="rect" id="Node000006" href="$classhello__world_1_1devices_1_1motor_1_1_m2006.html" title=" " alt="" coords="393,197,531,237"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="360,215,393,215,393,220,360,220"/>
+<area shape="rect" id="Node000007" href="$classhello__world_1_1devices_1_1motor_1_1_m3508.html" title=" " alt="" coords="393,261,531,301"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="351,240,403,258,401,263,349,245"/>
+<area shape="rect" id="Node000008" href="$classhello__world_1_1devices_1_1motor_1_1_m8910.html" title=" " alt="" coords="393,325,531,365"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="312,246,350,279,395,311,415,322,412,327,392,316,347,283,308,250"/>
+<area shape="rect" id="Node000009" href="$classhello__world_1_1devices_1_1motor_1_1_m_f9025v2.html" title=" " alt="" coords="393,389,531,429"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="297,249,338,312,365,345,395,375,412,387,409,391,392,379,361,349,333,315,293,252"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1_mem_mang.html" title=" " alt="" coords="5,205,160,230"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,215,207,215,207,220,175,220"/>
+</map>

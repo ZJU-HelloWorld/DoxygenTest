@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_motor___g_m6020_8hpp" xml:lang="zh">
+<title>HW-Components/devices/motor/inc/motor_GM6020.hpp 文件参考</title>
+<indexterm><primary>HW-Components/devices/motor/inc/motor_GM6020.hpp</primary></indexterm>
+<para>
+
+<para>: @history : Version Date Author Note V0.9.0 2023-11-25 Caikunzhen 1. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;motor_base.hpp&quot;<?linebreak?></programlisting>motor_GM6020.hpp 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="motor___g_m6020_8hpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+此图展示该文件直接或间接的被哪些文件引用了:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="motor___g_m6020_8hpp__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>类    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classhello__world_1_1devices_1_1motor_1_1_g_m6020">hello_world::devices::motor::GM6020</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>命名空间    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacehello__world">hello_world</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacehello__world_1_1devices">hello_world::devices</link></para>
+</listitem>
+            <listitem><para>namespace <link linkend="_namespacehello__world_1_1devices_1_1motor">hello_world::devices::motor</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+
+<para>: @history : Version Date Author Note V0.9.0 2023-11-25 Caikunzhen 1. </para>
+
+<para>未测试版本</para>
+
+<para><caution><title>注意</title>
+
+<para>: raw2x 与 x2raw 方法只适用于反馈报文中的转换关系，无法用于控制报文</para>
+</caution>
+Copyright (c) 2023 Hello World Team, Zhejiang University. All Rights Reserved. </para>
+<para>
+在文件 <link linkend="_motor___g_m6020_8hpp_source">motor_GM6020.hpp</link> 中定义.</para>
+</section>
+</section>

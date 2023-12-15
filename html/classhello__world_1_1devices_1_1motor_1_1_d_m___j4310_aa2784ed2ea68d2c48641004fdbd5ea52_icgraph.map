@@ -1,0 +1,7 @@
+<map id="hello_world::devices::motor::DM_J4310::raw2torq" name="hello_world::devices::motor::DM_J4310::raw2torq">
+<area shape="rect" id="Node000001" title="将原始报文内容转换为输出端力矩" alt="" coords="240,37,429,77"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#a84ecfac4c74e3f0f7b85fba6c69f2aa1" title="将电调发回的 CAN 报文进行解包" alt="" coords="7,5,190,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,45,190,40,191,35,226,40"/>
+<area shape="rect" id="Node000003" href="$classhello__world_1_1devices_1_1motor_1_1_d_m___j4310.html#ae15373ce02962c1a287d7e813413869b" title="设定发给电调的期望值" alt="" coords="5,69,192,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="226,75,193,79,192,74,225,70"/>
+</map>

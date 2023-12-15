@@ -1,0 +1,502 @@
+\doxysection{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::Pid\+List类 参考}
+\hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list}{}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list}\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+
+
+一个用于存储 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} 的链表类，用于 Ozone 监视  
+
+
+
+
+{\ttfamily \#include $<$pid.\+hpp$>$}
+
+
+
+类 hello\+\_\+world\+::algorithms\+::controller\+::pid\+::Pid\+List 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list__inherit__graph}
+\end{center}
+\end{figure}
+
+
+hello\+\_\+world\+::algorithms\+::controller\+::pid\+::Pid\+List 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a4c4c1b76f8b632d221ea20e93f55cac7}{iterator}}
+\begin{DoxyCompactList}\small\item\em 定义迭代器类型 \end{DoxyCompactList}\item 
+typedef const \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a1d2485619e4354fa8d5a3544bcf4b877}{const\+\_\+iterator}}
+\begin{DoxyCompactList}\small\item\em 定义常量迭代器类型 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_acd0b93d9b41b68568bcfaa496f2b8e0b}{Pid\+List}} ()
+\begin{DoxyCompactList}\small\item\em 默认构造函数，初始化 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list}{Pid\+List} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a8ad0d9ef13dc836eab3f26c1de2e87ec}{\texorpdfstring{$\sim$}{\string~}\+Pid\+List}} ()
+\begin{DoxyCompactList}\small\item\em 析构函数，清空链表 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a82678264b9a57ef20f837874771fed9a}{Pid\+List}} (const \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list}{Pid\+List}} \&)=delete
+\begin{DoxyCompactList}\small\item\em 禁止复制构造 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list}{Pid\+List}} \& \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a330534326e74b5ece9098a9c25a37a51}{operator=}} (const \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list}{Pid\+List}} \&)=delete
+\begin{DoxyCompactList}\small\item\em 禁止赋值操作 \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a3b9df804e3d0bd9402c289727b00a25e}{push}} (const \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid}{Basic\+Pid}} \&obj)
+\begin{DoxyCompactList}\small\item\em 向链表尾部添加一个新的 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_adc2b7b05bea0ffea750ed9a212467145}{push}} (const \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params}{Basic\+Pid\+Params}} \&params)
+\begin{DoxyCompactList}\small\item\em 向链表尾部添加一个新的 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a5ea468d831da1cfd880ad38897d227d2}{remove\+Tail}} ()
+\begin{DoxyCompactList}\small\item\em 移除链表尾部的 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_acff9c6256713181463dac33bcc8930a5}{clear}} ()
+\begin{DoxyCompactList}\small\item\em 清空链表 \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a2d94d2bc545bc8d673f4de9592d647c1}{empty}} () const
+\begin{DoxyCompactList}\small\item\em 检查链表是否为空 \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a11a15045ece7e7259a71143875b2aa32}{size}} () const
+\begin{DoxyCompactList}\small\item\em 获取链表的大小 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a4c4c1b76f8b632d221ea20e93f55cac7}{iterator}} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a3f374c443b6a07e0df4e800c253643c9}{begin}} ()
+\begin{DoxyCompactList}\small\item\em 获取链表的开始迭代器 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a4c4c1b76f8b632d221ea20e93f55cac7}{iterator}} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a25c937a246eff76147e6f2c0cf5a0d86}{end}} ()
+\begin{DoxyCompactList}\small\item\em 获取链表的结束迭代器 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a1d2485619e4354fa8d5a3544bcf4b877}{const\+\_\+iterator}} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a6756a733783fa560b806f7d6cc9fb7da}{begin}} () const
+\begin{DoxyCompactList}\small\item\em 获取链表的开始常量迭代器 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a1d2485619e4354fa8d5a3544bcf4b877}{const\+\_\+iterator}} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a7b014801351059fe1d1c6d769f0b84b6}{end}} () const
+\begin{DoxyCompactList}\small\item\em 获取链表的结束常量迭代器 \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public 成员函数 继承自 \mbox{\hyperlink{classhello__world_1_1_mem_mang}{hello\+\_\+world\+::\+Mem\+Mang}}}
+\begin{DoxyCompactItemize}
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classhello__world_1_1_mem_mang_abcf6e7289814e8da342ba4f47d8af411}{operator new}} (size\+\_\+t size)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classhello__world_1_1_mem_mang_ad10b6eff1541322708e5bde32c590c82}{operator new\mbox{[}$\,$\mbox{]}}} (size\+\_\+t size)
+\item 
+void \mbox{\hyperlink{classhello__world_1_1_mem_mang_abf1fe21066f52d693e2eec63a5833e8e}{operator delete}} (void \texorpdfstring{$\ast$}{*}ptr)
+\item 
+void \mbox{\hyperlink{classhello__world_1_1_mem_mang_a54e1a6a8e01b0996cc2854a8bc1ce7bd}{operator delete\mbox{[}$\,$\mbox{]}}} (void \texorpdfstring{$\ast$}{*}ptr)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private 属性}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_ab268cd237b3c6ad1b134d92d67b657d8}{size\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 链表的大小 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_af548c6769ca5c6239989fad85f203f6f}{head\+\_\+ptr\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 链表的头指针 \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a4e49baca02d46d036fafef6413fd5179}{tail\+\_\+ptr\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 链表的尾指针 \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{详细描述}
+一个用于存储 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} 的链表类，用于 Ozone 监视 
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00237}{237}} 行定义.
+
+
+
+\doxysubsection{成员类型定义说明}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a1d2485619e4354fa8d5a3544bcf4b877}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a1d2485619e4354fa8d5a3544bcf4b877} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!const\_iterator@{const\_iterator}}
+\index{const\_iterator@{const\_iterator}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{const\_iterator}{const\_iterator}}
+{\footnotesize\ttfamily typedef const \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a1d2485619e4354fa8d5a3544bcf4b877}{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::const\+\_\+iterator}}}
+
+
+
+定义常量迭代器类型 
+
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00241}{241}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a4c4c1b76f8b632d221ea20e93f55cac7}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a4c4c1b76f8b632d221ea20e93f55cac7} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!iterator@{iterator}}
+\index{iterator@{iterator}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{iterator}{iterator}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node}}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a4c4c1b76f8b632d221ea20e93f55cac7}{hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::iterator}}}
+
+
+
+定义迭代器类型 
+
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00240}{240}} 行定义.
+
+
+
+\doxysubsection{构造及析构函数说明}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_acd0b93d9b41b68568bcfaa496f2b8e0b}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_acd0b93d9b41b68568bcfaa496f2b8e0b} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!PidList@{PidList}}
+\index{PidList@{PidList}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{PidList()}{PidList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::\+Pid\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+默认构造函数，初始化 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list}{Pid\+List} 
+
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00246}{246}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a8ad0d9ef13dc836eab3f26c1de2e87ec}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a8ad0d9ef13dc836eab3f26c1de2e87ec} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!````~PidList@{\texorpdfstring{$\sim$}{\string~}PidList}}
+\index{````~PidList@{\texorpdfstring{$\sim$}{\string~}PidList}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}PidList()}{\string~PidList()}}
+{\footnotesize\ttfamily hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::\texorpdfstring{$\sim$}{\string~}\+Pid\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+析构函数，清空链表 
+
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00251}{251}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a8ad0d9ef13dc836eab3f26c1de2e87ec_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a82678264b9a57ef20f837874771fed9a}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a82678264b9a57ef20f837874771fed9a} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!PidList@{PidList}}
+\index{PidList@{PidList}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{PidList()}{PidList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::\+Pid\+List (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list}{Pid\+List}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+禁止复制构造 
+
+
+
+\doxysubsection{成员函数说明}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a3f374c443b6a07e0df4e800c253643c9}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a3f374c443b6a07e0df4e800c253643c9} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!begin@{begin}}
+\index{begin@{begin}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a4c4c1b76f8b632d221ea20e93f55cac7}{iterator}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取链表的开始迭代器 
+
+\begin{DoxyReturn}{返回}
+链表的开始迭代器 
+\end{DoxyReturn}
+\begin{DoxyAttention}{注意}
+当链表为空时，返回nullptr 
+\end{DoxyAttention}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00295}{295}} 行定义.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a3f374c443b6a07e0df4e800c253643c9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a6756a733783fa560b806f7d6cc9fb7da}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a6756a733783fa560b806f7d6cc9fb7da} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!begin@{begin}}
+\index{begin@{begin}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a1d2485619e4354fa8d5a3544bcf4b877}{const\+\_\+iterator}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取链表的开始常量迭代器 
+
+\begin{DoxyReturn}{返回}
+链表的开始常量迭代器 
+\end{DoxyReturn}
+\begin{DoxyAttention}{注意}
+当链表为空时，返回nullptr 
+\end{DoxyAttention}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00309}{309}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_acff9c6256713181463dac33bcc8930a5}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_acff9c6256713181463dac33bcc8930a5} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!clear@{clear}}
+\index{clear@{clear}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+清空链表 
+
+
+
+在文件 \mbox{\hyperlink{pid_8cpp_source}{pid.\+cpp}} 第 \mbox{\hyperlink{pid_8cpp_source_l00174}{174}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_acff9c6256713181463dac33bcc8930a5_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_acff9c6256713181463dac33bcc8930a5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a2d94d2bc545bc8d673f4de9592d647c1}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a2d94d2bc545bc8d673f4de9592d647c1} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!empty@{empty}}
+\index{empty@{empty}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+检查链表是否为空 
+
+\begin{DoxyReturn}{返回}
+如果链表为空则返回 true，否则返回 false 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00282}{282}} 行定义.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a2d94d2bc545bc8d673f4de9592d647c1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a25c937a246eff76147e6f2c0cf5a0d86}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a25c937a246eff76147e6f2c0cf5a0d86} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!end@{end}}
+\index{end@{end}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a4c4c1b76f8b632d221ea20e93f55cac7}{iterator}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取链表的结束迭代器 
+
+\begin{DoxyReturn}{返回}
+链表的结束迭代器 
+\end{DoxyReturn}
+\begin{DoxyAttention}{注意}
+实际是nulllptr，仅供判断迭代结束使用 
+\end{DoxyAttention}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00302}{302}} 行定义.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a25c937a246eff76147e6f2c0cf5a0d86_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a7b014801351059fe1d1c6d769f0b84b6}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a7b014801351059fe1d1c6d769f0b84b6} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!end@{end}}
+\index{end@{end}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a1d2485619e4354fa8d5a3544bcf4b877}{const\+\_\+iterator}} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取链表的结束常量迭代器 
+
+\begin{DoxyReturn}{返回}
+链表的结束常量迭代器 
+\end{DoxyReturn}
+\begin{DoxyAttention}{注意}
+实际是nulllptr，仅供判断迭代结束使用 
+\end{DoxyAttention}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00316}{316}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a330534326e74b5ece9098a9c25a37a51}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a330534326e74b5ece9098a9c25a37a51} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!operator=@{operator=}}
+\index{operator=@{operator=}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list}{Pid\+List}} \& hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list}{Pid\+List}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+禁止赋值操作 
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a3b9df804e3d0bd9402c289727b00a25e}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a3b9df804e3d0bd9402c289727b00a25e} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!push@{push}}
+\index{push@{push}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::push (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid}{Basic\+Pid}} \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+向链表尾部添加一个新的 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} 
+
+
+\begin{DoxyParams}{参数}
+{\em obj} & 要添加的 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid}{Basic\+Pid} 对象 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{pid_8cpp_source}{pid.\+cpp}} 第 \mbox{\hyperlink{pid_8cpp_source_l00139}{139}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a3b9df804e3d0bd9402c289727b00a25e_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a3b9df804e3d0bd9402c289727b00a25e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_adc2b7b05bea0ffea750ed9a212467145}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_adc2b7b05bea0ffea750ed9a212467145} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!push@{push}}
+\index{push@{push}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::push (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params}{Basic\+Pid\+Params}} \&}]{params }\end{DoxyParamCaption})}
+
+
+
+向链表尾部添加一个新的 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} 
+
+
+\begin{DoxyParams}{参数}
+{\em params} & 要添加的 \doxylink{structhello__world_1_1algorithms_1_1controller_1_1pid_1_1_basic_pid_params}{Basic\+Pid\+Params} 对象 \\
+\hline
+\end{DoxyParams}
+
+
+在文件 \mbox{\hyperlink{pid_8cpp_source}{pid.\+cpp}} 第 \mbox{\hyperlink{pid_8cpp_source_l00140}{140}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_adc2b7b05bea0ffea750ed9a212467145_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a5ea468d831da1cfd880ad38897d227d2}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a5ea468d831da1cfd880ad38897d227d2} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!removeTail@{removeTail}}
+\index{removeTail@{removeTail}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{removeTail()}{removeTail()}}
+{\footnotesize\ttfamily void hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::remove\+Tail (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+移除链表尾部的 \doxylink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node} 
+
+
+
+在文件 \mbox{\hyperlink{pid_8cpp_source}{pid.\+cpp}} 第 \mbox{\hyperlink{pid_8cpp_source_l00151}{151}} 行定义.
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a5ea468d831da1cfd880ad38897d227d2_cgraph}
+\end{center}
+\end{figure}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a5ea468d831da1cfd880ad38897d227d2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a11a15045ece7e7259a71143875b2aa32}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a11a15045ece7e7259a71143875b2aa32} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!size@{size}}
+\index{size@{size}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+获取链表的大小 
+
+\begin{DoxyReturn}{返回}
+链表的大小 
+\end{DoxyReturn}
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00288}{288}} 行定义.
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a11a15045ece7e7259a71143875b2aa32_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{类成员变量说明}
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_af548c6769ca5c6239989fad85f203f6f}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_af548c6769ca5c6239989fad85f203f6f} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!head\_ptr\_@{head\_ptr\_}}
+\index{head\_ptr\_@{head\_ptr\_}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{head\_ptr\_}{head\_ptr\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node}}\texorpdfstring{$\ast$}{*} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::head\+\_\+ptr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+链表的头指针 
+
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00320}{320}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_ab268cd237b3c6ad1b134d92d67b657d8}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_ab268cd237b3c6ad1b134d92d67b657d8} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!size\_@{size\_}}
+\index{size\_@{size\_}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{size\_}{size\_}}
+{\footnotesize\ttfamily size\+\_\+t hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::size\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+链表的大小 
+
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00319}{319}} 行定义.
+
+\Hypertarget{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a4e49baca02d46d036fafef6413fd5179}\label{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_list_a4e49baca02d46d036fafef6413fd5179} 
+\index{hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}!tail\_ptr\_@{tail\_ptr\_}}
+\index{tail\_ptr\_@{tail\_ptr\_}!hello\_world::algorithms::controller::pid::PidList@{hello\_world::algorithms::controller::pid::PidList}}
+\doxysubsubsection{\texorpdfstring{tail\_ptr\_}{tail\_ptr\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classhello__world_1_1algorithms_1_1controller_1_1pid_1_1_pid_node}{Pid\+Node}}\texorpdfstring{$\ast$}{*} hello\+\_\+world\+::algorithms\+::controller\+::pid\+::\+Pid\+List\+::tail\+\_\+ptr\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+链表的尾指针 
+
+
+
+在文件 \mbox{\hyperlink{pid_8hpp_source}{pid.\+hpp}} 第 \mbox{\hyperlink{pid_8hpp_source_l00321}{321}} 行定义.
+

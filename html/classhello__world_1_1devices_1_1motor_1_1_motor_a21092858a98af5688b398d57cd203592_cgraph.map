@@ -1,0 +1,7 @@
+<map id="hello_world::devices::motor::Motor::normAngle" name="hello_world::devices::motor::Motor::normAngle">
+<area shape="rect" id="Node000001" title="将角度转换到指定范围" alt="" coords="5,35,180,75"/>
+<area shape="rect" id="Node000002" href="$classhello__world_1_1devices_1_1motor_1_1_motor.html#acad1e1f1792ab8cb6265b1d5195737f6" title=" " alt="" coords="251,5,394,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="180,41,236,34,237,39,181,46"/>
+<area shape="rect" id="Node000003" href="$namespacehello__world.html#a71f5ddbc81f1fa181ecefaf0b1f51fa8" title="将周期性数据归一化到指定周期区间" alt="" coords="228,70,417,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="181,63,213,67,213,72,180,68"/>
+</map>
